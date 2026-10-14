@@ -83,3 +83,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: gh workflow run pages.yml --ref main
+
+      - name: Upload execution report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: execution-report
+          path: data/internal/status.json
+          retention-days: 14
+          if-no-files-found: warn
