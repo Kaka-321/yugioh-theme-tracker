@@ -10,7 +10,7 @@ def sample_theme():
         "schema_version": "1.0.0",
         "theme_id": "blue-eyes",
         "canonical_name": "青眼",
-        "aliases": ["ブルーアイズ"],
+        "aliases": ["ブルーアイズ", "Blue-Eyes"],
         "source_mode": "sample",
     }
 
@@ -56,3 +56,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
