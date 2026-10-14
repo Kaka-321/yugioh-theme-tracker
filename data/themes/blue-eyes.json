@@ -4,7 +4,17 @@
     "ブルーアイズ"
   ],
   "canonical_name": "青眼",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
   "schema_version": "1.0.0",
-  "source_mode": "sample",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Blue-Eyes",
+    "url": "https://yugipedia.com/wiki/Blue-Eyes"
+  },
+  "source_mode": "api-metadata-and-manual",
   "theme_id": "blue-eyes"
 }
