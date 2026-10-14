@@ -20,41 +20,92 @@
       border-radius: 12px;
     }
     .note { color: #555; font-size: 0.9rem; }
+    a { color: #1659a5; }
   </style>
 </head>
 <body>
   <h1>遊戯王テーマ情報</h1>
-  <p class="note">非公式の情報整理サイトです。現在は動作確認用のサンプルです。</p>
+  <p class="note">
+    非公式の情報整理サイトです。現在は青眼1テーマで動作確認中です。
+  </p>
   <section>
     <h2 id="theme-name">読み込み中…</h2>
     <p id="theme-id"></p>
+
     <h3>別名・通称</h3>
     <ul id="aliases"></ul>
+
+    <h3>出典</h3>
+    <p id="source"></p>
+    <p class="note">
+      日本語名と別名は手動登録です。
+      出典ページの名前とURLはYugipedia APIから取得しています。
+      カード画像・カードテキスト全文は掲載していません。
+    </p>
+
     <p id="result" role="status"></p>
   </section>
+
   <script>
     async function loadTheme() {
       const result = document.getElementById("result");
+
       try {
         const response = await fetch("./data/themes/blue-eyes.json");
         if (!response.ok) {
           throw new Error("HTTP " + response.status);
         }
+
         const theme = await response.json();
+
+        if (
+          typeof theme.canonical_name !== "string" ||
+          typeof theme.theme_id !== "string" ||
+          !Array.isArray(theme.aliases) ||
+          !theme.aliases.every(alias => typeof alias === "string") ||
+          !theme.source ||
+          typeof theme.source.title !== "string" ||
+          typeof theme.source.url !== "string"
+        ) {
+          throw new Error("データ形式が想定と異なります");
+        }
+
+        const sourceUrl = new URL(theme.source.url);
+        if (
+          sourceUrl.protocol !== "https:" ||
+          sourceUrl.hostname !== "yugipedia.com" ||
+          sourceUrl.username ||
+          sourceUrl.password
+        ) {
+          throw new Error("出典URLが想定と異なります");
+        }
+
         document.getElementById("theme-name").textContent =
           theme.canonical_name;
         document.getElementById("theme-id").textContent =
           "テーマID: " + theme.theme_id;
+
+        const aliases = document.getElementById("aliases");
+        aliases.replaceChildren();
+
         for (const alias of theme.aliases) {
           const item = document.createElement("li");
           item.textContent = alias;
-          document.getElementById("aliases").appendChild(item);
+          aliases.appendChild(item);
         }
-        result.textContent = "サンプルデータを読み込みました。";
+
+        const link = document.createElement("a");
+        link.href = sourceUrl.href;
+        link.textContent = "Yugipedia: " + theme.source.title;
+
+        document.getElementById("source").replaceChildren(link);
+        result.textContent = "テーマ情報と出典を読み込みました。";
       } catch (error) {
-        result.textContent = "データを読み込めませんでした: " + error.message;
+        result.textContent =
+          "データを読み込めませんでした: " + error.message;
       }
     }
+
     loadTheme();
   </script>
 </body>
