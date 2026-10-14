@@ -1,0 +1,25 @@
+﻿# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+
+# Internal runtime data
+data/internal/
+
+# Temporary build output
+build/
+dist/
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
