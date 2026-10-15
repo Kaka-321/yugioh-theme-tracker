@@ -372,10 +372,12 @@
       }
       
       const lowerSearch = searchText.toLowerCase();
-      return allThemes.filter(theme => 
-        theme.canonical_name.toLowerCase().includes(lowerSearch) ||
-        theme.aliases.some(alias => alias.toLowerCase().includes(lowerSearch))
-      );
+      return allThemes.filter(theme => {
+        // aliases が未定義の場合、空配列とみなす（エラーを防ぐ）
+        const aliases = theme.aliases || [];
+        return theme.canonical_name.toLowerCase().includes(lowerSearch) ||
+          aliases.some(alias => alias.toLowerCase().includes(lowerSearch));
+      });
     }
 
     function refreshThemeList() {
