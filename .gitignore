@@ -12,7 +12,8 @@ __pycache__/
 !.env.example
 
 # Internal runtime data
-data/internal/
+data/internal/*
+!data/internal/theme_candidates.json
 
 # Temporary build output
 build/
