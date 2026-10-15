@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "レイズ・ムーン",
   "canonical_name_en": "Raise Moon",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

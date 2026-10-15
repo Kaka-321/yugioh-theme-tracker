@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "幻奏の音姫",
   "canonical_name_en": "Melodious Maestra",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

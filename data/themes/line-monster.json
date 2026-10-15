@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "ラインモンスター",
   "canonical_name_en": "Line Monster",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

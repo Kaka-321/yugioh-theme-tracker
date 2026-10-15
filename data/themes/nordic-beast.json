@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "極星獣",
   "canonical_name_en": "Nordic Beast",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -3,13 +3,8 @@
     "Blue-Eyes",
     "ブルーアイズ"
   ],
-  "canonical_name": "ブルーアイズ",
-  "canonical_name_en": "青眼",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "canonical_name": "",
+  "canonical_name_en": "Blue-Eyes",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",
@@ -17,5 +12,15 @@
     "url": "https://yugipedia.com/wiki/Blue-Eyes"
   },
   "source_mode": "api-metadata-and-manual",
-  "theme_id": "blue-eyes"
+  "theme_id": "blue-eyes",
+  "related_cards": [
+    {
+      "title": "Blue-Eyes White Dragon",
+      "canonical_title": "blue-eyes-white-dragon"
+    },
+    {
+      "title": "Rage with Eyes of Blue",
+      "canonical_title": "rage-with-eyes-of-blue"
+    }
+  ]
 }

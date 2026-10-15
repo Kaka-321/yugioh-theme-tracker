@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "魔法妖精",
   "canonical_name_en": "Magic Elf",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

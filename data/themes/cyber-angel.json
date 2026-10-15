@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "サイバー・エンジェル",
   "canonical_name_en": "Cyber Angel",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

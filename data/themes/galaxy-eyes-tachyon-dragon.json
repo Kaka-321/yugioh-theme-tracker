@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "ギャラクシーアイズ・タキオン・ドラゴン",
   "canonical_name_en": "Galaxy-Eyes Tachyon Dragon",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

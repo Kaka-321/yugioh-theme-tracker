@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "空牙団",
   "canonical_name_en": "Fur Hire",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "トポロジック",
   "canonical_name_en": "Topologic",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

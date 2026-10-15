@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "地縛",
   "canonical_name_en": "Earthbound",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

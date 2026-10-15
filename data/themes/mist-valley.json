@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "霞の谷",
   "canonical_name_en": "Mist Valley",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

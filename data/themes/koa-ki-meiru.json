@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "コアキメイル",
   "canonical_name_en": "Koa'ki Meiru",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "森の聖霊",
   "canonical_name_en": "Mystical Spirit of the Forest",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

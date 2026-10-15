@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "封印獣",
   "canonical_name_en": "Forbidden Beast",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "パーシアス",
   "canonical_name_en": "Parshath",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

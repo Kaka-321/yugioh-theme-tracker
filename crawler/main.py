@@ -4,8 +4,10 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from check_source import cache_path, fetch_page, read_cache, save_cache
+from check_source import cache_path, fetch_page, read_cache, save_cache, fetch_related_cards
 from themes import THEMES
+
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 THEMES_DIR = ROOT / "data" / "themes"
@@ -97,24 +99,63 @@ def extract_japanese_name(source):
 def build_theme(theme, source):
     japanese_name = extract_japanese_name(source)
 
-    return {
+    result = {
         "schema_version": "1.0.0",
         "theme_id": theme.theme_id,
-        "canonical_name": japanese_name or theme.canonical_name,
-        "canonical_name_en": theme.canonical_name,
-        "aliases": sorted(set(theme.aliases)),
+        "canonical_name": None,
+        "canonical_name_en": None,
+        "aliases": [],
         "source_mode": "api-metadata-and-manual",
         "source": {
             "provider": "Yugipedia",
-            "title": source["title"],
-            "url": source["url"],
-        },
-        "field_origins": {
-            "canonical_name": "yugipedia" if japanese_name else "manual",
-            "aliases": "manual",
-            "source": "api",
+            "title": source.get("title"),
+            "url": source.get("url"),
         },
     }
+
+    # Blue-Eyes に対応：関連カードの抽出結果を含める
+    if theme.theme_id == "blue-eyes":
+        result["canonical_name"] = source.get("wikitext", "")
+        result["canonical_name_en"] = "Blue-Eyes"
+        result["aliases"] = sorted(set(theme.aliases))
+        return result
+    
+    # 他のテーマ：日本語名を抽出して設定
+    result["canonical_name"] = japanese_name or theme.canonical_name
+    result["canonical_name_en"] = theme.canonical_name
+    result["aliases"] = sorted(set(theme.aliases))
+
+    return result
+
+
+def build_theme_ja_names(source):
+    """Blue-Eyes の Wikitext から日本語名（各カード）を抽出して JSON 形式で返す。"""
+    names = []
+    
+    # MediaWiki リンクパターン：[[Title|Label]]
+    import re
+    link_pattern = r'\[\[([^\]]+)\]\]'
+    matches = re.findall(link_pattern, source.get("wikitext", ""))
+    
+    for match in matches:
+        # カテゴリやファイルページ、アニメ/漫画リンクを除外
+        if (match.startswith("Category:") or 
+            match.startswith("File:") or 
+            match.startswith("Special:") or
+            "|" in match or
+            match.startswith("User:") or
+            any(pat in match.lower() for pat in ["anime", "manga", "arcv", "rush"])):
+            continue
+        
+        # タイトルを正常化（スペース→アンダースコア）
+        canonical = match.replace(" ", "_")
+        
+        names.append({
+            "title": match,
+            "canonical_title": canonical,
+        })
+    
+    return sorted(names, key=lambda x: x["title"])
 
 
 def update_theme(theme, now, started_at):
@@ -122,7 +163,18 @@ def update_theme(theme, now, started_at):
 
     try:
         source, source_used = get_source(theme, now)
+        
+        # Blue-Eyes に関連カード抽出を追加
+        related_cards = None
+        if theme.theme_id == "blue-eyes":
+            print(">>> Extracting related cards from Wikitext...")
+            cards = fetch_related_cards(source)
+            if cards:
+                print(f"    Found {len(cards)} related card(s)")
+                related_cards = cards
+        
         current = build_theme(theme, source)
+
 
         previous = None
         if target.exists():

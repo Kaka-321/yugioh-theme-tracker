@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "Ａ・Ｏ・Ｊ",
   "canonical_name_en": "Ally of Justice",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

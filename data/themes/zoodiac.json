@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "十二獣",
   "canonical_name_en": "Zoodiac",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

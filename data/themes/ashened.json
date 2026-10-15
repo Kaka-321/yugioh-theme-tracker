@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "灰滅",
   "canonical_name_en": "Ashened",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

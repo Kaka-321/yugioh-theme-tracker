@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "エルドリッチ",
   "canonical_name_en": "Eldlich",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

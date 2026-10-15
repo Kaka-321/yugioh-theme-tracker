@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "閃刀姫",
   "canonical_name_en": "Sky Striker Ace",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "ダイダロス",
   "canonical_name_en": "Daedalus",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "幻蝶",
   "canonical_name_en": "Phantom Butterfly",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

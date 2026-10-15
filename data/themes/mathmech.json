@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "斬機",
   "canonical_name_en": "Mathmech",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

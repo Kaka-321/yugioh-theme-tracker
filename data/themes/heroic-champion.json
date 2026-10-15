@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "Ｈ－Ｃ",
   "canonical_name_en": "Heroic Champion",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

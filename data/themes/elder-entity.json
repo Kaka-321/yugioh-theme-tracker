@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "旧神",
   "canonical_name_en": "Elder Entity",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

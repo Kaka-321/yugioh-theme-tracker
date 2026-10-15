@@ -2,11 +2,6 @@
   "aliases": [],
   "canonical_name": "ＣＮｏ．３９",
   "canonical_name_en": "Number C39",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",
