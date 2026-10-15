@@ -92,3 +92,19 @@ jobs:
           path: data/internal/status.json
           retention-days: 14
           if-no-files-found: warn
+
+  ping-success:
+    runs-on: ubuntu-latest
+    needs: [update]
+    if: ${{ success() }}
+    steps:
+      - name: Ping Healthchecks.io success
+        run: curl -fsS --retry 5 --max-time 10 "${{ secrets.HC_PING_CRAWL_URL }}"
+
+  ping-failure:
+    runs-on: ubuntu-latest
+    needs: [update]
+    if: ${{ failure() }}
+    steps:
+      - name: Ping Healthchecks.io failure
+        run: curl -fsS --retry 5 --max-time 10 "${{ secrets.HC_PING_CRAWL_URL }}/fail"
