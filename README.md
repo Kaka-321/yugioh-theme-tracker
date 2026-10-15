@@ -186,3 +186,13 @@ Ping URLs are stored only as GitHub Actions secrets:
 - `HC_PING_HEARTBEAT_URL`
 
 Do not commit, log, or share the actual Ping URLs.
+
+### Site and Data Freshness
+
+- Checks the public GitHub Pages site every 6 hours.
+- Checks `https://Kaka-321.github.io/yugioh-theme-tracker/status.json`.
+- Requires HTTP 200 for the site.
+- Requires valid JSON in `status.json`.
+- Requires `last_success_at` to be no older than 48 hours.
+- Sends a success ping to `HC_PING_SITE_STATUS_URL` only when all checks pass.
+- Sends a failure ping to `HC_PING_SITE_STATUS_URL/fail` when any check fails.
