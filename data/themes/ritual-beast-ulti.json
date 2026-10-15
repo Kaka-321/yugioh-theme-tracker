@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "聖霊獣騎",
+  "canonical_name_en": "Ritual Beast Ulti",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ritual Beast Ulti",
+    "url": "https://yugipedia.com/wiki/Ritual_Beast_Ulti"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ritual-beast-ulti"
+}

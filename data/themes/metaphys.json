@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "メタファイズ",
+  "canonical_name_en": "Metaphys",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Metaphys",
+    "url": "https://yugipedia.com/wiki/Metaphys"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "metaphys"
+}

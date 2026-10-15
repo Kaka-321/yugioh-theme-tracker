@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "霊獣使い",
+  "canonical_name_en": "Ritual Beast Tamer",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ritual Beast Tamer",
+    "url": "https://yugipedia.com/wiki/Ritual_Beast_Tamer"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ritual-beast-tamer"
+}

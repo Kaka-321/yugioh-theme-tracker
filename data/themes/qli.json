@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "クリフォート",
+  "canonical_name_en": "Qli",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Qli",
+    "url": "https://yugipedia.com/wiki/Qli"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "qli"
+}

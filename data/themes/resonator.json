@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "リゾネーター",
+  "canonical_name_en": "Resonator",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Resonator",
+    "url": "https://yugipedia.com/wiki/Resonator"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "resonator"
+}

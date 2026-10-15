@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "マジェスペクター",
+  "canonical_name_en": "Majespecter",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Majespecter",
+    "url": "https://yugipedia.com/wiki/Majespecter"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "majespecter"
+}

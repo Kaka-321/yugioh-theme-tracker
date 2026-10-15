@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "巳剣",
+  "canonical_name_en": "Mitsurugi",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Mitsurugi",
+    "url": "https://yugipedia.com/wiki/Mitsurugi"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "mitsurugi"
+}

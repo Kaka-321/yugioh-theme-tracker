@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "マテリアクトル",
+  "canonical_name_en": "Materiactor",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Materiactor",
+    "url": "https://yugipedia.com/wiki/Materiactor"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "materiactor"
+}

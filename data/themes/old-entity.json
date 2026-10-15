@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "古神",
+  "canonical_name_en": "Old Entity",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Old Entity",
+    "url": "https://yugipedia.com/wiki/Old_Entity"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "old-entity"
+}

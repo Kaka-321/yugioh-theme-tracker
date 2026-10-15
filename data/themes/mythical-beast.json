@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "魔導獣",
+  "canonical_name_en": "Mythical Beast",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Mythical Beast",
+    "url": "https://yugipedia.com/wiki/Mythical_Beast"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "mythical-beast"
+}

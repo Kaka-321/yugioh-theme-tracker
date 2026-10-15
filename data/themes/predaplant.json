@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "捕食植物",
+  "canonical_name_en": "Predaplant",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Predaplant",
+    "url": "https://yugipedia.com/wiki/Predaplant"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "predaplant"
+}

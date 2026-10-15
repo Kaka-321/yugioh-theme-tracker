@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ヌメロン",
+  "canonical_name_en": "Numeron",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Numeron",
+    "url": "https://yugipedia.com/wiki/Numeron"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "numeron"
+}

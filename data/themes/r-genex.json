@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "レアル・ジェネクス",
+  "canonical_name_en": "R-Genex",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "R-Genex",
+    "url": "https://yugipedia.com/wiki/R-Genex"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "r-genex"
+}

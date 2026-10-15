@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "メルフィー",
+  "canonical_name_en": "Melffy",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Melffy",
+    "url": "https://yugipedia.com/wiki/Melffy"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "melffy"
+}

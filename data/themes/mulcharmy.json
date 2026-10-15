@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "マルチャミー",
+  "canonical_name_en": "Mulcharmy",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Mulcharmy",
+    "url": "https://yugipedia.com/wiki/Mulcharmy"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "mulcharmy"
+}

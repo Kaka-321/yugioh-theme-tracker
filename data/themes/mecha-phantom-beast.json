@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "幻獣機",
+  "canonical_name_en": "Mecha Phantom Beast",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Mecha Phantom Beast",
+    "url": "https://yugipedia.com/wiki/Mecha_Phantom_Beast"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "mecha-phantom-beast"
+}

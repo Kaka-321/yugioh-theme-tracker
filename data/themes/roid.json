@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ロイド",
+  "canonical_name_en": "Roid",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Roid",
+    "url": "https://yugipedia.com/wiki/Roid"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "roid"
+}

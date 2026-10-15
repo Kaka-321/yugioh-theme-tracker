@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "オッドアイズ",
+  "canonical_name_en": "Odd-Eyes",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Odd-Eyes",
+    "url": "https://yugipedia.com/wiki/Odd-Eyes"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "odd-eyes"
+}

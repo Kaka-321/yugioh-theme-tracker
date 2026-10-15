@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "極星天",
+  "canonical_name_en": "Nordic Ascendant",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Nordic Ascendant",
+    "url": "https://yugipedia.com/wiki/Nordic_Ascendant"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "nordic-ascendant"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ポータン",
+  "canonical_name_en": "Potan",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Potan",
+    "url": "https://yugipedia.com/wiki/Potan"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "potan"
+}

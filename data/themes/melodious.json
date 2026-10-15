@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "幻奏",
+  "canonical_name_en": "Melodious",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Melodious",
+    "url": "https://yugipedia.com/wiki/Melodious"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "melodious"
+}

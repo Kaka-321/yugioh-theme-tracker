@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ゲート・オブ・ヌメロン",
+  "canonical_name_en": "Numeron Gate",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Numeron Gate",
+    "url": "https://yugipedia.com/wiki/Numeron_Gate"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "numeron-gate"
+}

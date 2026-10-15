@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "聖剣",
+  "canonical_name_en": "Noble Arms",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Noble Arms",
+    "url": "https://yugipedia.com/wiki/Noble_Arms"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "noble-arms"
+}

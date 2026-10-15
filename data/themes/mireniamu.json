@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ミレニアム",
+  "canonical_name_en": "Mireniamu",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Mireniamu",
+    "url": "https://yugipedia.com/wiki/Mireniamu"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "mireniamu"
+}

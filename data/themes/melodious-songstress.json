@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "幻奏の歌姫",
+  "canonical_name_en": "Melodious Songstress",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Melodious Songstress",
+    "url": "https://yugipedia.com/wiki/Melodious_Songstress"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "melodious-songstress"
+}

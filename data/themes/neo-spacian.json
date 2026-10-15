@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｎ",
+  "canonical_name_en": "Neo-Spacian",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Neo-Spacian",
+    "url": "https://yugipedia.com/wiki/Neo-Spacian"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "neo-spacian"
+}

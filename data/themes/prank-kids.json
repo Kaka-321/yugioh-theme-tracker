@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "プランキッズ",
+  "canonical_name_en": "Prank-Kids",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Prank-Kids",
+    "url": "https://yugipedia.com/wiki/Prank-Kids"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "prank-kids"
+}

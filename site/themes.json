@@ -1760,6 +1760,756 @@
       "canonical_name": "マグネット・ウォリアー",
       "canonical_name_en": "Magnet Warrior",
       "theme_id": "magnet-warrior"
+    },
+    {
+      "canonical_name": "磁石の戦士Σ",
+      "canonical_name_en": "Magnet Warrior Sigma",
+      "theme_id": "magnet-warrior-sigma"
+    },
+    {
+      "canonical_name": "マジェスペクター",
+      "canonical_name_en": "Majespecter",
+      "theme_id": "majespecter"
+    },
+    {
+      "canonical_name": "セイヴァー",
+      "canonical_name_en": "Majestic",
+      "theme_id": "majestic"
+    },
+    {
+      "canonical_name": "Ｓｉｎ",
+      "canonical_name_en": "Malefic",
+      "theme_id": "malefic"
+    },
+    {
+      "canonical_name": "マリスボラス",
+      "canonical_name_en": "Malicevorous",
+      "theme_id": "malicevorous"
+    },
+    {
+      "canonical_name": "Ｍ∀ＬＩＣＥ",
+      "canonical_name_en": "Maliss",
+      "theme_id": "maliss"
+    },
+    {
+      "canonical_name": "マナドゥム",
+      "canonical_name_en": "Mannadium",
+      "theme_id": "mannadium"
+    },
+    {
+      "canonical_name": "カマキリ",
+      "canonical_name_en": "Mantis",
+      "theme_id": "mantis"
+    },
+    {
+      "canonical_name": "マリンセス",
+      "canonical_name_en": "Marincess",
+      "theme_id": "marincess"
+    },
+    {
+      "canonical_name": "Ｍ・ＨＥＲＯ",
+      "canonical_name_en": "Masked HERO",
+      "theme_id": "masked-hero"
+    },
+    {
+      "canonical_name": "仮面魔踏士",
+      "canonical_name_en": "Masquerade",
+      "theme_id": "masquerade"
+    },
+    {
+      "canonical_name": "マテリアクトル",
+      "canonical_name_en": "Materiactor",
+      "theme_id": "materiactor"
+    },
+    {
+      "canonical_name": "斬機",
+      "canonical_name_en": "Mathmech",
+      "theme_id": "mathmech"
+    },
+    {
+      "canonical_name": "魔妖",
+      "canonical_name_en": "Mayakashi",
+      "theme_id": "mayakashi"
+    },
+    {
+      "canonical_name": "幻獣機",
+      "canonical_name_en": "Mecha Phantom Beast",
+      "theme_id": "mecha-phantom-beast"
+    },
+    {
+      "canonical_name": "メディウス",
+      "canonical_name_en": "Medius",
+      "theme_id": "medius"
+    },
+    {
+      "canonical_name": "メガリス",
+      "canonical_name_en": "Megalith",
+      "theme_id": "megalith"
+    },
+    {
+      "canonical_name": "ジャックナイツ",
+      "canonical_name_en": "Mekk-Knight",
+      "theme_id": "mekk-knight"
+    },
+    {
+      "canonical_name": "機皇",
+      "canonical_name_en": "Meklord",
+      "theme_id": "meklord"
+    },
+    {
+      "canonical_name": "機皇兵",
+      "canonical_name_en": "Meklord Army",
+      "theme_id": "meklord-army"
+    },
+    {
+      "canonical_name": "機皇神",
+      "canonical_name_en": "Meklord Astro",
+      "theme_id": "meklord-astro"
+    },
+    {
+      "canonical_name": "機皇帝",
+      "canonical_name_en": "Meklord Emperor",
+      "theme_id": "meklord-emperor"
+    },
+    {
+      "canonical_name": "メルフィー",
+      "canonical_name_en": "Melffy",
+      "theme_id": "melffy"
+    },
+    {
+      "canonical_name": "幻奏",
+      "canonical_name_en": "Melodious",
+      "theme_id": "melodious"
+    },
+    {
+      "canonical_name": "幻奏の音姫",
+      "canonical_name_en": "Melodious Maestra",
+      "theme_id": "melodious-maestra"
+    },
+    {
+      "canonical_name": "幻奏の歌姫",
+      "canonical_name_en": "Melodious Songstress",
+      "theme_id": "melodious-songstress"
+    },
+    {
+      "canonical_name": "メメント",
+      "canonical_name_en": "Memento",
+      "theme_id": "memento"
+    },
+    {
+      "canonical_name": "水精鱗",
+      "canonical_name_en": "Mermail",
+      "theme_id": "mermail"
+    },
+    {
+      "canonical_name": "中生代",
+      "canonical_name_en": "Mesozoic",
+      "theme_id": "mesozoic"
+    },
+    {
+      "canonical_name": "メタルフォーゼ",
+      "canonical_name_en": "Metalfoes",
+      "theme_id": "metalfoes"
+    },
+    {
+      "canonical_name": "メタファイズ",
+      "canonical_name_en": "Metaphys",
+      "theme_id": "metaphys"
+    },
+    {
+      "canonical_name": "御巫",
+      "canonical_name_en": "Mikanko",
+      "theme_id": "mikanko"
+    },
+    {
+      "canonical_name": "Millennium",
+      "canonical_name_en": "Millennium",
+      "theme_id": "millennium"
+    },
+    {
+      "canonical_name": "ミミグル",
+      "canonical_name_en": "Mimighoul",
+      "theme_id": "mimighoul"
+    },
+    {
+      "canonical_name": "ミレニアム",
+      "canonical_name_en": "Mireniamu",
+      "theme_id": "mireniamu"
+    },
+    {
+      "canonical_name": "ミラーイマジン",
+      "canonical_name_en": "Mirror Imagine",
+      "theme_id": "mirror-imagine"
+    },
+    {
+      "canonical_name": "霞の谷",
+      "canonical_name_en": "Mist Valley",
+      "theme_id": "mist-valley"
+    },
+    {
+      "canonical_name": "巳剣",
+      "canonical_name_en": "Mitsurugi",
+      "theme_id": "mitsurugi"
+    },
+    {
+      "canonical_name": "帝",
+      "canonical_name_en": "Monarch",
+      "theme_id": "monarch"
+    },
+    {
+      "canonical_name": "モルガナイト",
+      "canonical_name_en": "Morganite",
+      "theme_id": "morganite"
+    },
+    {
+      "canonical_name": "Ｄ",
+      "canonical_name_en": "Morphtronic",
+      "theme_id": "morphtronic"
+    },
+    {
+      "canonical_name": "軍蚊",
+      "canonical_name_en": "Mosquito",
+      "theme_id": "mosquito"
+    },
+    {
+      "canonical_name": "モーター",
+      "canonical_name_en": "Motor",
+      "theme_id": "motor"
+    },
+    {
+      "canonical_name": "マルチャミー",
+      "canonical_name_en": "Mulcharmy",
+      "theme_id": "mulcharmy"
+    },
+    {
+      "canonical_name": "森の聖獣",
+      "canonical_name_en": "Mystical Beast of the Forest",
+      "theme_id": "mystical-beast-of-the-forest"
+    },
+    {
+      "canonical_name": "森の聖霊",
+      "canonical_name_en": "Mystical Spirit of the Forest",
+      "theme_id": "mystical-spirit-of-the-forest"
+    },
+    {
+      "canonical_name": "魔導獣",
+      "canonical_name_en": "Mythical Beast",
+      "theme_id": "mythical-beast"
+    },
+    {
+      "canonical_name": "ミュートリア",
+      "canonical_name_en": "Myutant",
+      "theme_id": "myutant"
+    },
+    {
+      "canonical_name": "ナチュル",
+      "canonical_name_en": "Naturia",
+      "theme_id": "naturia"
+    },
+    {
+      "canonical_name": "猫",
+      "canonical_name_en": "Neko",
+      "theme_id": "neko"
+    },
+    {
+      "canonical_name": "影霊衣",
+      "canonical_name_en": "Nekroz",
+      "theme_id": "nekroz"
+    },
+    {
+      "canonical_name": "ネメシス",
+      "canonical_name_en": "Nemeses",
+      "theme_id": "nemeses"
+    },
+    {
+      "canonical_name": "ネムレリア",
+      "canonical_name_en": "Nemleria",
+      "theme_id": "nemleria"
+    },
+    {
+      "canonical_name": "Ｎ",
+      "canonical_name_en": "Neo-Spacian",
+      "theme_id": "neo-spacian"
+    },
+    {
+      "canonical_name": "ネオス",
+      "canonical_name_en": "Neos",
+      "theme_id": "neos"
+    },
+    {
+      "canonical_name": "ネフティス",
+      "canonical_name_en": "Nephthys",
+      "theme_id": "nephthys"
+    },
+    {
+      "canonical_name": "素早い",
+      "canonical_name_en": "Nimble",
+      "theme_id": "nimble"
+    },
+    {
+      "canonical_name": "忍者",
+      "canonical_name_en": "Ninja",
+      "theme_id": "ninja"
+    },
+    {
+      "canonical_name": "忍法",
+      "canonical_name_en": "Ninjitsu Art",
+      "theme_id": "ninjitsu-art"
+    },
+    {
+      "canonical_name": "ニトロ",
+      "canonical_name_en": "Nitro",
+      "theme_id": "nitro"
+    },
+    {
+      "canonical_name": "聖剣",
+      "canonical_name_en": "Noble Arms",
+      "theme_id": "noble-arms"
+    },
+    {
+      "canonical_name": "聖騎士",
+      "canonical_name_en": "Noble Knight",
+      "theme_id": "noble-knight"
+    },
+    {
+      "canonical_name": "極星",
+      "canonical_name_en": "Nordic",
+      "theme_id": "nordic"
+    },
+    {
+      "canonical_name": "極星霊",
+      "canonical_name_en": "Nordic Alfar",
+      "theme_id": "nordic-alfar"
+    },
+    {
+      "canonical_name": "極星天",
+      "canonical_name_en": "Nordic Ascendant",
+      "theme_id": "nordic-ascendant"
+    },
+    {
+      "canonical_name": "極星獣",
+      "canonical_name_en": "Nordic Beast",
+      "theme_id": "nordic-beast"
+    },
+    {
+      "canonical_name": "極星宝",
+      "canonical_name_en": "Nordic Relic",
+      "theme_id": "nordic-relic"
+    },
+    {
+      "canonical_name": "ヌーベルズ",
+      "canonical_name_en": "Nouvelles",
+      "theme_id": "nouvelles"
+    },
+    {
+      "canonical_name": "Ｎｏ．",
+      "canonical_name_en": "Number",
+      "theme_id": "number"
+    },
+    {
+      "canonical_name": "Ｎｏ．１０Ｘ",
+      "canonical_name_en": "Number 10X",
+      "theme_id": "number-10x"
+    },
+    {
+      "canonical_name": "Ｎｏ．９９",
+      "canonical_name_en": "Number 99",
+      "theme_id": "number-99"
+    },
+    {
+      "canonical_name": "ＣＮｏ．",
+      "canonical_name_en": "Number C",
+      "theme_id": "number-c"
+    },
+    {
+      "canonical_name": "ＣＮｏ．１０Ｘ",
+      "canonical_name_en": "Number C10X",
+      "theme_id": "number-c10x"
+    },
+    {
+      "canonical_name": "ＣＮｏ．３９",
+      "canonical_name_en": "Number C39",
+      "theme_id": "number-c39"
+    },
+    {
+      "canonical_name": "ＳＮｏ．",
+      "canonical_name_en": "Number S",
+      "theme_id": "number-s"
+    },
+    {
+      "canonical_name": "ヌメロン",
+      "canonical_name_en": "Numeron",
+      "theme_id": "numeron"
+    },
+    {
+      "canonical_name": "ゲート・オブ・ヌメロン",
+      "canonical_name_en": "Numeron Gate",
+      "theme_id": "numeron-gate"
+    },
+    {
+      "canonical_name": "ヌメロニアス",
+      "canonical_name_en": "Numerounius",
+      "theme_id": "numerounius"
+    },
+    {
+      "canonical_name": "オッドアイズ",
+      "canonical_name_en": "Odd-Eyes",
+      "theme_id": "odd-eyes"
+    },
+    {
+      "canonical_name": "溟界",
+      "canonical_name_en": "Ogdoadic",
+      "theme_id": "ogdoadic"
+    },
+    {
+      "canonical_name": "おジャマ",
+      "canonical_name_en": "Ojama",
+      "theme_id": "ojama"
+    },
+    {
+      "canonical_name": "古神",
+      "canonical_name_en": "Old Entity",
+      "theme_id": "old-entity"
+    },
+    {
+      "canonical_name": "オノマト",
+      "canonical_name_en": "Onomat",
+      "theme_id": "onomat"
+    },
+    {
+      "canonical_name": "オルフェゴール",
+      "canonical_name_en": "Orcust",
+      "theme_id": "orcust"
+    },
+    {
+      "canonical_name": "外神",
+      "canonical_name_en": "Outer Entity",
+      "theme_id": "outer-entity"
+    },
+    {
+      "canonical_name": "Ｐ．Ｕ．Ｎ．Ｋ．",
+      "canonical_name_en": "P.U.N.K.",
+      "theme_id": "p-u-n-k"
+    },
+    {
+      "canonical_name": "ＰＳＹフレーム",
+      "canonical_name_en": "PSY-Frame",
+      "theme_id": "psy-frame"
+    },
+    {
+      "canonical_name": "ＰＳＹフレームギア",
+      "canonical_name_en": "PSY-Framegear",
+      "theme_id": "psy-framegear"
+    },
+    {
+      "canonical_name": "バージェストマ",
+      "canonical_name_en": "Paleozoic",
+      "theme_id": "paleozoic"
+    },
+    {
+      "canonical_name": "守護神官",
+      "canonical_name_en": "Palladium",
+      "theme_id": "palladium"
+    },
+    {
+      "canonical_name": "パピヨン",
+      "canonical_name_en": "Papillon",
+      "theme_id": "papillon"
+    },
+    {
+      "canonical_name": "パラサイト",
+      "canonical_name_en": "Parasite",
+      "theme_id": "parasite"
+    },
+    {
+      "canonical_name": "パーシアス",
+      "canonical_name_en": "Parshath",
+      "theme_id": "parshath"
+    },
+    {
+      "canonical_name": "聖菓使",
+      "canonical_name_en": "Patissciel",
+      "theme_id": "patissciel"
+    },
+    {
+      "canonical_name": "ペンデュラム・ドラゴン",
+      "canonical_name_en": "Pendulum Dragon",
+      "theme_id": "pendulum-dragon"
+    },
+    {
+      "canonical_name": "ペンデュラムグラフ",
+      "canonical_name_en": "Pendulumgraph",
+      "theme_id": "pendulumgraph"
+    },
+    {
+      "canonical_name": "ＰＳ",
+      "canonical_name_en": "Pendulumstatue",
+      "theme_id": "pendulumstatue"
+    },
+    {
+      "canonical_name": "ペンギン",
+      "canonical_name_en": "Penguin",
+      "theme_id": "penguin"
+    },
+    {
+      "canonical_name": "Ｅｍ",
+      "canonical_name_en": "Performage",
+      "theme_id": "performage"
+    },
+    {
+      "canonical_name": "ＥＭ",
+      "canonical_name_en": "Performapal",
+      "theme_id": "performapal"
+    },
+    {
+      "canonical_name": "幻魔",
+      "canonical_name_en": "Phantasm",
+      "theme_id": "phantasm"
+    },
+    {
+      "canonical_name": "幻煌龍",
+      "canonical_name_en": "Phantasm Spiral",
+      "theme_id": "phantasm-spiral"
+    },
+    {
+      "canonical_name": "幻獣",
+      "canonical_name_en": "Phantom Beast",
+      "theme_id": "phantom-beast"
+    },
+    {
+      "canonical_name": "幻蝶",
+      "canonical_name_en": "Phantom Butterfly",
+      "theme_id": "phantom-butterfly"
+    },
+    {
+      "canonical_name": "ファントム",
+      "canonical_name_en": "Phantom Knights",
+      "theme_id": "phantom-knights"
+    },
+    {
+      "canonical_name": "フォトン",
+      "canonical_name_en": "Photon",
+      "theme_id": "photon"
+    },
+    {
+      "canonical_name": "妖精",
+      "canonical_name_en": "Pixie",
+      "theme_id": "pixie"
+    },
+    {
+      "canonical_name": "海造賊",
+      "canonical_name_en": "Plunder Patroll",
+      "theme_id": "plunder-patroll"
+    },
+    {
+      "canonical_name": "憑依",
+      "canonical_name_en": "Possessed",
+      "theme_id": "possessed"
+    },
+    {
+      "canonical_name": "ポータン",
+      "canonical_name_en": "Potan",
+      "theme_id": "potan"
+    },
+    {
+      "canonical_name": "獄神",
+      "canonical_name_en": "Power Patron",
+      "theme_id": "power-patron"
+    },
+    {
+      "canonical_name": "パワー・ツール",
+      "canonical_name_en": "Power Tool",
+      "theme_id": "power-tool"
+    },
+    {
+      "canonical_name": "プランキッズ",
+      "canonical_name_en": "Prank-Kids",
+      "theme_id": "prank-kids"
+    },
+    {
+      "canonical_name": "プレデター",
+      "canonical_name_en": "Predap",
+      "theme_id": "predap"
+    },
+    {
+      "canonical_name": "捕食植物",
+      "canonical_name_en": "Predaplant",
+      "theme_id": "predaplant"
+    },
+    {
+      "canonical_name": "占術姫",
+      "canonical_name_en": "Prediction Princess",
+      "theme_id": "prediction-princess"
+    },
+    {
+      "canonical_name": "巫女",
+      "canonical_name_en": "Priestess",
+      "theme_id": "priestess"
+    },
+    {
+      "canonical_name": "原石",
+      "canonical_name_en": "Primite",
+      "theme_id": "primite"
+    },
+    {
+      "canonical_name": "魔導",
+      "canonical_name_en": "Prophecy",
+      "theme_id": "prophecy"
+    },
+    {
+      "canonical_name": "パペット",
+      "canonical_name_en": "Puppet",
+      "theme_id": "puppet"
+    },
+    {
+      "canonical_name": "ピュアリィ",
+      "canonical_name_en": "Purrely",
+      "theme_id": "purrely"
+    },
+    {
+      "canonical_name": "クリフォート",
+      "canonical_name_en": "Qli",
+      "theme_id": "qli"
+    },
+    {
+      "canonical_name": "クイズー",
+      "canonical_name_en": "Quiz",
+      "theme_id": "quiz"
+    },
+    {
+      "canonical_name": "クイズ・パネル",
+      "canonical_name_en": "Quiz Panel",
+      "theme_id": "quiz-panel"
+    },
+    {
+      "canonical_name": "レアル・ジェネクス",
+      "canonical_name_en": "R-Genex",
+      "theme_id": "r-genex"
+    },
+    {
+      "canonical_name": "Ｒ．Ｂ．",
+      "canonical_name_en": "R.B.",
+      "theme_id": "r-b"
+    },
+    {
+      "canonical_name": "狸",
+      "canonical_name_en": "Raccoon",
+      "theme_id": "raccoon"
+    },
+    {
+      "canonical_name": "絢嵐",
+      "canonical_name_en": "Radiant Typhoon",
+      "theme_id": "radiant-typhoon"
+    },
+    {
+      "canonical_name": "蕾禍",
+      "canonical_name_en": "Ragnaraika",
+      "theme_id": "ragnaraika"
+    },
+    {
+      "canonical_name": "ＲＲ",
+      "canonical_name_en": "Raidraptor",
+      "theme_id": "raidraptor"
+    },
+    {
+      "canonical_name": "レイズ・ムーン",
+      "canonical_name_en": "Raise Moon",
+      "theme_id": "raise-moon"
+    },
+    {
+      "canonical_name": "ＲＤＭ",
+      "canonical_name_en": "Rank-Down-Magic",
+      "theme_id": "rank-down-magic"
+    },
+    {
+      "canonical_name": "ＲＵＭ",
+      "canonical_name_en": "Rank-Up-Magic",
+      "theme_id": "rank-up-magic"
+    },
+    {
+      "canonical_name": "リアクター",
+      "canonical_name_en": "Reactor",
+      "theme_id": "reactor"
+    },
+    {
+      "canonical_name": "レシピ",
+      "canonical_name_en": "Recipe",
+      "theme_id": "recipe"
+    },
+    {
+      "canonical_name": "レッドアイズ",
+      "canonical_name_en": "Red-Eyes",
+      "theme_id": "red-eyes"
+    },
+    {
+      "canonical_name": "リジェネシス",
+      "canonical_name_en": "Regenesis",
+      "theme_id": "regenesis"
+    },
+    {
+      "canonical_name": "リインゼルム",
+      "canonical_name_en": "Reindsurm",
+      "theme_id": "reindsurm"
+    },
+    {
+      "canonical_name": "レプティレス",
+      "canonical_name_en": "Reptilianne",
+      "theme_id": "reptilianne"
+    },
+    {
+      "canonical_name": "Ｒ－ＡＣＥ",
+      "canonical_name_en": "Rescue-ACE",
+      "theme_id": "rescue-ace"
+    },
+    {
+      "canonical_name": "リゾネーター",
+      "canonical_name_en": "Resonator",
+      "theme_id": "resonator"
+    },
+    {
+      "canonical_name": "六花",
+      "canonical_name_en": "Rikka",
+      "theme_id": "rikka"
+    },
+    {
+      "canonical_name": "霊獣",
+      "canonical_name_en": "Ritual Beast",
+      "theme_id": "ritual-beast"
+    },
+    {
+      "canonical_name": "霊獣使い",
+      "canonical_name_en": "Ritual Beast Tamer",
+      "theme_id": "ritual-beast-tamer"
+    },
+    {
+      "canonical_name": "聖霊獣騎",
+      "canonical_name_en": "Ritual Beast Ulti",
+      "theme_id": "ritual-beast-ulti"
+    },
+    {
+      "canonical_name": "ロイド",
+      "canonical_name_en": "Roid",
+      "theme_id": "roid"
+    },
+    {
+      "canonical_name": "ヴァレット",
+      "canonical_name_en": "Rokket",
+      "theme_id": "rokket"
+    },
+    {
+      "canonical_name": "ローズ",
+      "canonical_name_en": "Rose",
+      "theme_id": "rose"
+    },
+    {
+      "canonical_name": "ローズ・ドラゴン",
+      "canonical_name_en": "Rose Dragon",
+      "theme_id": "rose-dragon"
+    },
+    {
+      "canonical_name": "ＲＣＭ",
+      "canonical_name_en": "Royal Cookpal",
+      "theme_id": "royal-cookpal"
     }
   ]
 }

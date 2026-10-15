@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｐ．Ｕ．Ｎ．Ｋ．",
+  "canonical_name_en": "P.U.N.K.",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "P.U.N.K.",
+    "url": "https://yugipedia.com/wiki/P.U.N.K."
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "p-u-n-k"
+}

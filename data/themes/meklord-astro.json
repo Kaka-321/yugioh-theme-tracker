@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "機皇神",
+  "canonical_name_en": "Meklord Astro",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Meklord Astro",
+    "url": "https://yugipedia.com/wiki/Meklord_Astro"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "meklord-astro"
+}

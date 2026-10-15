@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "幻煌龍",
+  "canonical_name_en": "Phantasm Spiral",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Phantasm Spiral",
+    "url": "https://yugipedia.com/wiki/Phantasm_Spiral"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "phantasm-spiral"
+}

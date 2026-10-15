@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "リジェネシス",
+  "canonical_name_en": "Regenesis",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Regenesis",
+    "url": "https://yugipedia.com/wiki/Regenesis"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "regenesis"
+}

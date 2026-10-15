@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "マリンセス",
+  "canonical_name_en": "Marincess",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Marincess",
+    "url": "https://yugipedia.com/wiki/Marincess"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "marincess"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＰＳＹフレームギア",
+  "canonical_name_en": "PSY-Framegear",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "PSY-Framegear",
+    "url": "https://yugipedia.com/wiki/PSY-Framegear"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "psy-framegear"
+}

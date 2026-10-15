@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "忍法",
+  "canonical_name_en": "Ninjitsu Art",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ninjitsu Art",
+    "url": "https://yugipedia.com/wiki/Ninjitsu_Art"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ninjitsu-art"
+}

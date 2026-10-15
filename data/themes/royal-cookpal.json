@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＲＣＭ",
+  "canonical_name_en": "Royal Cookpal",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Royal Cookpal",
+    "url": "https://yugipedia.com/wiki/Royal_Cookpal"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "royal-cookpal"
+}

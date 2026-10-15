@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ジャックナイツ",
+  "canonical_name_en": "Mekk-Knight",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Mekk-Knight",
+    "url": "https://yugipedia.com/wiki/Mekk-Knight"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "mekk-knight"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "中生代",
+  "canonical_name_en": "Mesozoic",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Mesozoic",
+    "url": "https://yugipedia.com/wiki/Mesozoic"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "mesozoic"
+}

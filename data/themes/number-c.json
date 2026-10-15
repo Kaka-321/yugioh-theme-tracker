@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＣＮｏ．",
+  "canonical_name_en": "Number C",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Number C",
+    "url": "https://yugipedia.com/wiki/Number_C"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "number-c"
+}

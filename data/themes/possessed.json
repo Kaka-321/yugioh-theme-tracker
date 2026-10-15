@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "憑依",
+  "canonical_name_en": "Possessed",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Possessed",
+    "url": "https://yugipedia.com/wiki/Possessed"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "possessed"
+}

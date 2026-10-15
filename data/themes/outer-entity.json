@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "外神",
+  "canonical_name_en": "Outer Entity",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Outer Entity",
+    "url": "https://yugipedia.com/wiki/Outer_Entity"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "outer-entity"
+}

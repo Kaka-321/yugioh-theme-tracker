@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "オノマト",
+  "canonical_name_en": "Onomat",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Onomat",
+    "url": "https://yugipedia.com/wiki/Onomat"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "onomat"
+}

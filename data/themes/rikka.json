@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "六花",
+  "canonical_name_en": "Rikka",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Rikka",
+    "url": "https://yugipedia.com/wiki/Rikka"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "rikka"
+}
