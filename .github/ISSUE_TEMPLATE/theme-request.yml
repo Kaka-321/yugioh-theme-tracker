@@ -1,0 +1,46 @@
+name: テーマ追加リクエスト
+description: 追跡するテーマを登録します
+title: "[theme-request] テーマ追加"
+labels:
+  - theme-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Yugipediaのアーキタイプページをもとに、追跡対象テーマを追加します。
+        リポジトリ所有者によるIssueのみ自動登録されます。
+
+  - type: input
+    id: source_title
+    attributes:
+      label: Yugipediaページ名
+      description: 例: Dark Magician (archetype)
+      placeholder: Dark Magician (archetype)
+    validations:
+      required: true
+
+  - type: input
+    id: theme_id
+    attributes:
+      label: テーマID
+      description: ファイル名に使う半角英小文字・数字・ハイフンのみ
+      placeholder: dark-magician
+    validations:
+      required: true
+
+  - type: input
+    id: canonical_name
+    attributes:
+      label: 日本語名
+      placeholder: ブラック・マジシャン
+    validations:
+      required: true
+
+  - type: input
+    id: aliases
+    attributes:
+      label: 別名
+      description: カンマ区切りで入力してください
+      placeholder: ブラックマジシャン, Dark Magician
+    validations:
+      required: false
