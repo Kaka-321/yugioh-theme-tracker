@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "コアラ",
+  "canonical_name_en": "Koala",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Koala",
+    "url": "https://yugipedia.com/wiki/Koala"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "koala"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ライトロード",
+  "canonical_name_en": "Lightsworn",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Lightsworn",
+    "url": "https://yugipedia.com/wiki/Lightsworn"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "lightsworn"
+}

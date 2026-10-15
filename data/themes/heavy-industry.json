@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "重機",
+  "canonical_name_en": "Heavy Industry",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Heavy Industry",
+    "url": "https://yugipedia.com/wiki/Heavy_Industry"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "heavy-industry"
+}

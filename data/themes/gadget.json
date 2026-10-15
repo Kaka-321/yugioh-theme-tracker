@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ガジェット",
+  "canonical_name_en": "Gadget",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gadget",
+    "url": "https://yugipedia.com/wiki/Gadget"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gadget"
+}

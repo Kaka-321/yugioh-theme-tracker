@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "陽炎獣",
+  "canonical_name_en": "Hazy Flame",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Hazy Flame",
+    "url": "https://yugipedia.com/wiki/Hazy_Flame"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "hazy-flame"
+}

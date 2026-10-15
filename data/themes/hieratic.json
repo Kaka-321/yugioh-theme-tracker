@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "聖刻",
+  "canonical_name_en": "Hieratic",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Hieratic",
+    "url": "https://yugipedia.com/wiki/Hieratic"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "hieratic"
+}

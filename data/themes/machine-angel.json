@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "機械天使",
+  "canonical_name_en": "Machine Angel",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Machine Angel",
+    "url": "https://yugipedia.com/wiki/Machine_Angel"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "machine-angel"
+}

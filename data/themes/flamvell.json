@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "フレムベル",
+  "canonical_name_en": "Flamvell",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Flamvell",
+    "url": "https://yugipedia.com/wiki/Flamvell"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "flamvell"
+}

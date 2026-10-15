@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "空牙団",
+  "canonical_name_en": "Fur Hire",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Fur Hire",
+    "url": "https://yugipedia.com/wiki/Fur_Hire"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "fur-hire"
+}

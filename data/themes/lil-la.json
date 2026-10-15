@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "リィラ",
+  "canonical_name_en": "Lil-la",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Lil-la",
+    "url": "https://yugipedia.com/wiki/Lil-la"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "lil-la"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "フュージョン・ドラゴン",
+  "canonical_name_en": "Fusion Dragon",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Fusion Dragon",
+    "url": "https://yugipedia.com/wiki/Fusion_Dragon"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "fusion-dragon"
+}

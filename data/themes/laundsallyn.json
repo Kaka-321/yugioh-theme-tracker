@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ランスロット",
+  "canonical_name_en": "Laundsallyn",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Laundsallyn",
+    "url": "https://yugipedia.com/wiki/Laundsallyn"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "laundsallyn"
+}

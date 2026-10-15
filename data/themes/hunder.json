@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "サンダー",
+  "canonical_name_en": "Hunder",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Hunder",
+    "url": "https://yugipedia.com/wiki/Hunder"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "hunder"
+}

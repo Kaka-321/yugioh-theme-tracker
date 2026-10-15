@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "キラーチューン",
+  "canonical_name_en": "Kewl Tune",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Kewl Tune",
+    "url": "https://yugipedia.com/wiki/Kewl_Tune"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "kewl-tune"
+}

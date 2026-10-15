@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "グランドレミコード",
+  "canonical_name_en": "GranSolfachord",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "GranSolfachord",
+    "url": "https://yugipedia.com/wiki/GranSolfachord"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gransolfachord"
+}

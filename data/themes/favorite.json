@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "フェイバリット",
+  "canonical_name_en": "Favorite",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Favorite",
+    "url": "https://yugipedia.com/wiki/Favorite"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "favorite"
+}

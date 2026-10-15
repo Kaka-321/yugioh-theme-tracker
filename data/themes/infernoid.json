@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "インフェルノイド",
+  "canonical_name_en": "Infernoid",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Infernoid",
+    "url": "https://yugipedia.com/wiki/Infernoid"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "infernoid"
+}

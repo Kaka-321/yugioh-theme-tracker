@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "マシンナーズ",
+  "canonical_name_en": "Machina",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Machina",
+    "url": "https://yugipedia.com/wiki/Machina"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "machina"
+}

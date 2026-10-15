@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "侵略の",
+  "canonical_name_en": "Infestation",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Infestation",
+    "url": "https://yugipedia.com/wiki/Infestation"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "infestation"
+}

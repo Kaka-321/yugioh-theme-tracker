@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "紋章",
+  "canonical_name_en": "Heraldic",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Heraldic",
+    "url": "https://yugipedia.com/wiki/Heraldic"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "heraldic"
+}

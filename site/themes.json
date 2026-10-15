@@ -1010,6 +1010,756 @@
       "canonical_name": "妖精伝姫",
       "canonical_name_en": "Fairy Tail",
       "theme_id": "fairy-tail"
+    },
+    {
+      "canonical_name": "憑依装着",
+      "canonical_name_en": "Familiar-Possessed",
+      "theme_id": "familiar-possessed"
+    },
+    {
+      "canonical_name": "フェイバリット",
+      "canonical_name_en": "Favorite",
+      "theme_id": "favorite"
+    },
+    {
+      "canonical_name": "デモンスミス",
+      "canonical_name_en": "Fiendsmith",
+      "theme_id": "fiendsmith"
+    },
+    {
+      "canonical_name": "炎星",
+      "canonical_name_en": "Fire Fist",
+      "theme_id": "fire-fist"
+    },
+    {
+      "canonical_name": "炎舞",
+      "canonical_name_en": "Fire Formation",
+      "theme_id": "fire-formation"
+    },
+    {
+      "canonical_name": "炎王",
+      "canonical_name_en": "Fire King",
+      "theme_id": "fire-king"
+    },
+    {
+      "canonical_name": "炎王獣",
+      "canonical_name_en": "Fire King Avatar",
+      "theme_id": "fire-king-avatar"
+    },
+    {
+      "canonical_name": "フィッシュボーグ",
+      "canonical_name_en": "Fishborg",
+      "theme_id": "fishborg"
+    },
+    {
+      "canonical_name": "フレムベル",
+      "canonical_name_en": "Flamvell",
+      "theme_id": "flamvell"
+    },
+    {
+      "canonical_name": "ふわんだりぃず",
+      "canonical_name_en": "Floowandereeze",
+      "theme_id": "floowandereeze"
+    },
+    {
+      "canonical_name": "花札衛",
+      "canonical_name_en": "Flower Cardian",
+      "theme_id": "flower-cardian"
+    },
+    {
+      "canonical_name": "ファーニマル",
+      "canonical_name_en": "Fluffal",
+      "theme_id": "fluffal"
+    },
+    {
+      "canonical_name": "封印獣",
+      "canonical_name_en": "Forbidden Beast",
+      "theme_id": "forbidden-beast"
+    },
+    {
+      "canonical_name": "封印されし",
+      "canonical_name_en": "Forbidden One",
+      "theme_id": "forbidden-one"
+    },
+    {
+      "canonical_name": "占い魔女",
+      "canonical_name_en": "Fortune Fairy",
+      "theme_id": "fortune-fairy"
+    },
+    {
+      "canonical_name": "フォーチュンレディ",
+      "canonical_name_en": "Fortune Lady",
+      "theme_id": "fortune-lady"
+    },
+    {
+      "canonical_name": "化石",
+      "canonical_name_en": "Fossil",
+      "theme_id": "fossil"
+    },
+    {
+      "canonical_name": "デストーイ",
+      "canonical_name_en": "Frightfur",
+      "theme_id": "frightfur"
+    },
+    {
+      "canonical_name": "ガエル",
+      "canonical_name_en": "Frog",
+      "theme_id": "frog"
+    },
+    {
+      "canonical_name": "空牙団",
+      "canonical_name_en": "Fur Hire",
+      "theme_id": "fur-hire"
+    },
+    {
+      "canonical_name": "フュージョン・ドラゴン",
+      "canonical_name_en": "Fusion Dragon",
+      "theme_id": "fusion-dragon"
+    },
+    {
+      "canonical_name": "Ｇゴーレム",
+      "canonical_name_en": "G Golem",
+      "theme_id": "g-golem"
+    },
+    {
+      "canonical_name": "ＧＭＸ",
+      "canonical_name_en": "GMX",
+      "theme_id": "gmx"
+    },
+    {
+      "canonical_name": "ガジェット",
+      "canonical_name_en": "Gadget",
+      "theme_id": "gadget"
+    },
+    {
+      "canonical_name": "ガガガ",
+      "canonical_name_en": "Gagaga",
+      "theme_id": "gagaga"
+    },
+    {
+      "canonical_name": "ギャラクシー",
+      "canonical_name_en": "Galaxy",
+      "theme_id": "galaxy"
+    },
+    {
+      "canonical_name": "ギャラクシーアイズ",
+      "canonical_name_en": "Galaxy-Eyes",
+      "theme_id": "galaxy-eyes"
+    },
+    {
+      "canonical_name": "ギャラクシーアイズ・タキオン・ドラゴン",
+      "canonical_name_en": "Galaxy-Eyes Tachyon Dragon",
+      "theme_id": "galaxy-eyes-tachyon-dragon"
+    },
+    {
+      "canonical_name": "ギアギア",
+      "canonical_name_en": "Geargia",
+      "theme_id": "geargia"
+    },
+    {
+      "canonical_name": "ジェム",
+      "canonical_name_en": "Gem-",
+      "theme_id": "gem"
+    },
+    {
+      "canonical_name": "ジェムナイト",
+      "canonical_name_en": "Gem-Knight",
+      "theme_id": "gem-knight"
+    },
+    {
+      "canonical_name": "ジェムナイトレディ",
+      "canonical_name_en": "Gem-Knight Lady",
+      "theme_id": "gem-knight-lady"
+    },
+    {
+      "canonical_name": "ジェネレイド",
+      "canonical_name_en": "Generaider",
+      "theme_id": "generaider"
+    },
+    {
+      "canonical_name": "ジェネクス",
+      "canonical_name_en": "Genex",
+      "theme_id": "genex"
+    },
+    {
+      "canonical_name": "ゴーストリック",
+      "canonical_name_en": "Ghostrick",
+      "theme_id": "ghostrick"
+    },
+    {
+      "canonical_name": "ゴーティス",
+      "canonical_name_en": "Ghoti",
+      "theme_id": "ghoti"
+    },
+    {
+      "canonical_name": "ギミック・パペット",
+      "canonical_name_en": "Gimmick Puppet",
+      "theme_id": "gimmick-puppet"
+    },
+    {
+      "canonical_name": "リチュア",
+      "canonical_name_en": "Gishki",
+      "theme_id": "gishki"
+    },
+    {
+      "canonical_name": "グラディアル",
+      "canonical_name_en": "Gladiator",
+      "theme_id": "gladiator"
+    },
+    {
+      "canonical_name": "剣闘獣",
+      "canonical_name_en": "Gladiator Beast",
+      "theme_id": "gladiator-beast"
+    },
+    {
+      "canonical_name": "ＧＯ－ＤＤ",
+      "canonical_name_en": "Go-D/D",
+      "theme_id": "go-d-d"
+    },
+    {
+      "canonical_name": "ゴブリン",
+      "canonical_name_en": "Goblin",
+      "theme_id": "goblin"
+    },
+    {
+      "canonical_name": "ゴブリンライダー",
+      "canonical_name_en": "Goblin Biker",
+      "theme_id": "goblin-biker"
+    },
+    {
+      "canonical_name": "ゴゴゴ",
+      "canonical_name_en": "Gogogo",
+      "theme_id": "gogogo"
+    },
+    {
+      "canonical_name": "ＧＰ",
+      "canonical_name_en": "Gold Pride",
+      "theme_id": "gold-pride"
+    },
+    {
+      "canonical_name": "黄金郷",
+      "canonical_name_en": "Golden Land",
+      "theme_id": "golden-land"
+    },
+    {
+      "canonical_name": "ゴルゴニック",
+      "canonical_name_en": "Gorgonic",
+      "theme_id": "gorgonic"
+    },
+    {
+      "canonical_name": "ガトムズ",
+      "canonical_name_en": "Gottoms",
+      "theme_id": "gottoms"
+    },
+    {
+      "canonical_name": "剛鬼",
+      "canonical_name_en": "Gouki",
+      "theme_id": "gouki"
+    },
+    {
+      "canonical_name": "ゴヨウ",
+      "canonical_name_en": "Goyo",
+      "theme_id": "goyo"
+    },
+    {
+      "canonical_name": "グランドレミコード",
+      "canonical_name_en": "GranSolfachord",
+      "theme_id": "gransolfachord"
+    },
+    {
+      "canonical_name": "グランエル",
+      "canonical_name_en": "Granel",
+      "theme_id": "granel"
+    },
+    {
+      "canonical_name": "墓守",
+      "canonical_name_en": "Gravekeeper's",
+      "theme_id": "gravekeeper-s"
+    },
+    {
+      "canonical_name": "グレイドル",
+      "canonical_name_en": "Graydle",
+      "theme_id": "graydle"
+    },
+    {
+      "canonical_name": "Ｇ",
+      "canonical_name_en": "Guard",
+      "theme_id": "guard"
+    },
+    {
+      "canonical_name": "ガーディアン",
+      "canonical_name_en": "Guardian",
+      "theme_id": "guardian"
+    },
+    {
+      "canonical_name": "軍貫",
+      "canonical_name_en": "Gunkan",
+      "theme_id": "gunkan"
+    },
+    {
+      "canonical_name": "ガスタ",
+      "canonical_name_en": "Gusto",
+      "theme_id": "gusto"
+    },
+    {
+      "canonical_name": "ガッツマスター",
+      "canonical_name_en": "Gutsmaster",
+      "theme_id": "gutsmaster"
+    },
+    {
+      "canonical_name": "ＨＥＲＯ",
+      "canonical_name_en": "HERO",
+      "theme_id": "hero"
+    },
+    {
+      "canonical_name": "ハーピィ",
+      "canonical_name_en": "Harpie",
+      "theme_id": "harpie"
+    },
+    {
+      "canonical_name": "ヘイズ",
+      "canonical_name_en": "Hazy",
+      "theme_id": "hazy"
+    },
+    {
+      "canonical_name": "陽炎獣",
+      "canonical_name_en": "Hazy Flame",
+      "theme_id": "hazy-flame"
+    },
+    {
+      "canonical_name": "ハート",
+      "canonical_name_en": "Heart",
+      "theme_id": "heart"
+    },
+    {
+      "canonical_name": "ハートモンスター",
+      "canonical_name_en": "Heart Monster",
+      "theme_id": "heart-monster"
+    },
+    {
+      "canonical_name": "重機",
+      "canonical_name_en": "Heavy Industry",
+      "theme_id": "heavy-industry"
+    },
+    {
+      "canonical_name": "ヘカトンケイル",
+      "canonical_name_en": "Hecahands",
+      "theme_id": "hecahands"
+    },
+    {
+      "canonical_name": "ヘリオス",
+      "canonical_name_en": "Helios",
+      "theme_id": "helios"
+    },
+    {
+      "canonical_name": "地獄螺戦鬼",
+      "canonical_name_en": "Helixx",
+      "theme_id": "helixx"
+    },
+    {
+      "canonical_name": "地獄",
+      "canonical_name_en": "Hell",
+      "theme_id": "hell"
+    },
+    {
+      "canonical_name": "紋章",
+      "canonical_name_en": "Heraldic",
+      "theme_id": "heraldic"
+    },
+    {
+      "canonical_name": "紋章獣",
+      "canonical_name_en": "Heraldic Beast",
+      "theme_id": "heraldic-beast"
+    },
+    {
+      "canonical_name": "メダリオン",
+      "canonical_name_en": "Heraldry",
+      "theme_id": "heraldry"
+    },
+    {
+      "canonical_name": "ヒロイック",
+      "canonical_name_en": "Heroic",
+      "theme_id": "heroic"
+    },
+    {
+      "canonical_name": "Ｈ・Ｃ",
+      "canonical_name_en": "Heroic Challenger",
+      "theme_id": "heroic-challenger"
+    },
+    {
+      "canonical_name": "Ｈ－Ｃ",
+      "canonical_name_en": "Heroic Champion",
+      "theme_id": "heroic-champion"
+    },
+    {
+      "canonical_name": "ＨＳＲ",
+      "canonical_name_en": "Hi-Speedroid",
+      "theme_id": "hi-speedroid"
+    },
+    {
+      "canonical_name": "聖刻",
+      "canonical_name_en": "Hieratic",
+      "theme_id": "hieratic"
+    },
+    {
+      "canonical_name": "ホール",
+      "canonical_name_en": "Hole",
+      "theme_id": "hole"
+    },
+    {
+      "canonical_name": "聖剣士",
+      "canonical_name_en": "Holy Swordsman",
+      "theme_id": "holy-swordsman"
+    },
+    {
+      "canonical_name": "ホルス",
+      "canonical_name_en": "Horus",
+      "theme_id": "horus"
+    },
+    {
+      "canonical_name": "ホルスの黒炎竜",
+      "canonical_name_en": "Horus the Black Flame Dragon",
+      "theme_id": "horus-the-black-flame-dragon"
+    },
+    {
+      "canonical_name": "サンダー",
+      "canonical_name_en": "Hunder",
+      "theme_id": "hunder"
+    },
+    {
+      "canonical_name": "ハイドライブ",
+      "canonical_name_en": "Hydradrive",
+      "theme_id": "hydradrive"
+    },
+    {
+      "canonical_name": "ヒュペリオン",
+      "canonical_name_en": "Hyperion",
+      "theme_id": "hyperion"
+    },
+    {
+      "canonical_name": "氷結界",
+      "canonical_name_en": "Ice Barrier",
+      "theme_id": "ice-barrier"
+    },
+    {
+      "canonical_name": "氷水",
+      "canonical_name_en": "Icejade",
+      "theme_id": "icejade"
+    },
+    {
+      "canonical_name": "イグナイト",
+      "canonical_name_en": "Igknight",
+      "theme_id": "igknight"
+    },
+    {
+      "canonical_name": "魔神儀",
+      "canonical_name_en": "Impcantation",
+      "theme_id": "impcantation"
+    },
+    {
+      "canonical_name": "インフェルニティ",
+      "canonical_name_en": "Infernity",
+      "theme_id": "infernity"
+    },
+    {
+      "canonical_name": "焔聖剣",
+      "canonical_name_en": "Infernoble Arms",
+      "theme_id": "infernoble-arms"
+    },
+    {
+      "canonical_name": "焔聖騎士",
+      "canonical_name_en": "Infernoble Knight",
+      "theme_id": "infernoble-knight"
+    },
+    {
+      "canonical_name": "インフェルノイド",
+      "canonical_name_en": "Infernoid",
+      "theme_id": "infernoid"
+    },
+    {
+      "canonical_name": "侵略の",
+      "canonical_name_en": "Infestation",
+      "theme_id": "infestation"
+    },
+    {
+      "canonical_name": "無限起動",
+      "canonical_name_en": "Infinitrack",
+      "theme_id": "infinitrack"
+    },
+    {
+      "canonical_name": "犬",
+      "canonical_name_en": "Inu",
+      "theme_id": "inu"
+    },
+    {
+      "canonical_name": "召喚獣",
+      "canonical_name_en": "Invoked",
+      "theme_id": "invoked"
+    },
+    {
+      "canonical_name": "甲虫装機",
+      "canonical_name_en": "Inzektor",
+      "theme_id": "inzektor"
+    },
+    {
+      "canonical_name": "Ｃ",
+      "canonical_name_en": "Iron Chain",
+      "theme_id": "iron-chain"
+    },
+    {
+      "canonical_name": "アイヴィ",
+      "canonical_name_en": "Ivy",
+      "theme_id": "ivy"
+    },
+    {
+      "canonical_name": "ジェスター",
+      "canonical_name_en": "Jester",
+      "theme_id": "jester"
+    },
+    {
+      "canonical_name": "道化傀儡",
+      "canonical_name_en": "Jester Puppet",
+      "theme_id": "jester-puppet"
+    },
+    {
+      "canonical_name": "ジャンク",
+      "canonical_name_en": "Junk",
+      "theme_id": "junk"
+    },
+    {
+      "canonical_name": "オンボロボ",
+      "canonical_name_en": "Junk Robot",
+      "theme_id": "junk-robot"
+    },
+    {
+      "canonical_name": "ジュラック",
+      "canonical_name_en": "Jurrac",
+      "theme_id": "jurrac"
+    },
+    {
+      "canonical_name": "ジュッテ",
+      "canonical_name_en": "Jutte",
+      "theme_id": "jutte"
+    },
+    {
+      "canonical_name": "Ｋ９",
+      "canonical_name_en": "K9",
+      "theme_id": "k9"
+    },
+    {
+      "canonical_name": "歌舞伎舞台",
+      "canonical_name_en": "Kabuki Stage",
+      "theme_id": "kabuki-stage"
+    },
+    {
+      "canonical_name": "壊獣",
+      "canonical_name_en": "Kaiju",
+      "theme_id": "kaiju"
+    },
+    {
+      "canonical_name": "カンガルー",
+      "canonical_name_en": "Kangaroo",
+      "theme_id": "kangaroo"
+    },
+    {
+      "canonical_name": "カラクリ",
+      "canonical_name_en": "Karakuri",
+      "theme_id": "karakuri"
+    },
+    {
+      "canonical_name": "クシャトリラ",
+      "canonical_name_en": "Kashtira",
+      "theme_id": "kashtira"
+    },
+    {
+      "canonical_name": "キラーチューン",
+      "canonical_name_en": "Kewl Tune",
+      "theme_id": "kewl-tune"
+    },
+    {
+      "canonical_name": "キスキル",
+      "canonical_name_en": "Ki-sikil",
+      "theme_id": "ki-sikil"
+    },
+    {
+      "canonical_name": "王",
+      "canonical_name_en": "King",
+      "theme_id": "king"
+    },
+    {
+      "canonical_name": "ナイト",
+      "canonical_name_en": "Knight",
+      "theme_id": "knight"
+    },
+    {
+      "canonical_name": "トロイメア",
+      "canonical_name_en": "Knightmare",
+      "theme_id": "knightmare"
+    },
+    {
+      "canonical_name": "コアキメイル",
+      "canonical_name_en": "Koa'ki Meiru",
+      "theme_id": "koa-ki-meiru"
+    },
+    {
+      "canonical_name": "コアラ",
+      "canonical_name_en": "Koala",
+      "theme_id": "koala"
+    },
+    {
+      "canonical_name": "Ｋｏｚｍｏ",
+      "canonical_name_en": "Kozmo",
+      "theme_id": "kozmo"
+    },
+    {
+      "canonical_name": "クローラー",
+      "canonical_name_en": "Krawler",
+      "theme_id": "krawler"
+    },
+    {
+      "canonical_name": "ＬＶ",
+      "canonical_name_en": "LV",
+      "theme_id": "lv"
+    },
+    {
+      "canonical_name": "ラビュリンス",
+      "canonical_name_en": "Labrynth",
+      "theme_id": "labrynth"
+    },
+    {
+      "canonical_name": "悪魔嬢",
+      "canonical_name_en": "Lady of Lament",
+      "theme_id": "lady-of-lament"
+    },
+    {
+      "canonical_name": "ランプ",
+      "canonical_name_en": "Lamp",
+      "theme_id": "lamp"
+    },
+    {
+      "canonical_name": "ランドスター",
+      "canonical_name_en": "Landstar",
+      "theme_id": "landstar"
+    },
+    {
+      "canonical_name": "ランスロット",
+      "canonical_name_en": "Laundsallyn",
+      "theme_id": "laundsallyn"
+    },
+    {
+      "canonical_name": "ラヴァル",
+      "canonical_name_en": "Laval",
+      "theme_id": "laval"
+    },
+    {
+      "canonical_name": "伝説の竜",
+      "canonical_name_en": "Legendary Dragon",
+      "theme_id": "legendary-dragon"
+    },
+    {
+      "canonical_name": "伝説の騎士",
+      "canonical_name_en": "Legendary Knight",
+      "theme_id": "legendary-knight"
+    },
+    {
+      "canonical_name": "リブロマンサー",
+      "canonical_name_en": "Libromancer",
+      "theme_id": "libromancer"
+    },
+    {
+      "canonical_name": "ライトロード",
+      "canonical_name_en": "Lightsworn",
+      "theme_id": "lightsworn"
+    },
+    {
+      "canonical_name": "リィラ",
+      "canonical_name_en": "Lil-la",
+      "theme_id": "lil-la"
+    },
+    {
+      "canonical_name": "ラインモンスター",
+      "canonical_name_en": "Line Monster",
+      "theme_id": "line-monster"
+    },
+    {
+      "canonical_name": "ライブツイン",
+      "canonical_name_en": "Live☆Twin",
+      "theme_id": "live-twin"
+    },
+    {
+      "canonical_name": "ヴェルズ",
+      "canonical_name_en": "Lswarm",
+      "theme_id": "lswarm"
+    },
+    {
+      "canonical_name": "ムーンライト",
+      "canonical_name_en": "Lunalight",
+      "theme_id": "lunalight"
+    },
+    {
+      "canonical_name": "ＬＬ",
+      "canonical_name_en": "Lyrilusc",
+      "theme_id": "lyrilusc"
+    },
+    {
+      "canonical_name": "マシンナーズ",
+      "canonical_name_en": "Machina",
+      "theme_id": "machina"
+    },
+    {
+      "canonical_name": "機械天使",
+      "canonical_name_en": "Machine Angel",
+      "theme_id": "machine-angel"
+    },
+    {
+      "canonical_name": "マドルチェ",
+      "canonical_name_en": "Madolche",
+      "theme_id": "madolche"
+    },
+    {
+      "canonical_name": "魔法妖精",
+      "canonical_name_en": "Magic Elf",
+      "theme_id": "magic-elf"
+    },
+    {
+      "canonical_name": "魔弾",
+      "canonical_name_en": "Magical Musket",
+      "theme_id": "magical-musket"
+    },
+    {
+      "canonical_name": "魔術師",
+      "canonical_name_en": "Magician",
+      "theme_id": "magician"
+    },
+    {
+      "canonical_name": "マジシャン・ガール",
+      "canonical_name_en": "Magician Girl",
+      "theme_id": "magician-girl"
+    },
+    {
+      "canonical_name": "魔鍵",
+      "canonical_name_en": "Magikey",
+      "theme_id": "magikey"
+    },
+    {
+      "canonical_name": "マギストス",
+      "canonical_name_en": "Magistus",
+      "theme_id": "magistus"
+    },
+    {
+      "canonical_name": "磁石の戦士",
+      "canonical_name_en": "Magna Warrior",
+      "theme_id": "magna-warrior"
+    },
+    {
+      "canonical_name": "マグネット",
+      "canonical_name_en": "Magnet",
+      "theme_id": "magnet"
+    },
+    {
+      "canonical_name": "マグネット・ウォリアー",
+      "canonical_name_en": "Magnet Warrior",
+      "theme_id": "magnet-warrior"
     }
   ]
 }

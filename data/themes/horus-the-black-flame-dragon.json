@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ホルスの黒炎竜",
+  "canonical_name_en": "Horus the Black Flame Dragon",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Horus the Black Flame Dragon",
+    "url": "https://yugipedia.com/wiki/Horus_the_Black_Flame_Dragon"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "horus-the-black-flame-dragon"
+}

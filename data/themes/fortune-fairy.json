@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "占い魔女",
+  "canonical_name_en": "Fortune Fairy",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Fortune Fairy",
+    "url": "https://yugipedia.com/wiki/Fortune_Fairy"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "fortune-fairy"
+}

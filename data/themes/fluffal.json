@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ファーニマル",
+  "canonical_name_en": "Fluffal",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Fluffal",
+    "url": "https://yugipedia.com/wiki/Fluffal"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "fluffal"
+}

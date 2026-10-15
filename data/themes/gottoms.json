@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ガトムズ",
+  "canonical_name_en": "Gottoms",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gottoms",
+    "url": "https://yugipedia.com/wiki/Gottoms"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gottoms"
+}

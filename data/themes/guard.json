@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｇ",
+  "canonical_name_en": "Guard",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Guard",
+    "url": "https://yugipedia.com/wiki/Guard"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "guard"
+}

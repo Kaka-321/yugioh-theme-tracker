@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "焔聖騎士",
+  "canonical_name_en": "Infernoble Knight",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Infernoble Knight",
+    "url": "https://yugipedia.com/wiki/Infernoble_Knight"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "infernoble-knight"
+}

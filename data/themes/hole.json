@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ホール",
+  "canonical_name_en": "Hole",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Hole",
+    "url": "https://yugipedia.com/wiki/Hole"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "hole"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "無限起動",
+  "canonical_name_en": "Infinitrack",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Infinitrack",
+    "url": "https://yugipedia.com/wiki/Infinitrack"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "infinitrack"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ジュラック",
+  "canonical_name_en": "Jurrac",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Jurrac",
+    "url": "https://yugipedia.com/wiki/Jurrac"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "jurrac"
+}

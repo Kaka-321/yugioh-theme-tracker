@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "道化傀儡",
+  "canonical_name_en": "Jester Puppet",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Jester Puppet",
+    "url": "https://yugipedia.com/wiki/Jester_Puppet"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "jester-puppet"
+}

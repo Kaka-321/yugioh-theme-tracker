@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ヘカトンケイル",
+  "canonical_name_en": "Hecahands",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Hecahands",
+    "url": "https://yugipedia.com/wiki/Hecahands"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "hecahands"
+}

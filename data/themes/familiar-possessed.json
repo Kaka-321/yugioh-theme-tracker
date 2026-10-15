@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "憑依装着",
+  "canonical_name_en": "Familiar-Possessed",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Familiar-Possessed",
+    "url": "https://yugipedia.com/wiki/Familiar-Possessed"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "familiar-possessed"
+}

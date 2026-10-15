@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "炎舞",
+  "canonical_name_en": "Fire Formation",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Fire Formation",
+    "url": "https://yugipedia.com/wiki/Fire_Formation"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "fire-formation"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "魔法妖精",
+  "canonical_name_en": "Magic Elf",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Magic Elf",
+    "url": "https://yugipedia.com/wiki/Magic_Elf"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "magic-elf"
+}

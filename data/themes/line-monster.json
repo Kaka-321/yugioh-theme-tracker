@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ラインモンスター",
+  "canonical_name_en": "Line Monster",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Line Monster",
+    "url": "https://yugipedia.com/wiki/Line_Monster"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "line-monster"
+}

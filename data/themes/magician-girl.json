@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "マジシャン・ガール",
+  "canonical_name_en": "Magician Girl",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Magician Girl",
+    "url": "https://yugipedia.com/wiki/Magician_Girl"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "magician-girl"
+}

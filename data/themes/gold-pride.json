@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＧＰ",
+  "canonical_name_en": "Gold Pride",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gold Pride",
+    "url": "https://yugipedia.com/wiki/Gold_Pride"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gold-pride"
+}

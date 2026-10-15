@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "紋章獣",
+  "canonical_name_en": "Heraldic Beast",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Heraldic Beast",
+    "url": "https://yugipedia.com/wiki/Heraldic_Beast"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "heraldic-beast"
+}

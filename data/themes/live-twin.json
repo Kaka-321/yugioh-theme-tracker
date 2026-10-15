@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ライブツイン",
+  "canonical_name_en": "Live☆Twin",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Live☆Twin",
+    "url": "https://yugipedia.com/wiki/Live%E2%98%86Twin"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "live-twin"
+}

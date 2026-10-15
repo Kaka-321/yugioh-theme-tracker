@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ガッツマスター",
+  "canonical_name_en": "Gutsmaster",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gutsmaster",
+    "url": "https://yugipedia.com/wiki/Gutsmaster"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gutsmaster"
+}

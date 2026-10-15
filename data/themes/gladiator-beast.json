@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "剣闘獣",
+  "canonical_name_en": "Gladiator Beast",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gladiator Beast",
+    "url": "https://yugipedia.com/wiki/Gladiator_Beast"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gladiator-beast"
+}

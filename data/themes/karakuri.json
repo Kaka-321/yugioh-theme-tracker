@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "カラクリ",
+  "canonical_name_en": "Karakuri",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Karakuri",
+    "url": "https://yugipedia.com/wiki/Karakuri"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "karakuri"
+}

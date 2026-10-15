@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "クシャトリラ",
+  "canonical_name_en": "Kashtira",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Kashtira",
+    "url": "https://yugipedia.com/wiki/Kashtira"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "kashtira"
+}

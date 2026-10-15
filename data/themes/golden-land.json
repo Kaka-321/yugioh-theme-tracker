@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "黄金郷",
+  "canonical_name_en": "Golden Land",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Golden Land",
+    "url": "https://yugipedia.com/wiki/Golden_Land"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "golden-land"
+}

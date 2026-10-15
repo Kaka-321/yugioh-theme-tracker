@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "コアキメイル",
+  "canonical_name_en": "Koa'ki Meiru",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Koa'ki Meiru",
+    "url": "https://yugipedia.com/wiki/Koa%27ki_Meiru"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "koa-ki-meiru"
+}

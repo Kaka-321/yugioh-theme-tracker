@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "フォーチュンレディ",
+  "canonical_name_en": "Fortune Lady",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Fortune Lady",
+    "url": "https://yugipedia.com/wiki/Fortune_Lady"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "fortune-lady"
+}

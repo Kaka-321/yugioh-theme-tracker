@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ハイドライブ",
+  "canonical_name_en": "Hydradrive",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Hydradrive",
+    "url": "https://yugipedia.com/wiki/Hydradrive"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "hydradrive"
+}

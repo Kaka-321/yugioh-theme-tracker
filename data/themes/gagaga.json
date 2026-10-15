@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ガガガ",
+  "canonical_name_en": "Gagaga",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gagaga",
+    "url": "https://yugipedia.com/wiki/Gagaga"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gagaga"
+}

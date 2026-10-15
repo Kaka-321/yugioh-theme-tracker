@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "グレイドル",
+  "canonical_name_en": "Graydle",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Graydle",
+    "url": "https://yugipedia.com/wiki/Graydle"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "graydle"
+}

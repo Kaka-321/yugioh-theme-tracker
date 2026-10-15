@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "炎王",
+  "canonical_name_en": "Fire King",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Fire King",
+    "url": "https://yugipedia.com/wiki/Fire_King"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "fire-king"
+}

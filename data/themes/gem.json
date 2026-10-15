@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ジェム",
+  "canonical_name_en": "Gem-",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gem-",
+    "url": "https://yugipedia.com/wiki/Gem-"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gem"
+}

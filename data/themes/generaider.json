@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ジェネレイド",
+  "canonical_name_en": "Generaider",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Generaider",
+    "url": "https://yugipedia.com/wiki/Generaider"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "generaider"
+}

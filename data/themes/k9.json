@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｋ９",
+  "canonical_name_en": "K9",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "K9",
+    "url": "https://yugipedia.com/wiki/K9"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "k9"
+}
