@@ -46,15 +46,52 @@ def get_source(theme, now):
     return cached, "api"
 
 
+def clean_japanese_name(value):
+    value = re.sub(
+        r"<ref[^>]*>.*?</ref>",
+        "",
+        value,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    value = re.sub(r"<ref[^>]*/>", "", value, flags=re.IGNORECASE)
+
+    value = re.sub(
+        r"\{\{Ruby\|([^|}]+)\|[^}]*\}\}",
+        r"\1",
+        value,
+        flags=re.IGNORECASE,
+    )
+
+    while "{{" in value and "}}" in value:
+        cleaned = re.sub(r"\{\{[^{}]*\}\}", "", value)
+        if cleaned == value:
+            break
+        value = cleaned
+
+    value = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]", r"\1", value)
+    value = value.replace("'", "")
+    value = re.sub(r"\s+", " ", value)
+
+    return value.strip()
+
+
 def extract_japanese_name(source):
-    source_text = json.dumps(source, ensure_ascii=False)
-    match = re.search(r"\\n\|\s*ja_name\s*=\s*([^\\n|]+)", source_text)
+    wikitext = source.get("wikitext", "")
+    match = re.search(
+        r"\|\s*ja_name[ \t]*=[ \t]*([^\n]+)",
+        wikitext,
+        flags=re.IGNORECASE,
+    )
 
     if not match:
         return None
 
-    japanese_name = match.group(1).strip()
-    return japanese_name or None
+    japanese_name = clean_japanese_name(match.group(1))
+
+    if not japanese_name:
+        return None
+
+    return japanese_name
 
 
 def build_theme(theme, source):
