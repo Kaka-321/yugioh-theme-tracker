@@ -1,0 +1,28 @@
+name: Monitoring Failure Test
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: monitoring-failure-test
+  cancel-in-progress: false
+
+jobs:
+  intentionally-fail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Intentionally fail
+        run: |
+          echo "This is an intentional failure to test Healthchecks.io failure notifications."
+          exit 1
+
+  ping-failure:
+    runs-on: ubuntu-latest
+    needs: [intentionally-fail]
+    if: ${{ failure() }}
+    steps:
+      - name: Ping Healthchecks.io failure
+        run: curl -fsS --retry 5 --max-time 10 "${{ secrets.HC_PING_CRAWL_URL }}/fail"
