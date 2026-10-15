@@ -30,24 +30,33 @@ jobs:
         id: api-cache
         uses: actions/cache/restore@v4
         with:
-          path: .cache/yugipedia-blue-eyes.json
-          key: yugipedia-blue-eyes-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .cache/*.json
+          key: yugipedia-themes-v1-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
-            yugipedia-blue-eyes-v1-
+            yugipedia-themes-v1-
 
       - name: Generate theme data
         id: generate
         run: |
-          cache=".cache/yugipedia-blue-eyes.json"
-
-          before="missing"
-          if [ -f "$cache" ]; then
-            before=$(sha256sum "$cache" | cut -d ' ' -f 1)
+          before=""
+          if compgen -G ".cache/*.json" > /dev/null; then
+            before=$(find .cache -maxdepth 1 -type f -name '*.json' -print0 \
+              | sort -z \
+              | xargs -0 sha256sum \
+              | sha256sum \
+              | cut -d ' ' -f 1)
           fi
 
           python crawler/main.py
 
-          after=$(sha256sum "$cache" | cut -d ' ' -f 1)
+          after=""
+          if compgen -G ".cache/*.json" > /dev/null; then
+            after=$(find .cache -maxdepth 1 -type f -name '*.json' -print0 \
+              | sort -z \
+              | xargs -0 sha256sum \
+              | sha256sum \
+              | cut -d ' ' -f 1)
+          fi
 
           if [ "$before" != "$after" ]; then
             echo "cache_changed=true" >> "$GITHUB_OUTPUT"
@@ -59,7 +68,7 @@ jobs:
         if: steps.generate.outputs.cache_changed == 'true'
         uses: actions/cache/save@v4
         with:
-          path: .cache/yugipedia-blue-eyes.json
+          path: .cache/*.json
           key: ${{ steps.api-cache.outputs.cache-primary-key }}
 
       - name: Write public status
@@ -75,7 +84,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/themes/blue-eyes.json site/status.json
+          git add data/themes site/status.json
           if git diff --cached --quiet; then
             echo "No content changes"
             echo "changed=false" >> "$GITHUB_OUTPUT"
