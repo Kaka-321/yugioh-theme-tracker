@@ -227,7 +227,24 @@
         }
 
         // 全テーマデータを格納
+        // 全テーマデータを格納
         allThemes = payload.themes;
+
+        // DOM が完全にロードされたら、検索バーにイベントリスナーを追加
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('theme-search-input');
+            if (searchInput) {
+              searchInput.addEventListener('input', refreshThemeList);
+            }
+          });
+        } else {
+          // DOMContentLoaded すでに実行済みなら即座に登録
+          const searchInput = document.getElementById('theme-search-input');
+          if (searchInput) {
+            searchInput.addEventListener('input', refreshThemeList);
+          }
+        }
 
         themeListResult.textContent =
           payload.themes.length + "件のテーマを読み込みました。";
