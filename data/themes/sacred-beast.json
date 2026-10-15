@@ -2,11 +2,21 @@
   "aliases": [],
   "canonical_name": "三幻魔",
   "canonical_name_en": "Sacred Beast",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Uria, Lord of Searing Flames",
+    "Inferno of the Sacred Beasts - Uria, Lord of Searing Flames",
+    "Hamon, Lord of Striking Thunder",
+    "Calamity of the Sacred Beasts - Hamon, Lord of Striking Thunder",
+    "Raviel, Lord of Phantasms",
+    "Infinity of the Sacred Beasts - Raviel, Lord of Phantasms",
+    "Armityle the Chaos Phantasm",
+    "The Chaotic Phantasmal Sacred Beasts"
+  ],
+  "expansion": [
+    "Chaos Origins",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TheChaoticPhantasmalSacredBeasts-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

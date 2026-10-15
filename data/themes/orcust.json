@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "オルフェゴール",
   "canonical_name_en": "Orcust",
+  "cards": [
+    "Orcust Brass Bombard",
+    "Orcust Harp Horror",
+    "Orcust Cymbal Skeleton",
+    "Orcustrion"
+  ],
+  "expansion": [
+    "Soul Fusion",
+    "Savage Strike",
+    "Dark Neostorm",
+    "Eternity Code"
+  ],
+  "image": "https://yugipedia.com/wiki/File:OrcustratedCore-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

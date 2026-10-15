@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "Archetype",
   "canonical_name_en": "Archetype",
+  "cards": [],
+  "expansion": [],
+  "image": null,
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

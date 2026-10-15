@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ヘリオス",
   "canonical_name_en": "Helios",
+  "cards": [],
+  "expansion": [
+    "Yu-Gi-Oh! Ultimate Masters: World Championship Tournament 2006 promotional cards"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HeliosThePrimordialSun-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "ブンボーグ",
   "canonical_name_en": "Deskbot",
+  "cards": [],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Shining Victories"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DeskbotJet-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

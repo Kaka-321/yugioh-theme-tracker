@@ -2,6 +2,26 @@
   "aliases": [],
   "canonical_name": "マルチャミー",
   "canonical_name_en": "Mulcharmy",
+  "cards": [
+    "WATER",
+    "Aqua",
+    "Special Summon",
+    "hand",
+    "WIND",
+    "Winged Beast",
+    "Main Deck",
+    "Extra Deck",
+    "EARTH",
+    "Beast",
+    "Graveyard",
+    "banish"
+  ],
+  "expansion": [
+    "The Infinite Forbidden",
+    "Rage of the Abyss",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MulcharmyPurulia-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

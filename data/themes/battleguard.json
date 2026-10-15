@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "バーバリアン",
   "canonical_name_en": "Battleguard",
+  "cards": [],
+  "expansion": [
+    "Metal Raiders",
+    "Legendary Collection 4: Joey's World Mega Pack",
+    "Duelist Alliance",
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FeastoftheWildLV5-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

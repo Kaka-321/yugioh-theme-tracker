@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "ＺＷ",
   "canonical_name_en": "ZW -",
+  "cards": [],
+  "expansion": [
+    "Order of Chaos",
+    "Return of the Duelist",
+    "Cosmo Blazer",
+    "Judgment of the Light",
+    "Legacy of the Valiant",
+    "The New Challengers",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ZW.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

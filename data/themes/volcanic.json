@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ヴォルカニック",
   "canonical_name_en": "Volcanic",
+  "cards": [],
+  "expansion": [
+    "Force of the Breaker",
+    "Tactical Evolution",
+    "Phantom Darkness",
+    "Light of Destruction",
+    "Secrets of Eternity"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VolcanicEmission-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "魔界台本",
   "canonical_name_en": "Abyss Script",
+  "cards": [],
+  "expansion": [
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Underworld Script.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

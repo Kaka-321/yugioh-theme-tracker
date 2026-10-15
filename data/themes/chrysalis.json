@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "Ｃ",
   "canonical_name_en": "Chrysalis",
+  "cards": [
+    "Attribute",
+    "Neo-Spacian",
+    "Contact Fusion",
+    "FIRE",
+    "EARTH",
+    "DARK",
+    "LIGHT",
+    "WIND",
+    "WATER"
+  ],
+  "expansion": [
+    "Power of the Duelist",
+    "Duelist Pack: Jaden Yuki 2",
+    "Tactical Evolution"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CocoonParty-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -1,10 +1,10 @@
-﻿import json
+import json
 import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from check_source import cache_path, fetch_page, read_cache, save_cache, fetch_related_cards
+from check_source import cache_path, fetch_page, read_cache, save_cache, fetch_related_cards, fetch_expansion, fetch_card_list, fetch_theme_image
 from themes import THEMES
 
 import re
@@ -97,7 +97,13 @@ def extract_japanese_name(source):
 
 
 def build_theme(theme, source):
-    japanese_name = extract_japanese_name(source)
+    """Yugipedia API の wikitext から cards / expansion / image を一括抽出し、JSON スキーマに埋め込む。"""
+    wikitext = source.get("wikitext", "")
+
+    # 3 つの抽出関数を呼び出す
+    expansion = fetch_expansion(wikitext)
+    cards = fetch_card_list(wikitext)
+    image = fetch_theme_image(wikitext)
 
     result = {
         "schema_version": "1.0.0",
@@ -111,17 +117,20 @@ def build_theme(theme, source):
             "title": source.get("title"),
             "url": source.get("url"),
         },
+        "cards": cards,
+        "expansion": expansion,
+        "image": image,
     }
 
     # Blue-Eyes に対応：関連カードの抽出結果を含める
     if theme.theme_id == "blue-eyes":
-        result["canonical_name"] = source.get("wikitext", "")
+        result["canonical_name"] = extract_japanese_name(source) or theme.canonical_name
         result["canonical_name_en"] = "Blue-Eyes"
         result["aliases"] = sorted(set(theme.aliases))
         return result
     
     # 他のテーマ：日本語名を抽出して設定
-    result["canonical_name"] = japanese_name or theme.canonical_name
+    result["canonical_name"] = extract_japanese_name(source) or theme.canonical_name
     result["canonical_name_en"] = theme.canonical_name
     result["aliases"] = sorted(set(theme.aliases))
 

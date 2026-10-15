@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "クリフォート",
   "canonical_name_en": "Qli",
+  "cards": [
+    "Infernoid",
+    "Zefra"
+  ],
+  "expansion": [
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Invasion: Vengeance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DuelArena-QliphortBackground.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

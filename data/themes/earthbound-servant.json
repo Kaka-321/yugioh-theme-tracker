@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "地縛戒隷",
   "canonical_name_en": "Earthbound Servant",
+  "cards": [],
+  "expansion": [
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Earthbound.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

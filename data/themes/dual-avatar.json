@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "双天",
   "canonical_name_en": "Dual Avatar",
+  "cards": [],
+  "expansion": [
+    "Phantom Rage",
+    "Blazing Vortex",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DualAvatarInvitation-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "エヴォルダー",
   "canonical_name_en": "Evolsaur",
+  "cards": [],
+  "expansion": [
+    "Photon Shockwave",
+    "Order of Chaos",
+    "Galactic Overlord",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EvolsaurCerato-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

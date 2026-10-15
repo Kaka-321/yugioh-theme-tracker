@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "王",
   "canonical_name_en": "King",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:King.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

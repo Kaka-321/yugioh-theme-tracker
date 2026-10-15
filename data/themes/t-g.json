@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ＴＧ",
   "canonical_name_en": "T.G.",
+  "cards": [],
+  "expansion": [
+    "Extreme Victory",
+    "Savage Strike",
+    "Dark Neostorm",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TGLimiterRemoval-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

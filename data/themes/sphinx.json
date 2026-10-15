@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "スフィンクス",
   "canonical_name_en": "Sphinx",
+  "cards": [
+    "Criosphinx",
+    "Hieracosphinx"
+  ],
+  "expansion": [
+    "Exclusive Pack",
+    "The Lost Millennium",
+    "Structure Deck: Invincible Fortress",
+    "Legacy of the Valiant",
+    "The Dark Illusion",
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Sphinx.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

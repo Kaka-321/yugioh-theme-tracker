@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "雲魔物",
   "canonical_name_en": "Cloudian",
+  "cards": [],
+  "expansion": [
+    "Gladiator's Assault",
+    "Light of Destruction",
+    "Dark Neostorm"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CloudianTurbulence-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

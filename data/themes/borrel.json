@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "ヴァレル",
   "canonical_name_en": "Borrel",
+  "cards": [],
+  "expansion": [
+    "Circuit Break",
+    "Extreme Force",
+    "Cybernetic Horizon",
+    "Savage Strike",
+    "Rising Rampage",
+    "Burst of Destiny",
+    "Burst Protocol",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Varis with four Link-4 dragons.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

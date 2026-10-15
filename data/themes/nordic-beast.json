@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "極星獣",
   "canonical_name_en": "Nordic Beast",
+  "cards": [
+    "Garmr of the Nordic Beasts",
+    "Guldfaxe of the Nordic Beasts",
+    "Nordic Beast Gullinbursti",
+    "Tanngnjostr of the Nordic Beasts",
+    "Tanngrisnir of the Nordic Beasts"
+  ],
+  "expansion": [
+    "Storm of Ragnarok",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NordicBeast.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

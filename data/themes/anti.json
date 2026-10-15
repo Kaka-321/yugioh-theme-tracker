@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "アンチ",
   "canonical_name_en": "Anti",
+  "cards": [],
+  "expansion": [
+    "V Jump August 2015 promotional card"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Anti.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "地霊術",
   "canonical_name_en": "Spiritual Earth Art",
+  "cards": [],
+  "expansion": [
+    "Cybernetic Revolution"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SpiritualEarthArtKurogane-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

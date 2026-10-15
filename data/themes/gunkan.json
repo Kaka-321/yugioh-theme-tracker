@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "軍貫",
   "canonical_name_en": "Gunkan",
+  "cards": [],
+  "expansion": [
+    "Dawn of Majesty",
+    "Burst of Destiny",
+    "Power of the Elements",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GunkanSushipyardSeasideSupperSpot-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "捕食植物",
   "canonical_name_en": "Predaplant",
+  "cards": [],
+  "expansion": [
+    "Invasion: Vengeance",
+    "Maximum Crisis",
+    "Code of the Duelist",
+    "Dimension Force",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Predaplast-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

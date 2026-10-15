@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "ＣＮｏ．１０Ｘ",
   "canonical_name_en": "Number C10X",
+  "cards": [
+    "Number 10X",
+    "Dumon",
+    "Don Thousand",
+    "Vector",
+    "Alito",
+    "Girag",
+    "Mizar"
+  ],
+  "expansion": [
+    "Lord of the Tachyon Galaxy",
+    "Judgment of the Light",
+    "Legacy of the Valiant",
+    "Primal Origin",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Chaos Over-Hundred Numbers.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

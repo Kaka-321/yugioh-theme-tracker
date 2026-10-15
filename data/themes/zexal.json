@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "ゼアル",
   "canonical_name_en": "Zexal",
+  "cards": [],
+  "expansion": [
+    "Order of Chaos",
+    "Return of the Duelist",
+    "Cosmo Blazer",
+    "Judgment of the Light",
+    "Legacy of the Valiant",
+    "Primal Origin",
+    "The New Challengers",
+    "Lightning Overdrive",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RankUpMagicZexalForce-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

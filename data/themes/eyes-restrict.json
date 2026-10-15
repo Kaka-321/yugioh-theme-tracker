@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "アイズ・サクリファイス",
   "canonical_name_en": "Eyes Restrict",
+  "cards": [],
+  "expansion": [
+    "Pharaoh's Servant"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ThousandEyesRestrict-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

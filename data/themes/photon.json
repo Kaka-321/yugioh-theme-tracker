@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "フォトン",
   "canonical_name_en": "Photon",
+  "cards": [],
+  "expansion": [
+    "Shadow of Infinity",
+    "Duelist Pack: Zane Truesdale",
+    "Photon Shockwave",
+    "Order of Chaos",
+    "Galactic Overlord",
+    "Return of the Duelist",
+    "Cosmo Blazer",
+    "Judgment of the Light",
+    "Legacy of the Valiant",
+    "Primal Origin",
+    "Soul Fusion",
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PhotonPrevent-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

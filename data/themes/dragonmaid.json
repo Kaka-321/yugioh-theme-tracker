@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "ドラゴンメイド",
   "canonical_name_en": "Dragonmaid",
+  "cards": [
+    "LIGHT",
+    "LIGHT",
+    "DARK",
+    "WATER",
+    "EARTH",
+    "WIND",
+    "FIRE"
+  ],
+  "expansion": [
+    "Ignition Assault",
+    "Eternity Code",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DragonmaidHospitality-MADU-EN-VG-artwork-2.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ランプ",
   "canonical_name_en": "Lamp",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Lamp.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

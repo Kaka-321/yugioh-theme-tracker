@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "おジャマ",
   "canonical_name_en": "Ojama",
+  "cards": [],
+  "expansion": [
+    "Dark Crisis",
+    "Invasion of Chaos",
+    "Soul of the Duelist",
+    "Elemental Energy",
+    "Duelist Pack: Chazz Princeton",
+    "Tactical Evolution",
+    "Circuit Break",
+    "Blazing Vortex"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Solidarity-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

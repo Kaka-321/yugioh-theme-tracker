@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "Ｓ－Ｆｏｒｃｅ",
   "canonical_name_en": "S-Force",
+  "cards": [
+    "Time Thief Redoer",
+    "S-Force Showdown",
+    "PSY-Frame Driver",
+    "S-Force Specimen",
+    "I:P Masquerena",
+    "S-Force Chase"
+  ],
+  "expansion": [
+    "Blazing Vortex",
+    "Lightning Overdrive",
+    "Battle of Chaos",
+    "Cyberstorm Access",
+    "Chaos Origins"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SForceBridgehead-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

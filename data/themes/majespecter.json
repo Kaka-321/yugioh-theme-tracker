@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "マジェスペクター",
   "canonical_name_en": "Majespecter",
+  "cards": [
+    "Majesty Pegasus, the Dracoslayer",
+    "Majesty Maiden, the True Dracocaster"
+  ],
+  "expansion": [
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Raging Tempest",
+    "Darkwing Blast",
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MajestysPegasus-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

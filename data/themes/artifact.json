@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "アーティファクト",
   "canonical_name_en": "Artifact",
+  "cards": [],
+  "expansion": [
+    "Primal Origin",
+    "Duelist Alliance",
+    "Extreme Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArtifactSanctum-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

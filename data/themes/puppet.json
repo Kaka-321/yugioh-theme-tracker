@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "パペット",
   "canonical_name_en": "Puppet",
+  "cards": [
+    "Puppet King",
+    "Puppet Pawn",
+    "Puppet Queen",
+    "Puppet Rook"
+  ],
+  "expansion": [
+    "The Infinite Forbidden",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PuppetChess.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "霊神",
   "canonical_name_en": "Elemental Lord",
+  "cards": [
+    "Fiend",
+    "Sangan",
+    "Beast-Warrior",
+    "Monster Reborn",
+    "Dinosaur",
+    "Ring of Destruction",
+    "Fairy",
+    "Raigeki",
+    "Sea Serpent",
+    "Delinquent Duo",
+    "Winged Beast",
+    "Harpie's Feather Duster"
+  ],
+  "expansion": [
+    "Return of the Duelist",
+    "Abyss Rising",
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Flames of Destruction",
+    "Cybernetic Horizon"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-WCQRegional-ElementalLords.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

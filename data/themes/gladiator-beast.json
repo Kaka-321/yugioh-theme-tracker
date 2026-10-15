@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "剣闘獣",
   "canonical_name_en": "Gladiator Beast",
+  "cards": [],
+  "expansion": [
+    "Gladiator's Assault",
+    "Phantom Darkness",
+    "Light of Destruction",
+    "The Duelist Genesis",
+    "Crimson Crisis",
+    "Extreme Victory",
+    "Primal Origin",
+    "Chaos Impact",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GladiatorBeast.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

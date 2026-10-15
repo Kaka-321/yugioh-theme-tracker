@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "バージェストマ",
   "canonical_name_en": "Paleozoic",
+  "cards": [
+    "Xyz Monster",
+    "Link Monster",
+    "Trap Monster"
+  ],
+  "expansion": [
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PaleozoicAnomalocaris-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

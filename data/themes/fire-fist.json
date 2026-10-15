@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "炎星",
   "canonical_name_en": "Fire Fist",
+  "cards": [],
+  "expansion": [
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Judgment of the Light"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-VJump-FlamingStar-JP.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

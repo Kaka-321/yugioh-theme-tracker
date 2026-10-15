@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "マテリアクトル",
   "canonical_name_en": "Materiactor",
+  "cards": [
+    "Winged Beast",
+    "Dragon",
+    "Reptile"
+  ],
+  "expansion": [
+    "Dimension Force",
+    "Supreme Darkness",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MateriactorGigaboros-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

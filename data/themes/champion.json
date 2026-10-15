@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "王者",
   "canonical_name_en": "Champion",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:ChampionsMajesty-JP-Manga-5D-CA.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

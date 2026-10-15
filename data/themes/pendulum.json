@@ -2,11 +2,26 @@
   "aliases": [],
   "canonical_name": "ペンデュラム",
   "canonical_name_en": "Pendulum",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Storm of Ragnarok",
+    "Duelist Alliance",
+    "Secrets of Eternity",
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Shining Victories",
+    "Raging Tempest",
+    "Maximum Crisis",
+    "Structure Deck: Powercode Link",
+    "Dawn of Majesty",
+    "Dimension Force",
+    "Darkwing Blast",
+    "Cyberstorm Access",
+    "Age of Overlord",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SoulPendulum-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

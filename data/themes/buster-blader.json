@@ -2,11 +2,16 @@
   "aliases": [],
   "canonical_name": "バスター・ブレイダー",
   "canonical_name_en": "Buster Blader",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Anniversary Pack",
+    "Duelist Pack: Battle City",
+    "Pharaoh's Servant",
+    "Breakers of Shadow",
+    "Structure Deck: Yugi Muto",
+    "Maximum Crisis"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BusterBladertheDestructionSwordmaster-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

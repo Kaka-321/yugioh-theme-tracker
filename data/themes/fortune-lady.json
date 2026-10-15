@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "フォーチュンレディ",
   "canonical_name_en": "Fortune Lady",
+  "cards": [
+    "Level",
+    "ATK",
+    "DEF",
+    "Fortune Fairy Hikari",
+    "Fortune Fairy En",
+    "Fortune Fairy Hu",
+    "Fortune Fairy Swee",
+    "Fortune Fairy Ann",
+    "Fortune Fairy Chee",
+    "Solitaire Magician"
+  ],
+  "expansion": [
+    "Ancient Prophecy",
+    "Stardust Overdrive",
+    "Rising Rampage"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InheritedFortune-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

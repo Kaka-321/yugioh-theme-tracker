@@ -2,6 +2,32 @@
   "aliases": [],
   "canonical_name": "アルトメギア",
   "canonical_name_en": "Artmage",
+  "cards": [
+    "archetype",
+    "Artmage",
+    "DoomZ",
+    "Elfnote",
+    "Medius the Pure",
+    "Power Patron"
+  ],
+  "expansion": [
+    "Duelist's Advance",
+    "Doom of Dimensions",
+    "Burst Protocol",
+    "Blazing Dominion",
+    "Chaos Origins",
+    "Beyond the Brave",
+    "Immortal Phoenix",
+    "archetype",
+    "LIGHT",
+    "Duelist's Advance",
+    "Power Patron",
+    "DoomZ",
+    "Elfnote",
+    "Ars Magna",
+    "Medius the Pure"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArtmageAcademicArcaneArtsAcropolis-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

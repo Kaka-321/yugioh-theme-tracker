@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "霞の谷",
   "canonical_name_en": "Mist Valley",
+  "cards": [],
+  "expansion": [
+    "Storm of Ragnarok",
+    "Hidden Arsenal",
+    "Hidden Arsenal 2",
+    "Order of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ShrineofMistValley-DG-EN-VG-Field.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ＣＨ",
   "canonical_name_en": "Comics Hero",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:ComicsHeroKingArthur-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

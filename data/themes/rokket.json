@@ -2,6 +2,32 @@
   "aliases": [],
   "canonical_name": "ヴァレット",
   "canonical_name_en": "Rokket",
+  "cards": [
+    "Anesthrokket Dragon",
+    "Autorokket Dragon",
+    "Exploderokket Dragon",
+    "Hollowrokket Dragon",
+    "Magnarokket Dragon",
+    "Metalrokket Dragon",
+    "Rokket Barrage",
+    "Rokket Caliber",
+    "Rokket Detonator",
+    "Rokket Loader",
+    "Rokket Recharger",
+    "Rokket Tracer",
+    "Shelrokket Dragon",
+    "Silverrokket Dragon"
+  ],
+  "expansion": [
+    "Circuit Break",
+    "Extreme Force",
+    "Cybernetic Horizon",
+    "Savage Strike",
+    "Burst of Destiny",
+    "Burst Protocol",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SquibDraw-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

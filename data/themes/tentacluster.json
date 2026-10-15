@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "テンタクラスター",
   "canonical_name_en": "Tentacluster",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Tentacluster.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

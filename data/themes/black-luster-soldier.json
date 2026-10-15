@@ -2,11 +2,18 @@
   "aliases": [],
   "canonical_name": "カオス・ソルジャー",
   "canonical_name_en": "Black Luster Soldier",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Invasion of Chaos",
+    "Starter Deck: Yugi Evolution",
+    "Duelist Pack: Yugi",
+    "Duelist Pack: Battle City",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Raging Tempest",
+    "Chaos Origins"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-WCQRegional-SuperBLSandChibiKnights.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

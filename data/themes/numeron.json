@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "ヌメロン",
   "canonical_name_en": "Numeron",
+  "cards": [
+    "Number C1: Numeron Chaos Gate Sunya",
+    "Don Thousand/Monster A",
+    "Number C1000: Numerounius",
+    "Don Thousand/Monster B",
+    "Number iC1000: Numerounius Numerounia",
+    "Don Thousand/Monster C",
+    "Numeron Network",
+    "Don Thousand/Spell A",
+    "Numeron Calling",
+    "Don Thousand/Spell B",
+    "Numeron Chaos Ritual",
+    "Don Thousand/Spell C",
+    "Numeron Xyz Revision",
+    "Don Thousand/Trap A",
+    "Numeron Spell Revision",
+    "Don Thousand/Trap B"
+  ],
+  "expansion": [
+    "Judgment of the Light",
+    "Legacy of the Valiant",
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Numeron.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

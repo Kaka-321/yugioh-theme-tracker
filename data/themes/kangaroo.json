@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "カンガルー",
   "canonical_name_en": "Kangaroo",
+  "cards": [],
+  "expansion": [
+    "Flaming Eternity"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DesKangaroo-JP-Anime-GX-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

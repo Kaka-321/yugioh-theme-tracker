@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "夢魔鏡",
   "canonical_name_en": "Dream Mirror",
+  "cards": [
+    "Dream Mirror of Joy",
+    "Dream Mirror of Terror",
+    "OCG",
+    "TCG"
+  ],
+  "expansion": [
+    "Blazing Vortex",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DreamMirrorHypnagogia-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

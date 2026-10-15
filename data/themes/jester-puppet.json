@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "道化傀儡",
   "canonical_name_en": "Jester Puppet",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Jester Puppet.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

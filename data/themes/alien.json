@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "エーリアン",
   "canonical_name_en": "Alien",
+  "cards": [],
+  "expansion": [
+    "Power of the Duelist",
+    "Cyberdark Impact",
+    "Strike of Neos",
+    "Force of the Breaker",
+    "Tactical Evolution",
+    "Gladiator's Assault",
+    "Crimson Crisis",
+    "Raging Battle",
+    "Absolute Powerforce",
+    "Invasion: Vengeance",
+    "Dawn of Majesty",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ACellRecombinationDevice-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

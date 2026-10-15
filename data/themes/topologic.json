@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "トポロジック",
   "canonical_name_en": "Topologic",
+  "cards": [
+    "Link Arrow"
+  ],
+  "expansion": [
+    "Code of the Duelist",
+    "Flames of Destruction",
+    "Burst of Destiny",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TopologicBomberDragon-OW-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "森羅",
   "canonical_name_en": "Sylvan",
+  "cards": [],
+  "expansion": [
+    "Legacy of the Valiant",
+    "Primal Origin",
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SylvanCharity-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

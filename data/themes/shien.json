@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "紫炎",
   "canonical_name_en": "Shien",
+  "cards": [],
+  "expansion": [
+    "Crimson Crisis",
+    "Extreme Victory",
+    "Gladiator's Assault",
+    "Legend of Blue Eyes White Dragon",
+    "Shadow of Infinity",
+    "Storm of Ragnarok",
+    "Strike of Neos",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Unification-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

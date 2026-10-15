@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "聖騎士",
   "canonical_name_en": "Noble Knight",
+  "cards": [],
+  "expansion": [
+    "Return of the Duelist",
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Extreme Force",
+    "Rise of the Duelist",
+    "Phantom Rage",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NobleKnightsoftheRoundTable-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

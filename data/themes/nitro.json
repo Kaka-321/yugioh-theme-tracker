@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "ニトロ",
   "canonical_name_en": "Nitro",
+  "cards": [
+    "Card type",
+    "Tuner monster",
+    "Equip Spell Card",
+    "Synchro Monster"
+  ],
+  "expansion": [
+    "The Lost Millennium",
+    "The Duelist Genesis",
+    "Duelist Pack: Yusei"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BattleTuned-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

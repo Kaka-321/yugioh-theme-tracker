@@ -2,11 +2,14 @@
   "aliases": [],
   "canonical_name": "摩天楼",
   "canonical_name_en": "Skyscraper",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Cybernetic Revolution",
+    "Duelist Pack: Jaden Yuki",
+    "Strike of Neos",
+    "Duelist Pack: Jaden Yuki 3"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Skyscraper-DG-EN-VG-Field.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

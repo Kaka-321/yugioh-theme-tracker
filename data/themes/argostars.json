@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ＡＲＧ☆Ｓ",
   "canonical_name_en": "Argostars",
+  "cards": [],
+  "expansion": [
+    "Supreme Darkness",
+    "Alliance Insight",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArgostarsGiantslaying-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

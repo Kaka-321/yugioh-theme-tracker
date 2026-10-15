@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ヌーベルズ",
   "canonical_name_en": "Nouvelles",
+  "cards": [],
+  "expansion": [
+    "Age of Overlord",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BaelgrilldeNouvelles-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

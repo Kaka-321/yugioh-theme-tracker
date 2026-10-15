@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "アダマシア",
   "canonical_name_en": "Adamancipator",
+  "cards": [
+    "WATER",
+    "WIND",
+    "FIRE",
+    "DARK"
+  ],
+  "expansion": [
+    "Rise of the Duelist",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AdamancipatorFriends-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

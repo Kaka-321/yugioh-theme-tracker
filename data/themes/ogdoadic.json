@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "溟界",
   "canonical_name_en": "Ogdoadic",
+  "cards": [],
+  "expansion": [
+    "Battle of Chaos",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:OgdoabysstheOgdoadicOverlord-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

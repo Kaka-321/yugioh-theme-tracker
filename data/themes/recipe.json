@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "レシピ",
   "canonical_name_en": "Recipe",
+  "cards": [],
+  "expansion": [
+    "Age of Overlord",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HamburgerRecipe-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ふわんだりぃず",
   "canonical_name_en": "Floowandereeze",
+  "cards": [],
+  "expansion": [
+    "Burst of Destiny",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FloowandereezeandtheUnexploredWinds-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,13 @@
   "aliases": [],
   "canonical_name": "ギアギアーノ",
   "canonical_name_en": "Geargiano",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Generation Force",
+    "Return of the Duelist",
+    "Lord of the Tachyon Galaxy"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Geargiano-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

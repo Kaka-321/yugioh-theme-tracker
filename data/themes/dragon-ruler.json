@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "征竜",
   "canonical_name_en": "Dragon Ruler",
+  "cards": [],
+  "expansion": [
+    "Lord of the Tachyon Galaxy",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Dragoroar-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "エクソシスター",
   "canonical_name_en": "Exosister",
+  "cards": [],
+  "expansion": [
+    "Dimension Force",
+    "Power of the Elements",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Exosisters-TTD-CM.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

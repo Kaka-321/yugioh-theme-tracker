@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "バニリン",
   "canonical_name_en": "Bunnillin",
+  "cards": [
+    "Bunnillin: Mocha MOD",
+    "Bunnillin Extract",
+    "Bunnillin Soft"
+  ],
+  "expansion": [
+    "Immortal Phoenix",
+    "archetype",
+    "Immortal Phoenix",
+    "Normal Monster"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BunnillinExtract-IMPH-JP-OP.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

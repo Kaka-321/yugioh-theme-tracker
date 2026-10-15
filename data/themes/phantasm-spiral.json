@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "幻煌龍",
   "canonical_name_en": "Phantasm Spiral",
+  "cards": [],
+  "expansion": [
+    "Maximum Crisis"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PhantasmSpiralDragon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

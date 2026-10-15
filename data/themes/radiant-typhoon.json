@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "絢嵐",
   "canonical_name_en": "Radiant Typhoon",
+  "cards": [
+    "Level",
+    "Link Rating",
+    "Type",
+    "Radiant Typhoon Fonix, the Great Flame",
+    "Pyro",
+    "Radiant Typhoon Varuroon, the Vibrant Vortex",
+    "Aqua",
+    "Radiant Typhoon Varuroon, the Marine Eidolon",
+    "Radiant Typhoon Krosea",
+    "Winged Beast",
+    "Radiant Typhoon Eldam",
+    "Beast",
+    "Radiant Typhoon Meghala",
+    "Fairy",
+    "Radiant Typhoon Swen",
+    "Beast-Warrior"
+  ],
+  "expansion": [
+    "Doom of Dimensions",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RadiantTyphoonManifestation-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

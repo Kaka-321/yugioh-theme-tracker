@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "電脳堺門",
   "canonical_name_en": "Virtual World Gate",
+  "cards": [],
+  "expansion": [
+    "Phantom Rage",
+    "Blazing Vortex",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VirtualWorldGateQinglong-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

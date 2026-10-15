@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ビーステッド",
   "canonical_name_en": "Bystial",
+  "cards": [],
+  "expansion": [
+    "Darkwing Blast",
+    "Photon Hypernova",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TheBystialLubellion-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

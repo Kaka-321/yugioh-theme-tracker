@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "占い魔女",
   "canonical_name_en": "Fortune Fairy",
+  "cards": [
+    "Level",
+    "Fortune Lady"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:MiracleStone-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

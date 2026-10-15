@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "進化薬",
   "canonical_name_en": "Evolution Pill",
+  "cards": [
+    "Cost",
+    "Summon",
+    "Beta Evolution Pill - Ultranscendance",
+    "Big Evolution Pill",
+    "Double Evolution Pill",
+    "New Ultra Evolution",
+    "Ultra Evolution Pill"
+  ],
+  "expansion": [
+    "Structure Deck: Dinosaur's Rage",
+    "Extreme Force",
+    "Eternity Code"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DoubleEvolutionPill-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

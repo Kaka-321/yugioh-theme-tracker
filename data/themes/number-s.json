@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ＳＮｏ．",
   "canonical_name_en": "Number S",
+  "cards": [
+    "Number"
+  ],
+  "expansion": [
+    "Yu-Gi-Oh! ZEXAL Volume 8 promotional card"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NumberS39UtopiaPrime-EN-Manga-ZX-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

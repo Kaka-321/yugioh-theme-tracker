@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "リインゼルム",
   "canonical_name_en": "Reindsurm",
+  "cards": [
+    "WIND",
+    "WATER",
+    "LIGHT",
+    "FIRE",
+    "DARK"
+  ],
+  "expansion": [
+    "Immortal Phoenix"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ReindsurmConquest-IMPH-JP-OP.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

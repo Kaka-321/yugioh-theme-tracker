@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "先史遺産",
   "canonical_name_en": "Chronomaly",
+  "cards": [],
+  "expansion": [
+    "Return of the Duelist",
+    "Legacy of the Valiant",
+    "Ignition Assault",
+    "Dawn of Majesty"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ChronomalyPyramidEyeTablet-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

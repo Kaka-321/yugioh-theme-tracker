@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ヤミー",
   "canonical_name_en": "Yummy",
+  "cards": [],
+  "expansion": [
+    "Doom of Dimensions",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CupsyYummyWay-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

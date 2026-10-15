@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "スクラップ",
   "canonical_name_en": "Scrap",
+  "cards": [],
+  "expansion": [
+    "Duelist Revolution",
+    "Starstrike Blast",
+    "Storm of Ragnarok",
+    "Extreme Victory",
+    "Primal Origin",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GutsofSteel-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

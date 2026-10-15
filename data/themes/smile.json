@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "スマイル",
   "canonical_name_en": "Smile",
+  "cards": [
+    "ATK",
+    "Performapal Smile Sorcerer",
+    "ATK",
+    "original ATK",
+    "LP",
+    "Pendulum Monster",
+    "Special Summon",
+    "field"
+  ],
+  "expansion": [
+    "Code of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PerformapalSmileSorcerer-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

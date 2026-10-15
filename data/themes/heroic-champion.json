@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "Ｈ－Ｃ",
   "canonical_name_en": "Heroic Champion",
+  "cards": [],
+  "expansion": [
+    "Return of the Duelist",
+    "Abyss Rising",
+    "Dimension Force",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HeroicChampionExcalibur-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

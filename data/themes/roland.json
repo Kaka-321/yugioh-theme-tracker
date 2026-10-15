@@ -2,11 +2,12 @@
   "aliases": [],
   "canonical_name": "ローラン",
   "canonical_name_en": "Roland",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Rise of the Duelist",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InfernobleKnightCaptainRoland-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

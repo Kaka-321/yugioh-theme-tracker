@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "イグナイト",
   "canonical_name_en": "Igknight",
+  "cards": [],
+  "expansion": [
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Invasion: Vengeance",
+    "Darkwing Blast"
+  ],
+  "image": "https://yugipedia.com/wiki/File:IgnitionPhoenix-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

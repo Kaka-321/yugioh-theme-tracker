@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ヴァルモニカ",
   "canonical_name_en": "Vaalmonica",
+  "cards": [],
+  "expansion": [
+    "Legacy of Destruction",
+    "The Infinite Forbidden",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VaalmonicaScelta-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

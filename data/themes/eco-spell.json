@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "エコ魔法",
   "canonical_name_en": "Eco Spell",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:EcoSpellRecycle-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,17 @@
   "aliases": [],
   "canonical_name": "ネオスペース",
   "canonical_name_en": "Neo Space",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Power of the Duelist",
+    "Duelist Pack: Jaden Yuki 2",
+    "Tactical Evolution",
+    "Phantom Darkness",
+    "Crossroads of Chaos",
+    "Savage Strike",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NeoSpace-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

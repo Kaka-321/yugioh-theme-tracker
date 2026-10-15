@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "アマゾネス",
   "canonical_name_en": "Amazoness",
+  "cards": [],
+  "expansion": [
+    "Labyrinth of Nightmare",
+    "Magician's Force",
+    "Tournament Pack 7",
+    "Duelist Revolution"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HalfCounter-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

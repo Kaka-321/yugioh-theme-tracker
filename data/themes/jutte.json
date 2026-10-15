@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ジュッテ",
   "canonical_name_en": "Jutte",
+  "cards": [],
+  "expansion": [
+    "Duelist Edition Volume 3",
+    "The Duelist Genesis"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Jutte.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

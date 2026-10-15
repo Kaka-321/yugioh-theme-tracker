@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "森の聖霊",
   "canonical_name_en": "Mystical Spirit of the Forest",
+  "cards": [],
+  "expansion": [
+    "Dawn of Majesty"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EcoMysticalSpiritoftheForest-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

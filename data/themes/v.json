@@ -2,11 +2,17 @@
   "aliases": [],
   "canonical_name": "Ｖ",
   "canonical_name_en": "V",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "V Gnome",
+    "V Sylph",
+    "V Undine"
+  ],
+  "expansion": [
+    "Starter Deck 2013 Enhancement Pack",
+    "Super Starter Power-Up Pack",
+    "Judgment of the Light"
+  ],
+  "image": "https://yugipedia.com/wiki/File:V Series Cards.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "Ｐ．Ｕ．Ｎ．Ｋ．",
   "canonical_name_en": "P.U.N.K.",
+  "cards": [
+    "Tuner monster",
+    "Fusion Monster",
+    "Synchro Monster"
+  ],
+  "expansion": [
+    "Dimension Force",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PUNKJAMDragonDrive-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

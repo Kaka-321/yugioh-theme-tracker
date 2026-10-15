@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "ゼンマイ",
   "canonical_name_en": "Wind-Up",
+  "cards": [
+    "Wind-Up Rabbit",
+    "Wind-Up Rat",
+    "Wind-Up Magician",
+    "Wind-Up Honeybee",
+    "Wind-Up Shark",
+    "Wind-Up Zenmaines",
+    "Wind-Up Zenmaister",
+    "Wind-Up Arsenal Zenmaioh",
+    "Wind-Up Carrier Zenmaity",
+    "Toolbox",
+    "Extra Deck",
+    "Flip Effect",
+    "March 2013 Lists",
+    "Wind-Up Factory"
+  ],
+  "expansion": [
+    "Generation Force",
+    "Photon Shockwave",
+    "Order of Chaos",
+    "Secrets of Eternity",
+    "Flames of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Zenmairch-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

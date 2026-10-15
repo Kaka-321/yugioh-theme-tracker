@@ -2,6 +2,26 @@
   "aliases": [],
   "canonical_name": "スターヴ・ヴェノム",
   "canonical_name_en": "Starving Venom",
+  "cards": [
+    "ATK",
+    "Effect",
+    "destroy",
+    "Odd-Eyes Venom Dragon",
+    "Starving Venom Fusion Dragon",
+    "Starving Venom Predapower Fusion Dragon",
+    "Supreme King Dragon Starving Venom",
+    "Starving Venom Wing Dragon",
+    "Pendulum Zone",
+    "Monster Zone",
+    "Starving Venom Fusion Dragon, Four Heavenly Dragons"
+  ],
+  "expansion": [
+    "Invasion: Vengeance",
+    "Code of the Duelist",
+    "Dimension Force",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SupremeKingDragonStarvingVenom-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

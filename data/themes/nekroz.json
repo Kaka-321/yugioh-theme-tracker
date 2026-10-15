@@ -2,6 +2,26 @@
   "aliases": [],
   "canonical_name": "影霊衣",
   "canonical_name_en": "Nekroz",
+  "cards": [
+    "Great Sorcerer of the Nekroz",
+    "Avance, Swordsman of the Nekroz",
+    "Gishki Avance",
+    "Dance Princess of the Nekroz",
+    "Emilia, Dance Priestess of the Nekroz",
+    "Gishki Emilia",
+    "Ariel, Priestess of the Nekroz",
+    "Gishki Ariel",
+    "Speaker for the Ice Barriers",
+    "Shurit, Strategist of the Nekroz",
+    "Exa, Enforcer of the Nekroz",
+    "Hexa Spirit of the Ice Barrier"
+  ],
+  "expansion": [
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Maximum Crisis"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-YOT-Nekroz.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

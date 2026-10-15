@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "甲虫装機",
   "canonical_name_en": "Inzektor",
+  "cards": [],
+  "expansion": [
+    "Order of Chaos",
+    "Galactic Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FinalInzektion-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

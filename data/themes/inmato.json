@@ -2,11 +2,12 @@
   "aliases": [],
   "canonical_name": "トマボー",
   "canonical_name_en": "Inmato",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Crimson Crisis",
+    "The Shining Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CherryInmato-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

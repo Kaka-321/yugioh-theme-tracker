@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "ディアベル",
   "canonical_name_en": "Diabell",
+  "cards": [],
+  "expansion": [
+    "Age of Overlord",
+    "Phantom Nightmare",
+    "Legacy of Destruction",
+    "Rage of the Abyss",
+    "Supreme Darkness",
+    "Alliance Insight",
+    "Immortal Phoenix"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SinfulSpoilsofSlumberMorrian-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

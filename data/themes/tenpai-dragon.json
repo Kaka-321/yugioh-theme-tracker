@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "天盃龍",
   "canonical_name_en": "Tenpai Dragon",
+  "cards": [],
+  "expansion": [
+    "Legacy of Destruction",
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TenpaiDragonChundra-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

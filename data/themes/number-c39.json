@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ＣＮｏ．３９",
   "canonical_name_en": "Number C39",
+  "cards": [],
+  "expansion": [
+    "Order of Chaos",
+    "Judgment of the Light",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Number C39V.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

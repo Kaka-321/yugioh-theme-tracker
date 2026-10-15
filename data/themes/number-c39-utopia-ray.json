@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "ＣＮｏ．３９ 希望皇ホープレイ",
   "canonical_name_en": "Number C39: Utopia Ray",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:NumberC39UtopiaRay-JP-Anime-ZX-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

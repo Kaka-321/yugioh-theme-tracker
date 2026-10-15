@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "機皇帝",
   "canonical_name_en": "Meklord Emperor",
+  "cards": [],
+  "expansion": [
+    "Extreme Victory"
+  ],
+  "image": "https://yugipedia.com/wiki/File:5Dx149 Machine Emperors created.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

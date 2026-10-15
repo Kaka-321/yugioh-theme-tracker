@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "クイズー",
   "canonical_name_en": "Quiz",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Quiz.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

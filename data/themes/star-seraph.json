@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "光天使",
   "canonical_name_en": "Star Seraph",
+  "cards": [],
+  "expansion": [
+    "Judgment of the Light"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HolyLightning.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

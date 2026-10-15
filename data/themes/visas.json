@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ヴィサス",
   "canonical_name_en": "Visas",
+  "cards": [],
+  "expansion": [
+    "Dimension Force",
+    "Duelist Nexus",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VisasStarfrost-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

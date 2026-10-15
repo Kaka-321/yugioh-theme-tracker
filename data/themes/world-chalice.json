@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "星杯",
   "canonical_name_en": "World Chalice",
+  "cards": [
+    "Crowned by the World Chalice",
+    "Ib the World Chalice Priestess",
+    "Beckoned by the World Chalice",
+    "Ningirsu the World Chalice Warrior",
+    "Chosen by the World Chalice",
+    "Auram the World Chalice Blademaster",
+    "World Chalice Guardragon",
+    "Imduk the World Chalice Dragon",
+    "Lee the World Chalice Fairy"
+  ],
+  "expansion": [
+    "Code of the Duelist",
+    "Circuit Break",
+    "Dark Neostorm"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WorldLegacyDiscovery-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

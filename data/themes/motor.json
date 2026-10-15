@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "モーター",
   "canonical_name_en": "Motor",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Motor.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

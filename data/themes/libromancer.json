@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "リブロマンサー",
   "canonical_name_en": "Libromancer",
+  "cards": [],
+  "expansion": [
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LibromancerPrevented-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

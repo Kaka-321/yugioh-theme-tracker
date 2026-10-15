@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "究極宝玉神",
   "canonical_name_en": "Ultimate Crystal",
+  "cards": [],
+  "expansion": [
+    "Tactical Evolution",
+    "Phantom Darkness",
+    "Duelist Pack: Jesse Anderson"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RainbowRefraction-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "スタチュー",
   "canonical_name_en": "Statue",
+  "cards": [
+    "Blue-Eyes Statue Dragon",
+    "Blue-Eyes White Dragon",
+    "Blue-Eyes Ultimate Statue Dragon",
+    "Blue-Eyes Ultimate Dragon",
+    "Red-Eyes Statue Dragon",
+    "Red-Eyes B. Dragon",
+    "Statue Dark Magician",
+    "Dark Magician",
+    "Statue Dark Magician Girl",
+    "Dark Magician Girl"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Statue.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

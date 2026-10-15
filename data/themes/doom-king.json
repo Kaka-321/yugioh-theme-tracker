@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "死偉王",
   "canonical_name_en": "Doom King",
+  "cards": [
+    "Card type",
+    "Main Deck",
+    "Zorc Necrophades",
+    "Nightshroud",
+    "Z-one",
+    "Don Thousand"
+  ],
+  "expansion": [
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:The Super Doom Kings avoid destruction.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

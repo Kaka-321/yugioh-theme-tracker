@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ディアベルスター",
   "canonical_name_en": "Diabellstar",
+  "cards": [],
+  "expansion": [
+    "Age of Overlord",
+    "Phantom Nightmare",
+    "Legacy of Destruction",
+    "Rage of the Abyss",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DiabellstartheBlackWitch-MADU-EN-VG-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

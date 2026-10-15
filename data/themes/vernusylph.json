@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "春化精",
   "canonical_name_en": "Vernusylph",
+  "cards": [
+    "Add",
+    "EARTH",
+    "GY",
+    "hand",
+    "Send",
+    "Normal Summon",
+    "Set",
+    "Deck",
+    "Draw"
+  ],
+  "expansion": [
+    "Power of the Elements",
+    "Darkwing Blast"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VernusylphandtheFlowerBuds-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "白き森",
   "canonical_name_en": "White Forest",
+  "cards": [],
+  "expansion": [
+    "The Infinite Forbidden",
+    "Rage of the Abyss",
+    "Supreme Darkness",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SusurrusoftheSinfulSpoils-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

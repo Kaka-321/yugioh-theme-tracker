@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "ワーム",
   "canonical_name_en": "Worm",
+  "cards": [],
+  "expansion": [
+    "Starter Deck: Kaiba",
+    "Pharaoh's Servant",
+    "Labyrinth of Nightmare",
+    "The Lost Millennium",
+    "Structure Deck: Invincible Fortress",
+    "Strike of Neos",
+    "Hidden Arsenal",
+    "Yu-Gi-Oh! 5D's Tag Force 4 promotional cards",
+    "The Shining Darkness",
+    "Hidden Arsenal 2",
+    "Hidden Arsenal 3",
+    "Storm of Ragnarok",
+    "Code of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WormZero-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

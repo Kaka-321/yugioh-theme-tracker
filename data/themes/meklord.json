@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "機皇",
   "canonical_name_en": "Meklord",
+  "cards": [],
+  "expansion": [
+    "Extreme Victory"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AnguishHopelessnessandPain-DULI-GameMat-Event-TheEmbodimentofDespairMeklordAstroMekanikle.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

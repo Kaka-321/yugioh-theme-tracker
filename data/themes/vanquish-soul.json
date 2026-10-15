@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ＶＳ",
   "canonical_name_en": "Vanquish Soul",
+  "cards": [
+    "Burn"
+  ],
+  "expansion": [
+    "Age of Overlord",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StakeyourSoul-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

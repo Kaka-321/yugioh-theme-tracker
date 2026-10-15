@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "地縛",
   "canonical_name_en": "Earthbound",
+  "cards": [],
+  "expansion": [
+    "Raging Battle",
+    "Ancient Prophecy",
+    "Stardust Overdrive",
+    "Age of Overlord",
+    "Phantom Nightmare",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EarthboundWhirlwind-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

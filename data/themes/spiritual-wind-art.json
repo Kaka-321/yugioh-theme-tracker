@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "風霊術",
   "canonical_name_en": "Spiritual Wind Art",
+  "cards": [],
+  "expansion": [
+    "Cybernetic Revolution",
+    "Phantom Rage"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SpiritualWindArtMiyabi-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

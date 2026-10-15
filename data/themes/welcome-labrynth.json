@@ -2,11 +2,11 @@
   "aliases": [],
   "canonical_name": "ウェルカム・ラビュリンス",
   "canonical_name_en": "Welcome Labrynth",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WelcomeLabrynth-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

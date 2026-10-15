@@ -2,11 +2,20 @@
   "aliases": [],
   "canonical_name": "ブラック・マジシャン",
   "canonical_name_en": "Dark Magician",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Legend of Blue Eyes White Dragon",
+    "Magician's Force",
+    "Starter Deck: Yugi Evolution",
+    "Structure Deck: Spellcaster's Judgment",
+    "Duelist Pack: Battle City",
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+    "The Dark Illusion",
+    "Structure Deck: Yugi Muto",
+    "The Infinite Forbidden",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MagiciansCombination-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

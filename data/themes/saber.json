@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "セイバー",
   "canonical_name_en": "Saber",
+  "cards": [],
+  "expansion": [
+    "Shadow of Infinity",
+    "Power of the Duelist",
+    "Structure Deck: Dinosaur's Rage",
+    "Ancient Prophecy",
+    "Hidden Arsenal",
+    "Absolute Powerforce",
+    "Hidden Arsenal: Special Edition",
+    "Code of the Duelist",
+    "Flames of Destruction",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SaberVault-DG-EN-VG-Field.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

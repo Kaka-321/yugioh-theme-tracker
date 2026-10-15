@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "狸",
   "canonical_name_en": "Raccoon",
+  "cards": [],
+  "expansion": [
+    "Booster 5",
+    "Shadow Specters"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Raccoon.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

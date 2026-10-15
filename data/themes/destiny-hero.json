@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "Ｄ－ＨＥＲＯ",
   "canonical_name_en": "Destiny HERO",
+  "cards": [],
+  "expansion": [
+    "Enemy of Justice",
+    "Power of the Duelist",
+    "Yu-Gi-Oh! World Championship 2007 promotional cards",
+    "Phantom Darkness",
+    "Light of Destruction",
+    "Duelist Pack: Aster Phoenix",
+    "Dark Neostorm",
+    "Burst of Destiny",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DTactics-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

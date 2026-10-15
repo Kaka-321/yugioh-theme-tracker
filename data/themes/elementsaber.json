@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "エレメントセイバー",
   "canonical_name_en": "Elementsaber",
+  "cards": [
+    "Elemental Lord"
+  ],
+  "expansion": [
+    "Flames of Destruction",
+    "archetype",
+    "Warrior",
+    "Flames of Destruction",
+    "Saber",
+    "Elemental Lord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:January 2018 Deck Experience Event - Elementsabers.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

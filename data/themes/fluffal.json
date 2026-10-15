@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ファーニマル",
   "canonical_name_en": "Fluffal",
+  "cards": [],
+  "expansion": [
+    "The New Challengers",
+    "Crossed Souls",
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FluffalCrane-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

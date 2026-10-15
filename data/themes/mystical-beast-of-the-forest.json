@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "森の聖獣",
   "canonical_name_en": "Mystical Beast of the Forest",
+  "cards": [
+    "Level",
+    "ATK",
+    "DEF"
+  ],
+  "expansion": [
+    "Return of the Duelist",
+    "Legacy of the Valiant",
+    "The New Challengers",
+    "Dawn of Majesty"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AlpacaribouMysticalBeastoftheForest-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

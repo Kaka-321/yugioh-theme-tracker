@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "覇王眷竜",
   "canonical_name_en": "Supreme King Dragon",
+  "cards": [],
+  "expansion": [
+    "Maximum Crisis",
+    "Code of the Duelist",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SupremeKingServantDragon.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

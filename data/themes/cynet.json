@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "サイバネット",
   "canonical_name_en": "Cynet",
+  "cards": [],
+  "expansion": [
+    "Structure Deck: Cyberse Link",
+    "Extreme Force",
+    "Structure Deck: Powercode Link",
+    "Cybernetic Horizon",
+    "Soul Fusion",
+    "Dark Neostorm",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CynetMining-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

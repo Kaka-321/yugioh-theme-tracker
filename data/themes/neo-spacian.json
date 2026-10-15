@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "Ｎ",
   "canonical_name_en": "Neo-Spacian",
+  "cards": [
+    "Attribute",
+    "Chrysalis",
+    "Neos",
+    "Contact Fusion",
+    "FIRE",
+    "EARTH",
+    "DARK",
+    "LIGHT",
+    "WIND",
+    "WATER"
+  ],
+  "expansion": [
+    "Power of the Duelist",
+    "Strike of Neos",
+    "Gladiator's Assault",
+    "Tactical Evolution",
+    "Phantom Darkness",
+    "Duelist Pack: Jaden Yuki 2",
+    "Duelist Pack: Jaden Yuki 3",
+    "Savage Strike",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NEX-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "堕天使",
   "canonical_name_en": "Darklord",
+  "cards": [],
+  "expansion": [
+    "Labyrinth of Nightmare",
+    "Yu-Gi-Oh! GX Tag Force Evolution promotional cards",
+    "Yu-Gi-Oh! GX Volume 5 promotional card",
+    "Flames of Destruction",
+    "Rise of the Duelist",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-OrdealTraveler-Darklord.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

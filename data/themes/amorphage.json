@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "アモルファージ",
   "canonical_name_en": "Amorphage",
+  "cards": [],
+  "expansion": [
+    "Shining Victories"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AmorphageLysis-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

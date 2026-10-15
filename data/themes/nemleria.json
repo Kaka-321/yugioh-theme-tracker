@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ネムレリア",
   "canonical_name_en": "Nemleria",
+  "cards": [],
+  "expansion": [
+    "Cyberstorm Access",
+    "Duelist Nexus",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DreamingNemleria-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

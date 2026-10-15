@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "閃刀姫",
   "canonical_name_en": "Sky Striker Ace",
+  "cards": [],
+  "expansion": [
+    "Cybernetic Horizon",
+    "Savage Strike",
+    "Ignition Assault",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SkyStrikerAce-DULI-GameMat-Shop.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

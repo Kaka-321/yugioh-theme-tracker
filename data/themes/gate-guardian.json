@@ -2,11 +2,27 @@
   "aliases": [],
   "canonical_name": "ゲート・ガーディアン",
   "canonical_name_en": "Gate Guardian",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Thunder",
+    "Sanga of the Thunder",
+    "Thunder",
+    "Kazejin",
+    "Spellcaster",
+    "Spellcaster",
+    "Suijin",
+    "Aqua",
+    "Aqua",
+    "Sanga of the Thunder",
+    "Thunder",
+    "Gate Guardians Combined",
+    "Warrior",
+    "Kazejin",
+    "Spellcaster"
+  ],
+  "expansion": [
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GateGuardian-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "スターシップ",
   "canonical_name_en": "Starship",
+  "cards": [],
+  "expansion": [
+    "V Jump promotional cards",
+    "Primal Origin"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Starship.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

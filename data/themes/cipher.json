@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "サイファー",
   "canonical_name_en": "Cipher",
+  "cards": [],
+  "expansion": [
+    "Invasion: Vengeance",
+    "Raging Tempest",
+    "Structure Deck: Powercode Link"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Cipher.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "サイバネティック",
   "canonical_name_en": "Cybernetic",
+  "cards": [],
+  "expansion": [
+    "Cybernetic Revolution",
+    "Phantom Darkness",
+    "Cybernetic Horizon",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CyberneticFusionSupport-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

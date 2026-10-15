@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "マジシャン・ガール",
   "canonical_name_en": "Magician Girl",
+  "cards": [],
+  "expansion": [
+    "Magician's Force",
+    "Duelist Pack: Battle City",
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+    "Structure Deck: Yugi Muto",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-Misc-MagicianGirl.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

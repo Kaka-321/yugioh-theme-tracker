@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "ジェム",
   "canonical_name_en": "Gem-",
+  "cards": [
+    "Gem-Armadillo",
+    "Gem-Elephant",
+    "Gem-Merchant",
+    "Gem-Turtle"
+  ],
+  "expansion": [
+    "Force of the Breaker",
+    "Duelist Pack: Jesse Anderson",
+    "Generation Force",
+    "Hidden Arsenal 5: Steelswarm Invasion",
+    "Hidden Arsenal 6: Omega Xyz",
+    "Hidden Arsenal 7: Knight of Stars",
+    "Secrets of Eternity",
+    "Clash of Rebellions",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:XyzWeight-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

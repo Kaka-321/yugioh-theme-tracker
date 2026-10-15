@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "蟲惑魔",
   "canonical_name_en": "Traptrix",
+  "cards": [
+    "Insect",
+    "Plant"
+  ],
+  "expansion": [
+    "Judgment of the Light",
+    "Primal Origin",
+    "Code of the Duelist",
+    "Eternity Code",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TraptrixRafflesia-MADU-EN-VG-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

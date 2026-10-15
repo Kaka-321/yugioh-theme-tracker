@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "オノマト",
   "canonical_name_en": "Onomat",
+  "cards": [],
+  "expansion": [
+    "Legacy of the Valiant",
+    "Duelist's Advance",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Onomatopaira-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,25 @@
   "aliases": [],
   "canonical_name": "シンクロ",
   "canonical_name_en": "Synchro",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "The Duelist Genesis",
+    "Crossroads of Chaos",
+    "Duelist Pack: Yusei",
+    "Stardust Overdrive",
+    "Absolute Powerforce",
+    "The Shining Darkness",
+    "Duelist Revolution",
+    "Starstrike Blast",
+    "Duelist Pack: Yusei 3",
+    "Crossed Souls",
+    "Shining Victories",
+    "Invasion: Vengeance",
+    "Dawn of Majesty",
+    "Duelist Nexus",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SynchroTransmission-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

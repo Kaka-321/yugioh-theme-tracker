@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ライトロード",
   "canonical_name_en": "Lightsworn",
+  "cards": [],
+  "expansion": [
+    "Light of Destruction",
+    "The Duelist Genesis",
+    "Code of the Duelist",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Lightsworn.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "アロマ",
   "canonical_name_en": "Aroma",
+  "cards": [],
+  "expansion": [
+    "Clash of Rebellions",
+    "Invasion: Vengeance",
+    "Chaos Impact",
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AromaGardening-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

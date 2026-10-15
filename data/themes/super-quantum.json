@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "超量士",
   "canonical_name_en": "Super Quantum",
+  "cards": [],
+  "expansion": [
+    "Dark Neostorm",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SuperQuantumRedLayer-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

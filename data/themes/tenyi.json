@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "天威",
   "canonical_name_en": "Tenyi",
+  "cards": [],
+  "expansion": [
+    "Rising Rampage",
+    "Chaos Impact",
+    "Rise of the Duelist",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DracoMastersoftheTenyi-MADU-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "スプライト",
   "canonical_name_en": "Spright",
+  "cards": [
+    "Attribute",
+    "DARK",
+    "FIRE"
+  ],
+  "expansion": [
+    "Power of the Elements",
+    "Darkwing Blast"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SprightGammaBurst-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

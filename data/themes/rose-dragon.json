@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ローズ・ドラゴン",
   "canonical_name_en": "Rose Dragon",
+  "cards": [],
+  "expansion": [
+    "Crossroads of Chaos",
+    "Lightning Overdrive",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BlackRoseDragon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

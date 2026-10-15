@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "機皇神",
   "canonical_name_en": "Meklord Astro",
+  "cards": [],
+  "expansion": [
+    "Extreme Victory"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MeklordAstroDragonAsterisk-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

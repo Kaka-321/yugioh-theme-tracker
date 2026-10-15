@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "覇王門",
   "canonical_name_en": "Supreme King Gate",
+  "cards": [],
+  "expansion": [
+    "Maximum Crisis",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SupremeKingGate.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

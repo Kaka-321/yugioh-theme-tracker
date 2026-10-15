@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "エルフ",
   "canonical_name_en": "Elf",
+  "cards": [],
+  "expansion": [
+    "archetype",
+    "Gekko Tenma",
+    "Yu-Gi-Oh! R",
+    "Yugi Muto",
+    "Yuma Tsukumo",
+    "LIGHT",
+    "EARTH",
+    "Fairy",
+    "Spellcaster"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WonderbeatElf-JP-Manga-R-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

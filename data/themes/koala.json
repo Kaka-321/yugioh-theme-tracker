@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "コアラ",
   "canonical_name_en": "Koala",
+  "cards": [],
+  "expansion": [
+    "Invasion of Chaos",
+    "Phantom Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Koala.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

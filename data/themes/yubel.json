@@ -2,11 +2,27 @@
   "aliases": [],
   "canonical_name": "ユベル",
   "canonical_name_en": "Yubel",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Level",
+    "Phantom of Yubel",
+    "Devil Arm",
+    "Yubel",
+    "Spirit of Yubel",
+    "Retrained",
+    "counterpart",
+    "Yubel - Terror Incarnate",
+    "Main Deck",
+    "Yubel - The Ultimate Nightmare",
+    "Yubel - The Loving Defender Forever",
+    "Super Fusion God",
+    "Elemental HERO Flame Wingman"
+  ],
+  "expansion": [
+    "Phantom Darkness",
+    "Phantom Nightmare",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Yubel-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

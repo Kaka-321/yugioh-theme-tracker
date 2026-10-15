@@ -2,11 +2,15 @@
   "aliases": [],
   "canonical_name": "ファイアウォール",
   "canonical_name_en": "Firewall",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Code of the Duelist",
+    "Dark Neostorm",
+    "Chaos Impact",
+    "Cyberstorm Access",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CynetCircuit-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

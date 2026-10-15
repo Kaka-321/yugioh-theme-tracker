@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "インヴェルズ",
   "canonical_name_en": "Steelswarm",
+  "cards": [],
+  "expansion": [
+    "Hidden Arsenal 5: Steelswarm Invasion",
+    "Hidden Arsenal 6: Omega Xyz"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InfestationTool-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

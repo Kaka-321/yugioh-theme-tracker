@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "素早い",
   "canonical_name_en": "Nimble",
+  "cards": [
+    "Super-Nimble Mega Hamster",
+    "Nimble Angler",
+    "Nimble Beaver",
+    "Nimble Manta",
+    "Nimble Momonga",
+    "Nimble Musasabi",
+    "Nimble Sunfish"
+  ],
+  "expansion": [
+    "Spell Ruler",
+    "Abyss Rising",
+    "Circuit Break"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BeastRage-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "邪心教義",
   "canonical_name_en": "Sinister Doctrine",
+  "cards": [
+    "Chazz Princeton",
+    "Atticus Rhodes",
+    "Syrus Truesdale",
+    "Tyranno Hassleberry",
+    "Alexis Rhodes"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Sinister Doctrine.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,20 @@
   "aliases": [],
   "canonical_name": "スターダスト",
   "canonical_name_en": "Stardust",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "The Duelist Genesis",
+    "Duelist Pack: Yusei",
+    "Stardust Overdrive",
+    "Duelist Pack: Yusei 2",
+    "Duelist Pack: Yusei 3",
+    "Storm of Ragnarok",
+    "Yu-Gi-Oh! 5D's Volume 5 promotional card",
+    "Primal Origin",
+    "Yu-Gi-Oh! 5D's Volume 9 promotional card",
+    "Dawn of Majesty"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StardustIllumination-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

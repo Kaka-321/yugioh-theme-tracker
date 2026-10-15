@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "銃士",
   "canonical_name_en": "Skyblaster",
+  "cards": [],
+  "expansion": [
+    "Duelist Pack: Jesse Anderson",
+    "Duelist Alliance",
+    "Structure Deck: Powercode Link",
+    "Dawn of Majesty",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PhantomSkyblaster-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ＷＷ",
   "canonical_name_en": "Windwitch",
+  "cards": [],
+  "expansion": [
+    "Raging Tempest",
+    "Blazing Vortex"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Windwitch.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

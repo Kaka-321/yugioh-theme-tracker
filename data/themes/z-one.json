@@ -2,11 +2,26 @@
   "aliases": [],
   "canonical_name": "Ｚ－ＯＮＥ",
   "canonical_name_en": "Z-ONE",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Z-ONE/Monster A",
+    "Michion, the Timelord",
+    "Z-ONE/Monster B",
+    "Gabrion, the Timelord",
+    "Z-ONE/Monster C",
+    "Lazion, the Timelord",
+    "Z-ONE/Monster D",
+    "Sandaion, the Timelord",
+    "Z-ONE/Monster E",
+    "Sephylon, the Ultimate Timelord",
+    "Z-ONE/Trap A",
+    "Empty Machine",
+    "Z-ONE/Trap B",
+    "Infinite Machine",
+    "Z-ONE/Trap C",
+    "Infinite Light"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:ZONEMonsterD-BD-JP-C.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

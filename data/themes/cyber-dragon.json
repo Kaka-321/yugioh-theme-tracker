@@ -2,11 +2,17 @@
   "aliases": [],
   "canonical_name": "サイバー・ドラゴン",
   "canonical_name_en": "Cyber Dragon",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Cybernetic Revolution",
+    "Shadow of Infinity",
+    "Duelist Pack: Zane Truesdale",
+    "Absolute Powerforce",
+    "Clash of Rebellions",
+    "Cybernetic Horizon",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CyberneticRevolution-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

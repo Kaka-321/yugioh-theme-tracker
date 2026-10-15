@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "火霊術",
   "canonical_name_en": "Spiritual Fire Art",
+  "cards": [],
+  "expansion": [
+    "Cybernetic Revolution"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SpiritualFireArtKurenai-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "墓守",
   "canonical_name_en": "Gravekeeper's",
+  "cards": [
+    "Gravekeeper's Visionary",
+    "Ishtar forefather",
+    "Gravekeeper's Descendant",
+    "Marik Ishtar",
+    "Gravekeeper's Priestess",
+    "Ishizu Ishtar",
+    "Gravekeeper's Recruiter",
+    "Odion",
+    "Gravekeeper's Heretic",
+    "Thief King Bakura",
+    "Gravekeeper's Headman",
+    "Shadi"
+  ],
+  "expansion": [
+    "Pharaonic Guardian",
+    "Force of the Breaker",
+    "Absolute Powerforce",
+    "Legacy of the Valiant",
+    "Soul Fusion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-WCQRegional-Gravekeepers.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

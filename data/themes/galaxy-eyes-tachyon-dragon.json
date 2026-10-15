@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ギャラクシーアイズ・タキオン・ドラゴン",
   "canonical_name_en": "Galaxy-Eyes Tachyon Dragon",
+  "cards": [],
+  "expansion": [
+    "Lord of the Tachyon Galaxy",
+    "Primal Origin",
+    "Chaos Impact"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TachyonDragon.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

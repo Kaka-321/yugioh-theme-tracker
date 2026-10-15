@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ミラーイマジン",
   "canonical_name_en": "Mirror Imagine",
+  "cards": [
+    "Devil Mirage",
+    "Exchange of the Mirror World",
+    "Mirror World Break",
+    "Kaleidoscope Gate"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:MirrorImagine.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,20 @@
   "aliases": [],
   "canonical_name": "帝王",
   "canonical_name_en": "Monarch",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Cosmo Blazer",
+    "Shadow Specters",
+    "Legacy of the Valiant",
+    "Primal Origin",
+    "Duelist Alliance",
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Flames of Destruction",
+    "Duelist Nexus",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PantheismoftheMonarchs-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

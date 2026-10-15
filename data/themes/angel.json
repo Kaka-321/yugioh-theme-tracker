@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "天使",
   "canonical_name_en": "Angel",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Rose.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

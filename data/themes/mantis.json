@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "カマキリ",
   "canonical_name_en": "Mantis",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:BabyMantisToken-JP-Manga-R-NC.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

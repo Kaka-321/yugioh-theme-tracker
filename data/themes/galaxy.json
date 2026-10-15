@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "ギャラクシー",
   "canonical_name_en": "Galaxy",
+  "cards": [],
+  "expansion": [
+    "Photon Shockwave",
+    "Order of Chaos",
+    "Galactic Overlord",
+    "Return of the Duelist",
+    "Lord of the Tachyon Galaxy",
+    "Primal Origin",
+    "Crossed Souls",
+    "Raging Tempest",
+    "Soul Fusion",
+    "Chaos Impact",
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GalaxyExpedition-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "破壊剣",
   "canonical_name_en": "Destruction Sword",
+  "cards": [
+    "Lockdown"
+  ],
+  "expansion": [
+    "Breakers of Shadow",
+    "The Dark Illusion",
+    "Maximum Crisis"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BusterWhelpoftheDestructionSwordsman-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

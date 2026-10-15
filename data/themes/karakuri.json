@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "カラクリ",
   "canonical_name_en": "Karakuri",
+  "cards": [
+    "Tuner",
+    "Karakuri Anatomy"
+  ],
+  "expansion": [
+    "Starstrike Blast",
+    "Storm of Ragnarok",
+    "Extreme Victory",
+    "Ignition Assault"
+  ],
+  "image": "https://yugipedia.com/wiki/File:KarakuriCashInn-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

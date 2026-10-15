@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "化合獣",
   "canonical_name_en": "Chemicritter",
+  "cards": [
+    "Chemicritter Carbo Crab",
+    "Chemicritter Hydron Hawk",
+    "Chemicritter Oxy Ox",
+    "Poly-Chemicritter Dioxogre",
+    "Poly-Chemicritter Hydragon",
+    "Vola-Chemicritter Methydraco"
+  ],
+  "expansion": [
+    "Invasion: Vengeance",
+    "Dawn of Majesty"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CatalystField-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "ＥＭ",
   "canonical_name_en": "Performapal",
+  "cards": [],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Shining Victories",
+    "The Dark Illusion",
+    "Invasion: Vengeance",
+    "Raging Tempest",
+    "Maximum Crisis",
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PerformapalShowDown-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

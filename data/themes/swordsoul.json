@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "相剣",
   "canonical_name_en": "Swordsoul",
+  "cards": [
+    "The Golden Swordsoul",
+    "The Iris Swordsoul"
+  ],
+  "expansion": [
+    "Dawn of Majesty",
+    "Burst of Destiny",
+    "Battle of Chaos",
+    "Photon Hypernova",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SwordsoulStrife-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

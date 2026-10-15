@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "天気",
   "canonical_name_en": "The Weather",
+  "cards": [],
+  "expansion": [
+    "Dark Neostorm",
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TheWeatherRainbowedCanvas-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

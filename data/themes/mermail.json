@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "水精鱗",
   "canonical_name_en": "Mermail",
+  "cards": [
+    "Level",
+    "Type",
+    "Aqua",
+    "Sea Serpent",
+    "Fish"
+  ],
+  "expansion": [
+    "Abyss Rising",
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Circuit Break",
+    "Dark Neostorm",
+    "Rage of the Abyss",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Abysssquall-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "ドミナス",
   "canonical_name_en": "Dominus",
+  "cards": [
+    "LIGHT",
+    "DARK",
+    "EARTH",
+    "WATER",
+    "FIRE",
+    "WIND",
+    "control",
+    "Negate",
+    "hand",
+    "Special Summon",
+    "Return",
+    "Extra Deck",
+    "Banish"
+  ],
+  "expansion": [
+    "The Infinite Forbidden",
+    "Rage of the Abyss",
+    "Alliance Insight",
+    "Doom of Dimensions",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DominusPurge-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

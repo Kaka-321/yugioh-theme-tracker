@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "魔術師",
   "canonical_name_en": "Magician",
+  "cards": [
+    "Support",
+    "Summon"
+  ],
+  "expansion": [
+    "Starter Deck: Yugi",
+    "Metal Raiders",
+    "Starter Deck: Joey",
+    "Magician's Force",
+    "Invasion of Chaos",
+    "Flaming Eternity",
+    "Elemental Energy",
+    "Structure Deck: Spellcaster's Judgment",
+    "Crimson Crisis",
+    "Generation Force",
+    "Duelist Pack: Battle City",
+    "Clash of Rebellions",
+    "The Dark Illusion",
+    "Raging Tempest",
+    "Maximum Crisis",
+    "Age of Overlord",
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PendulumCall-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

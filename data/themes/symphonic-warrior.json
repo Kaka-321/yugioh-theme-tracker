@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "音響戦士",
   "canonical_name_en": "Symphonic Warrior",
+  "cards": [
+    "Level",
+    "Attribute",
+    "Type"
+  ],
+  "expansion": [
+    "Storm of Ragnarok",
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SymphAmplifire-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ＬＬ",
   "canonical_name_en": "Lyrilusc",
+  "cards": [],
+  "expansion": [
+    "Maximum Crisis"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LyriluscBirdCall-MADU-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

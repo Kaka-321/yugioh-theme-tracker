@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ＺＳ",
   "canonical_name_en": "ZS -",
+  "cards": [],
+  "expansion": [
+    "Primal Origin",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ZSVanishSage-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

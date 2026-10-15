@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "不知火",
   "canonical_name_en": "Shiranui",
+  "cards": [],
+  "expansion": [
+    "Breakers of Shadow",
+    "The Dark Illusion",
+    "Raging Tempest",
+    "Savage Strike"
+  ],
+  "image": "https://yugipedia.com/wiki/File:2500DayssinceLaunchCelebrationVote1-DULI-GameMat-Event.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

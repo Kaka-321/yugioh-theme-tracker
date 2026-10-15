@@ -2,11 +2,15 @@
   "aliases": [],
   "canonical_name": "ブラック・マジシャン・ガール",
   "canonical_name_en": "Dark Magician Girl",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Magician's Force",
+    "Duelist Pack: Battle City",
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+    "Structure Deck: Yugi Muto",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DarkMagicianGirl-DBR-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

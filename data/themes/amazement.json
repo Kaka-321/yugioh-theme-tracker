@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "アメイズメント",
   "canonical_name_en": "Amazement",
+  "cards": [],
+  "expansion": [
+    "Lightning Overdrive",
+    "Dawn of Majesty",
+    "Power of the Elements",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AmazementAdministratorArlekino-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

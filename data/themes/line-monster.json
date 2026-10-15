@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ラインモンスター",
   "canonical_name_en": "Line Monster",
+  "cards": [
+    "Line Promotion",
+    "Line World",
+    "Line World Revival"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Line Monster.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

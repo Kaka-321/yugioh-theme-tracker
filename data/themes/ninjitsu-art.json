@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "忍法",
   "canonical_name_en": "Ninjitsu Art",
+  "cards": [],
+  "expansion": [
+    "Ancient Sanctuary",
+    "Soul of the Duelist",
+    "Structure Deck: Lord of the Storm",
+    "Order of Chaos",
+    "Darkwing Blast",
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NinjitsuArt.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

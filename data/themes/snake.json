@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "蛇",
   "canonical_name_en": "Snake",
+  "cards": [
+    "Ananta the Snake Dragon",
+    "Black Mamba",
+    "Lamia",
+    "Poisonous Viper",
+    "Urubonus, the Avatar of Malice"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Snake.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

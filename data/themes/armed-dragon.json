@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "アームド・ドラゴン",
   "canonical_name_en": "Armed Dragon",
+  "cards": [],
+  "expansion": [
+    "Soul of the Duelist",
+    "Phantom Darkness",
+    "Duelist Pack: Chazz Princeton",
+    "Structure Deck: Dragon's Roar",
+    "Duelist Alliance",
+    "Blazing Vortex",
+    "The Infinite Forbidden",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArmedDragonBlitz-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

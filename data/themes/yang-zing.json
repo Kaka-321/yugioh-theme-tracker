@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "竜星",
   "canonical_name_en": "Yang Zing",
+  "cards": [],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Crossed Souls",
+    "Invasion: Vengeance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-WCQRegional-YangZing.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

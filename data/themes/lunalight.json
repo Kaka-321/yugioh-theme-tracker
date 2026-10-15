@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ムーンライト",
   "canonical_name_en": "Lunalight",
+  "cards": [],
+  "expansion": [
+    "Shining Victories",
+    "The Dark Illusion",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LunalightMasquerade-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

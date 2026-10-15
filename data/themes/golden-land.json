@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "黄金郷",
   "canonical_name_en": "Golden Land",
+  "cards": [],
+  "expansion": [
+    "Blazing Vortex",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GoldenLandForever-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

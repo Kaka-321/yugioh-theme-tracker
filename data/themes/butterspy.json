@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "幻蝶の刺客",
   "canonical_name_en": "Butterspy",
+  "cards": [],
+  "expansion": [
+    "Galactic Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Butterspy.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

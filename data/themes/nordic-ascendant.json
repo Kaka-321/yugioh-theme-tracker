@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "極星天",
   "canonical_name_en": "Nordic Ascendant",
+  "cards": [
+    "Gullveig of the Nordic Ascendant",
+    "Mimir of the Nordic Ascendant",
+    "Valkyrie of the Nordic Ascendant",
+    "Vanadis of the Nordic Ascendant"
+  ],
+  "expansion": [
+    "Storm of Ragnarok"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NordicAscendants.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

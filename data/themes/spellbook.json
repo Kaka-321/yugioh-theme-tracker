@@ -2,6 +2,26 @@
   "aliases": [],
   "canonical_name": "魔導書",
   "canonical_name_en": "Spellbook",
+  "cards": [
+    "Spellbook of Eternity",
+    "Spellbook of Fate",
+    "Spellbook of Knowledge",
+    "Spellbook of Life",
+    "Spellbook of Power",
+    "Spellbook of Secrets",
+    "Spellbook of the Master",
+    "Spellbook of Wisdom"
+  ],
+  "expansion": [
+    "Magician's Force",
+    "Return of the Duelist",
+    "Abyss Rising",
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Code of the Duelist",
+    "THE CHRONICLES DECK: Spirit Charmers (All-Foil Edition)"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SpellbookMagicianofProphecy-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

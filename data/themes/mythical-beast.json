@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "魔導獣",
   "canonical_name_en": "Mythical Beast",
+  "cards": [],
+  "expansion": [
+    "Structure Deck: Spellcaster's Judgment",
+    "Extreme Force",
+    "Cybernetic Horizon"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MythicalBestiary-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

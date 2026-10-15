@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "方界胤",
   "canonical_name_en": "Cubic Seed",
+  "cards": [],
+  "expansion": [
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Cubic Seed.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

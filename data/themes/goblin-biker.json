@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ゴブリンライダー",
   "canonical_name_en": "Goblin Biker",
+  "cards": [],
+  "expansion": [
+    "Phantom Nightmare",
+    "Legacy of Destruction",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GoblinBikersGoneWild-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

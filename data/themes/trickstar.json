@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "トリックスター",
   "canonical_name_en": "Trickstar",
+  "cards": [],
+  "expansion": [
+    "Code of the Duelist",
+    "Circuit Break",
+    "Flames of Destruction",
+    "Savage Strike"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TrickstarLightStage-MADU-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

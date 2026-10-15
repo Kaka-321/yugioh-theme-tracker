@@ -2,11 +2,17 @@
   "aliases": [],
   "canonical_name": "テオリアライズ",
   "canonical_name_en": "Theorealize",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Duelist's Advance",
+    "Doom of Dimensions",
+    "Burst Protocol",
+    "Chaos Origins",
+    "Immortal Phoenix",
+    "archetype",
+    "Spell Card"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Theorealize-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "空牙団",
   "canonical_name_en": "Fur Hire",
+  "cards": [
+    "Trigger Effect",
+    "Special Summon",
+    "GY",
+    "Destroy",
+    "face-up",
+    "Set",
+    "Deck",
+    "hand",
+    "Discard",
+    "draw a card",
+    "ATK",
+    "DEF",
+    "GY"
+  ],
+  "expansion": [
+    "Soul Fusion",
+    "Dark Neostorm",
+    "Phantom Rage",
+    "Darkwing Blast",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MayhemFurHire-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

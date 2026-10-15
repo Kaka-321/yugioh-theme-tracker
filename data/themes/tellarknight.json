@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "テラナイト",
   "canonical_name_en": "Tellarknight",
+  "cards": [
+    "Constellar",
+    "Stellarknight"
+  ],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Invasion: Vengeance",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-StandardDuelRankings-tellarknight.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

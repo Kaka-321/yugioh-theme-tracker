@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ＧＭＸ",
   "canonical_name_en": "GMX",
+  "cards": [
+    "Returned Dino Daneen",
+    "Evolved Daneen"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:GMXAppliedExperiment55-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

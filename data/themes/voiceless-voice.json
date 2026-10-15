@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "粛声",
   "canonical_name_en": "Voiceless Voice",
+  "cards": [
+    "Fairy",
+    "Novox's Prayer",
+    "Dragon",
+    "Saffira, Queen of Dragons",
+    "Sauravis, the Ancient and Ascended",
+    "Warrior",
+    "Skull Guardian"
+  ],
+  "expansion": [
+    "Phantom Nightmare",
+    "Legacy of Destruction",
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PrayersoftheVoicelessVoice-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

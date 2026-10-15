@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "ホワイト",
   "canonical_name_en": "White",
+  "cards": [
+    "White Aura Bihamut",
+    "White Aura Dolphin",
+    "White Aura Monoceros",
+    "White Aura Porpoise",
+    "White Aura Whale",
+    "White Moray",
+    "White Sardine",
+    "White Stingray",
+    "White Sunfish"
+  ],
+  "expansion": [
+    "Yu-Gi-Oh! ARC-V Volume 4 promotional card",
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:White.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

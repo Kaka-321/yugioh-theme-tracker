@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "Ｍ∀ＬＩＣＥ",
   "canonical_name_en": "Maliss",
+  "cards": [],
+  "expansion": [
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MalissinUnderground-MADU-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

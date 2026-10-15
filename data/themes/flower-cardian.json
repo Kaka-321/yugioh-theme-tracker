@@ -2,6 +2,26 @@
   "aliases": [],
   "canonical_name": "花札衛",
   "canonical_name_en": "Flower Cardian",
+  "cards": [
+    "Crane Crane",
+    "Naturia Beetle",
+    "Curtain of the Dark Ones",
+    "Blazewing Butterfly",
+    "Boar Soldier",
+    "Naturia Cosmobeet",
+    "The Wicked Avatar",
+    "Valerifawn, Mystical Beast of the Forest",
+    "Giant Trunade",
+    "Flower Cardian Lightshower",
+    "Poison Draw Frog",
+    "Tentacle Plant",
+    "Fenghuang"
+  ],
+  "expansion": [
+    "Invasion: Vengeance",
+    "Raging Tempest"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FlowerGathering-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

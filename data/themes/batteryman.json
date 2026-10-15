@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "電池メン",
   "canonical_name_en": "Batteryman",
+  "cards": [
+    "Batteryman D",
+    "Batteryman C",
+    "Batteryman AA",
+    "Batteryman AAA",
+    "Batteryman 9-Volt",
+    "Batteryman Charger",
+    "Batteryman Solar",
+    "Batteryman Micro-Cell",
+    "Batteryman Fuel Cell",
+    "Batteryman Industrial Strength"
+  ],
+  "expansion": [
+    "Cybernetic Revolution",
+    "Enemy of Justice",
+    "Light of Destruction",
+    "The Lost Millennium",
+    "Light of Destruction",
+    "The Shining Darkness",
+    "Duelist Alliance",
+    "Flames of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RecyclingBatteries-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

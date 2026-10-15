@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "戦華",
   "canonical_name_en": "Ancient Warriors",
+  "cards": [
+    "WATER",
+    "WIND",
+    "FIRE",
+    "DARK"
+  ],
+  "expansion": [
+    "Ignition Assault",
+    "Eternity Code",
+    "Rise of the Duelist",
+    "Blazing Vortex",
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AncientWarriorsSagaThreeVisits-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

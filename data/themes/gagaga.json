@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "ガガガ",
   "canonical_name_en": "Gagaga",
+  "cards": [],
+  "expansion": [
+    "Generation Force",
+    "Order of Chaos",
+    "Galactic Overlord",
+    "Return of the Duelist",
+    "Abyss Rising",
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Shadow Specters",
+    "Yu-Gi-Oh! ZEXAL Volume 9 promotional card",
+    "Duelist's Advance",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Gagagadraw-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

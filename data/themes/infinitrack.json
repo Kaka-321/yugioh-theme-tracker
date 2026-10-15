@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "無限起動",
   "canonical_name_en": "Infinitrack",
+  "cards": [],
+  "expansion": [
+    "Chaos Impact",
+    "Eternity Code",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InfinitrackEarthSlicer-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

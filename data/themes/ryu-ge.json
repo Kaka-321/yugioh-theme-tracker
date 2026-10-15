@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "竜華",
   "canonical_name_en": "Ryu-Ge",
+  "cards": [
+    "Type",
+    "Attribute",
+    "Dinosaur",
+    "EARTH",
+    "Sea Serpent",
+    "WATER",
+    "Wyrm",
+    "WIND",
+    "Dragon",
+    "LIGHT",
+    "Dragon",
+    "DARK"
+  ],
+  "expansion": [
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RyuGeRivalry-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

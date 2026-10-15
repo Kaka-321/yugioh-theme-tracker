@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "暗黒界",
   "canonical_name_en": "Dark World",
+  "cards": [],
+  "expansion": [
+    "Elemental Energy",
+    "Strike of Neos",
+    "Tactical Evolution",
+    "Phantom Darkness",
+    "Primal Origin",
+    "Code of the Duelist",
+    "Phantom Rage",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-Misc-DarkWorld.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

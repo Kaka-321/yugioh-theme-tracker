@@ -2,11 +2,13 @@
   "aliases": [],
   "canonical_name": "サイレント・ソードマン",
   "canonical_name_en": "Silent Swordsman",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Rise of Destiny",
+    "Flaming Eternity",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SilentSwordSlash-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

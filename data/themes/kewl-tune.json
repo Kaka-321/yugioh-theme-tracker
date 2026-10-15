@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "キラーチューン",
   "canonical_name_en": "Kewl Tune",
+  "cards": [],
+  "expansion": [
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:KewlTuneB2B-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

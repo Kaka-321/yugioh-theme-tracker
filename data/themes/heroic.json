@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "ヒロイック",
   "canonical_name_en": "Heroic",
+  "cards": [
+    "Level",
+    "Heroic Challenger"
+  ],
+  "expansion": [
+    "Return of the Duelist",
+    "Abyss Rising",
+    "Dimension Force",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HeroicChance-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

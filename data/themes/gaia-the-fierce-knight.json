@@ -2,11 +2,17 @@
   "aliases": [],
   "canonical_name": "暗黒騎士ガイア",
   "canonical_name_en": "Gaia The Fierce Knight",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Legend of Blue Eyes White Dragon",
+    "Structure Deck: Warrior's Triumph",
+    "Secrets of Eternity",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Raging Tempest",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GallopingGaia-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

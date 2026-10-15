@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "アトラクション",
   "canonical_name_en": "Attraction",
+  "cards": [
+    "Amaze Attraction Cyclo-Coaster",
+    "Nephthys",
+    "Amaze Attraction Horror House",
+    "Ghostrick",
+    "Amaze Attraction Majestic Merry-Go-Round",
+    "Six Samurai",
+    "Amaze Attraction Rapid Racing",
+    "F.A.",
+    "Amaze Attraction Thrill Train",
+    "Metal Dragon",
+    "Amaze Attraction Viking Vortex",
+    "Plunder Patroll",
+    "Amaze Attraction Wonder Wheel",
+    "Ojama"
+  ],
+  "expansion": [
+    "Lightning Overdrive",
+    "Dawn of Majesty",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AmazeAttractionHorrorHouse-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

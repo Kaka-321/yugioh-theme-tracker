@@ -2,6 +2,27 @@
   "aliases": [],
   "canonical_name": "ワイゼル",
   "canonical_name_en": "Wisel",
+  "cards": [
+    "Wisel Top",
+    "Wisel Top 3",
+    "Wisel Guard",
+    "Wisel Guard 3",
+    "Wisel Attack",
+    "Wisel Attack 3",
+    "Wisel Attack 5",
+    "Wisel Carrier"
+  ],
+  "expansion": [
+    "Extreme Victory",
+    "Weekly Shōnen Jump 2010, Issue 36–37 promotional card",
+    "Shonen Jump Vol. 9, Issue 8 promotional card",
+    "Duel Terminal - Sacred Star Knights!!",
+    "Duel Terminal 7a",
+    "Premium Pack Vol.7",
+    "Star Pack 2013",
+    "Legendary Collection 5D's Mega Pack"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MeklordEmperorWisel-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

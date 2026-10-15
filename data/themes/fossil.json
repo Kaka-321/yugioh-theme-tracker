@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "化石",
   "canonical_name_en": "Fossil",
+  "cards": [
+    "Dinosaur",
+    "Machine",
+    "Warrior"
+  ],
+  "expansion": [
+    "Power of the Duelist",
+    "Structure Deck: Dinosaur's Rage",
+    "Gladiator's Assault",
+    "Ancient Prophecy"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FossilFusion-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

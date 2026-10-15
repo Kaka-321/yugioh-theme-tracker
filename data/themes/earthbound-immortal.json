@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "地縛神",
   "canonical_name_en": "Earthbound Immortal",
+  "cards": [
+    "Roman Goodwin",
+    "Carly Carmine",
+    "Devack",
+    "Misty Tredwell",
+    "Kalin Kessler",
+    "Greiger",
+    "Rex Goodwin"
+  ],
+  "expansion": [
+    "Raging Battle",
+    "Ancient Prophecy",
+    "Stardust Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EarthboundImmortals.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

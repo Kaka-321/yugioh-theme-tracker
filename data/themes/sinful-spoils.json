@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "罪宝",
   "canonical_name_en": "Sinful Spoils",
+  "cards": [
+    "Azamina",
+    "Diabellstar the Black Witch",
+    "Silvy of the White Forest",
+    "Rucia of the White Forest",
+    "Diabellze the Original Sinkeeper",
+    "Morgana the Witch of Eyes",
+    "Goblin Biker Big Gabonga",
+    "Queen Azamina",
+    "Diabell, Queen of the White Forest",
+    "Queen Azamina"
+  ],
+  "expansion": [
+    "Duelist Nexus",
+    "Age of Overlord",
+    "Legacy of Destruction",
+    "Rage of the Abyss",
+    "Supreme Darkness",
+    "Alliance Insight",
+    "Immortal Phoenix"
+  ],
+  "image": "https://yugipedia.com/wiki/File:OriginalSinfulSpoilsSnakeEye-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

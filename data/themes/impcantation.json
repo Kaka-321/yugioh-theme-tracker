@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "魔神儀",
   "canonical_name_en": "Impcantation",
+  "cards": [],
+  "expansion": [
+    "Cybernetic Horizon",
+    "Soul Fusion",
+    "Savage Strike",
+    "Dark Neostorm"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CrealtartheImpcantationOriginator-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

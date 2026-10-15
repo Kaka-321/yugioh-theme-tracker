@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "バリアンズ",
   "canonical_name_en": "Barian's",
+  "cards": [],
+  "expansion": [
+    "Lord of the Tachyon Galaxy",
+    "Starter Deck 2013 Enhancement Pack",
+    "Super Starter Power-Up Pack",
+    "2013 Collectible Tins Wave 2",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RankUpMagicBariansForce-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ウォークライ",
   "canonical_name_en": "War Rock",
+  "cards": [],
+  "expansion": [
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WarRockOrdeal-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

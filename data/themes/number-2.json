@@ -2,11 +2,11 @@
   "aliases": [],
   "canonical_name": "ナンバーズ",
   "canonical_name_en": "Number",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Shadow Specters"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NumberWall-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

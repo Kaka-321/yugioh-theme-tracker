@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "聖剣士",
   "canonical_name_en": "Holy Swordsman",
+  "cards": [],
+  "expansion": [
+    "Deck Mod Pack: Hyperspeed Rush Road!!",
+    "Deck Mod Pack: Illusion Strike Mirage Impact!!",
+    "Saikyō Jump March 2021 promotional card",
+    "Strongest Battle Deck Yuga - Hyper Machine Road",
+    "Deck Mod Pack: Chaotic Omega Rising!!"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Raidacross brings two more monsters to the field with Sunlight Order.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

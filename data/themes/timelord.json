@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "時械神",
   "canonical_name_en": "Timelord",
+  "cards": [
+    "Return",
+    "field",
+    "hand",
+    "Shuffle",
+    "Graveyard",
+    "once per turn",
+    "draw a card",
+    "control",
+    "LP",
+    "respond",
+    "ATK",
+    "Special Summon",
+    "Fairy",
+    "hand",
+    "Graveyard",
+    "negate",
+    "ATK"
+  ],
+  "expansion": [
+    "Yu-Gi-Oh! ARC-V Volume 6 promotional card"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Timelord.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

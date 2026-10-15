@@ -2,11 +2,15 @@
   "aliases": [],
   "canonical_name": "希望皇ホープ",
   "canonical_name_en": "Utopia",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Order of Chaos",
+    "Judgment of the Light",
+    "Legacy of the Valiant",
+    "Yu-Gi-Oh! ZEXAL Volume 8 promotional card",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:5Hopes.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ドッグ",
   "canonical_name_en": "Dog",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Tribulldog-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

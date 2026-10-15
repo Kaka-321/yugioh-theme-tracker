@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "呪眼",
   "canonical_name_en": "Evil Eye",
+  "cards": [],
+  "expansion": [
+    "Chaos Impact",
+    "Eternity Code",
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EvilEyeReemergence-MADU-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

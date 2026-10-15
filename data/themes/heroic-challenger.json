@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "Ｈ・Ｃ",
   "canonical_name_en": "Heroic Challenger",
+  "cards": [],
+  "expansion": [
+    "Return of the Duelist",
+    "Abyss Rising",
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Heroic Challenger.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

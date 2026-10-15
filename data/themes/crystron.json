@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "クリストロン",
   "canonical_name_en": "Crystron",
+  "cards": [],
+  "expansion": [
+    "Invasion: Vengeance",
+    "Raging Tempest",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CrystronEntry-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

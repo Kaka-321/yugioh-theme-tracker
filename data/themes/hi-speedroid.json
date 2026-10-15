@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ＨＳＲ",
   "canonical_name_en": "Hi-Speedroid",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Hi-Speedroid.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

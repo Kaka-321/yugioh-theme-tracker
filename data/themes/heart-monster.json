@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ハートモンスター",
   "canonical_name_en": "Heart Monster",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Heart Monster.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

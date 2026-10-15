@@ -2,11 +2,30 @@
   "aliases": [],
   "canonical_name": "サクリファイス",
   "canonical_name_en": "Relinquished",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Relinquished",
+    "Black Illusion Ritual",
+    "Ritual Spell",
+    "Relinquished the Wicked Eye of Illusion",
+    "Thousand-Eyes Restrict",
+    "Thousand-Eyes Idol",
+    "Fusion Material",
+    "Millennium-Eyes Restrict",
+    "Effect Monster",
+    "Nightmare-Eyes Restrict",
+    "Fiend",
+    "Illusion",
+    "Spellcaster",
+    "Relinquished Anima",
+    "Link Material"
+  ],
+  "expansion": [
+    "Cyberdark Impact",
+    "Phantom Darkness",
+    "Stardust Overdrive",
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Relinquished-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

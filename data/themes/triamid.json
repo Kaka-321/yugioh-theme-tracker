@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "トラミッド",
   "canonical_name_en": "Triamid",
+  "cards": [
+    "effect"
+  ],
+  "expansion": [
+    "The Dark Illusion",
+    "Dawn of Majesty",
+    "OCG",
+    "archetype",
+    "EARTH",
+    "Rock"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TriamidLoading-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

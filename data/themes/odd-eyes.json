@@ -2,6 +2,31 @@
   "aliases": [],
   "canonical_name": "オッドアイズ",
   "canonical_name_en": "Odd-Eyes",
+  "cards": [
+    "Odd-Eyes Raging Dragon",
+    "Dark Rebellion Xyz Dragon",
+    "Odd-Eyes Rebellion Dragon",
+    "Odd-Eyes Rebellion Xyz Dragon",
+    "Arc Rebellion Xyz Dragon",
+    "Odd-Eyes Venom Dragon",
+    "Starving Venom Fusion Dragon",
+    "Odd-Eyes Wing Dragon",
+    "Clear Wing Synchro Dragon"
+  ],
+  "expansion": [
+    "Duelist Alliance",
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Shining Victories",
+    "Raging Tempest",
+    "Yu-Gi-Oh! ARC-V Volume 1 promotional card",
+    "Code of the Duelist",
+    "Yu-Gi-Oh! ARC-V Volume 5 promotional card",
+    "Dimension Force",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Three Odd-Eyes hybrids.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

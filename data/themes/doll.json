@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ドール",
   "canonical_name_en": "Doll",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:IceDollMirror-JP-Manga-GX-CA.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

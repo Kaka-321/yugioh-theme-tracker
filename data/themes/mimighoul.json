@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ミミグル",
   "canonical_name_en": "Mimighoul",
+  "cards": [],
+  "expansion": [
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MimighoulCharm-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

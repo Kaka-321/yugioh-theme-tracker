@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ハイドライブ",
   "canonical_name_en": "Hydradrive",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Hydradrive.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

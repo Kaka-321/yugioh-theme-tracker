@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ナイト",
   "canonical_name_en": "Knight",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:RevivalKnight-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

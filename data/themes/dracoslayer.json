@@ -2,6 +2,26 @@
   "aliases": [],
   "canonical_name": "竜剣士",
   "canonical_name_en": "Dracoslayer",
+  "cards": [
+    "Luster Pendulum, the Dracoslayer",
+    "Clash of Rebellions",
+    "Vector Pendulum, the Dracoverlord",
+    "Dimension of Chaos",
+    "Master Pendulum, the Dracoslayer",
+    "Breakers of Shadow",
+    "Lector Pendulum, the Dracoverlord",
+    "Shining Victories"
+  ],
+  "expansion": [
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "The Dark Illusion",
+    "Darkwing Blast",
+    "Phantom Nightmare",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-AsiaChampionshipSP-Dracoslayer.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "ガエル",
   "canonical_name_en": "Frog",
+  "cards": [
+    "Beelze Frog",
+    "Des Frog",
+    "Centerfrog",
+    "Dupe Frog",
+    "Flip Flop Frog",
+    "Poison Draw Frog",
+    "Submarine Frog",
+    "Swap Frog",
+    "Treeborn Frog",
+    "Unifrog"
+  ],
+  "expansion": [
+    "Cybernetic Revolution",
+    "Shadow of Infinity",
+    "Light of Destruction",
+    "Crimson Crisis",
+    "Stardust Overdrive",
+    "The Shining Darkness",
+    "Extreme Victory",
+    "Invasion: Vengeance",
+    "Cybernetic Horizon"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RainofFrogs-BPRO-EN-C-1E.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

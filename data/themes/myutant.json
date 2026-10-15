@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ミュートリア",
   "canonical_name_en": "Myutant",
+  "cards": [
+    "GY",
+    "Banish"
+  ],
+  "expansion": [
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MyutantEvolutionLab-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

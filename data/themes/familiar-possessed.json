@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "憑依装着",
   "canonical_name_en": "Familiar-Possessed",
+  "cards": [],
+  "expansion": [
+    "Elemental Energy",
+    "Order of Chaos",
+    "Maximum Crisis",
+    "Savage Strike",
+    "Rising Rampage",
+    "Ignition Assault",
+    "Eternity Code",
+    "Lightning Overdrive",
+    "Battle of Chaos",
+    "THE CHRONICLES DECK: Spirit Charmers (All-Foil Edition)",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AwakeningofthePossessed-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

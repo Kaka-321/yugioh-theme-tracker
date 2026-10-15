@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "＠イグニスター",
   "canonical_name_en": "@Ignister",
+  "cards": [
+    "DARK",
+    "Ai",
+    "EARTH",
+    "Bohman",
+    "Harlin",
+    "Pandor",
+    "FIRE",
+    "LIGHT",
+    "Lightning",
+    "WATER",
+    "WIND",
+    "Windy"
+  ],
+  "expansion": [
+    "Ignition Assault",
+    "Eternity Code",
+    "Lightning Overdrive",
+    "Alliance Insight",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:@Ignister.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

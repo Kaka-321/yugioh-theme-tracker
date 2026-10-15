@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ドドド",
   "canonical_name_en": "Dododo",
+  "cards": [],
+  "expansion": [
+    "Cosmo Blazer",
+    "Duelist's Advance",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Dodododraw-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

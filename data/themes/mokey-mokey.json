@@ -2,11 +2,12 @@
   "aliases": [],
   "canonical_name": "もけもけ",
   "canonical_name_en": "Mokey Mokey",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Rise of Destiny",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HumanWaveTactics-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

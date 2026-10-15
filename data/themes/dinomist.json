@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ダイナミスト",
   "canonical_name_en": "Dinomist",
+  "cards": [],
+  "expansion": [
+    "Breakers of Shadow",
+    "Shining Victories",
+    "The Dark Illusion",
+    "Maximum Crisis",
+    "Darkwing Blast"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DinomistRush-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

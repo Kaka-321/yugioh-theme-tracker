@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "セイヴァー",
   "canonical_name_en": "Majestic",
+  "cards": [
+    "Majestic Red Dragon",
+    "Red Dragon Archfiend",
+    "Majestic Star Dragon",
+    "Stardust Dragon",
+    "Shooting Majestic Star Dragon",
+    "Shooting Star Dragon"
+  ],
+  "expansion": [
+    "Stardust Overdrive",
+    "Absolute Powerforce",
+    "Duelist Pack: Yusei 2",
+    "Duelist Pack: Yusei 3",
+    "Dawn of Majesty"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MajesticStarDragon-JP-Anime-5D-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

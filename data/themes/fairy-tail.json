@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "妖精伝姫",
   "canonical_name_en": "Fairy Tail",
+  "cards": [],
+  "expansion": [
+    "The Dark Illusion",
+    "Invasion: Vengeance",
+    "Raging Tempest",
+    "Maximum Crisis",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FairyTailBall-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

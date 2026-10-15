@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "メメント",
   "canonical_name_en": "Memento",
+  "cards": [
+    "Goblin Calligrapher",
+    "Key Mace",
+    "Wretched Ghost of the Attic",
+    "Fairywitch",
+    "Dark Blade",
+    "Akihiron",
+    "Tatsunootoshigo",
+    "Twin-Headed Thunder Dragon",
+    "Tri-Horned Dragon"
+  ],
+  "expansion": [
+    "Phantom Nightmare",
+    "Legacy of Destruction",
+    "The Infinite Forbidden",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MementotlanBoneParty-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

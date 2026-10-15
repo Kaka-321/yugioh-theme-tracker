@@ -2,6 +2,27 @@
   "aliases": [],
   "canonical_name": "真竜",
   "canonical_name_en": "True Draco",
+  "cards": [
+    "Metalfoes",
+    "Metalfoes Combination",
+    "The Dark Illusion",
+    "Crystron",
+    "Crystron Impact",
+    "Invasion: Vengeance",
+    "Zoodiac",
+    "Zoodiac Combo",
+    "Raging Tempest",
+    "Maximum Crisis"
+  ],
+  "expansion": [
+    "Shining Victories",
+    "The Dark Illusion",
+    "Invasion: Vengeance",
+    "Raging Tempest",
+    "Maximum Crisis",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TrueDracoApocalypse-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ホルスの黒炎竜",
   "canonical_name_en": "Horus the Black Flame Dragon",
+  "cards": [],
+  "expansion": [
+    "Soul of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HorusServant-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "超重武者装留",
   "canonical_name_en": "Superheavy Samurai Soul",
+  "cards": [],
+  "expansion": [
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Dimension of Chaos",
+    "Invasion: Vengeance",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SuperheavySamuraiWagon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

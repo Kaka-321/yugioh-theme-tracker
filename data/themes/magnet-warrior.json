@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "マグネット・ウォリアー",
   "canonical_name_en": "Magnet Warrior",
+  "cards": [
+    "Alpha The Magnet Warrior",
+    "Alpha The Electromagnet Warrior",
+    "Beta The Magnet Warrior",
+    "Beta The Electromagnet Warrior",
+    "Gamma The Magnet Warrior",
+    "Gamma The Electromagnet Warrior",
+    "Delta The Magnet Warrior",
+    "Epsilon The Magnet Warrior"
+  ],
+  "expansion": [
+    "Structure Deck: Yugi Muto",
+    "Battle of Chaos",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MagneticField-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

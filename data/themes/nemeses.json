@@ -2,6 +2,25 @@
   "aliases": [],
   "canonical_name": "ネメシス",
   "canonical_name_en": "Nemeses",
+  "cards": [
+    "LIGHT",
+    "Dragon",
+    "DARK",
+    "Wyrm",
+    "WIND",
+    "Thunder",
+    "FIRE",
+    "Pyro",
+    "EARTH",
+    "Rock",
+    "WATER",
+    "Aqua"
+  ],
+  "expansion": [
+    "Eternity Code",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArchnemesesEschatos-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

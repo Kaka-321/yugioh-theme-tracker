@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "オンボロボ",
   "canonical_name_en": "Junk Robot",
+  "cards": [
+    "Junk Robot Camelcycle",
+    "Junk Robot Cleanaga",
+    "Junk Robot Computerkong",
+    "Junk Robot Teapot Kangaroo"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Onborobo.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

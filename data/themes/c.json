@@ -2,11 +2,27 @@
   "aliases": [],
   "canonical_name": "Ｃ",
   "canonical_name_en": "C",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Order of Chaos",
+    "Abyss Rising",
+    "Lord of the Tachyon Galaxy",
+    "Judgment of the Light",
+    "Shadow Specters",
+    "Starter Deck 2013",
+    "Super Starter: V for Victory",
+    "Starter Deck 2013 Enhancement Pack",
+    "Super Starter Power-Up Pack",
+    "Premium Pack 16",
+    "Number Hunters",
+    "Legacy of the Valiant",
+    "Star Pack 2014",
+    "Primal Origin",
+    "Dragons of Legend",
+    "Master Guide 4 promotional cards",
+    "Premium Gold"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Chaos Xyz.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

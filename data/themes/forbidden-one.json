@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "封印されし",
   "canonical_name_en": "Forbidden One",
+  "cards": [],
+  "expansion": [
+    "Legend of Blue Eyes White Dragon",
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ExodiaCardsJP.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

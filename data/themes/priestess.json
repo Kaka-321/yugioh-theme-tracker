@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "巫女",
   "canonical_name_en": "Priestess",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Priestess.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

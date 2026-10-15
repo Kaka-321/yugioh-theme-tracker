@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "ホープ",
   "canonical_name_en": "Utopic",
+  "cards": [],
+  "expansion": [
+    "Tactical Evolution",
+    "Order of Chaos",
+    "Judgment of the Light",
+    "Legacy of the Valiant",
+    "The New Challengers",
+    "Yu-Gi-Oh! ZEXAL Volume 8 promotional card",
+    "Lightning Overdrive",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:6Hopes.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

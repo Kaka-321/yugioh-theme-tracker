@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "ピュアリィ",
   "canonical_name_en": "Purrely",
+  "cards": [
+    "Attribute",
+    "Purrely Happy Memory",
+    "Epurrely Happiness",
+    "Expurrely Happiness",
+    "LIGHT",
+    "Purrely Delicious Memory",
+    "Epurrely Plump",
+    "EARTH",
+    "Purrely Pretty Memory",
+    "Epurrely Beauty",
+    "WATER",
+    "Purrelyly",
+    "Purrely Sleepy Memory",
+    "Epurrely Noir",
+    "Expurrely Noir",
+    "DARK"
+  ],
+  "expansion": [
+    "Cyberstorm Access",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PurrelySleepyMemory-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

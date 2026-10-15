@@ -2,6 +2,27 @@
   "aliases": [],
   "canonical_name": "マシンナーズ",
   "canonical_name_en": "Machina",
+  "cards": [
+    "OCG",
+    "Premium Pack 9",
+    "Scrap Recycler",
+    "Structure Deck: Machiners Command",
+    "Premium Pack 13",
+    "The New Challengers",
+    "Structure Deck R: Machiners Command",
+    "V Jump April 2020 promotional card",
+    "Structure Deck R: Machiners Command",
+    "Rise of the Duelist",
+    "Blazing Vortex",
+    "Burst of Destiny"
+  ],
+  "expansion": [
+    "The New Challengers",
+    "Rise of the Duelist",
+    "Blazing Vortex",
+    "Burst of Destiny"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MachinaRedeployment-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

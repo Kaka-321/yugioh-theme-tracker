@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "ハンド",
   "canonical_name_en": "Hand",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:FireHandandProminenceHand.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

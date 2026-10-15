@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ペンデュラムグラフ",
   "canonical_name_en": "Pendulumgraph",
+  "cards": [],
+  "expansion": [
+    "Dimension Force"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StarPendulumgraph-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

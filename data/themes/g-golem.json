@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "Ｇゴーレム",
   "canonical_name_en": "G Golem",
+  "cards": [],
+  "expansion": [
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GGolem.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

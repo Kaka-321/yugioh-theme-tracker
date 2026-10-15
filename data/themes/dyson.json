@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ダイソン",
   "canonical_name_en": "Dyson",
+  "cards": [],
+  "expansion": [
+    "Abyss Rising"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Number9DysonSphere-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

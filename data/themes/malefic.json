@@ -2,6 +2,25 @@
   "aliases": [],
   "canonical_name": "Ｓｉｎ",
   "canonical_name_en": "Malefic",
+  "cards": [
+    "Malefic Blue-Eyes White Dragon",
+    "Blue-Eyes White Dragon",
+    "Malefic Cyber End Dragon",
+    "Cyber End Dragon",
+    "Malefic Rainbow Dragon",
+    "Rainbow Dragon",
+    "Malefic Red-Eyes Black Dragon",
+    "Red-Eyes Black Dragon",
+    "Malefic Stardust Dragon",
+    "Stardust Dragon"
+  ],
+  "expansion": [
+    "Yu-Gi-Oh! 3D Bonds Beyond Time Theater distribution card",
+    "Yu-Gi-Oh! 3D Bonds Beyond Time Movie Pack",
+    "Yu-Gi-Oh! 3D Bonds Beyond Time DVD promotional card",
+    "Yu-Gi-Oh! 3D Bonds Beyond Time Blu-ray promotional card"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Malefic.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

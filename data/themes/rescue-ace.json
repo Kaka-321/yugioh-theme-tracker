@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "Ｒ－ＡＣＥ",
   "canonical_name_en": "Rescue-ACE",
+  "cards": [],
+  "expansion": [
+    "Cyberstorm Access",
+    "Duelist Nexus",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RescueACETurbulence-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

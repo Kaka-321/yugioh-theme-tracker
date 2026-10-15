@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "センチュリオン",
   "canonical_name_en": "Centur-Ion",
+  "cards": [],
+  "expansion": [
+    "Legacy of Destruction",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StandUpCenturIon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "極星宝",
   "canonical_name_en": "Nordic Relic",
+  "cards": [
+    "Nordic Relic Brisingamen",
+    "Nordic Relic Draupnir",
+    "Nordic Relic Gungnir",
+    "Nordic Relic Hlidskjalf",
+    "Nordic Relic Laevateinn",
+    "Nordic Relic Megingjord",
+    "Nordic Relic Svalinn"
+  ],
+  "expansion": [
+    "Storm of Ragnarok",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NordicRelicDraupnir-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

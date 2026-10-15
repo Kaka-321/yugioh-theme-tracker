@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "巳剣",
   "canonical_name_en": "Mitsurugi",
+  "cards": [
+    "Mitsurugi no Mikoto, Kusanagi",
+    "Ame no Murakumo no Mitsurugi",
+    "Mitsurugi no Mikoto, Saji",
+    "Futsu no Mitama no Mitsurugi",
+    "Mitsurugi no Mikoto, Aramasa",
+    "Ame no Habakiri no Mitsurugi"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:MitsurugiRitual-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

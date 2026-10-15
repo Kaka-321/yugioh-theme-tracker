@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "シャドール",
   "canonical_name_en": "Shaddoll",
+  "cards": [
+    "Naturia Beast",
+    "Shaddoll Core",
+    "Trap Monster",
+    "Cairngorgon, Antiluminescent Knight",
+    "Suanni, Fire of the Yang Zing",
+    "Gusto Falco",
+    "Neo Flamvell Hedgehog",
+    "Satellarknight Sirius",
+    "Satellarknight Unukalhai",
+    "Gem-Knight Hollowcore",
+    "Qadshaddoll Keios"
+  ],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Raging Tempest",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-OTSChampionship-Shaddoll-KR.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

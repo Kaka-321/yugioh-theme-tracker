@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "代行者",
   "canonical_name_en": "The Agent",
+  "cards": [],
+  "expansion": [
+    "Ancient Sanctuary",
+    "Duelist Alliance",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TheAgentofCreationVenus-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

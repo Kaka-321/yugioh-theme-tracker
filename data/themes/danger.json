@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "未界域",
   "canonical_name_en": "Danger!",
+  "cards": [
+    "Beast",
+    "Reptile",
+    "Fiend",
+    "Insect",
+    "Beast-Warrior",
+    "Aqua",
+    "Beast",
+    "Sea Serpent",
+    "Winged Beast"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:DangerZone-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "魔界劇団",
   "canonical_name_en": "Abyss Actor",
+  "cards": [],
+  "expansion": [
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AbyssActorsCurtainCall-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

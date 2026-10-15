@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "インフェルニティ",
   "canonical_name_en": "Infernity",
+  "cards": [],
+  "expansion": [
+    "Yu-Gi-Oh! 5D's World Championship 2009: Stardust Accelerator promotional cards",
+    "Ancient Prophecy",
+    "Stardust Overdrive",
+    "The Shining Darkness",
+    "Phantom Rage"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InfernityLauncher-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

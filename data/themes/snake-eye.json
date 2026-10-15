@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "スネークアイ",
   "canonical_name_en": "Snake-Eye",
+  "cards": [],
+  "expansion": [
+    "Duelist Nexus",
+    "Age of Overlord",
+    "Phantom Nightmare",
+    "Legacy of Destruction",
+    "Supreme Darkness",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StartlingStareoftheSnakeEyes-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "Ｆ．Ａ．",
   "canonical_name_en": "F.A.",
+  "cards": [
+    "Level"
+  ],
+  "expansion": [
+    "Phantom Rage"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FAOverheat-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

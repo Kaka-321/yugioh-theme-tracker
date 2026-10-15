@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "ガジェット",
   "canonical_name_en": "Gadget",
+  "cards": [
+    "Trap Monster",
+    "Ancient Gear Gadget",
+    "Gadget Trio",
+    "Stronghold the Hidden Fortress",
+    "Gold Gadget",
+    "Silver Gadget",
+    "Metalhold the Moving Blockade",
+    "Green Gadget",
+    "Red Gadget",
+    "Yellow Gadget",
+    "Stronghold the Moving Fortress",
+    "Platinum Gadget"
+  ],
+  "expansion": [
+    "Labyrinth of Nightmare",
+    "Structure Deck: Machine Re-Volt",
+    "Crossroads of Chaos",
+    "Raging Battle",
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StrongholdtheMovingFortress-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

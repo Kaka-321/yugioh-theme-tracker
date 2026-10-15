@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "ラビュリンス",
   "canonical_name_en": "Labrynth",
+  "cards": [
+    "Level",
+    "Lady Labrynth of the Silver Castle",
+    "Lovely Labrynth of the Silver Castle"
+  ],
+  "expansion": [
+    "Darkwing Blast",
+    "Photon Hypernova",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BigWelcomeLabrynth-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

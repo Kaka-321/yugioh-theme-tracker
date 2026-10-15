@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "エルフの剣士",
   "canonical_name_en": "Celtic Guard",
+  "cards": [],
+  "expansion": [
+    "Anniversary Pack",
+    "Legend of Blue Eyes White Dragon",
+    "Starter Deck: Yugi",
+    "Starter Deck: Yugi Evolution",
+    "Structure Deck: Warrior's Triumph",
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Celtic Guard.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

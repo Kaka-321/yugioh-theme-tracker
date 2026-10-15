@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "Ｃ",
   "canonical_name_en": "Iron Chain",
+  "cards": [],
+  "expansion": [
+    "Crossroads of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PoisonChain-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

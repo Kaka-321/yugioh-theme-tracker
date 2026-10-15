@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "焔聖剣",
   "canonical_name_en": "Infernoble Arms",
+  "cards": [
+    "Infernoble Knight",
+    "\"Infernoble Arms - Durendal\"",
+    "Infernoble Knight - Roland",
+    "\"Infernoble Arms - Hauteclere\"",
+    "Infernoble Knight Oliver",
+    "\"Infernoble Arms - Joyeuse\"",
+    "Infernoble Knight Emperor Charles",
+    "\"Infernoble Arms - Almace\"",
+    "Infernoble Knight Turpin"
+  ],
+  "expansion": [
+    "Rise of the Duelist",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InfernobleArmsDurendal-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

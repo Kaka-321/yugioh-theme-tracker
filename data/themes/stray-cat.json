@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "捨て猫",
   "canonical_name_en": "Stray Cat",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:StrayCat-EN-Anime-ZX-NC-2.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

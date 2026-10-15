@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "ゴルゴニック",
   "canonical_name_en": "Gorgonic",
+  "cards": [
+    "Gorgonic Cerberus",
+    "Gorgonic Gargoyle",
+    "Gorgonic Ghoul",
+    "Gorgonic Golem",
+    "Gorgonic Guardian",
+    "Gorgonic Umbral Horror",
+    "Umbral Horror Ghoul"
+  ],
+  "expansion": [
+    "Legacy of the Valiant",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GorgonicRitual-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

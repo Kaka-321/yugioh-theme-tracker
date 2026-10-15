@@ -2,11 +2,15 @@
   "aliases": [],
   "canonical_name": "リベリオン",
   "canonical_name_en": "Rebellion",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "The New Challengers",
+    "Clash of Rebellions",
+    "Code of the Duelist",
+    "Phantom Rage",
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DarkRebellionXyzDragon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

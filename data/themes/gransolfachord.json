@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "グランドレミコード",
   "canonical_name_en": "GranSolfachord",
+  "cards": [],
+  "expansion": [
+    "Dawn of Majesty",
+    "Cyberstorm Access",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GranSolfachordMusecia-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

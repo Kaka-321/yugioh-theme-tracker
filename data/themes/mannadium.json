@@ -2,6 +2,26 @@
   "aliases": [],
   "canonical_name": "マナドゥム",
   "canonical_name_en": "Mannadium",
+  "cards": [
+    "Archetype",
+    "Broken World",
+    "Attribute",
+    "Tearlaments",
+    "Primeval Planet Perlereino",
+    "WATER",
+    "Scareclaw",
+    "Primitive Planet Reichphobia",
+    "EARTH",
+    "Kashtira",
+    "Pressured Planet Wraitsoth",
+    "FIRE"
+  ],
+  "expansion": [
+    "Cyberstorm Access",
+    "Duelist Nexus",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PeacefulPlanetCalarium-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

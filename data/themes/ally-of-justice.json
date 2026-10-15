@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "Ａ・Ｏ・Ｊ",
   "canonical_name_en": "Ally of Justice",
+  "cards": [],
+  "expansion": [
+    "The Shining Darkness",
+    "Hidden Arsenal",
+    "Hidden Arsenal 2",
+    "Hidden Arsenal 3"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Ally Of Justice Diablo 5D's OP4.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

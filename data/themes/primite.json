@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "原石",
   "canonical_name_en": "Primite",
+  "cards": [],
+  "expansion": [
+    "Rage of the Abyss",
+    "Supreme Darkness",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PrimiteHowl-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

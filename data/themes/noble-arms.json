@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "聖剣",
   "canonical_name_en": "Noble Arms",
+  "cards": [
+    "Noble Arms - Arfeudutyr",
+    "Noble Arms - Caliburn",
+    "Noble Arms - Excaliburn",
+    "Noble Arms - Clarent",
+    "Noble Arms - Gallatin",
+    "Noble Arms of Destiny"
+  ],
+  "expansion": [
+    "Return of the Duelist",
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GwenhwyfarQueenofNobleArms-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

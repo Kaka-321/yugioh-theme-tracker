@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ベアルクティ",
   "canonical_name_en": "Ursarctic",
+  "cards": [],
+  "expansion": [
+    "Burst of Destiny",
+    "Battle of Chaos",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:UrsarcticRadiation-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

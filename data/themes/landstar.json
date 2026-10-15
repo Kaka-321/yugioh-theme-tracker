@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ランドスター",
   "canonical_name_en": "Landstar",
+  "cards": [],
+  "expansion": [
+    "Starter Deck: Joey",
+    "Labyrinth of Nightmare",
+    "Dark Beginning 1",
+    "Crossroads of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LandstarForces-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

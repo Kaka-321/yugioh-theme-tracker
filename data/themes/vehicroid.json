@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "ビークロイド",
   "canonical_name_en": "Vehicroid",
+  "cards": [
+    "Fusion Material",
+    "Steamroid",
+    "Drillroid",
+    "Submarineroid",
+    "roid",
+    "Fusion Monster",
+    "Truckroid",
+    "Expressroid",
+    "Drillroid",
+    "Stealthroid"
+  ],
+  "expansion": [
+    "Power of the Duelist",
+    "Gladiator's Assault"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SuperVehicroidStealthUnion-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

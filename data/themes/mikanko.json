@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "御巫",
   "canonical_name_en": "Mikanko",
+  "cards": [
+    "FIRE",
+    "Mikanko Fire Dance",
+    "Mikanko Purification Dance",
+    "WATER",
+    "Mikanko Water Arabesque",
+    "Mikanko Reflection Rondo",
+    "WIND",
+    "Mikanko Dance - Mayowashidori"
+  ],
+  "expansion": [
+    "Cyberstorm Access",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MikankoKagura-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

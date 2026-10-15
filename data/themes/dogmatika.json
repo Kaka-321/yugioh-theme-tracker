@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "ドラグマ",
   "canonical_name_en": "Dogmatika",
+  "cards": [
+    "Despia",
+    "Swordsoul",
+    "Blazing Cartesia, the Virtuous",
+    "Incredible Ecclesia, the Virtuous",
+    "OCG",
+    "OCG",
+    "TCG",
+    "Guiding Quem, the Virtuous"
+  ],
+  "expansion": [
+    "Rise of the Duelist",
+    "Phantom Rage",
+    "Blazing Vortex",
+    "Lightning Overdrive",
+    "Battle of Chaos",
+    "Dimension Force",
+    "Power of the Elements",
+    "Photon Hypernova",
+    "Doom of Dimensions",
+    "THE CHRONICLES DECK: The Fallen & The Virtuous (All-Foil Edition)"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DogmatikaGenesis-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

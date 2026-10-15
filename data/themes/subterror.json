@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "サブテラー",
   "canonical_name_en": "Subterror",
+  "cards": [
+    "The Hidden City"
+  ],
+  "expansion": [
+    "Savage Strike"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SubterrorFinalBattle-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

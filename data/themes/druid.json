@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ドルイド",
   "canonical_name_en": "Druid",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Druid.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

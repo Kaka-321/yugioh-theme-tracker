@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "アビス",
   "canonical_name_en": "Abyss-",
+  "cards": [],
+  "expansion": [
+    "Abyss Rising",
+    "Circuit Break",
+    "Cosmo Blazer",
+    "Hidden Arsenal 5: Steelswarm Invasion",
+    "Labyrinth of Nightmare",
+    "Lord of the Tachyon Galaxy",
+    "Strike of Neos",
+    "Yu-Gi-Oh! Capsule Monster Coliseum promotional cards",
+    "Age of Overlord",
+    "Rage of the Abyss",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AbyssscaleofCetus-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

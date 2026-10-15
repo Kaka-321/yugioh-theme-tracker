@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "アルス＝マグナ",
   "canonical_name_en": "Ars Magna",
+  "cards": [],
+  "expansion": [
+    "Beyond the Brave",
+    "Immortal Phoenix",
+    "Beyond the Brave",
+    "Power Patron",
+    "Medius the Pure"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArsMagnatheFiniteandtheInfinite-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

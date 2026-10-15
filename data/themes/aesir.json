@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "極神",
   "canonical_name_en": "Aesir",
+  "cards": [
+    "Odin, Father of the Aesir",
+    "Nordic Ascendant",
+    "Halldor",
+    "Thor, Lord of the Aesir",
+    "Nordic Beast",
+    "Dragan",
+    "Loki, Lord of the Aesir",
+    "Nordic Alfar",
+    "Broder"
+  ],
+  "expansion": [
+    "Storm of Ragnarok",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:The Three Polar Gods.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

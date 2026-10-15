@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ライブツイン",
   "canonical_name_en": "Live☆Twin",
+  "cards": [],
+  "expansion": [
+    "Blazing Vortex",
+    "Lightning Overdrive",
+    "Dawn of Majesty",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LiveTwins.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

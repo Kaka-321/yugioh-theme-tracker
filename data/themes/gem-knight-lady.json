@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ジェムナイトレディ",
   "canonical_name_en": "Gem-Knight Lady",
+  "cards": [],
+  "expansion": [
+    "Secrets of Eternity",
+    "Clash of Rebellions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GemKnightLadyBrilliantDiamond-JP-Anime-AV-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

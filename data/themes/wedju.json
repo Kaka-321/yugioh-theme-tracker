@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ウェジュ",
   "canonical_name_en": "Wedju",
+  "cards": [],
+  "expansion": [
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GriefTablet-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

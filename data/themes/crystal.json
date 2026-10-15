@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "宝玉",
   "canonical_name_en": "Crystal",
+  "cards": [],
+  "expansion": [
+    "Force of the Breaker",
+    "Duelist Pack: Jesse Anderson",
+    "Tactical Evolution",
+    "Phantom Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CrystalAbundance-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

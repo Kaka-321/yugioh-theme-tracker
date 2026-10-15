@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ゴヨウ",
   "canonical_name_en": "Goyo",
+  "cards": [
+    "Summon",
+    "Control"
+  ],
+  "expansion": [
+    "The Duelist Genesis",
+    "Breakers of Shadow"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Goyo.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

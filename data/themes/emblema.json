@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "エンブレーマ",
   "canonical_name_en": "Emblema",
+  "cards": [],
+  "expansion": [
+    "The Infinite Forbidden",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EmblemaOath-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,27 @@
   "aliases": [],
   "canonical_name": "ヴァンパイア",
   "canonical_name_en": "Vampire",
+  "cards": [
+    "Vampire Lady",
+    "Battle damage",
+    "Vampire Lord",
+    "Battle damage",
+    "Shadow Vampire",
+    "Vampire Duke",
+    "Special Summon",
+    "Vampire Grace",
+    "Main Phase",
+    "Ignition"
+  ],
+  "expansion": [
+    "Pharaoh's Servant",
+    "Ancient Sanctuary",
+    "Structure Deck: Zombie Madness",
+    "Shadow Specters",
+    "Flames of Destruction",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VampireDomination-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "メディウス",
   "canonical_name_en": "Medius",
+  "cards": [],
+  "expansion": [
+    "Duelist's Advance",
+    "Beyond the Brave",
+    "Immortal Phoenix"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MediusthePure-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

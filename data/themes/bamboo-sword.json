@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "竹光",
   "canonical_name_en": "Bamboo Sword",
+  "cards": [
+    "Booster Pack",
+    "Tactical Evolution",
+    "Circuit Break",
+    "The New Challengers",
+    "Light of Destruction",
+    "Darkwing Blast",
+    "Gladiator's Assault"
+  ],
+  "expansion": [
+    "Tactical Evolution",
+    "Light of Destruction",
+    "Gladiator's Assault",
+    "The New Challengers",
+    "Circuit Break",
+    "Darkwing Blast"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BrokenBambooSword-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "幻魔",
   "canonical_name_en": "Phantasm",
+  "cards": [],
+  "expansion": [
+    "Shadow of Infinity",
+    "Phantom Rage",
+    "Phantom Nightmare",
+    "Chaos Origins"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArmityletheChaosPhantasm-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

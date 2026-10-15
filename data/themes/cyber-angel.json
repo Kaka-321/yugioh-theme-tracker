@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "サイバー・エンジェル",
   "canonical_name_en": "Cyber Angel",
+  "cards": [],
+  "expansion": [
+    "Invasion: Vengeance",
+    "Raging Tempest"
+  ],
+  "image": "https://yugipedia.com/wiki/File:IncarnatedMachineAngel-MADU-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

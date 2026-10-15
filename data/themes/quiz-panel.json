@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "クイズ・パネル",
   "canonical_name_en": "Quiz Panel",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Quiz Panel.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

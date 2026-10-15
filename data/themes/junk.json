@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "ジャンク",
   "canonical_name_en": "Junk",
+  "cards": [],
+  "expansion": [
+    "The Duelist Genesis",
+    "Duelist Pack: Yusei",
+    "Raging Battle",
+    "Duelist Pack: Yusei 2",
+    "Yu-Gi-Oh! 3D Bonds Beyond Time Movie Pack",
+    "Extreme Victory",
+    "Yu-Gi-Oh! 5D's Volume 2 promotional card",
+    "Rise of the Duelist",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SynchroChase-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

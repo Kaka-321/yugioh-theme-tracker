@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "ワルキューレ",
   "canonical_name_en": "Valkyrie",
+  "cards": [
+    "Ride of the Valkyries",
+    "Valkyrie Brunhilde",
+    "Valkyrie Erda",
+    "Valkyrie Sigrun",
+    "Valkyrie Erste",
+    "Valkyrie Zweite",
+    "Valkyrie Dritte",
+    "Valkyrie Vierte",
+    "Valkyrie Funfte",
+    "Valkyrie Sechste"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Valkyries.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

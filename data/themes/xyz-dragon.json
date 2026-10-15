@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "エクシーズ・ドラゴン",
   "canonical_name_en": "Xyz Dragon",
+  "cards": [],
+  "expansion": [
+    "The New Challengers",
+    "Invasion: Vengeance",
+    "Phantom Rage",
+    "Age of Overlord",
+    "Chaos Origins"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DarkRequiemXyzDragon-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

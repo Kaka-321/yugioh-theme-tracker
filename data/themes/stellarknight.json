@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ステラナイト",
   "canonical_name_en": "Stellarknight",
+  "cards": [],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Crossed Souls"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StellarknightConstellarDiamond-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

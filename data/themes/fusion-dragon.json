@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "フュージョン・ドラゴン",
   "canonical_name_en": "Fusion Dragon",
+  "cards": [
+    "ATK",
+    "Effect",
+    "destroy",
+    "Greedy Venom Fusion Dragon",
+    "Purple Poison Magician",
+    "Starving Venom Fusion Dragon",
+    "Starving Venom Predapower Fusion Dragon",
+    "Starving Venom Fusion Dragon, Four Heavenly Dragons"
+  ],
+  "expansion": [
+    "Invasion: Vengeance",
+    "Dimension Force",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StarvingVenomFusionDragon-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

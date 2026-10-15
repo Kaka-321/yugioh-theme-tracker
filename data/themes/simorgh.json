@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "シムルグ",
   "canonical_name_en": "Simorgh",
+  "cards": [],
+  "expansion": [
+    "Structure Deck: Lord of the Storm",
+    "Light of Destruction",
+    "Rising Rampage",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SimorghBirdofDivinity-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

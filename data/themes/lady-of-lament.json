@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "悪魔嬢",
   "canonical_name_en": "Lady of Lament",
+  "cards": [],
+  "expansion": [
+    "Eternity Code",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LilithLadyofLament-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

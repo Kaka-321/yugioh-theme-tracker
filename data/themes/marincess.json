@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "マリンセス",
   "canonical_name_en": "Marincess",
+  "cards": [],
+  "expansion": [
+    "Rising Rampage",
+    "Chaos Impact",
+    "Eternity Code"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MarincessCirculation-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

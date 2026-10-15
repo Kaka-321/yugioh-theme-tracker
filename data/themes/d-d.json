@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "ＤＤ",
   "canonical_name_en": "D/D",
+  "cards": [],
+  "expansion": [
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "The Dark Illusion",
+    "Maximum Crisis",
+    "Yu-Gi-Oh! ARC-V Volume 3 promotional card",
+    "Code of the Duelist",
+    "Yu-Gi-Oh! ARC-V Volume 7 promotional card",
+    "Battle of Chaos",
+    "Doom of Dimensions",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DD.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

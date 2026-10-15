@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "機械天使",
   "canonical_name_en": "Machine Angel",
+  "cards": [],
+  "expansion": [
+    "Raging Tempest"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MachineAngelRitual-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ドレミコード",
   "canonical_name_en": "Solfachord",
+  "cards": [],
+  "expansion": [
+    "Dawn of Majesty",
+    "Cyberstorm Access",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Solfachord.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

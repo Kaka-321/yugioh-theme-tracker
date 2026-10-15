@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "スキエル",
   "canonical_name_en": "Skiel",
+  "cards": [
+    "Skiel Top",
+    "Skiel Attack",
+    "Skiel Attack 3",
+    "Skiel Attack 5",
+    "Skiel Guard",
+    "Skiel Carrier",
+    "Skiel Carrier 3",
+    "Skiel Carrier 5"
+  ],
+  "expansion": [
+    "The Valuable Book 13 promotional cards",
+    "Extreme Victory",
+    "Premium Pack Vol.7",
+    "Legendary Collection 5D's Mega Pack"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MeklordEmperorSkiel-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

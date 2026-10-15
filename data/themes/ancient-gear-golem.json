@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "アンティーク・ギアゴーレム",
   "canonical_name_en": "Ancient Gear Golem",
+  "cards": [],
+  "expansion": [
+    "The Lost Millennium",
+    "Structure Deck: Machine Re-Volt",
+    "Light of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AncientGearGolem-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

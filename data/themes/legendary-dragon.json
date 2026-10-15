@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "伝説の竜",
   "canonical_name_en": "Legendary Dragon",
+  "cards": [
+    "The Eye of Timaeus",
+    "Yami Yugi",
+    "The Fang of Critias",
+    "Seto Kaiba",
+    "The Claw of Hermos",
+    "Joey Wheeler"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:LegendofHeart-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

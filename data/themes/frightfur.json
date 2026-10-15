@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "デストーイ",
   "canonical_name_en": "Frightfur",
+  "cards": [
+    "Fusion Material",
+    "Edge Imp",
+    "Fluffal",
+    "Edge Imp Sabres",
+    "Fluffal Bear",
+    "Edge Imp Saw",
+    "Fluffal",
+    "Edge Imp Chain",
+    "Fluffal",
+    "Edge Imp",
+    "Fluffal",
+    "Edge Imp Sabres",
+    "Fluffal",
+    "Fluffal"
+  ],
+  "expansion": [
+    "The New Challengers",
+    "Crossed Souls",
+    "Dimension of Chaos",
+    "The Dark Illusion",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FrightfurMarch-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

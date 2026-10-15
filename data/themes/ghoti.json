@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ゴーティス",
   "canonical_name_en": "Ghoti",
+  "cards": [
+    "Ghoti of the Deep Beyond"
+  ],
+  "expansion": [
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GhotioftheDeepBeyond-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

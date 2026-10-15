@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "タキオン",
   "canonical_name_en": "Tachyon",
+  "cards": [],
+  "expansion": [
+    "Lord of the Tachyon Galaxy",
+    "Primal Origin",
+    "Chaos Impact"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TachyonSpiralofDestruction-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

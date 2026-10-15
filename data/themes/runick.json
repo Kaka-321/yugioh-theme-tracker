@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "神碑",
   "canonical_name_en": "Runick",
+  "cards": [
+    "Generaider",
+    "Frodi, Generaider Boss of Swords",
+    "Utgarda, Generaider Boss of Delusion",
+    "Nidhogg, Generaider Boss of Ice",
+    "Naglfar, Generaider Boss of Fire",
+    "Jormungandr, Generaider Boss of Eternity",
+    "Mardel, Generaider Boss of Light",
+    "Hela, Generaider Boss of Doom"
+  ],
+  "expansion": [
+    "Darkwing Blast",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RunickFountain-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

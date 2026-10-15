@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "ＲＲ",
   "canonical_name_en": "Raidraptor",
+  "cards": [],
+  "expansion": [
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Shining Victories",
+    "Maximum Crisis",
+    "Phantom Rage",
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RaidraptorArsenalFalcon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

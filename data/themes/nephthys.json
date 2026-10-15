@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "ネフティス",
   "canonical_name_en": "Nephthys",
+  "cards": [
+    "Sacred Phoenix of Nephthys",
+    "Dark Nephthys",
+    "Dark counterpart",
+    "Metaphys Nephthys",
+    "Metaphys",
+    "Chaos Nephthys",
+    "Nephthys, the Sacred Flame",
+    "Cerulean Sacred Phoenix of Nephthys"
+  ],
+  "expansion": [
+    "Flaming Eternity",
+    "Phantom Darkness",
+    "Circuit Break",
+    "Phantom Rage",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LastHopeofNephthys-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

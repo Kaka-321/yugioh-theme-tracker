@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "コアキメイル",
   "canonical_name_en": "Koa'ki Meiru",
+  "cards": [],
+  "expansion": [
+    "Raging Battle",
+    "Ancient Prophecy",
+    "Stardust Overdrive",
+    "Absolute Powerforce",
+    "The Shining Darkness",
+    "Starstrike Blast",
+    "Primal Origin",
+    "Secrets of Eternity",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:IronCoreofKoakiMeiru-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

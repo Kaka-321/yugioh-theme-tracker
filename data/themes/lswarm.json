@@ -2,6 +2,31 @@
   "aliases": [],
   "canonical_name": "ヴェルズ",
   "canonical_name_en": "Lswarm",
+  "cards": [
+    "Worm Zero",
+    "Constellar Castor",
+    "Locomotion R-Genex",
+    "Genex Controller",
+    "Genex Spare",
+    "Daigusto Falcos",
+    "Ally of Justice Catastor",
+    "Gem-Knight Emerald",
+    "Gishki Shadow",
+    "Naturia Cosmobeet",
+    "Laval Cannon",
+    "Jurrac Titano",
+    "Mist Valley Apex Avian",
+    "Dragunity Aklys",
+    "Neo Flamvell Origin",
+    "Constellar Rasalhague"
+  ],
+  "expansion": [
+    "Hidden Arsenal 5: Steelswarm Invasion",
+    "Hidden Arsenal 6: Omega Xyz",
+    "Hidden Arsenal 7: Knight of Stars",
+    "Legacy of the Valiant"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InfestationTerminus-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

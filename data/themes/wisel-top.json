@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "ワイゼルＴ",
   "canonical_name_en": "Wisel Top",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:WiselTop-TF05-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,25 @@
   "aliases": [],
   "canonical_name": "グランエル",
   "canonical_name_en": "Granel",
+  "cards": [
+    "Granel Top",
+    "Granel Top 5",
+    "Granel Guard",
+    "Granel Guard 3",
+    "Granel Attack",
+    "Granel Attack 3",
+    "Granel Carrier"
+  ],
+  "expansion": [
+    "Extreme Victory",
+    "V Jump October 2010 promotional card",
+    "Shonen Jump Vol. 9, Issue 6 promotional card",
+    "Yu-Gi-Oh! World Championship Qualifier National Championships 2011 prize cards",
+    "Premium Pack Vol.7",
+    "Battle Pack 3: Monster League",
+    "Legendary Collection 5D's Mega Pack"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MeklordEmperorGranel-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

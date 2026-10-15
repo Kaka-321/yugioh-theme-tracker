@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "儀水鏡",
   "canonical_name_en": "Aquamirror",
+  "cards": [],
+  "expansion": [
+    "Extreme Victory",
+    "Galactic Overlord",
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GishkiAquamirror-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

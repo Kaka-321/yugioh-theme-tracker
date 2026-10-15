@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "精霊獣",
   "canonical_name_en": "Spiritual Beast",
+  "cards": [],
+  "expansion": [
+    "Secrets of Eternity",
+    "Raging Tempest"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SpiritualBeastCannahawk-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,27 @@
   "aliases": [],
   "canonical_name": "メタル化",
   "canonical_name_en": "Metalmorph",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Copycat",
+    "Metal Illusionist",
+    "Metalmorph",
+    "Flame Swordsman",
+    "Metalflame Swordsman",
+    "Flame Coating Metalmorph",
+    "Musician King",
+    "Heavy Metal King",
+    "Red-Eyes Black Dragon",
+    "Red-Eyes Black Metal Dragon",
+    "Red-Eyes Metal Claws Dragon",
+    "Red-Eyes Black Fullmetal Dragon",
+    "Max Metalmorph",
+    "Zoa",
+    "Metalzoa",
+    "Zoa the Fiendish Beast",
+    "Metalzoa X"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Metalmorph-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "アレイスター",
   "canonical_name_en": "Aleister",
+  "cards": [],
+  "expansion": [
+    "Chaos Origins",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AleistertheInvoker-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "破械神",
   "canonical_name_en": "Unchained Soul",
+  "cards": [],
+  "expansion": [
+    "Chaos Impact",
+    "Ignition Assault",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:UnchainedSoulofDisaster-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

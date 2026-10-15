@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "伝説の騎士",
   "canonical_name_en": "Legendary Knight",
+  "cards": [
+    "Legendary Dragon",
+    "The Eye of Timaeus",
+    "Legendary Knight Timaeus",
+    "Timaeus the Knight of Destiny",
+    "The Fang of Critias",
+    "Legendary Knight Critias",
+    "The Claw of Hermos",
+    "Legendary Knight Hermos"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Legendary_Knights.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

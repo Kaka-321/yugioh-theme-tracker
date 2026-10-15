@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "猫",
   "canonical_name_en": "Neko",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:MonsterCat-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

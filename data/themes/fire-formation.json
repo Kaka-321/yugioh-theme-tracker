@@ -2,6 +2,25 @@
   "aliases": [],
   "canonical_name": "炎舞",
   "canonical_name_en": "Fire Formation",
+  "cards": [
+    "Double Summon",
+    "Rush Recklessly",
+    "Reinforcement of the Army",
+    "Forbidden Chalice",
+    "Forbidden Lance",
+    "Xing Zhen Hu Replica",
+    "Meteorain",
+    "Raigeki Break",
+    "Rekindling",
+    "Polymerization",
+    "Dark Bribe"
+  ],
+  "expansion": [
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Judgment of the Light"
+  ],
+  "image": "https://yugipedia.com/wiki/File:UltimateFireFormationSeito-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

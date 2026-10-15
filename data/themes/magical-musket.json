@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "魔弾",
   "canonical_name_en": "Magical Musket",
+  "cards": [],
+  "expansion": [
+    "Dark Neostorm"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MagicalMusketCrookedCrown-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

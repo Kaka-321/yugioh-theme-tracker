@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "サラマングレイト",
   "canonical_name_en": "Salamangreat",
+  "cards": [],
+  "expansion": [
+    "Soul Fusion",
+    "Savage Strike",
+    "Structure Deck: Soulburner",
+    "Dark Neostorm",
+    "Rising Rampage",
+    "Chaos Impact",
+    "Eternity Code",
+    "Immortal Phoenix"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Soulburner Deck Picture.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "アンブラル",
   "canonical_name_en": "Umbral Horror",
+  "cards": [],
+  "expansion": [
+    "Judgment of the Light",
+    "Primal Origin",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Umbral.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,11 @@
   "aliases": [],
   "canonical_name": "Ｓｐ",
   "canonical_name_en": "Speed Spell",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Speed Counter"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:SpeedWorld2-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

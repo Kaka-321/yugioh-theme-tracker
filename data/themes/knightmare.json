@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "トロイメア",
   "canonical_name_en": "Knightmare",
+  "cards": [],
+  "expansion": [
+    "Flames of Destruction",
+    "Savage Strike",
+    "Dark Neostorm"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WorldLegacysNightmare-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

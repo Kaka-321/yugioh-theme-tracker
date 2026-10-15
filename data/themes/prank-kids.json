@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "プランキッズ",
   "canonical_name_en": "Prank-Kids",
+  "cards": [
+    "Pyro",
+    "Prank-Kids Lampsies",
+    "Prank-Kids Rocket Ride",
+    "Prank-Kids Bow-Wow-Bark",
+    "Aqua",
+    "Prank-Kids Dropsies",
+    "Prank-Kids Weather Washer",
+    "Prank-Kids Rip-Roarin-Roaster",
+    "Thunder",
+    "Prank-Kids Fansies",
+    "Prank-Kids Battle Butler",
+    "Prank-Kids Dodo-Doodle-Doo",
+    "Rock",
+    "Prank-Kids Rocksies",
+    "Prank-Kids Meow-Meow-Mu"
+  ],
+  "expansion": [
+    "Savage Strike",
+    "Phantom Rage"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PrankKidsPranks-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

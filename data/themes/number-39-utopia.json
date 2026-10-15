@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "Ｎｏ．３９ 希望皇ホープ",
   "canonical_name_en": "Number 39: Utopia",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Number39Utopia-JP-Anime-ZX-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

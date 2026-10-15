@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "Ｅｍ",
   "canonical_name_en": "Performage",
+  "cards": [],
+  "expansion": [
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Performage-DULI-GameMat-Event-DennistheSplendidEntertainer.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

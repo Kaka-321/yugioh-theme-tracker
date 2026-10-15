@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "幻奏の音姫",
   "canonical_name_en": "Melodious Maestra",
+  "cards": [],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MozartatheMelodiousMaestra-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

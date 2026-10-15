@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "Ｋ９",
   "canonical_name_en": "K9",
+  "cards": [],
+  "expansion": [
+    "Doom of Dimensions",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:K9LCReleaseRestraint-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

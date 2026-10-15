@@ -2,11 +2,11 @@
   "aliases": [],
   "canonical_name": "リバイアサン",
   "canonical_name_en": "Kairyu-Shin",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RageofKairyuShin-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

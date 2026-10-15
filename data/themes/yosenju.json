@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "妖仙獣",
   "canonical_name_en": "Yosenju",
+  "cards": [],
+  "expansion": [
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Rising Rampage"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Yosenju.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

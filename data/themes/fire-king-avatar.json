@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "炎王獣",
   "canonical_name_en": "Fire King Avatar",
+  "cards": [],
+  "expansion": [
+    "Lord of the Tachyon Galaxy",
+    "Circuit Break"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FireKingAvatarYaksha-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

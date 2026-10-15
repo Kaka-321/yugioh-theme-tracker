@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "マジシャン",
   "canonical_name_en": "Magician",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Magician manga.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

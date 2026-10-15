@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "剛鬼",
   "canonical_name_en": "Gouki",
+  "cards": [
+    "Fighting Spirit"
+  ],
+  "expansion": [
+    "Code of the Duelist",
+    "Circuit Break",
+    "Flames of Destruction",
+    "Cybernetic Horizon",
+    "Dark Neostorm",
+    "Eternity Code",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GoukiReMatch-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

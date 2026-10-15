@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "ダーツ",
   "canonical_name_en": "Dart",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Darts.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

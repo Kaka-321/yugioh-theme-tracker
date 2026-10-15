@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "霊獣使い",
   "canonical_name_en": "Ritual Beast Tamer",
+  "cards": [],
+  "expansion": [
+    "Crossed Souls",
+    "Raging Tempest"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-TopStore-Zefra.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

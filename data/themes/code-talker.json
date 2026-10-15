@@ -2,11 +2,37 @@
   "aliases": [],
   "canonical_name": "コード・トーカー",
   "canonical_name_en": "Code Talker",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Main Deck",
+    "Accesscode Talker",
+    "Allied Code Talker @Ignister",
+    "Code Talker",
+    "Micro Coder",
+    "Code Talker Inverted",
+    "Decode Talker",
+    "Decode Talker Extended",
+    "Decode Talker Heatsoul",
+    "Code of Soul",
+    "Decode Talker Integration",
+    "Encode Talker",
+    "Excode Talker",
+    "Code Exporter",
+    "Powercode Talker",
+    "Protectcode Talker",
+    "Shootingcode Talker",
+    "Code Radiator",
+    "Transcode Talker",
+    "Code Generator"
+  ],
+  "expansion": [
+    "Structure Deck: Cyberse Link",
+    "Extreme Force",
+    "Structure Deck: Powercode Link",
+    "Eternity Code",
+    "Cyberstorm Access",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Code Talker.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

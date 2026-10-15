@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "パーシアス",
   "canonical_name_en": "Parshath",
+  "cards": [],
+  "expansion": [
+    "Legacy of Darkness",
+    "Strike of Neos",
+    "Tournament Pack 6"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AirknightParshath-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

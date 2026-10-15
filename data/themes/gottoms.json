@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ガトムズ",
   "canonical_name_en": "Gottoms",
+  "cards": [],
+  "expansion": [
+    "Hidden Arsenal",
+    "Ancient Prophecy",
+    "Secrets of Eternity"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GottomsEmergencyCall-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "龍札",
   "canonical_name_en": "Dragon Card",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:EvilDragonCardsMetalDragon-YAC1-JP-OP.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "フェイバリット",
   "canonical_name_en": "Favorite",
+  "cards": [],
+  "expansion": [
+    "Power of the Elements",
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FavoriteHero-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

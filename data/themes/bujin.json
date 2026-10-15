@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "武神",
   "canonical_name_en": "Bujin",
+  "cards": [
+    "Bastion Misawa",
+    "Chazz Princeton",
+    "Jaden Yuki",
+    "Alexis Rhodes",
+    "Sartorius",
+    "Maximillion Pegasus",
+    "Elemental HERO Honest Neos"
+  ],
+  "expansion": [
+    "Judgment of the Light",
+    "Shadow Specters",
+    "Legacy of the Valiant",
+    "Primal Origin",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-WCQRegional-Bujin.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

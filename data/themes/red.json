@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "レッド",
   "canonical_name_en": "Red",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:RedWyvernandRedResonator.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

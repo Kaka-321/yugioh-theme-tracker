@@ -2,11 +2,19 @@
   "aliases": [],
   "canonical_name": "サンダー・ドラゴン",
   "canonical_name_en": "Thunder Dragon",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Thunder Dragon",
+    "Thunder Dragon",
+    "Quick Effect",
+    "Thunder Dragon",
+    "only 1 effect once per turn"
+  ],
+  "expansion": [
+    "Metal Raiders",
+    "Soul Fusion",
+    "Eternity Code"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ThunderDragon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

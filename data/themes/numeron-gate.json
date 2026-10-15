@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ゲート・オブ・ヌメロン",
   "canonical_name_en": "Numeron Gate",
+  "cards": [
+    "Number C1: Numeron Chaos Gate Sunya",
+    "Number 1: Numeron Gate Ekam",
+    "Number 2: Numeron Gate Dve",
+    "Number 3: Numeron Gate Trini",
+    "Number 4: Numeron Gate Catvari"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:NumeronCalling-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "海皇",
   "canonical_name_en": "Atlantean",
+  "cards": [],
+  "expansion": [
+    "Phantom Darkness",
+    "Return of the Duelist",
+    "Lord of the Tachyon Galaxy",
+    "Rage of the Abyss",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CalloftheAtlanteans-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

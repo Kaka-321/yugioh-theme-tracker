@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "デモンスミス",
   "canonical_name_en": "Fiendsmith",
+  "cards": [
+    "Fiendsmith Engraver",
+    "LIGHT",
+    "Fiend",
+    "Link Monster",
+    "Lacrima the Crimson Tears",
+    "Fiendsmith's Requiem",
+    "Fiendsmith's Sequence",
+    "Fiendsmith's Agnumday",
+    "Fiendsmith's Lacrima",
+    "Fiendsmith's Desirae",
+    "Fiendsmith's Rextremende",
+    "Fiendsmith's Tract",
+    "Fiendsmith's Sanct",
+    "Fiendsmith in Paradise",
+    "Fiendsmith Kyrie"
+  ],
+  "expansion": [
+    "The Infinite Forbidden",
+    "Rage of the Abyss",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FiendsmithsTract-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

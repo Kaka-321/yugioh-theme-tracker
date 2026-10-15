@@ -2,11 +2,12 @@
   "aliases": [],
   "canonical_name": "妖刀－不知火",
   "canonical_name_en": "Shiranui Spectralsword",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Breakers of Shadow",
+    "Savage Strike"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ShiranuiSpectralsword-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

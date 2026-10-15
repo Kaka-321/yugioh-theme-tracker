@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "氷水",
   "canonical_name_en": "Icejade",
+  "cards": [],
+  "expansion": [
+    "Burst of Destiny",
+    "Battle of Chaos",
+    "Dimension Force",
+    "Power of the Elements",
+    "Photon Hypernova",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:IcejadeGymirAegirine-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

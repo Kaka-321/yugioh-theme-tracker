@@ -2,11 +2,14 @@
   "aliases": [],
   "canonical_name": "エクレシア",
   "canonical_name_en": "Ecclesia",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Rise of the Duelist",
+    "Burst of Destiny",
+    "THE CHRONICLES DECK: The Fallen & The Virtuous (All-Foil Edition)",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:IncredibleEcclesiatheVirtuous-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

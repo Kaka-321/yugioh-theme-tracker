@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "アポクリフォート",
   "canonical_name_en": "Apoqliphort",
+  "cards": [],
+  "expansion": [
+    "The New Challengers",
+    "Secrets of Eternity"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LaserQlip-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

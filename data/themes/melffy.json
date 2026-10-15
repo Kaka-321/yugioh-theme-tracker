@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "メルフィー",
   "canonical_name_en": "Melffy",
+  "cards": [
+    "Melffys' Joyful Surprise",
+    "Merry Melffys",
+    "Joyous Melffys",
+    "Melffy of the Forest"
+  ],
+  "expansion": [
+    "Rise of the Duelist",
+    "Phantom Rage",
+    "Power of the Elements",
+    "Chaos Origins"
+  ],
+  "image": "https://yugipedia.com/wiki/File:JoyousMelffys-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

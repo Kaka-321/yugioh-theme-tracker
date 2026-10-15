@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "ファントム",
   "canonical_name_en": "Phantom Knights",
+  "cards": [],
+  "expansion": [
+    "Shadow of Infinity",
+    "Light of Destruction",
+    "Storm of Ragnarok",
+    "Galactic Overlord",
+    "The New Challengers",
+    "Invasion: Vengeance",
+    "Maximum Crisis",
+    "Phantom Rage",
+    "Cyberstorm Access",
+    "Chaos Origins"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PhantomKnightsFogBlade-MADU-EN-VG-artwork-2.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "アクア・ジェット",
   "canonical_name_en": "Aqua Jet",
+  "cards": [],
+  "expansion": [
+    "Generation Force",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AquaJet-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

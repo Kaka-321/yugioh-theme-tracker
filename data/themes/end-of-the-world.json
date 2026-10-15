@@ -2,11 +2,22 @@
   "aliases": [],
   "canonical_name": "エンド・オブ・ザ・ワールド",
   "canonical_name_en": "End of the World",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Fairy",
+    "Fiend",
+    "Ruin, Angel of Oblivion",
+    "Demise, Agent of Armageddon",
+    "Ruin, Queen of Oblivion",
+    "Demise, King of Armageddon",
+    "Ruin, Supreme Queen of Oblivion",
+    "Demise, Supreme King of Armageddon",
+    "Ruler of the End of the World"
+  ],
+  "expansion": [
+    "Shadow of Infinity",
+    "Cybernetic Horizon"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EndoftheWorld-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

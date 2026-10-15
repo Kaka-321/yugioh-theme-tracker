@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "Ａ",
   "canonical_name_en": "Attack",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:GranelAttack-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

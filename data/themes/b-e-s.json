@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "巨大戦艦",
   "canonical_name_en": "B.E.S.",
+  "cards": [],
+  "expansion": [
+    "Rise of Destiny",
+    "Elemental Energy",
+    "Cybernetic Revolution",
+    "Shadow of Infinity",
+    "Crimson Crisis",
+    "Maximum Crisis",
+    "Rising Rampage"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BossRush-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

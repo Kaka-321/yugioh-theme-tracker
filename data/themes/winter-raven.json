@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "白鴉",
   "canonical_name_en": "Winter Raven",
+  "cards": [],
+  "expansion": [
+    "Immortal Phoenix"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SplendoroftheWinterRavenWitch-IMPH-JP-OP.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

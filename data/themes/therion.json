@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "セリオンズ",
   "canonical_name_en": "Therion",
+  "cards": [
+    "Type",
+    "Warrior",
+    "Psychic",
+    "Machine",
+    "Aqua",
+    "Plant",
+    "Reptile"
+  ],
+  "expansion": [
+    "Dimension Force",
+    "Power of the Elements",
+    "Photon Hypernova",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TherionCharge-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

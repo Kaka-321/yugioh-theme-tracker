@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "幻獣",
   "canonical_name_en": "Phantom Beast",
+  "cards": [],
+  "expansion": [
+    "Starter Deck 2006",
+    "Yu-Gi-Oh! GX Tag Force promotional cards",
+    "Duelist Revolution",
+    "Lord of the Tachyon Galaxy",
+    "Judgment of the Light",
+    "Shadow Specters",
+    "Primal Origin",
+    "Structure Deck: Yugi Muto",
+    "Circuit Break",
+    "Structure Deck: Powercode Link",
+    "Duelist Nexus",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HornofthePhantomBeast-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

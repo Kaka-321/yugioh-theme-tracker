@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "魔鍵",
   "canonical_name_en": "Magikey",
+  "cards": [
+    "Card type",
+    "Normal Spell Card"
+  ],
+  "expansion": [
+    "Dawn of Majesty",
+    "Burst of Destiny"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ClavkiystheMagikeySkyblaster-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

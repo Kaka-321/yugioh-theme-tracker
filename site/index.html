@@ -108,6 +108,38 @@
       border-left: 3px solid #ff6b6b;
       border-radius: 4px;
     }
+    /* カードリスト・展開セット・画像 */
+    #cards, #expansion, #theme-image {
+      margin: 12px 0;
+      padding: 12px;
+      background: #f9fafb;
+      border: 1px solid #e1e5e9;
+      border-radius: 8px;
+      min-height: 40px;
+    }
+    .card-item {
+      display: inline-block;
+      padding: 8px 12px;
+      margin: 4px 4px 4px 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      max-width: 200px;
+    }
+    .expansion-item {
+      margin: 6px 0;
+      padding: 6px 10px;
+      background: #eef1f4;
+      border-left: 3px solid #1659a5;
+      border-radius: 4px;
+    }
+    #theme-image img {
+      max-width: 300px;
+      max-height: 200px;
+      display: block;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -177,12 +209,20 @@
   <section>
     <h2 id="theme-name">テーマを選択してください</h2>
     <p id="theme-id"></p>
+    <p id="theme-image"></p>
 
     <h3>別名・通称</h3>
     <ul id="aliases"></ul>
 
     <h3>出典</h3>
     <p id="source"></p>
+
+    <h3>カードリスト</h3>
+    <div id="cards"></div>
+
+    <h3>展開セット</h3>
+    <div id="expansion"></div>
+
     <p class="note">
       日本語名と別名は手動登録です。
       出典ページの名前とURLはYugipedia APIから取得しています。
@@ -208,6 +248,9 @@
     const pageNumberSpan  = document.getElementById("page-number");
     const totalPagesSpan  = document.getElementById("total-pages");
     const prevBtn         = document.querySelector('.pagination-btn[onclick="previousPage()"]');
+    const cardsDiv        = document.getElementById("cards");
+    const expansionDiv    = document.getElementById("expansion");
+    const themeImageDiv   = document.getElementById("theme-image");
 
     // ===== ユーティリティ =====
     function getFilteredThemes(searchText) {
@@ -357,6 +400,46 @@
         link.href = sourceUrl.href;
         link.textContent = "Yugipedia: " + theme.source.title;
         document.getElementById("source").replaceChildren(link);
+
+        // カードリスト表示
+        if (theme.cards) {
+          cardsDiv.replaceChildren();
+          for (const card of theme.cards) {
+            const div = document.createElement("div");
+            div.className = "card-item";
+            div.textContent = card;
+            cardsDiv.appendChild(div);
+          }
+        } else {
+          cardsDiv.textContent = "カードリストの情報はありません。";
+        }
+
+        // 展開セット表示
+        if (theme.expansion) {
+          expansionDiv.replaceChildren();
+          if (typeof theme.expansion === "string") {
+            const item = document.createElement("div");
+            item.className = "expansion-item";
+            item.textContent = theme.expansion;
+            expansionDiv.appendChild(item);
+          } else if (Array.isArray(theme.expansion)) {
+            for (const exp of theme.expansion) {
+              const item = document.createElement("div");
+              item.className = "expansion-item";
+              item.textContent = exp;
+              expansionDiv.appendChild(item);
+            }
+          }
+        } else {
+          expansionDiv.textContent = "展開セットの情報はありません。";
+        }
+
+        // テーマ画像表示
+        if (theme.image) {
+          themeImageDiv.innerHTML = `<img src="${theme.image}" alt="テーマ画像" />`;
+        } else {
+          themeImageDiv.textContent = "テーマ画像はありません。";
+        }
 
         result.textContent = "テーマ情報と出典を読み込みました。";
       } catch (e) {

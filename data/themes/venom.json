@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ヴェノム",
   "canonical_name_en": "Venom",
+  "cards": [],
+  "expansion": [
+    "Tactical Evolution",
+    "Invasion: Vengeance",
+    "Code of the Duelist",
+    "Dimension Force",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Venom.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

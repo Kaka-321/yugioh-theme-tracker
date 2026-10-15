@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "重機",
   "canonical_name_en": "Heavy Industry",
+  "cards": [
+    "Digvorzhak, King of Heavy Industry",
+    "Jumbo Drill",
+    "Road Roller",
+    "Strong Shovel Excavator"
+  ],
+  "expansion": [
+    "V Jump Edition 6",
+    "Galactic Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Heavy Machinery.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

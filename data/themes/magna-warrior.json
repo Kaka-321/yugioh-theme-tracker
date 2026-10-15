@@ -2,6 +2,26 @@
   "aliases": [],
   "canonical_name": "磁石の戦士",
   "canonical_name_en": "Magna Warrior",
+  "cards": [
+    "Cost",
+    "Berserkion the Electromagna Warrior",
+    "Alpha The Electromagnet Warrior",
+    "Beta The Electromagnet Warrior",
+    "Gamma The Electromagnet Warrior",
+    "Plasma Warrior Eitom",
+    "Tellusion the Magna Warrior",
+    "Magnet Warrior Sigma Plus",
+    "Magnet Warrior Sigma Minus",
+    "Valkyrion the Magna Warrior",
+    "Alpha The Magnet Warrior",
+    "Beta The Magnet Warrior",
+    "Gamma The Magnet Warrior"
+  ],
+  "expansion": [
+    "Structure Deck: Yugi Muto",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ValkyriontheMagnaWarrior-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

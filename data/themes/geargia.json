@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "ギアギア",
   "canonical_name_en": "Geargia",
+  "cards": [
+    "Geargiano",
+    "Geargianchor",
+    "Geargiaccelerator",
+    "Geargiano Mk-II",
+    "Geargiarmor",
+    "Geargiarsenal",
+    "Geargiano Mk-III",
+    "Geargiattacker",
+    "Geargiauger"
+  ],
+  "expansion": [
+    "Generation Force",
+    "Return of the Duelist",
+    "Lord of the Tachyon Galaxy"
+  ],
+  "image": "https://yugipedia.com/wiki/File:geargia.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

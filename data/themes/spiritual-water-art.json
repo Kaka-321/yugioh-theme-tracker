@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "水霊術",
   "canonical_name_en": "Spiritual Water Art",
+  "cards": [],
+  "expansion": [
+    "Cybernetic Revolution",
+    "Phantom Rage"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SpiritualWaterArtAoi-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

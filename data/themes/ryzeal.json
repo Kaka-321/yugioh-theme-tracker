@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ライゼオル",
   "canonical_name_en": "Ryzeal",
+  "cards": [],
+  "expansion": [
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RyzealPlasmaHole-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

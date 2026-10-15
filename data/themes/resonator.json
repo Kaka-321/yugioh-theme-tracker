@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "リゾネーター",
   "canonical_name_en": "Resonator",
+  "cards": [],
+  "expansion": [
+    "The Duelist Genesis",
+    "The Shining Darkness",
+    "Starstrike Blast",
+    "Storm of Ragnarok",
+    "Extreme Victory",
+    "The Dark Illusion",
+    "Maximum Crisis",
+    "Eternity Code",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Resonators.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

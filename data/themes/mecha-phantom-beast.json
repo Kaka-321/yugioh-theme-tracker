@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "幻獣機",
   "canonical_name_en": "Mecha Phantom Beast",
+  "cards": [
+    "Card type"
+  ],
+  "expansion": [
+    "Lord of the Tachyon Galaxy",
+    "Judgment of the Light",
+    "Shadow Specters",
+    "Primal Origin",
+    "Circuit Break",
+    "Structure Deck: Powercode Link"
+  ],
+  "image": "https://yugipedia.com/wiki/File:XyzOverride-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

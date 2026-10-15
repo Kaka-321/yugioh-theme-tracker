@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "蕾禍",
   "canonical_name_en": "Ragnaraika",
+  "cards": [],
+  "expansion": [
+    "Legacy of Destruction",
+    "The Infinite Forbidden",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RagnaraikaBloom-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

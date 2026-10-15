@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "ジャックナイツ",
   "canonical_name_en": "Mekk-Knight",
+  "cards": [
+    "Knightmare"
+  ],
+  "expansion": [
+    "Extreme Force",
+    "Flames of Destruction",
+    "Cybernetic Horizon",
+    "Dark Neostorm",
+    "Eternity Code"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WorldLegacyKey-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

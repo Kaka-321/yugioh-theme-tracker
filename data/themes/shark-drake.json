@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "シャーク・ドレイク",
   "canonical_name_en": "Shark Drake",
+  "cards": [],
+  "expansion": [
+    "Galactic Overlord",
+    "Abyss Rising",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Number32SharkDrake-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

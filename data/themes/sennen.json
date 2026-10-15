@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "千年",
   "canonical_name_en": "Sennen",
+  "cards": [],
+  "expansion": [
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SengenjinWakesfromaMillennium-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

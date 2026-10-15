@@ -2,6 +2,33 @@
   "aliases": [],
   "canonical_name": "ゴゴゴ",
   "canonical_name_en": "Gogogo",
+  "cards": [
+    "Dodododwarf Gogogoglove",
+    "Dododo",
+    "Gogogo Aristera & Dexia",
+    "Gogogo Ghost",
+    "Gogogo Giant",
+    "Gogogo Gigas",
+    "Gogogo Goblindbergh",
+    "Goblindbergh",
+    "Gogogo Golem",
+    "Gogogo Goram",
+    "Number 55: Gogogo Goliath",
+    "Onomatokage",
+    "Onomat",
+    "Kagetokage",
+    "Utopic Onomatopoeia",
+    "Utopic"
+  ],
+  "expansion": [
+    "Generation Force",
+    "Order of Chaos",
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Duelist's Advance",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GogogoTalisman-JP-Anime-ZX-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

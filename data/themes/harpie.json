@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ハーピィ",
   "canonical_name_en": "Harpie",
+  "cards": [],
+  "expansion": [
+    "Rise of Destiny",
+    "Structure Deck: Lord of the Storm",
+    "Force of the Breaker",
+    "Lord of the Tachyon Galaxy",
+    "Duelist Pack: Battle City"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AlluringMirrorSplit-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

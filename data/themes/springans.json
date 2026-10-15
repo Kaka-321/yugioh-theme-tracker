@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "スプリガンズ",
   "canonical_name_en": "Springans",
+  "cards": [],
+  "expansion": [
+    "Blazing Vortex",
+    "Lightning Overdrive",
+    "Dawn of Majesty",
+    "Power of the Elements",
+    "Darkwing Blast",
+    "Photon Hypernova",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GungHoSpringans-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

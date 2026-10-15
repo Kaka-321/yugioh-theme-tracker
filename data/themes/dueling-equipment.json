@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "闘器",
   "canonical_name_en": "Dueling Equipment",
+  "cards": [],
+  "expansion": [
+    "Gladiator's Assault",
+    "Phantom Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GladiatorBeastsBattleGladius-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

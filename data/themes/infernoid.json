@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "インフェルノイド",
   "canonical_name_en": "Infernoid",
+  "cards": [
+    "Qli",
+    "Zefra",
+    "Infernoid Evil",
+    "Fusion Monster",
+    "Infernoid Flood",
+    "Link Monster",
+    "Level",
+    "Tierra, Source of Destruction",
+    "Tierra, Source of Destruction",
+    "Qli",
+    "Zefraath",
+    "Zefra Metaltron"
+  ],
+  "expansion": [
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Clash of Rebellions",
+    "Raging Tempest",
+    "Eternity Code"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-StandardDuelRankings-Infernoid.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

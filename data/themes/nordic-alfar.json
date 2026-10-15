@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "極星霊",
   "canonical_name_en": "Nordic Alfar",
+  "cards": [
+    "Alviss of the Nordic Alfar",
+    "Dverg of the Nordic Alfar",
+    "Ljosalf of the Nordic Alfar",
+    "Mara of the Nordic Alfar",
+    "Svartalf of the Nordic Alfar"
+  ],
+  "expansion": [
+    "Storm of Ragnarok"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NordicAlfar.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

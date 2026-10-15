@@ -2,11 +2,12 @@
   "aliases": [],
   "canonical_name": "ブレイズ・キャノン",
   "canonical_name_en": "Blaze Accelerator",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Force of the Breaker",
+    "Secrets of Eternity"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TriBlazeAccelerator-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

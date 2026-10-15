@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "トライブリゲード",
   "canonical_name_en": "Tri-Brigade",
+  "cards": [],
+  "expansion": [
+    "Phantom Rage",
+    "Blazing Vortex",
+    "Lightning Overdrive",
+    "Darkwing Blast",
+    "Photon Hypernova",
+    "Cyberstorm Access",
+    "Doom of Dimensions",
+    "THE CHRONICLES DECK: The Fallen & The Virtuous (All-Foil Edition)",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TriBrigade-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

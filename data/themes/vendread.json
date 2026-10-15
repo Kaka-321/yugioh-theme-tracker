@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "ヴェンデット",
   "canonical_name_en": "Vendread",
+  "cards": [
+    "Level",
+    "Effect Monster",
+    "Vendread Core",
+    "Vendread Anima",
+    "Vendread Striges",
+    "Vendread Houndhorde",
+    "Vendread Revenants",
+    "Scar of the Vendread"
+  ],
+  "expansion": [
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VendreadNights-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

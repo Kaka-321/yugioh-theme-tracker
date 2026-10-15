@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ヴェーダ",
   "canonical_name_en": "Veda",
+  "cards": [],
+  "expansion": [
+    "Duelist Nexus",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VedaKalanta-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

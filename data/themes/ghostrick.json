@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "ゴーストリック",
   "canonical_name_en": "Ghostrick",
+  "cards": [],
+  "expansion": [
+    "Shadow Specters",
+    "Legacy of the Valiant",
+    "Primal Origin",
+    "Extreme Force",
+    "Ignition Assault",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GhostrickParade-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "スピードロイド",
   "canonical_name_en": "Speedroid",
+  "cards": [],
+  "expansion": [
+    "Breakers of Shadow",
+    "Shining Victories",
+    "Raging Tempest",
+    "Maximum Crisis",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Speedlift-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

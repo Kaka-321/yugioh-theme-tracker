@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "Ｂ・Ｆ",
   "canonical_name_en": "Battlewasp",
+  "cards": [],
+  "expansion": [
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Battlewasp.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

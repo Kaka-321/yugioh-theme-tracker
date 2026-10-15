@@ -2,11 +2,25 @@
   "aliases": [],
   "canonical_name": "ガンドラ",
   "canonical_name_en": "Gandora",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Gandora the Dragon of Destruction",
+    "Cost",
+    "Special Summoned",
+    "send",
+    "End Phase",
+    "Flip Summon",
+    "Gandora-G the Dragon of Destruction",
+    "Cost",
+    "Shining Sarcophagus",
+    "Gandora-X the Dragon of Demolition",
+    "Mandatory effect",
+    "Gigarays Gandora the Dragon of Destruction",
+    "Cost"
+  ],
+  "expansion": [
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GigaraysGandoratheDragonofDestruction-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

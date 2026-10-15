@@ -2,11 +2,12 @@
   "aliases": [],
   "canonical_name": "サイレント・マジシャン",
   "canonical_name_en": "Silent Magician",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Yu-Gi-Oh! Nightmare Troubadour promotional cards",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SilentBurning-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

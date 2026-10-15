@@ -2,11 +2,15 @@
   "aliases": [],
   "canonical_name": "人造人間",
   "canonical_name_en": "Jinzo",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Pharaoh's Servant",
+    "Light of Destruction",
+    "Secrets of Eternity",
+    "Duelist Pack: Battle City",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PsychicWave-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

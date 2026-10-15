@@ -2,11 +2,9 @@
   "aliases": [],
   "canonical_name": "要塞クジラ",
   "canonical_name_en": "Fortress Whale",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:FortressWhale-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

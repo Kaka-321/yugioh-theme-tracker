@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "道化の一座",
   "canonical_name_en": "Clown Crew",
+  "cards": [],
+  "expansion": [
+    "Blazing Dominion",
+    "Chaos Origins"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ClownCrewRehearsal-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

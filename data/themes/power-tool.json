@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "パワー・ツール",
   "canonical_name_en": "Power Tool",
+  "cards": [],
+  "expansion": [
+    "Raging Battle"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PowerToolDragon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

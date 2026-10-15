@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "エルドリクシル",
   "canonical_name_en": "Eldlixir",
+  "cards": [
+    "Normal Spell",
+    "Quick-Play Spell",
+    "Continuous Trap",
+    "Normal Trap"
+  ],
+  "expansion": [
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EldlixirofBlackAwakening-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

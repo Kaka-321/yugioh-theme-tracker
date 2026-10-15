@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "黒蠍",
   "canonical_name_en": "Dark Scorpion",
+  "cards": [
+    "Variable effects",
+    "Don Zaloog"
+  ],
+  "expansion": [
+    "Magician's Force",
+    "Dark Crisis"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DarkScorpionBurglars-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

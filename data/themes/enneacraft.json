@@ -2,6 +2,25 @@
   "aliases": [],
   "canonical_name": "糾罪巧",
   "canonical_name_en": "Enneacraft",
+  "cards": [
+    "face-up",
+    "activate",
+    "hand",
+    "destroy",
+    "field",
+    "add",
+    "banish",
+    "target",
+    "GY",
+    "Special Summon",
+    "negate",
+    "Spell Card",
+    "shuffle"
+  ],
+  "expansion": [
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EnneacraftReverth-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

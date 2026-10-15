@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ホーリーナイツ",
   "canonical_name_en": "Starry Knight",
+  "cards": [],
+  "expansion": [
+    "Lightning Overdrive",
+    "Burst of Destiny"
+  ],
+  "image": "https://yugipedia.com/wiki/File:StarryKnightCeremony-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

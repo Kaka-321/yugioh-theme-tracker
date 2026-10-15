@@ -2,6 +2,32 @@
   "aliases": [],
   "canonical_name": "ラヴァル",
   "canonical_name_en": "Laval",
+  "cards": [
+    "Laval Coatl",
+    "Laval Blaster",
+    "Lavalval Dragun",
+    "Gusto Falco",
+    "Daigusto Phoenix",
+    "Laval Cannon",
+    "Vylon Stella",
+    "Laval Stennon",
+    "lswarm",
+    "Evilswarm O'lantern",
+    "Laval Phlogis",
+    "Gishki Chain",
+    "Lavalval Chain",
+    "Laval Lakeside Lady",
+    "Gem-Knight Obsidian",
+    "Lavalval Ignis"
+  ],
+  "expansion": [
+    "Generation Force",
+    "Hidden Arsenal 5: Steelswarm Invasion",
+    "Hidden Arsenal 6: Omega Xyz",
+    "Hidden Arsenal 7: Knight of Stars",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SearingFireWall-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

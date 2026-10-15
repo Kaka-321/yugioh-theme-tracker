@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "ダストン",
   "canonical_name_en": "Duston",
+  "cards": [],
+  "expansion": [
+    "Abyss Rising",
+    "Cosmo Blazer",
+    "Lord of the Tachyon Galaxy",
+    "Judgment of the Light",
+    "Shadow Specters",
+    "Legacy of the Valiant",
+    "Primal Origin",
+    "Maximum Crisis"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HouseDuston-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

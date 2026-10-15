@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ペンデュラム・ドラゴン",
   "canonical_name_en": "Pendulum Dragon",
+  "cards": [],
+  "expansion": [
+    "Duelist Alliance",
+    "Secrets of Eternity",
+    "Raging Tempest",
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Pendulum Dragon.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

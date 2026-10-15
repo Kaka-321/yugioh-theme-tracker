@@ -2,11 +2,13 @@
   "aliases": [],
   "canonical_name": "テレポート",
   "canonical_name_en": "Teleport",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "The Duelist Genesis",
+    "Crimson Crisis",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EmergencyTeleport-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,9 @@
   "aliases": [],
   "canonical_name": "地獄",
   "canonical_name_en": "Hell",
+  "cards": [],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Hell.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

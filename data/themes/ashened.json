@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "灰滅",
   "canonical_name_en": "Ashened",
+  "cards": [],
+  "expansion": [
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AshenedforEternity-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

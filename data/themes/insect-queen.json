@@ -2,11 +2,11 @@
   "aliases": [],
   "canonical_name": "インセクト女王",
   "canonical_name_en": "Insect Queen",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Duelist Pack: Battle City"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InsectQueen-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

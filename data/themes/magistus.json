@@ -2,6 +2,27 @@
   "aliases": [],
   "canonical_name": "マギストス",
   "canonical_name_en": "Magistus",
+  "cards": [
+    "Crowley, the Magistus of Grimoires",
+    "Zoroa, the Magistus of Flame",
+    "Rilliona, the Magistus of Verre",
+    "Endymion, the Magistus of Mastery",
+    "Aiwass, the Magistus Spell Spirit",
+    "Vahram, the Magistus Divinity Dragon",
+    "Ninaruru, the Magistus Glass Goddess",
+    "Artemis, the Magistus Moon Maiden",
+    "Zoroa, the Magistus Conflagrant Calamity",
+    "Rilliona, the Wondrous Magistus Witch Wardrobe",
+    "Spenta, the Magistus Sealer",
+    "Magistus Chorozo",
+    "Invoked Magistus Omega"
+  ],
+  "expansion": [
+    "Lightning Overdrive",
+    "Burst of Destiny",
+    "THE CHRONICLES DECK DX: Magistus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Magistus.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

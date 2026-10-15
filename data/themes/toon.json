@@ -2,6 +2,32 @@
   "aliases": [],
   "canonical_name": "トゥーン",
   "canonical_name_en": "Toon",
+  "cards": [
+    "Toon monster",
+    "Blue-Eyes Toon Dragon",
+    "Blue-Eyes White Dragon",
+    "Manga Ryu-Ran",
+    "Ryu-Ran",
+    "Toon Mermaid",
+    "Red Archery Girl",
+    "Toon Summoned Skull",
+    "Summoned Skull",
+    "Toon Dark Magician Girl",
+    "Dark Magician Girl"
+  ],
+  "expansion": [
+    "Starter Deck: Pegasus",
+    "Spell Ruler",
+    "Tournament Pack 6",
+    "Clash of Rebellions",
+    "Duelist Pack: Battle City",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Shining Victories",
+    "The Dark Illusion",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Toon_GX.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "竜魔王",
   "canonical_name_en": "Dracoverlord",
+  "cards": [],
+  "expansion": [
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Shining Victories",
+    "Darkwing Blast",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LectorPendulumtheDracoverlord-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

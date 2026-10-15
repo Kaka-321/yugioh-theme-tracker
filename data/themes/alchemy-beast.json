@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "錬金獣",
   "canonical_name_en": "Alchemy Beast",
+  "cards": [
+    "Summon",
+    "Tin Spell Circle",
+    "Mercury Hourglass",
+    "Lead Compass",
+    "Silver Key",
+    "Bronze Scale",
+    "Steel Lamp"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Alchemy Beasts.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

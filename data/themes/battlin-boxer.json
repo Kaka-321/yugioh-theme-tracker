@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ＢＫ",
   "canonical_name_en": "Battlin' Boxer",
+  "cards": [],
+  "expansion": [
+    "Lord of the Tachyon Galaxy",
+    "Shadow Specters",
+    "Primal Origin"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BattlinBoxers-DULI-GameMat-Event-CounterattackCredoofVictoryAlito.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

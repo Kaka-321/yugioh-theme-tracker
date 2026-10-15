@@ -2,6 +2,21 @@
   "aliases": [],
   "canonical_name": "ＰＳ",
   "canonical_name_en": "Pendulumstatue",
+  "cards": [
+    "Level",
+    "Support",
+    "FIRE",
+    "Fish",
+    "Insect",
+    "Warrior",
+    "Fairy",
+    "Plant",
+    "Spellcaster",
+    "Warrior",
+    "DARK"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:Pendulumstatue.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

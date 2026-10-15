@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "ギャラクシーアイズ",
   "canonical_name_en": "Galaxy-Eyes",
+  "cards": [],
+  "expansion": [
+    "Photon Shockwave",
+    "Galactic Overlord",
+    "Lord of the Tachyon Galaxy",
+    "Primal Origin",
+    "Raging Tempest",
+    "Soul Fusion",
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-JumpFesta-GalaxyEyesPhotonAndTachyonDragon.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

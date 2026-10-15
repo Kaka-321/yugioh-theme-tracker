@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "斬機",
   "canonical_name_en": "Mathmech",
+  "cards": [
+    "Attribute",
+    "LIGHT",
+    "FIRE",
+    "DARK",
+    "EARTH"
+  ],
+  "expansion": [
+    "Rise of the Duelist",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GeomathmechFinalSigma-OW-2.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

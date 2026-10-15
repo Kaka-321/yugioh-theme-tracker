@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ダイノルフィア",
   "canonical_name_en": "Dinomorphia",
+  "cards": [],
+  "expansion": [
+    "Battle of Chaos",
+    "Dimension Force",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DinomorphiaShell-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "壊獣",
   "canonical_name_en": "Kaiju",
+  "cards": [
+    "Dogoran, the Mad Flame Kaiju",
+    "Gadarla, the Mystery Dust Kaiju",
+    "Gameciel, the Sea Turtle Kaiju",
+    "Jizukiru, the Star Destroying Kaiju",
+    "Kumongous, the Sticky String Kaiju",
+    "Radian, the Multidimensional Kaiju",
+    "Thunder King, the Lightningstrike Kaiju"
+  ],
+  "expansion": [
+    "Structure Deck: Soulburner"
+  ],
+  "image": "https://yugipedia.com/wiki/File:KaijuCaptureMission-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "魔妖",
   "canonical_name_en": "Mayakashi",
+  "cards": [
+    "WATER",
+    "EARTH",
+    "WIND",
+    "FIRE",
+    "DARK"
+  ],
+  "expansion": [
+    "Dark Neostorm",
+    "Ignition Assault"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MayakashiMetamorphosis-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

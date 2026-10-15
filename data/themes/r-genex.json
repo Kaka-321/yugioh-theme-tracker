@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "レアル・ジェネクス",
   "canonical_name_en": "R-Genex",
+  "cards": [],
+  "expansion": [
+    "Hidden Arsenal 3"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LocomotionRGenex-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

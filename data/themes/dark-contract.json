@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "契約書",
   "canonical_name_en": "Dark Contract",
+  "cards": [],
+  "expansion": [
+    "Dimension of Chaos",
+    "Maximum Crisis",
+    "Code of the Duelist",
+    "Battle of Chaos",
+    "Doom of Dimensions",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Dark Contract.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

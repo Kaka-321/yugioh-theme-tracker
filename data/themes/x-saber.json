@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "Ｘ－セイバー",
   "canonical_name_en": "X-Saber",
+  "cards": [],
+  "expansion": [
+    "Ancient Prophecy",
+    "Hidden Arsenal",
+    "Absolute Powerforce",
+    "Hidden Arsenal: Special Edition"
+  ],
+  "image": "https://yugipedia.com/wiki/File:XSaber.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

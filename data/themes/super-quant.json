@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "超量",
   "canonical_name_en": "Super Quant",
+  "cards": [
+    "WATER",
+    "WIND",
+    "FIRE",
+    "LIGHT",
+    "DARK"
+  ],
+  "expansion": [
+    "Raging Tempest",
+    "Dark Neostorm",
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SuperQuantalAlphanSpike-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

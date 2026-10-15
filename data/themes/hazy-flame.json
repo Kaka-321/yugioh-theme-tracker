@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "陽炎獣",
   "canonical_name_en": "Hazy Flame",
+  "cards": [],
+  "expansion": [
+    "Cosmo Blazer",
+    "Primal Origin"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HazyFlameSphynx-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

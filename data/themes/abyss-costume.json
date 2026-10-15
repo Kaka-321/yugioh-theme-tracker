@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "魔界衣装",
   "canonical_name_en": "Abyss Costume",
+  "cards": [
+    "DEF",
+    "ATK"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:AbyssCostumeDwarfsShield-JP-Anime-AV-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

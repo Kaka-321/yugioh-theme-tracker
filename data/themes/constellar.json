@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "セイクリッド",
   "canonical_name_en": "Constellar",
+  "cards": [],
+  "expansion": [
+    "Galactic Overlord",
+    "Secrets of Eternity",
+    "Hidden Arsenal 7: Knight of Stars",
+    "Invasion: Vengeance",
+    "Blazing Vortex",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Constellar.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

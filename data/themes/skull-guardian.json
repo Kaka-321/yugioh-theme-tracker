@@ -2,11 +2,11 @@
   "aliases": [],
   "canonical_name": "ローガーディアン",
   "canonical_name_en": "Skull Guardian",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BarrieroftheVoicelessVoice-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

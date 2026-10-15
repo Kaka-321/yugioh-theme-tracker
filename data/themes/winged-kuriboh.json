@@ -2,11 +2,15 @@
   "aliases": [],
   "canonical_name": "ハネクリボー",
   "canonical_name_en": "Winged Kuriboh",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "The Lost Millennium",
+    "Cybernetic Revolution",
+    "Yu-Gi-Oh! GX Duel Academy promotional cards",
+    "Duelist Pack: Jaden Yuki",
+    "Yu-Gi-Oh! GX Volume 3 promotional card"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BerserkerCrush-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

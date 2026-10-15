@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "Ａ ＢＦ",
   "canonical_name_en": "Assault Blackwing",
+  "cards": [],
+  "expansion": [
+    "Dimension of Chaos",
+    "Shining Victories",
+    "The Dark Illusion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AssaultBlackwingRaikiritheRainShower-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

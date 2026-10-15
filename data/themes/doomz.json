@@ -2,6 +2,31 @@
   "aliases": [],
   "canonical_name": "ドゥームズ",
   "canonical_name_en": "DoomZ",
+  "cards": [
+    "DoomZ V Five - Amalthe",
+    "DoomZ VII Seven - Elara",
+    "DoomZ XII Zero - Drastea",
+    "DoomZ XIII Over - Graflareio"
+  ],
+  "expansion": [
+    "Doom of Dimensions",
+    "Burst Protocol",
+    "Blazing Dominion",
+    "Chaos Origins",
+    "Beyond the Brave",
+    "Immortal Phoenix",
+    "DARK",
+    "Dragon",
+    "WIND",
+    "Machine",
+    "Doom of Dimensions",
+    "Power Patron",
+    "Artmage",
+    "Elfnote",
+    "Ars Magna",
+    "Medius the Pure"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DoomZRaiders-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

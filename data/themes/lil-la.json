@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "リィラ",
   "canonical_name_en": "Lil-la",
+  "cards": [],
+  "expansion": [
+    "Blazing Vortex",
+    "Burst of Destiny",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LiveTwinLilla-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

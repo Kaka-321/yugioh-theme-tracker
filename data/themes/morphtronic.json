@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "Ｄ",
   "canonical_name_en": "Morphtronic",
+  "cards": [],
+  "expansion": [
+    "Crossroads of Chaos",
+    "Crimson Crisis",
+    "Raging Battle",
+    "Ancient Prophecy",
+    "The Shining Darkness",
+    "Extreme Victory",
+    "Secrets of Eternity"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MorphtronicsScramble-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

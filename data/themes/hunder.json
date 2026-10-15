@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "サンダー",
   "canonical_name_en": "Hunder",
+  "cards": [
+    "Pahunder",
+    "Mahunder",
+    "Sishunder",
+    "Brohunder",
+    "Otonari Thunder"
+  ],
+  "expansion": [
+    "Duelist Saga"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Thunder Archetype.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

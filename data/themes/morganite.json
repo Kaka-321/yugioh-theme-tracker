@@ -2,6 +2,32 @@
   "aliases": [],
   "canonical_name": "モルガナイト",
   "canonical_name_en": "Morganite",
+  "cards": [
+    "normal draw",
+    "Draw Phase",
+    "Normal Summon",
+    "turn",
+    "monsters",
+    "attack",
+    "Battle Phase",
+    "battle",
+    "battle damage",
+    "Normal Summon",
+    "Level",
+    "pay",
+    "LP",
+    "Spell",
+    "Trap Card"
+  ],
+  "expansion": [
+    "Cyberstorm Access",
+    "Rage of the Abyss",
+    "Duelist's Advance",
+    "Normal Spell Card",
+    "Cyberstorm Access",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TimeTearingMorganite-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

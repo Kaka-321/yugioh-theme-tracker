@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ブリッツクリーク",
   "canonical_name_en": "Blitzclique",
+  "cards": [],
+  "expansion": [
+    "Chaos Origins",
+    "EARTH",
+    "Thunder",
+    "Chaos Origins"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WhiskerBlitzclique-OW.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

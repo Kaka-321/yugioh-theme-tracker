@@ -2,11 +2,18 @@
   "aliases": [],
   "canonical_name": "ＤＴ",
   "canonical_name_en": "Dark Tuner",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Dark Synchro Monster",
+    "Grady",
+    "Tetsu Trudge",
+    "Devack",
+    "Rex Goodwin",
+    "Greiger",
+    "Kalin Kessler",
+    "Roman Goodwin"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:DarkTunerCatastrogue-TF05-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

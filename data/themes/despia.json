@@ -2,6 +2,32 @@
   "aliases": [],
   "canonical_name": "デスピア",
   "canonical_name_en": "Despia",
+  "cards": [
+    "counterpart",
+    "Ad Libitum of Despia",
+    "Dogmatika Ashiyan",
+    "Aluber the Jester of Despia",
+    "Fallen of Albaz",
+    "Despian Comedy",
+    "Despian Tragedy",
+    "Despian Proskenion",
+    "Dogmatika Nexus",
+    "Despian Quaeritis",
+    "White Knight of Dogmatika",
+    "Guiding Quem, the Virtuous",
+    "White Relic of Dogmatika",
+    "Dramaturge of Despia",
+    "Dogmatika Maximus",
+    "Despian Luluwalilith",
+    "Dogmatika Fleurdelis, the Knighted"
+  ],
+  "expansion": [
+    "Dawn of Majesty",
+    "Burst of Destiny",
+    "Dimension Force",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DramaturgeofDespia-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

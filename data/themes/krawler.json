@@ -2,6 +2,17 @@
   "aliases": [],
   "canonical_name": "クローラー",
   "canonical_name_en": "Krawler",
+  "cards": [],
+  "expansion": [
+    "Circuit Break",
+    "Cybernetic Horizon",
+    "Soul Fusion",
+    "Dark Neostorm",
+    "Power of the Elements",
+    "archetype",
+    "Level"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WorldLegacyinShadow-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

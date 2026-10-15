@@ -2,6 +2,32 @@
   "aliases": [],
   "canonical_name": "チェンジ",
   "canonical_name_en": "Change",
+  "cards": [
+    "Target",
+    "Summon"
+  ],
+  "expansion": [
+    "Starter Deck: Yugi Evolution",
+    "Elemental Energy",
+    "Ancient Sanctuary",
+    "Shadow of Infinity",
+    "Enemy of Justice",
+    "Cyberdark Impact",
+    "Light of Destruction",
+    "Duelist Pack: Chazz Princeton",
+    "Strike of Neos",
+    "Absolute Powerforce",
+    "Duelist Pack: Yugi",
+    "Duelist Pack: Yusei 3",
+    "Duelist Revolution",
+    "The Shining Darkness",
+    "Hidden Arsenal 4: Trishula's Triumph",
+    "Generation Force",
+    "Cosmo Blazer",
+    "Crossed Souls",
+    "Yugi's Legendary Decks"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MaskChange-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

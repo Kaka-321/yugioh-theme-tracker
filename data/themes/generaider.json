@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "ジェネレイド",
   "canonical_name_en": "Generaider",
+  "cards": [
+    "Spellcaster",
+    "Wyrm",
+    "Warrior",
+    "Rock",
+    "Reptile",
+    "Plant",
+    "Machine",
+    "Beast-Warrior",
+    "Zombie",
+    "Fairy"
+  ],
+  "expansion": [
+    "Ignition Assault",
+    "Eternity Code",
+    "Photon Hypernova"
+  ],
+  "image": "https://yugipedia.com/wiki/File:JormungandrGeneraiderBossofEternity-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "エンディミオン",
   "canonical_name_en": "Endymion",
+  "cards": [],
+  "expansion": [
+    "Stardust Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SpellPowerMastery-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

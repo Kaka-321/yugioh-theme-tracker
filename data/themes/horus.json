@@ -2,6 +2,27 @@
   "aliases": [],
   "canonical_name": "ホルス",
   "canonical_name_en": "Horus",
+  "cards": [
+    "Horus the Black Flame Dragon LV4",
+    "LV",
+    "Horus the Black Flame Dragon",
+    "Horus the Black Flame Dragon LV6",
+    "Horus the Black Flame Dragon LV8",
+    "Horus' Servant",
+    "Horus the Black Flame Dragon",
+    "Dark Horus",
+    "Dark counterpart",
+    "Metaphys Horus",
+    "Metaphys",
+    "Horus the Black Flame Deity",
+    "King's Sarcophagus"
+  ],
+  "expansion": [
+    "Soul of the Duelist",
+    "Age of Overlord",
+    "Phantom Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:WallsoftheImperialTomb-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

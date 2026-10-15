@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "Angelechy",
   "canonical_name_en": "Angelechy",
+  "cards": [
+    "Angelechy Enlisted",
+    "Angelechy Destrier",
+    "Angelechy Castellan",
+    "Angelechy Bastion",
+    "Angelechy Shatranga",
+    "Angelechy Seneschal"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:AngelechyOpeningtoe4-CORI-EN-1E-OP.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

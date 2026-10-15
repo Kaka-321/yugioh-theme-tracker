@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "キスキル",
   "canonical_name_en": "Ki-sikil",
+  "cards": [],
+  "expansion": [
+    "Blazing Vortex",
+    "Lightning Overdrive",
+    "Burst of Destiny",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EvilTwinKisikilDeal-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

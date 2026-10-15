@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "電脳堺",
   "canonical_name_en": "Virtual World",
+  "cards": [
+    "EARTH",
+    "Wyrm",
+    "WIND",
+    "Psychic"
+  ],
+  "expansion": [
+    "Phantom Rage",
+    "Blazing Vortex",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:VirtualWorldKyubiShenshen-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

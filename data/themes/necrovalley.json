@@ -2,11 +2,13 @@
   "aliases": [],
   "canonical_name": "ネクロバレー",
   "canonical_name_en": "Necrovalley",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Pharaonic Guardian",
+    "Legacy of the Valiant",
+    "Soul Fusion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Necrovalley-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

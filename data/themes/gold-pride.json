@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ＧＰ",
   "canonical_name_en": "Gold Pride",
+  "cards": [],
+  "expansion": [
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:GoldPrideItsNeckandNeck-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

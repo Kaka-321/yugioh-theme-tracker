@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "パラディオン",
   "canonical_name_en": "Crusadia",
+  "cards": [
+    "Crusadia Reclusia",
+    "Crusadia Magius",
+    "Crusadia Arboria",
+    "Crusadia Spatha",
+    "Crusadia Leonis",
+    "Crusadia Regulex",
+    "Crusadia Draco",
+    "Crusadia Maximus",
+    "Crusadia Equimax",
+    "Crusadia Krawler"
+  ],
+  "expansion": [
+    "Cybernetic Horizon",
+    "Soul Fusion",
+    "Dark Neostorm"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CrusadiaVanguard-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

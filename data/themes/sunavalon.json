@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "サンアバロン",
   "canonical_name_en": "Sunavalon",
+  "cards": [],
+  "expansion": [
+    "Burst of Destiny"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Spectre Deck Picture.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

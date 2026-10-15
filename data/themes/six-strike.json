@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "六武式",
   "canonical_name_en": "Six Strike",
+  "cards": [],
+  "expansion": [
+    "Storm of Ragnarok",
+    "Rage of the Abyss",
+    "Supreme Darkness",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SixStrikeTripleImpact-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

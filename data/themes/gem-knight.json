@@ -2,6 +2,23 @@
   "aliases": [],
   "canonical_name": "ジェムナイト",
   "canonical_name_en": "Gem-Knight",
+  "cards": [
+    "Rock",
+    "Pyro",
+    "Aqua",
+    "Thunder",
+    "Fairy",
+    "Fiend"
+  ],
+  "expansion": [
+    "Hidden Arsenal 5: Steelswarm Invasion",
+    "Hidden Arsenal 6: Omega Xyz",
+    "Hidden Arsenal 7: Knight of Stars",
+    "Secrets of Eternity",
+    "Clash of Rebellions",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Gem-Knight.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

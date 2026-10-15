@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "セブンス",
   "canonical_name_en": "Seventh",
+  "cards": [
+    "Nash",
+    "Rebirth of the Seventh Emperors",
+    "Reincarnation of the Seventh Emperors",
+    "Seventh Ascension",
+    "Seventh Eternity",
+    "Dumon",
+    "Marin",
+    "Vector",
+    "Seventh Ascension",
+    "Barian's Seventh Untopia",
+    "Alito",
+    "Seventh Force",
+    "Girag",
+    "Mizar",
+    "Seventh Tachyon"
+  ],
+  "expansion": [
+    "Primal Origin",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SeventhEternity-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "極星",
   "canonical_name_en": "Nordic",
+  "cards": [
+    "Fenrir the Nordic Wolf",
+    "Jormungardr the Nordic Serpent",
+    "Tyr of the Nordic Champions",
+    "Nordic Smith Ivaldi",
+    "The Nordic Lights"
+  ],
+  "expansion": [
+    "Storm of Ragnarok",
+    "Battle of Chaos"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Nordics.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

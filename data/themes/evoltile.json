@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "エヴォルド",
   "canonical_name_en": "Evoltile",
+  "cards": [],
+  "expansion": [
+    "Photon Shockwave",
+    "Order of Chaos",
+    "Galactic Overlord",
+    "Chaos Impact",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:EvoltileWestlo-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

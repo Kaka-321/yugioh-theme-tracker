@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ヘイズ",
   "canonical_name_en": "Hazy",
+  "cards": [],
+  "expansion": [
+    "Cosmo Blazer",
+    "Primal Origin"
+  ],
+  "image": "https://yugipedia.com/wiki/File:HazyGlory-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

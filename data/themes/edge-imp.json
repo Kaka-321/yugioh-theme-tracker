@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "エッジインプ",
   "canonical_name_en": "Edge Imp",
+  "cards": [],
+  "expansion": [
+    "The New Challengers",
+    "Crossed Souls",
+    "Rise of the Duelist"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Edge Imp.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

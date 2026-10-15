@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "メガリス",
   "canonical_name_en": "Megalith",
+  "cards": [
+    "Megalith Notrah Plura",
+    "Megalith Aratron",
+    "Megalith Bethor",
+    "Megalith Phaleg",
+    "Megalith Phuloch",
+    "Megalith Och",
+    "Megalith Hagith",
+    "Megalith Ophiel",
+    "Megalith Phul"
+  ],
+  "expansion": [
+    "Ignition Assault",
+    "Eternity Code",
+    "Rise of the Duelist",
+    "Doom of Dimensions",
+    "archetype",
+    "EARTH",
+    "Rock",
+    "Ritual Monster",
+    "Ignition Assault"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MegalithPortal-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

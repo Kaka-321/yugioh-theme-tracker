@@ -3,8 +3,37 @@
     "Blue-Eyes",
     "ブルーアイズ"
   ],
-  "canonical_name": "",
+  "canonical_name": "ブルーアイズ",
   "canonical_name_en": "Blue-Eyes",
+  "cards": [
+    "Blue-Eyes White Dragon",
+    "Blue-Eyes Ultimate Dragon",
+    "Blue-Eyes Ultimate Dragon, the God-Surpassing Servant",
+    "Blue-Eyes Alternative White Dragon",
+    "Neo Blue-Eyes Ultimate Dragon",
+    "Blue-Eyes Alternative Ultimate Dragon",
+    "Blue-Eyes Toon Dragon",
+    "Blue-Eyes Ultimate Toon Dragon",
+    "Blue-Eyes Spirit Dragon",
+    "Blue-Eyes Ultimate Spirit Dragon"
+  ],
+  "expansion": [
+    "Legend of Blue Eyes White Dragon",
+    "Starter Deck: Kaiba",
+    "Spell Ruler",
+    "Starter Deck: Pegasus",
+    "Starter Deck: Kaiba Evolution",
+    "Movie Pack",
+    "Anniversary Pack",
+    "Yu-Gi-Oh! 3D Bonds Beyond Time Movie Pack",
+    "Duelist Pack: Battle City",
+    "Shining Victories",
+    "Yu-Gi-Oh! The Dark Side of Dimensions Movie Pack",
+    "Structure Deck: Seto Kaiba",
+    "Battle of Chaos",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RagewithEyesofBlue-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",
@@ -12,15 +41,5 @@
     "url": "https://yugipedia.com/wiki/Blue-Eyes"
   },
   "source_mode": "api-metadata-and-manual",
-  "theme_id": "blue-eyes",
-  "related_cards": [
-    {
-      "title": "Blue-Eyes White Dragon",
-      "canonical_title": "blue-eyes-white-dragon"
-    },
-    {
-      "title": "Rage with Eyes of Blue",
-      "canonical_title": "rage-with-eyes-of-blue"
-    }
-  ]
+  "theme_id": "blue-eyes"
 }

@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "サイバー・ダーク",
   "canonical_name_en": "Cyberdark",
+  "cards": [
+    "Battle",
+    "Send",
+    "Main Deck",
+    "Send",
+    "Extra Deck",
+    "Direct attack",
+    "Effect damage"
+  ],
+  "expansion": [
+    "Cyberdark Impact",
+    "Duelist Pack: Zane Truesdale",
+    "Tactical Evolution",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CyberdarknessDragon-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

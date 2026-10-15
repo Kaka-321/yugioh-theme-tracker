@@ -2,11 +2,19 @@
   "aliases": [],
   "canonical_name": "竜騎士ガイア",
   "canonical_name_en": "Gaia the Dragon Champion",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Fusion Material",
+    "Gaia the Dragon Champion",
+    "Gaia The Fierce Knight",
+    "Curse of Dragon",
+    "Sky Galloping Gaia the Dragon Champion",
+    "Dragon",
+    "Curse of Dragonfire",
+    "Gaia the Magical Knight of Dragons",
+    "Curse of Dragon, the Cursed Dragon"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:GaiatheDragonChampion-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

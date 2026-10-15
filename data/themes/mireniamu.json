@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "ミレニアム",
   "canonical_name_en": "Mireniamu",
+  "cards": [],
+  "expansion": [
+    "The Lost Millennium",
+    "The Infinite Forbidden",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MillenniumSeeker-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "キメラ・ハイドライブ・ドラグヘッド",
   "canonical_name_en": "Chimera Hydradrive Draghead",
+  "cards": [
+    "Chimera Hydradrive Draghead - Aqua",
+    "Aqua",
+    "Chimera Hydradrive Draghead - Flame",
+    "Flame"
+  ],
+  "expansion": [],
+  "image": "https://yugipedia.com/wiki/File:ChimeraHydradriveDragrid-JP-Anime-VR-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

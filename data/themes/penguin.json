@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "ペンギン",
   "canonical_name_en": "Penguin",
+  "cards": [],
+  "expansion": [
+    "Spell Ruler",
+    "Rise of Destiny",
+    "Starter Deck: Joey",
+    "Generation Force",
+    "Abyss Rising",
+    "Primal Origin",
+    "Phantom Rage",
+    "Burst of Destiny",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Penguins.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

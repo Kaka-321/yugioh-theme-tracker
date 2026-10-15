@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "クロノダイバー",
   "canonical_name_en": "Time Thief",
+  "cards": [],
+  "expansion": [
+    "Ignition Assault"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TimeThiefRetrograde-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

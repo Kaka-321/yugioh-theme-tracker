@@ -2,6 +2,19 @@
   "aliases": [],
   "canonical_name": "マドルチェ",
   "canonical_name_en": "Madolche",
+  "cards": [],
+  "expansion": [
+    "Return of the Duelist",
+    "Abyss Rising",
+    "Lord of the Tachyon Galaxy",
+    "Primal Origin",
+    "Crossed Souls",
+    "Savage Strike",
+    "Dark Neostorm",
+    "Eternity Code",
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-RubberDuelField-Madolche.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "メタルフォーゼ",
   "canonical_name_en": "Metalfoes",
+  "cards": [],
+  "expansion": [
+    "The Dark Illusion",
+    "Invasion: Vengeance",
+    "Blazing Vortex"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MetalfoesFusion-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

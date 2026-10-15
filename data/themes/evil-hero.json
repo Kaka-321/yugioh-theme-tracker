@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "Ｅ－ＨＥＲＯ",
   "canonical_name_en": "Evil HERO",
+  "cards": [
+    "Dark Fusion",
+    "Fusion Substitute Monster",
+    "Hero Kid"
+  ],
+  "expansion": [
+    "Gladiator's Assault",
+    "Duelist Pack: Jaden Yuki 3",
+    "Supreme Darkness",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Supreme King and Inferno Wing.jpg",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

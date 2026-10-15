@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "未来皇ホープ",
   "canonical_name_en": "Utopic Future",
+  "cards": [],
+  "expansion": [
+    "Duelist's Advance"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FutureDrive-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

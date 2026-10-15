@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "死のメッセージ",
   "canonical_name_en": "Spirit Message",
+  "cards": [],
+  "expansion": [
+    "Labyrinth of Nightmare"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SentenceofDoom-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

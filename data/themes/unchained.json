@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "破械",
   "canonical_name_en": "Unchained",
+  "cards": [],
+  "expansion": [
+    "Chaos Impact",
+    "Ignition Assault",
+    "Eternity Code",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AbominationsPrison-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

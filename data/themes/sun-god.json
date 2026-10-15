@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "太陽神",
   "canonical_name_en": "Sun God",
+  "cards": [
+    "Helpoemer, Chanter of the Sun God",
+    "Helpoemer",
+    "Makyura, Destructor of the Sun God",
+    "Makyura the Destructor",
+    "Gil Garth, Exterminator of the Sun God",
+    "Gil Garth",
+    "Viser Des Shock, Tormentor of the Sun God",
+    "Viser Des",
+    "Byser Shock",
+    "The Winged Dragon of Ra, Sun God of Darkness",
+    "The Winged Dragon of Ra",
+    "Yami Marik",
+    "Lava Golem, Steelcage of the Sun God",
+    "Lava Golem",
+    "Nightmare's Steelcage",
+    "Egyptian God Slime, Protector of the Sun God",
+    "Egyptian God Slime",
+    "Slifer the Sky Dragon"
+  ],
+  "expansion": [
+    "Immortal Phoenix"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TheWingedDragonofRaSunGodofDarkness-IMPH-JP-OP-EA.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

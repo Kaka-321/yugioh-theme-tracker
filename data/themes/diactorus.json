@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "ディアクトロス",
   "canonical_name_en": "Diactorus",
+  "cards": [],
+  "expansion": [
+    "Duelist's Advance",
+    "Doom of Dimensions",
+    "archetype",
+    "Extra Deck",
+    "Medius the Pure",
+    "Power Patron"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArtmageDiactorus-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

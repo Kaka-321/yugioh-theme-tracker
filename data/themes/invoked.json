@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "召喚獣",
   "canonical_name_en": "Invoked",
+  "cards": [
+    "Aleister the Invoker",
+    "Aleister the Invoker of Madness",
+    "Crowley, the Gifted Magistus",
+    "Aleister the Reminiscent",
+    "Aiwass, Divine Spirit of the Law",
+    "Sacred Spirit Sword Aiwass",
+    "Virakam, the Divine Spirit of Artifice",
+    "Invocation",
+    "Invocation - \"Sword\"",
+    "Invocation - \"Grail\"",
+    "Magical Meltdown",
+    "Gamma Summon",
+    "Omega Summon",
+    "The Book of the Law"
+  ],
+  "expansion": [
+    "Eternity Code",
+    "Chaos Origins",
+    "Beyond the Brave",
+    "THE CHRONICLES DECK DX: Magistus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Invocation-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

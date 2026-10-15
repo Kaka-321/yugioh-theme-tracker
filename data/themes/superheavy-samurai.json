@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "超重武者",
   "canonical_name_en": "Superheavy Samurai",
+  "cards": [],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Secrets of Eternity",
+    "Crossed Souls",
+    "Clash of Rebellions",
+    "Dimension of Chaos",
+    "Breakers of Shadow",
+    "Invasion: Vengeance",
+    "Raging Tempest",
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SuperheavySamurai.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

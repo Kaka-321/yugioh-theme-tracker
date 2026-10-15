@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ビートルーパー",
   "canonical_name_en": "Beetrooper",
+  "cards": [],
+  "expansion": [
+    "Cyberstorm Access"
+  ],
+  "image": "https://yugipedia.com/wiki/File:BeetrooperFormation-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

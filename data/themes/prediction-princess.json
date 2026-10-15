@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "占術姫",
   "canonical_name_en": "Prediction Princess",
+  "cards": [],
+  "expansion": [
+    "Darkwing Blast"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Sibyl.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

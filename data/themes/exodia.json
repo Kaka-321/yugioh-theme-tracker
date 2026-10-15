@@ -2,6 +2,28 @@
   "aliases": [],
   "canonical_name": "エクゾディア",
   "canonical_name_en": "Exodia",
+  "cards": [
+    "Exodia the Forbidden One",
+    "Exodia Necross",
+    "Standby Phase",
+    "Exodius the Ultimate Forbidden Lord",
+    "Exodia, the Legendary Defender",
+    "Zorc Necrophades",
+    "Tribute Summon",
+    "Fiend",
+    "The Legendary Exodia Incarnate",
+    "True Exodia",
+    "Normal Monster",
+    "The Unstoppable Exodia Incarnate",
+    "Millennium",
+    "Exodia the Obliterator"
+  ],
+  "expansion": [
+    "Legend of Blue Eyes White Dragon",
+    "Dark Crisis",
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TheLegendaryExodiaIncarnate-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

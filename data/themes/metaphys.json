@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "メタファイズ",
   "canonical_name_en": "Metaphys",
+  "cards": [
+    "Metaphys Armed Dragon",
+    "Armed Dragon LV7",
+    "Metaphys Daedalus",
+    "Levia-Dragon - Daedalus",
+    "Metaphys Decoy Dragon",
+    "Decoy Dragon",
+    "Metaphys Executor",
+    "Metaphys Horus",
+    "Horus the Black Flame Dragon LV6",
+    "Metaphys Nephthys",
+    "Sacred Phoenix of Nephthys",
+    "Metaphys Tyrant Dragon",
+    "Tyrant Dragon",
+    "Metaphys Ragnarok",
+    "Divine Dragon Ragnarok"
+  ],
+  "expansion": [
+    "Duelist Alliance",
+    "Secrets of Eternity",
+    "Circuit Break",
+    "Cybernetic Horizon"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MetaphysFactor-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

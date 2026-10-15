@@ -2,6 +2,22 @@
   "aliases": [],
   "canonical_name": "六花",
   "canonical_name_en": "Rikka",
+  "cards": [
+    "Cyclamen the Rikka Fairy",
+    "Primula the Rikka Fairy",
+    "Rikka Queen Strenna",
+    "Erica the Rikka Fairy",
+    "Mudan the Rikka Fairy",
+    "Kanzashi the Rikka Queen",
+    "Hellebore the Rikka Fairy",
+    "Snowdrop the Rikka Fairy",
+    "Teardrop the Rikka Queen"
+  ],
+  "expansion": [
+    "Rise of the Duelist",
+    "Power of the Elements"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RikkaTranquility-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

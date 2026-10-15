@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ダイダロス",
   "canonical_name_en": "Daedalus",
+  "cards": [],
+  "expansion": [
+    "Structure Deck: Fury from the Deep",
+    "Absolute Powerforce",
+    "Galactic Overlord",
+    "Circuit Break",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:LeviaDragonDaedalus-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

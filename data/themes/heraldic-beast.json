@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "紋章獣",
   "canonical_name_en": "Heraldic Beast",
+  "cards": [],
+  "expansion": [
+    "Abyss Rising",
+    "Cosmo Blazer",
+    "Legacy of the Valiant",
+    "Ignition Assault",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AdvancedHeraldryArt-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,11 +2,19 @@
   "aliases": [],
   "canonical_name": "アーマード・エクシーズ",
   "canonical_name_en": "Armored Xyz",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [
+    "Xyz Armor Fortress",
+    "Full-Armored Xyz",
+    "Shark Fortress",
+    "Xyz Armor Torpedo",
+    "Armored Xyz",
+    "Submersible Carrier Aero Shark"
+  ],
+  "expansion": [
+    "Age of Overlord",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ArmoredXyz-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

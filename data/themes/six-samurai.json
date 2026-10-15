@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "六武衆",
   "canonical_name_en": "Six Samurai",
+  "cards": [
+    "Tenkabito Shien",
+    "Great Shogun Shien",
+    "Legendary Secret of the Six Samurai",
+    "Hand of the Six Samurai",
+    "Chamberlain of the Six Samurai",
+    "Spirit of the Six Samurai",
+    "Grandmaster of the Six Samurai",
+    "Enishi, Shien's Chancellor"
+  ],
+  "expansion": [
+    "Strike of Neos",
+    "Force of the Breaker",
+    "Gladiator's Assault",
+    "The Duelist Genesis",
+    "Crimson Crisis",
+    "Storm of Ragnarok",
+    "Extreme Victory",
+    "Rage of the Abyss",
+    "Supreme Darkness",
+    "Alliance Insight"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SixSamuraiUnited-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

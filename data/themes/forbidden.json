@@ -2,11 +2,18 @@
   "aliases": [],
   "canonical_name": "禁じられた",
   "canonical_name_en": "Forbidden",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Raging Battle",
+    "Storm of Ragnarok",
+    "Abyss Rising",
+    "Primal Origin",
+    "Starter Deck: Link Strike",
+    "Structure Deck: Powercode Link",
+    "Rise of the Duelist",
+    "Burst Protocol"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Mat-BP03-ForbiddenSpells.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

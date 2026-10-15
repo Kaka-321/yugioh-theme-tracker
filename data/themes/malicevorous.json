@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "マリスボラス",
   "canonical_name_en": "Malicevorous",
+  "cards": [
+    "Summon"
+  ],
+  "expansion": [
+    "Shadow Specters"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Malicevorous.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

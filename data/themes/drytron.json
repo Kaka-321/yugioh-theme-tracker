@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ドライトロン",
   "canonical_name_en": "Drytron",
+  "cards": [],
+  "expansion": [
+    "Lightning Overdrive",
+    "Burst of Destiny",
+    "Duelist Nexus",
+    "The Infinite Forbidden"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MeteonisDrytron-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

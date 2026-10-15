@@ -2,6 +2,30 @@
   "aliases": [],
   "canonical_name": "ネオス",
   "canonical_name_en": "Neos",
+  "cards": [
+    "Elemental HERO Neos",
+    "Elemental HERO Neos Alius",
+    "Elemental HERO Honest Neos",
+    "retrained",
+    "Honest",
+    "Elemental HERO Spirit of Neos"
+  ],
+  "expansion": [
+    "Strike of Neos",
+    "Power of the Duelist",
+    "Gladiator's Assault",
+    "Crossroads of Chaos",
+    "Tactical Evolution",
+    "Phantom Darkness",
+    "Hidden Arsenal",
+    "Duelist Pack: Jaden Yuki 2",
+    "Duelist Pack: Jaden Yuki 3",
+    "Savage Strike",
+    "Power of the Elements",
+    "Supreme Darkness",
+    "Yu-Gi-Oh! Tag Force GX promotional cards"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Neos Contact in Teardrop.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

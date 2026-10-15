@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "ダイナレスラー",
   "canonical_name_en": "Dinowrestler",
+  "cards": [],
+  "expansion": [
+    "Soul Fusion",
+    "Dark Neostorm",
+    "Rising Rampage",
+    "Chaos Impact",
+    "Doom of Dimensions"
+  ],
+  "image": "https://yugipedia.com/wiki/File:DinoDomain-JP-Anime-VR-CA.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

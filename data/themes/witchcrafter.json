@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "ウィッチクラフト",
   "canonical_name_en": "Witchcrafter",
+  "cards": [],
+  "expansion": [
+    "Rising Rampage",
+    "Ignition Assault",
+    "Eternity Code",
+    "THE CHRONICLES DECK DX: Magistus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Witchcrafter.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "仮面魔踏士",
   "canonical_name_en": "Masquerade",
+  "cards": [],
+  "expansion": [
+    "Judgment of the Light",
+    "Beyond the Brave"
+  ],
+  "image": "https://yugipedia.com/wiki/File:NumberC104UmbralHorrorMasquerade-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

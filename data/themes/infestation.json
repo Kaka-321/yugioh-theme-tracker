@@ -2,6 +2,14 @@
   "aliases": [],
   "canonical_name": "侵略の",
   "canonical_name_en": "Infestation",
+  "cards": [],
+  "expansion": [
+    "Rise of Destiny",
+    "Hidden Arsenal 5: Steelswarm Invasion",
+    "Hidden Arsenal 6: Omega Xyz",
+    "Hidden Arsenal 7: Knight of Stars"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InfestationPandemic-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

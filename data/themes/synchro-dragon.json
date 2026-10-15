@@ -2,6 +2,24 @@
   "aliases": [],
   "canonical_name": "シンクロ・ドラゴン",
   "canonical_name_en": "Synchro Dragon",
+  "cards": [
+    "Negate",
+    "Destroy",
+    "ATK",
+    "Clear Wing Synchro Dragon",
+    "Clear Wing Synchro Dragon, Four Heavenly Dragons",
+    "Crystal Clear Wing Synchro Dragon",
+    "Crystal Wing Synchro Dragon",
+    "Crystal Clear Wing Over Synchro Dragon",
+    "White Wing Magician"
+  ],
+  "expansion": [
+    "Crossed Souls",
+    "Shining Victories",
+    "Age of Overlord",
+    "Supreme Darkness"
+  ],
+  "image": "https://yugipedia.com/wiki/File:ClearWingSynchroDragon-JP-Commercial-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

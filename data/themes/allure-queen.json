@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "魅惑の女王",
   "canonical_name_en": "Allure Queen",
+  "cards": [],
+  "expansion": [
+    "Cyberdark Impact",
+    "Rage of the Abyss"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AllureDance-MADU-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

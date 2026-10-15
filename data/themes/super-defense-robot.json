@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "ＳＤロボ",
   "canonical_name_en": "Super Defense Robot",
+  "cards": [],
+  "expansion": [
+    "Judgment of the Light"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SDRobo.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

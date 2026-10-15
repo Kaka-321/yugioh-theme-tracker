@@ -2,6 +2,18 @@
   "aliases": [],
   "canonical_name": "幻奏",
   "canonical_name_en": "Melodious",
+  "cards": [],
+  "expansion": [
+    "Duelist Alliance",
+    "The New Challengers",
+    "Crossed Souls",
+    "Clash of Rebellions",
+    "Breakers of Shadow",
+    "Shining Victories",
+    "Power of the Elements",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:MelodiousConcerto-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

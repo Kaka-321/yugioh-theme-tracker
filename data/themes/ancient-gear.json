@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "アンティーク・ギア",
   "canonical_name_en": "Ancient Gear",
+  "cards": [],
+  "expansion": [
+    "The Lost Millennium",
+    "Shadow of Infinity",
+    "Gladiator's Assault",
+    "Light of Destruction",
+    "The Duelist Genesis",
+    "Structure Deck: Machine Re-Volt",
+    "Master Collection Volume 1",
+    "Primal Origin",
+    "Raging Tempest",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:AncientGearAdvance-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

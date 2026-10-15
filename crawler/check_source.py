@@ -103,6 +103,94 @@ def save_cache(theme: Theme, value: dict) -> None:
     temporary.replace(cache)
 
 
+# ---------------------------------------------------------------------------
+# 抽出関数
+# ---------------------------------------------------------------------------
+
+
+def fetch_expansion(wikitext: str) -> list[str]:
+    """Infobox の | sets = から展開セット名を抽出する。
+
+    wikitext 例:
+        | sets         =
+        * [[Ignition Assault]]
+        * [[Eternity Code]]
+        * [[Lightning Overdrive]]
+        * [[Alliance Insight]]
+    """
+    expansion: list[str] = []
+
+    # Infobox 内を探す
+    infobox_match = re.search(
+        r'\{\{Infobox\s+\w+.*?\|\s*sets\s*=\s*(.*?)\|', wikitext, re.DOTALL
+    )
+    if not infobox_match:
+        return expansion
+
+    sets_section = infobox_match.group(1)
+    # [[Title]] を抜き出し
+    for m in re.findall(r'\[\[([^\]]+)\]\]', sets_section):
+        clean = m.strip()
+        if clean and not clean.startswith(("Category:", "File:", "Special:")):
+            expansion.append(clean)
+
+    return expansion
+
+
+def fetch_card_list(wikitext: str) -> list[str]:
+    """Etymology セクションのテーブルからカード名を抽出する。
+
+    wikitext 例:
+        {| class="wikitable"
+        |-\n! Card\n! Origin\n|-\n
+        | [[A.I. Challenge You]]\n| ...\n
+        ...
+        |}
+    """
+    cards: list[str] = []
+
+    # テーブル全体を取得
+    table_match = re.search(r'\{\|.*?\|\}', wikitext, re.DOTALL)
+    if not table_match:
+        return cards
+
+    table_content = table_match.group()
+
+    # テーブル内の [[Title]] リンクからカード名を抽出
+    for m in re.finditer(r'\[\[([^\]]+)\]\]', table_content):
+        card_title = m.group(1).strip()
+        # カテゴリ・ファイルページを除外
+        if card_title.startswith(("Category:", "File:", "Special:", "User:")):
+            continue
+        # 内部リンク（「|」を含む）は除外
+        if "|" in card_title:
+            continue
+        cards.append(card_title)
+
+    return cards
+
+
+def fetch_theme_image(wikitext: str) -> str | None:
+    """Infobox の | image = から画像ファイル名を取得し、
+    Yugipedia 上のフル URL を返す。
+
+    wikitext 例:
+        | image        = AIConnect-MADU-EN-VG-artwork.png
+    """
+    infobox_match = re.search(
+        r'\{\{Infobox\s+\w+.*?\|\s*image\s*=\s*([^|][^\|]*?)\|', wikitext, re.DOTALL
+    )
+    if not infobox_match:
+        return None
+
+    filename = infobox_match.group(1).strip()
+    if not filename:
+        return None
+
+    # フル URL 構築
+    return f"https://yugipedia.com/wiki/File:{filename}"
+
+
 def fetch_related_cards(theme: dict) -> list[dict]:
     """Yugipedia から Blue-Eyes に関連するカード一覧を wikitext のリンクで抽出する。"""
     excluded_patterns = ["anime", "manga", "arcv", "rush"]

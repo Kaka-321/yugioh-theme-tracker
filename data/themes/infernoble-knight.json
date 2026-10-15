@@ -2,6 +2,15 @@
   "aliases": [],
   "canonical_name": "焔聖騎士",
   "canonical_name_en": "Infernoble Knight",
+  "cards": [
+    "Emperor Charles the Great"
+  ],
+  "expansion": [
+    "Rise of the Duelist",
+    "Phantom Rage",
+    "Duelist Nexus"
+  ],
+  "image": "https://yugipedia.com/wiki/File:InfernobleKnightEmperorCharles-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

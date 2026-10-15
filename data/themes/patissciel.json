@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "聖菓使",
   "canonical_name_en": "Patissciel",
+  "cards": [],
+  "expansion": [
+    "Age of Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:PatisscielCouverture-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

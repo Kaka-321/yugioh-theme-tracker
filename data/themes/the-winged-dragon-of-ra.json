@@ -2,11 +2,11 @@
   "aliases": [],
   "canonical_name": "ラーの翼神竜",
   "canonical_name_en": "The Winged Dragon of Ra",
-  "field_origins": {
-    "aliases": "manual",
-    "canonical_name": "yugipedia",
-    "source": "api"
-  },
+  "cards": [],
+  "expansion": [
+    "Immortal Phoenix"
+  ],
+  "image": "https://yugipedia.com/wiki/File:TheWingedDragonofRa-MADU-EN-VG-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

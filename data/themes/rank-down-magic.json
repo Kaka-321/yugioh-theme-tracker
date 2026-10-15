@@ -2,6 +2,12 @@
   "aliases": [],
   "canonical_name": "ＲＤＭ",
   "canonical_name_en": "Rank-Down-Magic",
+  "cards": [],
+  "expansion": [
+    "Legacy of the Valiant",
+    "Lightning Overdrive"
+  ],
+  "image": "https://yugipedia.com/wiki/File:RankDownMagicNumeronFall-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

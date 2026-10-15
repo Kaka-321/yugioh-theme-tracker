@@ -2,6 +2,11 @@
   "aliases": [],
   "canonical_name": "バウンサー",
   "canonical_name_en": "Bounzer",
+  "cards": [],
+  "expansion": [
+    "Galactic Overlord"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Bounzers.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

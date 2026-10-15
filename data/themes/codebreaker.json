@@ -2,6 +2,16 @@
   "aliases": [],
   "canonical_name": "コードブレイカー",
   "canonical_name_en": "Codebreaker",
+  "cards": [],
+  "expansion": [
+    "Eternity Code",
+    "DARK",
+    "Warrior",
+    "Cal Kolter",
+    "Yu-Gi-Oh! VRAINS",
+    "Eternity Code"
+  ],
+  "image": "https://yugipedia.com/wiki/File:CodebreakerVirusBerserker-JP-Anime-VR-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

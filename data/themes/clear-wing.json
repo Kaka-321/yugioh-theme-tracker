@@ -2,6 +2,29 @@
   "aliases": [],
   "canonical_name": "クリアウィング",
   "canonical_name_en": "Clear Wing",
+  "cards": [
+    "Negate",
+    "Destroy",
+    "ATK",
+    "Clear Wing Fast Dragon",
+    "Clear Wing Synchro Dragon",
+    "Clear Wing Synchro Dragon, Four Heavenly Dragons",
+    "Crystal Clear Wing Synchro Dragon",
+    "Crystal Clear Wing Over Synchro Dragon",
+    "Hi-Speedroid Clear Wing Rider",
+    "Odd-Eyes Wing Dragon",
+    "Starving Venom Wing Dragon",
+    "Supreme King Dragon Clear Wing",
+    "OCG",
+    "TCG"
+  ],
+  "expansion": [
+    "Crossed Souls",
+    "Code of the Duelist",
+    "Supreme Darkness",
+    "Blazing Dominion"
+  ],
+  "image": "https://yugipedia.com/wiki/File:SupremeKingDragonClearWing-JP-Anime-AV-NC.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

@@ -2,6 +2,13 @@
   "aliases": [],
   "canonical_name": "フィッシュボーグ",
   "canonical_name_en": "Fishborg",
+  "cards": [],
+  "expansion": [
+    "Ancient Prophecy",
+    "Abyss Rising",
+    "Legacy of Destruction"
+  ],
+  "image": "https://yugipedia.com/wiki/File:FishborgBlaster-MADU-EN-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",

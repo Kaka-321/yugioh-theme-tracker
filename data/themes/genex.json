@@ -2,6 +2,20 @@
   "aliases": [],
   "canonical_name": "ジェネクス",
   "canonical_name_en": "Genex",
+  "cards": [
+    "R-Genex Turbo",
+    "Genex Power Planner",
+    "R-Genex Magma",
+    "R-Genex Crusher",
+    "Genex Undine"
+  ],
+  "expansion": [
+    "Hidden Arsenal 2",
+    "Hidden Arsenal 3",
+    "Hidden Arsenal 4: Trishula's Triumph",
+    "Structure Deck: Powercode Link"
+  ],
+  "image": "https://yugipedia.com/wiki/File:Divergence-TF05-JP-VG-artwork.png",
   "schema_version": "1.0.0",
   "source": {
     "provider": "Yugipedia",
