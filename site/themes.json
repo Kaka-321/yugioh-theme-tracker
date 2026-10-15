@@ -8,6 +8,106 @@
     {
       "canonical_name": "ブラック・マジシャン",
       "theme_id": "dark-magician"
+    },
+    {
+      "canonical_name": "@Ignister",
+      "theme_id": "ignister"
+    },
+    {
+      "canonical_name": "A.I.",
+      "theme_id": "a-i"
+    },
+    {
+      "canonical_name": "Abyss Actor",
+      "theme_id": "abyss-actor"
+    },
+    {
+      "canonical_name": "Abyss Costume",
+      "theme_id": "abyss-costume"
+    },
+    {
+      "canonical_name": "Abyss Script",
+      "theme_id": "abyss-script"
+    },
+    {
+      "canonical_name": "Abyss-",
+      "theme_id": "abyss"
+    },
+    {
+      "canonical_name": "Adamancipator",
+      "theme_id": "adamancipator"
+    },
+    {
+      "canonical_name": "Advanced Crystal Beast",
+      "theme_id": "advanced-crystal-beast"
+    },
+    {
+      "canonical_name": "Aesir",
+      "theme_id": "aesir"
+    },
+    {
+      "canonical_name": "Aether",
+      "theme_id": "aether"
+    },
+    {
+      "canonical_name": "Alchemy Beast",
+      "theme_id": "alchemy-beast"
+    },
+    {
+      "canonical_name": "Aleister",
+      "theme_id": "aleister"
+    },
+    {
+      "canonical_name": "Alien",
+      "theme_id": "alien"
+    },
+    {
+      "canonical_name": "Alligator",
+      "theme_id": "alligator"
+    },
+    {
+      "canonical_name": "Allure Queen",
+      "theme_id": "allure-queen"
+    },
+    {
+      "canonical_name": "Ally of Justice",
+      "theme_id": "ally-of-justice"
+    },
+    {
+      "canonical_name": "Altergeist",
+      "theme_id": "altergeist"
+    },
+    {
+      "canonical_name": "Amazement",
+      "theme_id": "amazement"
+    },
+    {
+      "canonical_name": "Amazoness",
+      "theme_id": "amazoness"
+    },
+    {
+      "canonical_name": "Amorphage",
+      "theme_id": "amorphage"
+    },
+    {
+      "canonical_name": "Ancient Gear",
+      "theme_id": "ancient-gear"
+    },
+    {
+      "canonical_name": "Ancient Warriors",
+      "theme_id": "ancient-warriors"
+    },
+    {
+      "canonical_name": "Angelechy",
+      "theme_id": "angelechy"
+    },
+    {
+      "canonical_name": "Anti",
+      "theme_id": "anti"
+    },
+    {
+      "canonical_name": "Apophis",
+      "theme_id": "apophis"
     }
   ]
 }
