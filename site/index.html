@@ -77,6 +77,8 @@
       margin-top: 16px;
       padding-top: 16px;
       border-top: 1px solid #eee;
+      flex-wrap: wrap;
+      gap: 8px;
     }
     .page-info {
       font-size: 0.85rem;
@@ -113,6 +115,7 @@
   <p class="note">
     非公式の情報整理サイトです。登録されたテーマの基本情報をYugipediaから自動更新しています。
   </p>
+  <p class="note">最終更新: <span id="current-date"></span></p>
 
   <section>
     <h2>テーマを選択</h2>
@@ -149,7 +152,7 @@
         <button type="button" class="pagination-btn" onclick="goToPage(1)">最初へ</button>
         <button type="button" class="pagination-btn" onclick="previousPage()" disabled>前へ</button>
         <button type="button" class="pagination-btn" onclick="nextPage()">次へ</button>
-        <button type="button" class="pagination-btn" onclick="goToPage(totalPages)">最後へ</button>
+        <button type="button" class="pagination-btn" onclick="goToPage(totalPagesValue)">最後へ</button>
       </div>
     </div>
 
@@ -190,97 +193,138 @@
   </section>
 
   <script>
-    const themeButtons = document.getElementById("theme-buttons");
+    // ===== 状態 =====
+    let allThemes = [];
+    let currentPage = 1;
+    let itemsPerPage = 8;
+    let totalPagesValue = 1;
+
+    // ===== 要素取得 =====
+    const themeButtons    = document.getElementById("theme-buttons");
     const themeListResult = document.getElementById("theme-list-result");
-    const result = document.getElementById("result");
+    const result          = document.getElementById("result");
+    const searchInput     = document.getElementById("theme-search-input");
+    const countInfo       = document.getElementById("search-results-info");
+    const pageNumberSpan  = document.getElementById("page-number");
+    const totalPagesSpan  = document.getElementById("total-pages");
+    const prevBtn         = document.querySelector('.pagination-btn[onclick="previousPage()"]');
 
-    async function loadThemeList() {
-      try {
-        const response = await fetch("./themes.json");
-        if (!response.ok) {
-          throw new Error("HTTP " + response.status);
-        }
+    // ===== ユーティリティ =====
+    function getFilteredThemes(searchText) {
+      const q = (searchText || "").trim().toLowerCase();
+      if (!q) return allThemes;
+      return allThemes.filter(function (t) {
+        const aliases = t.aliases || [];
+        return t.canonical_name.toLowerCase().includes(q) ||
+               aliases.some(function (a) { return a.toLowerCase().includes(q); });
+      });
+    }
 
-        const payload = await response.json();
-
-        if (
-          !Array.isArray(payload.themes) ||
-          payload.themes.some(theme =>
-            typeof theme.theme_id !== "string" ||
-            typeof theme.canonical_name !== "string"
-          )
-        ) {
-          throw new Error("テーマ一覧の形式が想定と異なります");
-        }
-
-        themeButtons.replaceChildren();
-
-        for (const theme of payload.themes) {
-          const button = document.createElement("button");
-          button.type = "button";
-          button.textContent = theme.canonical_name;
-          button.dataset.themeId = theme.theme_id;
-          button.addEventListener("click", () => {
-            loadTheme(theme.theme_id, theme.canonical_name);
-          });
-          themeButtons.appendChild(button);
-        }
-
-        // 全テーマデータを格納
-        // 全テーマデータを格納
-        allThemes = payload.themes;
-
-        // DOM が完全にロードされたら、検索バーにイベントリスナーを追加
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.getElementById('theme-search-input');
-            if (searchInput) {
-              searchInput.addEventListener('input', refreshThemeList);
-            }
-          });
-        } else {
-          // DOMContentLoaded すでに実行済みなら即座に登録
-          const searchInput = document.getElementById('theme-search-input');
-          if (searchInput) {
-            searchInput.addEventListener('input', refreshThemeList);
-          }
-        }
-
-        themeListResult.textContent =
-          payload.themes.length + "件のテーマを読み込みました。";
-
-        if (payload.themes.length > 0) {
-          loadTheme(payload.themes[0].theme_id, payload.themes[0].canonical_name);
-        }
-      } catch (error) {
-        themeListResult.textContent =
-          "テーマ一覧を読み込めませんでした: " + error.message;
+    function renderButtons(themes) {
+      themeButtons.replaceChildren();
+      for (const theme of themes) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = theme.canonical_name;
+        btn.dataset.themeId = theme.theme_id;
+        btn.addEventListener("click", function () {
+          loadTheme(theme.theme_id, theme.canonical_name);
+        });
+        themeButtons.appendChild(btn);
       }
     }
 
+    function updatePaginationUI(filteredCount) {
+      totalPagesValue = Math.max(1, Math.ceil(filteredCount / itemsPerPage));
+      if (currentPage > totalPagesValue) currentPage = totalPagesValue;
+      if (pageNumberSpan) pageNumberSpan.textContent = currentPage.toLocaleString("ja-JP");
+      if (totalPagesSpan) totalPagesSpan.textContent = totalPagesValue.toLocaleString("ja-JP");
+      if (prevBtn) prevBtn.disabled = currentPage <= 1;
+    }
+
+    function renderCurrentPage() {
+      const searchText = searchInput ? searchInput.value : "";
+      const filtered = getFilteredThemes(searchText);
+
+      const start = (currentPage - 1) * itemsPerPage;
+      renderButtons(filtered.slice(start, start + itemsPerPage));
+
+      if (countInfo) {
+        countInfo.style.display = "block";
+        countInfo.textContent = searchText.trim()
+          ? "「" + searchText + "」の検索結果：" + filtered.length + " 件"
+          : "テーマ一覧（" + filtered.length + "件）を表示中";
+      }
+      updatePaginationUI(filtered.length);
+    }
+
+    function refreshThemeList() {
+      currentPage = 1;
+      renderCurrentPage();
+    }
+
+    function goToPage(page) {
+      const searchText = searchInput ? searchInput.value : "";
+      const filtered = getFilteredThemes(searchText);
+      const totalPages = Math.max(1, Math.ceil(filtered.length / itemsPerPage));
+      currentPage = Math.max(1, Math.min(page, totalPages));
+      renderCurrentPage();
+    }
+
+    function previousPage() { goToPage(currentPage - 1); }
+    function nextPage()     { goToPage(currentPage + 1); }
+    function filterThemes() { refreshThemeList(); }
+
+    // ===== エラーバッファ =====
+    function logError(message) {
+      const buffer = document.getElementById("error-buffer");
+      if (!buffer) return;
+      const item = document.createElement("div");
+      item.className = "error-item";
+      item.textContent = "[ERROR] " + message;
+      buffer.prepend(item);
+    }
+
+    // ===== テーマ一覧読込 =====
+    async function loadThemeList() {
+      try {
+        const res = await fetch("./themes.json");
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const payload = await res.json();
+
+        if (!Array.isArray(payload.themes)) {
+          throw new Error("テーマ一覧の形式が想定と異なります");
+        }
+
+        allThemes = payload.themes;
+        themeListResult.textContent = allThemes.length + "件のテーマを読み込みました。";
+        refreshThemeList();
+
+        if (allThemes.length > 0) {
+          loadTheme(allThemes[0].theme_id, allThemes[0].canonical_name);
+        }
+      } catch (e) {
+        themeListResult.textContent = "テーマ一覧を読み込めませんでした: " + e.message;
+        logError("loadThemeList: " + e.message);
+      }
+    }
+
+    // ===== 個別テーマ読込 =====
     async function loadTheme(themeId, canonicalName) {
       try {
-        for (const button of themeButtons.children) {
-          button.classList.toggle(
-            "active",
-            button.dataset.themeId === themeId
-          );
+        for (const btn of themeButtons.children) {
+          btn.classList.toggle("active", btn.dataset.themeId === themeId);
         }
-
         result.textContent = "読み込み中…";
 
-        const response = await fetch("./data/themes/" + encodeURIComponent(themeId) + ".json");
-        if (!response.ok) {
-          throw new Error("HTTP " + response.status);
-        }
-
-        const theme = await response.json();
+        const res = await fetch("./data/themes/" + encodeURIComponent(themeId) + ".json");
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const theme = await res.json();
 
         if (
           typeof theme.canonical_name !== "string" ||
           typeof theme.theme_id !== "string" ||
           !Array.isArray(theme.aliases) ||
-          !theme.aliases.every(alias => typeof alias === "string") ||
           !theme.source ||
           typeof theme.source.title !== "string" ||
           typeof theme.source.url !== "string"
@@ -298,14 +342,11 @@
           throw new Error("出典URLが想定と異なります");
         }
 
-        document.getElementById("theme-name").textContent =
-          theme.canonical_name;
-        document.getElementById("theme-id").textContent =
-          "テーマID: " + theme.theme_id;
+        document.getElementById("theme-name").textContent = theme.canonical_name;
+        document.getElementById("theme-id").textContent = "テーマID: " + theme.theme_id;
 
         const aliases = document.getElementById("aliases");
         aliases.replaceChildren();
-
         for (const alias of theme.aliases) {
           const item = document.createElement("li");
           item.textContent = alias;
@@ -315,218 +356,37 @@
         const link = document.createElement("a");
         link.href = sourceUrl.href;
         link.textContent = "Yugipedia: " + theme.source.title;
-
         document.getElementById("source").replaceChildren(link);
+
         result.textContent = "テーマ情報と出典を読み込みました。";
-      } catch (error) {
-        result.textContent =
-          "データを読み込めませんでした: " + error.message;
+      } catch (e) {
+        result.textContent = "データを読み込めませんでした: " + e.message;
+        logError("loadTheme(" + themeId + "): " + e.message);
       }
     }
 
-    function updatePaginationUI() {
-      const totalPages = Math.ceil(allThemes.length / itemsPerPage);
-      totalPagesSpan.textContent = totalPages.toLocaleString("ja-JP");
-      pageNumber.textContent = currentPage.toLocaleString("ja-JP");
-      document.querySelector('.pagination-btn[onclick="previousPage()"]').disabled = currentPage <= 1;
+    // ===== 日付表示 =====
+    function updateJapaneseDate() {
+      const el = document.getElementById("current-date");
+      if (!el) return;
+      el.textContent = new Intl.DateTimeFormat("ja-JP", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      }).format(new Date());
     }
 
-    function filterThemes(searchText = "") {
-      const lowerSearch = searchText.toLowerCase();
-      return allThemes.filter(theme =>
-        theme.canonical_name.toLowerCase().includes(lowerSearch) ||
-        (theme.aliases && theme.aliases.some(alias => alias.toLowerCase().includes(lowerSearch)))
-      );
-    }
-
-    function refreshThemeList() {
-      const searchText = document.getElementById("theme-search-input").value;
-      const filteredThemes = filterThemes(searchText);
-      themeButtons.replaceChildren();
-
-      for (const theme of filteredThemes) {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.textContent = theme.canonical_name;
-        button.dataset.themeId = theme.theme_id;
-        button.addEventListener("click", () => {
-          loadTheme(theme.theme_id, theme.canonical_name);
-        });
-        themeButtons.appendChild(button);
+    // ===== 初期化 =====
+    document.addEventListener("DOMContentLoaded", function () {
+      if (searchInput) {
+        searchInput.addEventListener("input", refreshThemeList);
       }
-
-      const countInfo = document.getElementById("search-results-info");
-      if (countInfo) {
-        countInfo.style.display = filteredThemes.length > 0 ? "block" : "none";
-        countInfo.textContent = `${filteredThemes.length} 件の結果を表示しています`;
-      }
-
-      updatePaginationUI();
-    }
-
-    let itemsPerPage = 8;
-
-    function getFilteredThemes(searchText) {
-      if (!searchText.trim()) {
-        return allThemes;
-      }
-      
-      const lowerSearch = searchText.toLowerCase();
-      return allThemes.filter(theme => {
-        // aliases が未定義の場合、空配列とみなす（エラーを防ぐ）
-        const aliases = theme.aliases || [];
-        return theme.canonical_name.toLowerCase().includes(lowerSearch) ||
-          aliases.some(alias => alias.toLowerCase().includes(lowerSearch));
-      });
-    }
-
-    function refreshThemeList() {
-      const searchText = document.getElementById("theme-search-input").value.trim();
-      
-      const allThemesArray = Array.isArray(allThemes) ? allThemes : [];
-      
-      const filteredThemes = getFilteredThemes(searchText);
-      
-      // 検索結果情報（0 件でも表示）
-      const countInfo = document.getElementById("search-results-info");
-      if (countInfo) {
-        countInfo.style.display = "block";
-        const message = searchText.trim() 
-          ? `「${searchText}」の検索結果：${filteredThemes.length} 件見つかりました`
-          : `テーマ一覧（${allThemesArray.length}件）を表示中`;
-        countInfo.textContent = message;
-      }
-      
-      // ページネーションの初期設定
-      currentPage = 1;
-      
-      themeButtons.replaceChildren();
-      
-      for (const theme of filteredThemes) {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.textContent = theme.canonical_name;
-        button.dataset.themeId = theme.theme_id;
-        button.addEventListener("click", () => {
-          loadTheme(theme.theme_id, theme.canonical_name);
-        });
-        themeButtons.appendChild(button);
-      }
-
-      updatePaginationUI();
-    }
-
-    function filterThemes() {
-      const searchText = document.getElementById("theme-search-input").value.trim();
-      refreshThemeList(searchText);
-    }
-
-    function refreshThemeList(searchText = "") {
-      const allThemesArray = Array.isArray(allThemes) ? allThemes : [];
-      const totalPages = Math.ceil(allThemes.length / itemsPerPage);
-      page = Math.max(1, Math.min(page, totalPages));
-      if (page === currentPage) return;
-      currentPage = page;
-      updatePaginationUI();
-
-      const startIndex = (currentPage - 1) * itemsPerPage;
-      const endIndex = startIndex + itemsPerPage;
-      const themesToShow = allThemes.slice(startIndex, endIndex);
-
-      themeButtons.replaceChildren();
-
-      for (const theme of themesToShow) {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.textContent = theme.canonical_name;
-        button.dataset.themeId = theme.theme_id;
-        button.addEventListener("click", () => {
-          loadTheme(theme.theme_id, theme.canonical_name);
-        });
-        themeButtons.appendChild(button);
-      }
-
-      if (page === currentPage) {
-        themeListResult.textContent = "テーマ情報と出典を読み込みました。";
-      }
-    }
-
-    function previousPage() {
-      if (currentPage > 1) goToPage(currentPage - 1);
-    }
-
-    function nextPage() {
-      const totalPages = Math.ceil(allThemes.length / itemsPerPage);
-      if (currentPage < totalPages) goToPage(currentPage + 1);
-    }
-
-    function logError(message) {
-      const buffer = document.getElementById("error-buffer");
-      if (!buffer) return;
-
-      const item = document.createElement("div");
-      item.className = "error-item";
-      item.textContent = `[ERROR] ${message}`;
-      buffer.prepend(item);
-    }
-
-    function validateThemeData(theme) {
-      if (
-        typeof theme.canonical_name !== "string" ||
-        typeof theme.theme_id !== "string" ||
-        !Array.isArray(theme.aliases) ||
-        theme.aliases.some(alias => typeof alias !== "string")
-      ) {
-        throw new Error("必須項目が欠落しています");
-      }
-      return true;
-    }
-
-    async function loadTheme(themeId, canonicalName) {
-      if (!validateThemeData({ themeId, canonicalName })) {
-        logError('無効なテーマデータ');
-        return;
-      }
-
-      try {
-        const response = await fetch(`https://yugioh-api.3kiz.com/v1/themes/${themeId}/`);
-        
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-
-        const data = await response.json();
-        themeListResult.textContent = 'テーマ情報を読み込みました';
-        sourceLink.textContent = '';
-
-        let link = document.createElement('a');
-        link.href = `https://www.yugioh-card.com/jp/chara/?id=${themeId}`;
-        link.textContent = '詳細ページへ';
-        link.target = '_blank';
-        sourceLink.appendChild(link);
-        
-      } catch (error) {
-        logError(`loadTheme エラー：${error.message}`);
-      }
-    }
-
-    // 検索バーに入力時のフィルタリングを登録（allThemes が読み込まれた後）
-    const searchInput = document.getElementById('theme-search-input');
-    if (searchInput && allThemes.length > 0) {
-      searchInput.addEventListener('input', refreshThemeList);
-    } else if (searchInput) {
-      // まだ全テーマが読み込まれていない場合は、loadThemeList で登録する
-      const originalLoadThemeList = loadThemeList;
-      loadThemeList = async () => {
-        await originalLoadThemeList();
-        searchInput.addEventListener('input', refreshThemeList);
-      };
-    }< s c r i p t > 
-     f u n c t i o n   u p d a t e J a p a n e s e D a t e ( )   { 
-         c o n s t   n o w   =   n e w   D a t e ( ) ; 
-         c o n s t   j a O p t i o n s   =   {   y e a r :   " n u m e r i c " ,   m o n t h :   " 2 - d i g i t " ,   d a y :   " 2 - d i g i t " ,   h o u r :   " 2 - d i g i t " ,   m i n u t e :   " 2 - d i g i t " ,   s e c o n d :   " 2 - d i g i t "   } ; 
-         d o c u m e n t . g e t E l e m e n t B y I d ( " c u r r e n t - d a t e " ) . t e x t C o n t e n t   =   n e w   I n t l . D a t e T i m e F o r m a t ( " j a - J P " ,   j a O p t i o n s ) . f o r m a t ( n o w ) ; 
-     } 
-     u p d a t e J a p a n e s e D a t e ( ) ;   / /   �0�0�0��0��0Bfk0�[L�
- < / s c r i p t >  
- 
+      updateJapaneseDate();
+      loadThemeList();
+    });
+  </script>
+</body>
+</html>
