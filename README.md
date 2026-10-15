@@ -159,3 +159,30 @@ Publicリポジトリの定期Workflowは、
 ## 運用手順
 
 [Runbook](docs/runbook.md)を参照してください。
+
+## External monitoring
+
+Healthchecks.io monitors the scheduled GitHub Actions workflows.
+
+### Update Theme Data
+
+- Success pings are sent to `HC_PING_CRAWL_URL`.
+- Failure pings are sent to `HC_PING_CRAWL_URL/fail`.
+- Expected interval: every 24 hours.
+- Grace period: 2 hours.
+
+### Weekly Heartbeat
+
+- Success pings are sent to `HC_PING_HEARTBEAT_URL`.
+- Failure pings are sent to `HC_PING_HEARTBEAT_URL/fail`.
+- Expected schedule: `41 19 * * 0` in UTC.
+- Grace period: 24 hours.
+
+### Secrets
+
+Ping URLs are stored only as GitHub Actions secrets:
+
+- `HC_PING_CRAWL_URL`
+- `HC_PING_HEARTBEAT_URL`
+
+Do not commit, log, or share the actual Ping URLs.
