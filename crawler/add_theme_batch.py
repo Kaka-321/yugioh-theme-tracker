@@ -1,12 +1,21 @@
+@'
 import argparse
 import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data" / "internal" / "theme_candidates.json"
 THEMES_PATH = ROOT / "crawler" / "themes.py"
+
+EXCLUDED_QUALIFIERS = {
+    "anime",
+    "manga",
+    "gx archetype",
+    "arc-v archetype",
+}
 
 
 def slugify(value):
@@ -15,13 +24,24 @@ def slugify(value):
     return slug or "theme"
 
 
+def split_title(title):
+    match = re.match(r"^(.*?)\s*\(([^()]*)\)$", title)
+    if not match:
+        return title, None
+
+    base = match.group(1).strip()
+    qualifier = match.group(2).strip().lower()
+    return base, qualifier
+
+
 def build_entry(theme_id, canonical_name, source_title):
+    source_path = quote(source_title.replace(" ", "_"), safe="")
     return f'''    Theme(
         theme_id="{theme_id}",
         canonical_name="{canonical_name}",
         aliases=(),
         source_title="{source_title}",
-        source_url="https://yugipedia.com/wiki/{source_title.replace(' ', '_')}",
+        source_url="https://yugipedia.com/wiki/{source_path}",
     ),
 '''
 
@@ -56,11 +76,14 @@ def main():
             skipped += 1
             continue
 
-        if "(" in title:
+        base_name, qualifier = split_title(title)
+
+        if qualifier in EXCLUDED_QUALIFIERS:
             skipped += 1
             continue
 
-        theme_id = slugify(title)
+        canonical_name = base_name if qualifier else title
+        theme_id = slugify(canonical_name)
         base_id = theme_id
         number = 2
 
@@ -71,7 +94,7 @@ def main():
         used_ids.add(theme_id)
         registered_titles.add(title)
 
-        entry = build_entry(theme_id, title, title)
+        entry = build_entry(theme_id, canonical_name, title)
 
         closing_index = themes_text.rfind(")")
         if closing_index == -1:
@@ -101,3 +124,4 @@ if __name__ == "__main__":
     except (ValueError, OSError, json.JSONDecodeError) as error:
         print(f"FAILED: {error}", file=sys.stderr)
         sys.exit(1)
+'@ | Set-Content -Encoding utf8 crawler\add_theme_batch.py
