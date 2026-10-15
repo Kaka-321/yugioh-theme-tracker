@@ -382,10 +382,20 @@
 
     function refreshThemeList() {
       const searchText = document.getElementById("theme-search-input").value.trim();
+      
+      const allThemesArray = Array.isArray(allThemes) ? allThemes : [];
+      
       const filteredThemes = getFilteredThemes(searchText);
       
-      const buttonsContainer = document.getElementById("theme-buttons");
-      if (!buttonsContainer) return;
+      // 検索結果情報（0 件でも表示）
+      const countInfo = document.getElementById("search-results-info");
+      if (countInfo) {
+        countInfo.style.display = "block";
+        const message = searchText.trim() 
+          ? `「${searchText}」の検索結果：${filteredThemes.length} 件見つかりました`
+          : `テーマ一覧（${allThemesArray.length}件）を表示中`;
+        countInfo.textContent = message;
+      }
       
       // ページネーションの初期設定
       currentPage = 1;
@@ -402,21 +412,17 @@
         });
         themeButtons.appendChild(button);
       }
-      
-      const countInfo = document.getElementById("search-results-info");
-      if (countInfo) {
-        countInfo.style.display = filteredThemes.length > 0 ? "block" : "none";
-        countInfo.textContent = `${filteredThemes.length} 件の結果を表示しています`;
-      }
-      
+
       updatePaginationUI();
     }
 
     function filterThemes() {
-      refreshThemeList();
+      const searchText = document.getElementById("theme-search-input").value.trim();
+      refreshThemeList(searchText);
     }
 
-    function goToPage(page) {
+    function refreshThemeList(searchText = "") {
+      const allThemesArray = Array.isArray(allThemes) ? allThemes : [];
       const totalPages = Math.ceil(allThemes.length / itemsPerPage);
       page = Math.max(1, Math.min(page, totalPages));
       if (page === currentPage) return;
@@ -515,4 +521,12 @@
         await originalLoadThemeList();
         searchInput.addEventListener('input', refreshThemeList);
       };
-    }
+    }< s c r i p t > 
+     f u n c t i o n   u p d a t e J a p a n e s e D a t e ( )   { 
+         c o n s t   n o w   =   n e w   D a t e ( ) ; 
+         c o n s t   j a O p t i o n s   =   {   y e a r :   " n u m e r i c " ,   m o n t h :   " 2 - d i g i t " ,   d a y :   " 2 - d i g i t " ,   h o u r :   " 2 - d i g i t " ,   m i n u t e :   " 2 - d i g i t " ,   s e c o n d :   " 2 - d i g i t "   } ; 
+         d o c u m e n t . g e t E l e m e n t B y I d ( " c u r r e n t - d a t e " ) . t e x t C o n t e n t   =   n e w   I n t l . D a t e T i m e F o r m a t ( " j a - J P " ,   j a O p t i o n s ) . f o r m a t ( n o w ) ; 
+     } 
+     u p d a t e J a p a n e s e D a t e ( ) ;   / /   �0�0�0��0��0Bfk0�[L�
+ < / s c r i p t >  
+ 
