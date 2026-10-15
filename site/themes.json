@@ -3260,6 +3260,151 @@
       "canonical_name": "ウェジュ",
       "canonical_name_en": "Wedju",
       "theme_id": "wedju"
+    },
+    {
+      "canonical_name": "ホワイト",
+      "canonical_name_en": "White",
+      "theme_id": "white"
+    },
+    {
+      "canonical_name": "ホワイト・オーラ",
+      "canonical_name_en": "White Aura",
+      "theme_id": "white-aura"
+    },
+    {
+      "canonical_name": "白き森",
+      "canonical_name_en": "White Forest",
+      "theme_id": "white-forest"
+    },
+    {
+      "canonical_name": "ホワイトナイツ",
+      "canonical_name_en": "White Knight",
+      "theme_id": "white-knight"
+    },
+    {
+      "canonical_name": "ホワイトナイツ",
+      "canonical_name_en": "White Night",
+      "theme_id": "white-night"
+    },
+    {
+      "canonical_name": "ゼンマイ",
+      "canonical_name_en": "Wind-Up",
+      "theme_id": "wind-up"
+    },
+    {
+      "canonical_name": "ＷＷ",
+      "canonical_name_en": "Windwitch",
+      "theme_id": "windwitch"
+    },
+    {
+      "canonical_name": "ウィングマン",
+      "canonical_name_en": "Wingman",
+      "theme_id": "wingman"
+    },
+    {
+      "canonical_name": "白鴉",
+      "canonical_name_en": "Winter Raven",
+      "theme_id": "winter-raven"
+    },
+    {
+      "canonical_name": "ワイゼル",
+      "canonical_name_en": "Wisel",
+      "theme_id": "wisel"
+    },
+    {
+      "canonical_name": "ウィッチクラフト",
+      "canonical_name_en": "Witchcrafter",
+      "theme_id": "witchcrafter"
+    },
+    {
+      "canonical_name": "星杯",
+      "canonical_name_en": "World Chalice",
+      "theme_id": "world-chalice"
+    },
+    {
+      "canonical_name": "星遺物",
+      "canonical_name_en": "World Legacy",
+      "theme_id": "world-legacy"
+    },
+    {
+      "canonical_name": "ワーム",
+      "canonical_name_en": "Worm",
+      "theme_id": "worm"
+    },
+    {
+      "canonical_name": "Ｘ－セイバー",
+      "canonical_name_en": "X-Saber",
+      "theme_id": "x-saber"
+    },
+    {
+      "canonical_name": "エクシーズ・ドラゴン",
+      "canonical_name_en": "Xyz Dragon",
+      "theme_id": "xyz-dragon"
+    },
+    {
+      "canonical_name": "Ｙ",
+      "canonical_name_en": "Y",
+      "theme_id": "y"
+    },
+    {
+      "canonical_name": "竜星",
+      "canonical_name_en": "Yang Zing",
+      "theme_id": "yang-zing"
+    },
+    {
+      "canonical_name": "黄泉",
+      "canonical_name_en": "Yomi",
+      "theme_id": "yomi"
+    },
+    {
+      "canonical_name": "妖仙獣",
+      "canonical_name_en": "Yosenju",
+      "theme_id": "yosenju"
+    },
+    {
+      "canonical_name": "ヤミー",
+      "canonical_name_en": "Yummy",
+      "theme_id": "yummy"
+    },
+    {
+      "canonical_name": "Ｚ",
+      "canonical_name_en": "Z",
+      "theme_id": "z"
+    },
+    {
+      "canonical_name": "ＺＳ",
+      "canonical_name_en": "ZS -",
+      "theme_id": "zs"
+    },
+    {
+      "canonical_name": "ＺＷ",
+      "canonical_name_en": "ZW -",
+      "theme_id": "zw"
+    },
+    {
+      "canonical_name": "セフィラ",
+      "canonical_name_en": "Zefra",
+      "theme_id": "zefra"
+    },
+    {
+      "canonical_name": "セネト",
+      "canonical_name_en": "Zenet",
+      "theme_id": "zenet"
+    },
+    {
+      "canonical_name": "ゼアル",
+      "canonical_name_en": "Zexal",
+      "theme_id": "zexal"
+    },
+    {
+      "canonical_name": "十二獣",
+      "canonical_name_en": "Zoodiac",
+      "theme_id": "zoodiac"
+    },
+    {
+      "canonical_name": "ズババ",
+      "canonical_name_en": "Zubaba",
+      "theme_id": "zubaba"
     }
   ]
 }

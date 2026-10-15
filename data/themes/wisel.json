@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ワイゼル",
+  "canonical_name_en": "Wisel",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Wisel",
+    "url": "https://yugipedia.com/wiki/Wisel"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "wisel"
+}

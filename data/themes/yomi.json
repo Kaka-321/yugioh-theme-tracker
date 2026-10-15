@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "黄泉",
+  "canonical_name_en": "Yomi",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Yomi",
+    "url": "https://yugipedia.com/wiki/Yomi"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "yomi"
+}

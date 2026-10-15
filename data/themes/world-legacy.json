@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "星遺物",
+  "canonical_name_en": "World Legacy",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "World Legacy",
+    "url": "https://yugipedia.com/wiki/World_Legacy"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "world-legacy"
+}

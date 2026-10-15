@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "白き森",
+  "canonical_name_en": "White Forest",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "White Forest",
+    "url": "https://yugipedia.com/wiki/White_Forest"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "white-forest"
+}

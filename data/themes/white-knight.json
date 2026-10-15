@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ホワイトナイツ",
+  "canonical_name_en": "White Knight",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "White Knight",
+    "url": "https://yugipedia.com/wiki/White_Knight"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "white-knight"
+}

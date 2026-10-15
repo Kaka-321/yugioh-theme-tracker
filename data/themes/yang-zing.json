@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "竜星",
+  "canonical_name_en": "Yang Zing",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Yang Zing",
+    "url": "https://yugipedia.com/wiki/Yang_Zing"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "yang-zing"
+}

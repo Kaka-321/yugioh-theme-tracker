@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "白鴉",
+  "canonical_name_en": "Winter Raven",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Winter Raven",
+    "url": "https://yugipedia.com/wiki/Winter_Raven"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "winter-raven"
+}

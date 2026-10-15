@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "星杯",
+  "canonical_name_en": "World Chalice",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "World Chalice",
+    "url": "https://yugipedia.com/wiki/World_Chalice"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "world-chalice"
+}

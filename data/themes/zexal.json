@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ゼアル",
+  "canonical_name_en": "Zexal",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Zexal",
+    "url": "https://yugipedia.com/wiki/Zexal"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "zexal"
+}

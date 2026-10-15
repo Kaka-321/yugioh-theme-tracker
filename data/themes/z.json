@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｚ",
+  "canonical_name_en": "Z",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Z",
+    "url": "https://yugipedia.com/wiki/Z"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "z"
+}

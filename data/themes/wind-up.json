@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ゼンマイ",
+  "canonical_name_en": "Wind-Up",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Wind-Up",
+    "url": "https://yugipedia.com/wiki/Wind-Up"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "wind-up"
+}

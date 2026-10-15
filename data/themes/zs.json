@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＺＳ",
+  "canonical_name_en": "ZS -",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "ZS -",
+    "url": "https://yugipedia.com/wiki/ZS_-"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "zs"
+}
