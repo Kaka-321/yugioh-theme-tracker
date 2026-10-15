@@ -1,0 +1,17 @@
+{
+  "aliases": [],
+  "canonical_name": "Ally of Justice",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ally of Justice",
+    "url": "https://yugipedia.com/wiki/Ally_of_Justice"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ally-of-justice"
+}

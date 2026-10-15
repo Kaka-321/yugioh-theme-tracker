@@ -1,0 +1,17 @@
+{
+  "aliases": [],
+  "canonical_name": "@Ignister",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "@Ignister",
+    "url": "https://yugipedia.com/wiki/@Ignister"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ignister"
+}

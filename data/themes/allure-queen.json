@@ -1,0 +1,17 @@
+{
+  "aliases": [],
+  "canonical_name": "Allure Queen",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Allure Queen",
+    "url": "https://yugipedia.com/wiki/Allure_Queen"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "allure-queen"
+}

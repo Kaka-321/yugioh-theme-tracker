@@ -1,0 +1,17 @@
+{
+  "aliases": [],
+  "canonical_name": "Amorphage",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Amorphage",
+    "url": "https://yugipedia.com/wiki/Amorphage"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "amorphage"
+}

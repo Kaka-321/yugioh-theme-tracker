@@ -1,0 +1,17 @@
+{
+  "aliases": [],
+  "canonical_name": "Advanced Crystal Beast",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Advanced Crystal Beast",
+    "url": "https://yugipedia.com/wiki/Advanced_Crystal_Beast"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "advanced-crystal-beast"
+}

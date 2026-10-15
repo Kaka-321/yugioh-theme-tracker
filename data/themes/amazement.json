@@ -1,0 +1,17 @@
+{
+  "aliases": [],
+  "canonical_name": "Amazement",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Amazement",
+    "url": "https://yugipedia.com/wiki/Amazement"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "amazement"
+}

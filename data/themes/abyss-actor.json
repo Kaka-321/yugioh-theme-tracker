@@ -1,0 +1,17 @@
+{
+  "aliases": [],
+  "canonical_name": "Abyss Actor",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Abyss Actor",
+    "url": "https://yugipedia.com/wiki/Abyss_Actor"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "abyss-actor"
+}
