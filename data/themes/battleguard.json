@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "バーバリアン",
+  "canonical_name_en": "Battleguard",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Battleguard",
+    "url": "https://yugipedia.com/wiki/Battleguard"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "battleguard"
+}

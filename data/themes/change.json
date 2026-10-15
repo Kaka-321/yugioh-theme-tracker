@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "チェンジ",
+  "canonical_name_en": "Change",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Change",
+    "url": "https://yugipedia.com/wiki/Change"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "change"
+}

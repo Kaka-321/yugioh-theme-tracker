@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "契約書",
+  "canonical_name_en": "Dark Contract",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Dark Contract",
+    "url": "https://yugipedia.com/wiki/Dark_Contract"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "dark-contract"
+}

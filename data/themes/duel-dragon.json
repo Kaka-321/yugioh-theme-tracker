@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "決闘竜",
+  "canonical_name_en": "Duel Dragon",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Duel Dragon",
+    "url": "https://yugipedia.com/wiki/Duel_Dragon"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "duel-dragon"
+}

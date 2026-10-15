@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "バブル",
+  "canonical_name_en": "Bubble Era",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Bubble Era",
+    "url": "https://yugipedia.com/wiki/Bubble_Era"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "bubble-era"
+}

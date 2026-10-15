@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エルフ",
+  "canonical_name_en": "Elf",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Elf",
+    "url": "https://yugipedia.com/wiki/Elf"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "elf"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ヴァレル",
+  "canonical_name_en": "Borrel",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Borrel",
+    "url": "https://yugipedia.com/wiki/Borrel"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "borrel"
+}

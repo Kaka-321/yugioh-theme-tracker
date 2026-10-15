@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エンブレーマ",
+  "canonical_name_en": "Emblema",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Emblema",
+    "url": "https://yugipedia.com/wiki/Emblema"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "emblema"
+}

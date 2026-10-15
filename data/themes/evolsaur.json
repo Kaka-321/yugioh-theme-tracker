@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エヴォルダー",
+  "canonical_name_en": "Evolsaur",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Evolsaur",
+    "url": "https://yugipedia.com/wiki/Evolsaur"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "evolsaur"
+}

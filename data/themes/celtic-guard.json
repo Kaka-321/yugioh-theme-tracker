@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エルフの剣士",
+  "canonical_name_en": "Celtic Guard",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Celtic Guard",
+    "url": "https://yugipedia.com/wiki/Celtic_Guard"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "celtic-guard"
+}

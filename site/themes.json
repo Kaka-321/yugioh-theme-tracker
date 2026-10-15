@@ -260,6 +260,756 @@
       "canonical_name": "アザミナ",
       "canonical_name_en": "Azamina",
       "theme_id": "azamina"
+    },
+    {
+      "canonical_name": "巨大戦艦",
+      "canonical_name_en": "B.E.S.",
+      "theme_id": "b-e-s"
+    },
+    {
+      "canonical_name": "ベイビー",
+      "canonical_name_en": "Baby",
+      "theme_id": "baby"
+    },
+    {
+      "canonical_name": "竹光",
+      "canonical_name_en": "Bamboo Sword",
+      "theme_id": "bamboo-sword"
+    },
+    {
+      "canonical_name": "バルバロス",
+      "canonical_name_en": "Barbaros",
+      "theme_id": "barbaros"
+    },
+    {
+      "canonical_name": "バリアンズ",
+      "canonical_name_en": "Barian's",
+      "theme_id": "barian-s"
+    },
+    {
+      "canonical_name": "野球",
+      "canonical_name_en": "Baseball",
+      "theme_id": "baseball"
+    },
+    {
+      "canonical_name": "電池メン",
+      "canonical_name_en": "Batteryman",
+      "theme_id": "batteryman"
+    },
+    {
+      "canonical_name": "バーバリアン",
+      "canonical_name_en": "Battleguard",
+      "theme_id": "battleguard"
+    },
+    {
+      "canonical_name": "Ｂ・Ｆ",
+      "canonical_name_en": "Battlewasp",
+      "theme_id": "battlewasp"
+    },
+    {
+      "canonical_name": "ＢＫ",
+      "canonical_name_en": "Battlin' Boxer",
+      "theme_id": "battlin-boxer"
+    },
+    {
+      "canonical_name": "バーニングナックル",
+      "canonical_name_en": "Battlin' Boxing",
+      "theme_id": "battlin-boxing"
+    },
+    {
+      "canonical_name": "獣闘機",
+      "canonical_name_en": "Beastborg",
+      "theme_id": "beastborg"
+    },
+    {
+      "canonical_name": "ビートルーパー",
+      "canonical_name_en": "Beetrooper",
+      "theme_id": "beetrooper"
+    },
+    {
+      "canonical_name": "ＢＦ",
+      "canonical_name_en": "Blackwing",
+      "theme_id": "blackwing"
+    },
+    {
+      "canonical_name": "ＢＦＴ",
+      "canonical_name_en": "Blackwing Tamer",
+      "theme_id": "blackwing-tamer"
+    },
+    {
+      "canonical_name": "ブリッツクリーク",
+      "canonical_name_en": "Blitzclique",
+      "theme_id": "blitzclique"
+    },
+    {
+      "canonical_name": "青い涙",
+      "canonical_name_en": "Blue Tears",
+      "theme_id": "blue-tears"
+    },
+    {
+      "canonical_name": "ボンディング",
+      "canonical_name_en": "Bonding",
+      "theme_id": "bonding"
+    },
+    {
+      "canonical_name": "ヴァレル",
+      "canonical_name_en": "Borrel",
+      "theme_id": "borrel"
+    },
+    {
+      "canonical_name": "バウンサー",
+      "canonical_name_en": "Bounzer",
+      "theme_id": "bounzer"
+    },
+    {
+      "canonical_name": "烙印",
+      "canonical_name_en": "Branded",
+      "theme_id": "branded"
+    },
+    {
+      "canonical_name": "バブル",
+      "canonical_name_en": "Bubble Era",
+      "theme_id": "bubble-era"
+    },
+    {
+      "canonical_name": "武神",
+      "canonical_name_en": "Bujin",
+      "theme_id": "bujin"
+    },
+    {
+      "canonical_name": "バニリン",
+      "canonical_name_en": "Bunnillin",
+      "theme_id": "bunnillin"
+    },
+    {
+      "canonical_name": "彼岸",
+      "canonical_name_en": "Burning Abyss",
+      "theme_id": "burning-abyss"
+    },
+    {
+      "canonical_name": "蝶",
+      "canonical_name_en": "Butterfly",
+      "theme_id": "butterfly"
+    },
+    {
+      "canonical_name": "幻蝶の刺客",
+      "canonical_name_en": "Butterspy",
+      "theme_id": "butterspy"
+    },
+    {
+      "canonical_name": "ビーステッド",
+      "canonical_name_en": "Bystial",
+      "theme_id": "bystial"
+    },
+    {
+      "canonical_name": "ＣＸ",
+      "canonical_name_en": "CXyz",
+      "theme_id": "cxyz"
+    },
+    {
+      "canonical_name": "Ｃ",
+      "canonical_name_en": "Carrier",
+      "theme_id": "carrier"
+    },
+    {
+      "canonical_name": "キャット",
+      "canonical_name_en": "Cat",
+      "theme_id": "cat"
+    },
+    {
+      "canonical_name": "天輪",
+      "canonical_name_en": "Celestial",
+      "theme_id": "celestial"
+    },
+    {
+      "canonical_name": "エルフの剣士",
+      "canonical_name_en": "Celtic Guard",
+      "theme_id": "celtic-guard"
+    },
+    {
+      "canonical_name": "新生代",
+      "canonical_name_en": "Cenozoic",
+      "theme_id": "cenozoic"
+    },
+    {
+      "canonical_name": "センチュリオン",
+      "canonical_name_en": "Centur-Ion",
+      "theme_id": "centur-ion"
+    },
+    {
+      "canonical_name": "王者",
+      "canonical_name_en": "Champion",
+      "theme_id": "champion"
+    },
+    {
+      "canonical_name": "チェンジ",
+      "canonical_name_en": "Change",
+      "theme_id": "change"
+    },
+    {
+      "canonical_name": "カオス",
+      "canonical_name_en": "Chaos",
+      "theme_id": "chaos"
+    },
+    {
+      "canonical_name": "霊使い",
+      "canonical_name_en": "Charmer",
+      "theme_id": "charmer"
+    },
+    {
+      "canonical_name": "化合獣",
+      "canonical_name_en": "Chemicritter",
+      "theme_id": "chemicritter"
+    },
+    {
+      "canonical_name": "キメラ・ハイドライブ・ドラグヘッド",
+      "canonical_name_en": "Chimera Hydradrive Draghead",
+      "theme_id": "chimera-hydradrive-draghead"
+    },
+    {
+      "canonical_name": "先史遺産",
+      "canonical_name_en": "Chronomaly",
+      "theme_id": "chronomaly"
+    },
+    {
+      "canonical_name": "Ｃ",
+      "canonical_name_en": "Chrysalis",
+      "theme_id": "chrysalis"
+    },
+    {
+      "canonical_name": "蝉",
+      "canonical_name_en": "Cicada",
+      "theme_id": "cicada"
+    },
+    {
+      "canonical_name": "サイファー",
+      "canonical_name_en": "Cipher",
+      "theme_id": "cipher"
+    },
+    {
+      "canonical_name": "サイファー・ドラゴン",
+      "canonical_name_en": "Cipher Dragon",
+      "theme_id": "cipher-dragon"
+    },
+    {
+      "canonical_name": "クリアー",
+      "canonical_name_en": "Clear",
+      "theme_id": "clear"
+    },
+    {
+      "canonical_name": "クリアウィング",
+      "canonical_name_en": "Clear Wing",
+      "theme_id": "clear-wing"
+    },
+    {
+      "canonical_name": "クロック・ナイト",
+      "canonical_name_en": "Clock Knight",
+      "theme_id": "clock-knight"
+    },
+    {
+      "canonical_name": "雲魔物",
+      "canonical_name_en": "Cloudian",
+      "theme_id": "cloudian"
+    },
+    {
+      "canonical_name": "道化の一座",
+      "canonical_name_en": "Clown Crew",
+      "theme_id": "clown-crew"
+    },
+    {
+      "canonical_name": "コードブレイカー",
+      "canonical_name_en": "Codebreaker",
+      "theme_id": "codebreaker"
+    },
+    {
+      "canonical_name": "ＣＨ",
+      "canonical_name_en": "Comics Hero",
+      "theme_id": "comics-hero"
+    },
+    {
+      "canonical_name": "セイクリッド",
+      "canonical_name_en": "Constellar",
+      "theme_id": "constellar"
+    },
+    {
+      "canonical_name": "ＣＭ",
+      "canonical_name_en": "Cookpal",
+      "theme_id": "cookpal"
+    },
+    {
+      "canonical_name": "パラディオン",
+      "canonical_name_en": "Crusadia",
+      "theme_id": "crusadia"
+    },
+    {
+      "canonical_name": "宝玉",
+      "canonical_name_en": "Crystal",
+      "theme_id": "crystal"
+    },
+    {
+      "canonical_name": "宝玉獣",
+      "canonical_name_en": "Crystal Beast",
+      "theme_id": "crystal-beast"
+    },
+    {
+      "canonical_name": "クリストロン",
+      "canonical_name_en": "Crystron",
+      "theme_id": "crystron"
+    },
+    {
+      "canonical_name": "方界",
+      "canonical_name_en": "Cubic",
+      "theme_id": "cubic"
+    },
+    {
+      "canonical_name": "方界胤",
+      "canonical_name_en": "Cubic Seed",
+      "theme_id": "cubic-seed"
+    },
+    {
+      "canonical_name": "サイバー",
+      "canonical_name_en": "Cyber",
+      "theme_id": "cyber"
+    },
+    {
+      "canonical_name": "サイバー・エンジェル",
+      "canonical_name_en": "Cyber Angel",
+      "theme_id": "cyber-angel"
+    },
+    {
+      "canonical_name": "サイバー・ダーク",
+      "canonical_name_en": "Cyberdark",
+      "theme_id": "cyberdark"
+    },
+    {
+      "canonical_name": "サイバネティック",
+      "canonical_name_en": "Cybernetic",
+      "theme_id": "cybernetic"
+    },
+    {
+      "canonical_name": "サイバネット",
+      "canonical_name_en": "Cynet",
+      "theme_id": "cynet"
+    },
+    {
+      "canonical_name": "Ｄスケイル",
+      "canonical_name_en": "D-Scale",
+      "theme_id": "d-scale"
+    },
+    {
+      "canonical_name": "ＤＤ",
+      "canonical_name_en": "D/D",
+      "theme_id": "d-d"
+    },
+    {
+      "canonical_name": "ＤＤＤ",
+      "canonical_name_en": "D/D/D",
+      "theme_id": "d-d-d"
+    },
+    {
+      "canonical_name": "ダイダロス",
+      "canonical_name_en": "Daedalus",
+      "theme_id": "daedalus"
+    },
+    {
+      "canonical_name": "未界域",
+      "canonical_name_en": "Danger!",
+      "theme_id": "danger"
+    },
+    {
+      "canonical_name": "ダンテ",
+      "canonical_name_en": "Dante",
+      "theme_id": "dante"
+    },
+    {
+      "canonical_name": "契約書",
+      "canonical_name_en": "Dark Contract",
+      "theme_id": "dark-contract"
+    },
+    {
+      "canonical_name": "ダークマミー",
+      "canonical_name_en": "Dark Mummy",
+      "theme_id": "dark-mummy"
+    },
+    {
+      "canonical_name": "黒蠍",
+      "canonical_name_en": "Dark Scorpion",
+      "theme_id": "dark-scorpion"
+    },
+    {
+      "canonical_name": "暗黒界",
+      "canonical_name_en": "Dark World",
+      "theme_id": "dark-world"
+    },
+    {
+      "canonical_name": "堕天使",
+      "canonical_name_en": "Darklord",
+      "theme_id": "darklord"
+    },
+    {
+      "canonical_name": "ダーツ",
+      "canonical_name_en": "Dart",
+      "theme_id": "dart"
+    },
+    {
+      "canonical_name": "ブンボーグ",
+      "canonical_name_en": "Deskbot",
+      "theme_id": "deskbot"
+    },
+    {
+      "canonical_name": "デスピア",
+      "canonical_name_en": "Despia",
+      "theme_id": "despia"
+    },
+    {
+      "canonical_name": "Ｄ－ＨＥＲＯ",
+      "canonical_name_en": "Destiny HERO",
+      "theme_id": "destiny-hero"
+    },
+    {
+      "canonical_name": "破壊剣",
+      "canonical_name_en": "Destruction Sword",
+      "theme_id": "destruction-sword"
+    },
+    {
+      "canonical_name": "ディアベル",
+      "canonical_name_en": "Diabell",
+      "theme_id": "diabell"
+    },
+    {
+      "canonical_name": "ディアベルスター",
+      "canonical_name_en": "Diabellstar",
+      "theme_id": "diabellstar"
+    },
+    {
+      "canonical_name": "ディアクトロス",
+      "canonical_name_en": "Diactorus",
+      "theme_id": "diactorus"
+    },
+    {
+      "canonical_name": "ダイナミスト",
+      "canonical_name_en": "Dinomist",
+      "theme_id": "dinomist"
+    },
+    {
+      "canonical_name": "ダイノルフィア",
+      "canonical_name_en": "Dinomorphia",
+      "theme_id": "dinomorphia"
+    },
+    {
+      "canonical_name": "ダイナレスラー",
+      "canonical_name_en": "Dinowrestler",
+      "theme_id": "dinowrestler"
+    },
+    {
+      "canonical_name": "魔人",
+      "canonical_name_en": "Djinn",
+      "theme_id": "djinn"
+    },
+    {
+      "canonical_name": "ドドド",
+      "canonical_name_en": "Dododo",
+      "theme_id": "dododo"
+    },
+    {
+      "canonical_name": "ドッグ",
+      "canonical_name_en": "Dog",
+      "theme_id": "dog"
+    },
+    {
+      "canonical_name": "ドラグマ",
+      "canonical_name_en": "Dogmatika",
+      "theme_id": "dogmatika"
+    },
+    {
+      "canonical_name": "ドール",
+      "canonical_name_en": "Doll",
+      "theme_id": "doll"
+    },
+    {
+      "canonical_name": "ドール・モンスター",
+      "canonical_name_en": "Doll Monster",
+      "theme_id": "doll-monster"
+    },
+    {
+      "canonical_name": "ドールパーツ",
+      "canonical_name_en": "Doll Part",
+      "theme_id": "doll-part"
+    },
+    {
+      "canonical_name": "列王",
+      "canonical_name_en": "Dominators",
+      "theme_id": "dominators"
+    },
+    {
+      "canonical_name": "ドミナス",
+      "canonical_name_en": "Dominus",
+      "theme_id": "dominus"
+    },
+    {
+      "canonical_name": "らくがき",
+      "canonical_name_en": "Doodle",
+      "theme_id": "doodle"
+    },
+    {
+      "canonical_name": "らくがきじゅう",
+      "canonical_name_en": "Doodle Beast",
+      "theme_id": "doodle-beast"
+    },
+    {
+      "canonical_name": "らくがきちょう",
+      "canonical_name_en": "Doodlebook",
+      "theme_id": "doodlebook"
+    },
+    {
+      "canonical_name": "死偉王",
+      "canonical_name_en": "Doom King",
+      "theme_id": "doom-king"
+    },
+    {
+      "canonical_name": "ドゥームズ",
+      "canonical_name_en": "DoomZ",
+      "theme_id": "doomz"
+    },
+    {
+      "canonical_name": "竜剣士",
+      "canonical_name_en": "Dracoslayer",
+      "theme_id": "dracoslayer"
+    },
+    {
+      "canonical_name": "ドラゴンテイル",
+      "canonical_name_en": "Dracotail",
+      "theme_id": "dracotail"
+    },
+    {
+      "canonical_name": "竜魔王",
+      "canonical_name_en": "Dracoverlord",
+      "theme_id": "dracoverlord"
+    },
+    {
+      "canonical_name": "龍札",
+      "canonical_name_en": "Dragon Card",
+      "theme_id": "dragon-card"
+    },
+    {
+      "canonical_name": "征竜",
+      "canonical_name_en": "Dragon Ruler",
+      "theme_id": "dragon-ruler"
+    },
+    {
+      "canonical_name": "ドラゴンメイド",
+      "canonical_name_en": "Dragonmaid",
+      "theme_id": "dragonmaid"
+    },
+    {
+      "canonical_name": "ドラグニティ",
+      "canonical_name_en": "Dragunity",
+      "theme_id": "dragunity"
+    },
+    {
+      "canonical_name": "夢魔鏡",
+      "canonical_name_en": "Dream Mirror",
+      "theme_id": "dream-mirror"
+    },
+    {
+      "canonical_name": "ドローン",
+      "canonical_name_en": "Drone",
+      "theme_id": "drone"
+    },
+    {
+      "canonical_name": "ドルイド",
+      "canonical_name_en": "Druid",
+      "theme_id": "druid"
+    },
+    {
+      "canonical_name": "ドライトロン",
+      "canonical_name_en": "Drytron",
+      "theme_id": "drytron"
+    },
+    {
+      "canonical_name": "双天",
+      "canonical_name_en": "Dual Avatar",
+      "theme_id": "dual-avatar"
+    },
+    {
+      "canonical_name": "決闘竜",
+      "canonical_name_en": "Duel Dragon",
+      "theme_id": "duel-dragon"
+    },
+    {
+      "canonical_name": "闘器",
+      "canonical_name_en": "Dueling Equipment",
+      "theme_id": "dueling-equipment"
+    },
+    {
+      "canonical_name": "ダストン",
+      "canonical_name_en": "Duston",
+      "theme_id": "duston"
+    },
+    {
+      "canonical_name": "ダイソン",
+      "canonical_name_en": "Dyson",
+      "theme_id": "dyson"
+    },
+    {
+      "canonical_name": "地縛",
+      "canonical_name_en": "Earthbound",
+      "theme_id": "earthbound"
+    },
+    {
+      "canonical_name": "地縛神",
+      "canonical_name_en": "Earthbound Immortal",
+      "theme_id": "earthbound-immortal"
+    },
+    {
+      "canonical_name": "地縛戒隷",
+      "canonical_name_en": "Earthbound Servant",
+      "theme_id": "earthbound-servant"
+    },
+    {
+      "canonical_name": "エコ魔法",
+      "canonical_name_en": "Eco Spell",
+      "theme_id": "eco-spell"
+    },
+    {
+      "canonical_name": "エッジインプ",
+      "canonical_name_en": "Edge Imp",
+      "theme_id": "edge-imp"
+    },
+    {
+      "canonical_name": "旧神",
+      "canonical_name_en": "Elder Entity",
+      "theme_id": "elder-entity"
+    },
+    {
+      "canonical_name": "エルドリッチ",
+      "canonical_name_en": "Eldlich",
+      "theme_id": "eldlich"
+    },
+    {
+      "canonical_name": "エルドリクシル",
+      "canonical_name_en": "Eldlixir",
+      "theme_id": "eldlixir"
+    },
+    {
+      "canonical_name": "Ｅ・ＨＥＲＯ",
+      "canonical_name_en": "Elemental HERO",
+      "theme_id": "elemental-hero"
+    },
+    {
+      "canonical_name": "霊神",
+      "canonical_name_en": "Elemental Lord",
+      "theme_id": "elemental-lord"
+    },
+    {
+      "canonical_name": "エレメントセイバー",
+      "canonical_name_en": "Elementsaber",
+      "theme_id": "elementsaber"
+    },
+    {
+      "canonical_name": "エルフ",
+      "canonical_name_en": "Elf",
+      "theme_id": "elf"
+    },
+    {
+      "canonical_name": "エルフェンノーツ",
+      "canonical_name_en": "Elfnote",
+      "theme_id": "elfnote"
+    },
+    {
+      "canonical_name": "エンブレーマ",
+      "canonical_name_en": "Emblema",
+      "theme_id": "emblema"
+    },
+    {
+      "canonical_name": "冥府の使者",
+      "canonical_name_en": "Emissary of Darkness",
+      "theme_id": "emissary-of-darkness"
+    },
+    {
+      "canonical_name": "魔装戦士",
+      "canonical_name_en": "Empowered Warrior",
+      "theme_id": "empowered-warrior"
+    },
+    {
+      "canonical_name": "エンディミオン",
+      "canonical_name_en": "Endymion",
+      "theme_id": "endymion"
+    },
+    {
+      "canonical_name": "糾罪巧",
+      "canonical_name_en": "Enneacraft",
+      "theme_id": "enneacraft"
+    },
+    {
+      "canonical_name": "呪眼",
+      "canonical_name_en": "Evil Eye",
+      "theme_id": "evil-eye"
+    },
+    {
+      "canonical_name": "Ｅ－ＨＥＲＯ",
+      "canonical_name_en": "Evil HERO",
+      "theme_id": "evil-hero"
+    },
+    {
+      "canonical_name": "イビルツイン",
+      "canonical_name_en": "Evil★Twin",
+      "theme_id": "evil-twin"
+    },
+    {
+      "canonical_name": "エヴォルダー",
+      "canonical_name_en": "Evolsaur",
+      "theme_id": "evolsaur"
+    },
+    {
+      "canonical_name": "エヴォルド",
+      "canonical_name_en": "Evoltile",
+      "theme_id": "evoltile"
+    },
+    {
+      "canonical_name": "進化薬",
+      "canonical_name_en": "Evolution Pill",
+      "theme_id": "evolution-pill"
+    },
+    {
+      "canonical_name": "エヴォルカイザー",
+      "canonical_name_en": "Evolzar",
+      "theme_id": "evolzar"
+    },
+    {
+      "canonical_name": "エグゾード",
+      "canonical_name_en": "Exodd",
+      "theme_id": "exodd"
+    },
+    {
+      "canonical_name": "エクゾディア",
+      "canonical_name_en": "Exodia",
+      "theme_id": "exodia"
+    },
+    {
+      "canonical_name": "エクソシスター",
+      "canonical_name_en": "Exosister",
+      "theme_id": "exosister"
+    },
+    {
+      "canonical_name": "アイズ・サクリファイス",
+      "canonical_name_en": "Eyes Restrict",
+      "theme_id": "eyes-restrict"
+    },
+    {
+      "canonical_name": "Ｆ．Ａ．",
+      "canonical_name_en": "F.A.",
+      "theme_id": "f-a"
+    },
+    {
+      "canonical_name": "魔轟神",
+      "canonical_name_en": "Fabled",
+      "theme_id": "fabled"
+    },
+    {
+      "canonical_name": "妖精伝姫",
+      "canonical_name_en": "Fairy Tail",
+      "theme_id": "fairy-tail"
     }
   ]
 }

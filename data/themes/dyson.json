@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ダイソン",
+  "canonical_name_en": "Dyson",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Dyson",
+    "url": "https://yugipedia.com/wiki/Dyson"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "dyson"
+}

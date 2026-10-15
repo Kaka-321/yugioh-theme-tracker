@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "冥府の使者",
+  "canonical_name_en": "Emissary of Darkness",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Emissary of Darkness",
+    "url": "https://yugipedia.com/wiki/Emissary_of_Darkness"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "emissary-of-darkness"
+}

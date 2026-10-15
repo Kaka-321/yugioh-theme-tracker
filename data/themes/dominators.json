@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "列王",
+  "canonical_name_en": "Dominators",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Dominators",
+    "url": "https://yugipedia.com/wiki/Dominators"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "dominators"
+}

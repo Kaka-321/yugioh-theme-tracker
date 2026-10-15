@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "妖精伝姫",
+  "canonical_name_en": "Fairy Tail",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Fairy Tail",
+    "url": "https://yugipedia.com/wiki/Fairy_Tail"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "fairy-tail"
+}

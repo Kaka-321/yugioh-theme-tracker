@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "クリアウィング",
+  "canonical_name_en": "Clear Wing",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Clear Wing",
+    "url": "https://yugipedia.com/wiki/Clear_Wing"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "clear-wing"
+}

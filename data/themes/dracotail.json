@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ドラゴンテイル",
+  "canonical_name_en": "Dracotail",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Dracotail",
+    "url": "https://yugipedia.com/wiki/Dracotail"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "dracotail"
+}

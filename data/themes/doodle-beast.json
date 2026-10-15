@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "らくがきじゅう",
+  "canonical_name_en": "Doodle Beast",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Doodle Beast",
+    "url": "https://yugipedia.com/wiki/Doodle_Beast"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "doodle-beast"
+}

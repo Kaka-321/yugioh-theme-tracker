@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ディアベルスター",
+  "canonical_name_en": "Diabellstar",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Diabellstar",
+    "url": "https://yugipedia.com/wiki/Diabellstar"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "diabellstar"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ダンテ",
+  "canonical_name_en": "Dante",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Dante",
+    "url": "https://yugipedia.com/wiki/Dante"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "dante"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "クリアー",
+  "canonical_name_en": "Clear",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Clear",
+    "url": "https://yugipedia.com/wiki/Clear"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "clear"
+}

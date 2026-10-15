@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "バリアンズ",
+  "canonical_name_en": "Barian's",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Barian's",
+    "url": "https://yugipedia.com/wiki/Barian%27s"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "barian-s"
+}

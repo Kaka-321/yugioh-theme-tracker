@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "先史遺産",
+  "canonical_name_en": "Chronomaly",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Chronomaly",
+    "url": "https://yugipedia.com/wiki/Chronomaly"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "chronomaly"
+}

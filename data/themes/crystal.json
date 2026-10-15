@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "宝玉",
+  "canonical_name_en": "Crystal",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Crystal",
+    "url": "https://yugipedia.com/wiki/Crystal"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "crystal"
+}

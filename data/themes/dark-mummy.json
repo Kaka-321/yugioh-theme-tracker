@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ダークマミー",
+  "canonical_name_en": "Dark Mummy",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Dark Mummy",
+    "url": "https://yugipedia.com/wiki/Dark_Mummy"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "dark-mummy"
+}

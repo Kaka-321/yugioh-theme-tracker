@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＣＸ",
+  "canonical_name_en": "CXyz",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "CXyz",
+    "url": "https://yugipedia.com/wiki/CXyz"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "cxyz"
+}

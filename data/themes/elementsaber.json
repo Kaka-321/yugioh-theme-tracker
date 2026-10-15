@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エレメントセイバー",
+  "canonical_name_en": "Elementsaber",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Elementsaber",
+    "url": "https://yugipedia.com/wiki/Elementsaber"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "elementsaber"
+}

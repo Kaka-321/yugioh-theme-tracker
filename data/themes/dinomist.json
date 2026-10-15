@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ダイナミスト",
+  "canonical_name_en": "Dinomist",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Dinomist",
+    "url": "https://yugipedia.com/wiki/Dinomist"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "dinomist"
+}

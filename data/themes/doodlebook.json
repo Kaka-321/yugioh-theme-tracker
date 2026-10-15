@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "らくがきちょう",
+  "canonical_name_en": "Doodlebook",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Doodlebook",
+    "url": "https://yugipedia.com/wiki/Doodlebook"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "doodlebook"
+}

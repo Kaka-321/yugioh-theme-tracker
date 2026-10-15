@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エルフェンノーツ",
+  "canonical_name_en": "Elfnote",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Elfnote",
+    "url": "https://yugipedia.com/wiki/Elfnote"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "elfnote"
+}

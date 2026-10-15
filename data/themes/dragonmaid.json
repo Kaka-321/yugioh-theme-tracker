@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ドラゴンメイド",
+  "canonical_name_en": "Dragonmaid",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Dragonmaid",
+    "url": "https://yugipedia.com/wiki/Dragonmaid"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "dragonmaid"
+}

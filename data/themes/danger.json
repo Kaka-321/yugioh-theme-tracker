@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "未界域",
+  "canonical_name_en": "Danger!",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Danger!",
+    "url": "https://yugipedia.com/wiki/Danger%21"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "danger"
+}

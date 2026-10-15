@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ブリッツクリーク",
+  "canonical_name_en": "Blitzclique",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Blitzclique",
+    "url": "https://yugipedia.com/wiki/Blitzclique"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "blitzclique"
+}

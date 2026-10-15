@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｂ・Ｆ",
+  "canonical_name_en": "Battlewasp",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Battlewasp",
+    "url": "https://yugipedia.com/wiki/Battlewasp"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "battlewasp"
+}

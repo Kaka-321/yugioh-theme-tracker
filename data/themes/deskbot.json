@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ブンボーグ",
+  "canonical_name_en": "Deskbot",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Deskbot",
+    "url": "https://yugipedia.com/wiki/Deskbot"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "deskbot"
+}

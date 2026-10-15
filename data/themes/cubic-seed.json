@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "方界胤",
+  "canonical_name_en": "Cubic Seed",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Cubic Seed",
+    "url": "https://yugipedia.com/wiki/Cubic_Seed"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "cubic-seed"
+}

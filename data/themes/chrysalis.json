@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｃ",
+  "canonical_name_en": "Chrysalis",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Chrysalis",
+    "url": "https://yugipedia.com/wiki/Chrysalis"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "chrysalis"
+}

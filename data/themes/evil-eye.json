@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "呪眼",
+  "canonical_name_en": "Evil Eye",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Evil Eye",
+    "url": "https://yugipedia.com/wiki/Evil_Eye"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "evil-eye"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "地縛神",
+  "canonical_name_en": "Earthbound Immortal",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Earthbound Immortal",
+    "url": "https://yugipedia.com/wiki/Earthbound_Immortal"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "earthbound-immortal"
+}

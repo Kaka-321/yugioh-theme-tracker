@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "パラディオン",
+  "canonical_name_en": "Crusadia",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Crusadia",
+    "url": "https://yugipedia.com/wiki/Crusadia"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "crusadia"
+}

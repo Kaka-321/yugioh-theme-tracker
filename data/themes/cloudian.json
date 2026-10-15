@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "雲魔物",
+  "canonical_name_en": "Cloudian",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Cloudian",
+    "url": "https://yugipedia.com/wiki/Cloudian"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "cloudian"
+}

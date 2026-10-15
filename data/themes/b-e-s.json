@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "巨大戦艦",
+  "canonical_name_en": "B.E.S.",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "B.E.S.",
+    "url": "https://yugipedia.com/wiki/B.E.S."
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "b-e-s"
+}

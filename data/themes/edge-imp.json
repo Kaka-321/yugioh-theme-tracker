@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エッジインプ",
+  "canonical_name_en": "Edge Imp",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Edge Imp",
+    "url": "https://yugipedia.com/wiki/Edge_Imp"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "edge-imp"
+}
