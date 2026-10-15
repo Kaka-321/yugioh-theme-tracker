@@ -32,9 +32,12 @@ jobs:
         run: |
           mkdir -p build/data/themes
           cp site/index.html build/index.html
-          cp site/themes.json build/themes.json
           cp site/status.json build/status.json
           cp data/themes/*.json build/data/themes/
+
+          if [ -f site/themes.json ]; then
+            cp site/themes.json build/themes.json
+          fi
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
