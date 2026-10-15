@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "サイレント・ソードマン",
+  "canonical_name_en": "Silent Swordsman",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Silent Swordsman (archetype)",
+    "url": "https://yugipedia.com/wiki/Silent_Swordsman_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "silent-swordsman"
+}

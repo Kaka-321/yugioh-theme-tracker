@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "サラマンドラ",
+  "canonical_name_en": "Salamandra",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Salamandra (archetype)",
+    "url": "https://yugipedia.com/wiki/Salamandra_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "salamandra"
+}

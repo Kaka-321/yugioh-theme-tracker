@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ワイゼルＧ",
+  "canonical_name_en": "Wisel Guard",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Wisel Guard (archetype)",
+    "url": "https://yugipedia.com/wiki/Wisel_Guard_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "wisel-guard"
+}

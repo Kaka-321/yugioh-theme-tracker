@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ナンバーズ",
+  "canonical_name_en": "Number",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Number (Spell/Trap archetype)",
+    "url": "https://yugipedia.com/wiki/Number_%28Spell/Trap_archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "number-2"
+}

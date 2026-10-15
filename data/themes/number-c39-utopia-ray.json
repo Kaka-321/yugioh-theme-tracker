@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＣＮｏ．３９ 希望皇ホープレイ",
+  "canonical_name_en": "Number C39: Utopia Ray",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Number C39: Utopia Ray (archetype)",
+    "url": "https://yugipedia.com/wiki/Number_C39%3A_Utopia_Ray_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "number-c39-utopia-ray"
+}

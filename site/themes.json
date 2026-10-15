@@ -3655,6 +3655,221 @@
       "canonical_name": "ネオスペース",
       "canonical_name_en": "Neo Space",
       "theme_id": "neo-space"
+    },
+    {
+      "canonical_name": "ナンバーズ",
+      "canonical_name_en": "Number",
+      "theme_id": "number-2"
+    },
+    {
+      "canonical_name": "Ｎｏ．３９ 希望皇ホープ",
+      "canonical_name_en": "Number 39: Utopia",
+      "theme_id": "number-39-utopia"
+    },
+    {
+      "canonical_name": "ＣＮｏ．３９ 希望皇ホープレイ",
+      "canonical_name_en": "Number C39: Utopia Ray",
+      "theme_id": "number-c39-utopia-ray"
+    },
+    {
+      "canonical_name": "ペンデュラム",
+      "canonical_name_en": "Pendulum",
+      "theme_id": "pendulum"
+    },
+    {
+      "canonical_name": "融合",
+      "canonical_name_en": "Polymerization",
+      "theme_id": "polymerization"
+    },
+    {
+      "canonical_name": "架け橋",
+      "canonical_name_en": "Rainbow Bridge",
+      "theme_id": "rainbow-bridge"
+    },
+    {
+      "canonical_name": "リベリオン",
+      "canonical_name_en": "Rebellion",
+      "theme_id": "rebellion"
+    },
+    {
+      "canonical_name": "レッド",
+      "canonical_name_en": "Red",
+      "theme_id": "red"
+    },
+    {
+      "canonical_name": "レッド・デーモン",
+      "canonical_name_en": "Red Dragon Archfiend",
+      "theme_id": "red-dragon-archfiend"
+    },
+    {
+      "canonical_name": "サクリファイス",
+      "canonical_name_en": "Relinquished",
+      "theme_id": "relinquished"
+    },
+    {
+      "canonical_name": "ローラン",
+      "canonical_name_en": "Roland",
+      "theme_id": "roland"
+    },
+    {
+      "canonical_name": "三幻魔",
+      "canonical_name_en": "Sacred Beast",
+      "theme_id": "sacred-beast"
+    },
+    {
+      "canonical_name": "サラマンドラ",
+      "canonical_name_en": "Salamandra",
+      "theme_id": "salamandra"
+    },
+    {
+      "canonical_name": "シャーク",
+      "canonical_name_en": "Shark",
+      "theme_id": "shark"
+    },
+    {
+      "canonical_name": "妖刀－不知火",
+      "canonical_name_en": "Shiranui Spectralsword",
+      "theme_id": "shiranui-spectralsword"
+    },
+    {
+      "canonical_name": "サイレント・マジシャン",
+      "canonical_name_en": "Silent Magician",
+      "theme_id": "silent-magician"
+    },
+    {
+      "canonical_name": "サイレント・ソードマン",
+      "canonical_name_en": "Silent Swordsman",
+      "theme_id": "silent-swordsman"
+    },
+    {
+      "canonical_name": "スキエルＡ",
+      "canonical_name_en": "Skiel Attack",
+      "theme_id": "skiel-attack"
+    },
+    {
+      "canonical_name": "ローガーディアン",
+      "canonical_name_en": "Skull Guardian",
+      "theme_id": "skull-guardian"
+    },
+    {
+      "canonical_name": "摩天楼",
+      "canonical_name_en": "Skyscraper",
+      "theme_id": "skyscraper"
+    },
+    {
+      "canonical_name": "Ｓｐ",
+      "canonical_name_en": "Speed Spell",
+      "theme_id": "speed-spell"
+    },
+    {
+      "canonical_name": "精霊",
+      "canonical_name_en": "Spirit",
+      "theme_id": "spirit"
+    },
+    {
+      "canonical_name": "スターダスト",
+      "canonical_name_en": "Stardust",
+      "theme_id": "stardust"
+    },
+    {
+      "canonical_name": "捨て猫",
+      "canonical_name_en": "Stray Cat",
+      "theme_id": "stray-cat"
+    },
+    {
+      "canonical_name": "シンクロ",
+      "canonical_name_en": "Synchro",
+      "theme_id": "synchro"
+    },
+    {
+      "canonical_name": "テレポート",
+      "canonical_name_en": "Teleport",
+      "theme_id": "teleport"
+    },
+    {
+      "canonical_name": "ラーの翼神竜",
+      "canonical_name_en": "The Winged Dragon of Ra",
+      "theme_id": "the-winged-dragon-of-ra"
+    },
+    {
+      "canonical_name": "テオリアライズ",
+      "canonical_name_en": "Theorealize",
+      "theme_id": "theorealize"
+    },
+    {
+      "canonical_name": "サンダー・ドラゴン",
+      "canonical_name_en": "Thunder Dragon",
+      "theme_id": "thunder-dragon"
+    },
+    {
+      "canonical_name": "落とし穴",
+      "canonical_name_en": "Trap Hole",
+      "theme_id": "trap-hole"
+    },
+    {
+      "canonical_name": "希望皇ホープ",
+      "canonical_name_en": "Utopia",
+      "theme_id": "utopia"
+    },
+    {
+      "canonical_name": "Ｖ",
+      "canonical_name_en": "V",
+      "theme_id": "v"
+    },
+    {
+      "canonical_name": "ウォリアー",
+      "canonical_name_en": "Warrior",
+      "theme_id": "warrior"
+    },
+    {
+      "canonical_name": "ウェルカム・ラビュリンス",
+      "canonical_name_en": "Welcome Labrynth",
+      "theme_id": "welcome-labrynth"
+    },
+    {
+      "canonical_name": "ハネクリボー",
+      "canonical_name_en": "Winged Kuriboh",
+      "theme_id": "winged-kuriboh"
+    },
+    {
+      "canonical_name": "ワイゼルＡ",
+      "canonical_name_en": "Wisel Attack",
+      "theme_id": "wisel-attack"
+    },
+    {
+      "canonical_name": "ワイゼルＧ",
+      "canonical_name_en": "Wisel Guard",
+      "theme_id": "wisel-guard"
+    },
+    {
+      "canonical_name": "ワイゼルＴ",
+      "canonical_name_en": "Wisel Top",
+      "theme_id": "wisel-top"
+    },
+    {
+      "canonical_name": "Ｘ",
+      "canonical_name_en": "X",
+      "theme_id": "x"
+    },
+    {
+      "canonical_name": "エクシーズ",
+      "canonical_name_en": "Xyz",
+      "theme_id": "xyz"
+    },
+    {
+      "canonical_name": "ユベル",
+      "canonical_name_en": "Yubel",
+      "theme_id": "yubel"
+    },
+    {
+      "canonical_name": "Ｚ－ＯＮＥ",
+      "canonical_name_en": "Z-ONE",
+      "theme_id": "z-one"
+    },
+    {
+      "canonical_name": "∞",
+      "canonical_name_en": "∞",
+      "theme_id": "theme"
     }
   ]
 }

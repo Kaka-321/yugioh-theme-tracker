@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｖ",
+  "canonical_name_en": "V",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "V (archetype)",
+    "url": "https://yugipedia.com/wiki/V_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "v"
+}

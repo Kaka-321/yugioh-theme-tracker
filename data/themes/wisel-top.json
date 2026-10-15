@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ワイゼルＴ",
+  "canonical_name_en": "Wisel Top",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Wisel Top (archetype)",
+    "url": "https://yugipedia.com/wiki/Wisel_Top_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "wisel-top"
+}

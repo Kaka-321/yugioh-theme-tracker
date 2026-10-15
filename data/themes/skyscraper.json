@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "摩天楼",
+  "canonical_name_en": "Skyscraper",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Skyscraper (archetype)",
+    "url": "https://yugipedia.com/wiki/Skyscraper_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "skyscraper"
+}

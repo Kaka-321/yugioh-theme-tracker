@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Ｎｏ．３９ 希望皇ホープ",
+  "canonical_name_en": "Number 39: Utopia",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Number 39: Utopia (archetype)",
+    "url": "https://yugipedia.com/wiki/Number_39%3A_Utopia_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "number-39-utopia"
+}
