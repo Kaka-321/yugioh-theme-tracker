@@ -10,6 +10,15 @@ ROOT = Path(__file__).resolve().parents[1]
 THEMES_DIR = ROOT / "data" / "themes"
 STATUS = ROOT / "data" / "internal" / "status.json"
 
+JAPANESE_NAMES = ROOT / "data" / "meta" / "japanese_names.json"
+
+
+def load_japanese_names():
+    try:
+        data = json.loads(JAPANESE_NAMES.read_text(encoding="utf-8"))
+        return data.get("names", {})
+    except FileNotFoundError:
+        return {}
 
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -122,12 +131,18 @@ def main():
         "themes": results,
     })
 
+    japanese_names = load_japanese_names()
+
     write_json(ROOT / "site" / "themes.json", {
         "schema_version": "1.0.0",
         "themes": [
             {
                 "theme_id": theme.theme_id,
-                "canonical_name": theme.canonical_name,
+                "canonical_name": japanese_names.get(
+                    theme.source_title,
+                    theme.canonical_name,
+                ),
+                "canonical_name_en": theme.canonical_name,
             }
             for theme in THEMES
         ],

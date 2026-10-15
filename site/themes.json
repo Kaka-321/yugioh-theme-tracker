@@ -2,111 +2,138 @@
   "schema_version": "1.0.0",
   "themes": [
     {
-      "canonical_name": "青眼",
+      "canonical_name": "ブルーアイズ",
+      "canonical_name_en": "青眼",
       "theme_id": "blue-eyes"
     },
     {
       "canonical_name": "ブラック・マジシャン",
+      "canonical_name_en": "ブラック・マジシャン",
       "theme_id": "dark-magician"
     },
     {
-      "canonical_name": "@Ignister",
+      "canonical_name": "＠イグニスター",
+      "canonical_name_en": "@Ignister",
       "theme_id": "ignister"
     },
     {
       "canonical_name": "A.I.",
+      "canonical_name_en": "A.I.",
       "theme_id": "a-i"
     },
     {
-      "canonical_name": "Abyss Actor",
+      "canonical_name": "魔界劇団",
+      "canonical_name_en": "Abyss Actor",
       "theme_id": "abyss-actor"
     },
     {
       "canonical_name": "Abyss Costume",
+      "canonical_name_en": "Abyss Costume",
       "theme_id": "abyss-costume"
     },
     {
       "canonical_name": "Abyss Script",
+      "canonical_name_en": "Abyss Script",
       "theme_id": "abyss-script"
     },
     {
       "canonical_name": "Abyss-",
+      "canonical_name_en": "Abyss-",
       "theme_id": "abyss"
     },
     {
-      "canonical_name": "Adamancipator",
+      "canonical_name": "アダマシア",
+      "canonical_name_en": "Adamancipator",
       "theme_id": "adamancipator"
     },
     {
-      "canonical_name": "Advanced Crystal Beast",
+      "canonical_name": "A宝玉獣",
+      "canonical_name_en": "Advanced Crystal Beast",
       "theme_id": "advanced-crystal-beast"
     },
     {
       "canonical_name": "Aesir",
+      "canonical_name_en": "Aesir",
       "theme_id": "aesir"
     },
     {
       "canonical_name": "Aether",
+      "canonical_name_en": "Aether",
       "theme_id": "aether"
     },
     {
       "canonical_name": "Alchemy Beast",
+      "canonical_name_en": "Alchemy Beast",
       "theme_id": "alchemy-beast"
     },
     {
       "canonical_name": "Aleister",
+      "canonical_name_en": "Aleister",
       "theme_id": "aleister"
     },
     {
-      "canonical_name": "Alien",
+      "canonical_name": "エーリアン",
+      "canonical_name_en": "Alien",
       "theme_id": "alien"
     },
     {
       "canonical_name": "Alligator",
+      "canonical_name_en": "Alligator",
       "theme_id": "alligator"
     },
     {
-      "canonical_name": "Allure Queen",
+      "canonical_name": "魅惑の女王",
+      "canonical_name_en": "Allure Queen",
       "theme_id": "allure-queen"
     },
     {
-      "canonical_name": "Ally of Justice",
+      "canonical_name": "A・O・J",
+      "canonical_name_en": "Ally of Justice",
       "theme_id": "ally-of-justice"
     },
     {
-      "canonical_name": "Altergeist",
+      "canonical_name": "オルターガイスト",
+      "canonical_name_en": "Altergeist",
       "theme_id": "altergeist"
     },
     {
-      "canonical_name": "Amazement",
+      "canonical_name": "アメイズメント",
+      "canonical_name_en": "Amazement",
       "theme_id": "amazement"
     },
     {
-      "canonical_name": "Amazoness",
+      "canonical_name": "アマゾネス",
+      "canonical_name_en": "Amazoness",
       "theme_id": "amazoness"
     },
     {
-      "canonical_name": "Amorphage",
+      "canonical_name": "アモルファージ",
+      "canonical_name_en": "Amorphage",
       "theme_id": "amorphage"
     },
     {
-      "canonical_name": "Ancient Gear",
+      "canonical_name": "アンティーク・ギア",
+      "canonical_name_en": "Ancient Gear",
       "theme_id": "ancient-gear"
     },
     {
-      "canonical_name": "Ancient Warriors",
+      "canonical_name": "戦華",
+      "canonical_name_en": "Ancient Warriors",
       "theme_id": "ancient-warriors"
     },
     {
       "canonical_name": "Angelechy",
+      "canonical_name_en": "Angelechy",
       "theme_id": "angelechy"
     },
     {
       "canonical_name": "Anti",
+      "canonical_name_en": "Anti",
       "theme_id": "anti"
     },
     {
-      "canonical_name": "Apophis",
+      "canonical_name": "アポピス",
+      "canonical_name_en": "Apophis",
       "theme_id": "apophis"
     }
   ]
