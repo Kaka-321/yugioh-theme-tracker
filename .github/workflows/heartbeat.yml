@@ -42,3 +42,19 @@ jobs:
             git commit -m "chore: weekly heartbeat"
             git push
           fi
+
+  ping-success:
+    runs-on: ubuntu-latest
+    needs: [heartbeat]
+    if: ${{ success() }}
+    steps:
+      - name: Ping Healthchecks.io success
+        run: curl -fsS --retry 5 --max-time 10 "${{ secrets.HC_PING_HEARTBEAT_URL }}"
+
+  ping-failure:
+    runs-on: ubuntu-latest
+    needs: [heartbeat]
+    if: ${{ failure() }}
+    steps:
+      - name: Ping Healthchecks.io failure
+        run: curl -fsS --retry 5 --max-time 10 "${{ secrets.HC_PING_HEARTBEAT_URL }}/fail"
