@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "セブンス",
+  "canonical_name_en": "Seventh",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Seventh",
+    "url": "https://yugipedia.com/wiki/Seventh"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "seventh"
+}

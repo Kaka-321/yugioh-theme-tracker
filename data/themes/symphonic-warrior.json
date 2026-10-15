@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "音響戦士",
+  "canonical_name_en": "Symphonic Warrior",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Symphonic Warrior",
+    "url": "https://yugipedia.com/wiki/Symphonic_Warrior"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "symphonic-warrior"
+}

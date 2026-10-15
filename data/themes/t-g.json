@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＴＧ",
+  "canonical_name_en": "T.G.",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "T.G.",
+    "url": "https://yugipedia.com/wiki/T.G."
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "t-g"
+}

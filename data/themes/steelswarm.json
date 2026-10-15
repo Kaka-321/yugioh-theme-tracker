@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "インヴェルズ",
+  "canonical_name_en": "Steelswarm",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Steelswarm",
+    "url": "https://yugipedia.com/wiki/Steelswarm"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "steelswarm"
+}

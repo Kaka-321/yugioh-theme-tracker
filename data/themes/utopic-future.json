@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "未来皇ホープ",
+  "canonical_name_en": "Utopic Future",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Utopic Future",
+    "url": "https://yugipedia.com/wiki/Utopic_Future"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "utopic-future"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "水霊術",
+  "canonical_name_en": "Spiritual Water Art",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Spiritual Water Art",
+    "url": "https://yugipedia.com/wiki/Spiritual_Water_Art"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spiritual-water-art"
+}

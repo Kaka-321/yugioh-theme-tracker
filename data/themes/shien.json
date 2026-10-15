@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "紫炎",
+  "canonical_name_en": "Shien",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Shien",
+    "url": "https://yugipedia.com/wiki/Shien"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "shien"
+}

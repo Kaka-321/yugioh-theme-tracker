@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "シャーク・ドレイク",
+  "canonical_name_en": "Shark Drake",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Shark Drake",
+    "url": "https://yugipedia.com/wiki/Shark_Drake"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "shark-drake"
+}

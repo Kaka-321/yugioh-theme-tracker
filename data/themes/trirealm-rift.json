@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "異解△",
+  "canonical_name_en": "Trirealm Rift",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Trirealm Rift",
+    "url": "https://yugipedia.com/wiki/Trirealm_Rift"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "trirealm-rift"
+}

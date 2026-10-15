@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ホーリーナイツ",
+  "canonical_name_en": "Starry Knight",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Starry Knight",
+    "url": "https://yugipedia.com/wiki/Starry_Knight"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "starry-knight"
+}

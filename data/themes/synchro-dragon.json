@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "シンクロ・ドラゴン",
+  "canonical_name_en": "Synchro Dragon",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Synchro Dragon",
+    "url": "https://yugipedia.com/wiki/Synchro_Dragon"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "synchro-dragon"
+}

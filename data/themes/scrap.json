@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "スクラップ",
+  "canonical_name_en": "Scrap",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Scrap",
+    "url": "https://yugipedia.com/wiki/Scrap"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "scrap"
+}

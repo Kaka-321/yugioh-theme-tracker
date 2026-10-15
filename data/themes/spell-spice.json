@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "マジックスパイス",
+  "canonical_name_en": "Spell Spice",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Spell Spice",
+    "url": "https://yugipedia.com/wiki/Spell_Spice"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spell-spice"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "シャーマン",
+  "canonical_name_en": "Shaman",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Shaman",
+    "url": "https://yugipedia.com/wiki/Shaman"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "shaman"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "スネークアイ",
+  "canonical_name_en": "Snake-Eye",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Snake-Eye",
+    "url": "https://yugipedia.com/wiki/Snake-Eye"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "snake-eye"
+}

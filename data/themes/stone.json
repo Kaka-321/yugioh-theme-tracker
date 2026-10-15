@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "岩石",
+  "canonical_name_en": "Stone",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Stone",
+    "url": "https://yugipedia.com/wiki/Stone"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "stone"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "トライブリゲード",
+  "canonical_name_en": "Tri-Brigade",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Tri-Brigade",
+    "url": "https://yugipedia.com/wiki/Tri-Brigade"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "tri-brigade"
+}

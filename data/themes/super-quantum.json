@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "超量士",
+  "canonical_name_en": "Super Quantum",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Super Quantum",
+    "url": "https://yugipedia.com/wiki/Super_Quantum"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "super-quantum"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "代行者",
+  "canonical_name_en": "The Agent",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "The Agent",
+    "url": "https://yugipedia.com/wiki/The_Agent"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "the-agent"
+}

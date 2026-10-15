@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "火霊術",
+  "canonical_name_en": "Spiritual Fire Art",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Spiritual Fire Art",
+    "url": "https://yugipedia.com/wiki/Spiritual_Fire_Art"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spiritual-fire-art"
+}

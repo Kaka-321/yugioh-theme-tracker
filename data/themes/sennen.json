@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "千年",
+  "canonical_name_en": "Sennen",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Sennen",
+    "url": "https://yugipedia.com/wiki/Sennen"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "sennen"
+}

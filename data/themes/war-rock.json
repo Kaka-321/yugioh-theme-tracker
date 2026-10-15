@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ウォークライ",
+  "canonical_name_en": "War Rock",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "War Rock",
+    "url": "https://yugipedia.com/wiki/War_Rock"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "war-rock"
+}

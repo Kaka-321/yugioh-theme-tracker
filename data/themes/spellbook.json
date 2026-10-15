@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "魔導書",
+  "canonical_name_en": "Spellbook",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Spellbook",
+    "url": "https://yugipedia.com/wiki/Spellbook"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spellbook"
+}

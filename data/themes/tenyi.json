@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "天威",
+  "canonical_name_en": "Tenyi",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Tenyi",
+    "url": "https://yugipedia.com/wiki/Tenyi"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "tenyi"
+}

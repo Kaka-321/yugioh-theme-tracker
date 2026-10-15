@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "破械神",
+  "canonical_name_en": "Unchained Soul",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Unchained Soul",
+    "url": "https://yugipedia.com/wiki/Unchained_Soul"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "unchained-soul"
+}

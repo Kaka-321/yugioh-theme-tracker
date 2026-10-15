@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＳＰＹＲＡＬ ＭＩＳＳＩＯＮ",
+  "canonical_name_en": "SPYRAL MISSION",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "SPYRAL MISSION",
+    "url": "https://yugipedia.com/wiki/SPYRAL_MISSION"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spyral-mission"
+}

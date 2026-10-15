@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "シャイニング",
+  "canonical_name_en": "Shining",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Shining",
+    "url": "https://yugipedia.com/wiki/Shining"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "shining"
+}

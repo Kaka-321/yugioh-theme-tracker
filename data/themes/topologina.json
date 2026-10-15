@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "トポロジーナ",
+  "canonical_name_en": "Topologina",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Topologina",
+    "url": "https://yugipedia.com/wiki/Topologina"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "topologina"
+}

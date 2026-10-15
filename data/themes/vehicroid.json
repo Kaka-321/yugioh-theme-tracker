@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ビークロイド",
+  "canonical_name_en": "Vehicroid",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Vehicroid",
+    "url": "https://yugipedia.com/wiki/Vehicroid"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "vehicroid"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "スパイス",
+  "canonical_name_en": "Spice",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Spice",
+    "url": "https://yugipedia.com/wiki/Spice"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spice"
+}

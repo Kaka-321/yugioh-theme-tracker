@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "電脳堺門",
+  "canonical_name_en": "Virtual World Gate",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Virtual World Gate",
+    "url": "https://yugipedia.com/wiki/Virtual_World_Gate"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "virtual-world-gate"
+}

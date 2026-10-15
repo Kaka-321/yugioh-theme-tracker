@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "超重武者装留",
+  "canonical_name_en": "Superheavy Samurai Soul",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Superheavy Samurai Soul",
+    "url": "https://yugipedia.com/wiki/Superheavy_Samurai_Soul"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "superheavy-samurai-soul"
+}

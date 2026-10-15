@@ -2510,6 +2510,756 @@
       "canonical_name": "ＲＣＭ",
       "canonical_name_en": "Royal Cookpal",
       "theme_id": "royal-cookpal"
+    },
+    {
+      "canonical_name": "神碑",
+      "canonical_name_en": "Runick",
+      "theme_id": "runick"
+    },
+    {
+      "canonical_name": "竜華",
+      "canonical_name_en": "Ryu-Ge",
+      "theme_id": "ryu-ge"
+    },
+    {
+      "canonical_name": "ライゼオル",
+      "canonical_name_en": "Ryzeal",
+      "theme_id": "ryzeal"
+    },
+    {
+      "canonical_name": "Ｓ－Ｆｏｒｃｅ",
+      "canonical_name_en": "S-Force",
+      "theme_id": "s-force"
+    },
+    {
+      "canonical_name": "ＳＰＹＲＡＬ",
+      "canonical_name_en": "SPYRAL",
+      "theme_id": "spyral"
+    },
+    {
+      "canonical_name": "ＳＰＹＲＡＬ ＧＥＡＲ",
+      "canonical_name_en": "SPYRAL GEAR",
+      "theme_id": "spyral-gear"
+    },
+    {
+      "canonical_name": "ＳＰＹＲＡＬ ＭＩＳＳＩＯＮ",
+      "canonical_name_en": "SPYRAL MISSION",
+      "theme_id": "spyral-mission"
+    },
+    {
+      "canonical_name": "セイバー",
+      "canonical_name_en": "Saber",
+      "theme_id": "saber"
+    },
+    {
+      "canonical_name": "サラマングレイト",
+      "canonical_name_en": "Salamangreat",
+      "theme_id": "salamangreat"
+    },
+    {
+      "canonical_name": "燦幻",
+      "canonical_name_en": "Sangen",
+      "theme_id": "sangen"
+    },
+    {
+      "canonical_name": "スケアクロー",
+      "canonical_name_en": "Scareclaw",
+      "theme_id": "scareclaw"
+    },
+    {
+      "canonical_name": "祝台",
+      "canonical_name_en": "Schoolwork",
+      "theme_id": "schoolwork"
+    },
+    {
+      "canonical_name": "スクラップ",
+      "canonical_name_en": "Scrap",
+      "theme_id": "scrap"
+    },
+    {
+      "canonical_name": "シー・ステルス",
+      "canonical_name_en": "Sea Stealth",
+      "theme_id": "sea-stealth"
+    },
+    {
+      "canonical_name": "封じ",
+      "canonical_name_en": "Seal",
+      "theme_id": "seal"
+    },
+    {
+      "canonical_name": "影六武衆",
+      "canonical_name_en": "Secret Six Samurai",
+      "theme_id": "secret-six-samurai"
+    },
+    {
+      "canonical_name": "千年",
+      "canonical_name_en": "Sennen",
+      "theme_id": "sennen"
+    },
+    {
+      "canonical_name": "セルケト",
+      "canonical_name_en": "Serket",
+      "theme_id": "serket"
+    },
+    {
+      "canonical_name": "セブンス",
+      "canonical_name_en": "Seventh",
+      "theme_id": "seventh"
+    },
+    {
+      "canonical_name": "シャドール",
+      "canonical_name_en": "Shaddoll",
+      "theme_id": "shaddoll"
+    },
+    {
+      "canonical_name": "シャーマン",
+      "canonical_name_en": "Shaman",
+      "theme_id": "shaman"
+    },
+    {
+      "canonical_name": "シャーク・ドレイク",
+      "canonical_name_en": "Shark Drake",
+      "theme_id": "shark-drake"
+    },
+    {
+      "canonical_name": "紫炎",
+      "canonical_name_en": "Shien",
+      "theme_id": "shien"
+    },
+    {
+      "canonical_name": "シャイニング",
+      "canonical_name_en": "Shining",
+      "theme_id": "shining"
+    },
+    {
+      "canonical_name": "不知火",
+      "canonical_name_en": "Shiranui",
+      "theme_id": "shiranui"
+    },
+    {
+      "canonical_name": "必殺技",
+      "canonical_name_en": "Signature move",
+      "theme_id": "signature-move"
+    },
+    {
+      "canonical_name": "シグナーの竜",
+      "canonical_name_en": "Signer Dragon",
+      "theme_id": "signer-dragon"
+    },
+    {
+      "canonical_name": "シムルグ",
+      "canonical_name_en": "Simorgh",
+      "theme_id": "simorgh"
+    },
+    {
+      "canonical_name": "罪宝",
+      "canonical_name_en": "Sinful Spoils",
+      "theme_id": "sinful-spoils"
+    },
+    {
+      "canonical_name": "邪心教義",
+      "canonical_name_en": "Sinister Doctrine",
+      "theme_id": "sinister-doctrine"
+    },
+    {
+      "canonical_name": "六武衆",
+      "canonical_name_en": "Six Samurai",
+      "theme_id": "six-samurai"
+    },
+    {
+      "canonical_name": "六武式",
+      "canonical_name_en": "Six Strike",
+      "theme_id": "six-strike"
+    },
+    {
+      "canonical_name": "スキエル",
+      "canonical_name_en": "Skiel",
+      "theme_id": "skiel"
+    },
+    {
+      "canonical_name": "天",
+      "canonical_name_en": "Sky",
+      "theme_id": "sky"
+    },
+    {
+      "canonical_name": "閃刀",
+      "canonical_name_en": "Sky Striker",
+      "theme_id": "sky-striker"
+    },
+    {
+      "canonical_name": "閃刀姫",
+      "canonical_name_en": "Sky Striker Ace",
+      "theme_id": "sky-striker-ace"
+    },
+    {
+      "canonical_name": "銃士",
+      "canonical_name_en": "Skyblaster",
+      "theme_id": "skyblaster"
+    },
+    {
+      "canonical_name": "スライム",
+      "canonical_name_en": "Slime",
+      "theme_id": "slime"
+    },
+    {
+      "canonical_name": "スマイル",
+      "canonical_name_en": "Smile",
+      "theme_id": "smile"
+    },
+    {
+      "canonical_name": "蛇",
+      "canonical_name_en": "Snake",
+      "theme_id": "snake"
+    },
+    {
+      "canonical_name": "スネークアイ",
+      "canonical_name_en": "Snake-Eye",
+      "theme_id": "snake-eye"
+    },
+    {
+      "canonical_name": "ドレミコード",
+      "canonical_name_en": "Solfachord",
+      "theme_id": "solfachord"
+    },
+    {
+      "canonical_name": "スピードロイド",
+      "canonical_name_en": "Speedroid",
+      "theme_id": "speedroid"
+    },
+    {
+      "canonical_name": "マジックスパイス",
+      "canonical_name_en": "Spell Spice",
+      "theme_id": "spell-spice"
+    },
+    {
+      "canonical_name": "魔導書",
+      "canonical_name_en": "Spellbook",
+      "theme_id": "spellbook"
+    },
+    {
+      "canonical_name": "スフィア",
+      "canonical_name_en": "Sphere",
+      "theme_id": "sphere"
+    },
+    {
+      "canonical_name": "スフィンクス",
+      "canonical_name_en": "Sphinx",
+      "theme_id": "sphinx"
+    },
+    {
+      "canonical_name": "スパイス",
+      "canonical_name_en": "Spice",
+      "theme_id": "spice"
+    },
+    {
+      "canonical_name": "精霊結晶",
+      "canonical_name_en": "Spirit Gem",
+      "theme_id": "spirit-gem"
+    },
+    {
+      "canonical_name": "死のメッセージ",
+      "canonical_name_en": "Spirit Message",
+      "theme_id": "spirit-message"
+    },
+    {
+      "canonical_name": "精霊獣",
+      "canonical_name_en": "Spiritual Beast",
+      "theme_id": "spiritual-beast"
+    },
+    {
+      "canonical_name": "地霊術",
+      "canonical_name_en": "Spiritual Earth Art",
+      "theme_id": "spiritual-earth-art"
+    },
+    {
+      "canonical_name": "火霊術",
+      "canonical_name_en": "Spiritual Fire Art",
+      "theme_id": "spiritual-fire-art"
+    },
+    {
+      "canonical_name": "水霊術",
+      "canonical_name_en": "Spiritual Water Art",
+      "theme_id": "spiritual-water-art"
+    },
+    {
+      "canonical_name": "風霊術",
+      "canonical_name_en": "Spiritual Wind Art",
+      "theme_id": "spiritual-wind-art"
+    },
+    {
+      "canonical_name": "スプライト",
+      "canonical_name_en": "Spright",
+      "theme_id": "spright"
+    },
+    {
+      "canonical_name": "スプリガンズ",
+      "canonical_name_en": "Springans",
+      "theme_id": "springans"
+    },
+    {
+      "canonical_name": "スプラウト",
+      "canonical_name_en": "Sprout",
+      "theme_id": "sprout"
+    },
+    {
+      "canonical_name": "光天使",
+      "canonical_name_en": "Star Seraph",
+      "theme_id": "star-seraph"
+    },
+    {
+      "canonical_name": "ホーリーナイツ",
+      "canonical_name_en": "Starry Knight",
+      "theme_id": "starry-knight"
+    },
+    {
+      "canonical_name": "スターシップ",
+      "canonical_name_en": "Starship",
+      "theme_id": "starship"
+    },
+    {
+      "canonical_name": "スターヴ・ヴェネミー",
+      "canonical_name_en": "Starving Venemy",
+      "theme_id": "starving-venemy"
+    },
+    {
+      "canonical_name": "スターヴ・ヴェノム",
+      "canonical_name_en": "Starving Venom",
+      "theme_id": "starving-venom"
+    },
+    {
+      "canonical_name": "スタチュー",
+      "canonical_name_en": "Statue",
+      "theme_id": "statue"
+    },
+    {
+      "canonical_name": "ステルス・クラーゲン",
+      "canonical_name_en": "Stealth Kragen",
+      "theme_id": "stealth-kragen"
+    },
+    {
+      "canonical_name": "インヴェルズ",
+      "canonical_name_en": "Steelswarm",
+      "theme_id": "steelswarm"
+    },
+    {
+      "canonical_name": "ステラナイト",
+      "canonical_name_en": "Stellarknight",
+      "theme_id": "stellarknight"
+    },
+    {
+      "canonical_name": "岩石",
+      "canonical_name_en": "Stone",
+      "theme_id": "stone"
+    },
+    {
+      "canonical_name": "ストームライダー",
+      "canonical_name_en": "Stormrider",
+      "theme_id": "stormrider"
+    },
+    {
+      "canonical_name": "ストレイン",
+      "canonical_name_en": "Strain",
+      "theme_id": "strain"
+    },
+    {
+      "canonical_name": "サブテラー",
+      "canonical_name_en": "Subterror",
+      "theme_id": "subterror"
+    },
+    {
+      "canonical_name": "サブテラーマリス",
+      "canonical_name_en": "Subterror Behemoth",
+      "theme_id": "subterror-behemoth"
+    },
+    {
+      "canonical_name": "太陽神",
+      "canonical_name_en": "Sun God",
+      "theme_id": "sun-god"
+    },
+    {
+      "canonical_name": "サンアバロン",
+      "canonical_name_en": "Sunavalon",
+      "theme_id": "sunavalon"
+    },
+    {
+      "canonical_name": "サンシード",
+      "canonical_name_en": "Sunseed",
+      "theme_id": "sunseed"
+    },
+    {
+      "canonical_name": "サンヴァイン",
+      "canonical_name_en": "Sunvine",
+      "theme_id": "sunvine"
+    },
+    {
+      "canonical_name": "ＳＤロボ",
+      "canonical_name_en": "Super Defense Robot",
+      "theme_id": "super-defense-robot"
+    },
+    {
+      "canonical_name": "超量",
+      "canonical_name_en": "Super Quant",
+      "theme_id": "super-quant"
+    },
+    {
+      "canonical_name": "超量機獣",
+      "canonical_name_en": "Super Quantal Mech Beast",
+      "theme_id": "super-quantal-mech-beast"
+    },
+    {
+      "canonical_name": "超量士",
+      "canonical_name_en": "Super Quantum",
+      "theme_id": "super-quantum"
+    },
+    {
+      "canonical_name": "超重",
+      "canonical_name_en": "Superheavy",
+      "theme_id": "superheavy"
+    },
+    {
+      "canonical_name": "超重武者",
+      "canonical_name_en": "Superheavy Samurai",
+      "theme_id": "superheavy-samurai"
+    },
+    {
+      "canonical_name": "超重武者装留",
+      "canonical_name_en": "Superheavy Samurai Soul",
+      "theme_id": "superheavy-samurai-soul"
+    },
+    {
+      "canonical_name": "覇王",
+      "canonical_name_en": "Supreme King",
+      "theme_id": "supreme-king"
+    },
+    {
+      "canonical_name": "覇王眷竜",
+      "canonical_name_en": "Supreme King Dragon",
+      "theme_id": "supreme-king-dragon"
+    },
+    {
+      "canonical_name": "覇王門",
+      "canonical_name_en": "Supreme King Gate",
+      "theme_id": "supreme-king-gate"
+    },
+    {
+      "canonical_name": "相剣",
+      "canonical_name_en": "Swordsoul",
+      "theme_id": "swordsoul"
+    },
+    {
+      "canonical_name": "森羅",
+      "canonical_name_en": "Sylvan",
+      "theme_id": "sylvan"
+    },
+    {
+      "canonical_name": "音響戦士",
+      "canonical_name_en": "Symphonic Warrior",
+      "theme_id": "symphonic-warrior"
+    },
+    {
+      "canonical_name": "シンクロ・ドラゴン",
+      "canonical_name_en": "Synchro Dragon",
+      "theme_id": "synchro-dragon"
+    },
+    {
+      "canonical_name": "シンクロン",
+      "canonical_name_en": "Synchron",
+      "theme_id": "synchron"
+    },
+    {
+      "canonical_name": "ＴＧ",
+      "canonical_name_en": "T.G.",
+      "theme_id": "t-g"
+    },
+    {
+      "canonical_name": "タキオン",
+      "canonical_name_en": "Tachyon",
+      "theme_id": "tachyon"
+    },
+    {
+      "canonical_name": "時空竜",
+      "canonical_name_en": "Tachyon Dragon",
+      "theme_id": "tachyon-dragon"
+    },
+    {
+      "canonical_name": "ティアラメンツ",
+      "canonical_name_en": "Tearlaments",
+      "theme_id": "tearlaments"
+    },
+    {
+      "canonical_name": "テラナイト",
+      "canonical_name_en": "Tellarknight",
+      "theme_id": "tellarknight"
+    },
+    {
+      "canonical_name": "天盃龍",
+      "canonical_name_en": "Tenpai Dragon",
+      "theme_id": "tenpai-dragon"
+    },
+    {
+      "canonical_name": "テンタクラスター",
+      "canonical_name_en": "Tentacluster",
+      "theme_id": "tentacluster"
+    },
+    {
+      "canonical_name": "天威",
+      "canonical_name_en": "Tenyi",
+      "theme_id": "tenyi"
+    },
+    {
+      "canonical_name": "代行者",
+      "canonical_name_en": "The Agent",
+      "theme_id": "the-agent"
+    },
+    {
+      "canonical_name": "幻影騎士団",
+      "canonical_name_en": "The Phantom Knights",
+      "theme_id": "the-phantom-knights"
+    },
+    {
+      "canonical_name": "天気",
+      "canonical_name_en": "The Weather",
+      "theme_id": "the-weather"
+    },
+    {
+      "canonical_name": "セリオンズ",
+      "canonical_name_en": "Therion",
+      "theme_id": "therion"
+    },
+    {
+      "canonical_name": "茨の囚人",
+      "canonical_name_en": "Thorn Prisoner",
+      "theme_id": "thorn-prisoner"
+    },
+    {
+      "canonical_name": "クロノダイバー",
+      "canonical_name_en": "Time Thief",
+      "theme_id": "time-thief"
+    },
+    {
+      "canonical_name": "時械神",
+      "canonical_name_en": "Timelord",
+      "theme_id": "timelord"
+    },
+    {
+      "canonical_name": "ティンダングル",
+      "canonical_name_en": "Tindangle",
+      "theme_id": "tindangle"
+    },
+    {
+      "canonical_name": "ティスティナ",
+      "canonical_name_en": "Tistina",
+      "theme_id": "tistina"
+    },
+    {
+      "canonical_name": "トゥーン",
+      "canonical_name_en": "Toon",
+      "theme_id": "toon"
+    },
+    {
+      "canonical_name": "Ｔ",
+      "canonical_name_en": "Top",
+      "theme_id": "top"
+    },
+    {
+      "canonical_name": "トポロジック",
+      "canonical_name_en": "Topologic",
+      "theme_id": "topologic"
+    },
+    {
+      "canonical_name": "トポロジーナ",
+      "canonical_name_en": "Topologina",
+      "theme_id": "topologina"
+    },
+    {
+      "canonical_name": "トイ",
+      "canonical_name_en": "Toy",
+      "theme_id": "toy"
+    },
+    {
+      "canonical_name": "蟲惑魔",
+      "canonical_name_en": "Traptrix",
+      "theme_id": "traptrix"
+    },
+    {
+      "canonical_name": "トライブリゲード",
+      "canonical_name_en": "Tri-Brigade",
+      "theme_id": "tri-brigade"
+    },
+    {
+      "canonical_name": "トラミッド",
+      "canonical_name_en": "Triamid",
+      "theme_id": "triamid"
+    },
+    {
+      "canonical_name": "トリックスター",
+      "canonical_name_en": "Trickstar",
+      "theme_id": "trickstar"
+    },
+    {
+      "canonical_name": "異解△",
+      "canonical_name_en": "Trirealm Rift",
+      "theme_id": "trirealm-rift"
+    },
+    {
+      "canonical_name": "真竜",
+      "canonical_name_en": "True Draco",
+      "theme_id": "true-draco"
+    },
+    {
+      "canonical_name": "Ｕ．Ａ．",
+      "canonical_name_en": "U.A.",
+      "theme_id": "u-a"
+    },
+    {
+      "canonical_name": "究極宝玉神",
+      "canonical_name_en": "Ultimate Crystal",
+      "theme_id": "ultimate-crystal"
+    },
+    {
+      "canonical_name": "アンブラル",
+      "canonical_name_en": "Umbral Horror",
+      "theme_id": "umbral-horror"
+    },
+    {
+      "canonical_name": "破械",
+      "canonical_name_en": "Unchained",
+      "theme_id": "unchained"
+    },
+    {
+      "canonical_name": "破械神",
+      "canonical_name_en": "Unchained Soul",
+      "theme_id": "unchained-soul"
+    },
+    {
+      "canonical_name": "ベアルクティ",
+      "canonical_name_en": "Ursarctic",
+      "theme_id": "ursarctic"
+    },
+    {
+      "canonical_name": "ホープ",
+      "canonical_name_en": "Utopic",
+      "theme_id": "utopic"
+    },
+    {
+      "canonical_name": "未来皇ホープ",
+      "canonical_name_en": "Utopic Future",
+      "theme_id": "utopic-future"
+    },
+    {
+      "canonical_name": "ヴァルモニカ",
+      "canonical_name_en": "Vaalmonica",
+      "theme_id": "vaalmonica"
+    },
+    {
+      "canonical_name": "ワルキューレ",
+      "canonical_name_en": "Valkyrie",
+      "theme_id": "valkyrie"
+    },
+    {
+      "canonical_name": "ヴァンパイア",
+      "canonical_name_en": "Vampire",
+      "theme_id": "vampire"
+    },
+    {
+      "canonical_name": "ＶＳ",
+      "canonical_name_en": "Vanquish Soul",
+      "theme_id": "vanquish-soul"
+    },
+    {
+      "canonical_name": "ヴァリアンツ",
+      "canonical_name_en": "Vaylantz",
+      "theme_id": "vaylantz"
+    },
+    {
+      "canonical_name": "ヴェーダ",
+      "canonical_name_en": "Veda",
+      "theme_id": "veda"
+    },
+    {
+      "canonical_name": "ビークロイド",
+      "canonical_name_en": "Vehicroid",
+      "theme_id": "vehicroid"
+    },
+    {
+      "canonical_name": "ヴェンデット",
+      "canonical_name_en": "Vendread",
+      "theme_id": "vendread"
+    },
+    {
+      "canonical_name": "ヴェノム",
+      "canonical_name_en": "Venom",
+      "theme_id": "venom"
+    },
+    {
+      "canonical_name": "春化精",
+      "canonical_name_en": "Vernusylph",
+      "theme_id": "vernusylph"
+    },
+    {
+      "canonical_name": "ヴィジランテ",
+      "canonical_name_en": "Vigilante",
+      "theme_id": "vigilante"
+    },
+    {
+      "canonical_name": "電脳堺",
+      "canonical_name_en": "Virtual World",
+      "theme_id": "virtual-world"
+    },
+    {
+      "canonical_name": "電脳堺門",
+      "canonical_name_en": "Virtual World Gate",
+      "theme_id": "virtual-world-gate"
+    },
+    {
+      "canonical_name": "ヴィサス",
+      "canonical_name_en": "Visas",
+      "theme_id": "visas"
+    },
+    {
+      "canonical_name": "Ｖ・ＨＥＲＯ",
+      "canonical_name_en": "Vision HERO",
+      "theme_id": "vision-hero"
+    },
+    {
+      "canonical_name": "粛声",
+      "canonical_name_en": "Voiceless Voice",
+      "theme_id": "voiceless-voice"
+    },
+    {
+      "canonical_name": "煉獄",
+      "canonical_name_en": "Void",
+      "theme_id": "void"
+    },
+    {
+      "canonical_name": "ヴォルカニック",
+      "canonical_name_en": "Volcanic",
+      "theme_id": "volcanic"
+    },
+    {
+      "canonical_name": "ヴァイロン",
+      "canonical_name_en": "Vylon",
+      "theme_id": "vylon"
+    },
+    {
+      "canonical_name": "Ｗ",
+      "canonical_name_en": "W",
+      "theme_id": "w"
+    },
+    {
+      "canonical_name": "ウォークライ",
+      "canonical_name_en": "War Rock",
+      "theme_id": "war-rock"
+    },
+    {
+      "canonical_name": "エレキ",
+      "canonical_name_en": "Watt",
+      "theme_id": "watt"
+    },
+    {
+      "canonical_name": "ウェジュ",
+      "canonical_name_en": "Wedju",
+      "theme_id": "wedju"
     }
   ]
 }

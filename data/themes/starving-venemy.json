@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "スターヴ・ヴェネミー",
+  "canonical_name_en": "Starving Venemy",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Starving Venemy",
+    "url": "https://yugipedia.com/wiki/Starving_Venemy"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "starving-venemy"
+}

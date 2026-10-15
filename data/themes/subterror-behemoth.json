@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "サブテラーマリス",
+  "canonical_name_en": "Subterror Behemoth",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Subterror Behemoth",
+    "url": "https://yugipedia.com/wiki/Subterror_Behemoth"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "subterror-behemoth"
+}

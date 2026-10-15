@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "太陽神",
+  "canonical_name_en": "Sun God",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Sun God",
+    "url": "https://yugipedia.com/wiki/Sun_God"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "sun-god"
+}

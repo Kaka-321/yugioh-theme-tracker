@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "邪心教義",
+  "canonical_name_en": "Sinister Doctrine",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Sinister Doctrine",
+    "url": "https://yugipedia.com/wiki/Sinister_Doctrine"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "sinister-doctrine"
+}

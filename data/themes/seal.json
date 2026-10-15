@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "封じ",
+  "canonical_name_en": "Seal",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Seal",
+    "url": "https://yugipedia.com/wiki/Seal"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "seal"
+}

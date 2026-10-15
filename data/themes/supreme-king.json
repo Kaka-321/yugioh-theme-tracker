@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "覇王",
+  "canonical_name_en": "Supreme King",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Supreme King",
+    "url": "https://yugipedia.com/wiki/Supreme_King"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "supreme-king"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＳＰＹＲＡＬ ＧＥＡＲ",
+  "canonical_name_en": "SPYRAL GEAR",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "SPYRAL GEAR",
+    "url": "https://yugipedia.com/wiki/SPYRAL_GEAR"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spyral-gear"
+}

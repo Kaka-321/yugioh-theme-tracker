@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "セルケト",
+  "canonical_name_en": "Serket",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Serket",
+    "url": "https://yugipedia.com/wiki/Serket"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "serket"
+}

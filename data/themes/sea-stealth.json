@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "シー・ステルス",
+  "canonical_name_en": "Sea Stealth",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Sea Stealth",
+    "url": "https://yugipedia.com/wiki/Sea_Stealth"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "sea-stealth"
+}

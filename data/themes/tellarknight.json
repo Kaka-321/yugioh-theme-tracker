@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "テラナイト",
+  "canonical_name_en": "Tellarknight",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Tellarknight",
+    "url": "https://yugipedia.com/wiki/Tellarknight"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "tellarknight"
+}

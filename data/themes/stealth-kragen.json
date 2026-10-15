@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ステルス・クラーゲン",
+  "canonical_name_en": "Stealth Kragen",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Stealth Kragen",
+    "url": "https://yugipedia.com/wiki/Stealth_Kragen"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "stealth-kragen"
+}

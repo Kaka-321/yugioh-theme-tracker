@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ヴォルカニック",
+  "canonical_name_en": "Volcanic",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Volcanic",
+    "url": "https://yugipedia.com/wiki/Volcanic"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "volcanic"
+}

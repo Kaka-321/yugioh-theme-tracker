@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "究極宝玉神",
+  "canonical_name_en": "Ultimate Crystal",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ultimate Crystal",
+    "url": "https://yugipedia.com/wiki/Ultimate_Crystal"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ultimate-crystal"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ヴァンパイア",
+  "canonical_name_en": "Vampire",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Vampire",
+    "url": "https://yugipedia.com/wiki/Vampire"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "vampire"
+}

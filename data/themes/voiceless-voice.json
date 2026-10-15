@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "粛声",
+  "canonical_name_en": "Voiceless Voice",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Voiceless Voice",
+    "url": "https://yugipedia.com/wiki/Voiceless_Voice"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "voiceless-voice"
+}

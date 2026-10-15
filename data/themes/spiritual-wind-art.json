@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "風霊術",
+  "canonical_name_en": "Spiritual Wind Art",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Spiritual Wind Art",
+    "url": "https://yugipedia.com/wiki/Spiritual_Wind_Art"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spiritual-wind-art"
+}

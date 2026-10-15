@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ティンダングル",
+  "canonical_name_en": "Tindangle",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Tindangle",
+    "url": "https://yugipedia.com/wiki/Tindangle"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "tindangle"
+}

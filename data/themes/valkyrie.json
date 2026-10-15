@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ワルキューレ",
+  "canonical_name_en": "Valkyrie",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Valkyrie",
+    "url": "https://yugipedia.com/wiki/Valkyrie"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "valkyrie"
+}

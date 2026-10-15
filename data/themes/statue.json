@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "スタチュー",
+  "canonical_name_en": "Statue",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Statue",
+    "url": "https://yugipedia.com/wiki/Statue"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "statue"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "スフィンクス",
+  "canonical_name_en": "Sphinx",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Sphinx",
+    "url": "https://yugipedia.com/wiki/Sphinx"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "sphinx"
+}

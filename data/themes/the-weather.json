@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "天気",
+  "canonical_name_en": "The Weather",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "The Weather",
+    "url": "https://yugipedia.com/wiki/The_Weather"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "the-weather"
+}

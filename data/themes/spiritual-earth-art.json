@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "地霊術",
+  "canonical_name_en": "Spiritual Earth Art",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Spiritual Earth Art",
+    "url": "https://yugipedia.com/wiki/Spiritual_Earth_Art"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spiritual-earth-art"
+}

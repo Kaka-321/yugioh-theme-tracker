@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "超量機獣",
+  "canonical_name_en": "Super Quantal Mech Beast",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Super Quantal Mech Beast",
+    "url": "https://yugipedia.com/wiki/Super_Quantal_Mech_Beast"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "super-quantal-mech-beast"
+}

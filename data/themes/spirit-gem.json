@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "精霊結晶",
+  "canonical_name_en": "Spirit Gem",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Spirit Gem",
+    "url": "https://yugipedia.com/wiki/Spirit_Gem"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "spirit-gem"
+}

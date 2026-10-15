@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "スフィア",
+  "canonical_name_en": "Sphere",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Sphere",
+    "url": "https://yugipedia.com/wiki/Sphere"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "sphere"
+}

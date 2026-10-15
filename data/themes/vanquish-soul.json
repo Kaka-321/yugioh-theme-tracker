@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＶＳ",
+  "canonical_name_en": "Vanquish Soul",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Vanquish Soul",
+    "url": "https://yugipedia.com/wiki/Vanquish_Soul"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "vanquish-soul"
+}

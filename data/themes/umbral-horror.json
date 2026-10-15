@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アンブラル",
+  "canonical_name_en": "Umbral Horror",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Umbral Horror",
+    "url": "https://yugipedia.com/wiki/Umbral_Horror"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "umbral-horror"
+}

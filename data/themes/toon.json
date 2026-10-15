@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "トゥーン",
+  "canonical_name_en": "Toon",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Toon",
+    "url": "https://yugipedia.com/wiki/Toon"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "toon"
+}

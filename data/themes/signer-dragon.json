@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "シグナーの竜",
+  "canonical_name_en": "Signer Dragon",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Signer Dragon",
+    "url": "https://yugipedia.com/wiki/Signer_Dragon"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "signer-dragon"
+}
