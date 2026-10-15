@@ -226,6 +226,9 @@
           themeButtons.appendChild(button);
         }
 
+        // 全テーマデータを格納
+        allThemes = payload.themes;
+
         themeListResult.textContent =
           payload.themes.length + "件のテーマを読み込みました。";
 
@@ -480,4 +483,17 @@
       } catch (error) {
         logError(`loadTheme エラー：${error.message}`);
       }
+    }
+
+    // 検索バーに入力時のフィルタリングを登録（allThemes が読み込まれた後）
+    const searchInput = document.getElementById('theme-search-input');
+    if (searchInput && allThemes.length > 0) {
+      searchInput.addEventListener('input', refreshThemeList);
+    } else if (searchInput) {
+      // まだ全テーマが読み込まれていない場合は、loadThemeList で登録する
+      const originalLoadThemeList = loadThemeList;
+      loadThemeList = async () => {
+        await originalLoadThemeList();
+        searchInput.addEventListener('input', refreshThemeList);
+      };
     }
