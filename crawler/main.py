@@ -122,6 +122,18 @@ def main():
         "themes": results,
     })
 
+    write_json(ROOT / "site" / "themes.json", {
+        "schema_version": "1.0.0",
+        "themes": [
+            {
+                "theme_id": theme.theme_id,
+                "canonical_name": theme.canonical_name,
+            }
+            for theme in THEMES
+        ],
+    })
+
+    print("STATUS: saved public theme list")
     print("STATUS: saved internal execution report")
 
     if failed:

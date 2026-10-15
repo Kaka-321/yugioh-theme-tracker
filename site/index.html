@@ -18,18 +18,53 @@
       background: white;
       padding: 24px;
       border-radius: 12px;
+      margin-bottom: 24px;
     }
     .note { color: #555; font-size: 0.9rem; }
     a { color: #1659a5; }
+    button {
+      font: inherit;
+      padding: 8px 14px;
+      margin: 4px 8px 4px 0;
+      border: 1px solid #b8c4d0;
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+    }
+    button.active {
+      border-color: #1659a5;
+      background: #eaf2fb;
+      font-weight: 600;
+    }
+    .theme-request {
+      display: inline-block;
+      margin-top: 12px;
+    }
   </style>
 </head>
 <body>
   <h1>遊戯王テーマ情報</h1>
   <p class="note">
-    非公式の情報整理サイトです。現在は青眼1テーマで動作確認中です。
+    非公式の情報整理サイトです。登録されたテーマの基本情報をYugipediaから自動更新しています。
   </p>
+
   <section>
-    <h2 id="theme-name">読み込み中…</h2>
+    <h2>テーマを選択</h2>
+    <div id="theme-buttons"></div>
+    <p id="theme-list-result" role="status"></p>
+
+    <a
+      class="theme-request-link"
+      href="https://github.com/Kaka-321/yugioh-theme-tracker/issues/new?template=theme-request.yml"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      テーマを追加する
+    </a>
+  </section>
+
+  <section>
+    <h2 id="theme-name">テーマを選択してください</h2>
     <p id="theme-id"></p>
 
     <h3>別名・通称</h3>
@@ -47,11 +82,66 @@
   </section>
 
   <script>
-    async function loadTheme() {
-      const result = document.getElementById("result");
+    const themeButtons = document.getElementById("theme-buttons");
+    const themeListResult = document.getElementById("theme-list-result");
+    const result = document.getElementById("result");
 
+    async function loadThemeList() {
       try {
-        const response = await fetch("./data/themes/blue-eyes.json");
+        const response = await fetch("./themes.json");
+        if (!response.ok) {
+          throw new Error("HTTP " + response.status);
+        }
+
+        const payload = await response.json();
+
+        if (
+          !Array.isArray(payload.themes) ||
+          payload.themes.some(theme =>
+            typeof theme.theme_id !== "string" ||
+            typeof theme.canonical_name !== "string"
+          )
+        ) {
+          throw new Error("テーマ一覧の形式が想定と異なります");
+        }
+
+        themeButtons.replaceChildren();
+
+        for (const theme of payload.themes) {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.textContent = theme.canonical_name;
+          button.dataset.themeId = theme.theme_id;
+          button.addEventListener("click", () => {
+            loadTheme(theme.theme_id, theme.canonical_name);
+          });
+          themeButtons.appendChild(button);
+        }
+
+        themeListResult.textContent =
+          payload.themes.length + "件のテーマを読み込みました。";
+
+        if (payload.themes.length > 0) {
+          loadTheme(payload.themes[0].theme_id, payload.themes[0].canonical_name);
+        }
+      } catch (error) {
+        themeListResult.textContent =
+          "テーマ一覧を読み込めませんでした: " + error.message;
+      }
+    }
+
+    async function loadTheme(themeId, canonicalName) {
+      try {
+        for (const button of themeButtons.children) {
+          button.classList.toggle(
+            "active",
+            button.dataset.themeId === themeId
+          );
+        }
+
+        result.textContent = "読み込み中…";
+
+        const response = await fetch("./data/themes/" + encodeURIComponent(themeId) + ".json");
         if (!response.ok) {
           throw new Error("HTTP " + response.status);
         }
@@ -106,7 +196,7 @@
       }
     }
 
-    loadTheme();
+    loadThemeList();
   </script>
 </body>
 </html>
