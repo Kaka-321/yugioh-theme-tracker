@@ -3405,6 +3405,256 @@
       "canonical_name": "ズババ",
       "canonical_name_en": "Zubaba",
       "theme_id": "zubaba"
+    },
+    {
+      "canonical_name": "古代の",
+      "canonical_name_en": "Ancient",
+      "theme_id": "ancient"
+    },
+    {
+      "canonical_name": "アンティーク・ギアゴーレム",
+      "canonical_name_en": "Ancient Gear Golem",
+      "theme_id": "ancient-gear-golem"
+    },
+    {
+      "canonical_name": "天使",
+      "canonical_name_en": "Angel",
+      "theme_id": "angel"
+    },
+    {
+      "canonical_name": "アクア・ジェット",
+      "canonical_name_en": "Aqua Jet",
+      "theme_id": "aqua-jet"
+    },
+    {
+      "canonical_name": "アーマード・エクシーズ",
+      "canonical_name_en": "Armored Xyz",
+      "theme_id": "armored-xyz"
+    },
+    {
+      "canonical_name": "アストラル",
+      "canonical_name_en": "Astral",
+      "theme_id": "astral"
+    },
+    {
+      "canonical_name": "Ａ",
+      "canonical_name_en": "Attack",
+      "theme_id": "attack"
+    },
+    {
+      "canonical_name": "バリアン",
+      "canonical_name_en": "Barian",
+      "theme_id": "barian"
+    },
+    {
+      "canonical_name": "カオス・ソルジャー",
+      "canonical_name_en": "Black Luster Soldier",
+      "theme_id": "black-luster-soldier"
+    },
+    {
+      "canonical_name": "ブレイズ・キャノン",
+      "canonical_name_en": "Blaze Accelerator",
+      "theme_id": "blaze-accelerator"
+    },
+    {
+      "canonical_name": "バスター・ブレイダー",
+      "canonical_name_en": "Buster Blader",
+      "theme_id": "buster-blader"
+    },
+    {
+      "canonical_name": "Ｃ",
+      "canonical_name_en": "C",
+      "theme_id": "c"
+    },
+    {
+      "canonical_name": "キャット・ガール",
+      "canonical_name_en": "Cat Girl",
+      "theme_id": "cat-girl"
+    },
+    {
+      "canonical_name": "カオス",
+      "canonical_name_en": "Chaos",
+      "theme_id": "chaos-2"
+    },
+    {
+      "canonical_name": "コード・トーカー",
+      "canonical_name_en": "Code Talker",
+      "theme_id": "code-talker"
+    },
+    {
+      "canonical_name": "カウンター",
+      "canonical_name_en": "Counter",
+      "theme_id": "counter"
+    },
+    {
+      "canonical_name": "サイバー・ドラゴン",
+      "canonical_name_en": "Cyber Dragon",
+      "theme_id": "cyber-dragon"
+    },
+    {
+      "canonical_name": "サイバーダーク",
+      "canonical_name_en": "Cyberdark",
+      "theme_id": "cyberdark-2"
+    },
+    {
+      "canonical_name": "ブラック・マジシャン",
+      "canonical_name_en": "Dark Magician",
+      "theme_id": "dark-magician-2"
+    },
+    {
+      "canonical_name": "ブラック・マジシャン・ガール",
+      "canonical_name_en": "Dark Magician Girl",
+      "theme_id": "dark-magician-girl"
+    },
+    {
+      "canonical_name": "ＤＴ",
+      "canonical_name_en": "Dark Tuner",
+      "theme_id": "dark-tuner"
+    },
+    {
+      "canonical_name": "ダイス",
+      "canonical_name_en": "Dice",
+      "theme_id": "dice"
+    },
+    {
+      "canonical_name": "ドミナス・パージ",
+      "canonical_name_en": "Dominus Purge",
+      "theme_id": "dominus-purge"
+    },
+    {
+      "canonical_name": "地",
+      "canonical_name_en": "Earth",
+      "theme_id": "earth"
+    },
+    {
+      "canonical_name": "エクレシア",
+      "canonical_name_en": "Ecclesia",
+      "theme_id": "ecclesia"
+    },
+    {
+      "canonical_name": "エンド・オブ・ザ・ワールド",
+      "canonical_name_en": "End of the World",
+      "theme_id": "end-of-the-world"
+    },
+    {
+      "canonical_name": "フェアリー",
+      "canonical_name_en": "Fairy",
+      "theme_id": "fairy"
+    },
+    {
+      "canonical_name": "ファイアウォール",
+      "canonical_name_en": "Firewall",
+      "theme_id": "firewall"
+    },
+    {
+      "canonical_name": "禁じられた",
+      "canonical_name_en": "Forbidden",
+      "theme_id": "forbidden"
+    },
+    {
+      "canonical_name": "森",
+      "canonical_name_en": "Forest",
+      "theme_id": "forest"
+    },
+    {
+      "canonical_name": "要塞クジラ",
+      "canonical_name_en": "Fortress Whale",
+      "theme_id": "fortress-whale"
+    },
+    {
+      "canonical_name": "フュージョン",
+      "canonical_name_en": "Fusion",
+      "theme_id": "fusion"
+    },
+    {
+      "canonical_name": "暗黒騎士ガイア",
+      "canonical_name_en": "Gaia The Fierce Knight",
+      "theme_id": "gaia-the-fierce-knight"
+    },
+    {
+      "canonical_name": "竜騎士ガイア",
+      "canonical_name_en": "Gaia the Dragon Champion",
+      "theme_id": "gaia-the-dragon-champion"
+    },
+    {
+      "canonical_name": "ガンドラ",
+      "canonical_name_en": "Gandora",
+      "theme_id": "gandora"
+    },
+    {
+      "canonical_name": "ゲート・ガーディアン",
+      "canonical_name_en": "Gate Guardian",
+      "theme_id": "gate-guardian"
+    },
+    {
+      "canonical_name": "ギアギアーノ",
+      "canonical_name_en": "Geargiano",
+      "theme_id": "geargiano"
+    },
+    {
+      "canonical_name": "ハンド",
+      "canonical_name_en": "Hand",
+      "theme_id": "hand"
+    },
+    {
+      "canonical_name": "トマボー",
+      "canonical_name_en": "Inmato",
+      "theme_id": "inmato"
+    },
+    {
+      "canonical_name": "インセクト女王",
+      "canonical_name_en": "Insect Queen",
+      "theme_id": "insect-queen"
+    },
+    {
+      "canonical_name": "人造人間",
+      "canonical_name_en": "Jinzo",
+      "theme_id": "jinzo"
+    },
+    {
+      "canonical_name": "リバイアサン",
+      "canonical_name_en": "Kairyu-Shin",
+      "theme_id": "kairyu-shin"
+    },
+    {
+      "canonical_name": "クリボー",
+      "canonical_name_en": "Kuriboh",
+      "theme_id": "kuriboh"
+    },
+    {
+      "canonical_name": "ラビリンス・ウォール",
+      "canonical_name_en": "Labyrinth Wall",
+      "theme_id": "labyrinth-wall"
+    },
+    {
+      "canonical_name": "マジシャン",
+      "canonical_name_en": "Magician",
+      "theme_id": "magician-2"
+    },
+    {
+      "canonical_name": "メタル化",
+      "canonical_name_en": "Metalmorph",
+      "theme_id": "metalmorph"
+    },
+    {
+      "canonical_name": "もけもけ",
+      "canonical_name_en": "Mokey Mokey",
+      "theme_id": "mokey-mokey"
+    },
+    {
+      "canonical_name": "帝王",
+      "canonical_name_en": "Monarch",
+      "theme_id": "monarch-2"
+    },
+    {
+      "canonical_name": "ネクロバレー",
+      "canonical_name_en": "Necrovalley",
+      "theme_id": "necrovalley"
+    },
+    {
+      "canonical_name": "ネオスペース",
+      "canonical_name_en": "Neo Space",
+      "theme_id": "neo-space"
     }
   ]
 }

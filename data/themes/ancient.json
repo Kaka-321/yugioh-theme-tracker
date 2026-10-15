@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "古代の",
+  "canonical_name_en": "Ancient",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ancient (archetype)",
+    "url": "https://yugipedia.com/wiki/Ancient_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ancient"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "竜騎士ガイア",
+  "canonical_name_en": "Gaia the Dragon Champion",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gaia the Dragon Champion (archetype)",
+    "url": "https://yugipedia.com/wiki/Gaia_the_Dragon_Champion_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gaia-the-dragon-champion"
+}

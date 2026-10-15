@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ラビリンス・ウォール",
+  "canonical_name_en": "Labyrinth Wall",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Labyrinth Wall (archetype)",
+    "url": "https://yugipedia.com/wiki/Labyrinth_Wall_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "labyrinth-wall"
+}

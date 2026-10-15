@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "帝王",
+  "canonical_name_en": "Monarch",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Monarch (Spell/Trap archetype)",
+    "url": "https://yugipedia.com/wiki/Monarch_%28Spell/Trap_archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "monarch-2"
+}

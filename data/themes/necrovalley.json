@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ネクロバレー",
+  "canonical_name_en": "Necrovalley",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Necrovalley (archetype)",
+    "url": "https://yugipedia.com/wiki/Necrovalley_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "necrovalley"
+}

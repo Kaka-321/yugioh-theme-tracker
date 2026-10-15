@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ガンドラ",
+  "canonical_name_en": "Gandora",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gandora (archetype)",
+    "url": "https://yugipedia.com/wiki/Gandora_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gandora"
+}

@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "暗黒騎士ガイア",
+  "canonical_name_en": "Gaia The Fierce Knight",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Gaia The Fierce Knight (archetype)",
+    "url": "https://yugipedia.com/wiki/Gaia_The_Fierce_Knight_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "gaia-the-fierce-knight"
+}

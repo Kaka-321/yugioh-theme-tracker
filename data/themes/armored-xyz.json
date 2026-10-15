@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アーマード・エクシーズ",
+  "canonical_name_en": "Armored Xyz",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Armored Xyz (archetype)",
+    "url": "https://yugipedia.com/wiki/Armored_Xyz_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "armored-xyz"
+}

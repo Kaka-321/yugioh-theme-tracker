@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エンド・オブ・ザ・ワールド",
+  "canonical_name_en": "End of the World",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "End of the World (archetype)",
+    "url": "https://yugipedia.com/wiki/End_of_the_World_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "end-of-the-world"
+}

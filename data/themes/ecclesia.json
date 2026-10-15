@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "エクレシア",
+  "canonical_name_en": "Ecclesia",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ecclesia (archetype)",
+    "url": "https://yugipedia.com/wiki/Ecclesia_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ecclesia"
+}

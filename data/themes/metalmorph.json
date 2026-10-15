@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "メタル化",
+  "canonical_name_en": "Metalmorph",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Metalmorph (archetype)",
+    "url": "https://yugipedia.com/wiki/Metalmorph_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "metalmorph"
+}

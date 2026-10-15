@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ブレイズ・キャノン",
+  "canonical_name_en": "Blaze Accelerator",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Blaze Accelerator (archetype)",
+    "url": "https://yugipedia.com/wiki/Blaze_Accelerator_%28archetype%29"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "blaze-accelerator"
+}
