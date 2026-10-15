@@ -1,4 +1,3 @@
-@'
 import argparse
 import json
 import re
@@ -124,4 +123,3 @@ if __name__ == "__main__":
     except (ValueError, OSError, json.JSONDecodeError) as error:
         print(f"FAILED: {error}", file=sys.stderr)
         sys.exit(1)
-'@ | Set-Content -Encoding utf8 crawler\add_theme_batch.py
