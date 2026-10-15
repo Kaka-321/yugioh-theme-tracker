@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "Archetype",
+  "canonical_name_en": "Archetype",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "manual",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Archetype",
+    "url": "https://yugipedia.com/wiki/Archetype"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "archetype"
+}

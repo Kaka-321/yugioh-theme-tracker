@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アクアリウム",
+  "canonical_name_en": "Aquarium",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Aquarium",
+    "url": "https://yugipedia.com/wiki/Aquarium"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "aquarium"
+}

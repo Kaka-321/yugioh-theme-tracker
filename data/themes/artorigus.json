@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アルトリウス",
+  "canonical_name_en": "Artorigus",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Artorigus",
+    "url": "https://yugipedia.com/wiki/Artorigus"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "artorigus"
+}

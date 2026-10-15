@@ -135,6 +135,131 @@
       "canonical_name": "アポピス",
       "canonical_name_en": "Apophis",
       "theme_id": "apophis"
+    },
+    {
+      "canonical_name": "アポクリフォート",
+      "canonical_name_en": "Apoqliphort",
+      "theme_id": "apoqliphort"
+    },
+    {
+      "canonical_name": "機塊",
+      "canonical_name_en": "Appliancer",
+      "theme_id": "appliancer"
+    },
+    {
+      "canonical_name": "アクアアクトレス",
+      "canonical_name_en": "Aquaactress",
+      "theme_id": "aquaactress"
+    },
+    {
+      "canonical_name": "儀水鏡",
+      "canonical_name_en": "Aquamirror",
+      "theme_id": "aquamirror"
+    },
+    {
+      "canonical_name": "アクアリウム",
+      "canonical_name_en": "Aquarium",
+      "theme_id": "aquarium"
+    },
+    {
+      "canonical_name": "アルカナフォース",
+      "canonical_name_en": "Arcana Force",
+      "theme_id": "arcana-force"
+    },
+    {
+      "canonical_name": "Archetype",
+      "canonical_name_en": "Archetype",
+      "theme_id": "archetype"
+    },
+    {
+      "canonical_name": "デーモン",
+      "canonical_name_en": "Archfiend",
+      "theme_id": "archfiend"
+    },
+    {
+      "canonical_name": "ＡＲＧ☆Ｓ",
+      "canonical_name_en": "Argostars",
+      "theme_id": "argostars"
+    },
+    {
+      "canonical_name": "アルマートス・レギオー",
+      "canonical_name_en": "Armatos Legio",
+      "theme_id": "armatos-legio"
+    },
+    {
+      "canonical_name": "アームド・ドラゴン",
+      "canonical_name_en": "Armed Dragon",
+      "theme_id": "armed-dragon"
+    },
+    {
+      "canonical_name": "アーマードッグ",
+      "canonical_name_en": "Armor Canine",
+      "theme_id": "armor-canine"
+    },
+    {
+      "canonical_name": "アロマ",
+      "canonical_name_en": "Aroma",
+      "theme_id": "aroma"
+    },
+    {
+      "canonical_name": "アルス＝マグナ",
+      "canonical_name_en": "Ars Magna",
+      "theme_id": "ars-magna"
+    },
+    {
+      "canonical_name": "アーティファクト",
+      "canonical_name_en": "Artifact",
+      "theme_id": "artifact"
+    },
+    {
+      "canonical_name": "アルトメギア",
+      "canonical_name_en": "Artmage",
+      "theme_id": "artmage"
+    },
+    {
+      "canonical_name": "アルトリウス",
+      "canonical_name_en": "Artorigus",
+      "theme_id": "artorigus"
+    },
+    {
+      "canonical_name": "灰滅",
+      "canonical_name_en": "Ashened",
+      "theme_id": "ashened"
+    },
+    {
+      "canonical_name": "アシュトラ",
+      "canonical_name_en": "Ashtra",
+      "theme_id": "ashtra"
+    },
+    {
+      "canonical_name": "アサシン",
+      "canonical_name_en": "Assassin",
+      "theme_id": "assassin"
+    },
+    {
+      "canonical_name": "Ａ ＢＦ",
+      "canonical_name_en": "Assault Blackwing",
+      "theme_id": "assault-blackwing"
+    },
+    {
+      "canonical_name": "アトランタル",
+      "canonical_name_en": "Atlandis",
+      "theme_id": "atlandis"
+    },
+    {
+      "canonical_name": "海皇",
+      "canonical_name_en": "Atlantean",
+      "theme_id": "atlantean"
+    },
+    {
+      "canonical_name": "アトラクション",
+      "canonical_name_en": "Attraction",
+      "theme_id": "attraction"
+    },
+    {
+      "canonical_name": "アザミナ",
+      "canonical_name_en": "Azamina",
+      "theme_id": "azamina"
     }
   ]
 }

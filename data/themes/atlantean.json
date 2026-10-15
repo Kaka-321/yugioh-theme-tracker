@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "海皇",
+  "canonical_name_en": "Atlantean",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Atlantean",
+    "url": "https://yugipedia.com/wiki/Atlantean"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "atlantean"
+}

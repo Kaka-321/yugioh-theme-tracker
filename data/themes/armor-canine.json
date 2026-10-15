@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アーマードッグ",
+  "canonical_name_en": "Armor Canine",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Armor Canine",
+    "url": "https://yugipedia.com/wiki/Armor_Canine"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "armor-canine"
+}

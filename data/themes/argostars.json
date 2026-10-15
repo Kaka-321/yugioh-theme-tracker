@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "ＡＲＧ☆Ｓ",
+  "canonical_name_en": "Argostars",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Argostars",
+    "url": "https://yugipedia.com/wiki/Argostars"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "argostars"
+}

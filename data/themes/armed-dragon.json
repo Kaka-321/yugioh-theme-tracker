@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アームド・ドラゴン",
+  "canonical_name_en": "Armed Dragon",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Armed Dragon",
+    "url": "https://yugipedia.com/wiki/Armed_Dragon"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "armed-dragon"
+}

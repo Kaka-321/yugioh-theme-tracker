@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "儀水鏡",
+  "canonical_name_en": "Aquamirror",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Aquamirror",
+    "url": "https://yugipedia.com/wiki/Aquamirror"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "aquamirror"
+}

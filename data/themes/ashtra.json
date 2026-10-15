@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アシュトラ",
+  "canonical_name_en": "Ashtra",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ashtra",
+    "url": "https://yugipedia.com/wiki/Ashtra"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ashtra"
+}

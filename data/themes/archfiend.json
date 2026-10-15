@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "デーモン",
+  "canonical_name_en": "Archfiend",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Archfiend",
+    "url": "https://yugipedia.com/wiki/Archfiend"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "archfiend"
+}

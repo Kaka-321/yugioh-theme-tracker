@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アトランタル",
+  "canonical_name_en": "Atlandis",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Atlandis",
+    "url": "https://yugipedia.com/wiki/Atlandis"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "atlandis"
+}

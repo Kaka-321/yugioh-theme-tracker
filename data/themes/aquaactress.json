@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アクアアクトレス",
+  "canonical_name_en": "Aquaactress",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Aquaactress",
+    "url": "https://yugipedia.com/wiki/Aquaactress"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "aquaactress"
+}

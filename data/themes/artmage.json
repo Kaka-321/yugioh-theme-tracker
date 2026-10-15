@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アルトメギア",
+  "canonical_name_en": "Artmage",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Artmage",
+    "url": "https://yugipedia.com/wiki/Artmage"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "artmage"
+}

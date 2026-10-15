@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アルス＝マグナ",
+  "canonical_name_en": "Ars Magna",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Ars Magna",
+    "url": "https://yugipedia.com/wiki/Ars_Magna"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "ars-magna"
+}

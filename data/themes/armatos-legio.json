@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "canonical_name": "アルマートス・レギオー",
+  "canonical_name_en": "Armatos Legio",
+  "field_origins": {
+    "aliases": "manual",
+    "canonical_name": "yugipedia",
+    "source": "api"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Armatos Legio",
+    "url": "https://yugipedia.com/wiki/Armatos_Legio"
+  },
+  "source_mode": "api-metadata-and-manual",
+  "theme_id": "armatos-legio"
+}
