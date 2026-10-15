@@ -344,8 +344,53 @@
       updatePaginationUI();
     }
 
+    let itemsPerPage = 8;
+
+    function getFilteredThemes(searchText) {
+      if (!searchText.trim()) {
+        return allThemes;
+      }
+      
+      const lowerSearch = searchText.toLowerCase();
+      return allThemes.filter(theme => 
+        theme.canonical_name.toLowerCase().includes(lowerSearch) ||
+        theme.aliases.some(alias => alias.toLowerCase().includes(lowerSearch))
+      );
+    }
+
+    function refreshThemeList() {
+      const searchText = document.getElementById("theme-search-input").value.trim();
+      const filteredThemes = getFilteredThemes(searchText);
+      
+      const buttonsContainer = document.getElementById("theme-buttons");
+      if (!buttonsContainer) return;
+      
+      // ページネーションの初期設定
+      currentPage = 1;
+      
+      themeButtons.replaceChildren();
+      
+      for (const theme of filteredThemes) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = theme.canonical_name;
+        button.dataset.themeId = theme.theme_id;
+        button.addEventListener("click", () => {
+          loadTheme(theme.theme_id, theme.canonical_name);
+        });
+        themeButtons.appendChild(button);
+      }
+      
+      const countInfo = document.getElementById("search-results-info");
+      if (countInfo) {
+        countInfo.style.display = filteredThemes.length > 0 ? "block" : "none";
+        countInfo.textContent = `${filteredThemes.length} 件の結果を表示しています`;
+      }
+      
+      updatePaginationUI();
+    }
+
     function filterThemes() {
-      const searchText = document.getElementById("theme-search-input").value;
       refreshThemeList();
     }
 
