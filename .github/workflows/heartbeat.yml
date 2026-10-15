@@ -23,8 +23,11 @@ jobs:
       - name: Write heartbeat
         run: |
           mkdir -p data/meta
-          printf '{"schema_version":"1.0.0","heartbeat_at":"%s","run_id":"%s"}\n' \
-            "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
+          UTC_TIME="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          JST_TIME="$(TZ=Asia/Tokyo date +'%Y-%m-%dT%H:%M:%S+09:00')"
+          printf '{"schema_version":"1.0.0","heartbeat_at":"%s","heartbeat_at_jst":"%s","run_id":"%s"}\n' \
+            "$UTC_TIME" \
+            "$JST_TIME" \
             "$GITHUB_RUN_ID" \
             > data/meta/heartbeat.json
 
