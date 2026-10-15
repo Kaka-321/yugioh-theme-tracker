@@ -1,9 +1,10 @@
 {
   "aliases": [],
-  "canonical_name": "Alligator",
+  "canonical_name": "アリゲーター",
+  "canonical_name_en": "Alligator",
   "field_origins": {
     "aliases": "manual",
-    "canonical_name": "manual",
+    "canonical_name": "yugipedia",
     "source": "api"
   },
   "schema_version": "1.0.0",

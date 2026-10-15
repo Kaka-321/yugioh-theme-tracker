@@ -1,4 +1,5 @@
 ﻿import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -10,15 +11,6 @@ ROOT = Path(__file__).resolve().parents[1]
 THEMES_DIR = ROOT / "data" / "themes"
 STATUS = ROOT / "data" / "internal" / "status.json"
 
-JAPANESE_NAMES = ROOT / "data" / "meta" / "japanese_names.json"
-
-
-def load_japanese_names():
-    try:
-        data = json.loads(JAPANESE_NAMES.read_text(encoding="utf-8"))
-        return data.get("names", {})
-    except FileNotFoundError:
-        return {}
 
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -54,11 +46,25 @@ def get_source(theme, now):
     return cached, "api"
 
 
+def extract_japanese_name(source):
+    source_text = json.dumps(source, ensure_ascii=False)
+    match = re.search(r"\\n\|\s*ja_name\s*=\s*([^\\n|]+)", source_text)
+
+    if not match:
+        return None
+
+    japanese_name = match.group(1).strip()
+    return japanese_name or None
+
+
 def build_theme(theme, source):
+    japanese_name = extract_japanese_name(source)
+
     return {
         "schema_version": "1.0.0",
         "theme_id": theme.theme_id,
-        "canonical_name": theme.canonical_name,
+        "canonical_name": japanese_name or theme.canonical_name,
+        "canonical_name_en": theme.canonical_name,
         "aliases": sorted(set(theme.aliases)),
         "source_mode": "api-metadata-and-manual",
         "source": {
@@ -67,7 +73,7 @@ def build_theme(theme, source):
             "url": source["url"],
         },
         "field_origins": {
-            "canonical_name": "manual",
+            "canonical_name": "yugipedia" if japanese_name else "manual",
             "aliases": "manual",
             "source": "api",
         },
@@ -131,21 +137,26 @@ def main():
         "themes": results,
     })
 
-    japanese_names = load_japanese_names()
+    site_themes = []
+
+    for theme in THEMES:
+        theme_file = THEMES_DIR / f"{theme.theme_id}.json"
+
+        if theme_file.exists():
+            theme_data = json.loads(theme_file.read_text(encoding="utf-8"))
+            canonical_name = theme_data.get("canonical_name", theme.canonical_name)
+        else:
+            canonical_name = theme.canonical_name
+
+        site_themes.append({
+            "theme_id": theme.theme_id,
+            "canonical_name": canonical_name,
+            "canonical_name_en": theme.canonical_name,
+        })
 
     write_json(ROOT / "site" / "themes.json", {
         "schema_version": "1.0.0",
-        "themes": [
-            {
-                "theme_id": theme.theme_id,
-                "canonical_name": japanese_names.get(
-                    theme.source_title,
-                    theme.canonical_name,
-                ),
-                "canonical_name_en": theme.canonical_name,
-            }
-            for theme in THEMES
-        ],
+        "themes": site_themes,
     })
 
     print("STATUS: saved public theme list")

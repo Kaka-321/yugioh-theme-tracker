@@ -1,9 +1,10 @@
 {
   "aliases": [],
-  "canonical_name": "Ancient Warriors",
+  "canonical_name": "{{Ruby",
+  "canonical_name_en": "Ancient Warriors",
   "field_origins": {
     "aliases": "manual",
-    "canonical_name": "manual",
+    "canonical_name": "yugipedia",
     "source": "api"
   },
   "schema_version": "1.0.0",

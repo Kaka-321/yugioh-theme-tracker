@@ -1,9 +1,10 @@
 {
   "aliases": [],
-  "canonical_name": "Aleister",
+  "canonical_name": "アレイスター",
+  "canonical_name_en": "Aleister",
   "field_origins": {
     "aliases": "manual",
-    "canonical_name": "manual",
+    "canonical_name": "yugipedia",
     "source": "api"
   },
   "schema_version": "1.0.0",

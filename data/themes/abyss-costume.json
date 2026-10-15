@@ -1,9 +1,10 @@
 {
   "aliases": [],
-  "canonical_name": "Abyss Costume",
+  "canonical_name": "{{Ruby",
+  "canonical_name_en": "Abyss Costume",
   "field_origins": {
     "aliases": "manual",
-    "canonical_name": "manual",
+    "canonical_name": "yugipedia",
     "source": "api"
   },
   "schema_version": "1.0.0",

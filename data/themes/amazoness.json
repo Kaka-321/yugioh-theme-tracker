@@ -1,9 +1,10 @@
 {
   "aliases": [],
-  "canonical_name": "Amazoness",
+  "canonical_name": "アマゾネス",
+  "canonical_name_en": "Amazoness",
   "field_origins": {
     "aliases": "manual",
-    "canonical_name": "manual",
+    "canonical_name": "yugipedia",
     "source": "api"
   },
   "schema_version": "1.0.0",

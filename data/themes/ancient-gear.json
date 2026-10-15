@@ -1,9 +1,10 @@
 {
   "aliases": [],
-  "canonical_name": "Ancient Gear",
+  "canonical_name": "アンティーク・ギア",
+  "canonical_name_en": "Ancient Gear",
   "field_origins": {
     "aliases": "manual",
-    "canonical_name": "manual",
+    "canonical_name": "yugipedia",
     "source": "api"
   },
   "schema_version": "1.0.0",

@@ -3,7 +3,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
+from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
 
 from themes import Theme
@@ -20,7 +20,7 @@ USER_AGENT = (
 
 
 def cache_path(theme: Theme) -> Path:
-    return CACHE_DIR / f"yugipedia-{theme.theme_id}.json"
+    return CACHE_DIR / f"yugipedia-wikitext-v2-{theme.theme_id}.json"
 
 
 def read_cache(theme: Theme, now: datetime):
@@ -38,6 +38,7 @@ def read_cache(theme: Theme, now: datetime):
             timedelta(0) <= age < CACHE_TTL
             and isinstance(cached["title"], str)
             and isinstance(cached["url"], str)
+            and isinstance(cached["wikitext"], str)
         ):
             return cached
     except (ValueError, KeyError, TypeError, OSError):
@@ -48,12 +49,11 @@ def read_cache(theme: Theme, now: datetime):
 
 def fetch_page(theme: Theme):
     params = {
-        "action": "query",
+        "action": "parse",
         "format": "json",
         "formatversion": "2",
-        "titles": theme.source_title,
-        "prop": "info",
-        "inprop": "url",
+        "page": theme.source_title,
+        "prop": "wikitext",
         "redirects": "1",
         "maxlag": "5",
     }
@@ -75,21 +75,19 @@ def fetch_page(theme: Theme):
             + json.dumps(payload["error"], ensure_ascii=False)
         )
 
-    pages = payload.get("query", {}).get("pages", [])
-    if len(pages) != 1:
-        raise ValueError("Unexpected page count")
+    title = payload.get("parse", {}).get("title")
+    wikitext = payload.get("parse", {}).get("wikitext")
 
-    page = pages[0]
-    if "missing" in page or "invalid" in page:
-        raise ValueError("Page is missing or invalid")
+    if not isinstance(title, str) or not isinstance(wikitext, str):
+        raise ValueError("Page wikitext is missing")
 
-    title = page.get("title")
-    url = page.get("fullurl")
+    url = "https://yugipedia.com/wiki/" + quote(title.replace(" ", "_"))
 
-    if not isinstance(title, str) or not isinstance(url, str):
-        raise ValueError("Required page information is missing")
-
-    return {"title": title, "url": url}
+    return {
+        "title": title,
+        "url": url,
+        "wikitext": wikitext,
+    }
 
 
 def save_cache(theme: Theme, value: dict) -> None:
