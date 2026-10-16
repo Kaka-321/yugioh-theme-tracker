@@ -6,16 +6,752 @@
   "canonical_name": "ブルーアイズ",
   "canonical_name_en": "Blue-Eyes",
   "cards": [
-    "Blue-Eyes White Dragon",
-    "Blue-Eyes Ultimate Dragon",
-    "Blue-Eyes Ultimate Dragon, the God-Surpassing Servant",
-    "Blue-Eyes Alternative White Dragon",
-    "Neo Blue-Eyes Ultimate Dragon",
-    "Blue-Eyes Alternative Ultimate Dragon",
-    "Blue-Eyes Toon Dragon",
-    "Blue-Eyes Ultimate Toon Dragon",
-    "Blue-Eyes Spirit Dragon",
-    "Blue-Eyes Ultimate Spirit Dragon"
+    {
+      "name": "Blue-Eyes White Dragon",
+      "japanese_name": "Blue-Eyes White Dragon",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Blue-Eyes Ultimate Dragon",
+      "japanese_name": "Blue-Eyes Ultimate Dragon",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Blue-Eyes Ultimate Dragon, the God-Surpassing Servant",
+      "japanese_name": "をえたしもべ－",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Blue-Eyes Alternative White Dragon",
+      "japanese_name": "Blue-Eyes Alternative White Dragon",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Neo Blue-Eyes Ultimate Dragon",
+      "japanese_name": "Neo Blue-Eyes Ultimate Dragon",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Blue-Eyes Alternative Ultimate Dragon",
+      "japanese_name": "Blue-Eyes Alternative Ultimate Dragon",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Blue-Eyes Toon Dragon",
+      "japanese_name": "ブルーアイズ・トゥーン・ドラゴン",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Blue-Eyes Ultimate Toon Dragon",
+      "japanese_name": "ブルーアイズ・トゥーン・アルティメットドラゴン",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Blue-Eyes Spirit Dragon",
+      "japanese_name": "Blue-Eyes Spirit Dragon",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "name": "Blue-Eyes Ultimate Spirit Dragon",
+      "japanese_name": "Blue-Eyes Ultimate Spirit Dragon",
+      "type": null,
+      "attribute": null,
+      "race": null,
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": null,
+      "ygoprodeck_url": null,
+      "first_seen_at": null
+    },
+    {
+      "card_id": 50371210,
+      "name": "Beacon of White",
+      "japanese_name": null,
+      "type": "Spell Card",
+      "attribute": null,
+      "race": "Equip",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/50371210.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Beacon-of-White-50371210/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 93437091,
+      "name": "Bingo Machine, Go!!!",
+      "japanese_name": null,
+      "type": "Spell Card",
+      "attribute": null,
+      "race": "Normal",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/93437091.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Bingo-Machine,-Go!!!-93437091/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 64202399,
+      "name": "Blue-Eyes Abyss Dragon",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 2500,
+      "def": 2500,
+      "image_path": "assets/cards/64202399.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Abyss-Dragon-64202399/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 43228023,
+      "name": "Blue-Eyes Alternative Ultimate Dragon",
+      "japanese_name": null,
+      "type": "Fusion Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 4500,
+      "def": 3800,
+      "image_path": "assets/cards/43228023.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Alternative-Ultimate-Dragon-43228023/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 38517737,
+      "name": "Blue-Eyes Alternative White Dragon",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3000,
+      "def": 2500,
+      "image_path": "assets/cards/38517737.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Alternative-White-Dragon-38517737/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 20654247,
+      "name": "Blue-Eyes Chaos Dragon",
+      "japanese_name": null,
+      "type": "Ritual Effect Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3000,
+      "def": 0,
+      "image_path": "assets/cards/20654247.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Chaos-Dragon-20654247/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 55410871,
+      "name": "Blue-Eyes Chaos MAX Dragon",
+      "japanese_name": null,
+      "type": "Ritual Effect Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 4000,
+      "def": 0,
+      "image_path": "assets/cards/55410871.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Chaos-MAX-Dragon-55410871/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 30576089,
+      "name": "Blue-Eyes Jet Dragon",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3000,
+      "def": 0,
+      "image_path": "assets/cards/30576089.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Jet-Dragon-30576089/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 53347303,
+      "name": "Blue-Eyes Shining Dragon",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 10,
+      "atk": 3000,
+      "def": 2500,
+      "image_path": "assets/cards/53347303.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Shining-Dragon-53347303/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 57043986,
+      "name": "Blue-Eyes Solid Dragon",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 2500,
+      "def": 2000,
+      "image_path": "assets/cards/57043986.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Solid-Dragon-57043986/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 59822133,
+      "name": "Blue-Eyes Spirit Dragon",
+      "japanese_name": null,
+      "type": "Synchro Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 9,
+      "atk": 2500,
+      "def": 3000,
+      "image_path": "assets/cards/59822133.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Spirit-Dragon-59822133/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 2129638,
+      "name": "Blue-Eyes Twin Burst Dragon",
+      "japanese_name": null,
+      "type": "Fusion Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 10,
+      "atk": 3000,
+      "def": 2500,
+      "image_path": "assets/cards/2129638.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Twin-Burst-Dragon-2129638/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 11443677,
+      "name": "Blue-Eyes Tyrant Dragon",
+      "japanese_name": null,
+      "type": "Fusion Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3400,
+      "def": 2900,
+      "image_path": "assets/cards/11443677.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Tyrant-Dragon-11443677/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 23995348,
+      "name": "Blue-Eyes Ultimate Dragon",
+      "japanese_name": null,
+      "type": "Fusion Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 4500,
+      "def": 3800,
+      "image_path": "assets/cards/23995348.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Ultimate-Dragon-23995348/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 91461780,
+      "name": "Blue-Eyes Ultimate Dragon, the God-Surpassing Servant",
+      "japanese_name": null,
+      "type": "Fusion Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 4500,
+      "def": 3800,
+      "image_path": "assets/cards/91461780.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Ultimate-Dragon,-the-God-Surpassing-Servant-91461780/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 89604813,
+      "name": "Blue-Eyes Ultimate Spirit Dragon",
+      "japanese_name": null,
+      "type": "Synchro Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 3500,
+      "def": 4000,
+      "image_path": "assets/cards/89604813.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Ultimate-Spirit-Dragon-89604813/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 71808988,
+      "name": "Blue-Eyes Ultimate Toon Dragon",
+      "japanese_name": null,
+      "type": "Toon Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 4500,
+      "def": 3800,
+      "image_path": "assets/cards/71808988.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-Ultimate-Toon-Dragon-71808988/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 89631146,
+      "name": "Blue-Eyes White Dragon",
+      "japanese_name": null,
+      "type": "Normal Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3000,
+      "def": 2500,
+      "image_path": "assets/cards/89631146.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-White-Dragon-89631146/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 30397786,
+      "name": "Blue-Eyes White Dragon, the White Phantom Beast",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3000,
+      "def": 2500,
+      "image_path": "assets/cards/30397786.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Blue-Eyes-White-Dragon,-the-White-Phantom-Beast-30397786/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 17655904,
+      "name": "Burst Stream of Destruction",
+      "japanese_name": null,
+      "type": "Spell Card",
+      "attribute": null,
+      "race": "Normal",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/17655904.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Burst-Stream-of-Destruction-17655904/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 21082832,
+      "name": "Chaos Form",
+      "japanese_name": null,
+      "type": "Spell Card",
+      "attribute": null,
+      "race": "Ritual",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/21082832.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Chaos-Form-21082832/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 22804410,
+      "name": "Deep-Eyes White Dragon",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 10,
+      "atk": 0,
+      "def": 0,
+      "image_path": "assets/cards/22804410.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Deep-Eyes-White-Dragon-22804410/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 67886895,
+      "name": "Deep-Eyes White Dragon, the Blue Abyss",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 10,
+      "atk": 0,
+      "def": 0,
+      "image_path": "assets/cards/67886895.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Deep-Eyes-White-Dragon,-the-Blue-Abyss-67886895/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 66961194,
+      "name": "Dictator of D.",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "DARK",
+      "race": "Spellcaster",
+      "level": 4,
+      "atk": 1200,
+      "def": 1100,
+      "image_path": "assets/cards/66961194.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Dictator-of-D.-66961194/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 62873545,
+      "name": "Dragon Master Knight",
+      "japanese_name": null,
+      "type": "Fusion Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 5000,
+      "def": 5000,
+      "image_path": "assets/cards/62873545.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Dragon-Master-Knight-62873545/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 45467446,
+      "name": "Dragon Spirit of White",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 2500,
+      "def": 2000,
+      "image_path": "assets/cards/45467446.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Dragon-Spirit-of-White-45467446/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 54475145,
+      "name": "Heart of the Blue-Eyes",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3000,
+      "def": 2500,
+      "image_path": "assets/cards/54475145.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Heart-of-the-Blue-Eyes-54475145/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 34627841,
+      "name": "Kaibaman",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Warrior",
+      "level": 3,
+      "atk": 200,
+      "def": 700,
+      "image_path": "assets/cards/34627841.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Kaibaman-34627841/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 88241506,
+      "name": "Maiden with Eyes of Blue",
+      "japanese_name": null,
+      "type": "Tuner Monster",
+      "attribute": "LIGHT",
+      "race": "Spellcaster",
+      "level": 1,
+      "atk": 0,
+      "def": 0,
+      "image_path": "assets/cards/88241506.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Maiden-with-Eyes-of-Blue-88241506/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 2783661,
+      "name": "Majesty with Eyes of Blue",
+      "japanese_name": null,
+      "type": "Spell Card",
+      "attribute": null,
+      "race": "Quick-Play",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/2783661.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Majesty-with-Eyes-of-Blue-2783661/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 9433350,
+      "name": "Malefic Blue-Eyes White Dragon",
+      "japanese_name": null,
+      "type": "Effect Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3000,
+      "def": 2500,
+      "image_path": "assets/cards/9433350.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Malefic-Blue-Eyes-White-Dragon-9433350/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 45644898,
+      "name": "Master with Eyes of Blue",
+      "japanese_name": null,
+      "type": "Tuner Monster",
+      "attribute": "LIGHT",
+      "race": "Spellcaster",
+      "level": 1,
+      "atk": 300,
+      "def": 1200,
+      "image_path": "assets/cards/45644898.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Master-with-Eyes-of-Blue-45644898/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 56532353,
+      "name": "Neo Blue-Eyes Ultimate Dragon",
+      "japanese_name": null,
+      "type": "Fusion Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 4500,
+      "def": 3800,
+      "image_path": "assets/cards/56532353.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Neo-Blue-Eyes-Ultimate-Dragon-56532353/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 43845801,
+      "name": "Neutron Blast",
+      "japanese_name": null,
+      "type": "Spell Card",
+      "attribute": null,
+      "race": "Normal",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/43845801.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Neutron-Blast-43845801/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 73398797,
+      "name": "Paladin of White Dragon",
+      "japanese_name": null,
+      "type": "Ritual Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 4,
+      "atk": 1900,
+      "def": 1200,
+      "image_path": "assets/cards/73398797.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Paladin-of-White-Dragon-73398797/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 36734924,
+      "name": "Priestess with Eyes of Blue",
+      "japanese_name": null,
+      "type": "Tuner Monster",
+      "attribute": "LIGHT",
+      "race": "Spellcaster",
+      "level": 1,
+      "atk": 0,
+      "def": 0,
+      "image_path": "assets/cards/36734924.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Priestess-with-Eyes-of-Blue-36734924/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 72855441,
+      "name": "Protector with Eyes of Blue",
+      "japanese_name": null,
+      "type": "Tuner Monster",
+      "attribute": "LIGHT",
+      "race": "Spellcaster",
+      "level": 1,
+      "atk": 800,
+      "def": 1300,
+      "image_path": "assets/cards/72855441.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Protector-with-Eyes-of-Blue-72855441/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 29432790,
+      "name": "Rage with Eyes of Blue",
+      "japanese_name": null,
+      "type": "Spell Card",
+      "attribute": null,
+      "race": "Quick-Play",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/29432790.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Rage-with-Eyes-of-Blue-29432790/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 8240199,
+      "name": "Sage with Eyes of Blue",
+      "japanese_name": null,
+      "type": "Tuner Monster",
+      "attribute": "LIGHT",
+      "race": "Spellcaster",
+      "level": 1,
+      "atk": 0,
+      "def": 1500,
+      "image_path": "assets/cards/8240199.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Sage-with-Eyes-of-Blue-8240199/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 56920308,
+      "name": "The Ultimate Creature of Destruction",
+      "japanese_name": null,
+      "type": "Trap Card",
+      "attribute": null,
+      "race": "Normal",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/56920308.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/The-Ultimate-Creature-of-Destruction-56920308/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 71039903,
+      "name": "The White Stone of Ancients",
+      "japanese_name": null,
+      "type": "Tuner Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 1,
+      "atk": 600,
+      "def": 500,
+      "image_path": "assets/cards/71039903.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/The-White-Stone-of-Ancients-71039903/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 79814787,
+      "name": "The White Stone of Legend",
+      "japanese_name": null,
+      "type": "Tuner Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 1,
+      "atk": 300,
+      "def": 250,
+      "image_path": "assets/cards/79814787.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/The-White-Stone-of-Legend-79814787/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 62089826,
+      "name": "True Light",
+      "japanese_name": null,
+      "type": "Trap Card",
+      "attribute": null,
+      "race": "Continuous",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/62089826.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/True-Light-62089826/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 71143015,
+      "name": "Ultimate Fusion",
+      "japanese_name": null,
+      "type": "Spell Card",
+      "attribute": null,
+      "race": "Quick-Play",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/71143015.jpg",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Ultimate-Fusion-71143015/",
+      "first_seen_at": "2026-10-16T21:32:06.979902Z"
+    }
   ],
   "expansion": [
     "Legend of Blue Eyes White Dragon",
@@ -41,5 +777,227 @@
     "url": "https://yugipedia.com/wiki/Blue-Eyes"
   },
   "source_mode": "api-metadata-and-manual",
-  "theme_id": "blue-eyes"
+  "theme_id": "blue-eyes",
+  "changes": [
+    {
+      "card_id": 50371210,
+      "name": "Beacon of White",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 93437091,
+      "name": "Bingo Machine, Go!!!",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 64202399,
+      "name": "Blue-Eyes Abyss Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 43228023,
+      "name": "Blue-Eyes Alternative Ultimate Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 38517737,
+      "name": "Blue-Eyes Alternative White Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 20654247,
+      "name": "Blue-Eyes Chaos Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 55410871,
+      "name": "Blue-Eyes Chaos MAX Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 30576089,
+      "name": "Blue-Eyes Jet Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 53347303,
+      "name": "Blue-Eyes Shining Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 57043986,
+      "name": "Blue-Eyes Solid Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 59822133,
+      "name": "Blue-Eyes Spirit Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 2129638,
+      "name": "Blue-Eyes Twin Burst Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 11443677,
+      "name": "Blue-Eyes Tyrant Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 23995348,
+      "name": "Blue-Eyes Ultimate Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 91461780,
+      "name": "Blue-Eyes Ultimate Dragon, the God-Surpassing Servant",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 89604813,
+      "name": "Blue-Eyes Ultimate Spirit Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 71808988,
+      "name": "Blue-Eyes Ultimate Toon Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 89631146,
+      "name": "Blue-Eyes White Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 30397786,
+      "name": "Blue-Eyes White Dragon, the White Phantom Beast",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 17655904,
+      "name": "Burst Stream of Destruction",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 21082832,
+      "name": "Chaos Form",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 22804410,
+      "name": "Deep-Eyes White Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 67886895,
+      "name": "Deep-Eyes White Dragon, the Blue Abyss",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 66961194,
+      "name": "Dictator of D.",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 62873545,
+      "name": "Dragon Master Knight",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 45467446,
+      "name": "Dragon Spirit of White",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 54475145,
+      "name": "Heart of the Blue-Eyes",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 34627841,
+      "name": "Kaibaman",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 88241506,
+      "name": "Maiden with Eyes of Blue",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 2783661,
+      "name": "Majesty with Eyes of Blue",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 9433350,
+      "name": "Malefic Blue-Eyes White Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 45644898,
+      "name": "Master with Eyes of Blue",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 56532353,
+      "name": "Neo Blue-Eyes Ultimate Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 43845801,
+      "name": "Neutron Blast",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 73398797,
+      "name": "Paladin of White Dragon",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 36734924,
+      "name": "Priestess with Eyes of Blue",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 72855441,
+      "name": "Protector with Eyes of Blue",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 29432790,
+      "name": "Rage with Eyes of Blue",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 8240199,
+      "name": "Sage with Eyes of Blue",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 56920308,
+      "name": "The Ultimate Creature of Destruction",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 71039903,
+      "name": "The White Stone of Ancients",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 79814787,
+      "name": "The White Stone of Legend",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 62089826,
+      "name": "True Light",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    },
+    {
+      "card_id": 71143015,
+      "name": "Ultimate Fusion",
+      "added_at": "2026-10-16T21:32:06.979902Z"
+    }
+  ]
 }
