@@ -6,6 +6,7 @@ on:
     paths:
       - "site/**"
       - "data/themes/**"
+      - "assets/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -37,6 +38,11 @@ jobs:
 
           if [ -f site/themes.json ]; then
             cp site/themes.json build/themes.json
+          fi
+
+          if [ -d assets/cards ]; then
+            mkdir -p build/assets/cards
+            cp assets/cards/* build/assets/cards/ 2>/dev/null || true
           fi
 
       - name: Configure Pages

@@ -117,15 +117,62 @@
       border-radius: 8px;
       min-height: 40px;
     }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    @media (max-width: 480px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
     .card-item {
-      display: inline-block;
-      padding: 8px 12px;
-      margin: 4px 4px 4px 0;
       background: #fff;
       border: 1px solid #ddd;
       border-radius: 6px;
-      font-size: 0.9rem;
-      max-width: 200px;
+      font-size: 0.8rem;
+      overflow: hidden;
+    }
+    .card-item img {
+      width: 100%;
+      aspect-ratio: 59 / 86;
+      object-fit: cover;
+      display: block;
+      background: #eef1f4;
+    }
+    .card-item .card-noimg {
+      width: 100%;
+      aspect-ratio: 59 / 86;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eef1f4;
+      color: #999;
+      font-size: 0.75rem;
+    }
+    .card-info {
+      padding: 6px 8px;
+    }
+    .card-name-jp {
+      font-weight: 600;
+      font-size: 0.85rem;
+      word-break: break-word;
+    }
+    .card-name-en {
+      color: #555;
+      font-size: 0.75rem;
+      word-break: break-word;
+    }
+    .card-meta {
+      color: #666;
+      font-size: 0.7rem;
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+    .card-no-jp {
+      color: #b06a00;
+      font-size: 0.7rem;
     }
     .expansion-item {
       margin: 6px 0;
@@ -328,6 +375,128 @@
       buffer.prepend(item);
     }
 
+    // ===== カード描画ヘルパー =====
+    function buildThemeImage(imageUrl) {
+      if (typeof imageUrl !== "string" || !imageUrl) return null;
+      let url;
+      try {
+        url = new URL(imageUrl);
+      } catch (e) {
+        return null;
+      }
+      if (
+        url.protocol !== "https:" ||
+        url.hostname !== "yugipedia.com" ||
+        url.username ||
+        url.password ||
+        !url.pathname.startsWith("/wiki/File:")
+      ) {
+        return null;
+      }
+      // YugipediaのFileページURLを実画像URLへ変換
+      const directUrl =
+        "https://yugipedia.com/wiki/Special:FilePath/" +
+        url.pathname.slice("/wiki/File:".length);
+
+      const img = document.createElement("img");
+      img.alt = "テーマ画像";
+      img.onerror = function () {
+        img.remove();
+      };
+      img.src = directUrl;
+      return img;
+    }
+
+    function buildCardNote() {
+      const note = document.createElement("p");
+      note.className = "note";
+      note.textContent = "日本語名が「未登録」のカードは英語名で表示しています。画像のないカードはプレースホルダーを表示しています。";
+      return note;
+    }
+
+    function makeCardImage(card) {
+      const path = card.image_path;
+      if (
+        typeof path === "string" &&
+        path.startsWith("assets/cards/") &&
+        !path.includes("..") &&
+        path.endsWith(".jpg")
+      ) {
+        const img = document.createElement("img");
+        img.loading = "lazy";
+        img.alt = card.name || "カード画像";
+        img.onerror = function () {
+          img.replaceWith(makeCardPlaceholder(card));
+        };
+        return img;
+      }
+      return null;
+    }
+
+    function makeCardPlaceholder(card) {
+      const div = document.createElement("div");
+      div.className = "card-noimg";
+      div.textContent = "画像なし";
+      return div;
+    }
+
+    function renderCard(card) {
+      const item = document.createElement("div");
+      item.className = "card-item";
+
+      const img = makeCardImage(card);
+      if (img) item.appendChild(img);
+      else item.appendChild(makeCardPlaceholder(card));
+
+      const info = document.createElement("div");
+      info.className = "card-info";
+
+      const nameJp = typeof card.japanese_name === "string" && card.japanese_name.trim()
+        ? card.japanese_name : null;
+      const nameEn = typeof card.name === "string" && card.name.trim()
+        ? card.name : "(名称不明)";
+
+      if (nameJp) {
+        const jp = document.createElement("div");
+        jp.className = "card-name-jp";
+        jp.textContent = nameJp;
+        info.appendChild(jp);
+
+        const en = document.createElement("div");
+        en.className = "card-name-en";
+        en.textContent = nameEn;
+        info.appendChild(en);
+      } else {
+        const en = document.createElement("div");
+        en.className = "card-name-jp";
+        en.textContent = nameEn;
+        info.appendChild(en);
+
+        const noJp = document.createElement("div");
+        noJp.className = "card-no-jp";
+        noJp.textContent = "日本語名未登録";
+        info.appendChild(noJp);
+      }
+
+      const meta = [];
+      if (card.type) meta.push("種別: " + card.type);
+      if (card.attribute) meta.push("属性: " + card.attribute);
+      if (card.race) meta.push("種族: " + card.race);
+      if (card.level != null) meta.push("Lv: " + card.level);
+      if (card.atk != null) meta.push("攻: " + card.atk);
+      if (card.def != null) meta.push("守: " + card.def);
+
+      if (meta.length > 0) {
+        const metaDiv = document.createElement("div");
+        metaDiv.className = "card-meta";
+        metaDiv.textContent = meta.join(" / ");
+        info.appendChild(metaDiv);
+      }
+
+      item.appendChild(info);
+      return item;
+    }
+
     // ===== テーマ一覧読込 =====
     async function loadThemeList() {
       try {
@@ -404,11 +573,32 @@
         // カードリスト表示
         if (theme.cards) {
           cardsDiv.replaceChildren();
+          const grid = document.createElement("div");
+          grid.className = "card-grid";
+          let hasCardData = false;
+
           for (const card of theme.cards) {
-            const div = document.createElement("div");
-            div.className = "card-item";
-            div.textContent = card;
-            cardsDiv.appendChild(div);
+            if (typeof card === "string") {
+              hasCardData = true;
+              const div = document.createElement("div");
+              div.className = "card-item";
+              div.textContent = card;
+              grid.appendChild(div);
+              continue;
+            }
+            if (card && typeof card === "object") {
+              hasCardData = true;
+              grid.appendChild(renderCard(card));
+            }
+          }
+
+          if (hasCardData) {
+            cardsDiv.appendChild(grid);
+            cardsDiv.appendChild(theme.cards.some(c => typeof c === "object" && c)
+              ? buildCardNote()
+              : document.createDocumentFragment());
+          } else {
+            cardsDiv.textContent = "カードリストの情報はありません。";
           }
         } else {
           cardsDiv.textContent = "カードリストの情報はありません。";
@@ -434,11 +624,15 @@
           expansionDiv.textContent = "展開セットの情報はありません。";
         }
 
-        // テーマ画像表示
-        if (theme.image) {
-          themeImageDiv.innerHTML = `<img src="${theme.image}" alt="テーマ画像" />`;
+        // テーマ画像表示（innerHTMLを使わず安全に生成）
+        themeImageDiv.replaceChildren();
+        const themeImg = buildThemeImage(theme.image);
+        if (themeImg) {
+          themeImageDiv.appendChild(themeImg);
         } else {
-          themeImageDiv.textContent = "テーマ画像はありません。";
+          themeImageDiv.textContent = theme.image
+            ? "テーマ画像を読み込めませんでした。"
+            : "テーマ画像はありません。";
         }
 
         result.textContent = "テーマ情報と出典を読み込みました。";
