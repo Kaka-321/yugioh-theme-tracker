@@ -425,6 +425,7 @@
         const img = document.createElement("img");
         img.loading = "lazy";
         img.alt = card.name || "カード画像";
+        img.src = path;
         img.onerror = function () {
           img.replaceWith(makeCardPlaceholder(card));
         };
@@ -500,7 +501,7 @@
     // ===== テーマ一覧読込 =====
     async function loadThemeList() {
       try {
-        const res = await fetch("./themes.json");
+        const res = await fetch("./themes.json", { cache: "no-store" });
         if (!res.ok) throw new Error("HTTP " + res.status);
         const payload = await res.json();
 
@@ -529,7 +530,7 @@
         }
         result.textContent = "読み込み中…";
 
-        const res = await fetch("./data/themes/" + encodeURIComponent(themeId) + ".json");
+        const res = await fetch("./data/themes/" + encodeURIComponent(themeId) + ".json", { cache: "no-store" });
         if (!res.ok) throw new Error("HTTP " + res.status);
         const theme = await res.json();
 
