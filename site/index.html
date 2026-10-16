@@ -410,7 +410,7 @@
     function buildCardNote() {
       const note = document.createElement("p");
       note.className = "note";
-      note.textContent = "日本語名が「未登録」のカードは英語名で表示しています。画像のないカードはプレースホルダーを表示しています。";
+      note.textContent = "カード画像は日本語版OCGカードスキャンを優先して表示しています。日本語名が「未登録」のカードは英語名で表示しています。画像のないカードはプレースホルダーを表示しています。";
       return note;
     }
 
@@ -420,7 +420,7 @@
         typeof path === "string" &&
         path.startsWith("assets/cards/") &&
         !path.includes("..") &&
-        path.endsWith(".jpg")
+        (path.endsWith(".jpg") || path.endsWith(".png"))
       ) {
         const img = document.createElement("img");
         img.loading = "lazy";

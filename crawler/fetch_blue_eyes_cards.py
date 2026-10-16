@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import os
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,6 +19,172 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 ASSETS_DIR.mkdir(parents=True, exist_ok=True)
 
 BLUE_EYES_FILE = DATA_DIR / "blue-eyes.json"
+
+YUGIPEDIA_API = "https://yugipedia.com/api.php"
+JP_IMAGE_RE = re.compile(r"([A-Za-z0-9()._-]+-JP-[A-Za-z0-9._-]+\.png)")
+JP_EXCLUDE = ("VG-", "-artwork", "-DuelLinks")
+
+
+def clean_ja_name(text):
+    text = re.sub(r"\{\{Ruby\|([^|}]+)\|[^}]+\}\}", r"\1", text)
+    text = re.sub(r"\{\{[^}]+\}\}", "", text)
+    text = re.sub(r"<[^>]+>", "", text)
+    return text.strip()
+
+
+def fetch_card_wikitext(title):
+    try:
+        data = safe_request(YUGIPEDIA_API, params={
+            "action": "parse",
+            "page": title,
+            "prop": "wikitext",
+            "format": "json",
+            "formatversion": "2",
+        })
+        return data.get("parse", {}).get("wikitext", "") or ""
+    except Exception as e:
+        print(f"WIKITEXT_FAIL {title}: {e}")
+        return ""
+
+
+def get_ja_name_from_wikitext(wikitext):
+    m = re.search(r"\|\s*ja_name\s*=\s*(.*)", wikitext)
+    if m:
+        jp = clean_ja_name(m.group(1).split("\n")[0])
+        if jp and 2 < len(jp) < 60:
+            return jp
+    m = re.search(r"\|\s*furigana\s*=\s*(.*)", wikitext)
+    if m:
+        jp = clean_ja_name(m.group(1).split("\n")[0])
+        if jp and 1 < len(jp) < 80:
+            return jp
+    return None
+
+
+YP_EXCLUDE = ("VG-", "-artwork", "-DuelLinks", "Anime", "-info.png")
+JP_CARD_RE = re.compile(r"-J[PA]-")
+
+
+def list_card_image_files(title):
+    """カード名をプレフィックスにして、Yugipedia上の関連画像ファイルを列挙する。"""
+    filepart = re.sub(r"[ '\x22,._!?()×-]", "", title)
+    try:
+        data = safe_request(YUGIPEDIA_API, params={
+            "action": "query",
+            "list": "allimages",
+            "aiprefix": filepart,
+            "aisort": "name",
+            "ailimit": "100",
+            "format": "json",
+            "formatversion": "2",
+        })
+        return [item["name"] for item in data.get("query", {}).get("allimages", [])]
+    except Exception as e:
+        print(f"ALLIMAGES_FAIL {title}: {e}")
+        return []
+
+
+def get_jp_card_file(wikitext, card_name):
+    """日本語OCGカードスキャン（-JP-/-JA-）を選ぶ。jp_setsの先頭セットを優先。"""
+    files = list_card_image_files(card_name)
+    jp_files = [
+        f for f in files
+        if JP_CARD_RE.search(f)
+        and not any(x in f for x in YP_EXCLUDE)
+        and not f.endswith("-OP.png")
+    ]
+    if not jp_files:
+        return None
+    m = re.search(r"\|\s*jp_sets\s*=\s*\n(.*?)(?:\n\|\s*[a-z_]+\s*=|\Z)", wikitext, re.S)
+    if m:
+        first = m.group(1).strip().splitlines()[0]
+        code = first.split(";")[0].strip()
+        matches = [f for f in jp_files if f"-{code}-" in f]
+        if matches:
+            return matches[0]
+    return jp_files[0]
+
+
+def resolve_file_url(filename):
+    try:
+        data = safe_request(YUGIPEDIA_API, params={
+            "action": "query",
+            "titles": f"File:{filename}",
+            "prop": "imageinfo",
+            "iiprop": "url",
+            "format": "json",
+            "formatversion": "2",
+        })
+        for page in data.get("query", {}).get("pages", []):
+            infos = page.get("imageinfo") or []
+            if infos:
+                return infos[0].get("url")
+    except Exception as e:
+        print(f"FILEURL_FAIL {filename}: {e}")
+    return None
+
+
+def download_binary(url, dest):
+    if dest.exists():
+        return True
+    try:
+        req = Request(url, headers={"User-Agent": USER_AGENT})
+        with urlopen(req, timeout=30) as resp:
+            data = resp.read()
+        dest.write_bytes(data)
+        return True
+    except Exception as e:
+        print(f"IMG_DL_FAIL {dest.name}: {e}")
+        return False
+
+
+def complete_japanese_assets(theme, now):
+    """日本語名の欠落補完と、日本語OCGカード画像への差し替えを行う。"""
+    updated_names = 0
+    updated_images = 0
+
+    for card in theme.get("cards", []):
+        if not isinstance(card, dict) or not card.get("name"):
+            continue
+
+        name = card["name"]
+        need_name = not card.get("japanese_name")
+        need_jp_image = not (card.get("image_path") or "").endswith("_jp.png")
+
+        if not need_name and not need_jp_image:
+            continue
+
+        wikitext = fetch_card_wikitext(name)
+        if not wikitext:
+            time.sleep(0.6)
+            continue
+
+        if need_name:
+            jp = get_ja_name_from_wikitext(wikitext)
+            if jp:
+                card["japanese_name"] = jp
+                updated_names += 1
+                print(f"JP_NAME {name} -> {jp}")
+            else:
+                print(f"JP_NAME_NOT_FOUND {name}")
+
+        if need_jp_image and card.get("card_id"):
+            filename = get_jp_card_file(wikitext, name)
+            if filename:
+                file_url = resolve_file_url(filename)
+                if file_url:
+                    ext = ".png" if filename.endswith(".png") else ".jpg"
+                    dest = ASSETS_DIR / f"{card['card_id']}_jp{ext}"
+                    if download_binary(file_url, dest) and dest.stat().st_size > 1024:
+                        card["image_path"] = f"assets/cards/{card['card_id']}_jp{ext}"
+                        updated_images += 1
+                        print(f"JP_IMG {name} -> {dest.name}")
+            else:
+                print(f"JP_IMG_NOT_FOUND {name}")
+
+        time.sleep(0.6)
+
+    return updated_names, updated_images
 
 def safe_request(url, params=None, timeout=30):
     query = f"?{urlencode(params)}" if params else ""
@@ -128,6 +295,72 @@ def get_japanese_name(card_name, card_id):
         pass
     return None
 
+def enrich_legacy_cards(theme, now):
+    """card_id/image_path の無い既存カード行を YGOPRODeck で補完する。"""
+    enriched = 0
+    for card in theme.get("cards", []):
+        if not isinstance(card, dict):
+            continue
+        if card.get("card_id") and card.get("image_path") and card.get("type"):
+            continue
+
+        name = card.get("name")
+        if not name:
+            continue
+
+        try:
+            data = safe_request(YGOPRO_API, params={"name": name})
+            matches = data.get("data", []) if isinstance(data, dict) else []
+        except Exception as e:
+            print(f"ENRICH_FAIL name={name}: {e}")
+            time.sleep(1.0)
+            continue
+
+        if not matches:
+            print(f"ENRICH_NOT_FOUND name={name}")
+            time.sleep(0.5)
+            continue
+
+        target = matches[0]
+        detail = normalize_card(target) or {}
+        card_id = detail.get("card_id")
+        if not card_id:
+            continue
+
+        card["card_id"] = card_id
+        for key in ("type", "attribute", "race", "level", "atk", "def"):
+            if detail.get(key) is not None:
+                card[key] = detail[key]
+        if not card.get("ygoprodeck_url"):
+            card["ygoprodeck_url"] = detail.get("ygoprodeck_url")
+
+        dest = ASSETS_DIR / f"{card_id}.jpg"
+        image_url = (target.get("card_images") or [{}])[0].get("image_url")
+        download_image(image_url, dest)
+        if dest.exists():
+            card["image_path"] = f"assets/cards/{card_id}.jpg"
+        else:
+            card["image_path"] = None
+
+        if not card.get("japanese_name") or len(card.get("japanese_name", "")) < 4:
+            jp_api = (target.get("misc") or {}).get("jp_name")
+            if jp_api:
+                card["japanese_name"] = jp_api
+            else:
+                jp = get_japanese_name(name, card_id)
+                if jp:
+                    card["japanese_name"] = jp
+
+        if not card.get("first_seen_at"):
+            card["first_seen_at"] = now
+
+        enriched += 1
+        print(f"ENRICHED name={name} card_id={card_id}")
+        time.sleep(0.5)
+
+    return enriched
+
+
 def main():
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     try:
@@ -179,8 +412,15 @@ def main():
     blue_eyes["cards"] = existing_cards + new_cards
     blue_eyes["changes"].extend(changes)
 
+    enriched = enrich_legacy_cards(blue_eyes, now)
+    jp_names, jp_images = complete_japanese_assets(blue_eyes, now)
+
     save_json(BLUE_EYES_FILE, blue_eyes)
-    print(f"added={len(new_cards)} total_cards={len(blue_eyes['cards'])}")
+    print(
+        f"added={len(new_cards)} enriched={enriched} "
+        f"jp_names={jp_names} jp_images={jp_images} "
+        f"total_cards={len(blue_eyes['cards'])}"
+    )
     return 0
 
 
