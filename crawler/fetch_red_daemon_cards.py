@@ -50,6 +50,30 @@ RED_DAEMON_CARD_IDS = [
     99585850,  # Red Supernova Dragon
     97489701,  # Red Nova Dragon
     21142671,  # Red Nova
+    # --- クリムゾン・パワーフォース以降の新規カード（2026環境のチェーン・デーモン） ---
+    19434243,  # Power Vice Dragon
+    83445539,  # Darkness Resonator
+    98396890,  # Vision Resonator
+    77360173,  # Synkron Resonator
+    13764881,  # Chain Resonator (classic)
+    25784595,  # Bone Archfiend
+    56838842,  # Fiend Piece Golem
+    32731036,  # The Bystial Lubellion
+    33854624,  # Bystial Magnamhut
+    70088809,  # Fydraulis Harmonia (調和ノ天救竜)
+    50056656,  # Red Zone (スカーレッド・ゾーン)
+    40366667,  # Dominus Impulse (霊王の波動)
+    17269895,  # King's Resonance (覇者の鳴動)
+    92936364,  # Red Dragon Archfiend's Chains (レッド・デーモンズ・チェーン)
+    # --- EX 新規 ---
+    30698243,  # Red Hypernova Dragon
+    65541655,  # Red Nova Dragon - Burning Soul
+    29053656,  # Crimson Dragon Quetzalcoatl (赤き竜 ケッツァーコアトル)
+    94641726,  # Storm-Bane Dragon Destorbim (嵐忌竜デストゥビム)
+    27572350,  # Bystial Dis Pater (深淺の神獣ディス・パテル)
+    67809530,  # The Crimson King (紅蓮の王者)
+    4891376,   # Zalen the Shackled Dragon (鎖縛竜ザレン)
+    3294539,   # Crimson Blade Dragon (クリムゾン・ブレード・ドラゴン)
 ]
 
 

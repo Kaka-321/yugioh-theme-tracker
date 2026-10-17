@@ -13,6 +13,12 @@
     "Blazing Dominion"
   ],
   "image": "https://yugipedia.com/wiki/File:ConExclusive-RedDragonArchfiends.png",
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Red Dragon Archfiend",
+    "url": "https://yugipedia.com/wiki/Red_Dragon_Archfiend"
+  },
+  "source_mode": "api-metadata-and-manual",
   "cards": [
     {
       "card_id": 34761841,
@@ -26,7 +32,7 @@
       "def": 300,
       "image_path": "assets/cards/34761841_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Crimson-Resonator-34761841/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 62991792,
@@ -40,7 +46,7 @@
       "def": 200,
       "image_path": "assets/cards/62991792_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Soul-Resonator-62991792/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 40975574,
@@ -54,7 +60,7 @@
       "def": 200,
       "image_path": "assets/cards/40975574_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Resonator-40975574/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 97021916,
@@ -68,7 +74,7 @@
       "def": 300,
       "image_path": "assets/cards/97021916_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Dark-Resonator-97021916/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 14886469,
@@ -82,7 +88,7 @@
       "def": 1200,
       "image_path": "assets/cards/14886469_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Sprinter-14886469/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 72318602,
@@ -96,7 +102,7 @@
       "def": 2000,
       "image_path": "assets/cards/72318602_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Gardna-72318602/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 45313993,
@@ -110,7 +116,7 @@
       "def": 2200,
       "image_path": "assets/cards/45313993_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Warg-45313993/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 23008320,
@@ -124,7 +130,7 @@
       "def": null,
       "image_path": "assets/cards/23008320_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Resonator-Call-23008320/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 8559524,
@@ -138,7 +144,7 @@
       "def": null,
       "image_path": "assets/cards/8559524_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Resonator-Command-8559524/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 98173209,
@@ -152,7 +158,7 @@
       "def": null,
       "image_path": "assets/cards/98173209_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Crimson-Gaia-98173209/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 99398682,
@@ -166,7 +172,7 @@
       "def": null,
       "image_path": "assets/cards/99398682_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Crimson-Call-99398682/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 66141736,
@@ -180,7 +186,7 @@
       "def": 1600,
       "image_path": "assets/cards/66141736_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Rising-Dragon-66141736/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 76547525,
@@ -194,7 +200,7 @@
       "def": 2000,
       "image_path": "assets/cards/76547525_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Wyvern-76547525/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 70902743,
@@ -208,7 +214,7 @@
       "def": 2000,
       "image_path": "assets/cards/70902743_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Dragon-Archfiend-70902743/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 87451661,
@@ -222,7 +228,7 @@
       "def": 2500,
       "image_path": "assets/cards/87451661_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Scarred-Dragon-Archfiend-87451661/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 39765958,
@@ -236,7 +242,7 @@
       "def": 2000,
       "image_path": "assets/cards/39765958_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Hot-Red-Dragon-Archfiend-39765958/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 80666118,
@@ -250,7 +256,7 @@
       "def": 2500,
       "image_path": "assets/cards/80666118_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Scarlight-Red-Dragon-Archfiend-80666118/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 9753964,
@@ -264,7 +270,7 @@
       "def": 2500,
       "image_path": "assets/cards/9753964_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Hot-Red-Dragon-Archfiend-Abyss-9753964/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 36857073,
@@ -278,7 +284,7 @@
       "def": 3000,
       "image_path": "assets/cards/36857073_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Hot-Red-Dragon-Archfiend-Bane-36857073/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 62242678,
@@ -292,7 +298,7 @@
       "def": 3500,
       "image_path": "assets/cards/62242678_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Hot-Red-Dragon-Archfiend-King-Calamity-62242678/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 16172067,
@@ -306,7 +312,7 @@
       "def": 3000,
       "image_path": "assets/cards/16172067_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Tyrant-Red-Dragon-Archfiend-16172067/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 99585850,
@@ -320,7 +326,7 @@
       "def": 3000,
       "image_path": "assets/cards/99585850_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Supernova-Dragon-99585850/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 97489701,
@@ -334,7 +340,7 @@
       "def": 3000,
       "image_path": "assets/cards/97489701_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Nova-Dragon-97489701/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 21142671,
@@ -348,135 +354,547 @@
       "def": 0,
       "image_path": "assets/cards/21142671_jp.png",
       "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Nova-21142671/",
-      "first_seen_at": "2026-10-17T13:56:36.240048Z"
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 19434243,
+      "name": "Power Vice Dragon",
+      "japanese_name": "パワー・バイス・ドラゴン",
+      "type": "Effect Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 5,
+      "atk": 2000,
+      "def": 2400,
+      "image_path": "assets/cards/19434243_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Power-Vice-Dragon-19434243/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 83445539,
+      "name": "Darkness Resonator",
+      "japanese_name": "ダークネス・リゾネーター",
+      "type": "Tuner Monster",
+      "attribute": "DARK",
+      "race": "Fiend",
+      "level": 3,
+      "atk": 1300,
+      "def": 300,
+      "image_path": "assets/cards/83445539_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Darkness-Resonator-83445539/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 98396890,
+      "name": "Vision Resonator",
+      "japanese_name": "ヴィジョン・リゾネーター",
+      "type": "Tuner Monster",
+      "attribute": "DARK",
+      "race": "Fiend",
+      "level": 2,
+      "atk": 400,
+      "def": 400,
+      "image_path": "assets/cards/98396890_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Vision-Resonator-98396890/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 77360173,
+      "name": "Synkron Resonator",
+      "japanese_name": "シンクローン・リゾネーター",
+      "type": "Tuner Monster",
+      "attribute": "DARK",
+      "race": "Fiend",
+      "level": 1,
+      "atk": 100,
+      "def": 100,
+      "image_path": "assets/cards/77360173_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Synkron-Resonator-77360173/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 13764881,
+      "name": "Chain Resonator",
+      "japanese_name": "チェーン・リゾネーター",
+      "type": "Tuner Monster",
+      "attribute": "LIGHT",
+      "race": "Fiend",
+      "level": 1,
+      "atk": 100,
+      "def": 100,
+      "image_path": "assets/cards/13764881_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Chain-Resonator-13764881/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 25784595,
+      "name": "Bone Archfiend",
+      "japanese_name": "ボーン・デーモン",
+      "type": "Effect Monster",
+      "attribute": "DARK",
+      "race": "Fiend",
+      "level": 4,
+      "atk": 1800,
+      "def": 0,
+      "image_path": "assets/cards/25784595_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Bone-Archfiend-25784595/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 56838842,
+      "name": "Fiend Piece Golem",
+      "japanese_name": "デモン・ピース・ゴーレム",
+      "type": "Effect Monster",
+      "attribute": "DARK",
+      "race": "Fiend",
+      "level": 5,
+      "atk": 2100,
+      "def": 0,
+      "image_path": "assets/cards/56838842_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Fiend-Piece-Golem-56838842/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 32731036,
+      "name": "The Bystial Lubellion",
+      "japanese_name": "深淵の獣ルベリオン",
+      "type": "Effect Monster",
+      "attribute": "LIGHT",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 2500,
+      "def": 3000,
+      "image_path": "assets/cards/32731036_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/The-Bystial-Lubellion-32731036/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 33854624,
+      "name": "Bystial Magnamhut",
+      "japanese_name": "深淵の獣マグナムート",
+      "type": "Effect Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 6,
+      "atk": 2500,
+      "def": 2000,
+      "image_path": "assets/cards/33854624_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Bystial-Magnamhut-33854624/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 70088809,
+      "name": "Fydraulis Harmonia",
+      "japanese_name": "調和ノ天救竜",
+      "type": "Tuner Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 7,
+      "atk": 2500,
+      "def": 2000,
+      "image_path": "assets/cards/70088809_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Fydraulis-Harmonia-70088809/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 50056656,
+      "name": "Red Zone",
+      "japanese_name": "スカーレッド・ゾーン",
+      "type": "Trap Card",
+      "attribute": null,
+      "race": "Continuous",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/50056656_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Zone-50056656/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 40366667,
+      "name": "Dominus Impulse",
+      "japanese_name": "霊王の波動",
+      "type": "Trap Card",
+      "attribute": null,
+      "race": "Normal",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/40366667_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Dominus-Impulse-40366667/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 17269895,
+      "name": "King's Resonance",
+      "japanese_name": "覇者の鳴動",
+      "type": "Trap Card",
+      "attribute": null,
+      "race": "Normal",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/17269895_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/King's-Resonance-17269895/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 92936364,
+      "name": "Red Dragon Archfiend's Chains",
+      "japanese_name": "レッド・デーモンズ・チェーン",
+      "type": "Trap Card",
+      "attribute": null,
+      "race": "Continuous",
+      "level": null,
+      "atk": null,
+      "def": null,
+      "image_path": "assets/cards/92936364_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Dragon-Archfiend's-Chains-92936364/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 30698243,
+      "name": "Red Hypernova Dragon",
+      "japanese_name": "スカーレッド・ハイパーノヴァ・ドラゴン",
+      "type": "Synchro Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 4500,
+      "def": 3000,
+      "image_path": "assets/cards/30698243_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Hypernova-Dragon-30698243/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 65541655,
+      "name": "Red Nova Dragon - Burning Soul",
+      "japanese_name": "スカーレッド・ノヴァ・ドラゴン－バーニング・ソウル",
+      "type": "Synchro Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 3500,
+      "def": 3000,
+      "image_path": "assets/cards/65541655_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Red-Nova-Dragon---Burning-Soul-65541655/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 29053656,
+      "name": "Crimson Dragon Quetzalcoatl",
+      "japanese_name": "赤き竜 ケッツァーコアトル",
+      "type": "Synchro Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 12,
+      "atk": 0,
+      "def": 0,
+      "image_path": "assets/cards/29053656_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Crimson-Dragon-Quetzalcoatl-29053656/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 94641726,
+      "name": "Storm-Bane Dragon Destorbim",
+      "japanese_name": "嵐忌竜デストゥビム",
+      "type": "Synchro Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 11,
+      "atk": 3000,
+      "def": 2800,
+      "image_path": "assets/cards/94641726_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Storm-Bane-Dragon-Destorbim-94641726/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 27572350,
+      "name": "Bystial Dis Pater",
+      "japanese_name": "深淵の神獣ディス・パテル",
+      "type": "Synchro Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 10,
+      "atk": 3500,
+      "def": 3500,
+      "image_path": "assets/cards/27572350_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Bystial-Dis-Pater-27572350/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 67809530,
+      "name": "The Crimson King",
+      "japanese_name": "紅蓮の王者",
+      "type": "Synchro Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 8,
+      "atk": 3000,
+      "def": 2500,
+      "image_path": "assets/cards/67809530_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/The-Crimson-King-67809530/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 4891376,
+      "name": "Zalen the Shackled Dragon",
+      "japanese_name": "鎖縛竜ザレン",
+      "type": "Synchro Tuner Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 7,
+      "atk": 2800,
+      "def": 2100,
+      "image_path": "assets/cards/4891376_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Zalen-the-Shackled-Dragon-4891376/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 3294539,
+      "name": "Crimson Blade Dragon",
+      "japanese_name": "クリムゾン・ブレード・ドラゴン",
+      "type": "Synchro Monster",
+      "attribute": "DARK",
+      "race": "Dragon",
+      "level": 7,
+      "atk": 2400,
+      "def": 2600,
+      "image_path": "assets/cards/3294539_jp.png",
+      "ygoprodeck_url": "https://ygoprodeck.com/card/Crimson-Blade-Dragon-3294539/",
+      "first_seen_at": "2026-10-17T16:23:19.918713Z"
     }
   ],
   "changes": [
     {
       "card_id": 34761841,
       "name": "Crimson Resonator",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 62991792,
       "name": "Soul Resonator",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 40975574,
       "name": "Red Resonator",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 97021916,
       "name": "Dark Resonator",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 14886469,
       "name": "Red Sprinter",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 72318602,
       "name": "Red Gardna",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 45313993,
       "name": "Red Warg",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 23008320,
       "name": "Resonator Call",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 8559524,
       "name": "Resonator Command",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 98173209,
       "name": "Crimson Gaia",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 99398682,
       "name": "Crimson Call",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 66141736,
       "name": "Red Rising Dragon",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 76547525,
       "name": "Red Wyvern",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 70902743,
       "name": "Red Dragon Archfiend",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 87451661,
       "name": "Scarred Dragon Archfiend",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 39765958,
       "name": "Hot Red Dragon Archfiend",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 80666118,
       "name": "Scarlight Red Dragon Archfiend",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 9753964,
       "name": "Hot Red Dragon Archfiend Abyss",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 36857073,
       "name": "Hot Red Dragon Archfiend Bane",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 62242678,
       "name": "Hot Red Dragon Archfiend King Calamity",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 16172067,
       "name": "Tyrant Red Dragon Archfiend",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 99585850,
       "name": "Red Supernova Dragon",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 97489701,
       "name": "Red Nova Dragon",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
     },
     {
       "card_id": 21142671,
       "name": "Red Nova",
-      "added_at": "2026-10-17T13:56:36.240048Z"
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 19434243,
+      "name": "Power Vice Dragon",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 83445539,
+      "name": "Darkness Resonator",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 98396890,
+      "name": "Vision Resonator",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 77360173,
+      "name": "Synkron Resonator",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 13764881,
+      "name": "Chain Resonator",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 25784595,
+      "name": "Bone Archfiend",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 56838842,
+      "name": "Fiend Piece Golem",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 32731036,
+      "name": "The Bystial Lubellion",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 33854624,
+      "name": "Bystial Magnamhut",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 70088809,
+      "name": "Fydraulis Harmonia",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 50056656,
+      "name": "Red Zone",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 40366667,
+      "name": "Dominus Impulse",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 17269895,
+      "name": "King's Resonance",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 92936364,
+      "name": "Red Dragon Archfiend's Chains",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 30698243,
+      "name": "Red Hypernova Dragon",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 65541655,
+      "name": "Red Nova Dragon - Burning Soul",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 29053656,
+      "name": "Crimson Dragon Quetzalcoatl",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 94641726,
+      "name": "Storm-Bane Dragon Destorbim",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 27572350,
+      "name": "Bystial Dis Pater",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 67809530,
+      "name": "The Crimson King",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 4891376,
+      "name": "Zalen the Shackled Dragon",
+      "added_at": "2026-10-17T16:23:19.918713Z"
+    },
+    {
+      "card_id": 3294539,
+      "name": "Crimson Blade Dragon",
+      "added_at": "2026-10-17T16:23:19.918713Z"
     }
-  ],
-  "source": {
-    "provider": "Yugipedia",
-    "title": "Red Dragon Archfiend",
-    "url": "https://yugipedia.com/wiki/Red_Dragon_Archfiend"
-  },
-  "source_mode": "api-metadata-and-manual"
+  ]
 }

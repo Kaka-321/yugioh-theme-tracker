@@ -52,5 +52,23 @@
     "jp": "ドロール＆ロックバード",
     "slug": "droll-lock-bird",
     "image_path": "assets/cards/external/droll-lock-bird_jp.png"
+  },
+  "Foolish Burial": {
+    "en": "Foolish Burial",
+    "jp": "おろかな埋葬",
+    "slug": "foolish-burial",
+    "image_path": "assets/cards/external/foolish-burial_jp.png"
+  },
+  "Skull Meister": {
+    "en": "Skull Meister",
+    "jp": "スカル・マイスター",
+    "slug": "skull-meister",
+    "image_path": "assets/cards/external/skull-meister_jp.png"
+  },
+  "Ghost Belle & Haunted Mansion": {
+    "en": "Ghost Belle & Haunted Mansion",
+    "jp": "屋敷わらし",
+    "slug": "ghost-belle-haunted-mansion",
+    "image_path": "assets/cards/external/ghost-belle-haunted-mansion_jp.png"
   }
 }
