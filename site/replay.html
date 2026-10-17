@@ -38,7 +38,7 @@
 
     .board-grid { display: flex; justify-content: center; align-items: stretch; gap: 12px; }
     .bcol { display: flex; flex-direction: column; gap: 8px; }
-    .bcol.left { width: 150px; flex: 0 0 150px; justify-content: flex-start; }
+    .bcol.left { width: 64px; flex: 0 0 64px; justify-content: center; }
     .bcol.right { width: 92px; flex: 0 0 92px; }
     .bcol.center { flex: 0 1 auto; }
 
@@ -58,7 +58,7 @@
     .tallbox.deckchip { border-color: #d8c48e; background: rgba(250, 246, 228, .9); align-self: center; }
     .tallbox.extrabox { border-color: #a8b4dc; background: rgba(236, 239, 251, .8); }
     .tallbox-name { font-size: 11px; font-weight: bold; color: #556; margin-bottom: 6px; }
-    .preview-box { flex: 1 1 0; min-height: 340px; border: 2px solid #cdb96e; background: #fbf7ea; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; }
+    .preview-box { flex: 1 1 0; min-height: 420px; border: 2px solid #cdb96e; background: #fbf7ea; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; }
     .preview-title { font-size: 11px; font-weight: bold; color: #7a6a3a; }
     .preview-img { width: 100%; border-radius: 6px; border: 1px solid #c9b98d; }
     .preview-name { font-size: 12px; font-weight: bold; color: #334; }
@@ -98,7 +98,9 @@
 
     /* ===== 外枠レイアウト ===== */
     .centered { max-width: 1060px; margin-left: auto; margin-right: auto; }
-    .replay-layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; justify-content: center; max-width: 1280px; margin: 0 auto; }
+    .replay-layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; justify-content: center; max-width: 1680px; margin: 0 auto; }
+    .preview-aside { flex: 0 0 250px; position: sticky; top: 8px; display: flex; flex-direction: column; max-height: calc(100vh - 16px); }
+    .preview-aside .preview-box { flex: 1 1 0; }
     .replay-main { flex: 1 1 760px; min-width: 0; }
     .replay-side { flex: 0 0 320px; display: flex; flex-direction: column; gap: 12px; position: sticky; top: 8px; max-height: calc(100vh - 16px); overflow-y: auto; }
     #step-panel { min-height: 300px; }
@@ -148,6 +150,7 @@
   </header>
 
   <main class="replay-layout">
+    <aside class="preview-aside" id="preview-aside"></aside>
     <section class="replay-main centered">
       <div id="toolbar"></div>
 
@@ -184,6 +187,7 @@
     const SPEED_MS = { "0.5x": 3000, "1x": 1500, "2x": 800, "3x": 400 };
 
     const toolbarDiv = document.getElementById("toolbar");
+    const previewAside = document.getElementById("preview-aside");
     const boardDiv = document.getElementById("board");
     const deckPanelDiv = document.getElementById("deck-panel");
     const sidePanelDiv = document.getElementById("side-panel");
@@ -666,8 +670,14 @@
     }
 
     // ===== 描画 =====
+    function renderPreview() {
+      previewAside.replaceChildren();
+      previewAside.appendChild(renderPreviewBox());
+    }
+
     function renderAll() {
       renderHeader();
+      renderPreview();
       renderModeTabs();
       if (mode === "manual") {
         renderManualToolbar();
@@ -849,7 +859,6 @@
       }
       deckBox.appendChild(deckStack);
       left.appendChild(deckBox);
-      left.appendChild(renderPreviewBox());
 
       // 中央: 相手ゾーン → モンスター → 魔法・罠 → 手札
       const center = el("div", "bcol center");
