@@ -332,14 +332,23 @@
       return out;
     }
 
-    function drawHand(nn) {
-      const deck = [];
-      for (const e of (deckData.deck.main || [])) {
-        for (let i = 0; i < (e.count || 0); i++) deck.push(e);
+    function buildPiles() {
+      const piles = { main: [], extra: [], side: [] };
+      for (const bag of ["main", "extra", "side"]) {
+        for (const e of (deckData.deck[bag] || [])) {
+          for (let i = 0; i < (e.count || 0); i++) {
+            piles[bag].push(Object.assign({ _bag: bag }, e));
+          }
+        }
       }
+      return piles;
+    }
+
+    function drawHand(nn) {
+      if (!manual || !manual.piles) return [];
       const hand = [];
-      for (let i = 0; i < nn && deck.length; i++) {
-        hand.push(Object.assign({}, deck.splice(Math.floor(Math.random() * deck.length), 1)[0]));
+      for (let i = 0; i < nn && manual.piles.main.length; i++) {
+        hand.push(manual.piles.main.splice(Math.floor(Math.random() * manual.piles.main.length), 1)[0]);
       }
       return hand;
     }
@@ -348,6 +357,7 @@
       stopPlay();
       mode = "manual";
       manual = deepBoard(null);
+      manual.piles = buildPiles();
       manual.hand = drawHand(5);
       renderAll();
     }
@@ -360,6 +370,7 @@
 
     function resetManual() {
       manual = blankManualBoard();
+      manual.piles = buildPiles();
       manual.hand = drawHand(5);
       renderAll();
     }
@@ -372,19 +383,24 @@
       if (!src) return;
       if (src.type === "slot") {
         manual[src.zone][src.index] = null;
-      } else {
+      } else if (src.type === "pile") {
+        const arr = manual.piles && manual.piles[src.bag];
+        if (arr && src.index >= 0 && src.index < arr.length) arr.splice(src.index, 1);
+      } else if (manual && manual[src.zone]) {
         const i = manual[src.zone].indexOf(src.ref);
         if (i !== -1) manual[src.zone].splice(i, 1);
       }
     }
 
-    function manualPlace(dstZone, dstIndex, payload) {
+    function manualPlace(dstZone, dstIndex, payload, dstBag) {
       const entry = payload.entry;
-      if (payload.src === "board" && payload.from &&
-          payload.from.zone === dstZone && payload.from.type === "slot" &&
-          payload.from.index === dstIndex) return;
-      manualRemove(payload.from);
-      if (dstZone === "monsters" || dstZone === "spells") {
+      const from = payload.from || null;
+      if (from && from.type === "slot" &&
+          from.zone === dstZone && from.index === dstIndex) return;
+      manualRemove(from);
+      if (dstZone === "deck") {
+        manual.piles[dstBag || "main"].push(entry);
+      } else if (dstZone === "monsters" || dstZone === "spells") {
         if (manual[dstZone][dstIndex]) manual.gy.push(manual[dstZone][dstIndex]);
         manual[dstZone][dstIndex] = entry;
       } else if (dstZone === "gy" || dstZone === "banish" || dstZone === "hand") {
@@ -393,7 +409,7 @@
     }
 
     function makePayload(entry, from) {
-      return { src: from ? "board" : "deck", entry: entry, from: from || null };
+      return { entry: entry, from: from || null };
     }
 
     function attachDrag(entry, from, imgEl, slotEl) {
@@ -418,13 +434,12 @@
           } else {
             manual.pending = payload;
           }
-          renderBoard();
-          renderDeckPanels();
+          renderAll();
         });
       }
     }
 
-    function attachDrop(targetEl, dstZone, dstIndex) {
+    function attachDrop(targetEl, dstZone, dstIndex, dstBag) {
       targetEl.addEventListener("dragover", function (ev) { ev.preventDefault(); targetEl.classList.add("drop-hint"); });
       targetEl.addEventListener("dragleave", function () { targetEl.classList.remove("drop-hint"); });
       targetEl.addEventListener("drop", function (ev) {
@@ -432,7 +447,7 @@
         targetEl.classList.remove("drop-hint");
         try {
           const payload = JSON.parse(ev.dataTransfer.getData("text/plain"));
-          manualPlace(dstZone, dstIndex, payload);
+          manualPlace(dstZone, dstIndex, payload, dstBag);
         } catch (e) { /* ignore */ }
         manual.pending = null;
         renderAll();
@@ -441,7 +456,7 @@
       targetEl.addEventListener("click", function (ev) {
         ev.stopPropagation();
         if (manual.pending) {
-          manualPlace(dstZone, dstIndex, manual.pending);
+          manualPlace(dstZone, dstIndex, manual.pending, dstBag);
           manual.pending = null;
           renderAll();
         }
@@ -467,8 +482,8 @@
         disPanel.style.display = "none";
         manualHelpDiv.style.display = "";
         manualHelpDiv.textContent =
-          "【手動操作モード】カードをドラッグ（またはタップ選択→移動先タップ）でゾーン間を移動できます。" +
-          "下のデッキ/EXデッキからカードを置けます。墓地に置いたカードは墓地ゾーンへ。";
+          "【手動操作モード】カードをドラッグ（またはタップ選択→移動先タップ）すると元の場所から移動します（コピーではありません）。" +
+          "下のデッキ/EXデッキ/サイドから置くと枚数が減り、デッキなどの山札に戻すこともできます。";
       } else {
         renderStepPanel();
         disPanel.style.display = "";
@@ -615,7 +630,9 @@
       // 左列: デッキ
       const left = el("div", "bcol left");
       const deckBox = el("div", "tallbox deckchip");
-      deckBox.appendChild(el("div", "tallbox-name", "デッキ (" + mainCount() + ")"));
+      const deckN = editing && manual.piles ? manual.piles.main.length : mainCount();
+      deckBox.appendChild(el("div", "tallbox-name", "デッキ (" + deckN + ")"));
+      if (editing) attachDrop(deckBox, "deck", null, "main");
       const deckStack = el("div", "stack");
       for (let i = 0; i < 3; i++) {
         const ghost = el("div", null);
@@ -692,31 +709,19 @@
     }
 
     // --- 手札/EX・デッキパネル ---
-    function deckEntry(entry, fromBag, dropEnabled, targetZone) {
+    function staticEntry(entry) {
       const slot = el("div", "deck-item");
       const img = safeImage(entry);
       if (img) slot.appendChild(img);
-      if (dropEnabled) {
-        const payload = { src: fromBag, entry: entry };
-        img.draggable = true;
-        img.addEventListener("dragstart", function (ev) {
-          ev.dataTransfer.setData("text/plain", JSON.stringify(payload));
-          ev.dataTransfer.effectAllowed = "move";
-        });
-        slot.addEventListener("click", function (ev) {
-          ev.stopPropagation();
-          if (manual.pending) {
-            // 既に選択中なら保持
-          } else {
-            const p = makePayload(entry, null);
-            p.src = fromBag;
-            manual.pending = p;
-            slotEl_hilite();
-          }
-          renderBoard();
-        });
-        function slotEl_hilite() { slot.classList.add("selected"); }
-      }
+      return slot;
+    }
+
+    function pileCard(entry, from) {
+      const slot = el("div", "deck-item");
+      const img = safeImage(entry);
+      if (img) slot.appendChild(img);
+      if (manual.pending && manual.pending.entry === entry) slot.classList.add("selected");
+      attachDrag(entry, from, img, slot);
       return slot;
     }
 
@@ -728,39 +733,70 @@
       const handBox = el("div", "strip-box hand");
       handBox.appendChild(el("div", "strip-title", "手札 (" + (b.hand || []).length + ")"));
       const handStrip = el("div", "card-strip");
-      for (const entry of (b.hand || [])) handStrip.appendChild(deckEntry(entry, "board", editing, "hand"));
+      if (editing) attachDrop(handStrip, "hand", null, null);
+      (b.hand || []).forEach(function (entry) {
+        handStrip.appendChild(editing ? pileCard(entry, { type: "list", zone: "hand", ref: entry }) : staticEntry(entry));
+      });
       if ((b.hand || []).length === 0) handStrip.appendChild(el("span", "empty-strip", "なし"));
       handBox.appendChild(handStrip);
       handExDiv.appendChild(handBox);
 
       const extraBox = el("div", "strip-box extra");
-      extraBox.appendChild(el("div", "strip-title", "エクストラデッキ (" + (deckData.deck.extra || []).reduce(function (x, e) { return x + e.count; }, 0) + ")"));
+      const exN = editing && manual.piles ? manual.piles.extra.length : (deckData.deck.extra || []).reduce(function (x, e) { return x + e.count; }, 0);
+      extraBox.appendChild(el("div", "strip-title", "エクストラデッキ (" + exN + ")"));
       const exStrip = el("div", "card-strip");
-      for (const entry of (deckData.deck.extra || [])) {
-        for (let i = 0; i < entry.count; i++) exStrip.appendChild(deckEntry(entry, "extra", editing, null));
+      if (editing) attachDrop(exStrip, "deck", null, "extra");
+      if (editing && manual.piles) {
+        manual.piles.extra.forEach(function (entry, i) {
+          exStrip.appendChild(pileCard(entry, { type: "pile", bag: "extra", index: i }));
+        });
+        if (manual.piles.extra.length === 0) exStrip.appendChild(el("span", "empty-strip", "なし"));
+      } else {
+        for (const entry of (deckData.deck.extra || [])) {
+          for (let i = 0; i < entry.count; i++) exStrip.appendChild(staticEntry(entry));
+        }
       }
       extraBox.appendChild(exStrip);
       handExDiv.appendChild(extraBox);
     }
 
     function renderDeckPanels() {
+      const editing = mode === "manual";
       deckPanelDiv.replaceChildren();
-      deckPanelDiv.appendChild(el("div", "strip-title", "デッキ (" + mainCount() + ")"));
+      const mainN = editing && manual.piles ? manual.piles.main.length : mainCount();
+      deckPanelDiv.appendChild(el("div", "strip-title", "デッキ (" + mainN + ")"));
       const strip = el("div", "deck-strip");
-      for (const entry of (deckData.deck.main || [])) {
-        for (let i = 0; i < entry.count; i++) strip.appendChild(deckEntry(entry, "deck", mode === "manual", null));
+      if (editing) attachDrop(strip, "deck", null, "main");
+      if (editing && manual.piles) {
+        manual.piles.main.forEach(function (entry, i) {
+          strip.appendChild(pileCard(entry, { type: "pile", bag: "main", index: i }));
+        });
+        if (manual.piles.main.length === 0) strip.appendChild(el("span", "empty-strip", "なし"));
+      } else {
+        for (const entry of (deckData.deck.main || [])) {
+          for (let i = 0; i < entry.count; i++) strip.appendChild(staticEntry(entry));
+        }
       }
       deckPanelDiv.appendChild(strip);
 
       sidePanelDiv.replaceChildren();
-      const side = deckData.deck.side || [];
-      sidePanelDiv.appendChild(el("div", "strip-title", "サイドデッキ (" + side.reduce(function (x, e) { return x + e.count; }, 0) + ")"));
+      const sideN = editing && manual.piles ? manual.piles.side.length : (deckData.deck.side || []).reduce(function (x, e) { return x + e.count; }, 0);
+      sidePanelDiv.appendChild(el("div", "strip-title", "サイドデッキ (" + sideN + ")"));
       const sideStrip = el("div", "deck-strip");
-      if (side.length === 0) {
-        sideStrip.appendChild(el("span", "empty-strip", "サイドは未設定"));
+      if (editing) attachDrop(sideStrip, "deck", null, "side");
+      if (editing && manual.piles) {
+        manual.piles.side.forEach(function (entry, i) {
+          sideStrip.appendChild(pileCard(entry, { type: "pile", bag: "side", index: i }));
+        });
+        if (manual.piles.side.length === 0) sideStrip.appendChild(el("span", "empty-strip", "なし"));
       } else {
-        for (const entry of side) {
-          for (let i = 0; i < entry.count; i++) sideStrip.appendChild(deckEntry(entry, "side", false, null));
+        const side = deckData.deck.side || [];
+        if (side.length === 0) {
+          sideStrip.appendChild(el("span", "empty-strip", "サイドは未設定"));
+        } else {
+          for (const entry of side) {
+            for (let i = 0; i < entry.count; i++) sideStrip.appendChild(staticEntry(entry));
+          }
         }
       }
       sidePanelDiv.appendChild(sideStrip);
@@ -1006,12 +1042,16 @@
     function renderManualSide() {
       stepPanel.replaceChildren();
       stepPanel.appendChild(el("h3", null, "手動操作"));
+      const pl = manual.piles || { main: [], extra: [], side: [] };
       stepPanel.appendChild(el("div", "step-note",
-        "現在の盤面: モンスター " + (manual.monsters.filter(Boolean).length) +
+        "盤面: モンスター " + (manual.monsters.filter(Boolean).length) +
         " / 魔法罠 " + (manual.spells.filter(Boolean).length) +
         " / 手札 " + manual.hand.length +
         " / 墓地 " + manual.gy.length +
-        " / 除外 " + manual.banish.length));
+        " / 除外 " + manual.banish.length +
+        " / デッキ " + pl.main.length +
+        " / EX " + pl.extra.length +
+        " / サイド " + pl.side.length));
 
       const nav = el("div", "nav");
       const resetBtn = el("button", "btn small", "リセット");
