@@ -14,6 +14,11 @@
     .btn.small { padding: 4px 10px; font-size: 12px; }
     .btn:disabled { opacity: .45; cursor: default; }
 
+    /* ===== モードタブ ===== */
+    .mode-tabs { display: inline-flex; background: #f0f0f0; border-radius: 10px; padding: 3px; gap: 3px; }
+    .mode-tab { border: none; background: transparent; border-radius: 8px; padding: 7px 16px; font-size: 13px; cursor: pointer; color: #555; }
+    .mode-tab.active { background: #fff; color: #222; box-shadow: 0 1px 3px rgba(0,0,0,.15); font-weight: bold; }
+
     /* ===== トランスポートバー ===== */
     .toolbar { display: flex; align-items: center; gap: 10px; background: #fafafa; border: 1px solid #e2e2e2; border-radius: 10px; padding: 8px 12px; margin-bottom: 12px; flex-wrap: wrap; }
     .tbtn { width: 34px; height: 34px; border-radius: 8px; border: none; background: #eee; cursor: pointer; font-size: 14px; }
@@ -25,62 +30,72 @@
     .step-counter { font-size: 12px; color: #666; min-width: 56px; text-align: center; }
     input[type=range].seek { flex: 1 1 180px; accent-color: #2b7; }
 
-    /* ===== 盤面 ===== */
+    /* ===== 盤面（duel-simulator風のバランス配置） ===== */
     .board-wrap { background: #fbfbfb; border: 1px solid #e2e2e2; border-radius: 12px; padding: 14px; }
-    .board-grid { display: flex; gap: 10px; }
-    .bcol { display: flex; flex-direction: column; gap: 8px; }
-    .bcol.left { width: 64px; flex: 0 0 64px; }
-    .bcol.right { width: 92px; flex: 0 0 92px; }
-    .bcol.center { flex: 1 1 auto; min-width: 0; }
+    .board-inner { max-width: 1060px; margin: 0 auto; }
+    .opp-hand-strip { background: #f2f2f2; border: 1px dashed #c8c8c8; border-radius: 8px; padding: 8px; margin-bottom: 10px; min-height: 40px; }
+    .opp-hand-strip .strip-title { font-size: 11px; color: #889; }
 
-    .zone-row { display: grid; grid-template-columns: repeat(5, minmax(0, 84px)); gap: 7px; margin-bottom: 4px; justify-content: start; }
+    .board-grid { display: flex; justify-content: center; align-items: stretch; gap: 12px; }
+    .bcol { display: flex; flex-direction: column; gap: 8px; }
+    .bcol.left { width: 64px; flex: 0 0 64px; justify-content: center; }
+    .bcol.right { width: 92px; flex: 0 0 92px; }
+    .bcol.center { flex: 0 1 auto; }
+
+    .zone-row { display: grid; grid-template-columns: repeat(5, 84px); gap: 8px; justify-content: center; margin-bottom: 4px; }
+    .zone-row.opp { grid-template-columns: repeat(5, 58px); gap: 6px; margin-bottom: 2px; }
     .slot { aspect-ratio: 59 / 86; border: 2px dashed; border-radius: 6px; overflow: hidden; width: 100%; }
     .slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .slot.monster { border-color: #c0b7e8; background: rgba(238, 236, 250, .8); }
     .slot.spell { border-color: #a8d8b2; background: rgba(233, 248, 236, .8); }
-    .slot.oppmonster { border-color: #cfd0e2; background: rgba(240, 240, 248, .6); }
-    .zone-row.opp .slot { border-width: 1.5px; }
+    .slot.oppmonster { border-color: #cfd0e2; background: rgba(240, 240, 248, .6); border-width: 1.5px; }
     .slot.acting { border-style: solid; outline: 3px solid #17c; outline-offset: -3px; box-shadow: 0 0 10px rgba(23, 119, 204, .6); }
-    .zone-label { font-size: 10px; color: #788; margin: 2px 0 8px 2px; }
+    .zone-label { font-size: 10px; color: #788; margin: 2px 0 10px 2px; text-align: center; }
 
-    .tallbox { border: 2px dashed; border-radius: 8px; padding: 8px; flex: 1; display: flex; flex-direction: column; min-height: 0; }
-    .tallbox.gy { border-color: #e9b0b0; background: rgba(252, 238, 238, .8); }
+    .tallbox { border: 2px dashed; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; min-height: 0; }
+    .tallbox.gy { border-color: #e9b0b0; background: rgba(252, 238, 238, .8); flex: 1 1 0; }
     .tallbox.banish { border-color: #c8c8c8; background: rgba(240, 240, 240, .8); }
-    .tallbox.deckchip { flex: 0 0 auto; border-color: #d8c48e; background: rgba(250, 246, 228, .9); }
+    .tallbox.deckchip { border-color: #d8c48e; background: rgba(250, 246, 228, .9); align-self: center; }
     .tallbox.extrabox { border-color: #a8b4dc; background: rgba(236, 239, 251, .8); }
     .tallbox-name { font-size: 11px; font-weight: bold; color: #556; margin-bottom: 6px; }
-    .stack { display: flex; flex-direction: column; gap: 3px; align-items: center; overflow-y: auto; max-height: 240px; }
+    .stack { display: flex; flex-direction: column; gap: 3px; align-items: center; overflow-y: auto; max-height: 250px; }
     .stack img { width: 62%; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,.25); }
     .stack .empty, .empty-strip { font-size: 11px; color: #aab; padding: 8px 6px; }
 
+    .handrow, .dropzone { min-height: 40px; }
     .handrow { display: flex; flex-wrap: wrap; gap: 6px; }
-    .hand-slot { width: 46px; aspect-ratio: 59 / 86; border-radius: 5px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+    .hand-slot { width: 52px; aspect-ratio: 59 / 86; border-radius: 5px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
     .hand-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .hand-slot.acting { outline: 3px solid #17c; outline-offset: -3px; }
+    .slot.acting, .hand-slot.acting { outline: 3px solid #17c; outline-offset: -3px; }
+    .selected { outline: 3px solid #ff8800 !important; outline-offset: -3px; }
+    .drop-hint { outline: 3px dashed #17c !important; outline-offset: -3px; }
 
     /* ===== 手札/EX、デッキ、サイド ===== */
     .strip-row { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
     .strip-box { border: 1px solid #e2e2e2; background: #fff; border-radius: 10px; padding: 10px; }
     .strip-box.hand { flex: 0 0 280px; }
     .strip-box.extra { flex: 1 1 320px; }
-    .strip-box .strip-title { font-size: 12px; color: #556; margin-bottom: 8px; }
+    .strip-title { font-size: 12px; color: #556; margin-bottom: 8px; }
     .card-strip { display: flex; flex-wrap: wrap; gap: 4px; max-height: 150px; overflow-y: auto; }
     .card-strip img { width: 52px; border-radius: 3px; }
     .deck-panel { margin-top: 10px; border: 1px solid #e2e2e2; background: #fff; border-radius: 10px; padding: 10px; }
-    .deck-panel .strip-title { font-size: 12px; color: #556; margin-bottom: 8px; }
     .deck-strip { display: flex; flex-wrap: wrap; gap: 4px; }
     .deck-strip img { width: 66px; border-radius: 3px; }
+    .deck-item { border-radius: 4px; }
+    .manual-help { background: #eef7ff; border: 1px solid #b9d4f2; border-radius: 8px; padding: 10px; font-size: 12px; color: #345; margin-top: 10px; }
 
-    /* ===== 右サイド ===== */
+    /* ===== 外枠レイアウト ===== */
+    .centered { max-width: 1060px; margin-left: auto; margin-right: auto; }
     .replay-layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
     .replay-main { flex: 1 1 760px; min-width: 0; }
     .replay-side { flex: 0 0 320px; display: flex; flex-direction: column; gap: 12px; position: sticky; top: 8px; max-height: calc(100vh - 16px); overflow-y: auto; }
-    #step-panel { min-height: 430px; }
+    #step-panel { min-height: 300px; }
     .panel { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
     .note { font-size: 12px; color: #667; margin-top: 8px; }
     .act-chip { display: inline-block; background: #eef; border: 1px solid #ccd; border-radius: 4px; font-size: 11px; color: #446; padding: 2px 8px; margin: 6px 0; }
-    .step-image { width: 150px; height: auto; border-radius: 6px; }
+    .step-image { width: 130px; height: auto; border-radius: 6px; }
     .step-note { font-size: 13px; margin-top: 6px; }
+    .progress { font-size: 12px; color: #556; }
     .nav { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
     .crumb { font-size: 11px; background: #fff8e1; border: 1px solid #eec444; padding: 3px 8px; border-radius: 6px; margin-right: 6px; display: inline-block; }
     .history { margin-top: 10px; border-top: 1px dashed #ddd; padding-top: 6px; max-height: 150px; overflow-y: auto; }
@@ -102,30 +117,29 @@
 <body>
   <header class="replay-header">
     <a class="btn secondary small" href="index.html">← 一覧へ戻る</a>
+    <div class="mode-tabs" id="mode-tabs"></div>
     <h1 id="replay-title">展開リプレイ</h1>
     <div id="replay-crumb"></div>
   </header>
 
   <main class="replay-layout">
-    <section class="replay-main">
-      <!-- トランスポートバー -->
-      <div class="toolbar" id="toolbar"></div>
+    <section class="replay-main centered">
+      <div id="toolbar"></div>
 
-      <!-- 盤面 -->
       <div class="board-wrap">
-        <div id="board"></div>
+        <div id="board" class="board-inner"></div>
         <div id="board-note" class="note"></div>
       </div>
 
-      <!-- 手札 / EXデッキ -->
       <div class="strip-row" id="hand-ex"></div>
 
-      <!-- メインデッキ / サイド -->
+      <div class="manual-help" id="manual-help" style="display:none"></div>
+
       <div class="deck-panel" id="deck-panel"></div>
       <div class="deck-panel" id="side-panel"></div>
     </section>
 
-    <aside class="replay-side">
+    <aside class="replay-side" id="replay-side">
       <div id="step-panel" class="panel"></div>
       <div id="disruption-panel" class="panel"></div>
     </aside>
@@ -134,7 +148,9 @@
   <script>
     // ===== 状態 =====
     let deckData = null;
-    let state = null;
+    let mode = "replay"; // "replay" | "manual"
+    let state = null;          // リプレイ状態
+    let manual = null;         // 手動操作状態: {monsters, spells, hand, gy, banish, pending:{entry,from}}
     let paramsTheme = "blue-eyes";
     let playing = false;
     let playTimer = null;
@@ -146,14 +162,16 @@
     const deckPanelDiv = document.getElementById("deck-panel");
     const sidePanelDiv = document.getElementById("side-panel");
     const handExDiv = document.getElementById("hand-ex");
+    const manualHelpDiv = document.getElementById("manual-help");
     const boardNoteDiv = document.getElementById("board-note");
     const stepPanel = document.getElementById("step-panel");
     const disPanel = document.getElementById("disruption-panel");
     const crumbDiv = document.getElementById("replay-crumb");
     const titleH1 = document.getElementById("replay-title");
+    const modeTabsDiv = document.getElementById("mode-tabs");
 
     // ===== ユーティリティ =====
-    function safeImage(entry, extraCls) {
+    function safeImage(entry) {
       const path = entry && entry.image_path;
       if (
         typeof path === "string" &&
@@ -196,9 +214,8 @@
       return c.slug || (c.card_id !== null && c.card_id !== undefined ? String(c.card_id) : "") + "|" + (c.name || "");
     }
 
-    function actingKey() {
-      const cur = state.route.steps[state.idx];
-      return cur && cur.card ? cardKey(cur.card) : null;
+    function mainCount() {
+      return (deckData.deck.main || []).reduce(function (x, e) { return x + e.count; }, 0);
     }
 
     function stopPlay() {
@@ -254,21 +271,15 @@
         const found = deckData.routes.find(function (r) { return r.id === params.route; });
         if (found) route = found;
       }
-      enterRoute(route);
+      state = { route: route, baseRoute: route, idx: 0, blocked: [], applied: [], openHandler: null };
+      updateUrl();
+      mode = "replay";
+      renderAll();
     }
 
-    function enterRoute(route) {
-      stopPlay();
-      state = {
-        route: route,
-        baseRoute: route,
-        idx: 0,
-        blocked: [],
-        applied: [],
-        openHandler: null
-      };
-      updateUrl();
-      renderAll();
+    function enterRoute(route, silent) {
+      state = { route: route, baseRoute: route, idx: 0, blocked: [], applied: [], openHandler: null };
+      if (!silent) updateUrl();
     }
 
     function applyHandler(disruption, handler) {
@@ -291,40 +302,211 @@
       renderAll();
     }
 
-    // ===== 描画 =====
-    function renderAll() {
-      const scrollY = (typeof window !== "undefined" && (window.scrollY || window.pageYOffset)) || 0;
-      renderHeader();
-      renderToolbar();
-      renderField();
-      renderHandEx();
-      renderDeckPanels();
-      renderStepPanel();
-      renderDisruptionPanel();
-      if (typeof window !== "undefined") window.scrollTo(0, scrollY);
+    // ===== 手動操作 =====
+    function blankManualBoard() {
+      return { monsters: [null, null, null, null, null], spells: [null, null, null, null, null], hand: [], gy: [], banish: [] };
     }
 
-    function renderHeader() {
-      titleH1.textContent = "展開リプレイ: " + state.route.name;
-      crumbDiv.replaceChildren();
-      for (const applied of state.applied) {
-        crumbDiv.appendChild(el("span", "crumb", applied));
+    function deepBoard(b) {
+      const out = blankManualBoard();
+      const zones = ["monsters", "spells", "hand", "gy", "banish", "extra"];
+      for (const z of zones) {
+        if (!b || !Array.isArray(b[z])) continue;
+        out[z] = b[z].map(function (e) { return e ? Object.assign({}, e) : null; });
+      }
+      return out;
+    }
+
+    function drawHand(nn) {
+      const deck = [];
+      for (const e of (deckData.deck.main || [])) {
+        for (let i = 0; i < (e.count || 0); i++) deck.push(e);
+      }
+      const hand = [];
+      for (let i = 0; i < nn && deck.length; i++) {
+        hand.push(Object.assign({}, deck.splice(Math.floor(Math.random() * deck.length), 1)[0]));
+      }
+      return hand;
+    }
+
+    function startManual() {
+      stopPlay();
+      mode = "manual";
+      manual = deepBoard(null);
+      manual.hand = drawHand(5);
+      renderAll();
+    }
+
+    function exitManual() {
+      mode = "replay";
+      manual = null;
+      renderAll();
+    }
+
+    function resetManual() {
+      manual = blankManualBoard();
+      manual.hand = drawHand(5);
+      renderAll();
+    }
+
+    function zoneNameJa(zone) {
+      return { monsters: "モンスターゾーン", spells: "魔法・罠ゾーン", hand: "手札", gy: "墓地", banish: "除外" }[zone] || zone;
+    }
+
+    function manualRemove(src) {
+      if (!src) return;
+      if (src.type === "slot") {
+        manual[src.zone][src.index] = null;
+      } else {
+        const i = manual[src.zone].indexOf(src.ref);
+        if (i !== -1) manual[src.zone].splice(i, 1);
       }
     }
 
-    // --- トランスポートバー ---
-    function renderToolbar() {
+    function manualPlace(dstZone, dstIndex, payload) {
+      const entry = payload.entry;
+      if (payload.src === "board" && payload.from &&
+          payload.from.zone === dstZone && payload.from.type === "slot" &&
+          payload.from.index === dstIndex) return;
+      manualRemove(payload.from);
+      if (dstZone === "monsters" || dstZone === "spells") {
+        if (manual[dstZone][dstIndex]) manual.gy.push(manual[dstZone][dstIndex]);
+        manual[dstZone][dstIndex] = entry;
+      } else if (dstZone === "gy" || dstZone === "banish" || dstZone === "hand") {
+        manual[dstZone].push(entry);
+      }
+    }
+
+    function makePayload(entry, from) {
+      return { src: from ? "board" : "deck", entry: entry, from: from || null };
+    }
+
+    function attachDrag(entry, from, imgEl, slotEl) {
+      const payload = makePayload(entry, from);
+      const json = JSON.stringify(payload);
+      imgEl.draggable = true;
+      imgEl.addEventListener("dragstart", function (ev) {
+        ev.dataTransfer.setData("text/plain", json);
+        ev.dataTransfer.effectAllowed = "move";
+      });
+      if (slotEl) {
+        slotEl.draggable = true;
+        slotEl.addEventListener("dragstart", function (ev) {
+          ev.dataTransfer.setData("text/plain", json);
+          ev.dataTransfer.effectAllowed = "move";
+        });
+        // タップ選択（click → 対象クリックで移動）
+        slotEl.addEventListener("click", function (ev) {
+          ev.stopPropagation();
+          if (manual.pending && manual.pending.entry === entry) {
+            manual.pending = null;
+          } else {
+            manual.pending = payload;
+          }
+          renderBoard();
+          renderDeckPanels();
+        });
+      }
+    }
+
+    function attachDrop(targetEl, dstZone, dstIndex) {
+      targetEl.addEventListener("dragover", function (ev) { ev.preventDefault(); targetEl.classList.add("drop-hint"); });
+      targetEl.addEventListener("dragleave", function () { targetEl.classList.remove("drop-hint"); });
+      targetEl.addEventListener("drop", function (ev) {
+        ev.preventDefault();
+        targetEl.classList.remove("drop-hint");
+        try {
+          const payload = JSON.parse(ev.dataTransfer.getData("text/plain"));
+          manualPlace(dstZone, dstIndex, payload);
+        } catch (e) { /* ignore */ }
+        manual.pending = null;
+        renderAll();
+      });
+      // クリック移動（選択済みのとき）
+      targetEl.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        if (manual.pending) {
+          manualPlace(dstZone, dstIndex, manual.pending);
+          manual.pending = null;
+          renderAll();
+        }
+      });
+    }
+
+    // ===== 描画 =====
+    function renderAll() {
+      renderHeader();
+      renderModeTabs();
+      if (mode === "manual") {
+        renderManualToolbar();
+      } else {
+        renderReplayToolbar();
+      }
+      renderBoard();
+      renderBoardNote();
+      renderHandEx();
+      renderDeckPanels();
+      if (mode === "manual") {
+        renderManualSide();
+        disPanel.style.display = "none";
+        manualHelpDiv.style.display = "";
+        manualHelpDiv.textContent =
+          "【手動操作モード】カードをドラッグ（またはタップ選択→移動先タップ）でゾーン間を移動できます。" +
+          "下のデッキ/EXデッキからカードを置けます。墓地に置いたカードは墓地ゾーンへ。";
+      } else {
+        renderStepPanel();
+        disPanel.style.display = "";
+        manualHelpDiv.style.display = "none";
+      }
+      renderDisruptionPanel();
+    }
+
+    function renderHeader() {
+      if (mode === "manual") {
+        titleH1.textContent = "盤面編集（手動操作）";
+      } else {
+        titleH1.textContent = "展開リプレイ: " + state.route.name;
+      }
+      crumbDiv.replaceChildren();
+      if (mode === "replay") {
+        for (const applied of state.applied) crumbDiv.appendChild(el("span", "crumb", applied));
+      }
+    }
+
+    function renderModeTabs() {
+      modeTabsDiv.replaceChildren();
+      const mk = function (label, target) {
+        const b = el("button", "mode-tab" + (mode === target ? " active" : ""), label);
+        b.addEventListener("click", function () {
+          if (mode === target) return;
+          if (target === "manual") startManual();
+          else exitManual();
+        });
+        return b;
+      };
+      modeTabsDiv.appendChild(mk("手動操作", "manual"));
+      modeTabsDiv.appendChild(mk("リプレイ", "replay"));
+    }
+
+    function renderManualToolbar() {
+      toolbarDiv.replaceChildren();
+      const resetBtn = el("button", "btn small", "リセット");
+      resetBtn.addEventListener("click", resetManual);
+      const exitBtn = el("button", "btn secondary small", "リプレイに戻る");
+      exitBtn.addEventListener("click", exitManual);
+      toolbarDiv.append(resetBtn, exitBtn);
+    }
+
+    function renderReplayToolbar() {
       const n = state.route.steps.length;
       toolbarDiv.replaceChildren();
       const firstBtn = el("button", "tbtn", "⏮");
-      firstBtn.title = "最初へ";
       firstBtn.disabled = state.idx === 0;
       firstBtn.addEventListener("click", function () { setIdx(0); });
       const prevBtn = el("button", "tbtn", "◀");
       prevBtn.disabled = state.idx === 0;
       prevBtn.addEventListener("click", function () { setIdx(state.idx - 1); });
       const playBtn = el("button", "tbtn" + (playing ? " playing" : ""), playing ? "⏸" : "▶");
-      playBtn.title = playing ? "一時停止" : "自動再生";
       playBtn.addEventListener("click", togglePlay);
       const nextBtn = el("button", "tbtn", "▶▶");
       nextBtn.disabled = state.idx >= n - 1;
@@ -355,43 +537,52 @@
         });
         speeds.appendChild(sb);
       }
-
       toolbarDiv.append(firstBtn, prevBtn, playBtn, nextBtn, lastBtn, seek, counter, speeds);
     }
 
-    // --- 盤面 ---
-    function fill5(list, cls) {
-      const out = (list || []).slice(0, 5);
-      while (out.length < 5) out.push(null);
-      const row = el("div", "zone-row");
+    // --- 盤面本体 ---
+    function currentBoard() {
+      if (mode === "manual") return manual;
+      const step = state.route.steps[state.idx];
+      return (step && step.board) || blankManualBoard();
+    }
+
+    function actingKey() {
+      if (mode === "manual") return null;
+      const cur = state.route.steps[state.idx];
+      return cur && cur.card ? cardKey(cur.card) : null;
+    }
+
+    function zoneRowSlots(zone, list, cls, dropEnabled) {
+      const row = el("div", "zone-row" + (dropEnabled ? " droppable" : ""));
+      if (cls === "oppmonster") row.classList.add("opp");
       const act = actingKey();
-      for (const entry of out) {
+      for (let i = 0; i < list.length; i++) {
+        const entry = list[i];
         const slot = el("div", "slot" + (cls ? " " + cls : ""));
         const img = safeImage(entry);
         if (img) {
           if (act && entry && cardKey(entry) === act) slot.classList.add("acting");
           slot.appendChild(img);
         }
+        if (dropEnabled) {
+          attachDrop(slot, zone, i);
+          if (entry) attachDrag(entry, { type: "slot", zone: zone, index: i }, img, slot);
+        }
         row.appendChild(slot);
       }
       const wrap = el("div", null);
       wrap.appendChild(row);
+      wrap.appendChild(el("div", "zone-label", zoneNameJa(zone)));
       return wrap;
     }
 
-    function zoneRowLabeled(label, list, cls) {
-      const wrap = fill5(list, cls);
-      wrap.appendChild(el("div", "zone-label", label));
-      return wrap;
-    }
-
-    function stackIn(box, entries) {
-      const stack = el("div", "stack");
-      const act = actingKey();
+    function stackIn(box, entries, zone, dropEnabled) {
+      const stack = el("div", "stack dropzone");
       for (const entry of entries) {
         const img = safeImage(entry);
         if (!img) continue;
-        if (act && cardKey(entry) === act) img.style.outline = "2px solid #17c";
+        if (dropEnabled) attachDrag(entry, { type: "list", zone: zone, ref: entry }, img, null);
         stack.appendChild(img);
       }
       if (entries.length === 0) stack.appendChild(el("span", "empty", "なし"));
@@ -399,18 +590,16 @@
       return box;
     }
 
-    function renderField() {
-      const step = state.route.steps[state.idx];
-      const b = (step && step.board) || { monsters: [], spells: [], hand: [], gy: [], banish: [], extra: [] };
+    function renderBoard() {
+      const b = currentBoard();
       boardDiv.replaceChildren();
       const grid = el("div", "board-grid");
+      const editing = mode === "manual";
 
       // 左列: デッキ
       const left = el("div", "bcol left");
       const deckBox = el("div", "tallbox deckchip");
-      const deckHead = el("div", "tallbox-name");
-      deckHead.textContent = "デッキ (" + (deckData.deck.main || []).reduce(function (x, e) { return x + e.count; }, 0) + ")";
-      deckBox.appendChild(deckHead);
+      deckBox.appendChild(el("div", "tallbox-name", "デッキ (" + mainCount() + ")"));
       const deckStack = el("div", "stack");
       for (let i = 0; i < 3; i++) {
         const ghost = el("div", null);
@@ -424,97 +613,126 @@
       deckBox.appendChild(deckStack);
       left.appendChild(deckBox);
 
-      // 中央: 相手ゾーン → 自分モンスター → 魔法・罠 → 手札
+      // 中央: 相手ゾーン → モンスター → 魔法・罠 → 手札
       const center = el("div", "bcol center");
-      const oppZone = zoneRowLabeled("相手フィールド", (step.opp && step.opp.monsters) || [], "oppmonster");
-      oppZone.querySelector(".zone-row").classList.add("opp");
-      center.appendChild(oppZone);
-      center.appendChild(zoneRowLabeled("モンスターゾーン", fill5list(b.monsters), "monster"));
-      center.appendChild(zoneRowLabeled("魔法・罠ゾーン", fill5list(b.spells), "spell"));
-      handWrapEl(center, b.hand || []);
+      center.appendChild(zoneRowSlotsOpp());
+      center.appendChild(zoneRowSlots("monsters", b.monsters || [null, null, null, null, null], "monster", editing));
+      center.appendChild(zoneRowSlots("spells", b.spells || [null, null, null, null, null], "spell", editing));
+      center.appendChild(handZone(b.hand || [], editing));
 
       // 右列: 墓地 / 除外
       const right = el("div", "bcol right");
       const gyBox = el("div", "tallbox gy");
       gyBox.appendChild(el("div", "tallbox-name", "墓地 (" + (b.gy || []).length + ")"));
-      stackIn(gyBox, b.gy || []);
+      stackIn(gyBox, b.gy || [], "gy", editing);
+      if (editing) attachDrop(gyBox, "gy", null);
       right.appendChild(gyBox);
       const banBox = el("div", "tallbox banish");
       banBox.appendChild(el("div", "tallbox-name", "除外 (" + (b.banish || []).length + ")"));
-      stackIn(banBox, b.banish || []);
+      stackIn(banBox, b.banish || [], "banish", editing);
+      if (editing) attachDrop(banBox, "banish", null);
       right.appendChild(banBox);
 
       grid.appendChild(left);
       grid.appendChild(center);
       grid.appendChild(right);
       boardDiv.appendChild(grid);
-      boardNoteDiv.textContent = "青枠はこのアクションで動いたカード（盤面データはドラフト）。";
     }
 
-    function fill5list(list) {
-      const out = (list || []).slice(0, 5);
-      while (out.length < 5) out.push(null);
-      return out;
+    function zoneRowSlotsOpp() {
+      const row = el("div", "zone-row opp");
+      for (let i = 0; i < 5; i++) row.appendChild(el("div", "slot oppmonster"));
+      const wrap = el("div", null);
+      wrap.appendChild(row);
+      wrap.appendChild(el("div", "zone-label", "相手フィールド"));
+      return wrap;
     }
 
-    function handWrapEl(center, hand) {
+    function handZone(hand, editing) {
       const wrap = el("div", null);
       const row = el("div", "handrow");
-      const act = actingKey();
       for (const entry of hand) {
         const slot = el("div", "hand-slot");
         const img = safeImage(entry);
-        if (img) {
-          if (act && cardKey(entry) === act) slot.classList.add("acting");
-          slot.appendChild(img);
+        if (img) slot.appendChild(img);
+        if (editing) {
+          attachDrop(slot, "hand", null);
+          attachDrag(entry, { type: "list", zone: "hand", ref: entry }, img, slot);
         }
         row.appendChild(slot);
       }
       if (hand.length === 0) row.appendChild(el("span", "empty-strip", "（0枚）"));
       wrap.appendChild(row);
       wrap.appendChild(el("div", "zone-label", "手札 (" + hand.length + ")"));
-      center.appendChild(wrap);
+      return wrap;
+    }
+
+    function renderBoardNote() {
+      if (mode === "manual") {
+        boardNoteDiv.textContent = "ドラッグまたはタップ→移動先タップでカードを移動。占有ゾーンに置くと元のカードは墓地へ。";
+      } else {
+        boardNoteDiv.textContent = "青枠はこのアクションで動いたカード（盤面データはドラフト）。「手動操作」タブで自由に動かせます。";
+      }
     }
 
     // --- 手札/EX・デッキパネル ---
-    function cardStripImg(entry, cls) {
-      const slot = el("div", cls || null);
+    function deckEntry(entry, fromBag, dropEnabled, targetZone) {
+      const slot = el("div", "deck-item");
       const img = safeImage(entry);
       if (img) slot.appendChild(img);
+      if (dropEnabled) {
+        const payload = { src: fromBag, entry: entry };
+        img.draggable = true;
+        img.addEventListener("dragstart", function (ev) {
+          ev.dataTransfer.setData("text/plain", JSON.stringify(payload));
+          ev.dataTransfer.effectAllowed = "move";
+        });
+        slot.addEventListener("click", function (ev) {
+          ev.stopPropagation();
+          if (manual.pending) {
+            // 既に選択中なら保持
+          } else {
+            const p = makePayload(entry, null);
+            p.src = fromBag;
+            manual.pending = p;
+            slotEl_hilite();
+          }
+          renderBoard();
+        });
+        function slotEl_hilite() { slot.classList.add("selected"); }
+      }
       return slot;
     }
 
     function renderHandEx() {
-      const step = state.route.steps[state.idx];
-      const b = (step && step.board) || {};
+      const b = currentBoard();
       handExDiv.replaceChildren();
+      const editing = mode === "manual";
 
       const handBox = el("div", "strip-box hand");
       handBox.appendChild(el("div", "strip-title", "手札 (" + (b.hand || []).length + ")"));
       const handStrip = el("div", "card-strip");
-      for (const entry of (b.hand || [])) handStrip.appendChild(cardStripImg(entry));
+      for (const entry of (b.hand || [])) handStrip.appendChild(deckEntry(entry, "board", editing, "hand"));
       if ((b.hand || []).length === 0) handStrip.appendChild(el("span", "empty-strip", "なし"));
       handBox.appendChild(handStrip);
       handExDiv.appendChild(handBox);
 
-      const exBox = el("div", "strip-box extra");
-      const exCount = (deckData.deck.extra || []).reduce(function (x, e) { return x + e.count; }, 0);
-      exBox.appendChild(el("div", "strip-title", "エクストラデッキ (" + exCount + ")"));
+      const extraBox = el("div", "strip-box extra");
+      extraBox.appendChild(el("div", "strip-title", "エクストラデッキ (" + (deckData.deck.extra || []).reduce(function (x, e) { return x + e.count; }, 0) + ")"));
       const exStrip = el("div", "card-strip");
       for (const entry of (deckData.deck.extra || [])) {
-        for (let i = 0; i < entry.count; i++) exStrip.appendChild(cardStripImg(entry));
+        for (let i = 0; i < entry.count; i++) exStrip.appendChild(deckEntry(entry, "extra", editing, null));
       }
-      exBox.appendChild(exStrip);
-      handExDiv.appendChild(exBox);
+      extraBox.appendChild(exStrip);
+      handExDiv.appendChild(extraBox);
     }
 
     function renderDeckPanels() {
       deckPanelDiv.replaceChildren();
-      const mainCount = (deckData.deck.main || []).reduce(function (x, e) { return x + e.count; }, 0);
-      deckPanelDiv.appendChild(el("div", "strip-title", "デッキ (" + mainCount + ")"));
+      deckPanelDiv.appendChild(el("div", "strip-title", "デッキ (" + mainCount() + ")"));
       const strip = el("div", "deck-strip");
       for (const entry of (deckData.deck.main || [])) {
-        for (let i = 0; i < entry.count; i++) strip.appendChild(cardStripImg(entry));
+        for (let i = 0; i < entry.count; i++) strip.appendChild(deckEntry(entry, "deck", mode === "manual", null));
       }
       deckPanelDiv.appendChild(strip);
 
@@ -526,13 +744,37 @@
         sideStrip.appendChild(el("span", "empty-strip", "サイドは未設定"));
       } else {
         for (const entry of side) {
-          for (let i = 0; i < entry.count; i++) sideStrip.appendChild(cardStripImg(entry));
+          for (let i = 0; i < entry.count; i++) sideStrip.appendChild(deckEntry(entry, "side", false, null));
         }
       }
       sidePanelDiv.appendChild(sideStrip);
     }
 
-    // --- 右サイド: アクション/妨害 ---
+    // --- 右サイド ---
+    function renderManualSide() {
+      stepPanel.replaceChildren();
+      stepPanel.appendChild(el("h3", null, "手動操作"));
+      stepPanel.appendChild(el("div", "step-note",
+        "現在の盤面: モンスター " + (manual.monsters.filter(Boolean).length) +
+        " / 魔法罠 " + (manual.spells.filter(Boolean).length) +
+        " / 手札 " + manual.hand.length +
+        " / 墓地 " + manual.gy.length +
+        " / 除外 " + manual.banish.length));
+
+      const nav = el("div", "nav");
+      const resetBtn = el("button", "btn small", "リセット");
+      resetBtn.addEventListener("click", resetManual);
+      const exitBtn = el("button", "btn secondary small", "リプレイに戻る");
+      exitBtn.addEventListener("click", exitManual);
+      if (manual.pending) {
+        const cancel = el("button", "btn small", "選択解除");
+        cancel.addEventListener("click", function () { manual.pending = null; renderBoard(); renderDeckPanels(); });
+        nav.appendChild(cancel);
+      }
+      nav.append(resetBtn, exitBtn);
+      stepPanel.appendChild(nav);
+    }
+
     function renderStepPanel() {
       stepPanel.replaceChildren();
       const steps = state.route.steps;
@@ -569,7 +811,7 @@
 
       const foot = el("div", "nav");
       const reset = el("button", "btn secondary small", "最初からやり直す");
-      reset.addEventListener("click", function () { enterRoute(state.baseRoute); });
+      reset.addEventListener("click", function () { stopPlay(); enterRoute(state.baseRoute, true); renderAll(); });
       foot.appendChild(reset);
       stepPanel.appendChild(foot);
     }
@@ -580,6 +822,10 @@
 
     function renderDisruptionPanel() {
       disPanel.replaceChildren();
+      if (mode === "manual") {
+        disPanel.appendChild(el("div", "note", "（手動操作モードでは妨害パネルを非表示にしています）"));
+        return;
+      }
       disPanel.appendChild(el("h3", null, "相手が打てる妨害"));
       const step = state.route.steps[state.idx];
       for (const d of deckData.disruptions || []) {
