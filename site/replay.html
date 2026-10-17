@@ -395,8 +395,15 @@
         const arr = manual.piles && manual.piles[src.bag];
         if (arr && src.index >= 0 && src.index < arr.length) arr.splice(src.index, 1);
       } else if (manual && manual[src.zone]) {
-        const i = manual[src.zone].indexOf(src.ref);
-        if (i !== -1) manual[src.zone].splice(i, 1);
+        const arr = manual[src.zone];
+        let i = -1;
+        if (typeof src.index === "number" &&
+            src.index >= 0 && src.index < arr.length &&
+            arr[src.index] === src.ref) i = src.index;
+        if (i === -1 && src.ref) i = arr.indexOf(src.ref);
+        if (i === -1 && typeof src.index === "number" &&
+            src.index >= 0 && src.index < arr.length) i = src.index;
+        if (i !== -1) arr.splice(i, 1);
       }
     }
 
@@ -732,12 +739,12 @@
 
     function stackIn(box, entries, zone, dropEnabled) {
       const stack = el("div", "stack dropzone");
-      for (const entry of entries) {
+      entries.forEach(function (entry, i) {
         const img = safeImage(entry);
-        if (!img) continue;
-        if (dropEnabled) attachDrag(entry, { type: "list", zone: zone, ref: entry }, img, null);
+        if (!img) return;
+        if (dropEnabled) attachDrag(entry, { type: "list", zone: zone, index: i, ref: entry }, img, null);
         stack.appendChild(img);
-      }
+      });
       if (entries.length === 0) stack.appendChild(el("span", "empty", "なし"));
       box.appendChild(stack);
       return box;
@@ -806,16 +813,16 @@
     function handZone(hand, editing) {
       const wrap = el("div", null);
       const row = el("div", "handrow");
-      for (const entry of hand) {
+      hand.forEach(function (entry, i) {
         const slot = el("div", "hand-slot");
         const img = safeImage(entry);
         if (img) slot.appendChild(img);
         if (editing) {
           attachDrop(slot, "hand", null);
-          attachDrag(entry, { type: "list", zone: "hand", ref: entry }, img, slot);
+          attachDrag(entry, { type: "list", zone: "hand", index: i, ref: entry }, img, slot);
         }
         row.appendChild(slot);
-      }
+      });
       if (hand.length === 0) row.appendChild(el("span", "empty-strip", "（0枚）"));
       wrap.appendChild(row);
       wrap.appendChild(el("div", "zone-label", "手札 (" + hand.length + ")"));
@@ -856,8 +863,8 @@
       handBox.appendChild(el("div", "strip-title", "手札 (" + (b.hand || []).length + ")"));
       const handStrip = el("div", "card-strip");
       if (editing) attachDrop(handStrip, "hand", null, null);
-      (b.hand || []).forEach(function (entry) {
-        handStrip.appendChild(editing ? pileCard(entry, { type: "list", zone: "hand", ref: entry }) : staticEntry(entry));
+      (b.hand || []).forEach(function (entry, i) {
+        handStrip.appendChild(editing ? pileCard(entry, { type: "list", zone: "hand", index: i, ref: entry }) : staticEntry(entry));
       });
       if ((b.hand || []).length === 0) handStrip.appendChild(el("span", "empty-strip", "なし"));
       handBox.appendChild(handStrip);
