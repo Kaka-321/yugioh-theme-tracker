@@ -44,7 +44,7 @@ jobs:
 
           if [ -d assets/cards ]; then
             mkdir -p build/assets/cards
-            cp assets/cards/* build/assets/cards/ 2>/dev/null || true
+            cp -r assets/cards/. build/assets/cards/ 2>/dev/null || true
           fi
 
       - name: Configure Pages
