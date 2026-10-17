@@ -306,9 +306,110 @@
       }
       state = { route: route, baseRoute: route, idx: 0, blocked: [], applied: [], openHandler: null };
       updateUrl();
+      loadThemeCardPool();
       mode = "replay";
       initPointerDrag();
       renderAll();
+    }
+
+    let themeCards = [];
+
+    function loadThemeCardPool() {
+      fetch("./data/themes/" + encodeURIComponent(paramsTheme) + ".json", { cache: "no-store" })
+        .then(function (res) { return res.ok ? res.json() : null; })
+        .then(function (t) {
+          if (t && Array.isArray(t.cards)) {
+            themeCards = t.cards.filter(function (c) { return c && typeof c === "object" && c.card_id; });
+          }
+        })
+        .catch(function () {});
+    }
+
+    // ===== ユーザデッキの保存/読込/編集 =====
+    function deckEntryId(e) {
+      return e && (e.card_id != null ? "c" + e.card_id : (e.slug || e.name));
+    }
+
+    function findFullEntry(e) {
+      const id = deckEntryId(e);
+      let hit = null;
+      for (const bag of ["main", "extra", "side"]) {
+        for (const cand of (deckData.deck[bag] || [])) {
+          if (deckEntryId(cand) === id) { hit = cand; break; }
+        }
+        if (hit) break;
+      }
+      if (!hit && Array.isArray(themeCards)) {
+        for (const cand of themeCards) {
+          if (deckEntryId(cand) === id) {
+            hit = Object.assign({}, cand, { external: false, name: cand.japanese_name || cand.name });
+            break;
+          }
+        }
+      }
+      return hit ? Object.assign({}, hit) : null;
+    }
+
+    function condenseDeck() {
+      const pl = manual && manual.piles ? manual.piles : { main: [], extra: [], side: [] };
+      const out = {};
+      for (const bag of ["main", "extra", "side"]) {
+        const seen = {};
+        const list = [];
+        for (const e of pl[bag]) {
+          const id = deckEntryId(e) || e.name;
+          if (!seen[id]) {
+            seen[id] = Object.assign({}, findFullEntry(e) || e);
+            seen[id].count = 0;
+            list.push(seen[id]);
+          }
+          seen[id].count += 1;
+        }
+        out[bag] = list;
+      }
+      return out;
+    }
+
+    function savedDeckKey() {
+      return "decklab_saved_" + paramsTheme;
+    }
+
+    function saveUserDeck() {
+      try {
+        const data = Object.assign(condenseDeck(), { v: 1, theme: paramsTheme, saved_at: new Date().toISOString() });
+        localStorage.setItem(savedDeckKey(), JSON.stringify(data));
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function loadSavedUserDeck() {
+      try {
+        const raw = localStorage.getItem(savedDeckKey());
+        if (!raw) return null;
+        const data = JSON.parse(raw);
+        const pl = { main: [], extra: [], side: [] };
+        for (const bag of ["main", "extra", "side"]) {
+          const src = Array.isArray(data[bag]) ? data[bag] : [];
+          for (const e of src) {
+            const full = findFullEntry(e) || e;
+            const n = Math.max(0, Math.min(3, e.count || 0));
+            for (let i = 0; i < n; i++) pl[bag].push(Object.assign({}, full));
+          }
+        }
+        return pl;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function applyUserDeck(piles) {
+      if (!piles) return false;
+      manual = blankManualBoard();
+      manual.piles = piles;
+      manual.history = [];
+      return true;
     }
 
     function enterRoute(route, silent) {
@@ -1341,6 +1442,159 @@
       }
       nav.append(resetBtn, exitBtn);
       stepPanel.appendChild(nav);
+
+      // ---- デッキ保存 / 読込 / 書き出し / 貼り付け読込 ----
+      const saveNav = el("div", "nav");
+      const saveBtn = el("button", "btn small", "デッキ保存");
+      saveBtn.addEventListener("click", function () {
+        if (saveUserDeck()) {
+          saveNav.setAttribute("data-saved", "1");
+          renderBoardNote();
+        }
+      });
+      const loadBtn = el("button", "btn small secondary", "保存デッキで再構成");
+      loadBtn.addEventListener("click", function () {
+        const pl = loadSavedUserDeck();
+        if (!pl) return;
+        applyUserDeck(pl);
+        renderAll();
+      });
+      saveNav.append(saveBtn, loadBtn);
+      stepPanel.appendChild(saveNav);
+
+      const ioNav = el("div", "nav");
+      const exportBtn = el("button", "btn small secondary", "書き出し");
+      exportBtn.addEventListener("click", function () {
+        const data = Object.assign(condenseDeck(), { v: 1, theme: paramsTheme });
+        if (window.prompt) window.prompt("デッキJSON（コピーして保存）", JSON.stringify(data));
+      });
+      const importBtn = el("button", "btn small secondary", "貼り付け読込");
+      importBtn.addEventListener("click", function () {
+        if (!window.prompt) return;
+        const raw = window.prompt("デッキJSONを貼り付けてください");
+        if (!raw) return;
+        try {
+          const data = JSON.parse(raw);
+          const pl = { main: [], extra: [], side: [] };
+          for (const bag of ["main", "extra", "side"]) {
+            const src = Array.isArray(data[bag]) ? data[bag] : [];
+            for (const e of src) {
+              const full = findFullEntry(e) || e;
+              const n = Math.max(0, Math.min(3, e.count || 0));
+              for (let i = 0; i < n; i++) pl[bag].push(Object.assign({}, full));
+            }
+          }
+          applyUserDeck(pl);
+          renderAll();
+        } catch (err) {}
+      });
+      ioNav.append(exportBtn, importBtn);
+      stepPanel.appendChild(ioNav);
+
+      // ---- デッキ編集（カード追加/削除） ----
+      const editBox = el("div", "deck-edit");
+      editBox.appendChild(el("h4", null, "デッキ編集"));
+      const poolSel = document.createElement("select");
+      poolSel.className = "field";
+      const seenPool = {};
+      const opts = [];
+      for (const cand of deckEntryPool()) {
+        const id = deckEntryId(cand);
+        if (!id || seenPool[id]) continue;
+        seenPool[id] = true;
+        const opt = document.createElement("option");
+        opt.value = id;
+        opt.textContent = cand.japanese_name || cand.name;
+        opt._entry = Object.assign({}, cand);
+        opts.push(opt);
+      }
+      for (const opt of opts) poolSel.appendChild(opt);
+      const addNav = el("div", "nav");
+      const addMainBtn = el("button", "btn small", "デッキへ追加");
+      addMainBtn.addEventListener("click", function () {
+        const opt = poolSel.children[poolSel.selectedIndex];
+        if (!opt || !opt._entry) return;
+        addCardToPile("main", opt._entry);
+      });
+      const addSideBtn = el("button", "btn small secondary", "サイドへ追加");
+      addSideBtn.addEventListener("click", function () {
+        const opt = poolSel.children[poolSel.selectedIndex];
+        if (!opt || !opt._entry) return;
+        addCardToPile("side", opt._entry);
+      });
+      addNav.append(addMainBtn, addSideBtn);
+      editBox.append(poolSel, addNav);
+
+      const ul = el("ul", "deck-edit-list");
+      for (const bag of ["main", "extra", "side"]) {
+        for (const row of condensedRows(pl, bag)) {
+          const li = el("li", "deck-edit-row");
+          li.appendChild(el("span", "deck-edit-count", row.bagLabel + " " + row.count));
+          li.appendChild(el("span", "deck-edit-name", row.name));
+          const delBtn = el("button", "btn tiny", "−1");
+          delBtn.addEventListener("click", function () { removeCardFromPile(row.bag, row.id); });
+          li.appendChild(delBtn);
+          ul.appendChild(li);
+        }
+      }
+      editBox.appendChild(ul);
+      stepPanel.appendChild(editBox);
+    }
+
+    function deckEntryPool() {
+      const pool = [];
+      const seen = {};
+      const pushC = function (e) {
+        const id = deckEntryId(e);
+        if (!e || !id || seen[id]) return;
+        seen[id] = true;
+        pool.push(e);
+      };
+      for (const bag of ["main", "extra"]) {
+        for (const e of (deckData.deck[bag] || [])) pushC(Object.assign({}, e, { count: 1 }));
+      }
+      for (const e of themeCards) pushC(e);
+      return pool;
+    }
+
+    function condensedRows(pl, bag) {
+      const rows = [];
+      const seen = {};
+      for (const e of pl[bag]) {
+        const id = deckEntryId(e) || e.name;
+        if (!seen[id]) {
+          seen[id] = { id: id, bag: bag, name: e.japanese_name || e.name || "?", count: 0 };
+          rows.push(seen[id]);
+        }
+        seen[id].count += 1;
+      }
+      return rows;
+    }
+
+    function addCardToPile(bag, entry) {
+      if (!manual || !manual.piles || !manual.piles[bag]) return;
+      const id = deckEntryId(entry);
+      let cnt = 0;
+      for (const e of manual.piles[bag]) {
+        if ((deckEntryId(e) || e.name) === id) cnt += 1;
+      }
+      if (cnt >= 3) return;
+      let full = findFullEntry(entry) || entry;
+      if (full.name && !full.japanese_name) {} else if (!full.name && (full.japanese_name || full.name)) full = Object.assign({}, full, { name: full.japanese_name || full.name });
+      full = Object.assign({}, full, { name: full.japanese_name || full.name });
+      manual.piles[bag].push(full);
+      manual.history = [];
+      renderAll();
+    }
+
+    function removeCardFromPile(bag, id) {
+      if (!manual || !manual.piles || !manual.piles[bag]) return;
+      const idx = manual.piles[bag].findIndex(function (e) { return (deckEntryId(e) || e.name) === id; });
+      if (idx !== -1) {
+        manual.piles[bag].splice(idx, 1);
+        manual.history = [];
+        renderAll();
+      }
     }
 
     function renderStepPanel() {
