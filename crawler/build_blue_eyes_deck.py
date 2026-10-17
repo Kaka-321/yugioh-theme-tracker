@@ -346,6 +346,27 @@ def main():
                  "board": board(monsters=[card("59822133")], spells=[card("71143015")], gy=[card("34627841"), card("79814787"), card("89631139"), card("71039903")], extra=[card("23995346", "fusion")])},
             ],
         },
+        {
+            "id": "r5",
+            "name": "青き眼の巫女始動（バウンス主体）",
+            "summary": "巫女1枚から白龍を立てて精霊龍へ。バウンス効果で相手展開を崩しつつ盤面を固める。",
+            "steps": [
+                {"card": card("36734924"), "act": "召喚", "note": "青き眼の巫女を通常召喚。相手ターンの攻撃・効果で対象を取られると効果が素早く決まる。",
+                 "events": ["ss"],
+                 "board": board(monsters=[card("36734924")], hand=[card("89631139"), card("71143015")])},
+                {"card": card("36734924"), "act": "効果", "note": "巫女の効果で手札の青眼の白龍を特殊召喚。",
+                 "events": ["field_eff", "ss"],
+                 "board": board(monsters=[card("36734924"), card("89631139")], hand=[card("71143015")])},
+                {"card": card("59822133"), "act": "シンクロ", "note": "巫女（Lv1トーナー）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
+                 "events": ["synchro"],
+                 "board": board(monsters=[card("59822133")], gy=[card("36734924"), card("89631139")], extra=[card("59822133")])},
+                {"card": card("59822133"), "act": "効果", "note": "精霊龍の効果で相手フィールドのカード1枚をバウンス（持ち主の墓地へ戻す）。警告：テキストの正確な効果文言は要確認。",
+                 "events": ["field_eff"],
+                 "board": board(monsters=[card("59822133")], gy=[card("36734924"), card("89631139")], extra=[card("59822133")])},
+                {"act": "盤面確定", "note": "終盤：青眼の精霊龍＋手札の究極融合で追撃準備。",
+                 "board": board(monsters=[card("59822133")], hand=[card("71143015")], gy=[card("36734924"), card("89631139")], extra=[card("59822133")])},
+            ],
+        },
     ]
 
     # ---- 妨害カード ----

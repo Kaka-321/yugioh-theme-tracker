@@ -2092,6 +2092,287 @@
           }
         }
       ]
+    },
+    {
+      "id": "r5",
+      "name": "青き眼の巫女始動（バウンス主体）",
+      "summary": "巫女1枚から白龍を立てて精霊龍へ。バウンス効果で相手展開を崩しつつ盤面を固める。",
+      "steps": [
+        {
+          "card": {
+            "card_id": 36734924,
+            "name": "青き眼の巫女",
+            "image_path": "assets/cards/36734924_jp.png",
+            "external": false
+          },
+          "act": "召喚",
+          "note": "青き眼の巫女を通常召喚。相手ターンの攻撃・効果で対象を取られると効果が素早く決まる。",
+          "events": [
+            "ss"
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 36734924,
+                "name": "青き眼の巫女",
+                "image_path": "assets/cards/36734924_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false
+              }
+            ],
+            "gy": [],
+            "banish": [],
+            "extra": []
+          }
+        },
+        {
+          "card": {
+            "card_id": 36734924,
+            "name": "青き眼の巫女",
+            "image_path": "assets/cards/36734924_jp.png",
+            "external": false
+          },
+          "act": "効果",
+          "note": "巫女の効果で手札の青眼の白龍を特殊召喚。",
+          "events": [
+            "field_eff",
+            "ss"
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 36734924,
+                "name": "青き眼の巫女",
+                "image_path": "assets/cards/36734924_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false
+              }
+            ],
+            "gy": [],
+            "banish": [],
+            "extra": []
+          }
+        },
+        {
+          "card": {
+            "card_id": 59822133,
+            "name": "青眼の精霊龍",
+            "image_path": "assets/cards/59822133_jp.png",
+            "external": false
+          },
+          "act": "シンクロ",
+          "note": "巫女（Lv1トーナー）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
+          "events": [
+            "synchro"
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 36734924,
+                "name": "青き眼の巫女",
+                "image_path": "assets/cards/36734924_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              }
+            ]
+          }
+        },
+        {
+          "card": {
+            "card_id": 59822133,
+            "name": "青眼の精霊龍",
+            "image_path": "assets/cards/59822133_jp.png",
+            "external": false
+          },
+          "act": "効果",
+          "note": "精霊龍の効果で相手フィールドのカード1枚をバウンス（持ち主の墓地へ戻す）。警告：テキストの正確な効果文言は要確認。",
+          "events": [
+            "field_eff"
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 36734924,
+                "name": "青き眼の巫女",
+                "image_path": "assets/cards/36734924_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              }
+            ]
+          }
+        },
+        {
+          "act": "盤面確定",
+          "note": "終盤：青眼の精霊龍＋手札の究極融合で追撃準備。",
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false
+              }
+            ],
+            "gy": [
+              {
+                "card_id": 36734924,
+                "name": "青き眼の巫女",
+                "image_path": "assets/cards/36734924_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "disruptions": [

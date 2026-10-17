@@ -68,6 +68,11 @@
     .hand-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .slot.acting, .hand-slot.acting { outline: 3px solid #17c; outline-offset: -3px; }
     .selected { outline: 3px solid #ff8800 !important; outline-offset: -3px; }
+    .drag-ghost { position: fixed; z-index: 9999; width: 60px; pointer-events: none; opacity: .92; filter: drop-shadow(0 4px 8px rgba(0,0,0,.35)); }
+    .drag-ghost img { width: 100%; display: block; }
+    .dragging-src { opacity: .4; }
+    [data-drag] { touch-action: none; cursor: grab; }
+    .drop-target { cursor: copy; }
     .drop-hint { outline: 3px dashed #17c !important; outline-offset: -3px; }
 
     /* ===== 手札/EX、デッキ、サイド ===== */
@@ -196,6 +201,7 @@
       ) {
         const img = document.createElement("img");
         img.loading = "lazy";
+        img.draggable = false;
         img.alt = entry.name || "カード画像";
         img.onerror = function () { img.remove(); };
         img.src = path;
@@ -261,7 +267,8 @@
         playTimer = setInterval(stepNext, SPEED_MS[speed] || 1500);
         stepNext();
       }
-      renderToolbar();
+      renderReplayToolbar();
+      renderStepPanel();
     }
 
     // ===== 初期化 =====
@@ -289,6 +296,7 @@
       state = { route: route, baseRoute: route, idx: 0, blocked: [], applied: [], openHandler: null };
       updateUrl();
       mode = "replay";
+      initPointerDrag();
       renderAll();
     }
 
@@ -414,53 +422,167 @@
 
     function attachDrag(entry, from, imgEl, slotEl) {
       const payload = makePayload(entry, from);
-      const json = JSON.stringify(payload);
-      imgEl.draggable = true;
-      imgEl.addEventListener("dragstart", function (ev) {
-        ev.dataTransfer.setData("text/plain", json);
-        ev.dataTransfer.effectAllowed = "move";
-      });
-      if (slotEl) {
-        slotEl.draggable = true;
-        slotEl.addEventListener("dragstart", function (ev) {
-          ev.dataTransfer.setData("text/plain", json);
-          ev.dataTransfer.effectAllowed = "move";
-        });
-        // タップ選択（click → 対象クリックで移動）
-        slotEl.addEventListener("click", function (ev) {
-          ev.stopPropagation();
-          if (manual.pending && manual.pending.entry === entry) {
-            manual.pending = null;
-          } else {
-            manual.pending = payload;
-          }
-          renderAll();
-        });
-      }
+      const holder = slotEl || imgEl;
+      if (holder && holder.setAttribute) holder.setAttribute("data-drag", JSON.stringify(payload));
     }
 
     function attachDrop(targetEl, dstZone, dstIndex, dstBag) {
-      targetEl.addEventListener("dragover", function (ev) { ev.preventDefault(); targetEl.classList.add("drop-hint"); });
-      targetEl.addEventListener("dragleave", function () { targetEl.classList.remove("drop-hint"); });
-      targetEl.addEventListener("drop", function (ev) {
-        ev.preventDefault();
-        targetEl.classList.remove("drop-hint");
-        try {
-          const payload = JSON.parse(ev.dataTransfer.getData("text/plain"));
-          manualPlace(dstZone, dstIndex, payload, dstBag);
-        } catch (e) { /* ignore */ }
-        manual.pending = null;
-        renderAll();
-      });
-      // クリック移動（選択済みのとき）
-      targetEl.addEventListener("click", function (ev) {
-        ev.stopPropagation();
-        if (manual.pending) {
-          manualPlace(dstZone, dstIndex, manual.pending, dstBag);
-          manual.pending = null;
-          renderAll();
+      if (targetEl && targetEl.setAttribute) {
+        targetEl.setAttribute("data-drop", JSON.stringify({ zone: dstZone, index: dstIndex, bag: dstBag || null }));
+        targetEl.classList.add("drop-target");
+      }
+    }
+
+    // ===== ポインタドラッグ（マウス/タッチ共通） =====
+    let dragCtx = null;
+    let hintEl = null;
+
+    function closestAttr(node, attr) {
+      while (node) {
+        if (node.getAttribute) {
+          const v = node.getAttribute(attr);
+          if (v) return node;
         }
-      });
+        node = node.parentNode;
+      }
+      return null;
+    }
+
+    function elFromPoint(x, y) {
+      return document.elementFromPoint ? document.elementFromPoint(x, y) : null;
+    }
+
+    function parseAttr(node, attr) {
+      try { return JSON.parse(node.getAttribute(attr)); } catch (e) { return null; }
+    }
+
+    function sameSource(a, b) {
+      if (!a || !b) return false;
+      if (!a.entry || !b.entry) return false;
+      if (a.entry.name !== b.entry.name) return false;
+      const fa = a.from || null, fb = b.from || null;
+      return JSON.stringify(fa) === JSON.stringify(fb);
+    }
+
+    function clearHint() {
+      if (hintEl) { hintEl.classList.remove("drop-hint"); hintEl = null; }
+    }
+
+    function moveHint(x, y) {
+      const node = elFromPoint(x, y);
+      const target = node ? closestAttr(node, "data-drop") : null;
+      if (target === hintEl) return;
+      clearHint();
+      if (target) { target.classList.add("drop-hint"); hintEl = target; }
+    }
+
+    function onPointerDown(ev) {
+      if (mode !== "manual" || !manual) return;
+      const srcEl = closestAttr(ev.target, "data-drag");
+      if (!srcEl) return;
+      const payload = parseAttr(srcEl, "data-drag");
+      if (!payload) return;
+      ev.preventDefault();
+      dragCtx = { payload: payload, holder: srcEl, startX: ev.clientX, startY: ev.clientY, moved: false, ghost: null, pid: ev.pointerId };
+    }
+
+    function makeGhost(payload) {
+      const ghost = el("div", "drag-ghost");
+      const img = safeImage(payload.entry);
+      if (img) ghost.appendChild(img);
+      document.body.appendChild(ghost);
+      return ghost;
+    }
+
+    function moveGhost(ghost, x, y) {
+      ghost.style.left = (x - 30) + "px";
+      ghost.style.top = (y - 40) + "px";
+    }
+
+    function onPointerMove(ev) {
+      if (!dragCtx || ev.pointerId !== dragCtx.pid) return;
+      const dx = ev.clientX - dragCtx.startX;
+      const dy = ev.clientY - dragCtx.startY;
+      if (!dragCtx.moved) {
+        if (Math.abs(dx) + Math.abs(dy) < 8) return;
+        dragCtx.moved = true;
+        dragCtx.ghost = makeGhost(dragCtx.payload);
+        if (dragCtx.holder.classList) dragCtx.holder.classList.add("dragging-src");
+      }
+      moveGhost(dragCtx.ghost, ev.clientX, ev.clientY);
+      moveHint(ev.clientX, ev.clientY);
+      ev.preventDefault();
+    }
+
+    function dropTargetAt(x, y) {
+      const node = elFromPoint(x, y);
+      return node ? closestAttr(node, "data-drop") : null;
+    }
+
+    function cleanupDrag(ctx) {
+      if (ctx.ghost && ctx.ghost.remove) ctx.ghost.remove();
+      if (ctx.holder.classList) ctx.holder.classList.remove("dragging-src");
+      clearHint();
+    }
+
+    function onPointerUp(ev) {
+      if (!dragCtx) {
+        // 押下なしのタップ（選択済みのカードを対象に置く）
+        if (mode === "manual" && manual.pending) {
+          const tgtEl = closestAttr(ev.target, "data-drop");
+          if (tgtEl) {
+            const t = parseAttr(tgtEl, "data-drop");
+            manualPlace(t.zone, t.index, manual.pending, t.bag);
+            manual.pending = null;
+            renderAll();
+          }
+        }
+        return;
+      }
+      if (ev.pointerId !== dragCtx.pid) return;
+      const ctx = dragCtx;
+      dragCtx = null;
+      cleanupDrag(ctx);
+      if (ctx.moved) {
+        const target = dropTargetAt(ev.clientX, ev.clientY);
+        if (target) {
+          const t = parseAttr(target, "data-drop");
+          manualPlace(t.zone, t.index, ctx.payload, t.bag);
+          manual.pending = null;
+        }
+        renderAll();
+        return;
+      }
+      // タップ: 選択/配置
+      const srcEl = closestAttr(ev.target, "data-drag");
+      const srcPayload = srcEl ? parseAttr(srcEl, "data-drag") : null;
+      const tgtEl = closestAttr(ev.target, "data-drop");
+      const tgt = tgtEl ? parseAttr(tgtEl, "data-drop") : null;
+      if (tgt && manual.pending && !(srcPayload && sameSource(srcPayload, manual.pending))) {
+        manualPlace(tgt.zone, tgt.index, manual.pending, tgt.bag);
+        manual.pending = null;
+      } else if (srcPayload) {
+        manual.pending = (manual.pending && sameSource(srcPayload, manual.pending)) ? null : srcPayload;
+      }
+      renderAll();
+    }
+
+    function onPointerCancel(ev) {
+      if (!dragCtx || ev.pointerId !== dragCtx.pid) return;
+      const ctx = dragCtx;
+      dragCtx = null;
+      cleanupDrag(ctx);
+      renderAll();
+    }
+
+    let pointerInitDone = false;
+    function initPointerDrag() {
+      if (pointerInitDone) return;
+      pointerInitDone = true;
+      document.addEventListener("pointerdown", onPointerDown);
+      document.addEventListener("pointermove", onPointerMove);
+      document.addEventListener("pointerup", onPointerUp);
+      document.addEventListener("pointercancel", onPointerCancel);
     }
 
     // ===== 描画 =====
@@ -564,7 +686,7 @@
             clearInterval(playTimer);
             playTimer = setInterval(stepNext, SPEED_MS[speed]);
           }
-          renderToolbar();
+          renderReplayToolbar();
         });
         speeds.appendChild(sb);
       }
@@ -848,13 +970,72 @@
       return den ? num / den : 0;
     }
 
+    function hasName(arr, n) {
+      return (arr || []).some(function (e) { return e && e.name === n; });
+    }
+
+    function cardLocOf(card) {
+      const n = card && card.name;
+      if (!n) return { label: "（カードなし）", reachable: true };
+      if (manual && hasName(manual.hand, n)) return { label: "（手札あり）", reachable: true };
+      if (manual && hasName((manual.monsters || []).concat(manual.spells || []), n)) return { label: "（フィールド済）", reachable: true };
+      if (manual && manual.piles) {
+        if (hasName(manual.piles.main, n)) return { label: "（山札内）", reachable: true };
+        if (hasName(manual.piles.extra, n)) return { label: "（EX内）", reachable: true };
+        if (hasName(manual.piles.side, n)) return { label: "（サイド内）", reachable: true };
+      }
+      return { label: "（手元になし）", reachable: false };
+    }
+
+    function monstersMatchBonus(board) {
+      if (!manual) return 0;
+      const a = (manual.monsters || []).filter(Boolean).map(function (e) { return e.name; }).sort().join("|");
+      const b = ((board && board.monsters) || []).filter(Boolean).map(function (e) { return e.name; }).sort().join("|");
+      if (!a || !b) return 0;
+      if (a === b) return 0.15;
+      const setB = new Set(b.split("|"));
+      const cnt = a.split("|").filter(function (x) { return setB.has(x); }).length;
+      return cnt > 0 ? 0.05 : 0;
+    }
+
+    function candidateTotal(route, idx, base) {
+      let total = base + monstersMatchBonus(route.steps[idx].board);
+      const nxt = route.steps[idx + 1];
+      if (nxt && nxt.card) {
+        const loc = cardLocOf(nxt.card);
+        if (loc.label === "（手札あり）") total += 0.25;
+        else if (loc.reachable) total += 0.05;
+      }
+      return total;
+    }
+
     function findBestMatch(manual) {
       let best = null;
       for (const route of (deckData.routes || [])) {
         for (let i = 0; i < route.steps.length; i++) {
-          const sc = boardSim(manual, route.steps[i].board);
-          if (!best || sc > best.score) best = { route: route, routeId: route.id, idx: i, score: sc };
+          const base = boardSim(manual, route.steps[i].board);
+          const total = candidateTotal(route, i, base);
+          if (!best || total > best.total + 1e-9) {
+            best = { route: route, routeId: route.id, idx: i, score: base, total: total };
+          }
         }
+      }
+      if (!best || best.score < 0.25) return best;
+      // 最善候補の次手が手元に届かない場合、届く候補へ差し替え
+      const nxt0 = best.route.steps[best.idx + 1];
+      if (nxt0 && nxt0.card && !cardLocOf(nxt0.card).reachable) {
+        let alt = null;
+        for (const route of (deckData.routes || [])) {
+          for (let i = 0; i < route.steps.length; i++) {
+            const base = boardSim(manual, route.steps[i].board);
+            if (base < best.score - 0.1) continue;
+            const nxt = route.steps[i + 1];
+            if (nxt && nxt.card && cardLocOf(nxt.card).reachable && (!alt || base > alt.score)) {
+              alt = { route: route, routeId: route.id, idx: i, score: base, total: base };
+            }
+          }
+        }
+        if (alt) return alt;
       }
       return best;
     }
@@ -901,6 +1082,7 @@
           body.appendChild(el("div", "rec-name", "(" + (best.idx + 2 + i) + "手目) " + (st.card ? st.card.name : "")));
           body.appendChild(el("div", "rec-act", st.act || "アクション"));
           if (st.note) body.appendChild(el("div", "rec-note", st.note));
+          if (st.card) body.appendChild(el("div", "rec-note", "配置元: " + cardLocOf(st.card).label));
           card.appendChild(body);
           assistPanel.appendChild(card);
         }
