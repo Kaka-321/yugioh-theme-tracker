@@ -90,6 +90,19 @@
     .replay-main { flex: 1 1 760px; min-width: 0; }
     .replay-side { flex: 0 0 320px; display: flex; flex-direction: column; gap: 12px; position: sticky; top: 8px; max-height: calc(100vh - 16px); overflow-y: auto; }
     #step-panel { min-height: 300px; }
+    .rec-match { font-size: 12px; color: #446; margin: 6px 0; }
+    .rec-bar { height: 8px; background: #eee; border-radius: 4px; overflow: hidden; margin: 4px 0 10px; }
+    .rec-bar > div { height: 100%; background: #2b7; }
+    .rec-card { display: flex; gap: 8px; border: 1px solid #cde; background: #f4faff; border-radius: 8px; padding: 6px 8px; margin-bottom: 6px; align-items: flex-start; }
+    .rec-card img { width: 44px; border-radius: 3px; }
+    .rec-card .rec-name { font-size: 13px; font-weight: bold; color: #234; }
+    .rec-card .rec-act { font-size: 12px; color: #456; }
+    .rec-card .rec-note { font-size: 11px; color: #667; margin-top: 2px; }
+    .ai-row { display: flex; gap: 6px; margin: 8px 0; flex-wrap: wrap; }
+    .ai-row input[type=password], .ai-row input[type=text] { flex: 1 1 120px; border: 1px solid #ccc; border-radius: 6px; padding: 5px 8px; font-size: 12px; }
+    .ai-result { white-space: pre-wrap; font-size: 12px; color: #345; background: #f8f4ff; border: 1px solid #ddd0f0; border-radius: 8px; padding: 8px; margin-top: 8px; }
+    .ai-note { font-size: 10px; color: #889; margin-top: 6px; }
+    .ai-err { font-size: 12px; color: #c22; margin-top: 6px; }
     .panel { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
     .note { font-size: 12px; color: #667; margin-top: 8px; }
     .act-chip { display: inline-block; background: #eef; border: 1px solid #ccd; border-radius: 4px; font-size: 11px; color: #446; padding: 2px 8px; margin: 6px 0; }
@@ -141,6 +154,7 @@
 
     <aside class="replay-side" id="replay-side">
       <div id="step-panel" class="panel"></div>
+      <div id="assist-panel" class="panel"></div>
       <div id="disruption-panel" class="panel"></div>
     </aside>
   </main>
@@ -165,6 +179,7 @@
     const manualHelpDiv = document.getElementById("manual-help");
     const boardNoteDiv = document.getElementById("board-note");
     const stepPanel = document.getElementById("step-panel");
+    const assistPanel = document.getElementById("assist-panel");
     const disPanel = document.getElementById("disruption-panel");
     const crumbDiv = document.getElementById("replay-crumb");
     const titleH1 = document.getElementById("replay-title");
@@ -448,6 +463,7 @@
       renderDeckPanels();
       if (mode === "manual") {
         renderManualSide();
+        renderRecommendations();
         disPanel.style.display = "none";
         manualHelpDiv.style.display = "";
         manualHelpDiv.textContent =
@@ -751,6 +767,242 @@
     }
 
     // --- 右サイド ---
+    // ===== 盤面照合エンジン =====
+    function multiset(arr) {
+      const m = Object.create(null);
+      for (const e of (arr || [])) {
+        if (!e) continue;
+        const k = e.name || e.jp || "";
+        if (k) m[k] = (m[k] || 0) + 1;
+      }
+      return m;
+    }
+
+    function simMultiset(A, B) {
+      const aEmpty = !A || A.length === 0;
+      const bEmpty = !B || B.length === 0;
+      if (aEmpty && bEmpty) return 1;
+      if (aEmpty !== bEmpty) return 0;
+      const ma = multiset(A), mb = multiset(B);
+      let inter = 0, totA = 0, totB = 0;
+      for (const k of Object.keys(ma)) {
+        totA += ma[k];
+        if (mb[k]) inter += Math.min(ma[k], mb[k]);
+      }
+      for (const k of Object.keys(mb)) totB += mb[k];
+      if (totA === 0 || totB === 0) return 0;
+      return inter / Math.sqrt(totA * totB);
+    }
+
+    function zoneList(board, zone, slotized) {
+      const raw = (board && board[zone]) || [];
+      return slotized ? raw.filter(Boolean) : raw;
+    }
+
+    function boardSim(manual, board) {
+      const weights = { monsters: 3, spells: 2, gy: 2, banish: 1, hand: 0.5 };
+      let num = 0, den = 0;
+      for (const z of Object.keys(weights)) {
+        const slotized = z === "monsters" || z === "spells";
+        const a = zoneList(manual, z, slotized);
+        const b = zoneList(board, z, slotized);
+        num += weights[z] * simMultiset(a, b);
+        den += weights[z];
+      }
+      return den ? num / den : 0;
+    }
+
+    function findBestMatch(manual) {
+      let best = null;
+      for (const route of (deckData.routes || [])) {
+        for (let i = 0; i < route.steps.length; i++) {
+          const sc = boardSim(manual, route.steps[i].board);
+          if (!best || sc > best.score) best = { route: route, routeId: route.id, idx: i, score: sc };
+        }
+      }
+      return best;
+    }
+
+    function adoptMatch(match) {
+      stopPlay();
+      state = { route: match.route, baseRoute: match.route, idx: match.idx, blocked: [], applied: [], openHandler: null };
+      mode = "replay";
+      manual = null;
+      updateUrl();
+      renderAll();
+    }
+
+    // ===== 推薦パネル =====
+    function renderRecommendations() {
+      assistPanel.replaceChildren();
+      if (mode !== "manual") return;
+      assistPanel.appendChild(el("h3", null, "次のおすすめステップ"));
+      const best = findBestMatch(manual);
+      if (!best) {
+        assistPanel.appendChild(el("div", "note", "照合できるルートがありません"));
+        renderAISection(null);
+        return;
+      }
+      const pct = Math.round(best.score * 100);
+      assistPanel.appendChild(el("div", "rec-match",
+        best.route.name + " の " + (best.idx + 1) + "手目と " + pct + "% 一致"));
+      const bar = el("div", "rec-bar");
+      const fill = el("div");
+      fill.style.width = pct + "%";
+      bar.appendChild(fill);
+      assistPanel.appendChild(bar);
+
+      const upcoming = best.route.steps.slice(best.idx + 1, best.idx + 3);
+      if (upcoming.length === 0) {
+        assistPanel.appendChild(el("div", "note", "展開完了に近い状態です"));
+      } else {
+        for (let i = 0; i < upcoming.length; i++) {
+          const st = upcoming[i];
+          const card = el("div", "rec-card");
+          const img = safeImage(st.card);
+          if (img) card.appendChild(img);
+          const body = el("div");
+          body.appendChild(el("div", "rec-name", "(" + (best.idx + 2 + i) + "手目) " + (st.card ? st.card.name : "")));
+          body.appendChild(el("div", "rec-act", st.act || "アクション"));
+          if (st.note) body.appendChild(el("div", "rec-note", st.note));
+          card.appendChild(body);
+          assistPanel.appendChild(card);
+        }
+      }
+      const goBtn = el("button", "btn small", "このルートをリプレイで見る");
+      goBtn.addEventListener("click", function () { adoptMatch(best); });
+      assistPanel.appendChild(goBtn);
+      assistPanel.appendChild(el("div", "ai-note",
+        "盤面は既存ルートのスナップショットとの類似度で照合しています。手札の差異は重みを下げて評価。"));
+      renderAISection(best);
+    }
+
+    // ===== AI相談（Gemini） =====
+    function aiGetKey() {
+      try { return localStorage.getItem("beyes_gemini_key") || ""; } catch (e) { return ""; }
+    }
+    function aiSetKey(k) {
+      try { if (k) localStorage.setItem("beyes_gemini_key", k); else localStorage.removeItem("beyes_gemini_key"); } catch (e) { /* ignore */ }
+    }
+    function aiGetModel() {
+      try { return localStorage.getItem("beyes_gemini_model") || "gemini-2.5-flash"; } catch (e) { return "gemini-2.5-flash"; }
+    }
+    function aiSetModel(m) {
+      try { m ? localStorage.setItem("beyes_gemini_model", m) : localStorage.removeItem("beyes_gemini_model"); } catch (e) { /* ignore */ }
+    }
+
+    function deckSummaryLines() {
+      const lines = [];
+      const fmt = function (arr) { return (arr || []).map(function (e) { return e.name + "x" + e.count; }).join(", "); };
+      lines.push("メイン: " + mainCount() + "枚 → " + fmt(deckData.deck.main));
+      lines.push("EX: " + fmt(deckData.deck.extra));
+      return lines;
+    }
+
+    function buildPrompt(best) {
+      const b = currentBoard();
+      const names = function (arr) { return (arr || []).map(function (e) { return e && e.name ? e.name : "（空）"; }).join(", "); };
+      const lines = [
+        "あなたは遊戯王の熟練プレイヤーです。以下のデッキと盤面に対し、次の1手として最善のアクションを提案してください。",
+        "",
+      ].concat(deckSummaryLines()).concat([
+        "",
+        "手札: " + names(b.hand),
+        "モンスターゾーン: " + (b.monsters || []).map(function (e) { return e ? e.name : "（空）"; }).join(", "),
+        "魔法罠ゾーン: " + (b.spells || []).map(function (e) { return e ? e.name : "（空）"; }).join(", "),
+        "墓地: " + names(b.gy),
+        "除外: " + names(b.banish),
+      ]);
+      if (best) {
+        lines.push("", "一番近い既存ルート: " + best.route.name + "（" + Math.round(best.score * 100) + "% 一致、" +
+          best.route.steps.slice(best.idx + 1).map(function (st) { return (st.card ? st.card.name : "") + " " + (st.act || ""); }).join(" → ") + "）");
+      }
+      lines.push("", "条件: 箇条書き3点以内・各50字程度・日本語。巨大化した盤面より既存ルートに沿った動きを優先。");
+      return lines.join("\n");
+    }
+
+    async function consultAI(best) {
+      const key = aiGetKey();
+      if (!key) return;
+      const statusDiv = document.getElementById("ai-status");
+      const resultDiv = document.getElementById("ai-result");
+      if (statusDiv) statusDiv.textContent = "Geminiと通信中…";
+      if (resultDiv) { resultDiv.style.display = "none"; }
+      const model = aiGetModel();
+      const url = "https://generativelanguage.googleapis.com/v1beta/models/" + encodeURIComponent(model) + ":generateContent";
+      try {
+        const res = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: buildPrompt(best) }] }],
+            generationConfig: { temperature: 0.4, maxOutputTokens: 800 }
+          })
+        });
+        const data = await res.json().catch(function () { return null; });
+        if (!res.ok) {
+          const msg = data && data.error && data.error.message ? data.error.message : ("HTTP " + res.status);
+          if (statusDiv) statusDiv.textContent = "AI相談に失敗しました: " + msg;
+          return;
+        }
+        const parts = data && data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts;
+        const text = parts ? parts.map(function (p) { return p.text || ""; }).join("") : "（応答が空でした）";
+        if (resultDiv) {
+          resultDiv.textContent = text;
+          resultDiv.style.display = "";
+        }
+        if (statusDiv) statusDiv.textContent = "";
+      } catch (e) {
+        if (statusDiv) statusDiv.textContent = "AI相談に失敗しました: " + e.message;
+      }
+    }
+
+    function renderAISection(best) {
+      const key = aiGetKey();
+      const box = el("div");
+      const head = el("div", "strip-title", "AIに相談（Gemini）");
+      box.appendChild(head);
+      const row = el("div", "ai-row");
+      if (!key) {
+        const keyInput = el("input");
+        keyInput.type = "password";
+        keyInput.placeholder = "Gemini API キー";
+        const saveBtn = el("button", "btn small", "キーを保存");
+        saveBtn.addEventListener("click", function () {
+          if (keyInput.value.trim()) aiSetKey(keyInput.value.trim());
+          renderRecommendations();
+        });
+        row.append(keyInput, saveBtn);
+        const modelInput = el("input");
+        modelInput.type = "text";
+        modelInput.placeholder = "モデル (既定: " + aiGetModel() + ")";
+        modelInput.value = aiGetModel();
+        modelInput.addEventListener("change", function () { aiSetModel(modelInput.value.trim() || "gemini-2.5-flash"); });
+        row.appendChild(modelInput);
+        box.appendChild(row);
+        box.appendChild(el("div", "ai-note",
+          "Google AI Studio (aistudio.google.com) のAPIキーを入力するとAI相談が使えます。キーはこの端末のlocalStorageにのみ保存され、Gemini APIへのリクエスト以外に送信しません。"));
+      } else {
+        const askBtn = el("button", "btn small", "📡 今の盤面をAIに相談");
+        askBtn.addEventListener("click", function () { consultAI(best); });
+        const modelBtn = el("button", "btn secondary small", "設定(" + aiGetModel() + ")");
+        modelBtn.addEventListener("click", function () {
+          aiSetKey("");
+          renderRecommendations();
+        });
+        row.append(askBtn, modelBtn);
+        box.appendChild(row);
+        const status = el("div", "note");
+        status.id = "ai-status";
+        box.appendChild(status);
+        const result = el("div", "ai-result");
+        result.id = "ai-result";
+        result.style.display = "none";
+        box.appendChild(result);
+      }
+      assistPanel.appendChild(box);
+    }
+
     function renderManualSide() {
       stepPanel.replaceChildren();
       stepPanel.appendChild(el("h3", null, "手動操作"));
