@@ -96,6 +96,16 @@
     .deck-item { border-radius: 4px; }
     .manual-help { background: #eef7ff; border: 1px solid #b9d4f2; border-radius: 8px; padding: 10px; font-size: 12px; color: #345; margin-top: 10px; }
 
+    /* ===== デッキ下部行（デッキ/サイド/ゴミ箱 + デッキ編集） ===== */
+    .deck-row { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; align-items: stretch; }
+    .deck-row .deck-panel { margin-top: 0; }
+    #deck-panel { flex: 3 1 480px; }
+    #side-panel { flex: 1 1 260px; }
+    #trash-panel { flex: 1 1 190px; }
+    .trash-box { border: 2px dashed #d99; background: #fdf5f5; border-radius: 8px; padding: 6px; display: flex; flex-wrap: wrap; gap: 4px; min-height: 110px; max-height: 200px; overflow-y: auto; align-content: flex-start; }
+    .trash-box img { width: 52px; border-radius: 3px; opacity: .85; }
+    .trash-note { font-size: 10px; color: #a66; margin-top: 4px; }
+
     /* ===== 外枠レイアウト ===== */
     .centered { max-width: 1060px; margin-left: auto; margin-right: auto; }
     .replay-layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; justify-content: center; max-width: 1680px; margin: 0 auto; }
@@ -139,6 +149,15 @@
     .handlers { margin: 4px 0 10px; }
     .handler { display: block; width: 100%; text-align: left; background: #fff; border: 1px solid #bbb; border-radius: 6px; padding: 6px 8px; margin: 4px 0; cursor: pointer; font-size: 12px; }
     .handler-note { font-size: 11px; color: #777; display: block; }
+
+    /* ===== デッキ編集（インライン） ===== */
+    .deck-edit { flex: 2 1 300px; border: 1px solid #e2e2e2; background: #fff; border-radius: 10px; padding: 10px; }
+    .deck-edit h4 { margin: 0 0 6px; font-size: 13px; }
+    .deck-edit select.field { width: 100%; font-size: 12px; padding: 5px; border: 1px solid #ccc; border-radius: 6px; }
+    .deck-edit-list { list-style: none; margin: 8px 0 0; padding: 0; max-height: 260px; overflow-y: auto; }
+    .deck-edit-row { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 0; border-bottom: 1px dotted #e5e5e5; }
+    .deck-edit-count { color: #567; flex: 0 0 auto; white-space: nowrap; }
+    .deck-edit-name { color: #234; flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   </style>
 </head>
 <body>
@@ -163,8 +182,12 @@
 
       <div class="manual-help" id="manual-help" style="display:none"></div>
 
-      <div class="deck-panel" id="deck-panel"></div>
-      <div class="deck-panel" id="side-panel"></div>
+      <div class="deck-row">
+        <div class="deck-panel" id="deck-panel"></div>
+        <div class="deck-panel" id="side-panel"></div>
+        <div class="deck-panel" id="trash-panel"></div>
+      </div>
+      <div class="deck-panel" id="deck-edit-panel"></div>
     </section>
 
     <aside class="replay-side" id="replay-side">
@@ -191,6 +214,8 @@
     const boardDiv = document.getElementById("board");
     const deckPanelDiv = document.getElementById("deck-panel");
     const sidePanelDiv = document.getElementById("side-panel");
+    const trashPanelDiv = document.getElementById("trash-panel");
+    const deckEditPanelDiv = document.getElementById("deck-edit-panel");
     const handExDiv = document.getElementById("hand-ex");
     const manualHelpDiv = document.getElementById("manual-help");
     const boardNoteDiv = document.getElementById("board-note");
@@ -529,6 +554,7 @@
           gy: JSON.parse(JSON.stringify(manual.gy || [])),
           banish: JSON.parse(JSON.stringify(manual.banish || [])),
           piles: JSON.parse(JSON.stringify(manual.piles || { main: [], extra: [], side: [] })),
+          trash: JSON.parse(JSON.stringify(manual.trash || [])),
         });
       }
       const entry = payload.entry;
@@ -543,6 +569,11 @@
         manual[dstZone][dstIndex] = entry;
       } else if (dstZone === "gy" || dstZone === "banish" || dstZone === "hand") {
         manual[dstZone].push(entry);
+      } else if (dstZone === "trash") {
+        if (!Array.isArray(manual.trash)) manual.trash = [];
+        manual.trash.push(entry);
+        if (!Array.isArray(manual.trashHistory)) manual.trashHistory = [];
+        manual.trashHistory.push({ entry: entry, from: from });
       }
     }
 
@@ -645,6 +676,7 @@
       manual.gy = snap.gy;
       manual.banish = snap.banish;
       manual.piles = snap.piles;
+      manual.trash = snap.trash || [];
       manual.pending = null;
       renderAll();
     }
@@ -730,8 +762,12 @@
         const target = dropTargetAt(ev.clientX, ev.clientY);
         if (target) {
           const t = parseAttr(target, "data-drop");
-          manualPlace(t.zone, t.index, ctx.payload, t.bag);
-          manual.pending = null;
+          if (ctx.payload.from && ctx.payload.from.type === "trash" && t.zone !== "trash") {
+            restoreFromTrash(ctx.payload, t);
+          } else {
+            manualPlace(t.zone, t.index, ctx.payload, t.bag);
+            manual.pending = null;
+          }
         }
         renderAll();
         return;
@@ -741,6 +777,13 @@
       const srcPayload = srcEl ? parseAttr(srcEl, "data-drag") : null;
       const tgtEl = closestAttr(ev.target, "data-drop");
       const tgt = tgtEl ? parseAttr(tgtEl, "data-drop") : null;
+      if (srcPayload && srcPayload.from && srcPayload.from.type === "trash" && tgt &&
+          (tgt.zone === "deck" || tgt.zone === "hand" || tgt.zone === "gy" || tgt.zone === "banish" ||
+           tgt.zone === "monsters" || tgt.zone === "spells")) {
+        // ゴミ箱から戻す（復元）
+        restoreFromTrash(srcPayload, tgt);
+        return;
+      }
       if (tgt && manual.pending && !(srcPayload && sameSource(srcPayload, manual.pending))) {
         manualPlace(tgt.zone, tgt.index, manual.pending, tgt.bag);
         manual.pending = null;
@@ -748,6 +791,36 @@
         previewEntry = srcPayload.entry;
         manual.pending = (manual.pending && sameSource(srcPayload, manual.pending)) ? null : srcPayload;
       }
+      renderAll();
+    }
+
+    function trashEntryId(e) { return (e && (deckEntryId(e) || e.name)) || ""; }
+
+    function restoreFromTrash(payload, tgt) {
+      const entry = payload.entry;
+      if (!manual || !Array.isArray(manual.trash)) return;
+      const id = trashEntryId(entry);
+      const i = manual.trash.findIndex(function (e) { return trashEntryId(e) === id; });
+      if (i === -1) return;
+      manualPlaceRecord();
+      let done = false;
+      if (tgt.zone === "deck") {
+        manual.piles[tgt.bag || "main"].push(entry);
+        done = true;
+      } else if (tgt.zone === "monsters" || tgt.zone === "spells") {
+        let slot = (tgt.index != null && tgt.index >= 0 && tgt.index < manual[tgt.zone].length) ? tgt.index : -1;
+        if (slot === -1) slot = manual[tgt.zone].findIndex(function (s) { return !s; });
+        if (slot !== -1 && !manual[tgt.zone][slot]) { manual[tgt.zone][slot] = entry; done = true; }
+      } else if (tgt.zone === "gy" || tgt.zone === "banish" || tgt.zone === "hand") {
+        manual[tgt.zone].push(entry);
+        done = true;
+      }
+      if (!done) return;
+      manual.trash.splice(i, 1);
+      const h = manual.trashHistory || [];
+      const hi = h.findIndex(function (r) { return r.entry && (deckEntryId(r.entry) || r.entry.name) === id; });
+      if (hi !== -1) h.splice(hi, 1);
+      manual.pending = null;
       renderAll();
     }
 
@@ -789,6 +862,7 @@
       renderBoardNote();
       renderHandEx();
       renderDeckPanels();
+      renderDeckEditor();
       if (mode === "manual") {
         renderManualSide();
         renderRecommendations();
@@ -796,7 +870,8 @@
         manualHelpDiv.style.display = "";
         manualHelpDiv.textContent =
           "【手動操作モード】カードをドラッグ（またはタップ選択→移動先タップ）すると元の場所から移動します（コピーではありません）。" +
-          "下のデッキ/EXデッキ/サイドから置くと枚数が減り、デッキなどの山札に戻すこともできます。カードをクリックすると左のパネルに画像と効果が表示され、右クリックでひとつ前の操作に戻せます。";
+          "下のデッキ/EXデッキ/サイドから置くと枚数が減り、デッキなどの山札に戻すこともできます。カードをクリックすると左のパネルに画像と効果が表示され、右クリックでひとつ前の操作に戻せます。" +
+          "デッキ/EX/サイドのカードをゴミ箱へドラッグするとデッキから削除できます（「削除を1つ戻す」で復元）。";
       } else {
         renderStepPanel();
         disPanel.style.display = "";
@@ -1117,6 +1192,75 @@
         }
       }
       sidePanelDiv.appendChild(sideStrip);
+
+      trashPanelDiv.replaceChildren();
+      const editVisible = editing && manual && manual.piles;
+      if (!editVisible) {
+        trashPanelDiv.appendChild(el("div", "strip-title", "ゴミ箱"));
+        trashPanelDiv.appendChild(el("div", "trash-note", "手動操作モードでカードをドラッグすると削除できます。"));
+        return;
+      }
+      trashPanelDiv.appendChild(el("div", "strip-title", "ゴミ箱"));
+      const trashBox = el("div", "trash-box drop-target");
+      trashBox.appendChild(el("span", "empty-strip", "🗑 ここにカードをドロップで削除"));
+      attachDrop(trashBox, "trash", null, null);
+      for (let ti = 0; ti < (manual.trash || []).length; ti++) {
+        const t = manual.trash[ti];
+        const slot = el("div", "deck-item");
+        const img = safeImage(t);
+        if (img) slot.appendChild(img);
+        attachPreview(slot, t);
+        attachDrag(t, { type: "trash", index: ti }, img, slot);
+        trashBox.appendChild(slot);
+      }
+      // 既存デッキ/サイド/山札の残り領域
+      trashPanelDiv.appendChild(trashBox);
+      const undoTrash = el("button", "btn tiny secondary", "削除を1つ戻す" + ((manual.trashHistory || []).length ? " (" + manual.trashHistory.length + ")" : ""));
+      undoTrash.disabled = !(manual.trashHistory || []).length;
+      undoTrash.addEventListener("click", undoLastTrash);
+      trashPanelDiv.appendChild(undoTrash);
+      trashPanelDiv.appendChild(el("div", "trash-note", "ゴミ箱のカードを山札にドラッグで戻せます。"));
+    }
+
+    function manualPlaceRecord() {
+      const e = manual;
+      if (e.history && e.history.length < 60) {
+        e.history.push({
+          monsters: JSON.parse(JSON.stringify(e.monsters || [])),
+          spells: JSON.parse(JSON.stringify(e.spells || [])),
+          hand: JSON.parse(JSON.stringify(e.hand || [])),
+          gy: JSON.parse(JSON.stringify(e.gy || [])),
+          banish: JSON.parse(JSON.stringify(e.banish || [])),
+          piles: JSON.parse(JSON.stringify(e.piles || { main: [], extra: [], side: [] })),
+        });
+      }
+    }
+
+    function undoLastTrash() {
+      if (!manual || !Array.isArray(manual.trashHistory) || manual.trashHistory.length === 0) return;
+      const rec = manual.trashHistory.pop();
+      const entry = rec.entry;
+      const bag = rec.bag || guessBagForEntry(entry);
+      if (bag && manual.piles[bag]) manual.piles[bag].push(entry);
+      if (Array.isArray(manual.trash)) {
+        const i = manual.trash.indexOf(entry);
+        if (i !== -1) manual.trash.splice(i, 1);
+      }
+      renderAll();
+    }
+
+    function guessBagForEntry(entry) {
+      if (!entry) return "main";
+      if (deckData && deckData.deck) {
+        for (const bag of ["main", "extra", "side"]) {
+          for (const e of (deckData.deck[bag] || [])) {
+            if (deckEntryId(e) === deckEntryId(entry)) return bag;
+          }
+        }
+      }
+      const t = (entry.types || "");
+      if (/シンクロ|融合|リンク|Ｘ|エクシーズ|XYZ|Synchro|Fusion|Link/i.test(t)) return "extra";
+      return "main";
     }
 
     // --- 右サイド ---
@@ -1490,8 +1634,14 @@
       });
       ioNav.append(exportBtn, importBtn);
       stepPanel.appendChild(ioNav);
+    }
 
-      // ---- デッキ編集（カード追加/削除） ----
+    function renderDeckEditor() {
+      const editing = mode === "manual" && manual && manual.piles;
+      if (!editing) { deckEditPanelDiv.style.display = "none"; return; }
+      deckEditPanelDiv.style.display = "";
+      deckEditPanelDiv.replaceChildren();
+      const pl = manual.piles;
       const editBox = el("div", "deck-edit");
       editBox.appendChild(el("h4", null, "デッキ編集"));
       const poolSel = document.createElement("select");
@@ -1510,6 +1660,9 @@
       }
       for (const opt of opts) poolSel.appendChild(opt);
       const addNav = el("div", "nav");
+      addNav.style.display = "flex";
+      addNav.style.gap = "8px";
+      addNav.style.marginTop = "6px";
       const addMainBtn = el("button", "btn small", "デッキへ追加");
       addMainBtn.addEventListener("click", function () {
         const opt = poolSel.children[poolSel.selectedIndex];
@@ -1529,7 +1682,7 @@
       for (const bag of ["main", "extra", "side"]) {
         for (const row of condensedRows(pl, bag)) {
           const li = el("li", "deck-edit-row");
-          li.appendChild(el("span", "deck-edit-count", row.bagLabel + " " + row.count));
+          li.appendChild(el("span", "deck-edit-count", ({ main: "デッキ", extra: "EX", side: "サイド" })[row.bag] + " " + row.count));
           li.appendChild(el("span", "deck-edit-name", row.name));
           const delBtn = el("button", "btn tiny", "−1");
           delBtn.addEventListener("click", function () { removeCardFromPile(row.bag, row.id); });
@@ -1538,7 +1691,7 @@
         }
       }
       editBox.appendChild(ul);
-      stepPanel.appendChild(editBox);
+      deckEditPanelDiv.appendChild(editBox);
     }
 
     function deckEntryPool() {
