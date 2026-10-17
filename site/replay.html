@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>展開リプレイ</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 16px; background: #f4f4f4; }
+    a { color: #24a; }
+    .replay-header { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+    .replay-header h1 { font-size: 18px; margin: 0; }
+    .btn { display: inline-block; border: none; border-radius: 6px; padding: 6px 12px; cursor: pointer; font-size: 13px; background: #2b7; color: #fff; text-decoration: none; }
+    .btn.secondary { background: #777; color: #fff; }
+    .btn.small { padding: 4px 10px; font-size: 12px; }
+    .btn:disabled { opacity: .5; cursor: default; }
+    .replay-layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
+    .replay-board-wrap { flex: 1 1 560px; background: #e7efe7; border: 1px solid #b9c9b9; border-radius: 12px; padding: 12px; }
+    .replay-side { flex: 0 0 320px; display: flex; flex-direction: column; gap: 12px; }
+    .panel { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
+    .note { font-size: 12px; color: #667; }
+    /* ===== 盤面 ===== */
+    .zone-label { font-size: 10px; color: #678; text-align: center; margin-top: 2px; }
+    .zone-row { display: flex; gap: 6px; margin-bottom: 8px; }
+    .slot { width: 62px; height: 90px; border: 1px dashed #9ab; border-radius: 6px; background: rgba(255,255,255,.6); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .slot img { width: 100%; height: 100%; object-fit: contain; }
+    .slot.acting { outline: 3px solid #e33; outline-offset: -3px; box-shadow: 0 0 10px #e33; }
+    .pile-row { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+    .pile { flex: 1 1 120px; background: rgba(255,255,255,.75); border: 1px solid #aac; border-radius: 8px; padding: 6px; min-width: 110px; }
+    .pile-head { display: flex; justify-content: space-between; font-size: 11px; color: #456; margin-bottom: 4px; }
+    .pile-strip { display: flex; gap: 3px; flex-wrap: wrap; min-height: 30px; }
+    .pile-strip img { width: 30px; height: auto; border-radius: 2px; }
+    .pile-empty { font-size: 11px; color: #99a; }
+    /* ===== アクション & 妨害 ===== */
+    .act-chip { display: inline-block; background: #eef; border: 1px solid #ccd; border-radius: 4px; font-size: 11px; color: #446; padding: 2px 8px; margin: 6px 0; }
+    .step-image { width: 150px; height: auto; border-radius: 6px; }
+    .step-note { font-size: 13px; margin-top: 6px; }
+    .nav { margin-top: 10px; display: flex; gap: 8px; }
+    .crumb { font-size: 11px; background: #fff8e1; border: 1px solid #eec444; padding: 3px 8px; border-radius: 6px; margin-right: 6px; display: inline-block; }
+    .history { margin-top: 10px; border-top: 1px dashed #ddd; padding-top: 6px; max-height: 150px; overflow-y: auto; }
+    .history-line { font-size: 12px; color: #444; }
+    .history-line.blocked { text-decoration: line-through; color: #aaa; }
+    .disruption { display: flex; gap: 8px; align-items: center; background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 5px 8px; margin-bottom: 6px; width: 100%; cursor: pointer; text-align: left; }
+    .disruption img { width: 40px; height: auto; border-radius: 3px; }
+    .disruption.glow { border-color: #e33; animation: dl-pulse 1s ease-in-out infinite alternate; }
+    .disruption.disabled { opacity: .45; cursor: default; }
+    @keyframes dl-pulse {
+      from { box-shadow: 0 0 0 2px rgba(238,51,51,.25); }
+      to   { box-shadow: 0 0 0 6px rgba(238,51,51,.5); }
+    }
+    .handlers { margin: 4px 0 10px; }
+    .handler { display: block; width: 100%; text-align: left; background: #fff; border: 1px solid #bbb; border-radius: 6px; padding: 6px 8px; margin: 4px 0; cursor: pointer; font-size: 12px; }
+    .handler-note { font-size: 11px; color: #777; display: block; }
+    .disruption-card-img { width: 84px; height: auto; border-radius: 6px; }
+    .step-label { font-size: 12px; color: #556; }
+  </style>
+</head>
+<body>
+  <header class="replay-header">
+    <a class="btn secondary small" href="index.html">← 一覧へ戻る</a>
+    <h1 id="replay-title">展開リプレイ</h1>
+    <div id="replay-crumb"></div>
+  </header>
+
+  <main class="replay-layout">
+    <section class="replay-board-wrap">
+      <div id="board"></div>
+      <div id="board-note" class="note"></div>
+    </section>
+
+    <aside class="replay-side">
+      <div id="step-panel" class="panel"></div>
+      <div id="disruption-panel" class="panel"></div>
+    </aside>
+  </main>
+
+  <script>
+    // ===== 状態 =====
+    let deckData = null;
+    let state = null;
+
+    const boardDiv = document.getElementById("board");
+    const boardNoteDiv = document.getElementById("board-note");
+    const stepPanel = document.getElementById("step-panel");
+    const disPanel = document.getElementById("disruption-panel");
+    const crumbDiv = document.getElementById("replay-crumb");
+    const titleH1 = document.getElementById("replay-title");
+
+    // ===== ユーティリティ =====
+    function safeImage(entry, className) {
+      const path = entry && entry.image_path;
+      if (
+        typeof path === "string" &&
+        path.startsWith("assets/cards/") &&
+        !path.includes("..") &&
+        (path.endsWith(".jpg") || path.endsWith(".png"))
+      ) {
+        const img = document.createElement("img");
+        img.loading = "lazy";
+        img.alt = entry.name || "カード画像";
+        if (className) img.className = className;
+        img.onerror = function () { img.remove(); };
+        img.src = path;
+        return img;
+      }
+      return null;
+    }
+
+    function el(tag, cls, text) {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (text !== undefined) e.textContent = text;
+      return e;
+    }
+
+    function getParams() {
+      const params = new URLSearchParams(location.search);
+      return {
+        theme: params.get("theme") || "blue-eyes",
+        route: params.get("route") || null
+      };
+    }
+
+    function updateUrl() {
+      const params = new URLSearchParams({ theme: paramsTheme, route: state.route.id });
+      history.replaceState(null, "", "replay.html?" + params.toString());
+    }
+
+    // ===== 初期化 =====
+    async function init() {
+      const params = getParams();
+      paramsTheme = params.theme;
+      try {
+        const res = await fetch("./data/decks/" + encodeURIComponent(params.theme) + ".json", { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        deckData = await res.json();
+      } catch (e) {
+        titleH1.textContent = "デッキデータを読み込めませんでした";
+        boardNoteDiv.textContent = e.message;
+        return;
+      }
+
+      let route = deckData.routes[0];
+      if (params.route) {
+        const found = deckData.routes.find(function (r) { return r.id === params.route; });
+        if (found) route = found;
+      }
+      enterRoute(route);
+    }
+
+    let paramsTheme = "blue-eyes";
+
+    function enterRoute(route) {
+      state = {
+        route: route,
+        baseRoute: route,
+        steps: route.steps.slice(),
+        idx: 0,
+        blocked: [],
+        applied: [],
+        openHandler: null
+      };
+      updateUrl();
+      renderAll();
+    }
+
+    function applyHandler(disruption, handler) {
+      const path = handler.path;
+      state.applied.push(disruption.jp + " → " + handler.label);
+      state.openHandler = null;
+      if (path === "continue") {
+        state.blocked.push(state.idx);
+        state.idx = Math.min(state.idx + 1, state.route.steps.length - 1);
+      } else if (path && typeof path === "object" && path.steps) {
+        const base = state.route.steps.slice(0, state.idx);
+        state.route = { name: state.route.name, steps: base.concat(path.steps) };
+        state.idx = state.idx;
+      } else if (path && typeof path === "object" && path.route) {
+        const target = deckData.routes.find(function (r) { return r.id === path.route; });
+        if (!target) return;
+        state.route = target;
+        state.steps = target.steps.slice();
+        state.blocked = [];
+        state.applied.push("→ " + target.name + " へ切り替え");
+        state.idx = Math.max(0, path.from_step || 0);
+      }
+      updateUrl();
+      renderAll();
+    }
+
+    // ===== 描画 =====
+    function renderAll() {
+      renderHeader();
+      renderBoard();
+      renderStepPanel();
+      renderDisruptionPanel();
+    }
+
+    function renderHeader() {
+      titleH1.textContent = "展開リプレイ: " + state.route.name;
+      crumbDiv.replaceChildren();
+      for (const applied of state.applied) {
+        crumbDiv.appendChild(el("span", "crumb", applied));
+      }
+    }
+
+    function cardKey(c) {
+      if (!c) return "";
+      return c.slug || (c.card_id !== null && c.card_id !== undefined ? String(c.card_id) : "") + "|" + (c.name || "");
+    }
+
+    function actingKeys() {
+      const cur = state.route.steps[state.idx];
+      return cur && cur.card ? cardKey(cur.card) : null;
+    }
+
+    function zoneRow(label, entries) {
+      const wrap = el("div", null);
+      const row = el("div", "zone-row");
+      const act = actingKeys();
+      for (let i = 0; i < entries.length; i++) {
+        const entry = entries[i];
+        const slot = el("div", "slot");
+        const img = safeImage(entry);
+        if (img) {
+          if (act && entry && cardKey(entry) === act) slot.classList.add("acting");
+          slot.appendChild(img);
+        }
+        row.appendChild(slot);
+      }
+      wrap.appendChild(row);
+      wrap.appendChild(el("div", "zone-label", label));
+      return wrap;
+    }
+
+    function pile(label, entries) {
+      const div = el("div", "pile");
+      const head = el("div", "pile-head");
+      head.appendChild(el("span", null, label));
+      head.appendChild(el("span", null, entries.length + "枚"));
+      div.appendChild(head);
+      const strip = el("div", "pile-strip");
+      for (const entry of entries) {
+        const img = safeImage(entry);
+        if (img) strip.appendChild(img);
+      }
+      if (entries.length === 0) strip.appendChild(el("span", "pile-empty", "なし"));
+      div.appendChild(strip);
+      return div;
+    }
+
+    function renderBoard() {
+      const step = state.route.steps[state.idx];
+      const b = (step && step.board) || { monsters: [], spells: [], hand: [], gy: [], banish: [], extra: [] };
+      const monsters = (b.monsters || []).slice();
+      while (monsters.length < 5) monsters.push(null);
+      const spells = (b.spells || []).slice();
+      while (spells.length < 5) spells.push(null);
+      boardDiv.replaceChildren();
+      boardDiv.appendChild(zoneRow("モンスターゾーン", monsters));
+      boardDiv.appendChild(zoneRow("魔法・罠ゾーン", spells));
+      boardDiv.appendChild(pile("手札", b.hand || []));
+      const piles = el("div", "pile-row");
+      piles.appendChild(pile("墓地", b.gy || []));
+      piles.appendChild(pile("除外ゾーン", b.banish || []));
+      piles.appendChild(pile("EXデッキ", b.extra || []));
+      boardDiv.appendChild(piles);
+      boardNoteDiv.textContent = "盤面は該当アクション直後の状態を示します。赤枠はこのアクションで動いたカードです。";
+    }
+
+    function renderStepPanel() {
+      stepPanel.replaceChildren();
+      const steps = state.route.steps;
+      const idx = state.idx;
+      const step = steps[idx] || {};
+
+      const progress = el("div", "step-label", "アクション " + (idx + 1) + " / " + steps.length);
+      stepPanel.appendChild(progress);
+
+      const chip = el("div", "act-chip", (step.card ? step.card.name + " - " : "") + (step.act || "アクション"));
+      stepPanel.appendChild(chip);
+
+      const img = safeImage(step.card, "step-image");
+      if (img) stepPanel.appendChild(img);
+
+      const note = el("div", "step-note", step.note || "");
+      stepPanel.appendChild(note);
+
+      const nav = el("div", "nav");
+      const prev = el("button", "btn secondary small", "← 戻る");
+      prev.disabled = idx === 0;
+      prev.addEventListener("click", function () { if (state.idx > 0) { state.idx--; renderAll(); } });
+      const next = el("button", "btn small", "次へ →");
+      next.disabled = idx >= steps.length - 1;
+      next.addEventListener("click", function () { if (state.idx < steps.length - 1) { state.idx++; renderAll(); } });
+      nav.append(prev, next);
+      stepPanel.appendChild(nav);
+
+      const history = el("div", "history");
+      for (let i = 0; i <= idx; i++) {
+        const s = steps[i];
+        const line = el("div", "history-line" + (state.blocked.indexOf(i) !== -1 ? " blocked" : ""),
+          (i + 1) + ". " + (s.card ? s.card.name + " - " : "") + (s.act || "アクション"));
+        history.appendChild(line);
+      }
+      stepPanel.appendChild(history);
+
+      const foot = el("div", "nav");
+      const reset = el("button", "btn secondary small", "最初からやり直す");
+      reset.addEventListener("click", function () { enterRoute(state.baseRoute); });
+      foot.appendChild(reset);
+      stepPanel.appendChild(foot);
+    }
+
+    function stepEvents(step) {
+      return Array.isArray(step.events) ? step.events : [];
+    }
+
+    function renderDisruptionPanel() {
+      disPanel.replaceChildren();
+      disPanel.appendChild(el("h3", null, "相手が打てる妨害"));
+      const step = state.route.steps[state.idx];
+      for (const d of deckData.disruptions || []) {
+        const btn = el("button", "disruption");
+        const img = safeImage(d);
+        if (img) btn.appendChild(img);
+        const canPlay = stepEvents(step).some(function (ev) { return (d.events || []).indexOf(ev) !== -1; });
+        const alreadyApplied = state.applied.some(function (a) { return a.indexOf(d.jp) === 0; });
+        btn.appendChild(el("span", null, d.jp + (canPlay ? "：このアクションで打てる" : "：今は打てない")));
+        if (alreadyApplied) {
+          btn.classList.add("disabled");
+          btn.disabled = true;
+        } else if (canPlay) {
+          btn.classList.add("glow");
+        }
+        btn.addEventListener("click", function () {
+          if (btn.disabled) return;
+          state.openHandler = state.openHandler === d.id ? null : d.id;
+          renderAll();
+        });
+        disPanel.appendChild(btn);
+
+        if (state.openHandler === d.id) {
+          const box = el("div", "handlers");
+          if (d.effect) box.appendChild(el("div", "note", d.effect));
+          for (const handler of (d.handlers || [])) {
+            const hb = el("button", "handler");
+            hb.appendChild(el("div", null, "▶ " + handler.label));
+            hb.appendChild(el("span", "handler-note", handler.note || ""));
+            hb.addEventListener("click", function () { applyHandler(d, handler); });
+            box.appendChild(hb);
+          }
+          disPanel.appendChild(box);
+        }
+      }
+      disPanel.appendChild(el("div", "note", "妨害によって盤面が変わった後の動きは、選んだ対応に沿ってリプレイが続きます。"));
+    }
+  </script>
+</body>
+</html>

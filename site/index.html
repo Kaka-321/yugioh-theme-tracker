@@ -321,8 +321,6 @@
       <p class="note">ルートを選んで「リプレイを見る」を押すと、1アクションずつの展開案内が始まります。アクション中に相手が打てる妨害はボード上で光ります。妨害を選ぶと、その妨害適用後の動き方を提示します。</p>
       <div id="decklab-routes"></div>
 
-      <div id="decklab-replay" style="display:none"></div>
-
       <h3>立ち回りのコツ</h3>
       <ul id="decklab-tips"></ul>
     </section>
@@ -708,19 +706,9 @@
     const deckMetaP      = document.getElementById("decklab-meta");
     const decklistDiv    = document.getElementById("decklab-deck");
     const routesDiv      = document.getElementById("decklab-routes");
-    const replayDiv      = document.getElementById("decklab-replay");
     const tipsUl         = document.getElementById("decklab-tips");
 
     let labData = null;
-    let labState = {
-      view: "routes",
-      route: null,
-      steps: [],
-      idx: 0,
-      blocked: [],
-      applied: [],   // {jp, handlerLabel}
-      openHandler: null
-    };
 
     function labCardImage(entry) {
       if (!entry || typeof entry.image_path !== "string") return null;
@@ -730,7 +718,6 @@
     function hideDeckLab() {
       decklabSection.style.display = "none";
       labData = null;
-      labState = { view: "routes", route: null, steps: [], idx: 0, blocked: [], applied: [], openHandler: null };
     }
 
     async function loadDeckLab(themeId) {
@@ -747,8 +734,6 @@
         deckMetaP.textContent = (data.meta && data.meta.note) ? data.meta.note : "";
         renderDeckOverview();
         renderDeckRoutes();
-        replayDiv.style.display = "none";
-        replayDiv.replaceChildren();
       } catch (e) {
         hideDeckLab();
       }
@@ -794,9 +779,9 @@
     function renderDeckRoutes() {
       routesDiv.replaceChildren();
       tipsUl.replaceChildren();
-      routesDiv.style.display = "";
       const list = document.createElement("div");
       list.className = "dl-routes";
+      const themeId = (labData.theme || "").replace(/[^a-z0-9_-]/gi, "");
       for (const route of labData.routes) {
         const card = document.createElement("div");
         card.className = "dl-route-card";
@@ -810,11 +795,11 @@
         const meta = document.createElement("p");
         meta.textContent = "アクション数: " + steps;
         card.appendChild(meta);
-        const btn = document.createElement("button");
-        btn.className = "dl-btn";
-        btn.textContent = "リプレイを見る";
-        btn.addEventListener("click", function () { enterReplay(route); });
-        card.appendChild(btn);
+        const link = document.createElement("a");
+        link.className = "dl-btn";
+        link.href = "replay.html?theme=" + encodeURIComponent(themeId) + "&route=" + encodeURIComponent(route.id);
+        link.textContent = "リプレイを見る";
+        card.appendChild(link);
         list.appendChild(card);
       }
       routesDiv.appendChild(list);
@@ -824,239 +809,6 @@
         tipsUl.appendChild(li);
       }
       tipsUl.style.display = (labData.tips || []).length ? "" : "none";
-    }
-
-    function labCrumb(text) {
-      const span = document.createElement("span");
-      span.className = "dl-crumb";
-      span.textContent = text;
-      return span;
-    }
-
-    function enterReplay(route) {
-      labState = {
-        view: "replay",
-        route: route,
-        baseRoute: route,
-        steps: route.steps.slice(),
-        idx: 0,
-        blocked: [],
-        applied: [],
-        openHandler: null
-      };
-      routesDiv.style.display = "none";
-      replayDiv.replaceChildren();
-      replayDiv.style.display = "";
-      renderReplay();
-    }
-
-    function backToRoutes() {
-      labState = { view: "routes", route: null, steps: [], idx: 0, blocked: [], applied: [], openHandler: null };
-      replayDiv.style.display = "none";
-      replayDiv.replaceChildren();
-      routesDiv.style.display = "";
-      setDeckTipsVisible(true);
-    }
-
-    function setDeckTipsVisible(visible) {
-      const h3s = document.querySelectorAll("#decklab h3");
-      // 「立ち回りのコツ」は最後のh3配下
-      for (const h3 of h3s) {
-        if (h3.textContent.trim().startsWith("立ち回り")) {
-          h3.style.display = visible ? "" : "none";
-          if (h3.nextElementSibling) h3.nextElementSibling.style.display = visible ? "" : "none";
-        }
-      }
-    }
-
-    function stepEvents(step) {
-      return Array.isArray(step.events) ? step.events : [];
-    }
-
-    function disruptionAvailableFor(d, step) {
-      const se = stepEvents(step);
-      return se.some(function (ev) { return d.events.indexOf(ev) !== -1; });
-    }
-
-    function applyHandler(disruption, handler) {
-      const path = handler.path;
-      labState.applied.push(disruption.jp + " → " + handler.label);
-      labState.openHandler = null;
-      if (path === "continue") {
-        labState.blocked.push(labState.idx);
-        labState.idx = Math.min(labState.idx + 1, labState.route.steps.length - 1);
-      } else if (path && typeof path === "object" && path.steps) {
-        const base = fullStepsBefore(labState.idx);
-        labState.route = { name: labState.route.name, summary: labState.route.summary, steps: base.concat(path.steps) };
-        labState.blocked = [];
-        labState.idx = labState.idx;
-      } else if (path && typeof path === "object" && path.route) {
-        const target = labData.routes.find(function (r) { return r.id === path.route; });
-        if (!target) return;
-        const from = Math.max(0, path.from_step || 0);
-        labState.route = { name: target.name, summary: target.summary, steps: target.steps.slice(from) };
-        labState.blocked = [];
-        labState.idx = 0;
-      }
-      renderReplay();
-    }
-
-    function fullStepsBefore(i) {
-      return labState.route.steps.slice(0, i);
-    }
-
-    function renderReplay() {
-      replayDiv.replaceChildren();
-      const route = labState.route;
-      if (!route) return;
-      const steps = route.steps;
-      const idx = labState.idx;
-      const step = steps[idx] || {};
-
-      const head = document.createElement("div");
-      const title = document.createElement("h4");
-      title.textContent = "リプレイ: " + route.name;
-      head.appendChild(title);
-      for (const applied of labState.applied) head.appendChild(labCrumb(applied));
-      const backBtn = createRouteBackButton();
-      head.appendChild(backBtn);
-      const resetBtn = document.createElement("button");
-      resetBtn.className = "dl-btn secondary small";
-      resetBtn.textContent = "最初からやり直す";
-      resetBtn.addEventListener("click", function () { enterReplay(labState.baseRoute || route); });
-      head.appendChild(resetBtn);
-      replayDiv.appendChild(head);
-
-      const flex = document.createElement("div");
-      flex.className = "dl-replay";
-
-      // 左: 現在のアクション
-      const mainDiv = document.createElement("div");
-      mainDiv.className = "dl-step-main";
-      const progress = document.createElement("div");
-      progress.className = "dl-progress";
-      progress.textContent = "アクション " + (idx + 1) + " / " + steps.length + "（進行中。妨害できる相手カードは右側で光ります）";
-      mainDiv.appendChild(progress);
-
-      const chip = document.createElement("div");
-      chip.className = "dl-act-chip";
-      chip.textContent = step.card ? step.card.name + " - " + (step.act || "アクション") : (step.act || "アクション");
-      mainDiv.appendChild(chip);
-
-      const cardWrap = document.createElement("p");
-      const img = labCardImage(step.card);
-      if (img) cardWrap.appendChild(img);
-      else {
-        const noImg = document.createElement("div");
-        noImg.textContent = "（カードなしの状態遷移）";
-        noImg.style.color = "#999";
-        noImg.style.fontSize = "12px";
-        cardWrap.appendChild(noImg);
-      }
-      mainDiv.appendChild(cardWrap);
-
-      const note = document.createElement("div");
-      note.className = "dl-step-note";
-      note.textContent = step.note || "";
-      mainDiv.appendChild(note);
-
-      // 送信ボタン
-      const nav = document.createElement("div");
-      nav.style.marginTop = "10px";
-      const prevBtn = document.createElement("button");
-      prevBtn.className = "dl-btn secondary small";
-      prevBtn.textContent = "← 戻る";
-      prevBtn.disabled = idx === 0;
-      prevBtn.addEventListener("click", function () { if (labState.idx > 0) { labState.idx--; renderReplay(); } });
-      const nextBtn = document.createElement("button");
-      nextBtn.className = "dl-btn small";
-      nextBtn.textContent = "次へ →";
-      nextBtn.disabled = idx >= steps.length - 1;
-      nextBtn.addEventListener("click", function () { if (labState.idx < steps.length - 1) { labState.idx++; renderReplay(); } });
-      nav.appendChild(prevBtn);
-      nav.appendChild(nextBtn);
-      mainDiv.appendChild(nav);
-
-      // 履歴
-      const hist = document.createElement("div");
-      hist.className = "dl-history";
-      for (let i = 0; i <= idx; i++) {
-        const h = document.createElement("div");
-        h.className = "dl-history-line" + (labState.blocked.indexOf(i) !== -1 ? " blocked" : "");
-        const s = steps[i];
-        h.textContent = (i + 1) + ". " + (s.card ? s.card.name + " - " : "") + (s.act || "アクション");
-        hist.appendChild(h);
-      }
-      mainDiv.appendChild(hist);
-      flex.appendChild(mainDiv);
-
-      // 右: 相手妨害パネル
-      const side = document.createElement("div");
-      side.className = "dl-side";
-      const sideTitle = document.createElement("h4");
-      sideTitle.textContent = "相手が打てる妨害";
-      side.appendChild(sideTitle);
-      for (const d of labData.disruptions) {
-        const btn = document.createElement("button");
-        btn.className = "dl-disruption";
-        const dImg = labCardImage(d);
-        if (dImg) btn.appendChild(dImg);
-        const span = document.createElement("span");
-        span.textContent = d.jp + (disruptionAvailableFor(d, step) ? "：このアクションで打てる" : "：今は打てない");
-        btn.appendChild(span);
-        if (labState.applied.some(function (a) { return a.indexOf(d.jp) === 0; })) {
-          btn.classList.add("disabled");
-          btn.disabled = true;
-        } else if (disruptionAvailableFor(d, step)) {
-          btn.classList.add("glow");
-        } else {
-          btn.disabled = false;
-        }
-        btn.addEventListener("click", function () {
-          if (btn.disabled) return;
-          labState.openHandler = labState.openHandler === d.id ? null : d.id;
-          renderReplay();
-        });
-        side.appendChild(btn);
-
-        if (labState.openHandler === d.id) {
-          const box = document.createElement("div");
-          box.className = "dl-handlers";
-          const hbox = document.createElement("div");
-          const info = document.createElement("div");
-          info.className = "dl-note";
-          info.textContent = d.effect || "";
-          box.appendChild(info);
-          for (const handler of (d.handlers || [])) {
-            const hb = document.createElement("button");
-            hb.className = "dl-handler";
-            const label = document.createElement("div");
-            label.textContent = "▶ " + handler.label;
-            hb.appendChild(label);
-            const hn = document.createElement("span");
-            hn.className = "dl-handler-note";
-            hn.textContent = handler.note || "";
-            hb.appendChild(hn);
-            hb.addEventListener("click", function () {
-              applyHandler(d, handler);
-            });
-            box.appendChild(hb);
-          }
-          side.appendChild(box);
-        }
-      }
-      flex.appendChild(side);
-      replayDiv.appendChild(flex);
-      setDeckTipsVisible(false);
-    }
-
-    function createRouteBackButton() {
-      const btn = document.createElement("button");
-      btn.className = "dl-btn secondary small";
-      btn.textContent = "ルート選択に戻る";
-      btn.style.marginRight = "8px";
-      btn.addEventListener("click", backToRoutes);
-      return btn;
     }
 
     // ===== 日付表示 =====

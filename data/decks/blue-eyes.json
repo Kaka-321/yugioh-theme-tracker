@@ -298,7 +298,39 @@
           "note": "青き眼の乙女を召喚（条件を満たせば特殊召喚も可）。",
           "events": [
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 88241506,
+                "name": "青き眼の乙女",
+                "image_path": "assets/cards/88241506_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "gy": [],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -313,7 +345,44 @@
             "field_eff",
             "gy_eff",
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 88241506,
+                "name": "青き眼の乙女",
+                "image_path": "assets/cards/88241506_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 8240199,
+                "name": "青き眼の賢士",
+                "image_path": "assets/cards/8240199_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -326,7 +395,51 @@
           "note": "賢士の効果で伝説の白石をサーチ。",
           "events": [
             "search"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 88241506,
+                "name": "青き眼の乙女",
+                "image_path": "assets/cards/88241506_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 8240199,
+                "name": "青き眼の賢士",
+                "image_path": "assets/cards/8240199_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              }
+            ],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -336,11 +449,59 @@
             "external": false
           },
           "act": "効果",
-          "note": "手札の伝説の白石を墓地へ送り、その効果で青眼の白龍または展開パーツを特殊召喚。",
+          "note": "手札の伝説の白石を墓地へ送り、その効果で青眼の白龍を特殊召喚。",
           "events": [
             "gy_eff",
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 88241506,
+                "name": "青き眼の乙女",
+                "image_path": "assets/cards/88241506_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 8240199,
+                "name": "青き眼の賢士",
+                "image_path": "assets/cards/8240199_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -353,21 +514,140 @@
           "note": "賢士（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
           "events": [
             "synchro"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 88241506,
+                "name": "青き眼の乙女",
+                "image_path": "assets/cards/88241506_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 8240199,
+                "name": "青き眼の賢士",
+                "image_path": "assets/cards/8240199_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              }
+            ]
+          }
         },
         {
           "card": {
             "card_id": 71039903,
             "name": "太古の白石",
             "image_path": "assets/cards/71039903_jp.png",
-            "external": false
+            "external": false,
+            "label": "墓地から再展開"
           },
           "act": "効果",
           "note": "墓地の白石効果で4枚目の白石または青眼のパーツを特殊召喚し、手札を回復。",
           "events": [
             "gy_eff",
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 88241506,
+                "name": "青き眼の乙女",
+                "image_path": "assets/cards/88241506_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false,
+                "label": "墓地から再展開"
+              },
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 8240199,
+                "name": "青き眼の賢士",
+                "image_path": "assets/cards/8240199_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              }
+            ]
+          }
         },
         {
           "card": {
@@ -381,11 +661,130 @@
           "events": [
             "fusion",
             "spell"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 88241506,
+                "name": "青き眼の乙女",
+                "image_path": "assets/cards/88241506_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 8240199,
+                "name": "青き眼の賢士",
+                "image_path": "assets/cards/8240199_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 23995346,
+                "name": "青眼の究極竜",
+                "image_path": "assets/cards/23995346_jp.png",
+                "external": false,
+                "label": "融合召喚"
+              }
+            ]
+          }
         },
         {
           "act": "盤面確定",
-          "note": "終盤：青眼の精霊龍＋青眼の究極竜＋白石。打点・妨害ともに厚い盤面。"
+          "note": "終盤：青眼の精霊龍＋青眼の究極竜＋乙女。打点・妨害ともに厚い盤面。",
+          "board": {
+            "monsters": [
+              {
+                "card_id": 88241506,
+                "name": "青き眼の乙女",
+                "image_path": "assets/cards/88241506_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 8240199,
+                "name": "青き眼の賢士",
+                "image_path": "assets/cards/8240199_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 23995346,
+                "name": "青眼の究極竜",
+                "image_path": "assets/cards/23995346_jp.png",
+                "external": false,
+                "label": "融合召喚"
+              }
+            ]
+          }
         }
       ]
     },
@@ -405,7 +804,45 @@
           "note": "青き眼の祭司を召喚（または効果で特殊召喚）。",
           "events": [
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 45644898,
+                "name": "青き眼の祭司",
+                "image_path": "assets/cards/45644898_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "gy": [],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -415,10 +852,49 @@
             "external": false
           },
           "act": "効果",
-          "note": "祭司の効果で太古の白石をサーチ。",
+          "note": "祭司の効果で太古の白石をサーチ（または墓地へ送って展開）。",
           "events": [
             "search"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 45644898,
+                "name": "青き眼の祭司",
+                "image_path": "assets/cards/45644898_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -432,7 +908,51 @@
           "events": [
             "gy_eff",
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 45644898,
+                "name": "青き眼の祭司",
+                "image_path": "assets/cards/45644898_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false,
+                "label": "白石ループ"
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -442,10 +962,61 @@
             "external": false
           },
           "act": "特殊召喚",
-          "note": "墓穴の青眼の白龍を除外して、青眼の亜白龍を特殊召喚。",
+          "note": "墓地の青眼の白龍を除外して、青眼の亜白龍を特殊召喚。",
           "events": [
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 45644898,
+                "name": "青き眼の祭司",
+                "image_path": "assets/cards/45644898_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false,
+                "label": "白石ループ"
+              },
+              {
+                "card_id": 38517737,
+                "name": "青眼の亜白龍",
+                "image_path": "assets/cards/38517737_jp.png",
+                "external": false
+              },
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false,
+                "label": "除外"
+              }
+            ],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -459,7 +1030,66 @@
           "events": [
             "gy_eff",
             "search"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 45644898,
+                "name": "青き眼の祭司",
+                "image_path": "assets/cards/45644898_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false,
+                "label": "白石ループ"
+              },
+              {
+                "card_id": 38517737,
+                "name": "青眼の亜白龍",
+                "image_path": "assets/cards/38517737_jp.png",
+                "external": false
+              },
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false,
+                "label": "究極融合"
+              }
+            ],
+            "gy": [
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false,
+                "label": "除外"
+              }
+            ],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -473,11 +1103,123 @@
           "events": [
             "fusion",
             "spell"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 45644898,
+                "name": "青き眼の祭司",
+                "image_path": "assets/cards/45644898_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false,
+                "label": "白石ループ"
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false,
+                "label": "除外"
+              }
+            ],
+            "extra": [
+              {
+                "card_id": 62873545,
+                "name": "究極竜騎士",
+                "image_path": "assets/cards/62873545_jp.png",
+                "external": false,
+                "label": "fusion"
+              }
+            ]
+          }
         },
         {
           "act": "盤面確定",
-          "note": "終盤：青眼の亜白龍＋究極竜系＋余剰の手札。妨害に強い盤面。"
+          "note": "終盤：青眼の亜白龍＋究極竜系＋余剰の手札。妨害に強い盤面。",
+          "board": {
+            "monsters": [
+              {
+                "card_id": 38517737,
+                "name": "青眼の亜白龍",
+                "image_path": "assets/cards/38517737_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 62873545,
+                "name": "究極竜騎士",
+                "image_path": "assets/cards/62873545_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false,
+                "label": "除外"
+              }
+            ],
+            "extra": [
+              {
+                "card_id": 62873545,
+                "name": "究極竜騎士",
+                "image_path": "assets/cards/62873545_jp.png",
+                "external": false,
+                "label": "fusion"
+              }
+            ]
+          }
         }
       ]
     },
@@ -494,11 +1236,52 @@
             "external": true
           },
           "act": "魔法発動",
-          "note": "ドラゴン覚醒の旋律：手札の竜を墓地へ送り、青眼の白龍と青き眼の乙女をサーチ。",
+          "note": "ドラゴン・目覚めの旋律：手札の竜を墓地へ送り、青眼の白龍と青き眼のパーツをサーチ。",
           "events": [
             "spell",
             "search"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "gy": [
+              {
+                "slug": "the-melody-of-awakening-dragon",
+                "name": "ドラゴン・目覚めの旋律",
+                "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+                "external": true,
+                "label": "発動済み"
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -508,25 +1291,116 @@
             "external": true
           },
           "act": "魔法発動",
-          "note": "龍の霊廟：手札の白石を墓地へ送り、墓地で効果を仕込む。",
+          "note": "竜の霊廟：手札の白石を墓地へ送り、墓地で効果を仕込む。",
           "events": [
             "spell",
             "gy_eff"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              }
+            ],
+            "gy": [
+              {
+                "slug": "the-melody-of-awakening-dragon",
+                "name": "ドラゴン・目覚めの旋律",
+                "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "slug": "dragon-shrine",
+                "name": "竜の霊廟",
+                "image_path": "assets/cards/external/dragon-shrine_jp.png",
+                "external": true,
+                "label": "発動済み"
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
             "card_id": 71039903,
             "name": "太古の白石",
             "image_path": "assets/cards/71039903_jp.png",
-            "external": false
+            "external": false,
+            "label": "墓地から特殊召喚"
           },
           "act": "墓地効果",
           "note": "墓地の太古の白石効果で白石を特殊召喚。",
           "events": [
             "gy_eff",
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false,
+                "label": "墓地から特殊召喚"
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              }
+            ],
+            "gy": [
+              {
+                "slug": "the-melody-of-awakening-dragon",
+                "name": "ドラゴン・目覚めの旋律",
+                "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "slug": "dragon-shrine",
+                "name": "竜の霊廟",
+                "image_path": "assets/cards/external/dragon-shrine_jp.png",
+                "external": true,
+                "label": "発動済み"
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -539,7 +1413,66 @@
           "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
           "events": [
             "synchro"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "slug": "the-melody-of-awakening-dragon",
+                "name": "ドラゴン・目覚めの旋律",
+                "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "slug": "dragon-shrine",
+                "name": "竜の霊廟",
+                "image_path": "assets/cards/external/dragon-shrine_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              }
+            ]
+          }
         },
         {
           "card": {
@@ -553,7 +1486,74 @@
           "events": [
             "gy_eff",
             "search"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false,
+                "label": "究極融合"
+              }
+            ],
+            "gy": [
+              {
+                "slug": "the-melody-of-awakening-dragon",
+                "name": "ドラゴン・目覚めの旋律",
+                "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "slug": "dragon-shrine",
+                "name": "竜の霊廟",
+                "image_path": "assets/cards/external/dragon-shrine_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              }
+            ]
+          }
         },
         {
           "card": {
@@ -567,11 +1567,148 @@
           "events": [
             "fusion",
             "spell"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "slug": "the-melody-of-awakening-dragon",
+                "name": "ドラゴン・目覚めの旋律",
+                "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "slug": "dragon-shrine",
+                "name": "竜の霊廟",
+                "image_path": "assets/cards/external/dragon-shrine_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 23995346,
+                "name": "青眼の究極竜",
+                "image_path": "assets/cards/23995346_jp.png",
+                "external": false,
+                "label": "fusion"
+              }
+            ]
+          }
         },
         {
           "act": "盤面確定",
-          "note": "終盤：青眼の精霊龍＋青眼の究極竜。特殊召喚が少なく妨害に引きにくい。"
+          "note": "終盤：青眼の精霊龍＋青眼の究極竜。特殊召喚が少なく妨害に引かれにくい。",
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "slug": "the-melody-of-awakening-dragon",
+                "name": "ドラゴン・目覚めの旋律",
+                "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "slug": "dragon-shrine",
+                "name": "竜の霊廟",
+                "image_path": "assets/cards/external/dragon-shrine_jp.png",
+                "external": true,
+                "label": "発動済み"
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 23995346,
+                "name": "青眼の究極竜",
+                "image_path": "assets/cards/23995346_jp.png",
+                "external": false,
+                "label": "fusion"
+              }
+            ]
+          }
         }
       ]
     },
@@ -589,7 +1726,45 @@
           },
           "act": "召喚",
           "note": "正義の味方 カイバーマンを通常召喚。",
-          "events": []
+          "events": [],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 34627841,
+                "name": "正義の味方 カイバーマン",
+                "image_path": "assets/cards/34627841_jp.jpg",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              }
+            ],
+            "gy": [],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -602,7 +1777,46 @@
           "note": "カイバーマンを生贄に捧げて、手札の青眼の白龍を特殊召喚。",
           "events": [
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              }
+            ],
+            "gy": [
+              {
+                "card_id": 34627841,
+                "name": "正義の味方 カイバーマン",
+                "image_path": "assets/cards/34627841_jp.jpg",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -611,13 +1825,57 @@
             "image_path": "assets/cards/79814787_jp.jpg",
             "external": false
           },
-          "act": "墓地効果",
-          "note": "墓地または手札の白石効果で展開を補助（サーチ＋白石特殊召喚）。",
+          "act": "効果",
+          "note": "白石の効果で展開を補助（サーチ＋白石特殊召喚）。",
           "events": [
             "gy_eff",
             "search",
             "ss"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false,
+                "label": "墓地から展開"
+              },
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 34627841,
+                "name": "正義の味方 カイバーマン",
+                "image_path": "assets/cards/34627841_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": []
+          }
         },
         {
           "card": {
@@ -630,7 +1888,64 @@
           "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
           "events": [
             "synchro"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 34627841,
+                "name": "正義の味方 カイバーマン",
+                "image_path": "assets/cards/34627841_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              }
+            ]
+          }
         },
         {
           "card": {
@@ -644,11 +1959,137 @@
           "events": [
             "fusion",
             "spell"
-          ]
+          ],
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 34627841,
+                "name": "正義の味方 カイバーマン",
+                "image_path": "assets/cards/34627841_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 23995346,
+                "name": "青眼の究極竜",
+                "image_path": "assets/cards/23995346_jp.png",
+                "external": false,
+                "label": "fusion"
+              }
+            ]
+          }
         },
         {
           "act": "盤面確定",
-          "note": "終盤：青眼の精霊龍＋青眼の究極竜。妨害への引きが浅く、相手に 妨害のつなぎが浅いルートです。"
+          "note": "終盤：青眼の精霊龍＋青眼の究極竜＋究極融合。打点、ドロー系の妨害にも引きが浅くなる。",
+          "board": {
+            "monsters": [
+              {
+                "card_id": 59822133,
+                "name": "青眼の精霊龍",
+                "image_path": "assets/cards/59822133_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "spells": [
+              {
+                "card_id": 71143015,
+                "name": "究極融合",
+                "image_path": "assets/cards/71143015_jp.png",
+                "external": false
+              },
+              null,
+              null,
+              null,
+              null
+            ],
+            "hand": [],
+            "gy": [
+              {
+                "card_id": 34627841,
+                "name": "正義の味方 カイバーマン",
+                "image_path": "assets/cards/34627841_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 79814787,
+                "name": "伝説の白石",
+                "image_path": "assets/cards/79814787_jp.jpg",
+                "external": false
+              },
+              {
+                "card_id": 89631139,
+                "name": "青眼の白龍",
+                "image_path": "assets/cards/89631139_jp.png",
+                "external": false
+              },
+              {
+                "card_id": 71039903,
+                "name": "太古の白石",
+                "image_path": "assets/cards/71039903_jp.png",
+                "external": false
+              }
+            ],
+            "banish": [],
+            "extra": [
+              {
+                "card_id": 23995346,
+                "name": "青眼の究極竜",
+                "image_path": "assets/cards/23995346_jp.png",
+                "external": false,
+                "label": "fusion"
+              }
+            ]
+          }
         }
       ]
     }

@@ -235,12 +235,31 @@ def main():
             "role": e["role"],
         }
 
-    # ---- 展開ルート ----
-    def card(cid):
-        return th(cid)
+    # ---- 展開ルート（盤面スナップショット付き） ----
+    def card(cid, label=None):
+        c = th(cid)
+        if label:
+            c = dict(c, label=label)
+        return c
 
-    def cardx(title):
-        return ex(title)
+    def cardx(title, label=None):
+        c = ex(title)
+        if label:
+            c = dict(c, label=label)
+        return c
+
+    def board(monsters=None, spells=None, hand=None, gy=None, banish=None, extra=None):
+        def pad(lst):
+            lst = list(lst or [])
+            return lst + [None] * max(0, 5 - len(lst))
+        return {
+            "monsters": pad(monsters),
+            "spells": pad(spells),
+            "hand": list(hand or []),
+            "gy": list(gy or []),
+            "banish": list(banish or []),
+            "extra": list(extra or []),
+        }
 
     routes = [
         {
@@ -248,14 +267,22 @@ def main():
             "name": "青き眼の乙女始動（基本ルート）",
             "summary": "乙女1枚から賢士・白石を絡めて精霊龍＋究極竜の盤面を目指す王道ルート。",
             "steps": [
-                {"card": card("88241506"), "act": "召喚/特殊召喚", "note": "青き眼の乙女を召喚（条件を満たせば特殊召喚も可）。", "events": ["ss"]},
-                {"card": card("88241506"), "act": "効果", "note": "乙女の効果で手札の青眼の白龍を墓地へ送り、青き眼の賢士を特殊召喚。", "events": ["field_eff", "gy_eff", "ss"]},
-                {"card": card("8240199"), "act": "効果", "note": "賢士の効果で伝説の白石をサーチ。", "events": ["search"]},
-                {"card": card("79814787"), "act": "効果", "note": "手札の伝説の白石を墓地へ送り、その効果で青眼の白龍または展開パーツを特殊召喚。", "events": ["gy_eff", "ss"]},
-                {"card": card("59822133"), "act": "シンクロ", "note": "賢士（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。", "events": ["synchro"]},
-                {"card": card("71039903"), "act": "効果", "note": "墓地の白石効果で4枚目の白石または青眼のパーツを特殊召喚し、手札を回復。", "events": ["gy_eff", "ss"]},
-                {"card": card("23995346"), "act": "融合", "note": "究極融合：墓地・手札の青眼の白龍たちを素材に、青眼の究極竜を融合召喚。", "events": ["fusion", "spell"]},
-                {"act": "盤面確定", "note": "終盤：青眼の精霊龍＋青眼の究極竜＋白石。打点・妨害ともに厚い盤面。"},
+                {"card": card("88241506"), "act": "召喚/特殊召喚", "note": "青き眼の乙女を召喚（条件を満たせば特殊召喚も可）。", "events": ["ss"],
+                 "board": board(monsters=[card("88241506")], hand=[card("89631139")])},
+                {"card": card("88241506"), "act": "効果", "note": "乙女の効果で手札の青眼の白龍を墓地へ送り、青き眼の賢士を特殊召喚。", "events": ["field_eff", "gy_eff", "ss"],
+                 "board": board(monsters=[card("88241506"), card("8240199")], gy=[card("89631139")])},
+                {"card": card("8240199"), "act": "効果", "note": "賢士の効果で伝説の白石をサーチ。", "events": ["search"],
+                 "board": board(monsters=[card("88241506"), card("8240199")], hand=[card("79814787")], gy=[card("89631139")])},
+                {"card": card("79814787"), "act": "効果", "note": "手札の伝説の白石を墓地へ送り、その効果で青眼の白龍を特殊召喚。", "events": ["gy_eff", "ss"],
+                 "board": board(monsters=[card("88241506"), card("8240199"), card("89631139")], gy=[card("89631139"), card("79814787")], hand=[])},
+                {"card": card("59822133"), "act": "シンクロ", "note": "賢士（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。", "events": ["synchro"],
+                 "board": board(monsters=[card("88241506"), card("59822133")], gy=[card("89631139"), card("79814787"), card("8240199")], extra=[card("59822133")])},
+                {"card": card("71039903", "墓地から再展開"), "act": "効果", "note": "墓地の白石効果で4枚目の白石または青眼のパーツを特殊召喚し、手札を回復。", "events": ["gy_eff", "ss"],
+                 "board": board(monsters=[card("88241506"), card("59822133"), card("71039903", "墓地から再展開")], gy=[card("89631139"), card("79814787"), card("8240199")], extra=[card("59822133")])},
+                {"card": card("23995346"), "act": "融合", "note": "究極融合：墓地・手札の青眼の白龍たちを素材に、青眼の究極竜を融合召喚。", "events": ["fusion", "spell"],
+                 "board": board(monsters=[card("88241506"), card("59822133")], spells=[card("71143015")], gy=[card("89631139"), card("79814787"), card("8240199")], extra=[card("23995346", "融合召喚")], banish=[])},
+                {"act": "盤面確定", "note": "終盤：青眼の精霊龍＋青眼の究極竜＋乙女。打点・妨害ともに厚い盤面。",
+                 "board": board(monsters=[card("88241506"), card("59822133")], gy=[card("89631139"), card("79814787"), card("8240199")], extra=[card("23995346", "融合召喚")])},
             ],
         },
         {
@@ -263,13 +290,20 @@ def main():
             "name": "青き眼の祭司始動（白石ループ）",
             "summary": "祭司1枚から白石を回し、除外系の亜白龍や究極竜で押すルート。",
             "steps": [
-                {"card": card("45644898"), "act": "召喚/特殊召喚", "note": "青き眼の祭司を召喚（または効果で特殊召喚）。", "events": ["ss"]},
-                {"card": card("45644898"), "act": "効果", "note": "祭司の効果で太古の白石をサーチ。", "events": ["search"]},
-                {"card": card("71039903"), "act": "効果", "note": "太古の白石を墓地へ送り、効果で白石または青き眼を特殊召喚（ループを回す）。", "events": ["gy_eff", "ss"]},
-                {"card": card("38517737"), "act": "特殊召喚", "note": "墓穴の青眼の白龍を除外して、青眼の亜白龍を特殊召喚。", "events": ["ss"]},
-                {"card": card("79814787"), "act": "効果", "note": "墓地の白石効果でサーチし、手札を補強。", "events": ["gy_eff", "search"]},
-                {"card": card("62873545"), "act": "融合", "note": "究極融合：手札・墓地の青眼の白龍を融合素材に、究極竜系（究極竜騎士／究極亜竜）を融合召喚。", "events": ["fusion", "spell"]},
-                {"act": "盤面確定", "note": "終盤：青眼の亜白龍＋究極竜系＋余剰の手札。妨害に強い盤面。"},
+                {"card": card("45644898"), "act": "召喚/特殊召喚", "note": "青き眼の祭司を召喚（または効果で特殊召喚）。", "events": ["ss"],
+                 "board": board(monsters=[card("45644898")], hand=[card("71039903"), card("89631139")])},
+                {"card": card("45644898"), "act": "効果", "note": "祭司の効果で太古の白石をサーチ（または墓地へ送って展開）。", "events": ["search"],
+                 "board": board(monsters=[card("45644898")], hand=[card("71039903")], gy=[card("89631139")])},
+                {"card": card("71039903"), "act": "効果", "note": "太古の白石を墓地へ送り、効果で白石または青き眼を特殊召喚（ループを回す）。", "events": ["gy_eff", "ss"],
+                 "board": board(monsters=[card("45644898"), card("79814787", "白石ループ")], gy=[card("89631139"), card("71039903")])},
+                {"card": card("38517737"), "act": "特殊召喚", "note": "墓地の青眼の白龍を除外して、青眼の亜白龍を特殊召喚。", "events": ["ss"],
+                 "board": board(monsters=[card("45644898"), card("79814787", "白石ループ"), card("38517737")], banish=[card("89631139", "除外")], gy=[card("71039903")])},
+                {"card": card("79814787"), "act": "効果", "note": "墓地の白石効果でサーチし、手札を補強。", "events": ["gy_eff", "search"],
+                 "board": board(monsters=[card("45644898"), card("79814787", "白石ループ"), card("38517737")], hand=[card("71143015", "究極融合")], banish=[card("89631139", "除外")], gy=[card("71039903")])},
+                {"card": card("62873545"), "act": "融合", "note": "究極融合：手札・墓地の青眼の白龍を融合素材に、究極竜系（究極竜騎士／究極亜竜）を融合召喚。", "events": ["fusion", "spell"],
+                 "board": board(monsters=[card("45644898"), card("79814787", "白石ループ")], spells=[card("71143015")], extra=[card("62873545", "fusion")], banish=[card("89631139", "除外")], gy=[card("71039903")])},
+                {"act": "盤面確定", "note": "終盤：青眼の亜白龍＋究極竜系＋余剰の手札。妨害に強い盤面。",
+                 "board": board(monsters=[card("38517737"), card("62873545")], extra=[card("62873545", "fusion")], banish=[card("89631139", "除外")], gy=[card("71039903")])},
             ],
         },
         {
@@ -277,13 +311,20 @@ def main():
             "name": "ドラゴン覚醒の旋律始動（SS少なめ）",
             "summary": "旋律＋霊廟で墓地を整え、最小限の特殊召喚で究極竜を立てる安定ルート。",
             "steps": [
-                {"card": cardx('The Melody of Awakening Dragon'), "act": "魔法発動", "note": "ドラゴン覚醒の旋律：手札の竜を墓地へ送り、青眼の白龍と青き眼の乙女をサーチ。", "events": ["spell", "search"]},
-                {"card": cardx('Dragon Shrine'), "act": "魔法発動", "note": "龍の霊廟：手札の白石を墓地へ送り、墓地で効果を仕込む。", "events": ["spell", "gy_eff"]},
-                {"card": card("71039903"), "act": "墓地効果", "note": "墓地の太古の白石効果で白石を特殊召喚。", "events": ["gy_eff", "ss"]},
-                {"card": card("59822133"), "act": "シンクロ", "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。", "events": ["synchro"]},
-                {"card": card("79814787"), "act": "墓地効果", "note": "墓地の伝説の白石効果でサーチし、手札を整える。", "events": ["gy_eff", "search"]},
-                {"card": card("23995346"), "act": "融合", "note": "究極融合：手札・墓地の青眼の白龍を融合素材に、青眼の究極竜を融合召喚。", "events": ["fusion", "spell"]},
-                {"act": "盤面確定", "note": "終盤：青眼の精霊龍＋青眼の究極竜。特殊召喚が少なく妨害に引きにくい。"},
+                {"card": cardx('The Melody of Awakening Dragon'), "act": "魔法発動", "note": "ドラゴン・目覚めの旋律：手札の竜を墓地へ送り、青眼の白龍と青き眼のパーツをサーチ。", "events": ["spell", "search"],
+                 "board": board(hand=[card("89631139"), card("71039903")], gy=[cardx('The Melody of Awakening Dragon', "発動済み")])},
+                {"card": cardx('Dragon Shrine'), "act": "魔法発動", "note": "竜の霊廟：手札の白石を墓地へ送り、墓地で効果を仕込む。", "events": ["spell", "gy_eff"],
+                 "board": board(hand=[card("79814787")], gy=[cardx('The Melody of Awakening Dragon', "発動済み"), cardx('Dragon Shrine', "発動済み")])},
+                {"card": card("71039903", "墓地から特殊召喚"), "act": "墓地効果", "note": "墓地の太古の白石効果で白石を特殊召喚。", "events": ["gy_eff", "ss"],
+                 "board": board(monsters=[card("71039903", "墓地から特殊召喚")], hand=[card("79814787")], gy=[cardx('The Melody of Awakening Dragon', "発動済み"), cardx('Dragon Shrine', "発動済み")])},
+                {"card": card("59822133"), "act": "シンクロ", "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。", "events": ["synchro"],
+                 "board": board(monsters=[card("59822133")], gy=[cardx('The Melody of Awakening Dragon', "発動済み"), cardx('Dragon Shrine', "発動済み"), card("71039903"), card("89631139")], extra=[card("59822133")])},
+                {"card": card("79814787"), "act": "墓地効果", "note": "墓地の伝説の白石効果でサーチし、手札を整える。", "events": ["gy_eff", "search"],
+                 "board": board(monsters=[card("59822133")], hand=[card("71143015", "究極融合")], gy=[cardx('The Melody of Awakening Dragon', "発動済み"), cardx('Dragon Shrine', "発動済み"), card("71039903"), card("79814787")], extra=[card("59822133")])},
+                {"card": card("23995346"), "act": "融合", "note": "究極融合：手札・墓地の青眼の白龍を融合素材に、青眼の究極竜を融合召喚。", "events": ["fusion", "spell"],
+                 "board": board(monsters=[card("59822133")], spells=[card("71143015")], gy=[cardx('The Melody of Awakening Dragon', "発動済み"), cardx('Dragon Shrine', "発動済み"), card("71039903"), card("79814787"), card("89631139")], extra=[card("23995346", "fusion")])},
+                {"act": "盤面確定", "note": "終盤：青眼の精霊龍＋青眼の究極竜。特殊召喚が少なく妨害に引かれにくい。",
+                 "board": board(monsters=[card("59822133")], gy=[cardx('The Melody of Awakening Dragon', "発動済み"), cardx('Dragon Shrine', "発動済み"), card("71039903"), card("79814787"), card("89631139")], extra=[card("23995346", "fusion")])},
             ],
         },
         {
@@ -291,12 +332,18 @@ def main():
             "name": "カイバーマン始動（サーチ最小）",
             "summary": "カイバーマン1枚から青眼の白龍へ直結。サーチが少なく、妨害への引きが浅い。",
             "steps": [
-                {"card": card("34627841"), "act": "召喚", "note": "正義の味方 カイバーマンを通常召喚。", "events": []},
-                {"card": card("34627841"), "act": "効果", "note": "カイバーマンを生贄に捧げて、手札の青眼の白龍を特殊召喚。", "events": ["ss"]},
-                {"card": card("79814787"), "act": "墓地効果", "note": "墓地または手札の白石効果で展開を補助（サーチ＋白石特殊召喚）。", "events": ["gy_eff", "search", "ss"]},
-                {"card": card("59822133"), "act": "シンクロ", "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。", "events": ["synchro"]},
-                {"card": card("23995346"), "act": "融合", "note": "究極融合：墓地・手札の青眼の白龍を融合素材に、青眼の究極竜を融合召喚。", "events": ["fusion", "spell"]},
-                {"act": "盤面確定", "note": "終盤：青眼の精霊龍＋青眼の究極竜。妨害への引きが浅く、相手に 妨害のつなぎが浅いルートです。"},
+                {"card": card("34627841"), "act": "召喚", "note": "正義の味方 カイバーマンを通常召喚。", "events": [],
+                 "board": board(monsters=[card("34627841")], hand=[card("89631139"), card("79814787")])},
+                {"card": card("34627841"), "act": "効果", "note": "カイバーマンを生贄に捧げて、手札の青眼の白龍を特殊召喚。", "events": ["ss"],
+                 "board": board(monsters=[card("89631139")], gy=[card("34627841")], hand=[card("79814787")])},
+                {"card": card("79814787"), "act": "効果", "note": "白石の効果で展開を補助（サーチ＋白石特殊召喚）。", "events": ["gy_eff", "search", "ss"],
+                 "board": board(monsters=[card("89631139"), card("71039903", "墓地から展開")], gy=[card("34627841"), card("79814787")], hand=[])},
+                {"card": card("59822133"), "act": "シンクロ", "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。", "events": ["synchro"],
+                 "board": board(monsters=[card("59822133")], gy=[card("34627841"), card("79814787"), card("89631139"), card("71039903")], extra=[card("59822133")])},
+                {"card": card("23995346"), "act": "融合", "note": "究極融合：墓地・手札の青眼の白龍を融合素材に、青眼の究極竜を融合召喚。", "events": ["fusion", "spell"],
+                 "board": board(monsters=[card("59822133")], spells=[card("71143015")], gy=[card("34627841"), card("79814787"), card("89631139"), card("71039903")], extra=[card("23995346", "fusion")])},
+                {"act": "盤面確定", "note": "終盤：青眼の精霊龍＋青眼の究極竜＋究極融合。打点、ドロー系の妨害にも引きが浅くなる。",
+                 "board": board(monsters=[card("59822133")], spells=[card("71143015")], gy=[card("34627841"), card("79814787"), card("89631139"), card("71039903")], extra=[card("23995346", "fusion")])},
             ],
         },
     ]
