@@ -8,7 +8,7 @@
   "cards": [
     {
       "name": "Blue-Eyes White Dragon",
-      "japanese_name": "Blue-Eyes White Dragon",
+      "japanese_name": "青眼の白龍",
       "type": "Normal Monster",
       "attribute": "LIGHT",
       "race": "Dragon",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Blue-Eyes Ultimate Dragon",
-      "japanese_name": "Blue-Eyes Ultimate Dragon",
+      "japanese_name": "青眼の究極竜",
       "type": "Fusion Monster",
       "attribute": "LIGHT",
       "race": "Dragon",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Blue-Eyes Alternative White Dragon",
-      "japanese_name": "Blue-Eyes Alternative White Dragon",
+      "japanese_name": "青眼の亜白龍",
       "type": "Effect Monster",
       "attribute": "LIGHT",
       "race": "Dragon",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Neo Blue-Eyes Ultimate Dragon",
-      "japanese_name": "Neo Blue-Eyes Ultimate Dragon",
+      "japanese_name": "真青眼の究極竜",
       "type": "Fusion Monster",
       "attribute": "LIGHT",
       "race": "Dragon",
@@ -78,7 +78,7 @@
     },
     {
       "name": "Blue-Eyes Alternative Ultimate Dragon",
-      "japanese_name": "Blue-Eyes Alternative Ultimate Dragon",
+      "japanese_name": "青眼の究極亜竜",
       "type": "Fusion Monster",
       "attribute": "LIGHT",
       "race": "Dragon",
@@ -120,7 +120,7 @@
     },
     {
       "name": "Blue-Eyes Spirit Dragon",
-      "japanese_name": "Blue-Eyes Spirit Dragon",
+      "japanese_name": "青眼の精霊龍",
       "type": "Synchro Monster",
       "attribute": "LIGHT",
       "race": "Dragon",
@@ -134,7 +134,7 @@
     },
     {
       "name": "Blue-Eyes Ultimate Spirit Dragon",
-      "japanese_name": "Blue-Eyes Ultimate Spirit Dragon",
+      "japanese_name": "青眼の究極霊竜",
       "type": "Synchro Monster",
       "attribute": "LIGHT",
       "race": "Dragon",

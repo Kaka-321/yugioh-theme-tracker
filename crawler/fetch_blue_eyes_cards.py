@@ -138,6 +138,13 @@ def download_binary(url, dest):
         return False
 
 
+JP_CHARS = re.compile(r"[\u3040-\u30FF\u4E00-\u9FFF\uFF66-\uFF9D]")
+
+
+def is_japanese(text):
+    return bool(text) and bool(JP_CHARS.search(text))
+
+
 def complete_japanese_assets(theme, now):
     """日本語名の欠落補完と、日本語OCGカード画像への差し替えを行う。"""
     updated_names = 0
@@ -148,8 +155,9 @@ def complete_japanese_assets(theme, now):
             continue
 
         name = card["name"]
-        need_name = not card.get("japanese_name")
-        need_jp_image = not (card.get("image_path") or "").endswith("_jp.png")
+        # 英語名が日本語名欄に入っている旧データは欠落扱いにする
+        need_name = not is_japanese(card.get("japanese_name"))
+        need_jp_image = not re.search(r"_jp\.(png|jpg)$", card.get("image_path") or "")
 
         if not need_name and not need_jp_image:
             continue
