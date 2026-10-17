@@ -472,5 +472,11 @@
       "name": "Red Nova",
       "added_at": "2026-10-17T13:56:36.240048Z"
     }
-  ]
+  ],
+  "source": {
+    "provider": "Yugipedia",
+    "title": "Red Dragon Archfiend",
+    "url": "https://yugipedia.com/wiki/Red_Dragon_Archfiend"
+  },
+  "source_mode": "api-metadata-and-manual"
 }

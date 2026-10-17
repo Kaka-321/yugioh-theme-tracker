@@ -68,6 +68,12 @@ def main():
         "aliases": existing.get("aliases") or [],
         "expansion": existing.get("expansion") or [],
         "image": existing.get("image"),
+        "source": existing.get("source") or {
+            "provider": "Yugipedia",
+            "title": "Red Dragon Archfiend",
+            "url": "https://yugipedia.com/wiki/Red_Dragon_Archfiend",
+        },
+        "source_mode": existing.get("source_mode") or "api-metadata-and-manual",
         "cards": [],
         "changes": [],
     }
