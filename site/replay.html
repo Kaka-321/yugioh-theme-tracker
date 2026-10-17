@@ -14,27 +14,47 @@
     .btn.small { padding: 4px 10px; font-size: 12px; }
     .btn:disabled { opacity: .5; cursor: default; }
     .replay-layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
-    .replay-board-wrap { flex: 1 1 560px; background: #e7efe7; border: 1px solid #b9c9b9; border-radius: 12px; padding: 12px; }
+    .replay-board-wrap { flex: 1 1 620px; background: #eef1f7; border: 1px solid #c4cde0; border-radius: 12px; padding: 14px; }
     .replay-side { flex: 0 0 320px; display: flex; flex-direction: column; gap: 12px; }
     .panel { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
-    .note { font-size: 12px; color: #667; }
-    /* ===== 盤面 ===== */
-    .zone-label { font-size: 10px; color: #678; text-align: center; margin-top: 2px; }
-    .zone-row { display: flex; gap: 6px; margin-bottom: 8px; }
-    .slot { width: 62px; height: 90px; border: 1px dashed #9ab; border-radius: 6px; background: rgba(255,255,255,.6); display: flex; align-items: center; justify-content: center; overflow: hidden; }
-    .slot img { width: 100%; height: 100%; object-fit: contain; }
-    .slot.acting { outline: 3px solid #e33; outline-offset: -3px; box-shadow: 0 0 10px #e33; }
-    .pile-row { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
-    .pile { flex: 1 1 120px; background: rgba(255,255,255,.75); border: 1px solid #aac; border-radius: 8px; padding: 6px; min-width: 110px; }
-    .pile-head { display: flex; justify-content: space-between; font-size: 11px; color: #456; margin-bottom: 4px; }
-    .pile-strip { display: flex; gap: 3px; flex-wrap: wrap; min-height: 30px; }
-    .pile-strip img { width: 30px; height: auto; border-radius: 2px; }
-    .pile-empty { font-size: 11px; color: #99a; }
+    .note { font-size: 12px; color: #667; margin-top: 8px; }
+
+    /* ===== 盤面（Image4風フラットレイアウト） ===== */
+    .field { display: flex; gap: 10px; align-items: stretch; }
+    .field-col { display: flex; flex-direction: column; gap: 8px; }
+    .field-col.left  { width: 96px; flex: 0 0 96px; }
+    .field-col.right { width: 120px; flex: 0 0 120px; }
+    .field-col.center { flex: 1 1 auto; min-width: 0; }
+
+    .zone-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; margin-bottom: 10px; }
+    .slot { aspect-ratio: 59 / 86; border: 2px dashed; border-radius: 6px; overflow: hidden; position: relative; }
+    .slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .slot.monster { border-color: #9ba8d8; background: rgba(226, 232, 250, .65); }
+    .slot.spell   { border-color: #9cc8a8; background: rgba(228, 246, 233, .65); }
+    .slot.acting { border-style: solid; outline: 3px solid #e33; outline-offset: -3px; box-shadow: 0 0 10px rgba(238, 51, 51, .6); }
+    .zone-label { font-size: 10px; color: #667; margin: -6px 0 8px 2px; }
+
+    .colbox { border: 2px dashed; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; flex: 1; min-height: 0; }
+    .colbox-head { font-size: 11px; font-weight: bold; color: #556; margin-bottom: 6px; }
+    .colbox.gy     { border-color: #e0a0a0; background: rgba(252, 236, 236, .8); }
+    .colbox.banish { border-color: #bbbbbb; background: rgba(238, 238, 238, .8); }
+    .colbox.deckchip { flex: 0 0 auto; border-color: #c9b47a; background: rgba(250, 245, 226, .8); padding: 6px 8px; }
+    .colbox.extrabox { flex: 0 0 auto; border-color: #a8b4d8; background: rgba(233, 237, 250, .8); }
+    .stack { display: flex; flex-direction: column; gap: 3px; align-items: center; overflow-y: auto; max-height: 260px; }
+    .stack img { width: 56%; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,.25); }
+    .stack .empty { font-size: 11px; color: #aab; }
+
+    .handrow { display: flex; flex-wrap: wrap; gap: 6px; }
+    .hand-slot { width: 52px; aspect-ratio: 59 / 86; border-radius: 5px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+    .hand-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hand-slot.acting { outline: 3px solid #e33; outline-offset: -3px; }
+
     /* ===== アクション & 妨害 ===== */
     .act-chip { display: inline-block; background: #eef; border: 1px solid #ccd; border-radius: 4px; font-size: 11px; color: #446; padding: 2px 8px; margin: 6px 0; }
     .step-image { width: 150px; height: auto; border-radius: 6px; }
     .step-note { font-size: 13px; margin-top: 6px; }
-    .nav { margin-top: 10px; display: flex; gap: 8px; }
+    .progress { font-size: 12px; color: #556; }
+    .nav { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
     .crumb { font-size: 11px; background: #fff8e1; border: 1px solid #eec444; padding: 3px 8px; border-radius: 6px; margin-right: 6px; display: inline-block; }
     .history { margin-top: 10px; border-top: 1px dashed #ddd; padding-top: 6px; max-height: 150px; overflow-y: auto; }
     .history-line { font-size: 12px; color: #444; }
@@ -50,7 +70,6 @@
     .handlers { margin: 4px 0 10px; }
     .handler { display: block; width: 100%; text-align: left; background: #fff; border: 1px solid #bbb; border-radius: 6px; padding: 6px 8px; margin: 4px 0; cursor: pointer; font-size: 12px; }
     .handler-note { font-size: 11px; color: #777; display: block; }
-    .disruption-card-img { width: 84px; height: auto; border-radius: 6px; }
     .step-label { font-size: 12px; color: #556; }
   </style>
 </head>
@@ -77,6 +96,8 @@
     // ===== 状態 =====
     let deckData = null;
     let state = null;
+    let paramsTheme = "blue-eyes";
+    let mainDeckCount = 0;
 
     const boardDiv = document.getElementById("board");
     const boardNoteDiv = document.getElementById("board-note");
@@ -125,6 +146,16 @@
       history.replaceState(null, "", "replay.html?" + params.toString());
     }
 
+    function cardKey(c) {
+      if (!c) return "";
+      return c.slug || (c.card_id !== null && c.card_id !== undefined ? String(c.card_id) : "") + "|" + (c.name || "");
+    }
+
+    function actingKey() {
+      const cur = state.route.steps[state.idx];
+      return cur && cur.card ? cardKey(cur.card) : null;
+    }
+
     // ===== 初期化 =====
     async function init() {
       const params = getParams();
@@ -133,9 +164,13 @@
         const res = await fetch("./data/decks/" + encodeURIComponent(params.theme) + ".json", { cache: "no-store" });
         if (!res.ok) throw new Error("HTTP " + res.status);
         deckData = await res.json();
+        if (!deckData || !Array.isArray(deckData.routes) || deckData.routes.length === 0) {
+          throw new Error("ルートが見つかりません");
+        }
+        mainDeckCount = (deckData.deck.main || []).reduce(function (n, e) { return n + (e.count || 0); }, 0);
       } catch (e) {
         titleH1.textContent = "デッキデータを読み込めませんでした";
-        boardNoteDiv.textContent = e.message;
+        boardNoteDiv.textContent = "詳細: " + e.message;
         return;
       }
 
@@ -147,13 +182,10 @@
       enterRoute(route);
     }
 
-    let paramsTheme = "blue-eyes";
-
     function enterRoute(route) {
       state = {
         route: route,
         baseRoute: route,
-        steps: route.steps.slice(),
         idx: 0,
         blocked: [],
         applied: [],
@@ -170,15 +202,10 @@
       if (path === "continue") {
         state.blocked.push(state.idx);
         state.idx = Math.min(state.idx + 1, state.route.steps.length - 1);
-      } else if (path && typeof path === "object" && path.steps) {
-        const base = state.route.steps.slice(0, state.idx);
-        state.route = { name: state.route.name, steps: base.concat(path.steps) };
-        state.idx = state.idx;
       } else if (path && typeof path === "object" && path.route) {
         const target = deckData.routes.find(function (r) { return r.id === path.route; });
         if (!target) return;
         state.route = target;
-        state.steps = target.steps.slice();
         state.blocked = [];
         state.applied.push("→ " + target.name + " へ切り替え");
         state.idx = Math.max(0, path.from_step || 0);
@@ -203,23 +230,17 @@
       }
     }
 
-    function cardKey(c) {
-      if (!c) return "";
-      return c.slug || (c.card_id !== null && c.card_id !== undefined ? String(c.card_id) : "") + "|" + (c.name || "");
+    function fill5(list) {
+      const out = (list || []).slice(0, 5);
+      while (out.length < 5) out.push(null);
+      return out;
     }
 
-    function actingKeys() {
-      const cur = state.route.steps[state.idx];
-      return cur && cur.card ? cardKey(cur.card) : null;
-    }
-
-    function zoneRow(label, entries) {
-      const wrap = el("div", null);
+    function zoneRow(label, entries, zoneCls) {
       const row = el("div", "zone-row");
-      const act = actingKeys();
-      for (let i = 0; i < entries.length; i++) {
-        const entry = entries[i];
-        const slot = el("div", "slot");
+      const act = actingKey();
+      for (const entry of entries) {
+        const slot = el("div", "slot" + (zoneCls ? " " + zoneCls : ""));
         const img = safeImage(entry);
         if (img) {
           if (act && entry && cardKey(entry) === act) slot.classList.add("acting");
@@ -227,44 +248,86 @@
         }
         row.appendChild(slot);
       }
+      const wrap = el("div", null);
       wrap.appendChild(row);
       wrap.appendChild(el("div", "zone-label", label));
       return wrap;
     }
 
-    function pile(label, entries) {
-      const div = el("div", "pile");
-      const head = el("div", "pile-head");
-      head.appendChild(el("span", null, label));
-      head.appendChild(el("span", null, entries.length + "枚"));
-      div.appendChild(head);
-      const strip = el("div", "pile-strip");
+    function colbox(label, cls) {
+      const box = el("div", "colbox" + (cls ? " " + cls : ""));
+      box.appendChild(el("div", "colbox-head", label));
+      return box;
+    }
+
+    function stackIn(box, entries, emptText) {
+      const stack = el("div", "stack");
+      const act = actingKey();
       for (const entry of entries) {
         const img = safeImage(entry);
-        if (img) strip.appendChild(img);
+        if (!img) continue;
+        if (act && cardKey(entry) === act) img.style.outline = "2px solid #e33";
+        stack.appendChild(img);
       }
-      if (entries.length === 0) strip.appendChild(el("span", "pile-empty", "なし"));
-      div.appendChild(strip);
-      return div;
+      if (entries.length === 0) stack.appendChild(el("span", "empty", emptText || "なし"));
+      box.appendChild(stack);
+      return box;
     }
 
     function renderBoard() {
       const step = state.route.steps[state.idx];
       const b = (step && step.board) || { monsters: [], spells: [], hand: [], gy: [], banish: [], extra: [] };
-      const monsters = (b.monsters || []).slice();
-      while (monsters.length < 5) monsters.push(null);
-      const spells = (b.spells || []).slice();
-      while (spells.length < 5) spells.push(null);
+
       boardDiv.replaceChildren();
-      boardDiv.appendChild(zoneRow("モンスターゾーン", monsters));
-      boardDiv.appendChild(zoneRow("魔法・罠ゾーン", spells));
-      boardDiv.appendChild(pile("手札", b.hand || []));
-      const piles = el("div", "pile-row");
-      piles.appendChild(pile("墓地", b.gy || []));
-      piles.appendChild(pile("除外ゾーン", b.banish || []));
-      piles.appendChild(pile("EXデッキ", b.extra || []));
-      boardDiv.appendChild(piles);
-      boardNoteDiv.textContent = "盤面は該当アクション直後の状態を示します。赤枠はこのアクションで動いたカードです。";
+      const field = el("div", "field");
+
+      // 左列: デッキ / EXデッキ
+      const left = el("div", "field-col left");
+      const deckBox = colbox("デッキ (" + mainDeckCount + ")", "deckchip");
+      deckBox.querySelector(".colbox-head").textContent = "デッキ";
+      deckBox.appendChild(el("div", "colbox-head", mainDeckCount + "枚"));
+      left.appendChild(deckBox);
+      const extraBox = colbox("EXデッキ", "extrabox");
+      extraBox.querySelector(".colbox-head").textContent = "EXデッキ (" + (b.extra || []).length + ")";
+      stackIn(extraBox, b.extra || []);
+      left.appendChild(extraBox);
+
+      // 中央: モンスターゾーン / 魔法・罠ゾーン / 手札
+      const center = el("div", "field-col center");
+      center.appendChild(zoneRow("モンスターゾーン", fill5(b.monsters), "monster"));
+      center.appendChild(zoneRow("魔法・罠ゾーン", fill5(b.spells), "spell"));
+      const handWrap = el("div", null);
+      const handRow = el("div", "handrow");
+      const act = actingKey();
+      for (const entry of (b.hand || [])) {
+        const slot = el("div", "hand-slot");
+        const img = safeImage(entry);
+        if (img) {
+          if (act && cardKey(entry) === act) slot.classList.add("acting");
+          slot.appendChild(img);
+        }
+        handRow.appendChild(slot);
+      }
+      if ((b.hand || []).length === 0) handRow.appendChild(el("span", "empty", "手札なし"));
+      handWrap.appendChild(handRow);
+      handWrap.appendChild(el("div", "zone-label", "手札 (" + (b.hand || []).length + ")"));
+      center.appendChild(handWrap);
+
+      // 右列: 墓地 / 除外
+      const right = el("div", "field-col right");
+      const gyBox = colbox("墓地 (" + (b.gy || []).length + ")", "gy");
+      stackIn(gyBox, b.gy || []);
+      right.appendChild(gyBox);
+      const banBox = colbox("除外 (" + (b.banish || []).length + ")", "banish");
+      stackIn(banBox, b.banish || []);
+      right.appendChild(banBox);
+
+      field.appendChild(left);
+      field.appendChild(center);
+      field.appendChild(right);
+      boardDiv.appendChild(field);
+
+      boardNoteDiv.textContent = "盤面は該当アクション直後の状態を示します（ドラフト）。赤枠はこのアクションで動いたカードです。";
     }
 
     function renderStepPanel() {
@@ -273,17 +336,13 @@
       const idx = state.idx;
       const step = steps[idx] || {};
 
-      const progress = el("div", "step-label", "アクション " + (idx + 1) + " / " + steps.length);
-      stepPanel.appendChild(progress);
-
-      const chip = el("div", "act-chip", (step.card ? step.card.name + " - " : "") + (step.act || "アクション"));
-      stepPanel.appendChild(chip);
+      stepPanel.appendChild(el("div", "progress", "アクション " + (idx + 1) + " / " + steps.length));
+      stepPanel.appendChild(el("div", "act-chip", (step.card ? step.card.name + " - " : "") + (step.act || "アクション")));
 
       const img = safeImage(step.card, "step-image");
       if (img) stepPanel.appendChild(img);
 
-      const note = el("div", "step-note", step.note || "");
-      stepPanel.appendChild(note);
+      stepPanel.appendChild(el("div", "step-note", step.note || ""));
 
       const nav = el("div", "nav");
       const prev = el("button", "btn secondary small", "← 戻る");
@@ -298,9 +357,8 @@
       const history = el("div", "history");
       for (let i = 0; i <= idx; i++) {
         const s = steps[i];
-        const line = el("div", "history-line" + (state.blocked.indexOf(i) !== -1 ? " blocked" : ""),
-          (i + 1) + ". " + (s.card ? s.card.name + " - " : "") + (s.act || "アクション"));
-        history.appendChild(line);
+        history.appendChild(el("div", "history-line" + (state.blocked.indexOf(i) !== -1 ? " blocked" : ""),
+          (i + 1) + ". " + (s.card ? s.card.name + " - " : "") + (s.act || "アクション")));
       }
       stepPanel.appendChild(history);
 
@@ -353,6 +411,13 @@
         }
       }
       disPanel.appendChild(el("div", "note", "妨害によって盤面が変わった後の動きは、選んだ対応に沿ってリプレイが続きます。"));
+    }
+
+    // ===== 起動 =====
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
     }
   </script>
 </body>
