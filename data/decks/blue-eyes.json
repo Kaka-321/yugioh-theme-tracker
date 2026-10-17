@@ -13,7 +13,13 @@
         "image_path": "assets/cards/88241506_jp.png",
         "external": false,
         "count": 3,
-        "role": "始動"
+        "role": "始動",
+        "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+        "types": "Spellcaster / Tuner / Effect",
+        "attribute": "LIGHT",
+        "level": "1",
+        "atk": "0",
+        "def": "0"
       },
       {
         "card_id": 36734924,
@@ -22,7 +28,13 @@
         "image_path": "assets/cards/36734924_jp.png",
         "external": false,
         "count": 3,
-        "role": "始動"
+        "role": "始動",
+        "desc": "「青き眼の巫女」の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分フィールドの効果モンスター１体を選んで墓地へ送り、デッキから「ブルーアイズ」モンスターを２体まで手札に加える（同名カードは１枚まで）。②：このカードが墓地に存在する場合、自分フィールドの「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを持ち主のデッキに戻し、このカードを墓地から特殊召喚する。",
+        "types": "Spellcaster / Tuner / Effect",
+        "attribute": "LIGHT",
+        "level": "1",
+        "atk": "0",
+        "def": "0"
       },
       {
         "card_id": 45644898,
@@ -31,7 +43,13 @@
         "image_path": "assets/cards/45644898_jp.png",
         "external": false,
         "count": 2,
-        "role": "始動"
+        "role": "始動",
+        "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+        "types": "Spellcaster / Tuner / Effect",
+        "attribute": "LIGHT",
+        "level": "1",
+        "atk": "300",
+        "def": "1200"
       },
       {
         "card_id": 8240199,
@@ -40,7 +58,13 @@
         "image_path": "assets/cards/8240199_jp.png",
         "external": false,
         "count": 2,
-        "role": "補助"
+        "role": "補助",
+        "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+        "types": "Spellcaster / Tuner / Effect",
+        "attribute": "LIGHT",
+        "level": "1",
+        "atk": "0",
+        "def": "1500"
       },
       {
         "card_id": 72855441,
@@ -49,7 +73,13 @@
         "image_path": "assets/cards/72855441_jp.png",
         "external": false,
         "count": 1,
-        "role": "補助"
+        "role": "補助",
+        "desc": "「青き眼の護人」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時に発動できる。手札から光属性・レベル１チューナー１体を特殊召喚する。②：自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、手札から「ブルーアイズ」モンスター１体を特殊召喚する。",
+        "types": "Spellcaster / Tuner / Effect",
+        "attribute": "LIGHT",
+        "level": "1",
+        "atk": "800",
+        "def": "1300"
       },
       {
         "card_id": 34627841,
@@ -58,7 +88,13 @@
         "image_path": "assets/cards/34627841_jp.jpg",
         "external": false,
         "count": 2,
-        "role": "展開"
+        "role": "展開",
+        "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+        "types": "Warrior / Effect",
+        "attribute": "LIGHT",
+        "level": "3",
+        "atk": "200",
+        "def": "700"
       },
       {
         "card_id": 71039903,
@@ -67,7 +103,13 @@
         "image_path": "assets/cards/71039903_jp.png",
         "external": false,
         "count": 3,
-        "role": "白来"
+        "role": "白来",
+        "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+        "types": "Dragon / Tuner / Effect",
+        "attribute": "LIGHT",
+        "level": "1",
+        "atk": "600",
+        "def": "500"
       },
       {
         "card_id": 79814787,
@@ -76,7 +118,13 @@
         "image_path": "assets/cards/79814787_jp.jpg",
         "external": false,
         "count": 3,
-        "role": "白来"
+        "role": "白来",
+        "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+        "types": "Dragon / Tuner / Effect",
+        "attribute": "LIGHT",
+        "level": "1",
+        "atk": "300",
+        "def": "250"
       },
       {
         "card_id": 89631139,
@@ -85,7 +133,13 @@
         "image_path": "assets/cards/89631139_jp.png",
         "external": false,
         "count": 3,
-        "role": "青山白龍"
+        "role": "青山白龍",
+        "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+        "types": "Dragon / Normal",
+        "attribute": "LIGHT",
+        "level": "8",
+        "atk": "3000",
+        "def": "2500"
       },
       {
         "card_id": 38517737,
@@ -94,7 +148,13 @@
         "image_path": "assets/cards/38517737_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山白龍"
+        "role": "青山白龍",
+        "desc": "このカードは通常召喚できない。手札の「青眼の白龍」１体を相手に見せた場合に特殊召喚できる。この方法による「青眼の亜白龍」の特殊召喚は１ターンに１度しかできない。①：このカードのカード名は、フィールド・墓地に存在する限り「青眼の白龍」として扱う。②：１ターンに１度、相手フィールドのモンスター１体を対象として発動できる（この効果を発動するターン、このカードは攻撃できない）。そのモンスターを破壊する。",
+        "types": "Dragon / Effect",
+        "attribute": "LIGHT",
+        "level": "8",
+        "atk": "3000",
+        "def": "2500"
       },
       {
         "card_id": 45467446,
@@ -103,7 +163,13 @@
         "image_path": "assets/cards/45467446_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山白龍"
+        "role": "青山白龍",
+        "desc": "このカード名はルール上「ブルーアイズ」カードとしても扱う。①：このカードは手札・墓地に存在する限り、通常モンスターとして扱う。②：このカードが召喚・特殊召喚した時、相手フィールドの魔法・罠カード１枚を対象として発動できる。そのカードを除外する。③：自分・相手ターンに、相手フィールドにモンスターが存在する場合、このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+        "types": "Dragon / Effect",
+        "attribute": "LIGHT",
+        "level": "8",
+        "atk": "2500",
+        "def": "2000"
       },
       {
         "card_id": 30397786,
@@ -112,7 +178,13 @@
         "image_path": "assets/cards/30397786_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山白龍"
+        "role": "青山白龍",
+        "desc": "このカード名の①②の効果はそれぞれ１ターンに１度しか使用できない。①：このカードがデッキから手札に加わった時、または自分のモンスターが戦闘で破壊された時、手札のこのカードを相手に見せて発動できる。このカードを特殊召喚する。②：このカードが手札・デッキから特殊召喚した場合に発動できる。相手フィールドのモンスターを全て破壊する。このターン、自分は「ブルーアイズ」モンスターでしか直接攻撃できない。③：フィールドのこのカードを対象とする効果が発動した時、手札を１枚捨てて発動できる。その効果を無効にする。",
+        "types": "Dragon / Effect",
+        "attribute": "LIGHT",
+        "level": "8",
+        "atk": "3000",
+        "def": "2500"
       },
       {
         "card_id": null,
@@ -121,7 +193,8 @@
         "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
         "external": true,
         "count": 3,
-        "role": "青山白龍"
+        "role": "青山白龍",
+        "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。"
       },
       {
         "card_id": null,
@@ -130,7 +203,8 @@
         "image_path": "assets/cards/external/dragon-shrine_jp.png",
         "external": true,
         "count": 1,
-        "role": "補助"
+        "role": "補助",
+        "desc": "このカード名のカードは１ターンに１枚しか発動できない。①：デッキからドラゴン族モンスター１体を墓地へ送る。この効果で墓地へ送られたモンスターがドラゴン族の通常モンスターだった場合、さらにデッキからドラゴン族モンスター１体を墓地へ送る事ができる。"
       },
       {
         "card_id": null,
@@ -139,7 +213,13 @@
         "image_path": "assets/cards/external/maxx-c_jp.png",
         "external": true,
         "count": 3,
-        "role": "妨害"
+        "role": "妨害",
+        "desc": "このカード名の効果は１ターンに１度しか使用できない。①：自分・相手ターンに、このカードを手札から墓地へ送って発動できる。このターン中、以下の効果を適用する。●相手がモンスターを特殊召喚する度に、自分は１枚ドローする。",
+        "types": "Insect / Effect",
+        "attribute": "EARTH",
+        "level": "2",
+        "atk": "500",
+        "def": "200"
       },
       {
         "card_id": null,
@@ -148,7 +228,13 @@
         "image_path": "assets/cards/external/ash-blossom-joyous-spring_jp.png",
         "external": true,
         "count": 3,
-        "role": "妨害"
+        "role": "妨害",
+        "desc": "このカード名の効果は１ターンに１度しか使用できない。①：以下のいずれかの効果を含む魔法・罠・モンスターの効果が発動した時、このカードを手札から捨てて発動できる。その効果を無効にする。●デッキからカードを手札に加える効果●デッキからモンスターを特殊召喚する効果●デッキからカードを墓地へ送る効果",
+        "types": "Zombie / Tuner / Effect",
+        "attribute": "FIRE",
+        "level": "3",
+        "atk": "0",
+        "def": "1800"
       },
       {
         "card_id": null,
@@ -157,7 +243,13 @@
         "image_path": "assets/cards/external/effect-veiler_jp.png",
         "external": true,
         "count": 2,
-        "role": "妨害"
+        "role": "妨害",
+        "desc": "①：相手メインフェイズに、このカードを手札から墓地へ送り、相手フィールドの効果モンスター１体を対象として発動できる。その相手モンスターの効果をターン終了時まで無効にする。",
+        "types": "Spellcaster / Tuner / Effect",
+        "attribute": "LIGHT",
+        "level": "1",
+        "atk": "0",
+        "def": "0"
       },
       {
         "card_id": null,
@@ -166,7 +258,8 @@
         "image_path": "assets/cards/external/infinite-impermanence_jp.png",
         "external": true,
         "count": 1,
-        "role": "妨害"
+        "role": "妨害",
+        "desc": "自分フィールドにカードが存在しない場合、このカードの発動は手札からもできる。①：相手フィールドの表側表示モンスター１体を対象として発動できる。そのモンスターの効果をターン終了時まで無効にする。セットされていたこのカードを発動した場合、さらにこのターン中、このカードと同じ縦列の他の魔法・罠カードの効果は無効化される。"
       },
       {
         "card_id": null,
@@ -175,7 +268,8 @@
         "image_path": "assets/cards/external/called-by-the-grave_jp.png",
         "external": true,
         "count": 2,
-        "role": "妨害"
+        "role": "妨害",
+        "desc": "①：相手の墓地のモンスター１体を対象として発動できる。そのモンスターを除外する。次のターンの終了時まで、この効果で除外したモンスター及びそのモンスターと元々のカード名が同じモンスターの効果は無効化される。"
       }
     ],
     "extra": [
@@ -186,7 +280,13 @@
         "image_path": "assets/cards/23995346_jp.png",
         "external": false,
         "count": 2,
-        "role": "青山"
+        "role": "青山",
+        "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+        "types": "Dragon / Fusion",
+        "attribute": "LIGHT",
+        "level": "12",
+        "atk": "4500",
+        "def": "3800"
       },
       {
         "card_id": 56532353,
@@ -195,7 +295,13 @@
         "image_path": "assets/cards/56532353_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山"
+        "role": "青山",
+        "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」このカード名の①の効果は１ターンに２度まで使用できる。①：融合召喚したこのカードが攻撃したダメージステップ終了時、自分フィールドに他の表側表示カードが存在しない場合、ＥＸデッキから「ブルーアイズ」融合モンスター１体を墓地へ送って発動できる。このカードは続けて攻撃できる。②：自分フィールドの「ブルーアイズ」モンスターを対象とする魔法・罠・モンスターの効果が発動した時、墓地のこのカードを除外して発動できる。その発動を無効にし破壊する。",
+        "types": "Dragon / Fusion / Effect",
+        "attribute": "LIGHT",
+        "level": "12",
+        "atk": "4500",
+        "def": "3800"
       },
       {
         "card_id": 43228023,
@@ -204,7 +310,13 @@
         "image_path": "assets/cards/43228023_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山"
+        "role": "青山",
+        "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」①：フィールドのこのカードは相手の効果の対象にならず、相手の効果では破壊されない。②：１ターンに１度、相手フィールドのカード１枚を対象として発動できる。そのカードを破壊する。元々のカード名が「青眼の亜白龍」となるモンスターを素材としてこのカードが融合召喚されている場合、この効果の対象を２枚または３枚にできる。この効果を発動するターン、このカードは攻撃できない。",
+        "types": "Dragon / Fusion / Effect",
+        "attribute": "LIGHT",
+        "level": "12",
+        "atk": "4500",
+        "def": "3800"
       },
       {
         "card_id": 62873545,
@@ -213,7 +325,13 @@
         "image_path": "assets/cards/62873545_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山"
+        "role": "青山",
+        "desc": "「カオス・ソルジャー」＋「青眼の究極竜」このカードは融合召喚でしか特殊召喚できない。①：このカードの攻撃力は、自分フィールドの他のドラゴン族モンスターの数×５００アップする。",
+        "types": "Dragon / Fusion / Effect",
+        "attribute": "LIGHT",
+        "level": "12",
+        "atk": "5000",
+        "def": "5000"
       },
       {
         "card_id": 2129638,
@@ -222,7 +340,13 @@
         "image_path": "assets/cards/2129638_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山"
+        "role": "青山",
+        "desc": "「青眼の白龍」＋「青眼の白龍」このカードは融合召喚及び以下の方法でのみ特殊召喚できる。●自分のモンスターゾーンの上記のカードを墓地へ送った場合にＥＸデッキから特殊召喚できる。①：このカードは戦闘では破壊されない。②：このカードは１度のバトルフェイズ中に２回までモンスターに攻撃できる。③：このカードの攻撃で相手モンスターが破壊されなかったダメージステップ終了時に発動できる。その相手モンスターを除外する。",
+        "types": "Dragon / Fusion / Effect",
+        "attribute": "LIGHT",
+        "level": "10",
+        "atk": "3000",
+        "def": "2500"
       },
       {
         "card_id": 11443677,
@@ -231,7 +355,13 @@
         "image_path": "assets/cards/11443677_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山"
+        "role": "青山",
+        "desc": "「青眼の白龍」＋ドラゴン族モンスターこのカードは融合召喚及び以下の方法でのみＥＸデッキから特殊召喚できる。●融合モンスターを装備している自分の「青眼の白龍」１体をリリースした場合に特殊召喚できる。①：フィールドのこのカードは罠カードの効果を受けない。②：このカードは相手モンスター全てに１回ずつ攻撃できる。③：１ターンに１度、このカードが戦闘を行ったダメージステップ終了時、自分の墓地の罠カード１枚を対象として発動できる。そのカードを自分フィールドにセットする。",
+        "types": "Dragon / Fusion / Effect",
+        "attribute": "LIGHT",
+        "level": "8",
+        "atk": "3400",
+        "def": "2900"
       },
       {
         "card_id": 59822133,
@@ -240,7 +370,13 @@
         "image_path": "assets/cards/59822133_jp.png",
         "external": false,
         "count": 2,
-        "role": "青山"
+        "role": "青山",
+        "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+        "types": "Dragon / Synchro / Effect",
+        "attribute": "LIGHT",
+        "level": "9",
+        "atk": "2500",
+        "def": "3000"
       },
       {
         "card_id": 53347303,
@@ -249,7 +385,13 @@
         "image_path": "assets/cards/53347303_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山"
+        "role": "青山",
+        "desc": "このカードは通常召喚できない。自分フィールドの「青眼の究極竜」１体をリリースした場合のみ特殊召喚できる。①：このカードの攻撃力は、自分の墓地のドラゴン族モンスターの数×３００アップする。②：このカードを対象とする魔法・罠・モンスターの効果が発動した時に発動できる。その効果を無効にする。",
+        "types": "Dragon / Effect",
+        "attribute": "LIGHT",
+        "level": "10",
+        "atk": "3000",
+        "def": "2500"
       },
       {
         "card_id": 89604813,
@@ -258,7 +400,13 @@
         "image_path": "assets/cards/89604813_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山"
+        "role": "青山",
+        "desc": "チューナー２体以上＋チューナー以外の「ブルーアイズ」モンスター１体このカード名の②③の効果はそれぞれ１ターンに１度しか使用できない。①：このカードがモンスターゾーンに存在する限り、自分の墓地のカードを相手は除外できない。②：カードの効果がフィールドで発動した時に発動できる。その発動を無効にし、このカードの攻撃力をターン終了時まで１０００アップする。③：このカードが戦闘・効果で破壊された場合に発動できる。自分の墓地から「青眼の究極霊竜」以外のドラゴン族・光属性モンスター１体を特殊召喚する。",
+        "types": "Dragon / Synchro / Effect",
+        "attribute": "LIGHT",
+        "level": "12",
+        "atk": "3500",
+        "def": "4000"
       },
       {
         "card_id": 22804410,
@@ -267,7 +415,13 @@
         "image_path": "assets/cards/22804410_jp.png",
         "external": false,
         "count": 1,
-        "role": "青山"
+        "role": "青山",
+        "desc": "①：自分フィールドの表側表示の「ブルーアイズ」モンスターが戦闘または相手の効果で破壊された時に発動できる。このカードを手札から特殊召喚し、自分の墓地のドラゴン族モンスターの種類×６００ダメージを相手に与える。②：このカードが召喚・特殊召喚に成功した場合、自分の墓地のドラゴン族モンスター１体を対象として発動する。このカードの攻撃力はそのモンスターの攻撃力と同じになる。③：フィールドのこのカードが効果で破壊された場合に発動する。相手フィールドのモンスターを全て破壊する。",
+        "types": "Dragon / Effect",
+        "attribute": "LIGHT",
+        "level": "10",
+        "atk": "0",
+        "def": "0"
       },
       {
         "card_id": null,
@@ -276,7 +430,13 @@
         "image_path": "assets/cards/external/hieratic-seal-of-the-sun-dragon-overlord_jp.png",
         "external": true,
         "count": 1,
-        "role": "汎用"
+        "role": "汎用",
+        "desc": "謎の刻印が刻まれた聖なる遺物。神の如く力を振るった龍の力を封じた物と伝承は語る。黄金の太陽の下、悠久の刻を経て、それはやがて神々しさと共に太陽石と呼ばれるようになった。",
+        "types": "Dragon",
+        "attribute": "LIGHT",
+        "level": "8",
+        "atk": "0",
+        "def": "0"
       }
     ],
     "side": []
@@ -289,10 +449,17 @@
       "steps": [
         {
           "card": {
+            "en_name": "Maiden with Eyes of Blue",
             "card_id": 88241506,
             "name": "青き眼の乙女",
             "image_path": "assets/cards/88241506_jp.png",
-            "external": false
+            "external": false,
+            "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+            "types": "Spellcaster / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "0",
+            "def": "0"
           },
           "act": "召喚/特殊召喚",
           "note": "青き眼の乙女を召喚（条件を満たせば特殊召喚も可）。",
@@ -302,10 +469,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Maiden with Eyes of Blue",
                 "card_id": 88241506,
                 "name": "青き眼の乙女",
                 "image_path": "assets/cards/88241506_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               null,
               null,
@@ -321,10 +495,17 @@
             ],
             "hand": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "gy": [],
@@ -334,10 +515,17 @@
         },
         {
           "card": {
+            "en_name": "Maiden with Eyes of Blue",
             "card_id": 88241506,
             "name": "青き眼の乙女",
             "image_path": "assets/cards/88241506_jp.png",
-            "external": false
+            "external": false,
+            "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+            "types": "Spellcaster / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "0",
+            "def": "0"
           },
           "act": "効果",
           "note": "乙女の効果で手札の青眼の白龍を墓地へ送り、青き眼の賢士を特殊召喚。",
@@ -349,16 +537,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Maiden with Eyes of Blue",
                 "card_id": 88241506,
                 "name": "青き眼の乙女",
                 "image_path": "assets/cards/88241506_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Sage with Eyes of Blue",
                 "card_id": 8240199,
                 "name": "青き眼の賢士",
                 "image_path": "assets/cards/8240199_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "1500"
               },
               null,
               null,
@@ -374,10 +576,17 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
@@ -386,10 +595,17 @@
         },
         {
           "card": {
+            "en_name": "Sage with Eyes of Blue",
             "card_id": 8240199,
             "name": "青き眼の賢士",
             "image_path": "assets/cards/8240199_jp.png",
-            "external": false
+            "external": false,
+            "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+            "types": "Spellcaster / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "0",
+            "def": "1500"
           },
           "act": "効果",
           "note": "賢士の効果で伝説の白石をサーチ。",
@@ -399,16 +615,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Maiden with Eyes of Blue",
                 "card_id": 88241506,
                 "name": "青き眼の乙女",
                 "image_path": "assets/cards/88241506_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Sage with Eyes of Blue",
                 "card_id": 8240199,
                 "name": "青き眼の賢士",
                 "image_path": "assets/cards/8240199_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "1500"
               },
               null,
               null,
@@ -423,18 +653,32 @@
             ],
             "hand": [
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               }
             ],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
@@ -443,10 +687,17 @@
         },
         {
           "card": {
+            "en_name": "The White Stone of Legend",
             "card_id": 79814787,
             "name": "伝説の白石",
             "image_path": "assets/cards/79814787_jp.jpg",
-            "external": false
+            "external": false,
+            "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+            "types": "Dragon / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "300",
+            "def": "250"
           },
           "act": "効果",
           "note": "手札の伝説の白石を墓地へ送り、その効果で青眼の白龍を特殊召喚。",
@@ -457,22 +708,43 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Maiden with Eyes of Blue",
                 "card_id": 88241506,
                 "name": "青き眼の乙女",
                 "image_path": "assets/cards/88241506_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Sage with Eyes of Blue",
                 "card_id": 8240199,
                 "name": "青き眼の賢士",
                 "image_path": "assets/cards/8240199_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "1500"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               null,
               null
@@ -487,16 +759,30 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               }
             ],
             "banish": [],
@@ -505,10 +791,17 @@
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Spirit Dragon",
             "card_id": 59822133,
             "name": "青眼の精霊龍",
             "image_path": "assets/cards/59822133_jp.png",
-            "external": false
+            "external": false,
+            "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+            "types": "Dragon / Synchro / Effect",
+            "attribute": "LIGHT",
+            "level": "9",
+            "atk": "2500",
+            "def": "3000"
           },
           "act": "シンクロ",
           "note": "賢士（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
@@ -518,16 +811,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Maiden with Eyes of Blue",
                 "card_id": 88241506,
                 "name": "青き眼の乙女",
                 "image_path": "assets/cards/88241506_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -543,41 +850,76 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Sage with Eyes of Blue",
                 "card_id": 8240199,
                 "name": "青き眼の賢士",
                 "image_path": "assets/cards/8240199_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "1500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               }
             ]
           }
         },
         {
           "card": {
+            "en_name": "The White Stone of Ancients",
             "card_id": 71039903,
             "name": "太古の白石",
             "image_path": "assets/cards/71039903_jp.png",
             "external": false,
+            "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+            "types": "Dragon / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "600",
+            "def": "500",
             "label": "墓地から再展開"
           },
           "act": "効果",
@@ -589,22 +931,43 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Maiden with Eyes of Blue",
                 "card_id": 88241506,
                 "name": "青き眼の乙女",
                 "image_path": "assets/cards/88241506_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
                 "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500",
                 "label": "墓地から再展開"
               },
               null,
@@ -620,41 +983,76 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Sage with Eyes of Blue",
                 "card_id": 8240199,
                 "name": "青き眼の賢士",
                 "image_path": "assets/cards/8240199_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "1500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               }
             ]
           }
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Ultimate Dragon",
             "card_id": 23995346,
             "name": "青眼の究極竜",
             "image_path": "assets/cards/23995346_jp.png",
-            "external": false
+            "external": false,
+            "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+            "types": "Dragon / Fusion",
+            "attribute": "LIGHT",
+            "level": "12",
+            "atk": "4500",
+            "def": "3800"
           },
           "act": "融合",
           "note": "究極融合：墓地・手札の青眼の白龍たちを素材に、青眼の究極竜を融合召喚。",
@@ -665,16 +1063,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Maiden with Eyes of Blue",
                 "card_id": 88241506,
                 "name": "青き眼の乙女",
                 "image_path": "assets/cards/88241506_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -682,6 +1094,7 @@
             ],
             "spells": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -695,31 +1108,59 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Sage with Eyes of Blue",
                 "card_id": 8240199,
                 "name": "青き眼の賢士",
                 "image_path": "assets/cards/8240199_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "1500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Ultimate Dragon",
                 "card_id": 23995346,
                 "name": "青眼の究極竜",
                 "image_path": "assets/cards/23995346_jp.png",
                 "external": false,
+                "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+                "types": "Dragon / Fusion",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "4500",
+                "def": "3800",
                 "label": "融合召喚"
               }
             ]
@@ -731,16 +1172,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Maiden with Eyes of Blue",
                 "card_id": 88241506,
                 "name": "青き眼の乙女",
                 "image_path": "assets/cards/88241506_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚する。②：このカードが攻撃対象に選択された時に発動できる。その攻撃を無効にし、このカードの表示形式を変更する。その後、自分の手札・デッキ・墓地から「青眼の白龍」１体を選んで特殊召喚できる。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -756,31 +1211,59 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Sage with Eyes of Blue",
                 "card_id": 8240199,
                 "name": "青き眼の賢士",
                 "image_path": "assets/cards/8240199_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが召喚した時に発動できる。デッキから「青き眼の賢士」以外の光属性・レベル１チューナー１体を手札に加える。②：このカードを手札から捨て、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、デッキから「ブルーアイズ」モンスター１体を特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "1500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Ultimate Dragon",
                 "card_id": 23995346,
                 "name": "青眼の究極竜",
                 "image_path": "assets/cards/23995346_jp.png",
                 "external": false,
+                "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+                "types": "Dragon / Fusion",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "4500",
+                "def": "3800",
                 "label": "融合召喚"
               }
             ]
@@ -795,10 +1278,17 @@
       "steps": [
         {
           "card": {
+            "en_name": "Master with Eyes of Blue",
             "card_id": 45644898,
             "name": "青き眼の祭司",
             "image_path": "assets/cards/45644898_jp.png",
-            "external": false
+            "external": false,
+            "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+            "types": "Spellcaster / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "300",
+            "def": "1200"
           },
           "act": "召喚/特殊召喚",
           "note": "青き眼の祭司を召喚（または効果で特殊召喚）。",
@@ -808,10 +1298,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Master with Eyes of Blue",
                 "card_id": 45644898,
                 "name": "青き眼の祭司",
                 "image_path": "assets/cards/45644898_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "1200"
               },
               null,
               null,
@@ -827,16 +1324,30 @@
             ],
             "hand": [
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "gy": [],
@@ -846,10 +1357,17 @@
         },
         {
           "card": {
+            "en_name": "Master with Eyes of Blue",
             "card_id": 45644898,
             "name": "青き眼の祭司",
             "image_path": "assets/cards/45644898_jp.png",
-            "external": false
+            "external": false,
+            "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+            "types": "Spellcaster / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "300",
+            "def": "1200"
           },
           "act": "効果",
           "note": "祭司の効果で太古の白石をサーチ（または墓地へ送って展開）。",
@@ -859,10 +1377,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Master with Eyes of Blue",
                 "card_id": 45644898,
                 "name": "青き眼の祭司",
                 "image_path": "assets/cards/45644898_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "1200"
               },
               null,
               null,
@@ -878,18 +1403,32 @@
             ],
             "hand": [
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
@@ -898,10 +1437,17 @@
         },
         {
           "card": {
+            "en_name": "The White Stone of Ancients",
             "card_id": 71039903,
             "name": "太古の白石",
             "image_path": "assets/cards/71039903_jp.png",
-            "external": false
+            "external": false,
+            "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+            "types": "Dragon / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "600",
+            "def": "500"
           },
           "act": "効果",
           "note": "太古の白石を墓地へ送り、効果で白石または青き眼を特殊召喚（ループを回す）。",
@@ -912,16 +1458,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Master with Eyes of Blue",
                 "card_id": 45644898,
                 "name": "青き眼の祭司",
                 "image_path": "assets/cards/45644898_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "1200"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
                 "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250",
                 "label": "白石ループ"
               },
               null,
@@ -938,16 +1498,30 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "banish": [],
@@ -956,10 +1530,17 @@
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Alternative White Dragon",
             "card_id": 38517737,
             "name": "青眼の亜白龍",
             "image_path": "assets/cards/38517737_jp.png",
-            "external": false
+            "external": false,
+            "desc": "このカードは通常召喚できない。手札の「青眼の白龍」１体を相手に見せた場合に特殊召喚できる。この方法による「青眼の亜白龍」の特殊召喚は１ターンに１度しかできない。①：このカードのカード名は、フィールド・墓地に存在する限り「青眼の白龍」として扱う。②：１ターンに１度、相手フィールドのモンスター１体を対象として発動できる（この効果を発動するターン、このカードは攻撃できない）。そのモンスターを破壊する。",
+            "types": "Dragon / Effect",
+            "attribute": "LIGHT",
+            "level": "8",
+            "atk": "3000",
+            "def": "2500"
           },
           "act": "特殊召喚",
           "note": "墓地の青眼の白龍を除外して、青眼の亜白龍を特殊召喚。",
@@ -969,23 +1550,44 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Master with Eyes of Blue",
                 "card_id": 45644898,
                 "name": "青き眼の祭司",
                 "image_path": "assets/cards/45644898_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "1200"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
                 "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250",
                 "label": "白石ループ"
               },
               {
+                "en_name": "Blue-Eyes Alternative White Dragon",
                 "card_id": 38517737,
                 "name": "青眼の亜白龍",
                 "image_path": "assets/cards/38517737_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカードは通常召喚できない。手札の「青眼の白龍」１体を相手に見せた場合に特殊召喚できる。この方法による「青眼の亜白龍」の特殊召喚は１ターンに１度しかできない。①：このカードのカード名は、フィールド・墓地に存在する限り「青眼の白龍」として扱う。②：１ターンに１度、相手フィールドのモンスター１体を対象として発動できる（この効果を発動するターン、このカードは攻撃できない）。そのモンスターを破壊する。",
+                "types": "Dragon / Effect",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               null,
               null
@@ -1000,18 +1602,32 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "banish": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
                 "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500",
                 "label": "除外"
               }
             ],
@@ -1020,10 +1636,17 @@
         },
         {
           "card": {
+            "en_name": "The White Stone of Legend",
             "card_id": 79814787,
             "name": "伝説の白石",
             "image_path": "assets/cards/79814787_jp.jpg",
-            "external": false
+            "external": false,
+            "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+            "types": "Dragon / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "300",
+            "def": "250"
           },
           "act": "効果",
           "note": "墓地の白石効果でサーチし、手札を補強。",
@@ -1034,23 +1657,44 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Master with Eyes of Blue",
                 "card_id": 45644898,
                 "name": "青き眼の祭司",
                 "image_path": "assets/cards/45644898_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "1200"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
                 "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250",
                 "label": "白石ループ"
               },
               {
+                "en_name": "Blue-Eyes Alternative White Dragon",
                 "card_id": 38517737,
                 "name": "青眼の亜白龍",
                 "image_path": "assets/cards/38517737_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカードは通常召喚できない。手札の「青眼の白龍」１体を相手に見せた場合に特殊召喚できる。この方法による「青眼の亜白龍」の特殊召喚は１ターンに１度しかできない。①：このカードのカード名は、フィールド・墓地に存在する限り「青眼の白龍」として扱う。②：１ターンに１度、相手フィールドのモンスター１体を対象として発動できる（この効果を発動するターン、このカードは攻撃できない）。そのモンスターを破壊する。",
+                "types": "Dragon / Effect",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               null,
               null
@@ -1064,6 +1708,7 @@
             ],
             "hand": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -1073,18 +1718,32 @@
             ],
             "gy": [
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "banish": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
                 "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500",
                 "label": "除外"
               }
             ],
@@ -1093,10 +1752,17 @@
         },
         {
           "card": {
+            "en_name": "Dragon Master Knight",
             "card_id": 62873545,
             "name": "究極竜騎士",
             "image_path": "assets/cards/62873545_jp.png",
-            "external": false
+            "external": false,
+            "desc": "「カオス・ソルジャー」＋「青眼の究極竜」このカードは融合召喚でしか特殊召喚できない。①：このカードの攻撃力は、自分フィールドの他のドラゴン族モンスターの数×５００アップする。",
+            "types": "Dragon / Fusion / Effect",
+            "attribute": "LIGHT",
+            "level": "12",
+            "atk": "5000",
+            "def": "5000"
           },
           "act": "融合",
           "note": "究極融合：手札・墓地の青眼の白龍を融合素材に、究極竜系（究極竜騎士／究極亜竜）を融合召喚。",
@@ -1107,16 +1773,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Master with Eyes of Blue",
                 "card_id": 45644898,
                 "name": "青き眼の祭司",
                 "image_path": "assets/cards/45644898_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の祭司」の②の効果は１ターンに１度しか使用できない。①：このカードが召喚に成功した時、自分の墓地の光属性・レベル１チューナー１体を対象として発動できる。そのモンスターを手札に加える。②：墓地のこのカードをデッキに戻し、自分フィールドの効果モンスター１体を対象として発動できる。そのモンスターを墓地へ送り、そのモンスター以外の「ブルーアイズ」モンスター１体を自分の墓地から選んで特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "1200"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
                 "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250",
                 "label": "白石ループ"
               },
               null,
@@ -1125,6 +1805,7 @@
             ],
             "spells": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -1138,27 +1819,48 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "banish": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
                 "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500",
                 "label": "除外"
               }
             ],
             "extra": [
               {
+                "en_name": "Dragon Master Knight",
                 "card_id": 62873545,
                 "name": "究極竜騎士",
                 "image_path": "assets/cards/62873545_jp.png",
                 "external": false,
+                "desc": "「カオス・ソルジャー」＋「青眼の究極竜」このカードは融合召喚でしか特殊召喚できない。①：このカードの攻撃力は、自分フィールドの他のドラゴン族モンスターの数×５００アップする。",
+                "types": "Dragon / Fusion / Effect",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "5000",
+                "def": "5000",
                 "label": "fusion"
               }
             ]
@@ -1170,16 +1872,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Alternative White Dragon",
                 "card_id": 38517737,
                 "name": "青眼の亜白龍",
                 "image_path": "assets/cards/38517737_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカードは通常召喚できない。手札の「青眼の白龍」１体を相手に見せた場合に特殊召喚できる。この方法による「青眼の亜白龍」の特殊召喚は１ターンに１度しかできない。①：このカードのカード名は、フィールド・墓地に存在する限り「青眼の白龍」として扱う。②：１ターンに１度、相手フィールドのモンスター１体を対象として発動できる（この効果を発動するターン、このカードは攻撃できない）。そのモンスターを破壊する。",
+                "types": "Dragon / Effect",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "Dragon Master Knight",
                 "card_id": 62873545,
                 "name": "究極竜騎士",
                 "image_path": "assets/cards/62873545_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「カオス・ソルジャー」＋「青眼の究極竜」このカードは融合召喚でしか特殊召喚できない。①：このカードの攻撃力は、自分フィールドの他のドラゴン族モンスターの数×５００アップする。",
+                "types": "Dragon / Fusion / Effect",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "5000",
+                "def": "5000"
               },
               null,
               null,
@@ -1195,27 +1911,48 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "banish": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
                 "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500",
                 "label": "除外"
               }
             ],
             "extra": [
               {
+                "en_name": "Dragon Master Knight",
                 "card_id": 62873545,
                 "name": "究極竜騎士",
                 "image_path": "assets/cards/62873545_jp.png",
                 "external": false,
+                "desc": "「カオス・ソルジャー」＋「青眼の究極竜」このカードは融合召喚でしか特殊召喚できない。①：このカードの攻撃力は、自分フィールドの他のドラゴン族モンスターの数×５００アップする。",
+                "types": "Dragon / Fusion / Effect",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "5000",
+                "def": "5000",
                 "label": "fusion"
               }
             ]
@@ -1230,10 +1967,12 @@
       "steps": [
         {
           "card": {
+            "en_name": "The Melody of Awakening Dragon",
             "slug": "the-melody-of-awakening-dragon",
             "name": "ドラゴン・目覚めの旋律",
             "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
-            "external": true
+            "external": true,
+            "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。"
           },
           "act": "魔法発動",
           "note": "ドラゴン・目覚めの旋律：手札の竜を墓地へ送り、青眼の白龍と青き眼のパーツをサーチ。",
@@ -1258,24 +1997,40 @@
             ],
             "hand": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "gy": [
               {
+                "en_name": "The Melody of Awakening Dragon",
                 "slug": "the-melody-of-awakening-dragon",
                 "name": "ドラゴン・目覚めの旋律",
                 "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
                 "external": true,
+                "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。",
                 "label": "発動済み"
               }
             ],
@@ -1285,10 +2040,12 @@
         },
         {
           "card": {
+            "en_name": "Dragon Shrine",
             "slug": "dragon-shrine",
             "name": "竜の霊廟",
             "image_path": "assets/cards/external/dragon-shrine_jp.png",
-            "external": true
+            "external": true,
+            "desc": "このカード名のカードは１ターンに１枚しか発動できない。①：デッキからドラゴン族モンスター１体を墓地へ送る。この効果で墓地へ送られたモンスターがドラゴン族の通常モンスターだった場合、さらにデッキからドラゴン族モンスター１体を墓地へ送る事ができる。"
           },
           "act": "魔法発動",
           "note": "竜の霊廟：手札の白石を墓地へ送り、墓地で効果を仕込む。",
@@ -1313,25 +2070,36 @@
             ],
             "hand": [
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               }
             ],
             "gy": [
               {
+                "en_name": "The Melody of Awakening Dragon",
                 "slug": "the-melody-of-awakening-dragon",
                 "name": "ドラゴン・目覚めの旋律",
                 "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
                 "external": true,
+                "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。",
                 "label": "発動済み"
               },
               {
+                "en_name": "Dragon Shrine",
                 "slug": "dragon-shrine",
                 "name": "竜の霊廟",
                 "image_path": "assets/cards/external/dragon-shrine_jp.png",
                 "external": true,
+                "desc": "このカード名のカードは１ターンに１枚しか発動できない。①：デッキからドラゴン族モンスター１体を墓地へ送る。この効果で墓地へ送られたモンスターがドラゴン族の通常モンスターだった場合、さらにデッキからドラゴン族モンスター１体を墓地へ送る事ができる。",
                 "label": "発動済み"
               }
             ],
@@ -1341,10 +2109,17 @@
         },
         {
           "card": {
+            "en_name": "The White Stone of Ancients",
             "card_id": 71039903,
             "name": "太古の白石",
             "image_path": "assets/cards/71039903_jp.png",
             "external": false,
+            "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+            "types": "Dragon / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "600",
+            "def": "500",
             "label": "墓地から特殊召喚"
           },
           "act": "墓地効果",
@@ -1356,10 +2131,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
                 "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500",
                 "label": "墓地から特殊召喚"
               },
               null,
@@ -1376,25 +2158,36 @@
             ],
             "hand": [
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               }
             ],
             "gy": [
               {
+                "en_name": "The Melody of Awakening Dragon",
                 "slug": "the-melody-of-awakening-dragon",
                 "name": "ドラゴン・目覚めの旋律",
                 "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
                 "external": true,
+                "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。",
                 "label": "発動済み"
               },
               {
+                "en_name": "Dragon Shrine",
                 "slug": "dragon-shrine",
                 "name": "竜の霊廟",
                 "image_path": "assets/cards/external/dragon-shrine_jp.png",
                 "external": true,
+                "desc": "このカード名のカードは１ターンに１枚しか発動できない。①：デッキからドラゴン族モンスター１体を墓地へ送る。この効果で墓地へ送られたモンスターがドラゴン族の通常モンスターだった場合、さらにデッキからドラゴン族モンスター１体を墓地へ送る事ができる。",
                 "label": "発動済み"
               }
             ],
@@ -1404,10 +2197,17 @@
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Spirit Dragon",
             "card_id": 59822133,
             "name": "青眼の精霊龍",
             "image_path": "assets/cards/59822133_jp.png",
-            "external": false
+            "external": false,
+            "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+            "types": "Dragon / Synchro / Effect",
+            "attribute": "LIGHT",
+            "level": "9",
+            "atk": "2500",
+            "def": "3000"
           },
           "act": "シンクロ",
           "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
@@ -1417,10 +2217,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -1437,49 +2244,81 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "The Melody of Awakening Dragon",
                 "slug": "the-melody-of-awakening-dragon",
                 "name": "ドラゴン・目覚めの旋律",
                 "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
                 "external": true,
+                "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。",
                 "label": "発動済み"
               },
               {
+                "en_name": "Dragon Shrine",
                 "slug": "dragon-shrine",
                 "name": "竜の霊廟",
                 "image_path": "assets/cards/external/dragon-shrine_jp.png",
                 "external": true,
+                "desc": "このカード名のカードは１ターンに１枚しか発動できない。①：デッキからドラゴン族モンスター１体を墓地へ送る。この効果で墓地へ送られたモンスターがドラゴン族の通常モンスターだった場合、さらにデッキからドラゴン族モンスター１体を墓地へ送る事ができる。",
                 "label": "発動済み"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               }
             ]
           }
         },
         {
           "card": {
+            "en_name": "The White Stone of Legend",
             "card_id": 79814787,
             "name": "伝説の白石",
             "image_path": "assets/cards/79814787_jp.jpg",
-            "external": false
+            "external": false,
+            "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+            "types": "Dragon / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "300",
+            "def": "250"
           },
           "act": "墓地効果",
           "note": "墓地の伝説の白石効果でサーチし、手札を整える。",
@@ -1490,10 +2329,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -1509,6 +2355,7 @@
             ],
             "hand": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -1518,49 +2365,81 @@
             ],
             "gy": [
               {
+                "en_name": "The Melody of Awakening Dragon",
                 "slug": "the-melody-of-awakening-dragon",
                 "name": "ドラゴン・目覚めの旋律",
                 "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
                 "external": true,
+                "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。",
                 "label": "発動済み"
               },
               {
+                "en_name": "Dragon Shrine",
                 "slug": "dragon-shrine",
                 "name": "竜の霊廟",
                 "image_path": "assets/cards/external/dragon-shrine_jp.png",
                 "external": true,
+                "desc": "このカード名のカードは１ターンに１枚しか発動できない。①：デッキからドラゴン族モンスター１体を墓地へ送る。この効果で墓地へ送られたモンスターがドラゴン族の通常モンスターだった場合、さらにデッキからドラゴン族モンスター１体を墓地へ送る事ができる。",
                 "label": "発動済み"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               }
             ]
           }
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Ultimate Dragon",
             "card_id": 23995346,
             "name": "青眼の究極竜",
             "image_path": "assets/cards/23995346_jp.png",
-            "external": false
+            "external": false,
+            "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+            "types": "Dragon / Fusion",
+            "attribute": "LIGHT",
+            "level": "12",
+            "atk": "4500",
+            "def": "3800"
           },
           "act": "融合",
           "note": "究極融合：手札・墓地の青眼の白龍を融合素材に、青眼の究極竜を融合召喚。",
@@ -1571,10 +2450,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -1583,6 +2469,7 @@
             ],
             "spells": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -1596,45 +2483,77 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "The Melody of Awakening Dragon",
                 "slug": "the-melody-of-awakening-dragon",
                 "name": "ドラゴン・目覚めの旋律",
                 "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
                 "external": true,
+                "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。",
                 "label": "発動済み"
               },
               {
+                "en_name": "Dragon Shrine",
                 "slug": "dragon-shrine",
                 "name": "竜の霊廟",
                 "image_path": "assets/cards/external/dragon-shrine_jp.png",
                 "external": true,
+                "desc": "このカード名のカードは１ターンに１枚しか発動できない。①：デッキからドラゴン族モンスター１体を墓地へ送る。この効果で墓地へ送られたモンスターがドラゴン族の通常モンスターだった場合、さらにデッキからドラゴン族モンスター１体を墓地へ送る事ができる。",
                 "label": "発動済み"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Ultimate Dragon",
                 "card_id": 23995346,
                 "name": "青眼の究極竜",
                 "image_path": "assets/cards/23995346_jp.png",
                 "external": false,
+                "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+                "types": "Dragon / Fusion",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "4500",
+                "def": "3800",
                 "label": "fusion"
               }
             ]
@@ -1646,10 +2565,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -1666,45 +2592,77 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "The Melody of Awakening Dragon",
                 "slug": "the-melody-of-awakening-dragon",
                 "name": "ドラゴン・目覚めの旋律",
                 "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
                 "external": true,
+                "desc": "①：手札を１枚捨てて発動できる。攻撃力３０００以上で守備力２５００以下のドラゴン族モンスターを２体までデッキから手札に加える。",
                 "label": "発動済み"
               },
               {
+                "en_name": "Dragon Shrine",
                 "slug": "dragon-shrine",
                 "name": "竜の霊廟",
                 "image_path": "assets/cards/external/dragon-shrine_jp.png",
                 "external": true,
+                "desc": "このカード名のカードは１ターンに１枚しか発動できない。①：デッキからドラゴン族モンスター１体を墓地へ送る。この効果で墓地へ送られたモンスターがドラゴン族の通常モンスターだった場合、さらにデッキからドラゴン族モンスター１体を墓地へ送る事ができる。",
                 "label": "発動済み"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Ultimate Dragon",
                 "card_id": 23995346,
                 "name": "青眼の究極竜",
                 "image_path": "assets/cards/23995346_jp.png",
                 "external": false,
+                "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+                "types": "Dragon / Fusion",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "4500",
+                "def": "3800",
                 "label": "fusion"
               }
             ]
@@ -1719,10 +2677,17 @@
       "steps": [
         {
           "card": {
+            "en_name": "Kaibaman",
             "card_id": 34627841,
             "name": "正義の味方 カイバーマン",
             "image_path": "assets/cards/34627841_jp.jpg",
-            "external": false
+            "external": false,
+            "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+            "types": "Warrior / Effect",
+            "attribute": "LIGHT",
+            "level": "3",
+            "atk": "200",
+            "def": "700"
           },
           "act": "召喚",
           "note": "正義の味方 カイバーマンを通常召喚。",
@@ -1730,10 +2695,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Kaibaman",
                 "card_id": 34627841,
                 "name": "正義の味方 カイバーマン",
                 "image_path": "assets/cards/34627841_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+                "types": "Warrior / Effect",
+                "attribute": "LIGHT",
+                "level": "3",
+                "atk": "200",
+                "def": "700"
               },
               null,
               null,
@@ -1749,16 +2721,30 @@
             ],
             "hand": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               }
             ],
             "gy": [],
@@ -1768,10 +2754,17 @@
         },
         {
           "card": {
+            "en_name": "Kaibaman",
             "card_id": 34627841,
             "name": "正義の味方 カイバーマン",
             "image_path": "assets/cards/34627841_jp.jpg",
-            "external": false
+            "external": false,
+            "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+            "types": "Warrior / Effect",
+            "attribute": "LIGHT",
+            "level": "3",
+            "atk": "200",
+            "def": "700"
           },
           "act": "効果",
           "note": "カイバーマンを生贄に捧げて、手札の青眼の白龍を特殊召喚。",
@@ -1781,10 +2774,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               null,
               null,
@@ -1800,18 +2800,32 @@
             ],
             "hand": [
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               }
             ],
             "gy": [
               {
+                "en_name": "Kaibaman",
                 "card_id": 34627841,
                 "name": "正義の味方 カイバーマン",
                 "image_path": "assets/cards/34627841_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+                "types": "Warrior / Effect",
+                "attribute": "LIGHT",
+                "level": "3",
+                "atk": "200",
+                "def": "700"
               }
             ],
             "banish": [],
@@ -1820,10 +2834,17 @@
         },
         {
           "card": {
+            "en_name": "The White Stone of Legend",
             "card_id": 79814787,
             "name": "伝説の白石",
             "image_path": "assets/cards/79814787_jp.jpg",
-            "external": false
+            "external": false,
+            "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+            "types": "Dragon / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "300",
+            "def": "250"
           },
           "act": "効果",
           "note": "白石の効果で展開を補助（サーチ＋白石特殊召喚）。",
@@ -1835,16 +2856,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
                 "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500",
                 "label": "墓地から展開"
               },
               null,
@@ -1861,16 +2896,30 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Kaibaman",
                 "card_id": 34627841,
                 "name": "正義の味方 カイバーマン",
                 "image_path": "assets/cards/34627841_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+                "types": "Warrior / Effect",
+                "attribute": "LIGHT",
+                "level": "3",
+                "atk": "200",
+                "def": "700"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               }
             ],
             "banish": [],
@@ -1879,10 +2928,17 @@
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Spirit Dragon",
             "card_id": 59822133,
             "name": "青眼の精霊龍",
             "image_path": "assets/cards/59822133_jp.png",
-            "external": false
+            "external": false,
+            "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+            "types": "Dragon / Synchro / Effect",
+            "attribute": "LIGHT",
+            "level": "9",
+            "atk": "2500",
+            "def": "3000"
           },
           "act": "シンクロ",
           "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
@@ -1892,10 +2948,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -1912,47 +2975,89 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Kaibaman",
                 "card_id": 34627841,
                 "name": "正義の味方 カイバーマン",
                 "image_path": "assets/cards/34627841_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+                "types": "Warrior / Effect",
+                "attribute": "LIGHT",
+                "level": "3",
+                "atk": "200",
+                "def": "700"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               }
             ]
           }
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Ultimate Dragon",
             "card_id": 23995346,
             "name": "青眼の究極竜",
             "image_path": "assets/cards/23995346_jp.png",
-            "external": false
+            "external": false,
+            "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+            "types": "Dragon / Fusion",
+            "attribute": "LIGHT",
+            "level": "12",
+            "atk": "4500",
+            "def": "3800"
           },
           "act": "融合",
           "note": "究極融合：墓地・手札の青眼の白龍を融合素材に、青眼の究極竜を融合召喚。",
@@ -1963,10 +3068,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -1975,6 +3087,7 @@
             ],
             "spells": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -1988,37 +3101,72 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Kaibaman",
                 "card_id": 34627841,
                 "name": "正義の味方 カイバーマン",
                 "image_path": "assets/cards/34627841_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+                "types": "Warrior / Effect",
+                "attribute": "LIGHT",
+                "level": "3",
+                "atk": "200",
+                "def": "700"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Ultimate Dragon",
                 "card_id": 23995346,
                 "name": "青眼の究極竜",
                 "image_path": "assets/cards/23995346_jp.png",
                 "external": false,
+                "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+                "types": "Dragon / Fusion",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "4500",
+                "def": "3800",
                 "label": "fusion"
               }
             ]
@@ -2030,10 +3178,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -2042,6 +3197,7 @@
             ],
             "spells": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -2055,37 +3211,72 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Kaibaman",
                 "card_id": 34627841,
                 "name": "正義の味方 カイバーマン",
                 "image_path": "assets/cards/34627841_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "このカードをリリースして発動できる。手札から「青眼の白龍」１体を特殊召喚する。",
+                "types": "Warrior / Effect",
+                "attribute": "LIGHT",
+                "level": "3",
+                "atk": "200",
+                "def": "700"
               },
               {
+                "en_name": "The White Stone of Legend",
                 "card_id": 79814787,
                 "name": "伝説の白石",
                 "image_path": "assets/cards/79814787_jp.jpg",
-                "external": false
+                "external": false,
+                "desc": "①：このカードが墓地へ送られた場合に発動する。デッキから「青眼の白龍」１体を手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "300",
+                "def": "250"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "The White Stone of Ancients",
                 "card_id": 71039903,
                 "name": "太古の白石",
                 "image_path": "assets/cards/71039903_jp.png",
-                "external": false
+                "external": false,
+                "desc": "このカード名の②の効果は１ターンに１度しか使用できない。①：このカードが墓地へ送られたターンのエンドフェイズに発動できる。デッキから「ブルーアイズ」モンスター１体を特殊召喚する。②：墓地のこのカードを除外し、自分の墓地の「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを手札に加える。",
+                "types": "Dragon / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "600",
+                "def": "500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Ultimate Dragon",
                 "card_id": 23995346,
                 "name": "青眼の究極竜",
                 "image_path": "assets/cards/23995346_jp.png",
                 "external": false,
+                "desc": "「青眼の白龍」＋「青眼の白龍」＋「青眼の白龍」",
+                "types": "Dragon / Fusion",
+                "attribute": "LIGHT",
+                "level": "12",
+                "atk": "4500",
+                "def": "3800",
                 "label": "fusion"
               }
             ]
@@ -2100,10 +3291,17 @@
       "steps": [
         {
           "card": {
+            "en_name": "Priestess with Eyes of Blue",
             "card_id": 36734924,
             "name": "青き眼の巫女",
             "image_path": "assets/cards/36734924_jp.png",
-            "external": false
+            "external": false,
+            "desc": "「青き眼の巫女」の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分フィールドの効果モンスター１体を選んで墓地へ送り、デッキから「ブルーアイズ」モンスターを２体まで手札に加える（同名カードは１枚まで）。②：このカードが墓地に存在する場合、自分フィールドの「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを持ち主のデッキに戻し、このカードを墓地から特殊召喚する。",
+            "types": "Spellcaster / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "0",
+            "def": "0"
           },
           "act": "召喚",
           "note": "青き眼の巫女を通常召喚。相手ターンの攻撃・効果で対象を取られると効果が素早く決まる。",
@@ -2113,10 +3311,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Priestess with Eyes of Blue",
                 "card_id": 36734924,
                 "name": "青き眼の巫女",
                 "image_path": "assets/cards/36734924_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の巫女」の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分フィールドの効果モンスター１体を選んで墓地へ送り、デッキから「ブルーアイズ」モンスターを２体まで手札に加える（同名カードは１枚まで）。②：このカードが墓地に存在する場合、自分フィールドの「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを持ち主のデッキに戻し、このカードを墓地から特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               null,
               null,
@@ -2132,12 +3337,20 @@
             ],
             "hand": [
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -2151,10 +3364,17 @@
         },
         {
           "card": {
+            "en_name": "Priestess with Eyes of Blue",
             "card_id": 36734924,
             "name": "青き眼の巫女",
             "image_path": "assets/cards/36734924_jp.png",
-            "external": false
+            "external": false,
+            "desc": "「青き眼の巫女」の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分フィールドの効果モンスター１体を選んで墓地へ送り、デッキから「ブルーアイズ」モンスターを２体まで手札に加える（同名カードは１枚まで）。②：このカードが墓地に存在する場合、自分フィールドの「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを持ち主のデッキに戻し、このカードを墓地から特殊召喚する。",
+            "types": "Spellcaster / Tuner / Effect",
+            "attribute": "LIGHT",
+            "level": "1",
+            "atk": "0",
+            "def": "0"
           },
           "act": "効果",
           "note": "巫女の効果で手札の青眼の白龍を特殊召喚。",
@@ -2165,16 +3385,30 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Priestess with Eyes of Blue",
                 "card_id": 36734924,
                 "name": "青き眼の巫女",
                 "image_path": "assets/cards/36734924_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の巫女」の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分フィールドの効果モンスター１体を選んで墓地へ送り、デッキから「ブルーアイズ」モンスターを２体まで手札に加える（同名カードは１枚まで）。②：このカードが墓地に存在する場合、自分フィールドの「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを持ち主のデッキに戻し、このカードを墓地から特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               },
               null,
               null,
@@ -2189,6 +3423,7 @@
             ],
             "hand": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -2202,10 +3437,17 @@
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Spirit Dragon",
             "card_id": 59822133,
             "name": "青眼の精霊龍",
             "image_path": "assets/cards/59822133_jp.png",
-            "external": false
+            "external": false,
+            "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+            "types": "Dragon / Synchro / Effect",
+            "attribute": "LIGHT",
+            "level": "9",
+            "atk": "2500",
+            "def": "3000"
           },
           "act": "シンクロ",
           "note": "巫女（Lv1トーナー）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
@@ -2215,10 +3457,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -2235,35 +3484,63 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Priestess with Eyes of Blue",
                 "card_id": 36734924,
                 "name": "青き眼の巫女",
                 "image_path": "assets/cards/36734924_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の巫女」の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分フィールドの効果モンスター１体を選んで墓地へ送り、デッキから「ブルーアイズ」モンスターを２体まで手札に加える（同名カードは１枚まで）。②：このカードが墓地に存在する場合、自分フィールドの「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを持ち主のデッキに戻し、このカードを墓地から特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               }
             ]
           }
         },
         {
           "card": {
+            "en_name": "Blue-Eyes Spirit Dragon",
             "card_id": 59822133,
             "name": "青眼の精霊龍",
             "image_path": "assets/cards/59822133_jp.png",
-            "external": false
+            "external": false,
+            "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+            "types": "Dragon / Synchro / Effect",
+            "attribute": "LIGHT",
+            "level": "9",
+            "atk": "2500",
+            "def": "3000"
           },
           "act": "効果",
           "note": "精霊龍の効果で相手フィールドのカード1枚をバウンス（持ち主の墓地へ戻す）。警告：テキストの正確な効果文言は要確認。",
@@ -2273,10 +3550,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -2293,25 +3577,46 @@
             "hand": [],
             "gy": [
               {
+                "en_name": "Priestess with Eyes of Blue",
                 "card_id": 36734924,
                 "name": "青き眼の巫女",
                 "image_path": "assets/cards/36734924_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の巫女」の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分フィールドの効果モンスター１体を選んで墓地へ送り、デッキから「ブルーアイズ」モンスターを２体まで手札に加える（同名カードは１枚まで）。②：このカードが墓地に存在する場合、自分フィールドの「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを持ち主のデッキに戻し、このカードを墓地から特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               }
             ]
           }
@@ -2322,10 +3627,17 @@
           "board": {
             "monsters": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               },
               null,
               null,
@@ -2341,6 +3653,7 @@
             ],
             "hand": [
               {
+                "en_name": "Ultimate Fusion",
                 "card_id": 71143015,
                 "name": "究極融合",
                 "image_path": "assets/cards/71143015_jp.png",
@@ -2349,25 +3662,46 @@
             ],
             "gy": [
               {
+                "en_name": "Priestess with Eyes of Blue",
                 "card_id": 36734924,
                 "name": "青き眼の巫女",
                 "image_path": "assets/cards/36734924_jp.png",
-                "external": false
+                "external": false,
+                "desc": "「青き眼の巫女」の①②の効果は１ターンに１度、いずれか１つしか使用できない。①：フィールドの表側表示のこのカードが効果の対象になった時に発動できる。自分フィールドの効果モンスター１体を選んで墓地へ送り、デッキから「ブルーアイズ」モンスターを２体まで手札に加える（同名カードは１枚まで）。②：このカードが墓地に存在する場合、自分フィールドの「ブルーアイズ」モンスター１体を対象として発動できる。そのモンスターを持ち主のデッキに戻し、このカードを墓地から特殊召喚する。",
+                "types": "Spellcaster / Tuner / Effect",
+                "attribute": "LIGHT",
+                "level": "1",
+                "atk": "0",
+                "def": "0"
               },
               {
+                "en_name": "Blue-Eyes White Dragon",
                 "card_id": 89631139,
                 "name": "青眼の白龍",
                 "image_path": "assets/cards/89631139_jp.png",
-                "external": false
+                "external": false,
+                "desc": "高い攻撃力を誇る伝説のドラゴン。どんな相手でも粉砕する、その破壊力は計り知れない。",
+                "types": "Dragon / Normal",
+                "attribute": "LIGHT",
+                "level": "8",
+                "atk": "3000",
+                "def": "2500"
               }
             ],
             "banish": [],
             "extra": [
               {
+                "en_name": "Blue-Eyes Spirit Dragon",
                 "card_id": 59822133,
                 "name": "青眼の精霊龍",
                 "image_path": "assets/cards/59822133_jp.png",
-                "external": false
+                "external": false,
+                "desc": "チューナー＋チューナー以外の「ブルーアイズ」モンスター１体以上①：このカードがモンスターゾーンに存在する限り、お互いに２体以上のモンスターを同時に特殊召喚できない。②：１ターンに１度、墓地のカードの効果が発動した時に発動できる。その発動を無効にする。③：自分・相手ターンに、Ｓ召喚したこのカードをリリースして発動できる。ＥＸデッキから「青眼の精霊龍」以外のドラゴン族・光属性Ｓモンスター１体を守備表示で特殊召喚する。この効果で特殊召喚したモンスターはこのターンのエンドフェイズに破壊される。",
+                "types": "Dragon / Synchro / Effect",
+                "attribute": "LIGHT",
+                "level": "9",
+                "atk": "2500",
+                "def": "3000"
               }
             ]
           }

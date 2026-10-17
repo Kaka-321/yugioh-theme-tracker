@@ -29,6 +29,7 @@ from fetch_blue_eyes_cards import (
 DECK_DIR = ROOT / "data" / "decks"
 EXT_DIR = ROOT / "assets" / "cards" / "external"
 CACHE_PATH = DECK_DIR / "external_cache.json"
+DESC_CACHE_PATH = DECK_DIR / "desc_cache.json"
 
 # (Yugipedia English page title, 参考用の読み) — 正式日本語名はAPIから取得する
 EXTERNAL_TITLES = [
@@ -56,6 +57,84 @@ DISRUPTION_TITLES = [
 def slug(title):
     s = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
     return s or "card"
+
+
+def _parse_box(wikitext):
+    """CardTable2 テンプレート部を抽出する。"""
+    i = wikitext.find("{{CardTable2")
+    if i == -1:
+        i = wikitext.find("{{CardTable")
+    if i == -1:
+        return ""
+    depth = 0
+    for j in range(i, len(wikitext)):
+        ch = wikitext[j]
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                return wikitext[i:j + 1]
+    return wikitext[i:i + 30000]
+
+
+def _box_param(box, key):
+    m = re.search(r"\|\s*" + key + r"\s*=\s*(.*?)(?=\n\|\s*[a-z_0-9]+\s*=|\Z)", box, re.I | re.S)
+    return m.group(1).strip() if m else None
+
+
+def desc_from_wikitext(wikitext):
+    """CardTable2 の ja_text と基本スペックを抽出する。"""
+    from fetch_blue_eyes_cards import clean_ja_name
+    box = _parse_box(wikitext)
+    ja_text = _box_param(box, "ja_text")
+    types = _box_param(box, "types")
+    attribute = _box_param(box, "attribute")
+    level = _box_param(box, "level")
+    atk = _box_param(box, "atk")
+    deff = _box_param(box, "def")
+    out = {"ja_text": clean_ja_name(ja_text) if ja_text else None}
+    for k, v in (("types", types), ("attribute", attribute), ("level", level), ("atk", atk), ("def", deff)):
+        if v is not None:
+            v = clean_ja_name(v).replace("\n", " ").strip()
+            out[k] = v or None
+    return out
+
+
+def load_desc_cache():
+    if DESC_CACHE_PATH.exists():
+        try:
+            return json.loads(DESC_CACHE_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
+def save_desc_cache(cache):
+    DESC_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    DESC_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def ensure_descs(titles, cache):
+    """足りない ja_text/スペックを Yugipedia wikitext から取得して cache に追記する。"""
+    def _good(v):
+        return v is not None and bool(v.get("ja_text") or v.get("types"))
+
+    need = [t for t in titles if t and not _good(cache.get(t))]
+    for i, title in enumerate(need, 1):
+        print(f"[desc {i}/{len(need)}] fetching wikitext: {title}")
+        wt = fetch_card_wikitext(title)
+        if not wt:
+            print(f"  DESC_FAIL (empty wikitext): {title}")
+            cache[title] = {"ja_text": None}
+        else:
+            info = desc_from_wikitext(wt)
+            if not info.get("ja_text"):
+                print(f"  DESC_EMPTY: {title}")
+            cache[title] = info
+        time.sleep(0.3)
+    save_desc_cache(cache)
+    return cache
 
 
 def load_cache():
@@ -154,24 +233,7 @@ def main():
         if isinstance(card, dict) and card.get("card_id") is not None:
             by_id[str(card["card_id"])] = card
 
-    def th(cid):
-        card = by_id.get(str(cid))
-        if card is None:
-            raise KeyError(f"theme card missing: {cid}")
-        return {
-            "card_id": card["card_id"],
-            "name": card["japanese_name"] or card["name"],
-            "image_path": card["image_path"],
-            "external": False,
-        }
 
-    def ex(title):
-        return {
-            "slug": ext[title]["slug"],
-            "name": ext_jp[title],
-            "image_path": ext_img[title],
-            "external": True,
-        }
 
     # ---- デッキ構成一覧 ----
     main_deck = [
@@ -209,6 +271,57 @@ def main():
         (None, 1, "汎用", 'Hieratic Seal of the Sun Dragon Overlord'),
     ]
 
+    # ---- 効果テキスト (ja_text) & スペック取得 ----
+    desc_cache = load_desc_cache()
+    desc_titles = []
+    for item in main_deck + extra_deck:
+        if len(item) == 4 and item[0] is None:
+            desc_titles.append(item[3])
+        else:
+            c = by_id.get(str(item[0]))
+            if c:
+                desc_titles.append(c["name"])
+    desc_titles = sorted(set(t for t in desc_titles if t))
+    desc_cache = ensure_descs(desc_titles, desc_cache)
+    desc_by_name = {t: desc_cache.get(t, {}) for t in desc_titles}
+
+    def _desc_fields(en_title):
+        info = desc_by_name.get(en_title) or {}
+        out = {}
+        if info.get("ja_text"):
+            out["desc"] = info["ja_text"]
+        for k in ("types", "attribute", "level", "atk", "def"):
+            if info.get(k):
+                out[k] = info[k]
+        return out
+
+    def th(cid):
+        card = by_id.get(str(cid))
+        if card is None:
+            raise KeyError(f"theme card missing: {cid}")
+        return dict(
+            {
+                "en_name": card["name"],
+                "card_id": card["card_id"],
+                "name": card["japanese_name"] or card["name"],
+                "image_path": card["image_path"],
+                "external": False,
+            },
+            **_desc_fields(card["name"]),
+        )
+
+    def ex(title):
+        return dict(
+            {
+                "en_name": title,
+                "slug": ext[title]["slug"],
+                "name": ext_jp[title],
+                "image_path": ext_img[title],
+                "external": True,
+            },
+            **_desc_fields(en_title=title),
+        )
+
     def build_entries(raw):
         entries = []
         for item in raw:
@@ -225,7 +338,7 @@ def main():
     extra_entries = build_entries(extra_deck)
 
     def entry_info(e):
-        return {
+        info = {
             "card_id": e.get("card_id"),
             "slug": e.get("slug"),
             "name": e["name"],
@@ -234,6 +347,8 @@ def main():
             "count": e["count"],
             "role": e["role"],
         }
+        info.update(_desc_fields(e.get("en_name") or ""))
+        return info
 
     # ---- 展開ルート（盤面スナップショット付き） ----
     def card(cid, label=None):

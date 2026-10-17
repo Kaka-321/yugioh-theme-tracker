@@ -38,7 +38,7 @@
 
     .board-grid { display: flex; justify-content: center; align-items: stretch; gap: 12px; }
     .bcol { display: flex; flex-direction: column; gap: 8px; }
-    .bcol.left { width: 64px; flex: 0 0 64px; justify-content: center; }
+    .bcol.left { width: 150px; flex: 0 0 150px; justify-content: flex-start; }
     .bcol.right { width: 92px; flex: 0 0 92px; }
     .bcol.center { flex: 0 1 auto; }
 
@@ -58,6 +58,13 @@
     .tallbox.deckchip { border-color: #d8c48e; background: rgba(250, 246, 228, .9); align-self: center; }
     .tallbox.extrabox { border-color: #a8b4dc; background: rgba(236, 239, 251, .8); }
     .tallbox-name { font-size: 11px; font-weight: bold; color: #556; margin-bottom: 6px; }
+    .preview-box { flex: 1 1 0; min-height: 340px; border: 2px solid #cdb96e; background: #fbf7ea; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; }
+    .preview-title { font-size: 11px; font-weight: bold; color: #7a6a3a; }
+    .preview-img { width: 100%; border-radius: 6px; border: 1px solid #c9b98d; }
+    .preview-name { font-size: 12px; font-weight: bold; color: #334; }
+    .preview-spec { font-size: 10.5px; color: #667; line-height: 1.5; }
+    .preview-eff { font-size: 11px; color: #445; line-height: 1.6; white-space: pre-wrap; overflow-y: auto; flex: 1 1 0; min-height: 0; border-top: 1px dashed #d8cba0; padding-top: 6px; }
+    .preview-empty { font-size: 11px; color: #998; line-height: 1.6; }
     .stack { display: flex; flex-direction: column; gap: 3px; align-items: center; overflow-y: auto; max-height: 250px; }
     .stack img { width: 62%; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,.25); }
     .stack .empty, .empty-strip { font-size: 11px; color: #aab; padding: 8px 6px; }
@@ -91,7 +98,7 @@
 
     /* ===== 外枠レイアウト ===== */
     .centered { max-width: 1060px; margin-left: auto; margin-right: auto; }
-    .replay-layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
+    .replay-layout { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; justify-content: center; max-width: 1280px; margin: 0 auto; }
     .replay-main { flex: 1 1 760px; min-width: 0; }
     .replay-side { flex: 0 0 320px; display: flex; flex-direction: column; gap: 12px; position: sticky; top: 8px; max-height: calc(100vh - 16px); overflow-y: auto; }
     #step-panel { min-height: 300px; }
@@ -380,6 +387,7 @@
       manual = blankManualBoard();
       manual.piles = buildPiles();
       manual.hand = drawHand(5);
+      manual.history = [];
       renderAll();
     }
 
@@ -408,6 +416,16 @@
     }
 
     function manualPlace(dstZone, dstIndex, payload, dstBag) {
+      if (manual.history && manual.history.length < 60) {
+        manual.history.push({
+          monsters: JSON.parse(JSON.stringify(manual.monsters || [])),
+          spells: JSON.parse(JSON.stringify(manual.spells || [])),
+          hand: JSON.parse(JSON.stringify(manual.hand || [])),
+          gy: JSON.parse(JSON.stringify(manual.gy || [])),
+          banish: JSON.parse(JSON.stringify(manual.banish || [])),
+          piles: JSON.parse(JSON.stringify(manual.piles || { main: [], extra: [], side: [] })),
+        });
+      }
       const entry = payload.entry;
       const from = payload.from || null;
       if (from && from.type === "slot" &&
@@ -438,6 +456,34 @@
         targetEl.setAttribute("data-drop", JSON.stringify({ zone: dstZone, index: dstIndex, bag: dstBag || null }));
         targetEl.classList.add("drop-target");
       }
+    }
+
+    // ===== カードプレビュー =====
+    let previewEntry = null;
+
+    function attachPreview(holder, entry) {
+      if (entry && holder && holder.setAttribute) holder.setAttribute("data-preview", JSON.stringify(entry));
+    }
+
+    function renderPreviewBox() {
+      const box = el("div", "preview-box");
+      box.appendChild(el("div", "preview-title", "カード情報"));
+      if (!previewEntry) {
+        box.appendChild(el("div", "preview-empty", "カードをクリック（タップ）すると画像と効果を表示します。"));
+        return box;
+      }
+      const img = safeImage(previewEntry);
+      if (img) { img.classList.add("preview-img"); box.appendChild(img); }
+      box.appendChild(el("div", "preview-name", previewEntry.name || "？"));
+      const specs = [];
+      if (previewEntry.types) specs.push("種別: " + previewEntry.types);
+      if (previewEntry.attribute) specs.push("属性: " + previewEntry.attribute);
+      if (previewEntry.level) specs.push("レベル: " + previewEntry.level);
+      if (previewEntry.atk) specs.push("攻撃: " + previewEntry.atk);
+      if (previewEntry.def) specs.push("守備: " + previewEntry.def);
+      if (specs.length) box.appendChild(el("div", "preview-spec", specs.join(" / ")));
+      if (previewEntry.desc) box.appendChild(el("div", "preview-eff", previewEntry.desc));
+      return box;
     }
 
     // ===== ポインタドラッグ（マウス/タッチ共通） =====
@@ -483,7 +529,23 @@
       if (target) { target.classList.add("drop-hint"); hintEl = target; }
     }
 
+    function onContextMenu(ev) {
+      if (mode !== "manual" || !manual) return;
+      ev.preventDefault();
+      if (!manual.history || manual.history.length === 0) return;
+      const snap = manual.history.pop();
+      manual.monsters = snap.monsters;
+      manual.spells = snap.spells;
+      manual.hand = snap.hand;
+      manual.gy = snap.gy;
+      manual.banish = snap.banish;
+      manual.piles = snap.piles;
+      manual.pending = null;
+      renderAll();
+    }
+
     function onPointerDown(ev) {
+      if (ev.button && ev.button > 0) return;
       if (mode !== "manual" || !manual) return;
       const srcEl = closestAttr(ev.target, "data-drag");
       if (!srcEl) return;
@@ -534,6 +596,14 @@
 
     function onPointerUp(ev) {
       if (!dragCtx) {
+        if (mode !== "manual") {
+          const pvEl = closestAttr(ev.target, "data-preview");
+          if (pvEl) {
+            const ent = parseAttr(pvEl, "data-preview");
+            if (ent) { previewEntry = ent; renderAll(); }
+          }
+          return;
+        }
         // 押下なしのタップ（選択済みのカードを対象に置く）
         if (mode === "manual" && manual.pending) {
           const tgtEl = closestAttr(ev.target, "data-drop");
@@ -551,6 +621,7 @@
       dragCtx = null;
       cleanupDrag(ctx);
       if (ctx.moved) {
+        previewEntry = ctx.payload.entry;
         const target = dropTargetAt(ev.clientX, ev.clientY);
         if (target) {
           const t = parseAttr(target, "data-drop");
@@ -569,6 +640,7 @@
         manualPlace(tgt.zone, tgt.index, manual.pending, tgt.bag);
         manual.pending = null;
       } else if (srcPayload) {
+        previewEntry = srcPayload.entry;
         manual.pending = (manual.pending && sameSource(srcPayload, manual.pending)) ? null : srcPayload;
       }
       renderAll();
@@ -590,6 +662,7 @@
       document.addEventListener("pointermove", onPointerMove);
       document.addEventListener("pointerup", onPointerUp);
       document.addEventListener("pointercancel", onPointerCancel);
+      document.addEventListener("contextmenu", onContextMenu);
     }
 
     // ===== 描画 =====
@@ -612,7 +685,7 @@
         manualHelpDiv.style.display = "";
         manualHelpDiv.textContent =
           "【手動操作モード】カードをドラッグ（またはタップ選択→移動先タップ）すると元の場所から移動します（コピーではありません）。" +
-          "下のデッキ/EXデッキ/サイドから置くと枚数が減り、デッキなどの山札に戻すこともできます。";
+          "下のデッキ/EXデッキ/サイドから置くと枚数が減り、デッキなどの山札に戻すこともできます。カードをクリックすると左のパネルに画像と効果が表示され、右クリックでひとつ前の操作に戻せます。";
       } else {
         renderStepPanel();
         disPanel.style.display = "";
@@ -725,6 +798,7 @@
           if (act && entry && cardKey(entry) === act) slot.classList.add("acting");
           slot.appendChild(img);
         }
+        if (entry) attachPreview(slot, entry);
         if (dropEnabled) {
           attachDrop(slot, zone, i);
           if (entry) attachDrag(entry, { type: "slot", zone: zone, index: i }, img, slot);
@@ -743,6 +817,7 @@
         const img = safeImage(entry);
         if (!img) return;
         if (dropEnabled) attachDrag(entry, { type: "list", zone: zone, index: i, ref: entry }, img, null);
+        attachPreview(img, entry);
         stack.appendChild(img);
       });
       if (entries.length === 0) stack.appendChild(el("span", "empty", "なし"));
@@ -774,6 +849,7 @@
       }
       deckBox.appendChild(deckStack);
       left.appendChild(deckBox);
+      left.appendChild(renderPreviewBox());
 
       // 中央: 相手ゾーン → モンスター → 魔法・罠 → 手札
       const center = el("div", "bcol center");
@@ -817,6 +893,7 @@
         const slot = el("div", "hand-slot");
         const img = safeImage(entry);
         if (img) slot.appendChild(img);
+        if (entry) attachPreview(slot, entry);
         if (editing) {
           attachDrop(slot, "hand", null);
           attachDrag(entry, { type: "list", zone: "hand", index: i, ref: entry }, img, slot);
@@ -842,6 +919,7 @@
       const slot = el("div", "deck-item");
       const img = safeImage(entry);
       if (img) slot.appendChild(img);
+      attachPreview(slot, entry);
       return slot;
     }
 
