@@ -1,0 +1,816 @@
+{
+  "theme": "blue-eyes",
+  "draft": true,
+  "meta": {
+    "note": "本内容はドラフト版です。カード効果の正確な手順・順序は、実際の効果テキストと照らし合わせて修正してください。"
+  },
+  "deck": {
+    "main": [
+      {
+        "card_id": 88241506,
+        "slug": null,
+        "name": "青き眼の乙女",
+        "image_path": "assets/cards/88241506_jp.png",
+        "external": false,
+        "count": 3,
+        "role": "始動"
+      },
+      {
+        "card_id": 36734924,
+        "slug": null,
+        "name": "青き眼の巫女",
+        "image_path": "assets/cards/36734924_jp.png",
+        "external": false,
+        "count": 3,
+        "role": "始動"
+      },
+      {
+        "card_id": 45644898,
+        "slug": null,
+        "name": "青き眼の祭司",
+        "image_path": "assets/cards/45644898_jp.png",
+        "external": false,
+        "count": 2,
+        "role": "始動"
+      },
+      {
+        "card_id": 8240199,
+        "slug": null,
+        "name": "青き眼の賢士",
+        "image_path": "assets/cards/8240199_jp.png",
+        "external": false,
+        "count": 2,
+        "role": "補助"
+      },
+      {
+        "card_id": 72855441,
+        "slug": null,
+        "name": "青き眼の護人",
+        "image_path": "assets/cards/72855441_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "補助"
+      },
+      {
+        "card_id": 34627841,
+        "slug": null,
+        "name": "正義の味方 カイバーマン",
+        "image_path": "assets/cards/34627841_jp.jpg",
+        "external": false,
+        "count": 2,
+        "role": "展開"
+      },
+      {
+        "card_id": 71039903,
+        "slug": null,
+        "name": "太古の白石",
+        "image_path": "assets/cards/71039903_jp.png",
+        "external": false,
+        "count": 3,
+        "role": "白来"
+      },
+      {
+        "card_id": 79814787,
+        "slug": null,
+        "name": "伝説の白石",
+        "image_path": "assets/cards/79814787_jp.jpg",
+        "external": false,
+        "count": 3,
+        "role": "白来"
+      },
+      {
+        "card_id": 89631139,
+        "slug": null,
+        "name": "青眼の白龍",
+        "image_path": "assets/cards/89631139_jp.png",
+        "external": false,
+        "count": 3,
+        "role": "青山白龍"
+      },
+      {
+        "card_id": 38517737,
+        "slug": null,
+        "name": "青眼の亜白龍",
+        "image_path": "assets/cards/38517737_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山白龍"
+      },
+      {
+        "card_id": 45467446,
+        "slug": null,
+        "name": "白き霊龍",
+        "image_path": "assets/cards/45467446_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山白龍"
+      },
+      {
+        "card_id": 30397786,
+        "slug": null,
+        "name": "白き幻獣－青眼の白龍",
+        "image_path": "assets/cards/30397786_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山白龍"
+      },
+      {
+        "card_id": null,
+        "slug": "the-melody-of-awakening-dragon",
+        "name": "ドラゴン・目覚めの旋律",
+        "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+        "external": true,
+        "count": 3,
+        "role": "青山白龍"
+      },
+      {
+        "card_id": null,
+        "slug": "dragon-shrine",
+        "name": "竜の霊廟",
+        "image_path": "assets/cards/external/dragon-shrine_jp.png",
+        "external": true,
+        "count": 1,
+        "role": "補助"
+      },
+      {
+        "card_id": null,
+        "slug": "maxx-c",
+        "name": "増殖するＧ",
+        "image_path": "assets/cards/external/maxx-c_jp.png",
+        "external": true,
+        "count": 3,
+        "role": "妨害"
+      },
+      {
+        "card_id": null,
+        "slug": "ash-blossom-joyous-spring",
+        "name": "灰流うらら",
+        "image_path": "assets/cards/external/ash-blossom-joyous-spring_jp.png",
+        "external": true,
+        "count": 3,
+        "role": "妨害"
+      },
+      {
+        "card_id": null,
+        "slug": "effect-veiler",
+        "name": "エフェクト・ヴェーラー",
+        "image_path": "assets/cards/external/effect-veiler_jp.png",
+        "external": true,
+        "count": 2,
+        "role": "妨害"
+      },
+      {
+        "card_id": null,
+        "slug": "infinite-impermanence",
+        "name": "無限泡影",
+        "image_path": "assets/cards/external/infinite-impermanence_jp.png",
+        "external": true,
+        "count": 1,
+        "role": "妨害"
+      },
+      {
+        "card_id": null,
+        "slug": "called-by-the-grave",
+        "name": "墓穴の指名者",
+        "image_path": "assets/cards/external/called-by-the-grave_jp.png",
+        "external": true,
+        "count": 2,
+        "role": "妨害"
+      }
+    ],
+    "extra": [
+      {
+        "card_id": 23995346,
+        "slug": null,
+        "name": "青眼の究極竜",
+        "image_path": "assets/cards/23995346_jp.png",
+        "external": false,
+        "count": 2,
+        "role": "青山"
+      },
+      {
+        "card_id": 56532353,
+        "slug": null,
+        "name": "真青眼の究極竜",
+        "image_path": "assets/cards/56532353_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山"
+      },
+      {
+        "card_id": 43228023,
+        "slug": null,
+        "name": "青眼の究極亜竜",
+        "image_path": "assets/cards/43228023_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山"
+      },
+      {
+        "card_id": 62873545,
+        "slug": null,
+        "name": "究極竜騎士",
+        "image_path": "assets/cards/62873545_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山"
+      },
+      {
+        "card_id": 2129638,
+        "slug": null,
+        "name": "青眼の双爆裂龍",
+        "image_path": "assets/cards/2129638_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山"
+      },
+      {
+        "card_id": 11443677,
+        "slug": null,
+        "name": "ブルーアイズ・タイラント・ドラゴン",
+        "image_path": "assets/cards/11443677_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山"
+      },
+      {
+        "card_id": 59822133,
+        "slug": null,
+        "name": "青眼の精霊龍",
+        "image_path": "assets/cards/59822133_jp.png",
+        "external": false,
+        "count": 2,
+        "role": "青山"
+      },
+      {
+        "card_id": 53347303,
+        "slug": null,
+        "name": "青眼の光龍",
+        "image_path": "assets/cards/53347303_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山"
+      },
+      {
+        "card_id": 89604813,
+        "slug": null,
+        "name": "青眼の究極霊竜",
+        "image_path": "assets/cards/89604813_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山"
+      },
+      {
+        "card_id": 22804410,
+        "slug": null,
+        "name": "ディープアイズ・ホワイト・ドラゴン",
+        "image_path": "assets/cards/22804410_jp.png",
+        "external": false,
+        "count": 1,
+        "role": "青山"
+      },
+      {
+        "card_id": null,
+        "slug": "hieratic-seal-of-the-sun-dragon-overlord",
+        "name": "神龍の聖刻印",
+        "image_path": "assets/cards/external/hieratic-seal-of-the-sun-dragon-overlord_jp.png",
+        "external": true,
+        "count": 1,
+        "role": "汎用"
+      }
+    ],
+    "side": []
+  },
+  "routes": [
+    {
+      "id": "r1",
+      "name": "青き眼の乙女始動（基本ルート）",
+      "summary": "乙女1枚から賢士・白石を絡めて精霊龍＋究極竜の盤面を目指す王道ルート。",
+      "steps": [
+        {
+          "card": {
+            "card_id": 88241506,
+            "name": "青き眼の乙女",
+            "image_path": "assets/cards/88241506_jp.png",
+            "external": false
+          },
+          "act": "召喚/特殊召喚",
+          "note": "青き眼の乙女を召喚（条件を満たせば特殊召喚も可）。",
+          "events": [
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 88241506,
+            "name": "青き眼の乙女",
+            "image_path": "assets/cards/88241506_jp.png",
+            "external": false
+          },
+          "act": "効果",
+          "note": "乙女の効果で手札の青眼の白龍を墓地へ送り、青き眼の賢士を特殊召喚。",
+          "events": [
+            "field_eff",
+            "gy_eff",
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 8240199,
+            "name": "青き眼の賢士",
+            "image_path": "assets/cards/8240199_jp.png",
+            "external": false
+          },
+          "act": "効果",
+          "note": "賢士の効果で伝説の白石をサーチ。",
+          "events": [
+            "search"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 79814787,
+            "name": "伝説の白石",
+            "image_path": "assets/cards/79814787_jp.jpg",
+            "external": false
+          },
+          "act": "効果",
+          "note": "手札の伝説の白石を墓地へ送り、その効果で青眼の白龍または展開パーツを特殊召喚。",
+          "events": [
+            "gy_eff",
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 59822133,
+            "name": "青眼の精霊龍",
+            "image_path": "assets/cards/59822133_jp.png",
+            "external": false
+          },
+          "act": "シンクロ",
+          "note": "賢士（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
+          "events": [
+            "synchro"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 71039903,
+            "name": "太古の白石",
+            "image_path": "assets/cards/71039903_jp.png",
+            "external": false
+          },
+          "act": "効果",
+          "note": "墓地の白石効果で4枚目の白石または青眼のパーツを特殊召喚し、手札を回復。",
+          "events": [
+            "gy_eff",
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 23995346,
+            "name": "青眼の究極竜",
+            "image_path": "assets/cards/23995346_jp.png",
+            "external": false
+          },
+          "act": "融合",
+          "note": "究極融合：墓地・手札の青眼の白龍たちを素材に、青眼の究極竜を融合召喚。",
+          "events": [
+            "fusion",
+            "spell"
+          ]
+        },
+        {
+          "act": "盤面確定",
+          "note": "終盤：青眼の精霊龍＋青眼の究極竜＋白石。打点・妨害ともに厚い盤面。"
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "青き眼の祭司始動（白石ループ）",
+      "summary": "祭司1枚から白石を回し、除外系の亜白龍や究極竜で押すルート。",
+      "steps": [
+        {
+          "card": {
+            "card_id": 45644898,
+            "name": "青き眼の祭司",
+            "image_path": "assets/cards/45644898_jp.png",
+            "external": false
+          },
+          "act": "召喚/特殊召喚",
+          "note": "青き眼の祭司を召喚（または効果で特殊召喚）。",
+          "events": [
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 45644898,
+            "name": "青き眼の祭司",
+            "image_path": "assets/cards/45644898_jp.png",
+            "external": false
+          },
+          "act": "効果",
+          "note": "祭司の効果で太古の白石をサーチ。",
+          "events": [
+            "search"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 71039903,
+            "name": "太古の白石",
+            "image_path": "assets/cards/71039903_jp.png",
+            "external": false
+          },
+          "act": "効果",
+          "note": "太古の白石を墓地へ送り、効果で白石または青き眼を特殊召喚（ループを回す）。",
+          "events": [
+            "gy_eff",
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 38517737,
+            "name": "青眼の亜白龍",
+            "image_path": "assets/cards/38517737_jp.png",
+            "external": false
+          },
+          "act": "特殊召喚",
+          "note": "墓穴の青眼の白龍を除外して、青眼の亜白龍を特殊召喚。",
+          "events": [
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 79814787,
+            "name": "伝説の白石",
+            "image_path": "assets/cards/79814787_jp.jpg",
+            "external": false
+          },
+          "act": "効果",
+          "note": "墓地の白石効果でサーチし、手札を補強。",
+          "events": [
+            "gy_eff",
+            "search"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 62873545,
+            "name": "究極竜騎士",
+            "image_path": "assets/cards/62873545_jp.png",
+            "external": false
+          },
+          "act": "融合",
+          "note": "究極融合：手札・墓地の青眼の白龍を融合素材に、究極竜系（究極竜騎士／究極亜竜）を融合召喚。",
+          "events": [
+            "fusion",
+            "spell"
+          ]
+        },
+        {
+          "act": "盤面確定",
+          "note": "終盤：青眼の亜白龍＋究極竜系＋余剰の手札。妨害に強い盤面。"
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "ドラゴン覚醒の旋律始動（SS少なめ）",
+      "summary": "旋律＋霊廟で墓地を整え、最小限の特殊召喚で究極竜を立てる安定ルート。",
+      "steps": [
+        {
+          "card": {
+            "slug": "the-melody-of-awakening-dragon",
+            "name": "ドラゴン・目覚めの旋律",
+            "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+            "external": true
+          },
+          "act": "魔法発動",
+          "note": "ドラゴン覚醒の旋律：手札の竜を墓地へ送り、青眼の白龍と青き眼の乙女をサーチ。",
+          "events": [
+            "spell",
+            "search"
+          ]
+        },
+        {
+          "card": {
+            "slug": "dragon-shrine",
+            "name": "竜の霊廟",
+            "image_path": "assets/cards/external/dragon-shrine_jp.png",
+            "external": true
+          },
+          "act": "魔法発動",
+          "note": "龍の霊廟：手札の白石を墓地へ送り、墓地で効果を仕込む。",
+          "events": [
+            "spell",
+            "gy_eff"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 71039903,
+            "name": "太古の白石",
+            "image_path": "assets/cards/71039903_jp.png",
+            "external": false
+          },
+          "act": "墓地効果",
+          "note": "墓地の太古の白石効果で白石を特殊召喚。",
+          "events": [
+            "gy_eff",
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 59822133,
+            "name": "青眼の精霊龍",
+            "image_path": "assets/cards/59822133_jp.png",
+            "external": false
+          },
+          "act": "シンクロ",
+          "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
+          "events": [
+            "synchro"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 79814787,
+            "name": "伝説の白石",
+            "image_path": "assets/cards/79814787_jp.jpg",
+            "external": false
+          },
+          "act": "墓地効果",
+          "note": "墓地の伝説の白石効果でサーチし、手札を整える。",
+          "events": [
+            "gy_eff",
+            "search"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 23995346,
+            "name": "青眼の究極竜",
+            "image_path": "assets/cards/23995346_jp.png",
+            "external": false
+          },
+          "act": "融合",
+          "note": "究極融合：手札・墓地の青眼の白龍を融合素材に、青眼の究極竜を融合召喚。",
+          "events": [
+            "fusion",
+            "spell"
+          ]
+        },
+        {
+          "act": "盤面確定",
+          "note": "終盤：青眼の精霊龍＋青眼の究極竜。特殊召喚が少なく妨害に引きにくい。"
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "カイバーマン始動（サーチ最小）",
+      "summary": "カイバーマン1枚から青眼の白龍へ直結。サーチが少なく、妨害への引きが浅い。",
+      "steps": [
+        {
+          "card": {
+            "card_id": 34627841,
+            "name": "正義の味方 カイバーマン",
+            "image_path": "assets/cards/34627841_jp.jpg",
+            "external": false
+          },
+          "act": "召喚",
+          "note": "正義の味方 カイバーマンを通常召喚。",
+          "events": []
+        },
+        {
+          "card": {
+            "card_id": 34627841,
+            "name": "正義の味方 カイバーマン",
+            "image_path": "assets/cards/34627841_jp.jpg",
+            "external": false
+          },
+          "act": "効果",
+          "note": "カイバーマンを生贄に捧げて、手札の青眼の白龍を特殊召喚。",
+          "events": [
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 79814787,
+            "name": "伝説の白石",
+            "image_path": "assets/cards/79814787_jp.jpg",
+            "external": false
+          },
+          "act": "墓地効果",
+          "note": "墓地または手札の白石効果で展開を補助（サーチ＋白石特殊召喚）。",
+          "events": [
+            "gy_eff",
+            "search",
+            "ss"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 59822133,
+            "name": "青眼の精霊龍",
+            "image_path": "assets/cards/59822133_jp.png",
+            "external": false
+          },
+          "act": "シンクロ",
+          "note": "白石（Lv1）＋青眼の白龍（Lv8）で、青眼の精霊龍をシンクロ召喚。",
+          "events": [
+            "synchro"
+          ]
+        },
+        {
+          "card": {
+            "card_id": 23995346,
+            "name": "青眼の究極竜",
+            "image_path": "assets/cards/23995346_jp.png",
+            "external": false
+          },
+          "act": "融合",
+          "note": "究極融合：墓地・手札の青眼の白龍を融合素材に、青眼の究極竜を融合召喚。",
+          "events": [
+            "fusion",
+            "spell"
+          ]
+        },
+        {
+          "act": "盤面確定",
+          "note": "終盤：青眼の精霊龍＋青眼の究極竜。妨害への引きが浅く、相手に 妨害のつなぎが浅いルートです。"
+        }
+      ]
+    }
+  ],
+  "disruptions": [
+    {
+      "id": "d_g",
+      "title": "Maxx \"C\"",
+      "jp": "増殖するＧ",
+      "image_path": "assets/cards/external/maxx-c_jp.png",
+      "effect": "自分の特殊召喚のたびに相手がドローする。SS数が多い展開は不利に。",
+      "events": [
+        "ss"
+      ],
+      "handlers": [
+        {
+          "label": "このまま押し切る",
+          "path": "continue",
+          "note": "引き換え覚悟で打点で押す。終盤が厚く まだ余裕がある場合は有効。"
+        },
+        {
+          "label": "SSを減らせるルートへ",
+          "path": {
+            "route": "r3",
+            "from_step": 0
+          },
+          "note": "旋律始動（r3）は特殊召喚が少なく、Gにドローを与えにくいのでルート変更が安全。"
+        }
+      ]
+    },
+    {
+      "id": "d_ash",
+      "title": "Ash Blossom & Joyous Spring",
+      "jp": "灰流うらら",
+      "image_path": "assets/cards/external/ash-blossom-joyous-spring_jp.png",
+      "effect": "サーチ・墓地送り・EXからの特殊召喚を無効にする。",
+      "events": [
+        "search",
+        "ss",
+        "gy_eff"
+      ],
+      "handlers": [
+        {
+          "label": "切断されたアクションを飛ばして続行",
+          "path": "continue",
+          "note": "無効にされた動作を飛ばして、残った手札で 最小限の盤面をつくる。"
+        },
+        {
+          "label": "サーチの少ないルートへ",
+          "path": {
+            "route": "r4",
+            "from_step": 0
+          },
+          "note": "カイバーマン始動（r4）はサーチが最小で、灰への引きが浅い。"
+        }
+      ]
+    },
+    {
+      "id": "d_veiler",
+      "title": "Effect Veiler",
+      "jp": "エフェクト・ヴェーラー",
+      "image_path": "assets/cards/external/effect-veiler_jp.png",
+      "effect": "相手フィールドのモンスター効果を無効にする（ターン限定）。",
+      "events": [
+        "field_eff"
+      ],
+      "handlers": [
+        {
+          "label": "無効化された効果は飛ばして続行",
+          "path": "continue",
+          "note": "乙女・賢士・白石などのフィールド効果が殴られる。落ち着いて別のアクションに切り替える。"
+        },
+        {
+          "label": "あまりフィールド効果を使わないルートへ",
+          "path": {
+            "route": "r3",
+            "from_step": 0
+          },
+          "note": "旋律始動（r3）は手札・魔法主体で、モンスター効果への引きが浅い。"
+        }
+      ]
+    },
+    {
+      "id": "d_imperm",
+      "title": "Infinite Impermanence",
+      "jp": "無限泡影",
+      "image_path": "assets/cards/external/infinite-impermanence_jp.png",
+      "effect": "装着ターン中に相手フィールドのモンスター効果を無効化する魔法。",
+      "events": [
+        "field_eff",
+        "spell"
+      ],
+      "handlers": [
+        {
+          "label": "無効化された効果を飛ばして続行",
+          "path": "continue",
+          "note": "展開の途中でも1アクションの失敗は想定できる。落ち着いて打点盤面を固める。"
+        },
+        {
+          "label": "フィールド効果に頼らないルートへ",
+          "path": {
+            "route": "r3",
+            "from_step": 0
+          },
+          "note": "旋律始動（r3）は魔法・墓地メインで、泡影の無効対象になりにくい。"
+        }
+      ]
+    },
+    {
+      "id": "d_droll",
+      "title": "Droll & Lock Bird",
+      "jp": "ドロール＆ロックバード",
+      "image_path": "assets/cards/external/droll-lock-bird_jp.png",
+      "effect": "相手がサーチしたターン、自分はカードドローとサーチができない。",
+      "events": [
+        "search"
+      ],
+      "handlers": [
+        {
+          "label": "サーチ先に代替を持っておく",
+          "path": "continue",
+          "note": "このターンのサーチはあきらめ、墓地・手札にある既存パーツで動く。"
+        },
+        {
+          "label": "サーチに頼らないカイバーマンルートへ",
+          "path": {
+            "route": "r4",
+            "from_step": 0
+          },
+          "note": "カイバーマン始動（r4）はサーチが最小で、ドロールの効果を受けにくい。"
+        }
+      ]
+    },
+    {
+      "id": "d_cbtg",
+      "title": "Called by the Grave",
+      "jp": "墓穴の指名者",
+      "image_path": "assets/cards/external/called-by-the-grave_jp.png",
+      "effect": "墓地のモンスター効果（手札誘発含む）を無効化＋除外する。",
+      "events": [
+        "gy_eff"
+      ],
+      "handlers": [
+        {
+          "label": "被らせない（白石graveを温存）",
+          "path": "continue",
+          "note": "墓地効果をいったん諦め、展開を切り上げて打点で押す。"
+        },
+        {
+          "label": "墓地効果を使わないルートへ",
+          "path": {
+            "route": "r4",
+            "from_step": 0
+          },
+          "note": "カイバーマン始動（r4）は墓地効果に依存しない動きが多い。"
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Blue-EyesはSS多めのテーマ。増殖するGを読んだら、SS数を減らせるルート（r3＝旋律始動）へ切り替えるのが基本。",
+    "灰・ドロールはサーチの直前に打たれる。乙女（r1）・祭司（r2）を始動にする場合は、サーチを1回で済むカイバーマン（r4）に切り替えやすい。",
+    "究極融合は速攻魔法なので、対戦中手札に1枚温存しておくと、盤面作戦の後盾として活かせる。"
+  ]
+}

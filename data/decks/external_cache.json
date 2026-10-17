@@ -1,0 +1,56 @@
+{
+  "The Melody of Awakening Dragon": {
+    "en": "The Melody of Awakening Dragon",
+    "jp": "ドラゴン・目覚めの旋律",
+    "slug": "the-melody-of-awakening-dragon",
+    "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png"
+  },
+  "Dragon Shrine": {
+    "en": "Dragon Shrine",
+    "jp": "竜の霊廟",
+    "slug": "dragon-shrine",
+    "image_path": "assets/cards/external/dragon-shrine_jp.png"
+  },
+  "Maxx \"C\"": {
+    "en": "Maxx \"C\"",
+    "jp": "増殖するＧ",
+    "slug": "maxx-c",
+    "image_path": "assets/cards/external/maxx-c_jp.png"
+  },
+  "Ash Blossom & Joyous Spring": {
+    "en": "Ash Blossom & Joyous Spring",
+    "jp": "灰流うらら",
+    "slug": "ash-blossom-joyous-spring",
+    "image_path": "assets/cards/external/ash-blossom-joyous-spring_jp.png"
+  },
+  "Effect Veiler": {
+    "en": "Effect Veiler",
+    "jp": "エフェクト・ヴェーラー",
+    "slug": "effect-veiler",
+    "image_path": "assets/cards/external/effect-veiler_jp.png"
+  },
+  "Infinite Impermanence": {
+    "en": "Infinite Impermanence",
+    "jp": "無限泡影",
+    "slug": "infinite-impermanence",
+    "image_path": "assets/cards/external/infinite-impermanence_jp.png"
+  },
+  "Called by the Grave": {
+    "en": "Called by the Grave",
+    "jp": "墓穴の指名者",
+    "slug": "called-by-the-grave",
+    "image_path": "assets/cards/external/called-by-the-grave_jp.png"
+  },
+  "Hieratic Seal of the Sun Dragon Overlord": {
+    "en": "Hieratic Seal of the Sun Dragon Overlord",
+    "jp": "神龍の聖刻印",
+    "slug": "hieratic-seal-of-the-sun-dragon-overlord",
+    "image_path": "assets/cards/external/hieratic-seal-of-the-sun-dragon-overlord_jp.png"
+  },
+  "Droll & Lock Bird": {
+    "en": "Droll & Lock Bird",
+    "jp": "ドロール＆ロックバード",
+    "slug": "droll-lock-bird",
+    "image_path": "assets/cards/external/droll-lock-bird_jp.png"
+  }
+}
