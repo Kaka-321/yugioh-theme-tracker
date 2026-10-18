@@ -1558,7 +1558,8 @@
     }
 
     function candidateTotal(route, idx, base) {
-      let total = base + monstersMatchBonus(route.steps[idx].board);
+      const cboard = idx < 0 ? {} : route.steps[idx].board;
+      let total = base + monstersMatchBonus(cboard);
       const nxt = route.steps[idx + 1];
       if (nxt && nxt.card) {
         const loc = cardLocOf(nxt.card);
@@ -1568,20 +1569,31 @@
       return total;
     }
 
+    function emptyFieldManual(m) {
+      const z = (m && (m.monsters || []).concat(m.spells || []).concat(m.gy || []).concat(m.banish || [])) || [];
+      return z.every(function (e) { return !e; });
+    }
+
     function findBestMatch(manual) {
       let best = null;
+      const considerBlank = emptyFieldManual(manual);
+      const consider = function (route, i, extra) {
+        const base = boardSim(manual, i < 0 ? {} : route.steps[i].board);
+        const total = candidateTotal(route, i, base);
+        if (!best || total > best.total + 1e-9) {
+          best = { route: route, routeId: route.id, idx: i, score: base, total: total };
+        }
+        return best;
+      };
       for (const route of (deckData.routes || [])) {
+        if (considerBlank && route.steps.length) consider(route, -1);
         for (let i = 0; i < route.steps.length; i++) {
-          const base = boardSim(manual, route.steps[i].board);
-          const total = candidateTotal(route, i, base);
-          if (!best || total > best.total + 1e-9) {
-            best = { route: route, routeId: route.id, idx: i, score: base, total: total };
-          }
+          consider(route, i);
         }
       }
       if (!best || best.score < 0.25) return best;
       // 最善候補の次手が手元に届かない場合、届く候補へ差し替え
-      const nxt0 = best.route.steps[best.idx + 1];
+      const nxt0 = (best.idx >= -1) ? best.route.steps[best.idx + 1] : null;
       if (nxt0 && nxt0.card && !cardLocOf(nxt0.card).reachable) {
         let alt = null;
         for (const route of (deckData.routes || [])) {
@@ -1601,7 +1613,7 @@
 
     function adoptMatch(match) {
       stopPlay();
-      state = { route: match.route, baseRoute: match.route, idx: match.idx, blocked: [], applied: [], openHandler: null };
+      state = { route: match.route, baseRoute: match.route, idx: Math.max(0, match.idx), blocked: [], applied: [], openHandler: null };
       mode = "replay";
       manual = null;
       updateUrl();
@@ -1620,8 +1632,13 @@
         return;
       }
       const pct = Math.round(best.score * 100);
-      assistPanel.appendChild(el("div", "rec-match",
-        best.route.name + " の " + (best.idx + 1) + "手目と " + pct + "% 一致"));
+      if (best.idx < 0) {
+        assistPanel.appendChild(el("div", "rec-match",
+          best.route.name + " 開始直前（STEP1から）と " + pct + "% 一致"));
+      } else {
+        assistPanel.appendChild(el("div", "rec-match",
+          best.route.name + " の " + (best.idx + 1) + "手目と " + pct + "% 一致"));
+      }
       const bar = el("div", "rec-bar");
       const fill = el("div");
       fill.style.width = pct + "%";
