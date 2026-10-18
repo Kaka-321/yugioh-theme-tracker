@@ -158,6 +158,23 @@
     .deck-edit-row { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 0; border-bottom: 1px dotted #e5e5e5; }
     .deck-edit-count { color: #567; flex: 0 0 auto; white-space: nowrap; }
     .deck-edit-name { color: #234; flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    /* ===== 全カード検索 ===== */
+    .deck-search-row { display: flex; gap: 6px; margin-top: 6px; }
+    .deck-search-row input { flex: 1 1 auto; min-width: 0; font-size: 12px; padding: 5px 7px; border: 1px solid #ccc; border-radius: 6px; }
+    .deck-search-note { color: #789; font-size: 11px; margin: 4px 0 0; }
+    .deck-search-results { display: flex; flex-wrap: wrap; gap: 4px; max-height: 220px; overflow-y: auto; margin-top: 6px; align-content: flex-start; }
+    .deck-search-chip { display: flex; align-items: center; gap: 4px; border: 1px solid #ccd; border-radius: 6px; background: #fbfcff; padding: 2px 5px 2px 2px; font-size: 11px; cursor: pointer; max-width: 100%; }
+    .deck-search-chip:hover { border-color: #67a; background: #eff3ff; }
+    .deck-search-chip.selected { border-color: #25a; background: #e4eeff; }
+    .deck-search-chip.loading { opacity: 0.6; }
+    .deck-search-chip img { width: 22px; height: 22px; object-fit: cover; border-radius: 4px; flex: 0 0 auto; }
+    .deck-search-chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .deck-search-selbox { display: flex; gap: 6px; margin-top: 6px; align-items: center; }
+    .deck-search-selbox img { width: 44px; height: 44px; object-fit: cover; border-radius: 6px; }
+    .deck-search-sel-name { font-size: 12px; font-weight: 600; color: #234; min-width: 0; }
+    .deck-search-sel-sub { font-size: 10.5px; color: #789; }
+    .deck-log-btn { margin-left: auto; }
+    .deck-ext-count { color: #999; font-size: 10.5px; }
   </style>
 </head>
 <body>
@@ -229,11 +246,14 @@
     // ===== ユーティリティ =====
     function safeImage(entry) {
       const path = entry && entry.image_path;
+      const remote = typeof path === "string" &&
+        /^https:\/\/(?:[^\/]*\.)?(?:yugipedia\.com|ygoprodeck\.com)\//.test(path);
       if (
-        typeof path === "string" &&
-        path.startsWith("assets/cards/") &&
-        !path.includes("..") &&
-        (path.endsWith(".jpg") || path.endsWith(".png"))
+        (typeof path === "string" &&
+          path.startsWith("assets/cards/") &&
+          !path.includes("..") &&
+          (path.endsWith(".jpg") || path.endsWith(".png"))) ||
+        remote
       ) {
         const img = document.createElement("img");
         img.loading = "lazy";
@@ -349,6 +369,82 @@
         })
         .catch(function () {});
     }
+    loadDecklabPool();
+
+    // ===== 全カード検索 (decklab) =====
+    const EXT_STORE_KEY = "decklab_extcards";
+    let staticExtPool = {};
+    const EXT_SRC_HOSTS = [
+      { api: "https://db.ygoprodeck.com/api/v7/cardinfo.php", arg: "fname" },
+      { api: "https://yugioh.fandom.com/api.php", arg: "search" },
+      { api: "https://yugipedia.com/api.php", arg: "wikitext" },
+      { api: "https://yugipedia.com/api.php", arg: "allimages" }
+    ];
+    function loadExtStore() {
+      try {
+        const raw = localStorage.getItem(EXT_STORE_KEY);
+        const obj = raw ? JSON.parse(raw) : null;
+        return obj && typeof obj === "object" ? obj : {};
+      } catch (e) { return {}; }
+    }
+    function saveExtEntry(entry) {
+      if (!entry) return;
+      try {
+        const store = loadExtStore();
+        store[deckEntryId(entry) || entry.en_name] = {
+          card_id: entry.card_id != null ? entry.card_id : null,
+          slug: entry.slug || null,
+          name: entry.name || null,
+          en_name: entry.en_name || null,
+          image_path: entry.image_path || null,
+          desc: entry.desc || null,
+          types: entry.types || null,
+          attribute: entry.attribute || null,
+          level: entry.level || null,
+          atk: entry.atk || null,
+          def: entry.def || null,
+          external: true
+        };
+        localStorage.setItem(EXT_STORE_KEY, JSON.stringify(store));
+      } catch (e) {}
+    }
+    function decklabExtEntries() {
+      const out = [];
+      const seen = {};
+      const push = function (e) {
+        const id = deckEntryId(e) || e.en_name;
+        if (!id || seen[id]) return;
+        seen[id] = true;
+        out.push(e);
+      };
+      for (const k of Object.keys(staticExtPool)) push(staticExtPool[k]);
+      for (const k of Object.keys(loadExtStore())) push(loadExtStore()[k]);
+      return out;
+    }
+    function loadDecklabPool() {
+      fetch("./data/decks/decklab_ext.json", { cache: "no-store" })
+        .then(function (res) { return res.ok ? res.json() : null; })
+        .then(function (d) {
+          if (d && Array.isArray(d.cards)) {
+            staticExtPool = {};
+            for (const c of d.cards) {
+              if (c && typeof c === "object") {
+                const id = deckEntryId(c) || c.en_name;
+                if (id) staticExtPool[id] = c;
+              }
+            }
+            if (mode === "manual") renderAll();
+          }
+        })
+        .catch(function () {});
+    }
+    function decklabStaticCount() {
+      let n = 0;
+      for (const e of decklabExtEntries()) {
+        if (String(e.image_path || "").startsWith("assets/cards/external/")) n++;
+      }
+      return n;
+    }
 
     // ===== ユーザデッキの保存/読込/編集 =====
     function deckEntryId(e) {
@@ -363,6 +459,14 @@
           if (deckEntryId(cand) === id) { hit = cand; break; }
         }
         if (hit) break;
+      }
+      if (!hit) {
+        for (const cand of decklabExtEntries()) {
+          if (deckEntryId(cand) === id) {
+            hit = Object.assign({}, cand, { external: true, count: cand.count });
+            break;
+          }
+        }
       }
       if (!hit && Array.isArray(themeCards)) {
         for (const cand of themeCards) {
@@ -871,7 +975,8 @@
         manualHelpDiv.textContent =
           "【手動操作モード】カードをドラッグ（またはタップ選択→移動先タップ）すると元の場所から移動します（コピーではありません）。" +
           "下のデッキ/EXデッキ/サイドから置くと枚数が減り、デッキなどの山札に戻すこともできます。カードをクリックすると左のパネルに画像と効果が表示され、右クリックでひとつ前の操作に戻せます。" +
-          "デッキ/EX/サイドのカードをゴミ箱へドラッグするとデッキから削除できます（「削除を1つ戻す」で復元）。";
+          "デッキ/EX/サイドのカードをゴミ箱へドラッグするとデッキから削除できます（「削除を1つ戻す」で復元）。" +
+          "下のデッキ編集パネルの枠から検索すると全カード（日本語・英名対応）を追加できます（追加したカードの情報は自動取得・保存されます）。";
       } else {
         renderStepPanel();
         disPanel.style.display = "";
@@ -1636,6 +1741,242 @@
       stepPanel.appendChild(ioNav);
     }
 
+    // ===== 全カード検索（YGOPRODeck + Fandom + Yugipedia） =====
+    const UPDECK_API = "https://db.ygoprodeck.com/api/v7/cardinfo.php";
+    const FANDOM_API = "https://yugioh.fandom.com/api.php";
+    const YUGIPEDIA_API = "https://yugipedia.com/api.php";
+    let deckSearch = { q: "", busy: false, note: "", results: [], sel: null, webBusy: null };
+
+    function slugifyEn(s) {
+      return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+    }
+    function jfetch(url) {
+      return fetch(url, { cache: "no-store" }).then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      });
+    }
+    function candFromUpdeck(c) {
+      const img = c.card_images && c.card_images[0]
+        ? (c.card_images[0].image_url_small || c.card_images[0].image_url)
+        : null;
+      return {
+        src: "updeck", key: "c" + (c.id != null ? c.id : c.name), card_id: c.id, slug: null,
+        en_name: c.name, name: null, image_path: img, desc: c.desc,
+        types: c.type, attribute: c.attribute, level: c.level,
+        atk: c.atk != null ? String(c.atk) : null, def: c.def != null ? String(c.def) : null
+      };
+    }
+    function candFromPool(e) {
+      return {
+        src: "pool", key: deckEntryId(e), entry: e,
+        en_name: e.en_name || null,
+        name: e.japanese_name || e.name, image_path: e.image_path || null
+      };
+    }
+    function poolMatches(q) {
+      const low = q.toLowerCase();
+      const out = [];
+      for (const e of deckEntryPool()) {
+        const names = [e.name, e.japanese_name, e.en_name];
+        if (names.some(function (nn) { return typeof nn === "string" && nn.toLowerCase().indexOf(low) !== -1; })) {
+          out.push(candFromPool(e));
+        }
+        if (out.length >= 6) break;
+      }
+      return out;
+    }
+    function updeckSearch(q) {
+      return jfetch(UPDECK_API + "?fname=" + encodeURIComponent(q) + "&num=10&offset=0&sort=name")
+        .then(function (d) { return (d.data || []).map(candFromUpdeck); });
+    }
+    function updeckExact(en) {
+      return jfetch(UPDECK_API + "?name=" + encodeURIComponent(en))
+        .then(function (d) { const c = (d.data || [])[0]; return c ? candFromUpdeck(c) : null; });
+    }
+    function fandomTitles(q) {
+      return jfetch(FANDOM_API + "?action=query&list=search&srsearch=" + encodeURIComponent(q) + "&srnamespace=0&srlimit=8&origin=*&format=json&formatversion=2")
+        .then(function (d) {
+          return ((d.query && d.query.search) || []).map(function (x) { return x.title; })
+            .filter(function (t) {
+              return !/^(?:List of |Yu-Gi-Oh!|Banned |Forbidden )/i.test(t) &&
+                !/(counterpart|anti-support|archetype|banlist|keyword|tips$)/i.test(t);
+            })
+            .slice(0, 5);
+        });
+    }
+    function wikitextOf(title) {
+      return jfetch(YUGIPEDIA_API + "?action=parse&page=" + encodeURIComponent(title) + "&prop=wikitext&formatversion=2&format=json&origin=*")
+        .then(function (d) { return (d.parse && (d.parse.wikitext || d.parse["*"])) || ""; });
+    }
+    function parseBox(wt) {
+      const i = wt.indexOf("{{CardTable2");
+      if (i === -1) return "";
+      let depth = 0;
+      for (let j = i; j < wt.length; j++) {
+        const ch = wt[j];
+        if (ch === "{") depth++;
+        else if (ch === "}") {
+          depth--;
+          if (depth === 0) return wt.slice(i, j + 1);
+        }
+      }
+      return wt.slice(i, i + 30000);
+    }
+    function boxParam(box, key) {
+      const m = box.match(new RegExp("\\|\\s*" + key + "\\s*=\\s*([\\s\\S]*?)(?=\\n\\|\\s*[a-z_0-9]+\\s*=)"));
+      return m ? m[1].trim() : null;
+    }
+    function cleanJaName(s) {
+      if (!s) return null;
+      s = String(s)
+        .replace(/\{\{Ruby\|([^|{}]*)\|[^{}]*\}\}/g, "$1")
+        .replace(/\{\{[^{}]*\}\}/g, "")
+        .replace(/<[^>]*>/g, "")
+        .replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, "$1")
+        .replace(/\s+/g, " ").trim();
+      return s || null;
+    }
+    async function listJpFiles(en) {
+      const prefixes = [en, en.replace(/ /g, ""), en.replace(/ /g, "_")];
+      const all = [];
+      for (const p of prefixes) {
+        if (!p) continue;
+        try {
+          const d = await jfetch(YUGIPEDIA_API + "?action=query&list=allimages&aiprefix=" + encodeURIComponent(p) + "&ailimit=60&format=json&formatversion=2&origin=*");
+          for (const x of ((d.query && d.query.allimages) || [])) {
+            if (all.indexOf(x.name) === -1) all.push(x.name);
+          }
+        } catch (e) {}
+        if (all.some(function (n) { return /-J[PA]-/i.test(n); })) break;
+      }
+      return all;
+    }
+    function pickJpFile(names, setCode) {
+      const jps = names.filter(function (n) {
+        return /-J[PA]-/i.test(n) && /\.(png|jpg)$/i.test(n) &&
+          !/-(?:CF01\d*|EA|VA|VG|Monster_Art|ConceptArt|DuelLinks|-Anime|artwork)\b/i.test(n) && !/-OP\.png$/i.test(n);
+      });
+      if (!jps.length) return null;
+      if (setCode) {
+        const m = jps.find(function (n) { return n.indexOf(setCode) !== -1 && n.indexOf("QCScR") === -1; }) ||
+                  jps.find(function (n) { return n.indexOf(setCode) !== -1; });
+        if (m) return m;
+      }
+      return jps[0];
+    }
+    function yugipediaFileUrl(name) {
+      return jfetch(YUGIPEDIA_API + "?action=query&titles=" + encodeURIComponent("File:" + name) + "&prop=imageinfo&iiprop=url&format=json&formatversion=2&origin=*")
+        .then(function (d) {
+          const pages = (d.query && d.query.pages) || [];
+          const info = pages[0] && pages[0].imageinfo && pages[0].imageinfo[0];
+          return info ? info.url : null;
+        }).catch(function () { return null; });
+    }
+    async function buildEntryFromWeb(cand) {
+      const en = cand.en_name || cand.name || "";
+      let up = cand.src === "updeck" ? cand : null;
+      if (!up || (up.card_id == null && up.image_path == null)) {
+        if (en) {
+          try { up = await updeckExact(en); } catch (e) {}
+          if (!up) {
+            try {
+              const lst = await updeckSearch(en);
+              up = lst[0] || up;
+            } catch (e) {}
+          }
+        }
+      }
+      let jaName = cand.name || null, jaText = null, setCode = null, passcode = null;
+      const specs = {};
+      try {
+        const wt = await wikitextOf(en);
+        const box = parseBox(wt);
+        if (box) {
+          jaName = cleanJaName(boxParam(box, "ja_name")) || jaName;
+          jaText = cleanJaName(boxParam(box, "ja_text"));
+          const setsRaw = boxParam(box, "jp_sets") || "";
+          const m = setsRaw.match(/([A-Z]{4})-JP[0-9]{3}/);
+          setCode = m ? m[1] : null;
+          passcode = cleanJaName(boxParam(box, "password"));
+          for (const k of ["types", "attribute", "level", "atk", "def"]) {
+            const v = cleanJaName(boxParam(box, k));
+            if (v) specs[k] = v.replace(/\n/g, " ");
+          }
+        }
+      } catch (e) {}
+      let imgPath = null;
+      try {
+        const names = await listJpFiles(en);
+        const pick = pickJpFile(names, setCode);
+        if (pick) imgPath = await yugipediaFileUrl(pick);
+      } catch (e) {}
+      const entry = {
+        card_id: (up && up.card_id != null) ? up.card_id : (/^\d+$/.test(passcode || "") ? parseInt(passcode, 10) : null),
+        slug: null,
+        name: jaName || en,
+        en_name: en,
+        image_path: imgPath || (up && up.image_path) || null,
+        desc: jaText || (up && up.desc) || null,
+        types: (up && up.types) || specs.types || null,
+        attribute: (up && up.attribute) || specs.attribute || null,
+        level: (up && up.level) || specs.level || null,
+        atk: (up && up.atk) || specs.atk || null,
+        def: (up && up.def) || specs.def || null,
+        external: true
+      };
+      if (entry.card_id == null) entry.slug = slugifyEn(en);
+      saveExtEntry(entry);
+      return entry;
+    }
+    async function runDeckSearch(rawQ) {
+      const q = String(rawQ || "").trim();
+      if (!q) return;
+      deckSearch = { q: q, busy: true, note: "", results: [], sel: null, webBusy: null };
+      renderDeckEditor();
+      const results = poolMatches(q);
+      const hasJp = /[\u2E80-\u9FFF\uF900-\uFAFF\u3040-\u30FF\uFF66-\uFF9F]/.test(q);
+      try {
+        if (hasJp) {
+          const titles = await fandomTitles(q);
+          for (const t of titles) results.push({ src: "fandom", key: "f:" + t, en_name: t, name: null, image_path: null });
+        } else {
+          const upList = await updeckSearch(q).catch(function () { return []; });
+          for (const c of upList) results.push(c);
+        }
+      } catch (e) {
+        deckSearch.note = "検索APIでエラー: " + e.message;
+      }
+      const seen = {};
+      deckSearch.results = results.filter(function (r) {
+        if (!r.key || seen[r.key]) return false;
+        seen[r.key] = true;
+        return true;
+      });
+      deckSearch.busy = false;
+      renderDeckEditor();
+    }
+    async function selectSearchResult(r) {
+      if (!r) return;
+      if (r.src === "pool") {
+        deckSearch.sel = r.entry;
+        renderDeckEditor();
+        return;
+      }
+      deckSearch.webBusy = r.key;
+      deckSearch.sel = null;
+      renderDeckEditor();
+      try {
+        deckSearch.sel = await buildEntryFromWeb(r);
+        deckSearch.webBusy = null;
+        deckSearch.note = "";
+      } catch (e) {
+        deckSearch.webBusy = null;
+        deckSearch.note = "カード情報の取得に失敗: " + e.message;
+      }
+      renderDeckEditor();
+    }
+
     function renderDeckEditor() {
       const editing = mode === "manual" && manual && manual.piles;
       if (!editing) { deckEditPanelDiv.style.display = "none"; return; }
@@ -1644,39 +1985,91 @@
       const pl = manual.piles;
       const editBox = el("div", "deck-edit");
       editBox.appendChild(el("h4", null, "デッキ編集"));
-      const poolSel = document.createElement("select");
-      poolSel.className = "field";
-      const seenPool = {};
-      const opts = [];
-      for (const cand of deckEntryPool()) {
-        const id = deckEntryId(cand);
-        if (!id || seenPool[id]) continue;
-        seenPool[id] = true;
-        const opt = document.createElement("option");
-        opt.value = id;
-        opt.textContent = cand.japanese_name || cand.name;
-        opt._entry = Object.assign({}, cand);
-        opts.push(opt);
+
+      const searchRow = el("div", "deck-search-row");
+      const qInput = document.createElement("input");
+      qInput.className = "deck-search-input";
+      qInput.value = deckSearch.q;
+      qInput.placeholder = "カード名（日本語・英名どちらも）";
+      qInput.addEventListener("keydown", function (ev) {
+        if (ev && ev.key === "Enter") runDeckSearch(qInput.value);
+      });
+      const goBtn = el("button", "btn small", "検索");
+      goBtn.addEventListener("click", function () { runDeckSearch(qInput.value); });
+      searchRow.append(qInput, goBtn);
+      editBox.appendChild(searchRow);
+
+      const noteBits = [];
+      if (deckSearch.note) noteBits.push(deckSearch.note);
+      if (deckSearch.busy) noteBits.push("検索中…");
+      const extAll = decklabExtEntries();
+      const staticN = decklabStaticCount();
+      if (extAll.length) {
+        noteBits.push("外部カード " + extAll.length + " 種（日本語画像 " + staticN + " / 未静的化 " + (extAll.length - staticN) + "）");
       }
-      for (const opt of opts) poolSel.appendChild(opt);
-      const addNav = el("div", "nav");
-      addNav.style.display = "flex";
-      addNav.style.gap = "8px";
-      addNav.style.marginTop = "6px";
-      const addMainBtn = el("button", "btn small", "デッキへ追加");
-      addMainBtn.addEventListener("click", function () {
-        const opt = poolSel.children[poolSel.selectedIndex];
-        if (!opt || !opt._entry) return;
-        addCardToPile("main", opt._entry);
-      });
-      const addSideBtn = el("button", "btn small secondary", "サイドへ追加");
-      addSideBtn.addEventListener("click", function () {
-        const opt = poolSel.children[poolSel.selectedIndex];
-        if (!opt || !opt._entry) return;
-        addCardToPile("side", opt._entry);
-      });
-      addNav.append(addMainBtn, addSideBtn);
-      editBox.append(poolSel, addNav);
+      if (noteBits.length) {
+        const noteLine = el("div", "deck-search-note", noteBits.join("　"));
+        const logBtn = el("button", "btn tiny deck-log-btn", "🧾書き出し");
+        logBtn.addEventListener("click", function () {
+          const payload = {
+            theme: paramsTheme,
+            cards: decklabExtEntries()
+              .filter(function (e) { return !String(e.image_path || "").startsWith("assets/cards/external/"); })
+              .map(function (e) { return { id: e.card_id != null ? e.card_id : null, en: e.en_name }; })
+          };
+          noteLine.replaceChildren();
+          const ta = document.createElement("textarea");
+          ta.className = "deck-log-json";
+          ta.readOnly = true;
+          ta.style.width = "100%";
+          ta.style.height = "70px";
+          ta.style.fontSize = "10px";
+          ta.value = JSON.stringify(payload);
+          noteLine.append(ta);
+        });
+        noteLine.appendChild(logBtn);
+        editBox.appendChild(noteLine);
+      }
+
+      const resBox = el("div", "deck-search-results");
+      for (const r of deckSearch.results) {
+        const chip = el("div", "deck-search-chip" +
+          (r.src === "pool" && r.entry === deckSearch.sel ? " selected" : "") +
+          (deckSearch.webBusy === r.key ? " loading" : ""));
+        const img = safeImage(r);
+        if (img) chip.appendChild(img);
+        const subTag = el("span", "deck-ext-count", r.src === "pool" ? "" : " 🔍web");
+        chip.appendChild(el("span", null, r.name || r.en_name || "(名称不明)"));
+        chip.appendChild(subTag);
+        chip.addEventListener("click", function () { selectSearchResult(r); });
+        resBox.appendChild(chip);
+      }
+      if (!deckSearch.results.length && !deckSearch.busy && deckSearch.q) {
+        resBox.appendChild(el("div", "deck-search-note", "該当なし"));
+      }
+      editBox.appendChild(resBox);
+
+      const sel = deckSearch.sel;
+      if (sel) {
+        const selBox = el("div", "deck-search-selbox");
+        const sImg = safeImage(sel);
+        if (sImg) selBox.appendChild(sImg);
+        const selInfo = el("div", null);
+        selInfo.appendChild(el("div", "deck-search-sel-name", sel.name || sel.en_name));
+        const sub = [sel.types, sel.attribute, sel.level, sel.atk != null ? "ATK " + sel.atk : null, sel.def != null ? "DEF " + sel.def : null]
+          .filter(Boolean).join(" / ");
+        if (sub) selInfo.appendChild(el("div", "deck-search-sel-sub", sub));
+        selBox.appendChild(selInfo);
+        const addNav = el("div", "nav");
+        addNav.style.marginLeft = "auto";
+        const addMainBtn = el("button", "btn small", "デッキへ追加");
+        addMainBtn.addEventListener("click", function () { addCardToPile("main", sel); });
+        const addSideBtn = el("button", "btn small secondary", "サイドへ追加");
+        addSideBtn.addEventListener("click", function () { addCardToPile("side", sel); });
+        addNav.append(addMainBtn, addSideBtn);
+        selBox.appendChild(addNav);
+        editBox.appendChild(selBox);
+      }
 
       const ul = el("ul", "deck-edit-list");
       for (const bag of ["main", "extra", "side"]) {
@@ -1706,6 +2099,7 @@
       for (const bag of ["main", "extra"]) {
         for (const e of (deckData.deck[bag] || [])) pushC(Object.assign({}, e, { count: 1 }));
       }
+      for (const e of decklabExtEntries()) pushC(Object.assign({}, e, { external: true, count: 1 }));
       for (const e of themeCards) pushC(e);
       return pool;
     }

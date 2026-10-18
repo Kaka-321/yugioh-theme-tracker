@@ -3,72 +3,90 @@
     "en": "The Melody of Awakening Dragon",
     "jp": "ドラゴン・目覚めの旋律",
     "slug": "the-melody-of-awakening-dragon",
-    "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png"
+    "image_path": "assets/cards/external/the-melody-of-awakening-dragon_jp.png",
+    "card_id": 48800175
   },
   "Dragon Shrine": {
     "en": "Dragon Shrine",
     "jp": "竜の霊廟",
     "slug": "dragon-shrine",
-    "image_path": "assets/cards/external/dragon-shrine_jp.png"
+    "image_path": "assets/cards/external/dragon-shrine_jp.png",
+    "card_id": 41620959
   },
   "Maxx \"C\"": {
     "en": "Maxx \"C\"",
     "jp": "増殖するＧ",
     "slug": "maxx-c",
-    "image_path": "assets/cards/external/maxx-c_jp.png"
+    "image_path": "assets/cards/external/maxx-c_jp.png",
+    "card_id": 23434538
   },
   "Ash Blossom & Joyous Spring": {
     "en": "Ash Blossom & Joyous Spring",
     "jp": "灰流うらら",
     "slug": "ash-blossom-joyous-spring",
-    "image_path": "assets/cards/external/ash-blossom-joyous-spring_jp.png"
+    "image_path": "assets/cards/external/ash-blossom-joyous-spring_jp.png",
+    "card_id": 14558127
   },
   "Effect Veiler": {
     "en": "Effect Veiler",
     "jp": "エフェクト・ヴェーラー",
     "slug": "effect-veiler",
-    "image_path": "assets/cards/external/effect-veiler_jp.png"
+    "image_path": "assets/cards/external/effect-veiler_jp.png",
+    "card_id": 97268402
   },
   "Infinite Impermanence": {
     "en": "Infinite Impermanence",
     "jp": "無限泡影",
     "slug": "infinite-impermanence",
-    "image_path": "assets/cards/external/infinite-impermanence_jp.png"
+    "image_path": "assets/cards/external/infinite-impermanence_jp.png",
+    "card_id": 10045474
   },
   "Called by the Grave": {
     "en": "Called by the Grave",
     "jp": "墓穴の指名者",
     "slug": "called-by-the-grave",
-    "image_path": "assets/cards/external/called-by-the-grave_jp.png"
+    "image_path": "assets/cards/external/called-by-the-grave_jp.png",
+    "card_id": 24224830
   },
   "Hieratic Seal of the Sun Dragon Overlord": {
     "en": "Hieratic Seal of the Sun Dragon Overlord",
     "jp": "神龍の聖刻印",
     "slug": "hieratic-seal-of-the-sun-dragon-overlord",
-    "image_path": "assets/cards/external/hieratic-seal-of-the-sun-dragon-overlord_jp.png"
+    "image_path": "assets/cards/external/hieratic-seal-of-the-sun-dragon-overlord_jp.png",
+    "card_id": 13140300
   },
   "Droll & Lock Bird": {
     "en": "Droll & Lock Bird",
     "jp": "ドロール＆ロックバード",
     "slug": "droll-lock-bird",
-    "image_path": "assets/cards/external/droll-lock-bird_jp.png"
+    "image_path": "assets/cards/external/droll-lock-bird_jp.png",
+    "card_id": 94145021
   },
   "Foolish Burial": {
     "en": "Foolish Burial",
     "jp": "おろかな埋葬",
     "slug": "foolish-burial",
-    "image_path": "assets/cards/external/foolish-burial_jp.png"
+    "image_path": "assets/cards/external/foolish-burial_jp.png",
+    "card_id": 81439173
   },
   "Skull Meister": {
     "en": "Skull Meister",
     "jp": "スカル・マイスター",
     "slug": "skull-meister",
-    "image_path": "assets/cards/external/skull-meister_jp.png"
+    "image_path": "assets/cards/external/skull-meister_jp.png",
+    "card_id": 67750322
   },
   "Ghost Belle & Haunted Mansion": {
     "en": "Ghost Belle & Haunted Mansion",
     "jp": "屋敷わらし",
     "slug": "ghost-belle-haunted-mansion",
-    "image_path": "assets/cards/external/ghost-belle-haunted-mansion_jp.png"
+    "image_path": "assets/cards/external/ghost-belle-haunted-mansion_jp.png",
+    "card_id": 73642296
+  },
+  "Dominus Impulse": {
+    "en": "Dominus Impulse",
+    "jp": "{{Ruby|霊王の波動|ドミナス・インパルス}}",
+    "slug": null,
+    "card_id": 40366667
   }
 }
