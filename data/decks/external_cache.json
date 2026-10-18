@@ -87,6 +87,440 @@
     "en": "Dominus Impulse",
     "jp": "{{Ruby|霊王の波動|ドミナス・インパルス}}",
     "slug": null,
-    "card_id": 40366667
+    "card_id": 40366667,
+    "image_path": "assets/cards/external/dominus-impulse_jp.png"
+  },
+  "Mulcharmy Fuwalos": {
+    "en": "Mulcharmy Fuwalos",
+    "jp": "マルチャミー・フワロス",
+    "slug": null,
+    "card_id": 42141493,
+    "image_path": "assets/cards/external/mulcharmy-fuwalos_jp.png"
+  },
+  "Mulcharmy Purulia": {
+    "en": "Mulcharmy Purulia",
+    "jp": "マルチャミー・プルリア",
+    "slug": null,
+    "card_id": 84192580,
+    "image_path": "assets/cards/external/mulcharmy-purulia_jp.png"
+  },
+  "Ghost Mourner & Moonlit Chill": {
+    "en": "Ghost Mourner & Moonlit Chill",
+    "jp": "{{Ruby|朔|さ}}{{Ruby|夜|よ}}しぐれ",
+    "slug": null,
+    "card_id": 52038441,
+    "image_path": "assets/cards/external/ghost-mourner-moonlit-chill_jp.png"
+  },
+  "Ghost Ogre & Snow Rabbit": {
+    "en": "Ghost Ogre & Snow Rabbit",
+    "jp": "{{Ruby|幽|ゆ}}{{Ruby|鬼|き}}うさぎ",
+    "slug": null,
+    "card_id": 59438930,
+    "image_path": "assets/cards/external/ghost-ogre-snow-rabbit_jp.png"
+  },
+  "Fydraulis Harmonia": {
+    "en": "Fydraulis Harmonia",
+    "jp": "{{Ruby|調和ノ天救竜|フィドラウリス＝ハルモニア}}",
+    "slug": null,
+    "card_id": 70088809,
+    "image_path": "assets/cards/external/fydraulis-harmonia_jp.png"
+  },
+  "Crackle Blitzclique": {
+    "en": "Crackle Blitzclique",
+    "jp": "クラック・ブリッツクリーク",
+    "slug": null,
+    "card_id": 58916810,
+    "image_path": "assets/cards/external/crackle-blitzclique_jp.png"
+  },
+  "Nibiru, the Primal Being": {
+    "en": "Nibiru, the Primal Being",
+    "jp": "{{Ruby|原|げん}}{{Ruby|始|し}}{{Ruby|生|せい}}{{Ruby|命|めい}}{{Ruby|態|たい}}ニビル",
+    "slug": null,
+    "card_id": 27204311,
+    "image_path": "assets/cards/external/nibiru-the-primal-being_jp.png"
+  },
+  "Ghost Reaper & Winter Cherries": {
+    "en": "Ghost Reaper & Winter Cherries",
+    "jp": "{{Ruby|浮|ふ}}{{Ruby|幽|ゆ}}さくら",
+    "slug": null,
+    "card_id": 62015408,
+    "image_path": "assets/cards/external/ghost-reaper-winter-cherries_jp.png"
+  },
+  "Dimension Shifter": {
+    "en": "Dimension Shifter",
+    "jp": "ディメンション・アトラクター",
+    "slug": null,
+    "card_id": 91800273,
+    "image_path": "assets/cards/external/dimension-shifter_jp.png"
+  },
+  "D.D. Crow": {
+    "en": "D.D. Crow",
+    "jp": "{{Ruby|Ｄ|ディー}}．{{Ruby|Ｄ|ディー}}．クロウ",
+    "slug": null,
+    "card_id": 24508238,
+    "image_path": "assets/cards/external/d-d-crow_jp.png"
+  },
+  "Hecahands Godos": {
+    "en": "Hecahands Godos",
+    "jp": "{{Ruby|見えざる手|ヘカトンケイル}}ゴッドス",
+    "slug": null,
+    "card_id": 68144894,
+    "image_path": "assets/cards/external/hecahands-godos_jp.png"
+  },
+  "Bystial Magnamhut": {
+    "en": "Bystial Magnamhut",
+    "jp": "{{Ruby|深淵の獣|ビーステッド}}マグナムート",
+    "slug": null,
+    "card_id": 33854624,
+    "image_path": "assets/cards/external/bystial-magnamhut_jp.png"
+  },
+  "Artifact Lancea": {
+    "en": "Artifact Lancea",
+    "jp": "アーティファクト－ロンギヌス",
+    "slug": null,
+    "card_id": 34267821,
+    "image_path": "assets/cards/external/artifact-lancea_jp.png"
+  },
+  "PSY-Framegear Gamma": {
+    "en": "PSY-Framegear Gamma",
+    "jp": "{{Ruby|ＰＳＹ|サイ}}フレームギア・{{Ruby|γ|ガンマ}}",
+    "slug": null,
+    "card_id": 38814750,
+    "image_path": "assets/cards/external/psy-framegear-gamma_jp.png"
+  },
+  "Herald of Orange Light": {
+    "en": "Herald of Orange Light",
+    "jp": "{{Ruby|朱光の宣告者|バーミリオン・デクレアラー}}",
+    "slug": null,
+    "card_id": 17266660,
+    "image_path": "assets/cards/external/herald-of-orange-light_jp.png"
+  },
+  "Fantastical Dragon Phantazmay": {
+    "en": "Fantastical Dragon Phantazmay",
+    "jp": "{{Ruby|幻|げん}}{{Ruby|創|そう}}{{Ruby|龍|りゅう}}ファンタズメイ",
+    "slug": null,
+    "card_id": 78661338,
+    "image_path": "assets/cards/external/fantastical-dragon-phantazmay_jp.png"
+  },
+  "Retaliating \"C\"": {
+    "en": "Retaliating \"C\"",
+    "jp": "{{Ruby|応|おう}}{{Ruby|戦|せん}}する{{Ruby|Ｇ|ジー}}",
+    "slug": null,
+    "card_id": 46502744,
+    "image_path": "assets/cards/external/retaliating-c_jp.png"
+  },
+  "Veidos the Eruption Dragon of Extinction": {
+    "en": "Veidos the Eruption Dragon of Extinction",
+    "jp": "{{Ruby|滅|めつ}}{{Ruby|亡|ぼう}}{{Ruby|龍|りゅう}} ヴェイドス",
+    "slug": null,
+    "card_id": 78783557
+  },
+  "Chaos Hunter": {
+    "en": "Chaos Hunter",
+    "jp": "カオスハンター",
+    "slug": null,
+    "card_id": 97940434,
+    "image_path": "assets/cards/external/chaos-hunter_jp.png"
+  },
+  "Gizmek Uka, the Festive Fox of Fecundity": {
+    "en": "Gizmek Uka, the Festive Fox of Fecundity",
+    "jp": "{{Ruby|機|き}}{{Ruby|巧|こう}}{{Ruby|狐|こ}}－{{Ruby|宇迦之御魂稲荷|ウカノミタマノイナリ}}",
+    "slug": null,
+    "card_id": 90361289,
+    "image_path": "assets/cards/external/gizmek-uka-the-festive-fox-of-fecundity_jp.png"
+  },
+  "Gnomaterial": {
+    "en": "Gnomaterial",
+    "jp": "ノーマテリア",
+    "slug": null,
+    "card_id": 58655504,
+    "image_path": "assets/cards/external/gnomaterial_jp.png"
+  },
+  "Ally of Justice Cycle Reader": {
+    "en": "Ally of Justice Cycle Reader",
+    "jp": "{{Ruby|Ａ・Ｏ・Ｊ|アーリー・オブ・ジャスティス}} サイクルリーダー",
+    "slug": null,
+    "card_id": 8233522,
+    "image_path": "assets/cards/external/ally-of-justice-cycle-reader_jp.png"
+  },
+  "Supply Soldier of the Indestructible Insects": {
+    "en": "Supply Soldier of the Indestructible Insects",
+    "jp": "{{Ruby|無|む}}{{Ruby|死|し}}{{Ruby|虫|ムシ}}{{Ruby|団|だん}}の{{Ruby|補|ほ}}{{Ruby|給|きゅう}}{{Ruby|兵|へい}}",
+    "slug": null,
+    "card_id": 23738096,
+    "image_path": "assets/cards/external/supply-soldier-of-the-indestructible-insects_jp.png"
+  },
+  "Contact \"C\"": {
+    "en": "Contact \"C\"",
+    "jp": "{{Ruby|接|せっ}}{{Ruby|触|しょく}}する{{Ruby|Ｇ|ジー}}",
+    "slug": null,
+    "card_id": 87170768,
+    "image_path": "assets/cards/external/contact-c_jp.png"
+  },
+  "K9-17 Izuna": {
+    "en": "K9-17 Izuna",
+    "jp": "{{Ruby|Ｋ９|ケーナイン}}－１７{{Ruby|号|ごう}} イヅナ",
+    "slug": null,
+    "card_id": 92248362,
+    "image_path": "assets/cards/external/k9-17-izuna_jp.png"
+  },
+  "K9-ØØ Lupis": {
+    "en": "K9-ØØ Lupis",
+    "jp": "{{Ruby|Ｋ９|ケーナイン}}－{{Ruby|ØØ|ゼロ}}{{Ruby|号|ごう}} ルプス",
+    "slug": null,
+    "card_id": 91025875,
+    "image_path": "assets/cards/external/k9-lupis_jp.png"
+  },
+  "Arias the Labrynth Butler": {
+    "en": "Arias the Labrynth Butler",
+    "jp": "{{Ruby|白銀の城の執事|ラビュリンス・バトラー}} アリアス",
+    "slug": null,
+    "card_id": 73602965,
+    "image_path": "assets/cards/external/arias-the-labrynth-butler_jp.png"
+  },
+  "Labrynth Stovie Torbie": {
+    "en": "Labrynth Stovie Torbie",
+    "jp": "{{Ruby|白銀の城の火吹炉|ラビュリンス・ストービー}}",
+    "slug": null,
+    "card_id": 74018812,
+    "image_path": "assets/cards/external/labrynth-stovie-torbie_jp.png"
+  },
+  "Griffoh": {
+    "en": "Griffoh",
+    "jp": "グリフォー",
+    "slug": null,
+    "card_id": 97462632,
+    "image_path": "assets/cards/external/griffoh_jp.png"
+  },
+  "Rescue-ACE Impulse": {
+    "en": "Rescue-ACE Impulse",
+    "jp": "{{Ruby|Ｒ－ＡＣＥ|レスキュー・エース}}インパルス",
+    "slug": null,
+    "card_id": 38339996,
+    "image_path": "assets/cards/external/rescue-ace-impulse_jp.png"
+  },
+  "Tearlaments Havnis": {
+    "en": "Tearlaments Havnis",
+    "jp": "ティアラメンツ・ハゥフニス",
+    "slug": null,
+    "card_id": 37961969,
+    "image_path": "assets/cards/external/tearlaments-havnis_jp.png"
+  },
+  "Tearlaments Kashtira": {
+    "en": "Tearlaments Kashtira",
+    "jp": "ティアラメンツ・クシャトリラ",
+    "slug": null,
+    "card_id": 4928565,
+    "image_path": "assets/cards/external/tearlaments-kashtira_jp.png"
+  },
+  "Goblin Biker Boom Mach": {
+    "en": "Goblin Biker Boom Mach",
+    "jp": "{{Ruby|百鬼羅刹|ゴブリンライダー}} {{Ruby|神速|マッハ}}ブーン",
+    "slug": null,
+    "card_id": 27868563,
+    "image_path": "assets/cards/external/goblin-biker-boom-mach_jp.png"
+  },
+  "Dogmatika Fleurdelis, the Thunderbolt": {
+    "en": "Dogmatika Fleurdelis, the Thunderbolt",
+    "jp": "{{Ruby|教導|ドラグマ}}の{{Ruby|雷霆|いかずち}}フルルドリス",
+    "slug": null,
+    "card_id": 73355772,
+    "image_path": "assets/cards/external/dogmatika-fleurdelis-the-thunderbolt_jp.png"
+  },
+  "The Iris Swordsoul": {
+    "en": "The Iris Swordsoul",
+    "jp": "{{Ruby|妖|あや}}{{Ruby|眼|め}}の{{Ruby|相|そう}}{{Ruby|剣|けん}}{{Ruby|師|し}}",
+    "slug": null,
+    "card_id": 62849088,
+    "image_path": "assets/cards/external/the-iris-swordsoul_jp.png"
+  },
+  "Vanquish Soul Hollie Sue": {
+    "en": "Vanquish Soul Hollie Sue",
+    "jp": "{{Ruby|ＶＳ|ヴァンキッシュ・ソウル}} ホーリー・スー",
+    "slug": null,
+    "card_id": 93156774,
+    "image_path": "assets/cards/external/vanquish-soul-hollie-sue_jp.png"
+  },
+  "Dracotail Faimena": {
+    "en": "Dracotail Faimena",
+    "jp": "{{Ruby|星辰砲手|ドラゴンテイル}}ファイメナ",
+    "slug": null,
+    "card_id": 1498449,
+    "image_path": "assets/cards/external/dracotail-faimena_jp.png"
+  },
+  "Fire King High Avatar Kirin": {
+    "en": "Fire King High Avatar Kirin",
+    "jp": "{{Ruby|炎|えん}}{{Ruby|王|おう}}{{Ruby|神|しん}}{{Ruby|獣|じゅう}} キリン",
+    "slug": null,
+    "card_id": 2526224,
+    "image_path": "assets/cards/external/fire-king-high-avatar-kirin_jp.png"
+  },
+  "Kewl Tune Clip": {
+    "en": "Kewl Tune Clip",
+    "jp": "キラーチューン・クリップ",
+    "slug": null,
+    "card_id": 43904702,
+    "image_path": "assets/cards/external/kewl-tune-clip_jp.png"
+  },
+  "Elfnote Regina": {
+    "en": "Elfnote Regina",
+    "jp": "{{Ruby|耀聖の風詩|エルフェンノーツ}}レギナ",
+    "slug": null,
+    "card_id": 56651978,
+    "image_path": "assets/cards/external/elfnote-regina_jp.png"
+  },
+  "Thousand Umbral Horror": {
+    "en": "Thousand Umbral Horror",
+    "jp": "サウザンド・アンブラル",
+    "slug": null,
+    "card_id": 2932235,
+    "image_path": "assets/cards/external/thousand-umbral-horror_jp.png"
+  },
+  "Dominus Purge": {
+    "en": "Dominus Purge",
+    "jp": "{{Ruby|聖王の粉砕|ドミナス・パージ}}",
+    "slug": null,
+    "card_id": 97045737,
+    "image_path": "assets/cards/external/dominus-purge_jp.png"
+  },
+  "Songs of the Dominators": {
+    "en": "Songs of the Dominators",
+    "jp": "{{Ruby|列|れつ}}{{Ruby|王|おう}}{{Ruby|詩|し}}{{Ruby|篇|へん}}",
+    "slug": null,
+    "card_id": 58053438,
+    "image_path": "assets/cards/external/songs-of-the-dominators_jp.png"
+  },
+  "Typhoon": {
+    "en": "Typhoon",
+    "jp": "タイフーン",
+    "slug": null,
+    "card_id": 14883228,
+    "image_path": "assets/cards/external/typhoon_jp.png"
+  },
+  "Dominus Spiral": {
+    "en": "Dominus Spiral",
+    "jp": "{{Ruby|命王の螺旋|ドミナス・スパイラル}}",
+    "slug": null,
+    "card_id": 42091632,
+    "image_path": "assets/cards/external/dominus-spiral_jp.png"
+  },
+  "Dominus Spark": {
+    "en": "Dominus Spark",
+    "jp": "{{Ruby|霆王の閃光|ドミナス・スパーク}}",
+    "slug": null,
+    "card_id": 6325660,
+    "image_path": "assets/cards/external/dominus-spark_jp.png"
+  },
+  "Synchro Emergency": {
+    "en": "Synchro Emergency",
+    "jp": "シンクロ・エマージェンシー",
+    "slug": null,
+    "card_id": 49415281,
+    "image_path": "assets/cards/external/synchro-emergency_jp.png"
+  },
+  "Hop Ear Squadron": {
+    "en": "Hop Ear Squadron",
+    "jp": "ホップ・イヤー{{Ruby|飛|ひ}}{{Ruby|行|こう}}{{Ruby|隊|たい}}",
+    "slug": null,
+    "card_id": 1980574,
+    "image_path": "assets/cards/external/hop-ear-squadron_jp.png"
+  },
+  "Gagaga Girl - Cell Phone Subtraction": {
+    "en": "Gagaga Girl - Cell Phone Subtraction",
+    "jp": "ガガガガール－ゼロゼロコール",
+    "slug": null,
+    "card_id": 48393693,
+    "image_path": "assets/cards/external/gagaga-girl-cell-phone-subtraction_jp.png"
+  },
+  "Engraver of the Mark": {
+    "en": "Engraver of the Mark",
+    "jp": "{{Ruby|刻|こく}}{{Ruby|印|いん}}の{{Ruby|調|ちょう}}{{Ruby|停|てい}}{{Ruby|者|しゃ}}",
+    "slug": null,
+    "card_id": 50078320,
+    "image_path": "assets/cards/external/engraver-of-the-mark_jp.png"
+  },
+  "Red-Eyes Soul": {
+    "en": "Red-Eyes Soul",
+    "jp": "{{Ruby|真紅き魂|レッドアイズ・ソウル}}",
+    "slug": null,
+    "card_id": 6556909,
+    "image_path": "assets/cards/external/red-eyes-soul_jp.png"
+  },
+  "Primite Imperial Dragon": {
+    "en": "Primite Imperial Dragon",
+    "jp": "{{Ruby|原|げん}}{{Ruby|石|せき}}{{Ruby|竜|りゅう}}インペリアル・ドラゴン",
+    "slug": null,
+    "card_id": 81418467,
+    "image_path": "assets/cards/external/primite-imperial-dragon_jp.png"
+  },
+  "Bahalutiya, the Grand Radiance": {
+    "en": "Bahalutiya, the Grand Radiance",
+    "jp": "{{Ruby|光|ひかり}}の{{Ruby|天|てん}}{{Ruby|穿|せん}}バハルティヤ",
+    "slug": null,
+    "card_id": 53318263,
+    "image_path": "assets/cards/external/bahalutiya-the-grand-radiance_jp.png"
+  },
+  "Theia, the Primal Being": {
+    "en": "Theia, the Primal Being",
+    "jp": "{{Ruby|原|げん}}{{Ruby|始|し}}{{Ruby|生|せい}}{{Ruby|命|めい}}{{Ruby|態|たい}}ティア",
+    "slug": null,
+    "card_id": 85687952,
+    "image_path": "assets/cards/external/theia-the-primal-being_jp.png"
+  },
+  "Heavenly Zephyr - Miradora": {
+    "en": "Heavenly Zephyr - Miradora",
+    "jp": "{{Ruby|風|かぜ}}の{{Ruby|天|てん}}{{Ruby|翼|よく}}ミラドーラ",
+    "slug": null,
+    "card_id": 17063599,
+    "image_path": "assets/cards/external/heavenly-zephyr-miradora_jp.png"
+  },
+  "Phantom Dragon": {
+    "en": "Phantom Dragon",
+    "jp": "ファントム・ドラゴン",
+    "slug": null,
+    "card_id": 49879995,
+    "image_path": "assets/cards/external/phantom-dragon_jp.png"
+  },
+  "Primineral Kongreat": {
+    "en": "Primineral Kongreat",
+    "jp": "{{Ruby|礫|れき}}{{Ruby|岩|がん}}の{{Ruby|霊|れい}}{{Ruby|長|ちょう}}－コングレード",
+    "slug": null,
+    "card_id": 49729312,
+    "image_path": "assets/cards/external/primineral-kongreat_jp.png"
+  },
+  "Dogmatika Fleurdelis, the Knighted": {
+    "en": "Dogmatika Fleurdelis, the Knighted",
+    "jp": "{{Ruby|教導|ドラグマ}}の{{Ruby|騎|き}}{{Ruby|士|し}}フルルドリス",
+    "slug": null,
+    "card_id": 69680031,
+    "image_path": "assets/cards/external/dogmatika-fleurdelis-the-knighted_jp.png"
+  },
+  "Gravekeeper's Watcher": {
+    "en": "Gravekeeper's Watcher",
+    "jp": "{{Ruby|墓|はか}}{{Ruby|守|もり}}の{{Ruby|監|かん}}{{Ruby|視|し}}{{Ruby|者|しゃ}}",
+    "slug": null,
+    "card_id": 26084285,
+    "image_path": "assets/cards/external/gravekeeper-s-watcher_jp.png"
+  },
+  "Gemini Imps": {
+    "en": "Gemini Imps",
+    "jp": "ヂェミナイ・デビル",
+    "slug": null,
+    "card_id": 67688478,
+    "image_path": "assets/cards/external/gemini-imps_jp.png"
+  },
+  "The Abyss Dragon Swordsoul": {
+    "en": "The Abyss Dragon Swordsoul",
+    "jp": "{{Ruby|深|しん}}{{Ruby|淵|えん}}の{{Ruby|相|そう}}{{Ruby|剣|けん}}{{Ruby|龍|りゅう}}",
+    "slug": null,
+    "card_id": 5141117,
+    "image_path": "assets/cards/external/the-abyss-dragon-swordsoul_jp.png"
+  },
+  "Token Collector": {
+    "en": "Token Collector",
+    "jp": "トークンコレクター",
+    "slug": null,
+    "card_id": 43534808,
+    "image_path": "assets/cards/external/token-collector_jp.png"
   }
 }

@@ -175,6 +175,26 @@
     .deck-search-sel-sub { font-size: 10.5px; color: #789; }
     .deck-log-btn { margin-left: auto; }
     .deck-ext-count { color: #999; font-size: 10.5px; }
+    /* ===== 相手が打てる妨害（手動操作モード） ===== */
+    .dis-btn { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; border: 1px solid #d6d6e2; background: #fafbfe; border-radius: 8px; padding: 4px 6px; margin-bottom: 4px; cursor: pointer; }
+    .dis-btn:hover { border-color: #9aa6d0; background: #eef1fc; }
+    .dis-btn.active { border-color: #c33; background: #fdf0f0; }
+    .dis-btn img { width: 30px; height: 44px; border-radius: 4px; object-fit: cover; flex: 0 0 auto; }
+    .dis-txt { min-width: 0; }
+    .dis-name { font-size: 12px; font-weight: 600; color: #234; }
+    .dis-sub { font-size: 10px; color: #678; line-height: 1.35; }
+    .dis-pending { background: #fdf4e2; border: 1px solid #e0c98d; color: #7a5a13; border-radius: 8px; padding: 6px 8px; font-size: 11.5px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+    .dis-head { font-size: 11px; color: #567; margin: 8px 0 4px; font-weight: 600; }
+    .dis-log { display: flex; align-items: center; gap: 6px; font-size: 11px; padding: 3px 4px; border-bottom: 1px dotted #ddd; }
+    .dis-log-tit { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #234; }
+    .slot.negated img, .stack-item.negated img { filter: grayscale(1) brightness(0.9); opacity: 0.8; }
+    .slot.negated { outline: 2px solid #888; outline-offset: -2px; }
+    .disrupt-badge { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(60, 60, 64, 0.88); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; pointer-events: none; }
+    .slot { position: relative; }
+    .stack-item { position: relative; display: inline-block; }
+    .disrupt-target { outline: 2px dashed #c33; outline-offset: -2px; cursor: crosshair; }
+    .slot.disrupt-target img { cursor: crosshair; }
+    /* 既存の .slot に position:relative を足した（badge用） */
   </style>
 </head>
 <body>
@@ -277,12 +297,13 @@
       const params = new URLSearchParams(location.search);
       return {
         theme: params.get("theme") || "blue-eyes",
-        route: params.get("route") || null
+        route: params.get("route") || null,
+        mode: params.get("mode") || "manual"
       };
     }
 
     function updateUrl() {
-      const params = new URLSearchParams({ theme: paramsTheme, route: state.route.id });
+      const params = new URLSearchParams({ theme: paramsTheme, route: state.route.id, mode: mode });
       history.replaceState(null, "", "replay.html?" + params.toString());
     }
 
@@ -352,9 +373,15 @@
       state = { route: route, baseRoute: route, idx: 0, blocked: [], applied: [], openHandler: null };
       updateUrl();
       loadThemeCardPool();
-      mode = "replay";
+      loadOppDisruptors();
       initPointerDrag();
-      renderAll();
+      if (params.mode === "replay") {
+        mode = "replay";
+        renderAll();
+      } else {
+        mode = "manual";
+        startManual();
+      }
     }
 
     let themeCards = [];
@@ -370,6 +397,20 @@
         .catch(function () {});
     }
     loadDecklabPool();
+
+    // ===== 相手が打てる妨害（手動操作モード用データ） =====
+    let oppDisruptors = [];
+    function loadOppDisruptors() {
+      fetch("./data/decks/opp_disruptors.json", { cache: "no-store" })
+        .then(function (res) { return res.ok ? res.json() : null; })
+        .then(function (d) {
+          if (d && Array.isArray(d.cards)) {
+            oppDisruptors = d.cards;
+            if (mode === "manual") renderAll();
+          }
+        })
+        .catch(function () {});
+    }
 
     // ===== 全カード検索 (decklab) =====
     const EXT_STORE_KEY = "decklab_extcards";
@@ -568,12 +609,12 @@
 
     // ===== 手動操作 =====
     function blankManualBoard() {
-      return { monsters: [null, null, null, null, null], spells: [null, null, null, null, null], hand: [], gy: [], banish: [] };
+      return { monsters: [null, null, null, null, null], spells: [null, null, null, null, null], hand: [], gy: [], banish: [], opp: [null, null, null, null, null], disrupt: [] };
     }
 
     function deepBoard(b) {
       const out = blankManualBoard();
-      const zones = ["monsters", "spells", "hand", "gy", "banish", "extra"];
+      const zones = ["monsters", "spells", "hand", "gy", "banish", "extra", "opp"];
       for (const z of zones) {
         if (!b || !Array.isArray(b[z])) continue;
         out[z] = b[z].map(function (e) { return e ? Object.assign({}, e) : null; });
@@ -608,12 +649,14 @@
       manual = deepBoard(null);
       manual.piles = buildPiles();
       manual.hand = drawHand(5);
+      updateUrl();
       renderAll();
     }
 
     function exitManual() {
       mode = "replay";
       manual = null;
+      updateUrl();
       renderAll();
     }
 
@@ -622,6 +665,7 @@
       manual.piles = buildPiles();
       manual.hand = drawHand(5);
       manual.history = [];
+      manual.pendingDisrupt = null;
       renderAll();
     }
 
@@ -659,6 +703,8 @@
           banish: JSON.parse(JSON.stringify(manual.banish || [])),
           piles: JSON.parse(JSON.stringify(manual.piles || { main: [], extra: [], side: [] })),
           trash: JSON.parse(JSON.stringify(manual.trash || [])),
+          opp: JSON.parse(JSON.stringify(manual.opp || [])),
+          disrupt: JSON.parse(JSON.stringify(manual.disrupt || [])),
         });
       }
       const entry = payload.entry;
@@ -781,13 +827,17 @@
       manual.banish = snap.banish;
       manual.piles = snap.piles;
       manual.trash = snap.trash || [];
+      manual.opp = snap.opp || [null, null, null, null, null];
+      manual.disrupt = snap.disrupt || [];
       manual.pending = null;
+      manual.pendingDisrupt = null;
       renderAll();
     }
 
     function onPointerDown(ev) {
       if (ev.button && ev.button > 0) return;
       if (mode !== "manual" || !manual) return;
+      if (manual.pendingDisrupt) return;
       const srcEl = closestAttr(ev.target, "data-drag");
       if (!srcEl) return;
       const payload = parseAttr(srcEl, "data-drag");
@@ -970,13 +1020,14 @@
       if (mode === "manual") {
         renderManualSide();
         renderRecommendations();
-        disPanel.style.display = "none";
+        disPanel.style.display = "";
         manualHelpDiv.style.display = "";
         manualHelpDiv.textContent =
           "【手動操作モード】カードをドラッグ（またはタップ選択→移動先タップ）すると元の場所から移動します（コピーではありません）。" +
           "下のデッキ/EXデッキ/サイドから置くと枚数が減り、デッキなどの山札に戻すこともできます。カードをクリックすると左のパネルに画像と効果が表示され、右クリックでひとつ前の操作に戻せます。" +
           "デッキ/EX/サイドのカードをゴミ箱へドラッグするとデッキから削除できます（「削除を1つ戻す」で復元）。" +
-          "下のデッキ編集パネルの枠から検索すると全カード（日本語・英名対応）を追加できます（追加したカードの情報は自動取得・保存されます）。";
+          "下のデッキ編集パネルの枠から検索すると全カード（日本語・英名対応）を追加できます（追加したカードの情報は自動取得・保存されます）。" +
+          "右の「相手が打てる妨害」パネルでは、相手による妨害を再現できます（無効表示・墓地送り・除外など）。";
       } else {
         renderStepPanel();
         disPanel.style.display = "";
@@ -1077,6 +1128,30 @@
       return cur && cur.card ? cardKey(cur.card) : null;
     }
 
+    function planDisruptionZones() {
+      const pd = manual && manual.pendingDisrupt;
+      if (!pd) return null;
+      if (pd.sim === "gy_banish") return ["gy"];
+      if (pd.sim === "negate" || pd.sim === "destroy" || pd.sim === "banish_field") return ["monsters", "spells"];
+      return null;
+    }
+
+    function markDisruptTarget(node, zone) {
+      const plan = planDisruptionZones();
+      if (plan && plan.indexOf(zone) !== -1) {
+        node.classList.add("disrupt-target");
+        node.setAttribute("data-disrupt-target", zone);
+      }
+    }
+
+    function applyNegateBadge(node, entry) {
+      const rec = disruptionOnEntry(entry);
+      if (rec) {
+        node.classList.add("negated");
+        node.appendChild(el("div", "disrupt-badge", "無効"));
+      }
+    }
+
     function zoneRowSlots(zone, list, cls, dropEnabled) {
       const row = el("div", "zone-row" + (dropEnabled ? " droppable" : ""));
       if (cls === "oppmonster") row.classList.add("opp");
@@ -1089,11 +1164,21 @@
           if (act && entry && cardKey(entry) === act) slot.classList.add("acting");
           slot.appendChild(img);
         }
-        if (entry) attachPreview(slot, entry);
+        if (entry) {
+          attachPreview(slot, entry);
+          applyNegateBadge(slot, entry);
+        }
         if (dropEnabled) {
           attachDrop(slot, zone, i);
           if (entry) attachDrag(entry, { type: "slot", zone: zone, index: i }, img, slot);
+          (function (zi, z) {
+            slot.addEventListener("click", function () {
+              if (mode !== "manual" || !manual || !manual.pendingDisrupt) return;
+              onDisruptTarget(z, zi);
+            });
+          })(i, zone);
         }
+        markDisruptTarget(slot, zone);
         row.appendChild(slot);
       }
       const wrap = el("div", null);
@@ -1109,7 +1194,24 @@
         if (!img) return;
         if (dropEnabled) attachDrag(entry, { type: "list", zone: zone, index: i, ref: entry }, img, null);
         attachPreview(img, entry);
-        stack.appendChild(img);
+        (function (zi) {
+          img.addEventListener("click", function () {
+            if (mode !== "manual" || !manual || !manual.pendingDisrupt) return;
+            onDisruptTarget(zone, zi);
+          });
+        })(i);
+        markDisruptTarget(img, zone);
+        (function (ie) {
+          const rec = disruptionOnEntry(ie);
+          if (rec) {
+            const wrapEl = el("div", "stack-item negated");
+            wrapEl.appendChild(img);
+            wrapEl.appendChild(el("div", "disrupt-badge", "無効"));
+            stack.appendChild(wrapEl);
+            return;
+          }
+          stack.appendChild(img);
+        })(entry);
       });
       if (entries.length === 0) stack.appendChild(el("span", "empty", "なし"));
       box.appendChild(stack);
@@ -1169,7 +1271,15 @@
 
     function zoneRowSlotsOpp() {
       const row = el("div", "zone-row opp");
-      for (let i = 0; i < 5; i++) row.appendChild(el("div", "slot oppmonster"));
+      const editing = mode === "manual" && manual;
+      for (let i = 0; i < 5; i++) {
+        const slot = el("div", "slot oppmonster");
+        const entry = editing && manual.opp ? manual.opp[i] : null;
+        const img = safeImage(entry);
+        if (img) slot.appendChild(img);
+        if (entry) attachPreview(slot, entry);
+        row.appendChild(slot);
+      }
       const wrap = el("div", null);
       wrap.appendChild(row);
       wrap.appendChild(el("div", "zone-label", "相手フィールド"));
@@ -1198,7 +1308,12 @@
 
     function renderBoardNote() {
       if (mode === "manual") {
-        boardNoteDiv.textContent = "ドラッグまたはタップ→移動先タップでカードを移動。占有ゾーンに置くと元のカードは墓地へ。";
+        if (manual && manual.pendingDisrupt) {
+          const pd = manual.pendingDisrupt;
+          boardNoteDiv.textContent = "▶ 相手が「" + pd.title + "」を発動！ " + (pd.note || "") + "（該当するカードをクリック。パネルのキャンセルで中止）";
+        } else {
+          boardNoteDiv.textContent = "ドラッグまたはタップ→移動先タップでカードを移動。占有ゾーンに置くと元のカードは墓地へ。";
+        }
       } else {
         boardNoteDiv.textContent = "青枠はこのアクションで動いたカード（盤面データはドラフト）。「手動操作」タブで自由に動かせます。";
       }
@@ -2189,10 +2304,261 @@
       return Array.isArray(step.events) ? step.events : [];
     }
 
+    // ===== 手動操作モード: 相手が打てる妨害 =====
+    const THEME_DISRUPT_SIM = {
+      d_ash: { sim: "negate", note: "対象にしたカードに「無効」表示（効果を無効化扱い）" },
+      d_g: { sim: "note", note: "相手がドローを宣言（特殊召喚を伴う展開の記録）" },
+      d_droll: { sim: "note", note: "このターン、デッキからカードを手札に加えられない（記録）" },
+      d_belle: { sim: "negate", note: "対象にしたカードに「無効」表示（墓地・除外系を止める扱い）" },
+      d_imperm: { sim: "negate", note: "対象にしたカードに「無効」表示（無限泡影）" },
+      d_wave: { sim: "negate", note: "対象にしたカードに「無効」表示（霊王の波動）" },
+      d_resonance: { sim: "negate", note: "対象にしたカードに「無効」表示（覇者の鳴動）" }
+    };
+    const SIM_JA = {
+      negate: "無効", destroy: "破壊", banish_field: "除外", gy_banish: "墓地除外",
+      clear_field: "全体破壊", summon: "配置", note: "記録"
+    };
+
+    function oppDisruptionList() {
+      const themeNames = {};
+      const items = [];
+      for (const d of (deckData.disruptions || [])) {
+        const simInfo = THEME_DISRUPT_SIM[d.id] || { sim: "note", note: d.effect || "" };
+        items.push({ src: "theme", entry: d, title: d.title || d.name, sim: simInfo.sim, note: simInfo.note, desc: d.effect || null });
+        const nm = String(d.title || d.name || "").trim();
+        const en = String(d.en_name || "").trim();
+        if (nm) themeNames[nm] = true;
+        if (en) themeNames[en] = true;
+      }
+      for (const c of oppDisruptors) {
+        const nm = String(c.name || "").trim();
+        const enc = String(c.en_name || "").trim();
+        if (themeNames[nm] || (enc && themeNames[enc])) continue;
+        items.push({ src: "opp", entry: c, title: nm || enc, sim: SIM_JA[c.sim] ? c.sim : "note", note: c.sim_note || "", desc: c.desc || null });
+      }
+      return items;
+    }
+
+    function disruptionOnEntry(entry) {
+      if (mode !== "manual" || !manual || !manual.disrupt) return null;
+      const id = deckEntryId(entry);
+      if (!id) return null;
+      for (const rec of manual.disrupt) {
+        if (rec.sim === "negate" && rec.targetId === id) return rec;
+      }
+      return null;
+    }
+
+    function onDisruptChipClick(item) {
+      if (mode !== "manual" || !manual) return;
+      const pd = manual.pendingDisrupt;
+      if (pd && pd.entry === item.entry) {
+        manual.pendingDisrupt = null;
+        renderAll();
+        return;
+      }
+      if (item.sim === "note") {
+        manual.disrupt = manual.disrupt || [];
+        manual.disrupt.push({
+          uid: manual.disruptSeq = (manual.disruptSeq || 0) + 1,
+          src: item.src, entry: item.entry, title: item.title, sim: item.sim,
+          note: item.note, targetName: null, moved: null, movedEntry: null, from: null
+        });
+        manual.pendingDisrupt = null;
+        renderAll();
+        return;
+      }
+      manual.pendingDisrupt = {
+        uid: manual.disruptSeq = (manual.disruptSeq || 0) + 1,
+        src: item.src, entry: item.entry, title: item.title, sim: item.sim, note: item.note
+      };
+      renderAll();
+    }
+
+    function onDisruptTarget(zone, index) {
+      const pd = manual && manual.pendingDisrupt;
+      if (!pd) return;
+      const zones = pd.sim === "gy_banish" ? ["gy"] : ["monsters", "spells"];
+      if (zones.indexOf(zone) === -1) return;
+      const entry = zone === "gy" ? manual.gy[index] : manual[zone][index];
+      if (!entry) return;
+      const rec = {
+        uid: pd.uid, src: pd.src, entry: pd.entry, title: pd.title, sim: pd.sim,
+        note: pd.note,
+        targetId: deckEntryId(entry), targetName: entry.japanese_name || entry.name || null,
+        targetZone: zone, targetIndex: index,
+        moved: null, movedEntry: null, from: null
+      };
+      if (pd.sim === "destroy" || pd.sim === "banish_field" || pd.sim === "gy_banish") {
+        if (zone === "gy") {
+          manual.gy.splice(index, 1);
+        } else {
+          manual[zone][index] = null;
+        }
+        if (pd.sim === "gy_banish" || pd.sim === "banish_field") {
+          manual.banish.push(entry);
+          rec.moved = "banish";
+        } else {
+          manual.gy.push(entry);
+          rec.moved = "gy";
+        }
+        rec.movedEntry = entry;
+        rec.from = { kind: zone === "gy" ? "gylist" : "slot", zone: zone, index: index };
+      }
+      manual.disrupt = manual.disrupt || [];
+      manual.disrupt.push(rec);
+      manual.pendingDisrupt = null;
+      renderAll();
+    }
+
+    function cancelDisruption(uid) {
+      if (!manual || !manual.disrupt) return;
+      const idx = manual.disrupt.findIndex(function (r) { return r.uid === uid; });
+      if (idx === -1) return;
+      const rec = manual.disrupt[idx];
+      if (rec.moved && rec.movedEntry) {
+        const arr = rec.moved === "gy" ? manual.gy : manual.banish;
+        const p = arr.indexOf(rec.movedEntry);
+        let ok = false;
+        if (p !== -1) {
+          arr.splice(p, 1);
+          ok = true;
+        }
+        if (ok && rec.from) {
+          if (rec.from.kind === "slot") {
+            if (!manual[rec.from.zone][rec.from.index]) {
+              manual[rec.from.zone][rec.from.index] = rec.movedEntry;
+            } else if (rec.moved === "gy") {
+              manual.gy.push(rec.movedEntry);
+            } else {
+              manual.banish.push(rec.movedEntry);
+              ok = false;
+            }
+          } else {
+            const srcArr = rec.from.kind === "gylist" ? manual.gy : null;
+            if (rec.moved === "gy" || !srcArr) {
+              manual.gy.push(rec.movedEntry);
+            } else {
+              srcArr.push(rec.movedEntry);
+            }
+          }
+        }
+      }
+      if (rec.moved === "opp" && manual.opp && manual.opp[rec.oppIndex] === rec.movedEntry) {
+        manual.opp[rec.oppIndex] = null;
+      }
+      if (rec.moved === "clear" && rec.cleared) {
+        for (const e of rec.cleared) {
+          const q = manual.gy.indexOf(e);
+          if (q !== -1) manual.gy.splice(q, 1);
+          let placed = false;
+          for (let i = 0; i < manual.monsters.length; i++) {
+            if (!manual.monsters[i]) { manual.monsters[i] = e; placed = true; break; }
+          }
+          if (!placed) manual.gy.push(e);
+        }
+      }
+      manual.disrupt.splice(idx, 1);
+      manual.pendingDisrupt = null;
+      renderAll();
+    }
+
+    function applyClearFieldDisruption(item) {
+      const cleared = [];
+      for (const e of manual.monsters) {
+        if (e) cleared.push(e);
+      }
+      for (const e of cleared) {
+        const i = manual.monsters.indexOf(e);
+        manual.monsters[i] = null;
+        manual.gy.push(e);
+      }
+      manual.disrupt = manual.disrupt || [];
+      manual.disrupt.push({
+        uid: manual.disruptSeq = (manual.disruptSeq || 0) + 1,
+        src: item.src, entry: item.entry, title: item.title, sim: "clear_field",
+        note: item.note || "", targetName: cleared.length + "体",
+        moved: cleared.length ? "clear" : null, movedEntry: null, from: null, cleared: cleared
+      });
+      manual.pendingDisrupt = null;
+      renderAll();
+    }
+
+    function applySummonDisruption(item) {
+      let idx = -1;
+      if (manual.opp) {
+        for (let i = 0; i < manual.opp.length; i++) {
+          if (!manual.opp[i]) { idx = i; break; }
+        }
+      }
+      if (idx === -1) {
+        manual.disrupt = manual.disrupt || [];
+        manual.disrupt.push({
+          uid: manual.disruptSeq = (manual.disruptSeq || 0) + 1,
+          src: item.src, entry: item.entry, title: item.title, sim: "note",
+          note: "相手フィールドが満員のため配置できませんでした（記録のみ）",
+          targetName: null, moved: null, movedEntry: null, from: null
+        });
+        manual.pendingDisrupt = null;
+        renderAll();
+        return;
+      }
+      const entry = Object.assign({}, item.entry);
+      manual.opp[idx] = entry;
+      manual.disrupt = manual.disrupt || [];
+      manual.disrupt.push({
+        uid: manual.disruptSeq = (manual.disruptSeq || 0) + 1,
+        src: item.src, entry: item.entry, title: item.title, sim: "summon",
+        note: item.note || "", targetName: "相手フィールド",
+        moved: "opp", movedEntry: entry, oppIndex: idx, from: null
+      });
+      manual.pendingDisrupt = null;
+      renderAll();
+    }
+
     function renderDisruptionPanel() {
       disPanel.replaceChildren();
       if (mode === "manual") {
-        disPanel.appendChild(el("div", "note", "（手動操作モードでは妨害パネルを非表示にしています）"));
+        disPanel.appendChild(el("h3", null, "相手が打てる妨害"));
+        disPanel.appendChild(el("div", "note", "妨害を選択（対象指定が必要な場合は盤面のカードをクリック）"));
+        const pd = manual && manual.pendingDisrupt;
+        if (pd) {
+          const pb = el("div", "dis-pending", "「" + pd.title + "」: 対象のカードをクリックしてください");
+          const cb = el("button", "btn tiny", "キャンセル");
+          cb.addEventListener("click", function () { manual.pendingDisrupt = null; renderAll(); });
+          pb.appendChild(cb);
+          disPanel.appendChild(pb);
+        }
+        for (const item of oppDisruptionList()) {
+          const btn = el("button", "dis-btn" + (pd && pd.entry === item.entry ? " active" : ""));
+          const img = safeImage(item.entry);
+          if (img) btn.appendChild(img);
+          const box = el("div", "dis-txt");
+          box.appendChild(el("div", "dis-name", item.title));
+          box.appendChild(el("div", "dis-sub", "【" + (SIM_JA[item.sim] || "記録") + "】" + (item.note || "")));
+          btn.appendChild(box);
+          btn.addEventListener("click", (function (it) {
+            return function () {
+              if (it.sim === "clear_field") applyClearFieldDisruption(it);
+              else if (it.sim === "summon") applySummonDisruption(it);
+              else onDisruptChipClick(it);
+            };
+          })(item));
+          disPanel.appendChild(btn);
+        }
+        const applied = manual && manual.disrupt || [];
+        if (applied.length) {
+          disPanel.appendChild(el("div", "dis-head", "適用済み妨害 (" + applied.length + ")"));
+          for (const rec of applied) {
+            const row = el("div", "dis-log");
+            row.appendChild(el("span", "dis-log-tit", "▶ " + rec.title + (rec.targetName ? " → " + rec.targetName : "")));
+            const cb = el("button", "btn tiny", "◀取り消し");
+            cb.addEventListener("click", (function (u) { return function () { cancelDisruption(u); }; })(rec.uid));
+            row.appendChild(cb);
+            disPanel.appendChild(row);
+          }
+        }
+        disPanel.appendChild(el("div", "note", "無効＝対象に灰色＋無効表示、破壊/除外＝対象を実際に移動、記録＝ログのみ。取り消しで戻せます。"));
         return;
       }
       disPanel.appendChild(el("h3", null, "相手が打てる妨害"));
