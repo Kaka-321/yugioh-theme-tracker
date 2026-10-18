@@ -120,6 +120,8 @@
     .rec-card { display: flex; gap: 8px; border: 1px solid #cde; background: #f4faff; border-radius: 8px; padding: 6px 8px; margin-bottom: 6px; align-items: flex-start; }
     .rec-card img { width: 44px; border-radius: 3px; }
     .rec-card .rec-name { font-size: 13px; font-weight: bold; color: #234; }
+    .rec-card.clickable { cursor: pointer; border-color: #9cc4e4; }
+    .rec-card.clickable:hover { background: #e4f2ff; border-color: #6aa9d8; }
     .rec-card .rec-act { font-size: 12px; color: #456; }
     .rec-card .rec-note { font-size: 11px; color: #667; margin-top: 2px; }
     .ai-row { display: flex; gap: 6px; margin: 8px 0; flex-wrap: wrap; }
@@ -1620,6 +1622,31 @@
       renderAll();
     }
 
+    // ===== ステップの盤面を手動操作へ反映 =====
+    function applyRouteBoardToManual(route, stepIdx) {
+      const step = route && route.steps && route.steps[stepIdx];
+      if (!step || !step.board) return;
+      stopPlay();
+      mode = "manual";
+      manual = deepBoard(step.board);
+      manual.piles = buildPiles();
+      const used = [];
+      ["monsters", "spells", "gy", "banish", "extra", "hand"].forEach(function (z) {
+        (step.board[z] || []).forEach(function (e) { if (e && e.name) used.push(e.name); });
+      });
+      used.forEach(function (nm) {
+        for (const bag of ["extra", "main"]) {
+          const arr = manual.piles[bag];
+          const i = arr.findIndex(function (e) { return e.name === nm; });
+          if (i !== -1) { arr.splice(i, 1); return; }
+        }
+      });
+      manual.history = [];
+      manual.pendingDisrupt = null;
+      updateUrl();
+      renderAll();
+    }
+
     // ===== 推薦パネル =====
     function renderRecommendations() {
       assistPanel.replaceChildren();
@@ -1645,13 +1672,16 @@
       bar.appendChild(fill);
       assistPanel.appendChild(bar);
 
+      assistPanel.appendChild(el("div", "note", "カードをクリックするとそのSTEP実施後の盤面を手動操作に反映できます"));
       const upcoming = best.route.steps.slice(best.idx + 1, best.idx + 3);
       if (upcoming.length === 0) {
         assistPanel.appendChild(el("div", "note", "展開完了に近い状態です"));
       } else {
         for (let i = 0; i < upcoming.length; i++) {
           const st = upcoming[i];
-          const card = el("div", "rec-card");
+          const card = el("div", "rec-card clickable");
+          card.title = "クリックでこのSTEP実施後の盤面を手動操作に反映";
+          card.addEventListener("click", function () { applyRouteBoardToManual(best.route, best.idx + 1 + i); });
           const img = safeImage(st.card);
           if (img) card.appendChild(img);
           const body = el("div");
@@ -2311,6 +2341,9 @@
       stepPanel.appendChild(history);
 
       const foot = el("div", "nav");
+      const editBoard = el("button", "btn small", "このSTEPの盤面を手動操作へ");
+      editBoard.addEventListener("click", function () { applyRouteBoardToManual(state.route, idx); });
+      foot.appendChild(editBoard);
       const reset = el("button", "btn secondary small", "最初からやり直す");
       reset.addEventListener("click", function () { stopPlay(); enterRoute(state.baseRoute, true); renderAll(); });
       foot.appendChild(reset);
