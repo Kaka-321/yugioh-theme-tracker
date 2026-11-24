@@ -44,12 +44,17 @@
       "source_title": "V (GX archetype)",
       "source_url": "https://yugipedia.com/wiki/V_(GX_archetype)",
       "status": "pending"
+    },
+    {
+      "source_title": "Void Ogre Dragon (archetype)",
+      "source_url": "https://yugipedia.com/wiki/Void_Ogre_Dragon_(archetype)",
+      "status": "pending"
     }
   ],
   "category": "Category:Archetypes",
-  "discovered_at": "2026-11-17T04:09:31.281843+00:00",
-  "discovered_count": 781,
-  "pending_count": 9,
+  "discovered_at": "2026-11-24T05:29:15.966656+00:00",
+  "discovered_count": 782,
+  "pending_count": 10,
   "registered_count": 774,
   "schema_version": "1.0.0"
 }
